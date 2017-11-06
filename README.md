@@ -1,3 +1,4 @@
+[![Build Status](https://www.travis-ci.org/shenxianpeng/blog.svg?branch=master)](https://www.travis-ci.org/shenxianpeng/blog) 
 This is my [blog](https://shenxianpeng.github.io/) code, use [hexo](https://hexo.io).
 
 ## Git Repository
