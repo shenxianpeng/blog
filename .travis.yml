@@ -8,7 +8,7 @@ cache:
     - node_modules
 
 node_js:
-  - "4"
   - "6"
 
-script:
+before_script:
+  - npm install
