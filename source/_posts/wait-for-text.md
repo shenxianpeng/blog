@@ -10,16 +10,18 @@ Nightwatch并没有提供这样的方法，可以通过下面的方式解决。
 
 ```javascript
 'Wait for text': function waitForText(client) {
-    let i = 0;
     const query = client.page.query();
     query.navigate();
-    // if status != 'Available', wait until 10s
-    client.getText(firestName, function (result) {
-        while (result.value.indexOf('Available') != 0 && i <= 10) {
-            client.pause(1000);
-            i++;
-        }
-        // break, TODO
-    });
+    for (let i = 0; i <= 10; i++) {
+        client.getText('status', function (result) {
+            if (result.value.indexOf('Available') == 0) {
+                this.break;
+            } else {
+                client.pause(1000);
+                i++;
+            }
+        });
+    }
+    // TODO something
 }
 ```
