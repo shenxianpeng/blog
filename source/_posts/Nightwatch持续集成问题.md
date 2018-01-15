@@ -1,0 +1,33 @@
+---
+title: Nightwatch持续集成问题
+date: 2018-01-15 22:53:53
+tags: nightwatch
+---
+
+在持续集成执行自动化测试用例时候会遇到那些问题呢？
+1. 运行时间过长
+2. 因为某些错误程序卡住
+3. 异常处理
+
+针对以上三种情况，通过下面的三种方式进行解决。
+
+1. E2E测试脚本中难免需要时间等待，例如：
+```javascript
+this.pause(1000);
+// 尽可能将说有的pause换成wait，例如：
+this.element('@columns').to.be.visible.before(2000);
+// 或
+this.waitForElementVisible('@columns', 5000);
+```
+
+2. 在TestCase中进行验证时，例如：
+```javascript
+this.assert.equal(result.value.length, 1);
+// 如果只想标注失败，继续执行后面的代码，则需将assert换成verify
+this.veriry.equal(result.value.length, 1);
+// 在waitForElementVisible中加abortOnFailure参数，当设置为false，在wait超时时，就会标志为false继续继续执行
+this.waitForElementVisible('@columns', 5000, false);
+```
+
+3. 当程序执行运行一次时，程序运行正常，一旦遇到异常时，下次执行就回出错。
+例如：比如邀请账号登录系统的操作。管理员添加一个新用户，然后用这个新用户登录，之后管理员删除这个账户。但如果删除这个账号失败时，下次执行这个程序再邀请这个账号时就会提示这个账号存在的，可能这个时候这个程序就执行不下去了。这个时候就需要考虑这些异常情况处理，保证程序能够良好的执行下去。
