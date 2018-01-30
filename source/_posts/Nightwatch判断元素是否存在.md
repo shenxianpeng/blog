@@ -1,5 +1,5 @@
 ---
-title: if else logic for page elements
+title: Nightwatch判断元素是否存在
 date: 2017-10-26 17:09:06
 tags: nightwatch
 ---
