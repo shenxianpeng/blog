@@ -86,5 +86,5 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:shenxianpeng/blog.git
+  repo: git@github.com:shenxianpeng/shenxianpeng.github.io.git
 
