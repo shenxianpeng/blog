@@ -10,6 +10,7 @@ $ git clone https://github.com/shenxianpeng/blog.git
 ## Prepare
 ``` bash
 $ npm install                                   #Install dependencies
+$ npm install -g hexo-cli                       #Install cmd command
 $ npm install hexo-deployer-git --save          #Install deploy
 ```
 
