@@ -1,7 +1,7 @@
 ---
 title: JST-automation
 date: 2017-07-13 10:07:02
-tags: test
+tags: automation
 ---
 
 
@@ -9,7 +9,7 @@ tags: test
 
 **directory structure**
 ```
-├──discoverQA
+├──JST-automation
 |   ├── src
 |   |   └── main
 |   |   |   └── java
