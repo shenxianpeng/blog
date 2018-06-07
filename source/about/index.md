@@ -3,6 +3,6 @@ title:
 ---
 
 #### About Me
-软件测试工程师，「软件测试QA」公众号作者。
+Software testing engineer, author of Software Testing QA public account.
 #### Contact Me
 Email: <a href="mailto:xianpeng.shen@qq.com">xianpeng.shen@qq.com</a>
