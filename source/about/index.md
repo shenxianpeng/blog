@@ -3,6 +3,11 @@ title:
 ---
 
 #### About Me
-Software testing engineer, author of Software Testing QA public account.
+
+* QA Engineer transfor to Software Engineer
+* Author of DevQA public account
+
 #### Contact Me
-Email: <a href="mailto:xianpeng.shen@qq.com">xianpeng.shen@qq.com</a>
+
+* Email: <a href="mailto:xianpeng.shen@qq.com">xianpeng.shen@qq.com</a>
+* WeChat ID: DevQAOps
