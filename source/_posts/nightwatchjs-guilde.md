@@ -2,6 +2,7 @@
 title: Nightwatchjs-guilde
 date: 2017-10-19 16:31:57
 tags: nightwatch
+categories: automation
 ---
 
 [Nightwatch中文参考手册](https://shenxianpeng.gitbooks.io/nightwatch-js-cn/content/)

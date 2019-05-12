@@ -1,9 +1,8 @@
 ---
 title: C-计算图形的面积
 date: 2018-05-16 10:11:33
-tags: 
-- dev
-- C
+tags: C
+categories: snippets
 ---
 
 ```c

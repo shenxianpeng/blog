@@ -2,6 +2,7 @@
 title: Jenkinsfile配置
 date: 2018-04-14 13:07:49
 tags: Jenkins
+categories: CI/CD
 ---
 
 最近在做有关DevOps Build的时候，学习了Jenkins的Pipeline的功能，不得不提到的就是Jenkinsfile这个文件。

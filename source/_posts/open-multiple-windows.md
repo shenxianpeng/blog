@@ -1,9 +1,8 @@
 ---
 title: Open multiple windows
 date: 2018-01-02 09:57:32
-tags: 
-- nightwatch
-- automation
+tags: nightwatch
+categories: automation
 ---
 
 如果想打开两个窗口并控制那个窗口怎么办？

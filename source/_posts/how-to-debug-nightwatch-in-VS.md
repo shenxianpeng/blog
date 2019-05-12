@@ -1,9 +1,8 @@
 ---
 title: How to debug nightwatch in VS
 date: 2018-02-01 14:40:05
-tags: 
-- nightwatch
-- automation
+tags: [nightwatch, automation]
+categories: automation
 ---
 
 除了通过增加

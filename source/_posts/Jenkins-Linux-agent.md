@@ -2,6 +2,7 @@
 title: Jenkins Linux agent configuration
 date: 2019-05-12 19:49:20
 tags: Jenkins
+categories: CI/CD
 ---
 
 # Prepare Java runtime

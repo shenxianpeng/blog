@@ -2,6 +2,7 @@
 title: Hello Git
 date: 2017-07-08 16:26:15
 tags: Git
+categories: tools
 ---
 
 Welcome to [git](https://git-scm.com) world! Here is sample demo post. Check [documentation](https://git-scm.com/docs) for more info.

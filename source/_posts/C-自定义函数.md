@@ -1,9 +1,8 @@
 ---
 title: C-自定义函数
 date: 2018-05-15 09:49:34
-tags: 
-- dev
-- C
+tags: C
+categories: snippets
 ---
 - 求次幂函数power
 ```c

@@ -1,7 +1,8 @@
 ---
 title: JST-automation
 date: 2017-07-13 10:07:02
-tags: automation
+tags: [Java, TestNG, Selenium]
+categories: automation
 ---
 
 

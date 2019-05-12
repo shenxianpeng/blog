@@ -1,10 +1,9 @@
 ---
-title: Automatically change 
+title: Automatically commit code by Jenkins
 date: 2019-05-12 21:21:55
-tags: 
-- Jenkins
+tags: [Jenkins, release]
+categories:
 - automation
-- release
 ---
 
 When we need to release a product, we should change copyright, build version, release month, release note...

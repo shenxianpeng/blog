@@ -2,6 +2,7 @@
 title: Git命令备忘
 date: 2018-02-26 20:46:44
 tags: Git
+categories: tools
 ---
 
 有些git命令总是记不住，在我这台Ubuntu使用web版OneNote不方便，那就把他们记到Blog里吧，需要的时候翻看一下。

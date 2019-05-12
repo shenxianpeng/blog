@@ -1,9 +1,8 @@
 ---
 title: Nightwatch handle cookies
 date: 2017-12-14 14:21:56
-tags: 
-- nightwatch
-- automation
+tags: nightwatch
+categories: automation
 ---
 
 

@@ -1,7 +1,8 @@
 ---
 title: 最受欢迎的Python自动化测试框架推荐
 date: 2018-09-26 22:46:27
-tags: automation
+tags: [python, framework]
+categories: automation
 ---
 
 随着技术的进步和自动化技术的出现，市面上出现了一些自动化测试框架。只需要进行一些适用性和效率参数的调整，这些自动化测试框架就能够开箱即用，大大节省了开发时间。

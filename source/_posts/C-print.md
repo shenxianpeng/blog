@@ -1,9 +1,8 @@
 ---
 title: C-print
 date: 2018-07-08 21:53:01
-tags: 
-- dev
-- C
+tags: C
+categories: snippets
 ---
 
 如何打印下面的字符？
