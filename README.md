@@ -27,4 +27,3 @@ $ hexo generate -deplogy                        #Generate then deploy
 or
 $ hexo g -d                                     #Simple write this
 ```
-
