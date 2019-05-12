@@ -1,7 +1,9 @@
 ---
 title: Ubuntu下安装Hexo
 date: 2017-12-25 23:34:50
-tags: ubuntu
+tags: 
+- ubuntu
+- hexo
 ---
 
 执行如下命令：

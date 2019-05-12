@@ -1,7 +1,9 @@
 ---
 title: Nightwatch持续集成问题
 date: 2018-01-15 22:53:53
-tags: nightwatch
+tags: 
+- nightwatch
+- automation
 ---
 
 在持续集成执行自动化测试用例时候会遇到那些问题呢？

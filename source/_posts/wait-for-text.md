@@ -1,7 +1,9 @@
 ---
 title: Wait For Text
 date: 2017-12-19 10:29:41
-tags: nightwatch
+tags: 
+- nightwatch
+- automation
 ---
 
 在使用Nightwatch做自动化测试的时候，会遇到这样一种情况：

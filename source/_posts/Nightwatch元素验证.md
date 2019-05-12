@@ -1,7 +1,9 @@
 ---
 title: Nightwatch元素判断
 date: 2017-12-14 17:34:18
-tags: nightwatch
+tags: 
+- nightwatch
+- automation
 ---
 
 ### Nightwatch元素常用验证方法

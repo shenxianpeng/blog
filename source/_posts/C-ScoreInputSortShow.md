@@ -1,7 +1,9 @@
 ---
 title: C - ScoreInputSortShow
 date: 2018-05-17 14:42:48
-tags: C
+tags: 
+- dev
+- C
 ---
 ```C
 #include "stdafx.h"
