@@ -4,7 +4,7 @@ title:
 
 #### About Me
 
-* QA Engineer transfor to Software Engineer
+* QA Engineer transfored to Software Engineer
 * Author of DevQA public account
 
 #### Contact Me
