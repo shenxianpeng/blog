@@ -2,7 +2,7 @@
 title: Code Coverage tools of C/C++
 date: 2019-05-21 11:19:13
 tags: [code coverage]
-categories: [DevOps, CI/CD]
+categories: DevOps
 ---
 
 Code Coverage is a measurement of how many lines, statements, or blocks of your code are tested using your suite of automated tests. It’s an essential metric to understand the quality of your QA efforts.

@@ -1,8 +1,8 @@
 ---
-title: squishcoco
+title: Code Coverage - Squishcoco
 date: 2019-05-21 15:53:55
 tags: [squishcoco, code coverage]
-categories: [DevOps, CI/CD]
+categories: DevOps
 ---
 
 # Preparation
@@ -34,7 +34,7 @@ At this stage the application is not yet instrumented, so now we will create a c
 Add test code
 
 squishcoco_sample.cpp
-```
+```c
 // squishcoco_sample.cpp : Defines the entry point for the console application.
 //
  
@@ -60,8 +60,9 @@ int _tmain(int argc, _TCHAR* argv[])
     return 0;
 }
 ```
+
 myprint.cpp
-```
+```c
 #include"stdafx.h"
  
 int myprint ()
