@@ -3,14 +3,15 @@ title:
 ---
 
 ### About Me
-* QA Engineer transfored to Software Engineer, focus on:
-    * Automated testing
-    * CI/CD automation
-    * Product Release
-    * Software Development 
-* Author of DevQA public account
+I am Xianpeng Shen from Dalian, China.
+I've been QA Engineer for the last nine years, now I am a Software Engineer, proficient in:
+* Automated Testing
+* CI/CD Automation
+* Product Release Process
+* Software Development 
 
-### Contact Me
-* Email: <a href="mailto:xianpeng.shen@qq.com">xianpeng.shen@qq.com</a>
+I am also author of DevQA public account, WeChat ID: DevQAOps.
+
+### Hire Me
 * LinkedIn: [Xianpeng Shen](https://www.linkedin.com/in/xianpeng-shen-2050ab95)
-* WeChat ID: DevQAOps
+* Email: <a href="mailto:xianpeng.shen@qq.com">xianpeng.shen@qq.com</a>
