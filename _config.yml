@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://shenxianpeng.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -81,6 +81,9 @@ feed:
   content:
   content_limit: 140
   content_limit_delim: ' '
+
+disqus_shortname: shenxianpeng
+comments: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
