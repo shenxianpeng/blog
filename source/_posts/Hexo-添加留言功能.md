@@ -10,16 +10,18 @@ tags: hexo
 ```
 https://YOURSHORTNAMEHERE.disqus.com/admin/settings/general
 ```
+
 2. 在你Hexo博客里打开_config.yml, 然后输入disqus_shortnameand: YOURSHORTNAMEHERE，像这样：
 ```
 disqus_shortname: myshortnamegoeshere
 comments: true
 ```
-也需要更改_config.yml文件如下，例如我的：
+    也需要更改_config.yml文件如下，例如我的：
 ```
 # 修改默认 url: http://yoursite.com 为：
 url: https://shenxianpeng.github.io
 ```
+
 3. 复制这段代码到blog\themes\landscape\layout\_partial\footer.ejs
 ```
 <% if (config.disqus_shortname){ %>
@@ -38,11 +40,11 @@ url: https://shenxianpeng.github.io
 </script>
 <% } %>
 ```
-也需要复制这些文件到footer.ejs到最底部：
+    也需要复制这些文件到footer.ejs到最底部：
 ```
 <div id="disqus_thread"></div>
 ```
-最后最footer.ejs文件是这样的：
+ 最后最footer.ejs文件是这样的：
 ```
 <% if (theme.sidebar === 'bottom'){ %>
   <%- partial('_partial/sidebar') %>
@@ -75,6 +77,7 @@ url: https://shenxianpeng.github.io
 
 <div id="disqus_thread"></div>
 ```
+
 4. 最后清理和构建
 ```
 $ hexo clean
@@ -82,7 +85,4 @@ $ hexo generate && hexo server
 ```
 
 现在你可以看到我的博客已经可以添加评论了 : )
-
-
-
 
