@@ -21,9 +21,7 @@ Start Visual Studio and create a new C++ application
 4. When the wizard’s second page appears, click the "Finish" button.
 
 At this stage the application is not yet instrumented, so now we will create a copy of the build.
-
-![](../images/configuration-manager.png)
-
+![configuration-manager](configuration-manager.png)
 1. Open the configuration manager by clicking "Build→Configuration Manager...".
 2. In the "Configuration" column, select "New..." in the combobox.
 3. In the "New Project Configuration" dialog:
@@ -73,7 +71,7 @@ int myprint ()
 ```
 # Activate instrumentation
 use the Microsoft® Visual Studio® Add-In:
-![](../images/squishcoco-add-in.png)
+![squishcoco-add-in](squishcoco-add-in.png)
 1. Click "Tools→Code Coverage Build Mode..." to pop up the Squish Coco wizard.
 2. In the "Project:" selection dialog, select squishcoco_sample.
 3. In the selection dialog "Configuration:", select Code Coverage.
@@ -116,9 +114,4 @@ Now execute squishcoco_sample.exe by double clicking it. This will result in a f
 This will cause the code coverage statistics to be updated. Now, in the source code window, the main function’s return statement will be colored green to indicate that this line has been executed.
 
 # Final result
-![](../images/squishcoco-result.png)
-
-
-
-
-
+![squishcoco-result](squishcoco-result.png)
