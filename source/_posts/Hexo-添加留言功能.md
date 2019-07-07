@@ -1,5 +1,5 @@
 ---
-title: Hexo 添加留言功能
+title: Hexo添加Disqus留言功能
 date: 2019-07-07 20:20:50
 tags: hexo
 ---
@@ -17,6 +17,7 @@ comments: true
 ```
 也需要更改_config.yml文件如下，例如我的：
 ```
+# 修改默认 url: http://yoursite.com 为：
 url: https://shenxianpeng.github.io
 ```
 3. 复制这段代码到blog\themes\landscape\layout\_partial\footer.ejs
@@ -37,8 +38,7 @@ url: https://shenxianpeng.github.io
 </script>
 <% } %>
 ```
-Also in footer.ejs, paste in the following markup where you want the comments to go.
-也需要复制这些文件到footer.ejs到最底部:
+也需要复制这些文件到footer.ejs到最底部：
 ```
 <div id="disqus_thread"></div>
 ```
