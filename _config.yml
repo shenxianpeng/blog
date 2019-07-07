@@ -82,6 +82,7 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
 
+# Disqus
 disqus_shortname: shenxianpeng
 comments: true
 
@@ -90,4 +91,10 @@ comments: true
 deploy:
   type: git
   repo: git@github.com:shenxianpeng/shenxianpeng.github.io.git
+
+# hexo-generator-search
+search:
+  path: search.xml
+  field: post
+  content: true
 
