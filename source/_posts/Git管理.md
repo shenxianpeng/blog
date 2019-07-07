@@ -5,7 +5,7 @@ tags: [Git, Shell]
 categories: Git
 ---
 
-# Git管理 - 查找是否有遗漏提交
+# 查找是否有遗漏提交
 
 从一个分支找到所有的commit和ticket号，然后去另外一个分支去查找这些提交是否也在这个分支里。
 
