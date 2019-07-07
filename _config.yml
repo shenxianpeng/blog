@@ -5,10 +5,10 @@
 # Site
 title: Hello World
 subtitle: 
-description:
-author: shenxianpeng
+description: I’ve been QA Engineer for the last nine years, now I am a Software Engineer.
+author: Xianpeng Shen
 language: zh-CN
-timezone:
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

@@ -5,8 +5,8 @@ title:
 ### About Me
 I am Xianpeng Shen from Dalian, China.
 I've been QA Engineer for the last nine years, now I am a Software Engineer, proficient in:
-* Automated Testing
 * CI/CD Automation
+* Automated Testing
 * Product Release Process
 * Software Development 
 
