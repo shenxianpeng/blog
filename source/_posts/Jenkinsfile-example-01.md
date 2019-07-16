@@ -79,7 +79,7 @@ pipeline {
         }
         stage('Build repo3 and repo4') {
             when {
-                if REPO=repo3 or REPO=repo4, execute build_repo34.sh
+                // if REPO=repo3 or REPO=repo4, execute build_repo34.sh
                 anyOf {
                     environment name: 'REPO', value: 'repo3'
                     environment name: 'REPO', value: 'repo4'
