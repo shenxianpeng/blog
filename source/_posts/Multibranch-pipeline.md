@@ -25,14 +25,20 @@ What are the benefits:
 
 1. One Jenkins job and one pipeline can manage multi branches.
 2. Do not need to compile platforms to verify, save huge time and machines.
-2. Stop looking for other people's mistakes, no one can break the build.
-3. Builds can be generated quickly for QA testing
+3. Stop looking for other people's mistakes, no one can break the build.
+4. Builds can be generated quickly for QA testing
 
 # Jenkinsfile example
 
-In case of reduce simple build time and let PR creater and reviewer know the builds status as soon as possbile, you may need to do something different here, like below, used BRANCH_NAME variable to check it is a pull request of merge action
+In case of reduce simple build time and let PR creater and reviewer know the builds status as soon as possbile, you may need to do something different here, like below, used when condition and branch variable to check it is a develop branch or pull request branch.
 ```
-if (env.BRANCH_NAME == '${DevBranch}') { }
+when {
+    branch 'PR-*'
+}
+
+when {
+    branch 'develop'
+}
 ```
 
 The entire code pipeline looks like this:
@@ -42,38 +48,37 @@ The entire code pipeline looks like this:
 
 pipeline {
     agent none
-
-    environment {
-        DevBranch="developer"
-    }
-
     stages {
         stage("All platform builds") {
             parallel {
                 stage("Windows build") {
                     agent {
-                        label 'windows-build'
+                        node {
+                            label 'windows-vm01'
+                            customWorkspace 'C:\\agent\\workspace\\blog'
+                        }
                     }
                     stages {
+                        stage("PR build") {
+                            when {
+                                branch 'PR-*'
+                            }
+                            steps {
+                                checkout scm
+                                dir('src\\build') {
+                                    bat label: '', script: 'build.bat PR'
+                                }
+                            }
+                        }
                         stage("Release build") {
-                            steps{
-                                script {
-                                    
-                                    // checkout source code
-                                    checkout scm
-
-                                    // if it's developer branch, will make a full build
-                                    if (env.BRANCH_NAME == '${DevBranch}') {
-                                        dir('src\\build') {
-                                            bat label: '', script: 'build.bat release'
-                                        }
-                                    } else {
-                                        // if not developer branch, will make a simple build
-                                        echo "Start making pull request build"
-                                        dir('src\\build') {
-                                            bat label: '', script: 'build.bat PR'
-                                        }
-                                    }
+                            when {
+                                branch 'develop'
+                            }
+                            steps {
+                                cleanWs()
+                                checkout scm
+                                dir('src\\build') {
+                                    bat label: '', script: 'build.bat release'
                                 }
                             }
                         }
@@ -82,16 +87,42 @@ pipeline {
                         }
                     }
                 }
-
                 stage("Linux build") {
-                    steps{
-                        echo "====same as windows example, can write the code here you need ===="
+                    agent {
+                        node {
+                            label 'linux-vm01'
+                            customWorkspace '/agent/workspace/blog'
+                        }
+                    }
+                    stages {
+                        stage("PR build") {
+                            when {
+                                branch 'PR-*'
+                            }
+                            steps {
+                                checkout scm
+                                dir('src/build') {
+                                    bat label: '', script: 'build.sh PR'
+                                }
+                            }
+                        }
+                        stage("Release build") {
+                            when {
+                                branch 'develop'
+                            }
+                            steps {
+                                cleanWs()
+                                checkout scm
+                                dir('src/build') {
+                                    bat label: '', script: 'build.sh release'
+                                }
+                            }
+                        }
                     }
                 }
-                
                 stage("AIX build"){
                     steps{
-                        echo "====same as windows example, can write the code here you need ===="
+                        echo "====same as windows/Linux example, can write the code here you need ===="
                     }
                 }
             }
