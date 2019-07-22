@@ -1,11 +1,9 @@
 ---
-title: git push by Jenkins
+title: 通过Jenkins来提交修改的代码(git push by Jenkins)
 date: 2019-07-22 21:54:42
 tags: [Jenkins, git]
 categories: DevOps
 ---
-
-# 通过Jenkins来提交修改的代码
 
 在持续集成中，你可能需要通过Jenkins来修改代码，并且将修改后的代码提交到Git仓库里。怎么做呢？最方便的做法还是Jenkins提供对应的插件，但是很遗憾我没找到合适的。另外我也觉得通过脚本的方式来实现会更加稳定，不用担心Jenkins以及插件升级带来潜在不好用的可能。
 
