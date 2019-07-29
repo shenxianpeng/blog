@@ -3,15 +3,18 @@ title:
 ---
 
 ### About Me
+
 I am Xianpeng Shen from Dalian, China.
 I've been QA Engineer for the last nine years, now I am a Software Engineer, proficient in:
+
 * CI/CD Automation
 * Automated Testing
 * Product Release Process
-* Software Development 
+* Software Development
 
-I am also author of DevQA public account, WeChat ID: DevQAOps.
+I am also author of DevOps-Engineer public account, WeChat ID: DevOps-Engineer
 
-### Hire Me
+### Contact Me
+
 * LinkedIn: [Xianpeng Shen](https://www.linkedin.com/in/xianpeng-shen-2050ab95)
-* Email: <a href="mailto:xianpeng.shen@qq.com">xianpeng.shen@qq.com</a>
+* Email: [xianpeng.shen@qq.com](mailto:xianpeng.shen@qq.com)
