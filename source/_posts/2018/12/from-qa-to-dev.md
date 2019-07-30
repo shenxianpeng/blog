@@ -2,8 +2,7 @@
 title: 从测试到开发的五个月
 date: 2018-12-26 22:57:20
 tags: 
-- qa
-- dev
+- Work
 categories: 
 - myself
 ---

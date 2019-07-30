@@ -1,7 +1,8 @@
 ---
 title: 'Error: Permission denied (publickey)'
 date: 2018-05-06 16:15:18
-tags: Git
+tags: 
+- Git
 categories: 
 - Git
 ---

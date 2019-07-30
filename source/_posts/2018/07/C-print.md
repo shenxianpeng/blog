@@ -6,7 +6,8 @@ categories: snippets
 ---
 
 如何打印下面的字符？
-```
+
+```c
 $
 ##
 $$$
@@ -15,17 +16,19 @@ $$$
 ##
 $
 ```
-示例1：
+
+示例 1：
+
 ```c
 int main()
 {
-	char array[] = {'#', '$'};
-	for (int row = 1; row <= 7; row++) {
-		for (int hashNum = 1; hashNum <= 4 - abs(4 - row); hashNum++)
-		{
-			printf("%c", array[row % 2]);
-		}
-		printf("\n");
-	}	
+    char array[] = {'#', '$'};
+    for (int row = 1; row <= 7; row++) {
+        for (int hashNum = 1; hashNum <= 4 - abs(4 - row); hashNum++)
+        {
+            printf("%c", array[row % 2]);
+        }
+        printf("\n");
+    }
 }
 ```

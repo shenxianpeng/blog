@@ -9,49 +9,49 @@ Welcome to [git](https://git-scm.com) world! Here is sample demo post. Check [do
 
 ## Quick Start
 
-#### Getting a Git Repository
+### Getting a Git Repository
 
-``` bash
-$ git clone https://github.com/shenxianpeng/shenxianpeng.github.io.git
+```bash
+git clone https://github.com/shenxianpeng/shenxianpeng.github.io.git
 ```
 
-#### Git Status
+### Git Status
 
-``` bash
-$ git-status - Show the working tree status
+```bash
+git-status - Show the working tree status
 ```
 
-#### Git Add
+### Git Add
 
-``` bash
-$ git-add - Add file contents to the index
+```bash
+git-add - Add file contents to the index
 ```
 
-#### Git Commit
+### Git Commit
 
-``` bash
-$ git-commit - Record changes to the repository
+```bash
+git-commit - Record changes to the repository
 ```
 
-#### Git Push
+### Git Push
 
-``` bash
-$ git-push - Update remote refs along with associated objects
+```bash
+git-push - Update remote refs along with associated objects
 ```
 
-#### Git Tag
+### Git Tag
 
-``` bash
-$ git tag -a v1.6.620 -m "Release v1.6.620"     - create tag
-$ git push origin --tags                        - push tag to remote repository
-$ git tag -d v1.0.1                             - delete tag
-$ git push origin :refs/tags/v1.0.1             - delete remote tag
-$ git tag                                       - view tag
+```bash
+git tag -a v1.6.620 -m "Release v1.6.620"     - create tag
+git push origin --tags                        - push tag to remote repository
+git tag -d v1.0.1                             - delete tag
+git push origin :refs/tags/v1.0.1             - delete remote tag
+git tag                                       - view tag
 ```
 
-#### Git Branch
+### Git Branch
 
-``` bash
-$ git branch deploy                             - create a branch named deploy
-$ git checkout deploy                           - switch to deploy branch
+```bash
+git branch deploy                             - create a branch named deploy
+git checkout deploy                           - switch to deploy branch
 ```

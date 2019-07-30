@@ -4,6 +4,8 @@ date: 2017-12-25 23:30:07
 tags: 
 - ubuntu
 - vscode
+categories: 
+- tools
 ---
 
 在 Ubuntu 下面安装 Visual Studio Code

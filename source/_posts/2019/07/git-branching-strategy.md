@@ -9,7 +9,8 @@ keywords:
 - Git
 - branch
 - strategy
-categories: Git
+categories: 
+- Git
 ---
 
 对于刚刚接触的 Git 的人来说，打开一个 Git 仓库，面对几十个分支时，有的人不理解，有的人云里雾里，为什么会创建这么多分支？今天通过介绍 Git 分支策略，让你看懂 Git 分支。

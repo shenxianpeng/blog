@@ -3,6 +3,7 @@ title: Nightwatch 元素判断
 date: 2017-12-14 17:34:18
 tags: 
 - nightwatch
+- automation
 categories: 
 - nightwatch
 ---

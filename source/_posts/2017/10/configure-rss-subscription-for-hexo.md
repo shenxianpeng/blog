@@ -1,7 +1,8 @@
 ---
 title: Hexo配置rss订阅功能
 date: 2017-10-25 17:52:55
-tags: hexo
+tags: 
+- hexo
 ategories: 
 - blog
 ---

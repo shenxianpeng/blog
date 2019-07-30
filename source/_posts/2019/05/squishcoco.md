@@ -3,7 +3,7 @@ title: Code Coverage - Squishcoco
 date: 2019-05-21 15:53:55
 tags: 
 - squishcoco
-- code coverage
+- coverage
 categories: 
 - coverage
 ---

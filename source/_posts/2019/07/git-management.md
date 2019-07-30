@@ -4,7 +4,8 @@ date: 2019-07-07 17:55:18
 tags:
 - Git
 - Shell
-categories: Git
+categories: 
+- Git
 ---
 
 ## 查找是否有遗漏提交

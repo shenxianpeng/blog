@@ -1,8 +1,10 @@
 ---
 title: DevOps 实践
 date: 2018-04-14 12:45:14
-tags: devops
-categories: DevOps
+tags: 
+- DevOps
+categories: 
+- DevOps
 ---
 
 我想大多数的团队都面临这样的问题：

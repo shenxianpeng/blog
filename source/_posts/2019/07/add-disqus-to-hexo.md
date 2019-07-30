@@ -2,8 +2,7 @@
 title: Hexo添加Disqus留言功能
 date: 2019-07-07 20:20:50
 tags: 
-- Hexo
-- Disqus
+- hexo
 categories: 
 - blog
 ---

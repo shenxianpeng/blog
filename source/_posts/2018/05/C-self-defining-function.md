@@ -4,26 +4,27 @@ date: 2018-05-15 09:49:34
 tags: C
 categories: snippets
 ---
-- 求次幂函数power
+求次幂函数power
+
 ```c
 #include <stdio.h>
 
-double power(double, int);  //形式参数
+double power(double, int);  // 形式参数
 
 int main()
 {
-	printf("%.2lf的%d次幂等于:%.2lf\n", 5.2, 2, power(5.2, 2));  //实际参数
-	return 0;
+    printf("%.2lf的%d次幂等于:%.2lf\n", 5.2, 2, power(5.2, 2));  //实际参数
+    return 0;
 }
 
-double power(double num1, int num2) //形式参数
+double power(double num1, int num2) // 形式参数
 {
-	double result = 1;
-	int i;
-	for (i = 0; i < num2; i++)
-	{
-		result *= num1; //累乘
-	}
-	return result;
+    double result = 1;
+    int i;
+    for (i = 0; i < num2; i++)
+    {
+        result *= num1; // 累乘
+    }
+    return result;
 }
 ```

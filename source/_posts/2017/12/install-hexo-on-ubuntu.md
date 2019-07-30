@@ -6,7 +6,7 @@ tags:
 - hexo
 - blog
 categories: 
-- Hexo
+- hexo
 ---
 
 执行如下命令：

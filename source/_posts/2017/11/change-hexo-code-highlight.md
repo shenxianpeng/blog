@@ -1,7 +1,10 @@
 ---
 title: change hexo code highlight
 date: 2017-11-20 09:56:28
-tags: hexo
+tags: 
+- hexo
+categories: 
+- hexo
 ---
 
 Hexo 默认主题代码高亮是黑色的，如果想换个风格？具体操作如下：

@@ -38,4 +38,4 @@ checkout([$class: 'GitSCM', branches: [[name: '*/feature/*']], doGenerateSubmodu
 If given, checkout the revision to build as HEAD on this branch.
 If selected, and its value is an empty string or "**", then the branch name is computed from the remote branch without the origin. In that case, a remote branch origin/master will be checked out to a local branch named master, and a remote branch origin/develop/new-feature will be checked out to a local branch named develop/newfeature.
 
-看介绍原来Jenkins自带这个设置，只是它不是默认选项，所以才遇到刚才那个问题。随后选择这个设置，然后填入"**"，然后生成Pipeline脚本，就跟上面的脚本一样了。
+看介绍原来 Jenkins 自带这个设置，只是它不是默认选项，所以才遇到刚才那个问题。随后选择这个设置，然后填入"**"，然后生成 Pipeline 脚本，就跟上面的脚本一样了。

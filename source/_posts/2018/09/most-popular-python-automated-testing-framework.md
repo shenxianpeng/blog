@@ -2,7 +2,7 @@
 title: 最受欢迎的 Python 自动化测试框架推荐
 date: 2018-09-26 22:46:27
 tags: 
-- python, 
+- python
 - framework
 - automation
 categories: 

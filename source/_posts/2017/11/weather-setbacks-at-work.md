@@ -1,7 +1,7 @@
 ---
 title: 度过工作中挫折心结
 date: 2017-11-23 12:00:00
-tags: setback
+tags: work
 categories: myself
 ---
 
