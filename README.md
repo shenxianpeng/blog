@@ -18,7 +18,7 @@ npm install -g hexo-cli                     # Install cmd command
 npm install hexo-deployer-git --save        # Install deploy
 ```
 
-## Quick Start
+## Hexo Commands
 
 ```bash
 hexo server                                 # Starts a local server. By default, this is at http://localhost:4000/
@@ -31,3 +31,11 @@ hexo deploy                                 # Deploys your website
 hexo generate -deplogy                      # Generate then deploy
 hexo g -d                                   # Simple write this
 ```
+
+## New article
+
+Articles are stored according to folder, with the hierarchy of year/month. For example, article folder like' 2019/08/jenkins-multi-branch-pipeline.md'.
+
+## Post to WeChat public account
+
+[convert to markdown](http://blog.didispace.com/tools/online-markdown/)
