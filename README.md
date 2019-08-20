@@ -2,7 +2,7 @@
 
 [![Build Status](https://www.travis-ci.org/shenxianpeng/blog.svg?branch=master)](https://www.travis-ci.org/shenxianpeng/blog)
 
-## This is my [blog](https://shenxianpeng.github.io/) code, use [hexo](https://hexo.io)
+## This is my [blog](https://shenxianpeng.github.io/) code, use [hexo](https://hexo.io).
 
 ## Git Repository
 
@@ -34,8 +34,8 @@ hexo g -d                                   # Simple write this
 
 ## New article
 
-Articles are stored according to folder, with the hierarchy of year/month. For example, article folder like' 2019/08/jenkins-multi-branch-pipeline.md'.
+Articles are stored according to folder, with the hierarchy of year/month. For example, article folder like '2019/08/jenkins-multi-branch-pipeline.md'.
 
 ## Post to WeChat public account
 
-[convert to markdown](http://blog.didispace.com/tools/online-markdown/)
+[Convert to markdown](http://blog.didispace.com/tools/online-markdown/)
