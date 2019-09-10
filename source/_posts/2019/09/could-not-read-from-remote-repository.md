@@ -41,7 +41,7 @@ cd %userprofile%/.ssh
 notepad id_rsa.pub
 ```
 
-最后，打开 https://github.com/settings/ssh/new 把你复制的内容贴进去保存即可。
+最后，打开 <https://github.com/settings/ssh/new> 把你复制的内容贴进去保存即可。
 
 ## 通过 SSH 连接测试排查
 
