@@ -42,7 +42,7 @@ sudo systemctl status artifactory.service
 
 ## 访问 Artifactory
 
-* artifactory 默认端口是8040，安装成功后访问：http://hostname:8040
+* artifactory 默认端口是8040，安装成功后访问：`http://hostname:8040`
 
 ## 更多
 
