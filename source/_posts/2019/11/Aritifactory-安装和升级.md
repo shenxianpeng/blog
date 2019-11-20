@@ -1,5 +1,5 @@
 ---
-title: Aritifactory 安装
+title: Aritifactory 安装和升级
 tags:
   - Aritifactory
 categories:
@@ -57,9 +57,6 @@ jfrog-artifactory-oss-6.14.0.rpm  jfrog-artifactory-oss-6.15.0.rpm
 sudo systemctl stop artifactory.service
 # 进行升级
 sudo rpm -U jfrog-artifactory-oss-6.15.0.rpm
-```
-
-```bash
 # 输出日志，显示升级成功
 warning: jfrog-artifactory-oss-6.15.0.rpm: Header V4 DSA/SHA1 Signature, key ID d7639232: NOKEY
 Checking if ARTIFACTORY_HOME exists
