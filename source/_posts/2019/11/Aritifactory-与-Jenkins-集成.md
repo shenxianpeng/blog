@@ -9,7 +9,7 @@ date: 2019-11-17 16:00:34
 author: shenxianpeng
 ---
 
-上一篇介绍了 [Aritifactory 的安装](https://shenxianpeng.github.io/2019/11/Aritifactory-%E5%AE%89%E8%A3%85/)，本篇介绍 Aritifactory 与 Jenkins 的集成。通过集成，可以让 Jenkins 在完成构建之后，可以直接将制品（比如build）直接发布到 Aritifactory，供测试下载，或是其他 Jenkins Jobs 去使用制品。
+上一篇介绍了 [Aritifactory 的安装和升级](https://shenxianpeng.github.io/2019/11/Aritifactory-%E5%AE%89%E8%A3%85%E5%92%8C%E5%8D%87%E7%BA%A7/)，本篇介绍 Aritifactory 与 Jenkins 的集成。通过集成，可以让 Jenkins 在完成构建之后，可以直接将制品（比如build）直接发布到 Aritifactory，供测试下载，或是其他 Jenkins Jobs 去使用制品。
 
 ## Jenkins 里配置 Aritifactory
 
