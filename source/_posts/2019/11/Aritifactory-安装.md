@@ -12,24 +12,23 @@ author: shenxianpeng
 
 如果您还不了解 Aritifactory，请参看 [中文官网](https://www.jfrogchina.com/) 以及 [English Website](https://jfrog.com/artifactory/)
 
-## 安装到 Linux
+## 安装 Aritifactory 到 Linux
+
+1. 从官网下载 Open Source [Artifactory](https://jfrog.com/open-source/#artifactory)，点击 Download RPM 下载
+2. 将下载好的 jfrog-artifactory-oss-6.14.0.rpm 上传到你的 Linux 上
 
 ```bash
-# 这里安装的是 artifactory open source https://jfrog.com/open-source/#artifactory
-
 # 在根目录创建一个文件，你也可以在任何目录创建文件夹
 sudo mkdir /artifactory
 cd /artifactory
-
-# 下载安装文件，这是我当前用的下载链接，如果失效请到这里找最新下载链接 https://jfrog.com/open-source/#artifactory
-wget https://akamai.bintray.com/d1/d1f325dfa559e719e3f4b7e70ad5b8c8ac34fcd83bb20e2a3eaebafadcc2bcb6?__gda__=exp=1572935113~hmac=4c3fa4def65ac39f279e2f9c66c669a1abaa991d08c5cd1c2bc8e1a4b52e39fb&response-content-disposition=attachment%3Bfilename%3D%22jfrog-artifactory-oss-6.14.0.rpm%22&response-content-type=application%2Foctet-stream&requestInfo=U2FsdGVkX1-fi3Llt13PyUudcmJCXrWwiucmtMEVB3bZjZWS1PsbNWow-t4u_1mgnvU8R2dKmLUN7gfhchB7MSRbUIkRL3eOdYg7IpSlg1rNah5FqvLt0qFI6vPeBgBLEzkeBGiLK7M02pK92QwhGCdfc5EM-62AaiMe839oJ_Q&response-X-Checksum-Sha1=0653ddf2de53894517ac5bd65b8596c95390075c&response-X-Checksum-Sha2=d1f325dfa559e719e3f4b7e70ad5b8c8ac34fcd83bb20e2a3eaebafadcc2bcb6
-# 将下载后的文件重命名为一个有意义的名字
-mv d1f325dfa559e719e3f4b7e70ad5b8c8ac34fcd83bb20e2a3eaebafadcc2bcb6\?__gda__\=exp\=1572935113~hmac\=4c3fa4def65ac39f279e2f9c66c669a1abaa991d08c5cd1c2bc8e1a4b52e39fb jfrog-artifactory-oss-6.14.0.rpm
+# 将下载好的 jfrog-artifactory-oss-6.15.0.rpm 上传到你的 Linux 上
+$ ls
+jfrog-artifactory-oss-6.14.0.rpm
 # 安装 artifactory
 sudo rpm -ivh jfrog-artifactory-oss-6.14.0.rpm
 ```
 
-## Artifactory 服务的启动和关闭
+## Artifactory 服务启动和关闭
 
 ```bash
 # 启动服务
@@ -44,7 +43,43 @@ sudo systemctl status artifactory.service
 
 * artifactory 默认端口是8040，安装成功后访问：`http://hostname:8040`
 
-## 更多
+## Artifactory 升级
+
+1. 从官网下载最新的 [Artifactory](https://jfrog.com/open-source/#artifactory)
+
+2. 将下载好的 jfrog-artifactory-oss-6.15.0.rpm（目前最新）上传到你的 Linux 上
+
+```bash
+cd /artifactory
+ls
+jfrog-artifactory-oss-6.14.0.rpm  jfrog-artifactory-oss-6.15.0.rpm
+# 停止服务
+sudo systemctl stop artifactory.service
+# 进行升级
+sudo rpm -U jfrog-artifactory-oss-6.15.0.rpm
+```
+
+```bash
+# 输出日志，显示升级成功
+warning: jfrog-artifactory-oss-6.15.0.rpm: Header V4 DSA/SHA1 Signature, key ID d7639232: NOKEY
+Checking if ARTIFACTORY_HOME exists
+Removing tomcat work directory
+Removing Artifactory's exploded WAR directory
+Initializing artifactory service with systemctl...
+
+************ SUCCESS ****************
+The upgrade of Artifactory has completed successfully.
+
+Start Artifactory with:
+> systemctl start artifactory.service
+
+Check Artifactory status with:
+> systemctl status artifactory.service
+
+NOTE: Updating the ownership of files and directories. This may take several minutes. Do not stop the installation/upgrade process.
+```
+
+## 更多资料
 
 * [JFrog 在线视频](https://www.jfrogchina.com/resources/upcoming-webinars/)
 * [与 Jenkins 流水线一起工作](https://www.jfrog.com/confluence/display/RTF/Working+With+Pipeline+Jobs+in+Jenkins)
