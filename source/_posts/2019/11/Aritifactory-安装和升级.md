@@ -1,18 +1,18 @@
 ---
-title: Aritifactory 安装和升级
+title: Artifactory 安装和升级
 tags:
-  - Aritifactory
+  - Artifactory
 categories:
-  - Aritifactory
+  - Artifactory
 date: 2019-11-10 17:52:58
 author: shenxianpeng
 ---
 
 ## 介绍
 
-如果您还不了解 Aritifactory，请参看 [中文官网](https://www.jfrogchina.com/) 以及 [English Website](https://jfrog.com/artifactory/)
+如果您还不了解 Artifactory，请参看 [中文官网](https://www.jfrogchina.com/) 以及 [English Website](https://jfrog.com/artifactory/)
 
-## 安装 Aritifactory 到 Linux
+## 安装 Artifactory 到 Linux
 
 1. 从官网下载 Open Source [Artifactory](https://jfrog.com/open-source/#artifactory)，点击 Download RPM 下载
 2. 将下载好的 jfrog-artifactory-oss-6.14.0.rpm 上传到你的 Linux 上
