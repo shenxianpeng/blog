@@ -1,17 +1,20 @@
 ---
-title: Aritifactory 与 Jenkins 集成
+title: Artifactory 与 Jenkins 集成
 tags:
-  - Aritifactory
+  - Artifactory
   - Jenkins
 categories:
-  - Aritifactory
+  - Artifactory
 date: 2019-11-17 16:00:34
 author: shenxianpeng
 ---
+上一篇 [初识 JFrog Artifactory](https://shenxianpeng.github.io/2019/11/Artifactory-install-and-upgrade/)，介绍了什么是 Artifactory，以及如何安装、启动和升级。
 
-上一篇介绍了 [Aritifactory 的安装和升级](https://shenxianpeng.github.io/2019/11/Aritifactory-%E5%AE%89%E8%A3%85%E5%92%8C%E5%8D%87%E7%BA%A7/)，本篇介绍 Aritifactory 与 Jenkins 的集成。通过集成，可以让 Jenkins 在完成构建之后，可以直接将制品（比如build）直接发布到 Aritifactory，供测试下载，或是其他 Jenkins Jobs 去使用制品。
+本篇介绍 Artifactory 与 Jenkins 的集成，因为没有与 CI 工具集成的 Artifactory 是没有灵魂的。
 
-## Jenkins 里配置 Aritifactory
+通过集成，可以让 Jenkins 在完成构建之后，可以直接将制品（比如 build）推送到 Artifactory，供测试下载、部署或是后续的 Jenkins 任务去继续进行持续集成。
+
+## Jenkins 里配置 Artifactory
 
 打开 Manage Jenkins->Configure System，找到 Artifactory，点击 Add Artifactory Server， 输入 Server ID 和 URL
 
@@ -19,11 +22,11 @@ author: shenxianpeng
 2. URL 是你的 Artifactory 服务器的地址，例如 `http://art.company.com:8040/artifactory`
 3. 配置完成后，点击Test Connection，返回 `Found Artifactory 6.14.0` 表示配置成功。
 
-如图所示: ![配置和测试](Artifactory-与-Jenkins-集成\jenkins-artifactory-integration.png)
+如图所示: ![配置和测试](Artifactory-integrate-with-Jenkins\jenkins-artifactory-integration.png)
 
 ## 使用 Pipeline 调用 Artifactory
 
-这里演示了两种方式，我在项目中用的是 Jenkins Shared Library；当然你也可以仅仅使用 Jenkinsfile，把两个 groovy 文件组合一下即可。
+这里演示了两种方式，我在项目中用的是 Jenkins Shared Library；当然你也可以仅仅使用 Jenkinsfile，把如下两个 groovy 文件组合成一个 Jenkinsfile。
 
 ### 方式1：Jenkins Shared Library
 
@@ -140,10 +143,10 @@ pipeline {
 
 蓝色表示构建成功，绿色圆圈表示 Build 已经 Post 到 Artifactory 上了。
 
-![显示构建以及 Post 成功](Artifactory-与-Jenkins-集成\post-to-artifactory.png)
+![显示构建以及 Post 成功](Artifactory-integrate-with-Jenkins\post-to-artifactory.png)
 
 点击绿色圆圈可以跳转到 Artifactory 看到制品。
 
-![Artifactory](Artifactory-与-Jenkins-集成\artifactory-builds.png)
+![Artifactory](Artifactory-integrate-with-Jenkins\artifactory-builds.png)
 
 Jenkins 与 Artifactory 打通了，大功告成 :)

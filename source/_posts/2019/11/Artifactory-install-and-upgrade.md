@@ -1,5 +1,5 @@
 ---
-title: Artifactory 安装和升级
+title: 初识 JFrog Artifactory
 tags:
   - Artifactory
 categories:
@@ -8,14 +8,20 @@ date: 2019-11-10 17:52:58
 author: shenxianpeng
 ---
 
-## 介绍
+## 什么是 Artifactory
 
-如果您还不了解 Artifactory，请参看 [中文官网](https://www.jfrogchina.com/) 以及 [English Website](https://jfrog.com/artifactory/)
+Artifactory 是 JFrog 的一个产品，用作二进制存储库管理器。二进制存储库可以将所有这些二进制统一托管，从而使团队的管理更加高效和简单。
 
-## 安装 Artifactory 到 Linux
+就跟你用 Git 一样，Git 是用来管理代码的，Artifactory 是用来管理二进制文件的，通常是指 jar, war, pypi, DLL, EXE 等 build 文件。
 
-1. 从官网下载 Open Source [Artifactory](https://jfrog.com/open-source/#artifactory)，点击 Download RPM 下载
-2. 将下载好的 jfrog-artifactory-oss-6.14.0.rpm 上传到你的 Linux 上
+我觉得使用 Artifactory 的最大优势是创造了更好的持续集成环境，有助于其他持续集成任务去 Artifactory 里调用，再部署到不同的测试或开发环境，这对于实施 DevOps 至关重要。
+
+如果想了解更多有关 Artifactory，请参看 [中文官网](https://www.jfrogchina.com/) 以及 [English Website](https://jfrog.com/artifactory/)。
+
+## 安装 Artifactory
+
+1. 从官网下载 Open Source [Artifactory](https://jfrog.com/open-source/#artifactory)，这里演示的是安装到 Linux，所以点击 Download RPM 下载
+2. 将下载好的 jfrog-artifactory-oss-6.14.0.rpm 上传到 Linux 上
 
 ```bash
 # 在根目录创建一个文件，你也可以在任何目录创建文件夹
@@ -41,7 +47,8 @@ sudo systemctl status artifactory.service
 
 ## 访问 Artifactory
 
-* artifactory 默认端口是8040，安装成功后访问：`http://hostname:8040`
+Artifactory 默认端口是8040，安装成功后访问：`http://hostname:8040` 即可登录（默认用户名 admin 密码 password）
+![Artifactory 首页](Artifactory-install-and-upgrade\homepage.png)
 
 ## Artifactory 升级
 
@@ -75,8 +82,3 @@ Check Artifactory status with:
 
 NOTE: Updating the ownership of files and directories. This may take several minutes. Do not stop the installation/upgrade process.
 ```
-
-## 更多资料
-
-* [JFrog 在线视频](https://www.jfrogchina.com/resources/upcoming-webinars/)
-* [与 Jenkins 流水线一起工作](https://www.jfrog.com/confluence/display/RTF/Working+With+Pipeline+Jobs+in+Jenkins)
