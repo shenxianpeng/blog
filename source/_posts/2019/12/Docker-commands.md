@@ -2,6 +2,7 @@
 title: Docker 常用命令
 tags:
   - Docker
+  - DevOps
 categories:
   - Docker
 date: 2019-12-02 14:30:41
@@ -63,3 +64,8 @@ af288f00b8a7: Pushed
 f121afdbbd5d: Pushed
 15.10: digest: sha256:a3f5e428c0cfbfd55cffb32d30b1d78fedb8a9faaf08efdd9c5208c94dc66614 size: 1150
 ```
+
+## 其他
+
+之后会更新更多的常用的 Docker 命令到这篇文章。
+
