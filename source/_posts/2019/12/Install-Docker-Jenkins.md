@@ -25,19 +25,18 @@ sudo docker pull jenkins/jenkins:lts
 # 运行最新的 lts 版 docker Jenkins
 sudo docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
 ```
+
 启动成功后即可打开 http://hostname:8080/ 网址
 
 ## 修改登录密码
 
 显示所有的 image 以及正在运行的 container
+
 ```bash
 # 列出来所有 image
 sudo docker image list
 # 列出当前运行的 container
 sudo docker ps
-```
-进入容器
-```bash
 # 进入容器，使用 -it 参数
 sudo docker exec -it 39bc7a8307d9 /bin/bash
 # 查看默认 admin 密码
@@ -79,14 +78,14 @@ docker login
 "insecure-registries" : ["dln.dev.mycompany.com:8040"]
 }
 # docker login <DOCKER_SERVER>, example below:
-$ sudo docker login dln.dev.mycompany.com:8040
+sudo docker login dln.dev.mycompany.com:8040
 ```
 
 docker tag
 
 ```bash
 # docker tag <IMAGE_ID> artprod.mycompany/<DOCKER_REPOSITORY>:<DOCKER_TAG>, example below:
-$ sudo docker tag myjenkins:v0.1 dln.dev.mycompany.com:8040/docker-local/myjenkins:v0.1
+sudo docker tag myjenkins:v0.1 dln.dev.mycompany.com:8040/docker-local/myjenkins:v0.1
 ```
 
 docker push
@@ -104,4 +103,4 @@ f121afdbbd5d: Pushed
 
 登录 JFrog Container Registry 刷新就可以到已经上次的 Image 了。说明：截图是我上传的另外一个镜像 ubuntu:15.10
 
-![举例](Install-Docker-Jenkins\example-image.png)
+![举例](Install-Docker-Jenkins/example-image.png)
