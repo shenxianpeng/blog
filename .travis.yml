@@ -15,7 +15,6 @@ before_script:
   - npm install -g hexo-cli
   - npm install hexo-deployer-git --save
 
-
 script: 
-  - cd blog && hexo server
+  - hexo server
   - curl http://localhost:4000/
