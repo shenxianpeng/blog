@@ -1,5 +1,6 @@
-# Blog 
-[![Build Status](https://www.travis-ci.org/shenxianpeng/blog.svg?branch=master)](https://www.travis-ci.org/shenxianpeng/blog) https://img.shields.io/github/commit-activity/m/shenxianpeng/blog https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F
+# Blog
+
+[![Build Status](https://www.travis-ci.org/shenxianpeng/blog.svg?branch=master)](https://www.travis-ci.org/shenxianpeng/blog) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/shenxianpeng/blog) ![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
 
 ## This is my [blog](https://shenxianpeng.github.io/) code used [hexo](https://hexo.io)
 
