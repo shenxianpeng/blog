@@ -30,34 +30,34 @@ keywords:
 
 1. 设置 Lockable Resources
     * Jenkins -> configuration -> Lockable Resources Manager -> Add Lockable Resource
-    ![我设置了两个 Resources ](jenkins-lock-resource\config-lock-resource.png)
+    ![我设置了两个 Resources ](jenkins-lock-resource/config-lock-resource.png)
     这里的 Labels 是你的 node 的 Label，在 Jenkins -> Nodes 设置
 
 2. 查看 Lockable Resources 资源池
 
-    ![显示我有两个资源可用 ](jenkins-lock-resource\lock-resource-pool.png)
+    ![显示我有两个资源可用 ](jenkins-lock-resource/lock-resource-pool.png)
 
 3. 测试锁资源
     * 这里我配置的是参数化类型的 Job，可以选择不同平台，不同仓库进行构建
-    ![ Build With Parameters ](jenkins-lock-resource\build-with-parameters.png) build-with-parameters
+    ![ Build With Parameters ](jenkins-lock-resource/build-with-parameters.png) build-with-parameters
     * 运行第一个 Job
-    ![ 第一个 Job 已经运行 ](jenkins-lock-resource\build-with-parameters-1.png)
+    ![ 第一个 Job 已经运行 ](jenkins-lock-resource/build-with-parameters-1.png)
     * 查看当前可用资源数量 Free resources = 1，看到已经被 #47 这个 Job 所使用
-    ![当前可用资源数为1](jenkins-lock-resource\lock-resource-pool-1.png)
+    ![当前可用资源数为1](jenkins-lock-resource/lock-resource-pool-1.png)
     * 继续运行第二个 Job
-    ![ 第二个 Job 已经运行 ](jenkins-lock-resource\build-with-parameters-2.png)
+    ![ 第二个 Job 已经运行 ](jenkins-lock-resource/build-with-parameters-2.png)
     * 查看当前可用资源数量 Free resources = 0，看到已经被 #48 这个 Job 所使用
-    ![当前可用资源数为0](jenkins-lock-resource\lock-resource-pool-2.png)
+    ![当前可用资源数为0](jenkins-lock-resource/lock-resource-pool-2.png)
     * 最关键是这一步，如果继续运行第三个 Job，是否能够被继续行呢
-    ![ 第三个 Job 已经运行 ](jenkins-lock-resource\build-with-parameters-3.png)
+    ![ 第三个 Job 已经运行 ](jenkins-lock-resource/build-with-parameters-3.png)
     * 可以看到这个任务没有开始执行，看下 log 是否真的没有被执行。通过日志发现，当前正在等待可用的资源
-    ![ 第三个 Job log ](jenkins-lock-resource\build-with-parameters-3-log.png)
+    ![ 第三个 Job log ](jenkins-lock-resource/build-with-parameters-3-log.png)
 
 4. 测试释放锁
     * 现在释放一个资源，看下第三个 Job 是否能拿到资源，并且执行
-    ![ 释放 Job 1 锁 ](jenkins-lock-resource\unlock-job-1.png)
+    ![ 释放 Job 1 锁 ](jenkins-lock-resource/unlock-job-1.png)
     * 从下图可以看到 第三个 Job 已经运行成功了
-    ![ 第三个 Job 运行 ](jenkins-lock-resource\unlock-job-1-after.png)
+    ![ 第三个 Job 运行 ](jenkins-lock-resource/unlock-job-1-after.png)
 
 ## Jenkins pipeline 代码
 

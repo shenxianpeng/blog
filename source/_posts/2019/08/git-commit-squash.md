@@ -17,7 +17,7 @@ Here is [short video](https://www.youtube.com/watch?v=V5KrD7CmO4o) (only 3 minut
 
 list your local repository log
 
-![list your logs in oneline](git-commit-squash\example-01.png)
+![list your logs in oneline](git-commit-squash/example-01.png)
 
 If you want to combine these 3 commits (add6152, 3650100, 396a652) to 1 commit, execute this command
 
@@ -25,23 +25,23 @@ If you want to combine these 3 commits (add6152, 3650100, 396a652) to 1 commit, 
 git rebase -i HEAD~3      # last three commits
 ```
 
-![list last three commits](git-commit-squash\example-02.png)
+![list last three commits](git-commit-squash/example-02.png)
 
 Select which commit you want to squash (type s or squash are OK)
 
-![combine three commits to one](git-commit-squash\example-03.png)
+![combine three commits to one](git-commit-squash/example-03.png)
 
 then press ESC, enter :wq! to save and exit.
 
-![comment out some commits message you don't need](git-commit-squash\example-04.png)
+![comment out some commits message you don't need](git-commit-squash/example-04.png)
 
 Comment out some commits message you don't need, press ESC, enter :wq! to save and exit.
 
-![comment out some commits message you don't need](git-commit-squash\example-05.png)
+![comment out some commits message you don't need](git-commit-squash/example-05.png)
 
 Check log, you will see your local repository logs has combine to one commit
 
-![comment out some commits message you don't need](git-commit-squash\example-06.png)
+![comment out some commits message you don't need](git-commit-squash/example-06.png)
 
 ## If your commits had pushed to remote
 
@@ -49,7 +49,7 @@ Check log, you will see your local repository logs has combine to one commit
 
 list your repository logs
 
-![list your logs in oneline](git-commit-squash\example-07.png)
+![list your logs in oneline](git-commit-squash/example-07.png)
 
 ```bash
 # so you can create another branch from bugfix/UNV-1234 named bugfix/UNV-1234-for-squash
@@ -63,13 +63,13 @@ $ git rebase -i HEAD~2
 
 change one commit from pick to squash, see the screenshot below. press ESC, enter :wq! to save and exit.
 
-![select a commit you want to squash](git-commit-squash\example-08.png)
+![select a commit you want to squash](git-commit-squash/example-08.png)
 
 change commit message, for example "UNV-1234 combine all commit to one commit", then press ESC, enter :wq! to save and exit.
 
-![comment out commit message you don't want to display](git-commit-squash\example-09.png)
+![comment out commit message you don't want to display](git-commit-squash/example-09.png)
 
 ```bash
 # push your new create branch to remote.
-$ git push -u origin bugfix/UNV-1234-for-squash
+git push -u origin bugfix/UNV-1234-for-squash
 ```
