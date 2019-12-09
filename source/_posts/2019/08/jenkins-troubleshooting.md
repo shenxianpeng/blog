@@ -25,7 +25,7 @@ keywords:
 
 最终我找到 Git clone 有个 Behaviors 属性，找到里面的 Advanced clone behaviours 功能，将 Fetch tags 去掉（因为我暂时不用，去掉也可能减少那么一丁点的时间吧），勾选了 Shallow clone，然后将 Shallow clone depth 设置为 1，（这个设置等同于 --depth 1），Timeout 时间从 10 分钟改为 15 分钟。最终的设置如图：
 
-![Advanced clone behaviours](jenkins-troubleshooting\advanced-clone-behaviour.png)
+![Advanced clone behaviours](jenkins-troubleshooting/advanced-clone-behaviour.png)
 
 ## Full Log below
 

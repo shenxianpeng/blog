@@ -13,4 +13,4 @@ author: shenxianpeng
 
 这里用的插件是 Role-based Authorization Strategy。安装成功后，打开要设置的 Job, 设置如下：
 
-![Enable project-based security](Jenkins-privilege-management\jenkins-privilege-management.png)
+![Enable project-based security](Jenkins-privilege-management/jenkins-privilege-management.png)

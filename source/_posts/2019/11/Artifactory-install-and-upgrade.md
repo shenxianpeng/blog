@@ -48,7 +48,7 @@ sudo systemctl status artifactory.service
 ## 访问 Artifactory
 
 Artifactory 默认端口是8040，安装成功后访问：`http://hostname:8040` 即可登录（默认用户名 admin 密码 password）
-![Artifactory 首页](Artifactory-install-and-upgrade\homepage.png)
+![Artifactory 首页](Artifactory-install-and-upgrade/homepage.png)
 
 ## Artifactory 升级
 

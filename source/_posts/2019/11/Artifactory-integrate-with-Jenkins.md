@@ -22,7 +22,7 @@ author: shenxianpeng
 2. URL 是你的 Artifactory 服务器的地址，例如 `http://art.company.com:8040/artifactory`
 3. 配置完成后，点击Test Connection，返回 `Found Artifactory 6.14.0` 表示配置成功。
 
-如图所示: ![配置和测试](Artifactory-integrate-with-Jenkins\jenkins-artifactory-integration.png)
+如图所示: ![配置和测试](Artifactory-integrate-with-Jenkins/jenkins-artifactory-integration.png)
 
 ## 使用 Pipeline 调用 Artifactory
 
@@ -143,10 +143,10 @@ pipeline {
 
 蓝色表示构建成功，绿色圆圈表示 Build 已经 Post 到 Artifactory 上了。
 
-![显示构建以及 Post 成功](Artifactory-integrate-with-Jenkins\post-to-artifactory.png)
+![显示构建以及 Post 成功](Artifactory-integrate-with-Jenkins/post-to-artifactory.png)
 
 点击绿色圆圈可以跳转到 Artifactory 看到制品。
 
-![Artifactory](Artifactory-integrate-with-Jenkins\artifactory-builds.png)
+![Artifactory](Artifactory-integrate-with-Jenkins/artifactory-builds.png)
 
 Jenkins 与 Artifactory 打通了，大功告成 :)
