@@ -2,10 +2,10 @@
 title: Nightwatch handle cookies
 date: 2017-12-14 14:21:56
 tags: 
-- nightwatch
-- javascript
+- Nightwatch
+- Javascript
 categories: 
-- nightwatch
+- Automation
 ---
 
 #### Test Case: 验证登录 cookies 和清除 access_token

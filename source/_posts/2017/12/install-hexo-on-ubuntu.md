@@ -2,11 +2,11 @@
 title: Ubuntu 上安装 Hexo
 date: 2017-12-25 23:34:50
 tags: 
-- ubuntu 
-- hexo
-- blog
+- Ubuntu 
+- Hexo
+- Blog
 categories: 
-- hexo
+- Hexo
 ---
 
 执行如下命令：

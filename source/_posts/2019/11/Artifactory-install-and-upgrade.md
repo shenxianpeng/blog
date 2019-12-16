@@ -3,7 +3,7 @@ title: 初识 JFrog Artifactory
 tags:
   - Artifactory
 categories:
-  - Artifactory
+  - JFrog
 date: 2019-11-10 17:52:58
 author: shenxianpeng
 ---

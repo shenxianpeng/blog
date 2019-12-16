@@ -2,7 +2,7 @@
 title: C - Score Input Sort Show
 date: 2018-05-17 14:42:48
 tags: C
-categories: snippets
+categories: C-Language
 ---
 ```C
 #include "stdafx.h"

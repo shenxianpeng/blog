@@ -1,10 +1,10 @@
 ---
-title: 通过Jenkins来提交修改的代码 git push by Jenkins
+title: 通过 Jenkins 来提交修改的代码 git push by Jenkins
 date: 2019-07-22 21:54:42
 tags: 
 - Jenkins
-- git
-- pipeline
+- Git
+- Pipeline
 categories: 
 - Jenkins
 ---

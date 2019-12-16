@@ -4,7 +4,7 @@ date: 2018-05-06 16:35:34
 tags: 
 - Work
 categories: 
-- myself
+- Thought
 ---
 
 满足什么样的技术和经验才算高级工程师呢？说说我心中的高级工程师。

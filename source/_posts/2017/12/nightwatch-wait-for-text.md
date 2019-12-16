@@ -1,10 +1,11 @@
 ---
-title: nightwatch wait For Text
+title: Nightwatch wait For Text
 date: 2017-12-19 10:29:41
 tags: 
-- nightwatch
+- Nightwatch
+- Automation
 categories: 
-- nightwatch
+- Automation
 ---
 
 在使用 Nightwatch 做自动化测试的时候，会遇到这样一种情况：

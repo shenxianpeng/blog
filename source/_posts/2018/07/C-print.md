@@ -2,7 +2,7 @@
 title: C-print
 date: 2018-07-08 21:53:01
 tags: C
-categories: snippets
+categories: Snippets
 ---
 
 如何打印下面的字符？

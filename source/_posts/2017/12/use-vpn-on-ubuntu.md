@@ -2,10 +2,10 @@
 title: Ubuntu 上使用 VPN
 date: 2017-12-26 21:30:34
 tags: 
-- ubuntu
+- Ubuntu
 - VPN
 categories: 
-- tools
+- Ubuntu
 ---
 
 如何在 Ubuntu 上连接 Cisco AnyConnect VPN

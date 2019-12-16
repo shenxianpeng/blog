@@ -1,5 +1,5 @@
 ---
-title: "在大型企业里维护多分支流水线"
+title: 在大型企业里维护多分支流水线
 description: "如果没有适当的解决方案，在大型企业可能难以创建和维护多分支流水线。"
 author: Aytunc BEKEN
 translator: shenxianpeng

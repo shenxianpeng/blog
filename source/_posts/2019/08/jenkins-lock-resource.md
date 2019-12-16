@@ -1,5 +1,5 @@
 ---
-title: "如何通过 Jenkins 进行资源的锁定和释放"
+title: 如何通过 Jenkins 进行资源的锁定和释放
 author: shenxianpeng
 date: 2019-08-10
 tags:

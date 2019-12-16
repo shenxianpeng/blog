@@ -2,10 +2,10 @@
 title: Ubuntu 上安装 VS Code
 date: 2017-12-25 23:30:07
 tags: 
-- ubuntu
+- Ubuntu
 - vscode
 categories: 
-- tools
+- Ubuntu
 ---
 
 在 Ubuntu 下面安装 Visual Studio Code

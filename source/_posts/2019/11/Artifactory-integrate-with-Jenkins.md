@@ -4,7 +4,7 @@ tags:
   - Artifactory
   - Jenkins
 categories:
-  - Artifactory
+  - Jenkins
 date: 2019-11-17 16:00:34
 author: shenxianpeng
 ---

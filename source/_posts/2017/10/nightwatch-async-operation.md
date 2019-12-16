@@ -2,9 +2,10 @@
 title: Nightwatch 异步操作
 date: 2017-10-21 21:26:43
 tags: 
-- nightwatch
+- Nightwatch
+- Automation
 categories: 
-- nightwatch
+- Automation
 ---
 
 在自动化测试中常常需要通过一个 command（或 function ）中返回的值来进行下一步的操作，JavaScript 与 JAVA 在调用返回值时有所不同，JS 中需要特定的写法来进行这种异步操作。

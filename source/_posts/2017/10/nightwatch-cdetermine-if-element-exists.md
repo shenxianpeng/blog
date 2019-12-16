@@ -2,9 +2,10 @@
 title: Nightwatch 判断元素是否存在
 date: 2017-10-26 17:09:06
 tags: 
-- nightwatch
+- Nightwatch
+- Automation
 categories: 
-- nightwatch
+- Automation
 ---
 
 用 Nightwatch 去判断一个 element 是否存在，如果存在执行如下操作，如果不存在做另外的操作。
