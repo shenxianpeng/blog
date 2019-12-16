@@ -1,6 +1,9 @@
 # Blog
 
-[![Build Status](https://www.travis-ci.org/shenxianpeng/blog.svg?branch=master)](https://www.travis-ci.org/shenxianpeng/blog) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/shenxianpeng/blog) ![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
+[![Build Status](https://www.travis-ci.org/shenxianpeng/blog.svg?branch=master)](https://www.travis-ci.org/shenxianpeng/blog)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=shenxianpeng_blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=shenxianpeng_blog)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/shenxianpeng/blog)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
 
 ## This is my [blog](https://shenxianpeng.github.io/) code used [hexo](https://hexo.io)
 

@@ -1,6 +1,13 @@
 language: node_js
 
-sudo: false
+dist: trusty
+sudo: required
+
+addons:
+  sonarcloud:
+    organization: "shenxianpeng"
+    token:
+      secure: a38d39b377d89ea83ac464713dcb915bd33ade0a # encrypted value of your token
 
 cache:
   apt: true
@@ -9,6 +16,10 @@ cache:
 
 node_js:
   - "8"
+  
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - sonar-scanner -Dproject.settings=sonar-project.properties
 
 before_script:
   - npm install
