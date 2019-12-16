@@ -6,7 +6,7 @@ tags:
 - TestNG
 - Selenium
 categories: 
-- automation
+- Automation
 ---
 
 ### This automation frameworks was design by Java+Selenium+TestNG, so called it JST-automation

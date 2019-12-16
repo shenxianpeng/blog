@@ -3,7 +3,7 @@ title: Jenkinsfile example 1
 date: 2019-07-07 18:45:53
 tags: 
 - Jenkins
-- pipeline
+- Pipeline
 categories: 
 - Jenkins
 ---

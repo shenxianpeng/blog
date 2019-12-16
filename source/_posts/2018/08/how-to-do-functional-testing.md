@@ -5,7 +5,7 @@ tags:
 - Test
 - Work
 categories: 
-- Test 
+- Function-Test 
 ---
 
 当你第一次开始接触测试这个行业的时候，首先听说的应该都是功能测试。

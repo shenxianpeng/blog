@@ -7,8 +7,8 @@ tags:
 - branch
 keywords:
 - Git
-- branch
-- strategy
+- Branch
+- Strategy
 categories: 
 - Git
 ---

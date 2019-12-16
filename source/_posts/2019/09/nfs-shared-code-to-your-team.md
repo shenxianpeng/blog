@@ -5,7 +5,7 @@ tags:
   - Linux
   - Jenkins
 categories:
-  - Linux
+  - Shell
 date: 2019-09-10 22:38:47
 author: shenxianpeng
 ---

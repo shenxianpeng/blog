@@ -2,9 +2,10 @@
 title: 如何获取接口返回数据
 date: 2017-10-22 22:38:50
 tags: 
-- nightwatch
+- Nightwatch
+- Automation
 categories: 
-- nightwatch
+- Automation
 ---
 
 如何在 JavaScript 通过接口自动生成和返回接口数据呢？

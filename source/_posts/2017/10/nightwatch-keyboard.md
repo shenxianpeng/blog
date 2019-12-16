@@ -2,10 +2,10 @@
 title: Nightwatch 中如何模拟键盘操作
 date: 2017-10-19 16:56:20
 tags: 
-- nightwatch
-- javascript
+- Nightwatch
+- Automation
 categories: 
-- nightwatch
+- Automation
 ---
 
 在自动化测试中有这样一个场景，在一个输入框中输入一串字符，然后执行敲回车键，验证搜索结果，以 Google 搜索为例，代码如下：

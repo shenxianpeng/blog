@@ -6,7 +6,7 @@ tags:
 - release
 - pipeline
 categories:
-- automation
+- Jenkins
 ---
 
 When we need to release a product, we should change copyright, build version, release month, release note...

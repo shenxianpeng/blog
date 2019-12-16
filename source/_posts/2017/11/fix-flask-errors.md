@@ -2,10 +2,10 @@
 title: Fix flask errors
 date: 2017-11-14 13:34:46
 tags: 
-- flask
-- python
+- Flask
+- Python
 categories: 
-- python
+- Python
 ---
 
 #### TypeError: object of type 'filter' has no len()

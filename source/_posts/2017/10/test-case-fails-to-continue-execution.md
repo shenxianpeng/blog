@@ -2,9 +2,10 @@
 title: 测试用例失败继续执行
 date: 2017-10-27 17:04:49
 tags: 
-- nightwatch
+- Nightwatch
+- Automation
 categories: 
-- nightwatch
+- Automation
 ---
 
 自动化测试中，有一个验证点，当测试通过时，后面的测试脚本继续执行；

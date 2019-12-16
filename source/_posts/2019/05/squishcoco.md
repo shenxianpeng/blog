@@ -2,10 +2,10 @@
 title: Code Coverage - Squishcoco
 date: 2019-05-21 15:53:55
 tags: 
-- squishcoco
-- coverage
+- Squishcoco
+- CodeCoverage
 categories: 
-- coverage
+- CodeCoverage
 ---
 
 ## Preparation

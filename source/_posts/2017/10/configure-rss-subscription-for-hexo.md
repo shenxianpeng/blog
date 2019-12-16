@@ -1,10 +1,11 @@
 ---
-title: Hexo配置rss订阅功能
+title: Hexo 配置 rss 订阅功能
 date: 2017-10-25 17:52:55
 tags: 
-- hexo
+- Hexo
+- Blog
 ategories: 
-- blog
+- Hexo
 ---
 
 安装 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 插件
