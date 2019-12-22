@@ -1,9 +1,8 @@
 ---
-title: How to debug nightwatch in VS
+title: Nightwatch 用 VS code 进行调试 
 date: 2018-02-01 14:40:05
 tags:
 - Nightwatch
-- Automation
 - Javascript
 categories: 
 - Automation
