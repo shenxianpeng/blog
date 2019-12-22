@@ -1,11 +1,12 @@
 ---
-title: Open multiple windows
+title: Nightwatch 打开多个窗口
 date: 2018-01-02 09:57:32
 tags: 
 - Nightwatch
 - Automation
 categories: 
 - Automation
+author: shenxianpeng
 ---
 
 如果想打开两个窗口并控制那个窗口怎么办？

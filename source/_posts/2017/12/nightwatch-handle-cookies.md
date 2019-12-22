@@ -1,16 +1,21 @@
 ---
-title: Nightwatch handle cookies
+title: Nightwatch 得到和验证 cookies
 date: 2017-12-14 14:21:56
 tags: 
 - Nightwatch
 - Javascript
 categories: 
 - Automation
+author: shenxianpeng
 ---
 
-#### Test Case: 验证登录 cookies 和清除 access_token
+## 测试用例
 
-Login system, don't chosse Remember Me, verify Cookies
+验证登录 cookies 和清除 access_token。测试用例设计如下
+
+## 测试用例设计
+
+登录系统时，不选择记住我按钮，验证 cookies
 
 ```javascript
 client.getCookies(function cb(result) {
@@ -21,7 +26,7 @@ client.getCookies(function cb(result) {
 });
 ```
 
-Login system, choose Remember Me，verify Cookies
+登录系统时，选择记住我按钮，验证 cookies
 
 ```javascript
 client.getCookies(function cb(result) {
@@ -34,7 +39,7 @@ client.getCookies(function cb(result) {
 });
 ```
 
-Login system，do not chosse Remember Me, delete Cookies
+登录系统时，不选择记住我按钮，删除 cookies
 
 ```javascript
 let accesstoken;
@@ -47,7 +52,7 @@ client.getCookies(function cb(result) {
 });
 ```
 
-Login system，choose Remember Me, delete Cookies
+登录系统时，选择记住我按钮，删除 cookies
 
 ```javascript
 let accesstoken;
@@ -59,3 +64,12 @@ client.getCookies(function cb(result) {
     });
 });
 ```
+
+## 如何知道登录都有哪些参数
+
+事先在手动测试的时候打开 chrome 浏览器，然后按 F12，登录时查看 Network。
+
+以成功百度登录时为例，可以看到 Headers 里的参数，我们可以通过验证这些参数来确定登录成功了。
+
+这样我们就可以这些参数来实现对 cookie，token 等等参数进行自动化测试的验证。
+
