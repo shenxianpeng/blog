@@ -120,7 +120,7 @@ pipeline{
       # 总是给执行者分送邮件通知，不论是否成功都会对工作空间进行清理
       script {
         def email = load "vars/email.groovy"
-        email.build(currentBuild.result, '')                      
+        email.build(currentBuild.result, '')
       }
       cleanWs()
     }
