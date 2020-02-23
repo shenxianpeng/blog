@@ -1,5 +1,5 @@
 ---
-title: Cppcheck 和 Jenkins：C/C++ 静态代码扫描持续集成
+title: 一个静态 C/C++ 代码分析工具 Cppcheck 和 Jenkins 集成
 tags:
   - Jenkins
   - cppcheck
@@ -86,45 +86,43 @@ Can't read file: Can't access the file: file:/disk1/agent/workspace/cppcheck-ud1
 
 ```bash
 pipeline{
-    agent {
-        node {
-            label 'cppcheck'
-            customWorkspace "/agent/workspace/cppcheck"
-        }
+  agent {
+    node {
+      label 'cppcheck'
+      customWorkspace "/agent/workspace/cppcheck"
     }
+  }
 
-    parameters {
-        string(name: 'Branch', defaultValue: 'develop', description: 'Which branch do you want to do cppcheck?')
-    }
+  parameters {
+    string(name: 'Branch', defaultValue: 'develop', description: 'Which branch do you want to do cppcheck?')
+  }
 
-    options {
-        timestamps ()
-        buildDiscarder(logRotator(numToKeepStr:'50'))
-    }
+  options {
+    timestamps ()
+    buildDiscarder(logRotator(numToKeepStr:'50'))
+  }
 
-    stages{
-        stage("Checkout"){
-            steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/${Branch}']],
-                browser: [$class: 'BitbucketWeb', repoUrl: 'https://git.yourcompany.com/projects/repos/cppcheck-example/browse'],
-                doGenerateSubmoduleConfigurations: false, extensions: [
-                    [$class: 'LocalBranch', localBranch: '**'], [$class: 'CheckoutOption', timeout: 30], [$class: 'CloneOption', depth: 1, noTags: false, reference: '', shallow: true, timeout: 30]], submoduleCfg: [],
-                userRemoteConfigs: [[credentialsId: 'd1cbab74-823d-41aa-abb7', url: 'https://git.yourcompany.com/scm/cppcheck-example.git']]])
-            }
-        }
-        stage("Cppcheck"){
-            steps{
-                script {
-                    sh 'cppcheck src/uv src/u2 --xml 2> cppcheck.xml'
-                }
-            }
-        }
-        stage('Publish results'){
-            steps {
-                // publishCppcheck pattern: 'cppcheck.xml'
-                recordIssues(tools: [cppCheck(pattern: 'cppcheck.xml')])
-            }
-        }
+  stage("Checkout"){
+    steps{
+      checkout([$class: 'GitSCM', branches: [[name: '*/${Branch}']],
+      browser: [$class: 'BitbucketWeb', repoUrl: 'https://git.yourcompany.com/projects/repos/cppcheck-example/browse'],
+      doGenerateSubmoduleConfigurations: false, extensions: [
+      [$class: 'LocalBranch', localBranch: '**'], [$class: 'CheckoutOption', timeout: 30], [$class: 'CloneOption', depth: 1, noTags: false, reference: '', shallow: true,   timeout: 30]], submoduleCfg: [],
+      userRemoteConfigs: [[credentialsId: 'd1cbab74-823d-41aa-abb7', url: 'https://git.yourcompany.com/scm/cppcheck-example.git']]])
     }
+  }
+  stage("Cppcheck"){
+    steps{
+      script {
+        sh 'cppcheck src/uv src/u2 --xml 2> cppcheck.xml'
+      }
+    }
+  }
+  stage('Publish results'){
+    steps {
+      // publishCppcheck pattern: 'cppcheck.xml'
+      recordIssues(tools: [cppCheck(pattern: 'cppcheck.xml')])
+    }
+  }
 }
 ```
