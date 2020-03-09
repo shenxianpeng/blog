@@ -2,15 +2,18 @@
 title: 
 ---
 
-### About Me
+### About
 
-I am Xianpeng Shen from Dalian, China. a CI/CD Build Engineer at Rocket Software
+I'm Xianpeng Shen from Dalian, China. A DevOps | SRE | Build Engineer at Rocket Software.
 
-1. Engaged in software testing for nine years, proficient in automated testing and continuous integration, have experience in performance testing.
-2. From QA to Dev, engaged in DevOps Build related work, responsible for product build, release, CI/CD efforts, address Dev engineers painpoints, Improve R&D efficiency.
+1. QA/AUTOMATION, CI/CD - Engaged in software testing for nine years, proficient in automated testing and continuous integration, have experience in performance testing.
 
-### Contact Me
+2. DEV/DEVOPS/BUILD - From QA to Dev, engaged in DevOps Build related work, responsible for product build, release, CI/CD efforts, address Dev engineers pain points, Improve R&D efficiency.
 
-* LinkedIn: [Xianpeng Shen](https://www.linkedin.com/in/xianpeng-shen-2050ab95)
-* Qmail: [xianpeng.shen@qq.com](mailto:xianpeng.shen@qq.com)
-* Gmail: [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)
+3. ENGLISH - Work at a US company good English reading and mail communication skills.
+
+### Contact Info
+
+* LinkedIn Home: https://www.linkedin.com/in/xianpeng-shen
+* Primary Email: [xianpeng.shen@qq.com](mailto:xianpeng.shen@qq.com)
+* Secondary Email: [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)
