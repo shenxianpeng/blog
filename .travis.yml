@@ -9,8 +9,7 @@ matrix:
       addons:
         sonarcloud:
           organization: "shenxianpeng"
-          token:
-            secure: a38d39b377d89ea83ac464713dcb915bd33ade0a # encrypted value of your token
+          token: a38d39b377d89ea83ac464713dcb915bd33ade0a # encrypted value of your token
       script:
         # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
         - sonar-scanner -Dproject.settings=sonar-project.properties
@@ -30,7 +29,7 @@ matrix:
       script: 
         - hexo generate
         - hexo server > /dev/null 2>&1 &
-        - sleep 20 && curl http://localhost:4000/
+        - sleep 20 && curl -Is http://localhost:4000/ | head -n 1
 
 notifications:
   email:
