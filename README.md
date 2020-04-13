@@ -1,29 +1,28 @@
 # Blog
 
+## This is my [blog](https://shenxianpeng.github.io/) code used [hexo](https://hexo.io)
+
 [![Build Status](https://www.travis-ci.org/shenxianpeng/blog.svg?branch=master)](https://www.travis-ci.org/shenxianpeng/blog)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=shenxianpeng_blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=shenxianpeng_blog)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2eff1062ed5c4971b06f33feb9696f88)](https://www.codacy.com/manual/xianpeng.shen/blog?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shenxianpeng/blog&amp;utm_campaign=Badge_Grade)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/shenxianpeng/blog)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
-## This is my [blog](https://shenxianpeng.github.io/) code used [hexo](https://hexo.io)
 
-## Prepare ENV
+## ⚒ Setup environment
 
 ```bash
-git clone https://github.com/shenxianpeng/blog.git
-
-cd blog
+git clone https://github.com/shenxianpeng/blog.git && cd blog
 npm install                                 # Install dependencies
-npm install -g hexo-cli                     # Install cmd command
-npm install hexo-deployer-git --save        # Install deploy
+npm install -g hexo-cli                     # Install hexo cli
+npm install hexo-deployer-git --save        # Install hexo deploy
 ```
 
-## 📖 Hexo Commands
+## 📖 Hexo common commands
 
 ```bash
 hexo server                                 # Start local server. by default is http://localhost:4000/
-hexo new "My New Post"                      # Create new article
-hexo new page "About"                       # Create new page named About
+hexo new "My New Post"                      # Create a new article
+hexo new page "About"                       # Create a new page named About
 hexo clean                                  # Cleans the cache file (db.json) and generate files (public)
 hexo generate                               # Generate static files
 hexo deploy                                 # Deploy your website
@@ -32,12 +31,14 @@ hexo generate -deplogy                      # Generate then deploy
 hexo g -d                                   # Abbreviations generate then deploy
 ```
 
-## Contribute new article
+## 📝 Article storage structure
 
-Articles are stored according to folder, with the hierarchy of year/month. For example, article folder like '2019/08/jenkins-multi-branch-pipeline.md'.
+Articles are stored according to folder, with the hierarchy of year/month. for example, when create a article `abc.md` in August 2019
 
-## Post to WeChat public account
+1. use command `hexo new "abc"` to generate `abc.md`
+2. manually create `2019/08/` under `source/_post` folder
+3. move `abc.md` to `source/_post/2019/08/`
 
-Before post this blog articles to WeChat public account should convert to markdown format first.
+## 📪 Post to WeChat public account
 
-Here is [convert to markdown](http://blog.didispace.com/tools/online-markdown/) web tool for use.
+Before post this articles to WeChat public account should convert to markdown format first. Here is web tool [convert to markdown](http://blog.didispace.com/tools/online-markdown/) for use.
