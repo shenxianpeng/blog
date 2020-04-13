@@ -27,7 +27,7 @@ hexo clean                                  # Cleans the cache file (db.json) an
 hexo generate                               # Generate static files
 hexo deploy                                 # Deploy your website
 
-hexo generate -deploy                      # Generate then deploy
+hexo generate -deploy                       # Generate then deploy
 hexo g -d                                   # Abbreviations generate then deploy
 ```
 
