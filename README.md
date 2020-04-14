@@ -8,7 +8,7 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/shenxianpeng/blog)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
 
-## ⚒ Setup environment
+## :cloud: Installation
 
 ```bash
 git clone https://github.com/shenxianpeng/blog.git && cd blog
@@ -17,7 +17,7 @@ npm install -g hexo-cli                     # Install hexo cli
 npm install hexo-deployer-git --save        # Install hexo deploy
 ```
 
-## 📖 Hexo common commands
+## :clipboard: Example commands
 
 ```bash
 hexo server                                 # Start local server. by default is http://localhost:4000/
@@ -31,7 +31,7 @@ hexo generate -deploy                       # Generate then deploy
 hexo g -d                                   # Abbreviations generate then deploy
 ```
 
-## 📝 Article storage structure
+## :memo: Article storage structure
 
 Articles are stored according to folder, with the hierarchy of year/month. for example, when create a article `abc.md` in August 2019
 
@@ -39,6 +39,10 @@ Articles are stored according to folder, with the hierarchy of year/month. for e
 2. manually create `2019/08/` under `source/_post` folder
 3. move `abc.md` to `source/_post/2019/08/`
 
-## 📪 Post to WeChat public account
+## :memo: Post to WeChat public account
 
 Before post this articles to WeChat public account should convert to markdown format first. Here is web tool [convert to markdown](http://blog.didispace.com/tools/online-markdown/) for use.
+
+## 📜 License
+
+[GPL-3.0](https://github.com/shenxianpeng/blog/blob/master/LICENSE) © [Hexo](https://hexo.io)
