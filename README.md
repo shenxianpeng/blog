@@ -40,7 +40,10 @@ Articles are stored according to folder, with the hierarchy of year/month. for e
 
 ## :memo: Post
 
-Before post this articles, if need should convert to markdown format first. Here is web tool [convert to markdown](http://blog.didispace.com/tools/online-markdown/) for use.
+Before post this articles, if need should convert to markdown format first.
+
+* For WeChat: [convert to markdown](http://blog.didispace.com/tools/online-markdown/)
+* For Medium: [markdown to medium](http://markdown-to-medium.surge.sh/)
 
 ## 📜 License
 
