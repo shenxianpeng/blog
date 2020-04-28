@@ -1,5 +1,5 @@
 ---
-title: 如何解决 Jenkins 声明式流水线方法代码太大的问题(Jenkins Declarative Pipeline throws Method Code Too Large Exception)
+title: 三种方法解决 Jenkins 声明式流水线 Exception Method code too large !
 tags:
   - Pipeline
   - Troubleshooting
