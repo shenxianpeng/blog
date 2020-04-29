@@ -35,11 +35,11 @@ Jenkins 的 multi-branch pipeline 想必很多人已经在用了，使用这种�
 
 Bitbucket webhooks 设置
 
-![Bitbucket webhooks 设置](Bitbucket-webhooks/webhook-setting.png)
+![Bitbucket webhooks 设置](Bitbucket-webhooks-cn/webhook-setting.png)
 
 Jenkins multi-branch pipeline 设置
 
-![Jenkins multi-branch pipeline 设置](Bitbucket-webhooks/jenkins-setting.png)
+![Jenkins multi-branch pipeline 设置](Bitbucket-webhooks-cn/jenkins-setting.png)
 
 ## 效果
 
@@ -57,11 +57,11 @@ Jenkins multi-branch pipeline 设置
 
 已经 Merge 的分支，会显示已经划掉了，灰色的，这种分支不可以再进行执行构建；而 `develop` 和 `master` 分支则可以继续手动或自动构建。
 
-![Jenkins multi-branch pipeline 设置](Bitbucket-webhooks/multi-branch.png)
+![Jenkins multi-branch pipeline 设置](Bitbucket-webhooks-cn/multi-branch.png)
 
 已经 Merge 了的 Pull Request 同样显示为已经划掉了，灰色的。`PR-12`, `PR-13`, `PR-14` 可以继续手动或自动构建。
 
-![Jenkins multi-branch pipeline 设置](Bitbucket-webhooks/multi-pr.png)
+![Jenkins multi-branch pipeline 设置](Bitbucket-webhooks-cn/multi-pr.png)
 
 ## 补充
 
