@@ -52,7 +52,7 @@ Jenkins multi-branch pipeline 设置
 
 * 当创建 (Opened) 一个 Pull Request 时，会自动在 Jenkins 上创建相应的 Pull Request 任务（比如 PR-123）并开始构建。
 * 当合并 (Merged) 这个 Pull Request 时，会自动删除 Jenkins 中的 PR-123 任务。
-* 当拒绝 (decline) 这个 Pull Request 时，会自动删除 Jenkins 中的 PR-123 任务。
+* 当拒绝 (Declined) 这个 Pull Request 时，会自动删除 Jenkins 中的 PR-123 任务。
 * 当删除 (Deleted) 这个 Pull Request 时，会自动删除 Jenkins 中的 PR-123 任务。
 
 已经 Merge 的分支，会显示已经划掉了，灰色的，这种分支不可以再进行执行构建；而 `develop` 和 `master` 分支则可以继续手动或自动构建。
