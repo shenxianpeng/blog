@@ -4,7 +4,7 @@ title:
 
 ### About
 
-I'm Xianpeng Shen from Dalian, China. A DevOps | Build Engineer at Rocket Software.
+I'm Xianpeng(Peter) Shen from Dalian, China. A DevOps | Build Engineer at Rocket Software.
 
 * QA/AUTOMATION/CI/CD - Otc 2009 - May 2018, I am QA/SDET engineer, engaged in software testing, proficient in automated testing and continuous integration, have experience in performance testing.
 

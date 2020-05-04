@@ -5,6 +5,7 @@ tags:
 - Work
 categories: 
 - Thought
+author: shenxianpeng
 ---
 
 满足什么样的技术和经验才算高级工程师呢？说说我心中的高级工程师。

@@ -5,6 +5,7 @@ tags:
 - Hexo
 categories: 
 - Hexo
+author: shenxianpeng
 ---
 
 ## 在你的 Hexo 网站添加 Disqus

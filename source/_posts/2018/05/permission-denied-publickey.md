@@ -5,6 +5,7 @@ tags:
 - Git
 categories: 
 - Git
+author: shenxianpeng
 ---
 
 如果你想在一台电脑上配置 github 和 bitbucket，如何配置多个 SSH git key？

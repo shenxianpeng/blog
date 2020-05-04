@@ -5,7 +5,8 @@ tags:
 - Flask
 - Python
 categories: 
-- Python
+- Gist
+author: shenxianpeng
 ---
 
 #### TypeError: object of type 'filter' has no len()
