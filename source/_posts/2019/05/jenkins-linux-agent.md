@@ -5,6 +5,7 @@ tags:
 - Jenkins
 categories: 
 - Jenkins
+author: shenxianpeng
 ---
 
 ## Prepare Java runtime

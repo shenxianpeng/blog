@@ -5,6 +5,8 @@ tags:
 - Git
 categories: 
 - Git
+author: shenxianpeng
+
 ---
 
 ## 查找是否有遗漏提交

@@ -4,13 +4,10 @@ date: 2019-07-28 23:27:21
 author: shenxianpeng
 tags: 
 - Git
-- branch
-keywords:
-- Git
 - Branch
-- Strategy
 categories: 
 - Git
+author: shenxianpeng
 ---
 
 随着近些年 Git 的快速普及，想必无论开发还是测试在日常工作中都要用到 Git。

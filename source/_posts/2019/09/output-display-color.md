@@ -6,7 +6,7 @@ tags:
 categories:
   - Jenkins
 date: 2019-09-24 22:11:40
-author:
+author: shenxianpeng
 ---
 
 如果想让 Jenkins Console Output 出来一些重要日志醒目的显示，可以让一些日志显示颜色方便查看

@@ -4,7 +4,7 @@ tags:
   - Linux
   - VirtualBox
 categories:
-  - VirtualBox
+  - UNIX
 date: 2020-02-08 11:25:48
 author: shenxianpeng
 ---
@@ -22,5 +22,3 @@ author: shenxianpeng
 安装和配置
 
 _本文没有详细介绍每个安装步骤，只列出一些关键步骤。_
-
-

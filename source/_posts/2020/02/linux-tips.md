@@ -3,7 +3,7 @@ title: 最有用的 Linux 命令行技巧
 tags:
   - Linux
 categories:
-  - Linux
+  - UNIX
 date: 2020-02-05 22:34:27
 author: shenxianpeng
 ---

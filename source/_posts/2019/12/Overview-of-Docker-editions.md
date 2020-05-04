@@ -8,7 +8,7 @@ date: 2019-12-01 15:20:43
 author: shenxianpeng
 ---
 
-## Docker 可分为三个版本：
+## Docker 可分为三个版本
 
 * Docker Engine - Community
 * Docker Engine - Enterprise

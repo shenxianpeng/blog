@@ -7,6 +7,7 @@ tags:
 - pipeline
 categories:
 - Jenkins
+author: shenxianpeng
 ---
 
 When we need to release a product, we should change copyright, build version, release month, release note...
