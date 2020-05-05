@@ -6,6 +6,7 @@ tags:
 - pipeline
 categories: 
 - Jenkins
+author: shenxianpeng
 ---
 
 最近遇到一个 regression bug，是产品完成构建之后，build commit number 不对，显示的 HEAD 而不是常见的 97b34931ac HASH number,这是什么原因呢？
