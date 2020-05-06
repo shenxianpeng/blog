@@ -1,7 +1,6 @@
 ---
 title: Git branching strategy
 date: 2019-07-28 23:27:21
-author: shenxianpeng
 tags: 
 - Git
 - Branch
