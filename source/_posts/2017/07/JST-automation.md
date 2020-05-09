@@ -9,9 +9,9 @@ categories:
 - Automation
 ---
 
-### This automation frameworks was design by Java+Selenium+TestNG, so called it JST-automation
+This automation frameworks was design by Java+Selenium+TestNG, so called it JST-automation
 
-### directory structure
+## Directory Structure
 
 ```bash
 ├──JST-automation
@@ -48,10 +48,10 @@ categories:
 5. testng.xml: test suit file, config all verify test case in this file
 6. pom.xml: configuration need package files
 
-#### [Get clone JST-automation](https://github.com/shenxianpeng/JST-automation.git)
+## Download Code
 
 ```bash
 git clone https://github.com/shenxianpeng/JST-automation.git
 ```
 
-Any suggestion and questiosn please feel free to create issue [here](https://github.com/shenxianpeng/JST-automation/issues)
+Any suggestion and questions please feel free to create issue [here](https://github.com/shenxianpeng/JST-automation/issues)
