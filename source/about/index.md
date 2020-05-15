@@ -13,15 +13,12 @@ author: shenxianpeng
 
 ## 我的小世界
 
-* 微信公众号「DevOps攻城狮」
-
-    ![](index/qrcode.jpg)
-
-* 个人博客微信小程序「HelloWorldPro」
-
+* [个人博客](https://shenxianpeng.github.io) 微信小程序「HelloWorldPro」,记录工作中的想法以及遇到并解决的问题。
     ![](index/qrcode_applet.jpg)
 
-* GitHub Pages 个人博客：https://shenxianpeng.github.io 工作想法以及遇到并解决的问题首先记录到博客里，可以成文的再发布到微信公众号里。
+* 微信公众号「DevOps攻城狮」，可以成文博客文章会再更新到这个微信公众号里。
+    ![](index/qrcode.jpg)
+
 
 ---
 

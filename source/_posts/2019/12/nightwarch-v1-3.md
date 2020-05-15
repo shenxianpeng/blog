@@ -128,3 +128,9 @@ $ npm run mocha-coverage
 ```
 
 然后在浏览器中打开生成的 coverage/index.html 文件。
+
+## Nightwatch 使用示例
+
+以下是我写的一个使用 Nightwatch 框架对官网 https://nightwatchjs.org/ 进行测试的一个示例框架，以展示在实际项目中使用 Nightwatchjs 自动化测试框架和项目的目录结构。
+
+GitHub 地址是 https://github.com/nightwatchjs-cn/nightwatch-e2e，欢迎 Star 或 Fork。
