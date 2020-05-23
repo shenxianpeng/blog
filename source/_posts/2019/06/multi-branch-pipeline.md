@@ -1,9 +1,9 @@
 ---
-title: Multibranch pipeline
+title: Multibranch Pipeline
 date: 2019-06-25 22:15:42
 tags:
 - Jenkins
-- pipeline
+- Pipeline
 - multi-branch
 categories: 
 - Jenkins
