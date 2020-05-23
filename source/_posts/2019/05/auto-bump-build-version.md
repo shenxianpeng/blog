@@ -3,8 +3,8 @@ title: Automatically commit code by Jenkins
 date: 2019-05-12 21:21:55
 tags: 
 - Jenkins
-- release
-- pipeline
+- Release
+- Pipeline
 categories:
 - Jenkins
 author: shenxianpeng

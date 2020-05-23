@@ -3,7 +3,7 @@ title: Jenkinsfile 配置
 date: 2018-04-14 13:07:49
 tags: 
 - Jenkins
-- pipeline
+- Pipeline
 categories: 
 - Jenkins
 author: shenxianpeng
