@@ -4,7 +4,7 @@
 
 # Site
 title: Hello World
-subtitle: 一名非著名程序员的网络日志，想把分享变成一种习惯。
+subtitle: 非著名程序员的网络日志，想把分享变成一种习惯。
 description: I’ve been QA Engineer for the last nine years, from Jun 2018 I am a Software Engineer.
 author: Xianpeng Shen
 language: zh-CN
@@ -129,3 +129,6 @@ restful:
   use_tag_slug: false      # Use slug for filename of tag data
   post: true               # 文章数据
   pages: false             # 额外的 Hexo 页面数据, 如 About
+
+server:
+  cache: true
