@@ -38,11 +38,15 @@ Articles are stored according to folder, with the hierarchy of year/month. for e
 2. manually create `2019/08/` under `source/_post` folder
 3. move `abc.md` to `source/_post/2019/08/`
 
+Any draft posts need to move `todo` folder first. after finished will move to `source/_post/...`
+
 ## :memo: Post
 
 Before post this articles, if need should convert to markdown format first.
 
-* For WeChat: [convert to markdown](http://blog.didispace.com/tools/online-markdown/)
+* For WeChat: 
+    * [Convert to Markdown](http://blog.didispace.com/tools/online-markdown/)
+    * [Markdown Nice](https://www.mdnice.com/)
 * For Medium: [markdown to medium](http://markdown-to-medium.surge.sh/)
 
 ## 📜 License
