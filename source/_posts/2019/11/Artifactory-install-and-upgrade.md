@@ -2,8 +2,9 @@
 title: 初识 JFrog Artifactory
 tags:
   - Artifactory
-categories:
   - JFrog
+categories:
+  - DevOps
 date: 2019-11-10 17:52:58
 author: shenxianpeng
 ---

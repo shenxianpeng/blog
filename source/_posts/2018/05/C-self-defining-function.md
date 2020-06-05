@@ -2,7 +2,7 @@
 title: C-Language 自定义函数
 date: 2018-05-15 09:49:34
 tags: C
-categories: Gist
+categories: Snippet
 author: shenxianpeng
 ---
 求次幂函数power

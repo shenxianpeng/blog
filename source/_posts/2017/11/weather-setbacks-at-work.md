@@ -2,7 +2,7 @@
 title: 度过工作中挫折心结
 date: 2017-11-23 12:00:00
 tags: Work
-categories: Thought
+categories: MyNotes
 ---
 
 ### 对于一个不善于言表的我工作中遇到过

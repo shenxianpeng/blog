@@ -2,10 +2,10 @@
 title: 通过 NFS 和 Jenkins 来共享和同步第三方库代码
 tags:
   - NFS
-  - Linux
+  - Shell
   - Jenkins
 categories:
-  - Shell
+  - LinuxUnix
 date: 2019-09-10 22:38:47
 author: shenxianpeng
 ---

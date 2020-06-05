@@ -4,7 +4,7 @@ tags:
   - UNIX
   - HP-UX
 categories:
-  - UNIX
+  - LinuxUnix
 date: 2020-02-05 10:28:37
 author: shenxianpeng
 ---

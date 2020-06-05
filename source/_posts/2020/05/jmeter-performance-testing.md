@@ -4,7 +4,7 @@ tags:
   - JMeter
   - performance
 categories:
-  - Test
+  - Automation
 date: 2020-05-09 14:28:09
 author: shenxianpeng
 ---

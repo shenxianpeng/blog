@@ -2,8 +2,9 @@
 title: JFrog CLI 安装和使用
 tags:
   - JFrog
+  - Artifactory
 categories:
-  - JFrog
+  - DevOps
 date: 2019-12-09 15:41:43
 author: shenxianpeng
 ---

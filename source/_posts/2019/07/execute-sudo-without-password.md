@@ -6,7 +6,7 @@ tags:
 - Pipeline
 - Shell
 categories: 
-- Shell
+- LinuxUnix
 author: shenxianpeng
 ---
 

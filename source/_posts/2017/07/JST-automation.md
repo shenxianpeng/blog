@@ -1,5 +1,5 @@
 ---
-title: JST-automation
+title: JST automation framework
 date: 2017-07-13 10:07:02
 tags: 
 - Java
@@ -9,7 +9,7 @@ categories:
 - Automation
 ---
 
-This automation frameworks was design by Java+Selenium+TestNG, so called it JST-automation
+This automation framework was design by Java+Selenium+TestNG when I did automation test work, so I called it JST-automation.
 
 ## Directory Structure
 

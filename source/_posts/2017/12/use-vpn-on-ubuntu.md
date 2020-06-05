@@ -5,7 +5,7 @@ tags:
 - Ubuntu
 - VPN
 categories: 
-- Ubuntu
+- LinuxUnix
 ---
 
 如何在 Ubuntu 上连接 Cisco AnyConnect VPN
