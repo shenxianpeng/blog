@@ -1,5 +1,5 @@
 ---
-title: 如何在提交 Jenkins Pipeline 之前对进行语法检查
+title: 如何确保提交 Jenkins Pipeline 前没有语法错误
 tags:
   - Pipeline
   - vscode
