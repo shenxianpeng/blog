@@ -1,5 +1,5 @@
 ---
-title: 花了两天时间解决使用 Jenkins Artifactory plugin 在 AIX 上无法上传制品到 Artifactory 的问题
+title: 花了两天时间解决了使用 Jenkins Artifactory plugin 在 AIX 上无法上传制品到 Artifactory 的问题
 tags:
   - Troubleshooting
   - JFrog

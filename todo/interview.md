@@ -3,7 +3,7 @@ title: 未来程序猿会在哪里工作？
 tags:
   - 
 categories:
-  - Thought
+  - MyNotes
 date: 2020-05-13 22:43:37
 author: shenxianpeng
 ---

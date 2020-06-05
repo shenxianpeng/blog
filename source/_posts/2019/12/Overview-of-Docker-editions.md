@@ -3,7 +3,7 @@ title: Docker 版本概述
 tags:
   - Docker
 categories:
-  - Docker
+  - DevOps
 date: 2019-12-01 15:20:43
 author: shenxianpeng
 ---

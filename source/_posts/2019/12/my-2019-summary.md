@@ -4,7 +4,7 @@ tags:
   - Thought
   - Summary
 categories:
-  - Thought
+  - MyNotes
 date: 2019-12-28 20:04:50
 author: shenxianpeng
 ---

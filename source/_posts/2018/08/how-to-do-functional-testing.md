@@ -5,7 +5,7 @@ tags:
 - Test
 - Work
 categories: 
-- Thought
+- MyNotes
 author: shenxianpeng
 ---
 

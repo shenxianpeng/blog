@@ -4,7 +4,7 @@ tags:
   - UNIX
   - AIX
 categories:
-  - UNIX
+  - LinuxUnix
 date: 2020-01-09 09:55:26
 author: shenxianpeng
 ---

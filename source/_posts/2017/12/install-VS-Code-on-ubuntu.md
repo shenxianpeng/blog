@@ -5,7 +5,7 @@ tags:
 - Ubuntu
 - vscode
 categories: 
-- Ubuntu
+- LinuxUnix
 ---
 
 在 Ubuntu 下面安装 Visual Studio Code

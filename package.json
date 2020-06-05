@@ -9,11 +9,7 @@
     "server": "hexo server"
   },
   "hexo": {
-<<<<<<< HEAD
     "version": "4.2.1"
-=======
-    "version": "4.2.0"
->>>>>>> 2ee58aedfb664bb198a68e198cf8a65174379279
   },
   "dependencies": {
     "hexo": "^4.0.0",

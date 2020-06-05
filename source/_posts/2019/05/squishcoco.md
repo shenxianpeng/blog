@@ -5,7 +5,7 @@ tags:
 - Squishcoco
 - CodeCoverage
 categories: 
-- CodeCoverage
+- DevOps
 author: shenxianpeng
 ---
 

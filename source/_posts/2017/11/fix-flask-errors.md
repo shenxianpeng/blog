@@ -5,7 +5,7 @@ tags:
 - Flask
 - Python
 categories: 
-- Gist
+- Snippet
 author: shenxianpeng
 ---
 
