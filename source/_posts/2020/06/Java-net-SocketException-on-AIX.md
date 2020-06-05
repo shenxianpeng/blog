@@ -9,9 +9,9 @@ date: 2020-06-03 19:30:03
 author: shenxianpeng
 ---
 
-分享一个花了两天时间才解决的一个只在 AIX 平台上只出现的问题。该问题对于同样在 AIX 遇到此问题的人会非常有帮助。如果想了解解决过程可继续阅读，否则可以关闭了:)
+分享一个花了两天时间才解决的一个只在 AIX 平台上只出现的问题。该问题对于同样在 AIX 遇到此问题的人会非常有帮助。如果想了解解决过程可继续阅读，否则无需继续阅读了 :)
 
-最近我打算将之前使用的 Artifactory OSS 版本迁移到 Aritifactory Enterprise 版本上。
+最近计划将之前使用的 Artifactory OSS 版本迁移到 Aritifactory Enterprise 版本上。
 
 为什么要迁移？这里有一个 Artifactory 对比的矩阵图 https://www.jfrog.com/confluence/display/JFROG/Artifactory+Comparison+Matrix
 
@@ -115,22 +115,12 @@ set SSL_CERT_FILE=/var/ssl/cacert.pem
 ```
 设置之后通过 `curl` 调用，经测试不需要再用 `--cacert` 参数了。带着喜悦的喜悦的心情去 Jenkins 设置如下或是可以修改 `/etc/environment` 文件，把上述的环境变量加到 agent 机器上。
 
-![](AXI-java-net-SocketException/configure-agent-environment-variable.png)
+![](Java-net-SocketException-on-AIX/configure-agent-environment-variable.png)
 
 结果经测试错误信息依旧，看来执行的 remote.jar 去进行上传跟本地配置环境没有关联。看来需要从执行 remote.jar 把相应的设置或是环境变量传进去。`java` 的 `-D` 参数可以完成这一点。
 
 废话不多说了，进行了浩瀚的搜索和尝试，最终在 IBM 的官方找到了这篇文档 https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/matchsslcontext_tls.html
 
-文档大意是，IBM SDK system property 的 `com.ibm.jsse2.overrideDefaultTLS` 参数与 `SSLContext.getInstance("TLS")` Oracle实现是一致的。
-
-`com.ibm.jsse2.overrideDefaultTLS =[true|false]` 有 `true` 和 `false` 两个值
-
-如果想要与 Oracle `SSLContext.getInstance("TLS")` 的行为相匹配，请将此属性设置为 `true`，默认值为 `false`。
+文档大意是，IBM SDK system property `com.ibm.jsse2.overrideDefaultTLS =[true|false]` 有 `true` 和 `false` 两个值，如果想要与 Oracle `SSLContext.getInstance("TLS")` 的行为相匹配，请将此属性设置为 `true`，默认值为 `false`。
 
 最终我在 Jenkins 的 agent 配置里 JVM Options 区域加上 `-Dcom.ibm.jsse2.overrideDefaultTLS=true` 解决了我的这样问题。
-
-
-
-
-
-
