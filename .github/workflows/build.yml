@@ -21,7 +21,7 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Clone code 
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
       with: 
         fetch-depth: 0
   
@@ -35,7 +35,7 @@ jobs:
         projectBaseDir: .
 
     - name: Setup node 12 
-    - uses: actions/setup-node@v1
+      uses: actions/setup-node@v1
       with:
         node-version: 12.x
     - run: npm install
