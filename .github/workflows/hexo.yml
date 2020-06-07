@@ -21,14 +21,16 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - uses: mathrix-education/sonar-scanner@1.0.0
 
     # Runs a single command using the runners shell
-    - name: Run sonar scan
-      run: sonar-scanner -Dproject.settings=sonar-project.properties
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@v1.3
+      with:
+        # Set the sonar.projectBaseDir analysis property
+        projectBaseDir: ../../
 
     # Runs a set of commands using the runners shell
-    - name: Run test
+    - name: Run Test
       run: |
         npm install
         npm install -g hexo-cli
