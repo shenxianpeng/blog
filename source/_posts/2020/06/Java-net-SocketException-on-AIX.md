@@ -35,46 +35,45 @@ author: shenxianpeng
 以下是去掉了无相关的信息的错误日志。
 
 ```java
-[2020-06-03T09:01:00.105Z] [consumer_0] Deploying artifact: https://artifactory.company.com/artifactory/generic-int-den/database/develop/10/database2_cdrom_opt_AIX_24ec6f9.tar.Z
-[2020-06-03T09:01:27.834Z] Error occurred for request GET /artifactory/api/system/version HTTP/1.1: A system call received a parameter that is not valid. (Read failed).
-[2020-06-03T09:01:28.388Z] Error occurred for request PUT /artifactory/generic-int-den/database/develop/10/database2_cdrom_opt_AIX_24ec6f9.tar.Z;build.timestamp=1591170116591;build.name=develop;build.number=10 HTTP/1.1: A system call received a parameter that is not valid. (Read failed).
-[2020-06-03T09:01:28.442Z] Error occurred for request PUT /artifactory/generic-int-den/database/develop/10/database2_cdrom_opt_AIX_24ec6f9.tar.Z;build.timestamp=1591170116591;build.name=develop;build.number=10 HTTP/1.1: A system call received a parameter that is not valid. (Read failed).
-[2020-06-03T09:01:28.445Z] [consumer_0] An exception occurred during execution:
-[2020-06-03T09:01:28.446Z] java.lang.RuntimeException: java.net.SocketException: A system call received a parameter that is not valid. (Read failed)
-[2020-06-03T09:01:28.446Z] 	at org.jfrog.build.extractor.clientConfiguration.util.spec.SpecDeploymentConsumer.consumerRun(SpecDeploymentConsumer.java:44)
-[2020-06-03T09:01:28.446Z] 	at org.jfrog.build.extractor.producerConsumer.ConsumerRunnableBase.run(ConsumerRunnableBase.java:11)
-[2020-06-03T09:01:28.447Z] 	at java.lang.Thread.run(Thread.java:785)
-[2020-06-03T09:01:28.447Z] Caused by: java.net.SocketException: A system call received a parameter that is not valid. (Read failed)
-[2020-06-03T09:01:28.448Z] 	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
-[2020-06-03T09:01:28.448Z] 	at java.net.SocketInputStream.read(SocketInputStream.java:182)
-[2020-06-03T09:01:28.448Z] 	at java.net.SocketInputStream.read(SocketInputStream.java:152)
-[2020-06-03T09:01:28.449Z] 	at com.ibm.jsse2.a.a(a.java:227)
-[2020-06-03T09:01:28.449Z] 	at com.ibm.jsse2.a.a(a.java:168)
-[2020-06-03T09:01:28.449Z] 	at com.ibm.jsse2.as.a(as.java:702)
-[2020-06-03T09:01:28.449Z] 	at com.ibm.jsse2.as.i(as.java:338)
-[2020-06-03T09:01:28.450Z] 	at com.ibm.jsse2.as.a(as.java:711)
-[2020-06-03T09:01:28.450Z] 	at com.ibm.jsse2.as.startHandshake(as.java:454)
-[2020-06-03T09:01:28.450Z] 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
-[2020-06-03T09:01:28.451Z] 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
-[2020-06-03T09:01:28.451Z] 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-[2020-06-03T09:01:28.452Z] 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
-[2020-06-03T09:01:28.452Z] 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
-[2020-06-03T09:01:28.452Z] 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-[2020-06-03T09:01:28.453Z] 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
-[2020-06-03T09:01:28.453Z] 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-[2020-06-03T09:01:28.453Z] 	at org.apache.http.impl.execchain.ServiceUnavailableRetryExec.execute(ServiceUnavailableRetryExec.java:85)
-[2020-06-03T09:01:28.454Z] 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-[2020-06-03T09:01:28.454Z] 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-[2020-06-03T09:01:28.454Z] 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-[2020-06-03T09:01:28.455Z] 	at org.jfrog.build.client.PreemptiveHttpClient.execute(PreemptiveHttpClient.java:89)
-[2020-06-03T09:01:28.455Z] 	at org.jfrog.build.client.ArtifactoryHttpClient.execute(ArtifactoryHttpClient.java:253)
-[2020-06-03T09:01:28.455Z] 	at org.jfrog.build.client.ArtifactoryHttpClient.upload(ArtifactoryHttpClient.java:249)
-[2020-06-03T09:01:28.456Z] 	at org.jfrog.build.extractor.clientConfiguration.client.ArtifactoryBuildInfoClient.uploadFile(ArtifactoryBuildInfoClient.java:692)
-[2020-06-03T09:01:28.456Z] 	at org.jfrog.build.extractor.clientConfiguration.client.ArtifactoryBuildInfoClient.doDeployArtifact(ArtifactoryBuildInfoClient.java:379)
-[2020-06-03T09:01:28.456Z] 	at org.jfrog.build.extractor.clientConfiguration.client.ArtifactoryBuildInfoClient.deployArtifact(ArtifactoryBuildInfoClient.java:367)
-[2020-06-03T09:01:28.457Z] 	at org.jfrog.build.extractor.clientConfiguration.util.spec.SpecDeploymentConsumer.consumerRun(SpecDeploymentConsumer.java:39)
-[2020-06-03T09:01:28.457Z] 	... 2 more
-[2020-06-03T09:01:28.457Z] 
+[consumer_0] Deploying artifact: https://artifactory.company.com/artifactory/generic-int-den/database/develop/10/database2_cdrom_opt_AIX_24ec6f9.tar.Z
+Error occurred for request GET /artifactory/api/system/version HTTP/1.1: A system call received a parameter that is not valid. (Read failed).
+Error occurred for request PUT /artifactory/generic-int-den/database/develop/10/database2_cdrom_opt_AIX_24ec6f9.tar.Z;build.timestamp=1591170116591;build.name=develop;build.number=10 HTTP/1.1: A system call received a parameter that is not valid. (Read failed).
+Error occurred for request PUT /artifactory/generic-int-den/database/develop/10/database2_cdrom_opt_AIX_24ec6f9.tar.Z;build.timestamp=1591170116591;build.name=develop;build.number=10 HTTP/1.1: A system call received a parameter that is not valid. (Read failed).
+[consumer_0] An exception occurred during execution:
+ java.lang.RuntimeException: java.net.SocketException: A system call received a parameter that is not valid. (Read failed)
+ 	at org.jfrog.build.extractor.clientConfiguration.util.spec.SpecDeploymentConsumer.consumerRun(SpecDeploymentConsumer.java:44)
+ 	at org.jfrog.build.extractor.producerConsumer.ConsumerRunnableBase.run(ConsumerRunnableBase.java:11)
+ 	at java.lang.Thread.run(Thread.java:785)
+ Caused by: java.net.SocketException: A system call received a parameter that is not valid. (Read failed)
+ 	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+ 	at java.net.SocketInputStream.read(SocketInputStream.java:182)
+ 	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+ 	at com.ibm.jsse2.a.a(a.java:227)
+ 	at com.ibm.jsse2.a.a(a.java:168)
+ 	at com.ibm.jsse2.as.a(as.java:702)
+ 	at com.ibm.jsse2.as.i(as.java:338)
+ 	at com.ibm.jsse2.as.a(as.java:711)
+ 	at com.ibm.jsse2.as.startHandshake(as.java:454)
+ 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+ 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+ 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+ 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+ 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+ 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+ 	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+ 	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+ 	at org.apache.http.impl.execchain.ServiceUnavailableRetryExec.execute(ServiceUnavailableRetryExec.java:85)
+ 	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+ 	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+ 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+ 	at org.jfrog.build.client.PreemptiveHttpClient.execute(PreemptiveHttpClient.java:89)
+ 	at org.jfrog.build.client.ArtifactoryHttpClient.execute(ArtifactoryHttpClient.java:253)
+ 	at org.jfrog.build.client.ArtifactoryHttpClient.upload(ArtifactoryHttpClient.java:249)
+ 	at org.jfrog.build.extractor.clientConfiguration.client.ArtifactoryBuildInfoClient.uploadFile(ArtifactoryBuildInfoClient.java:692)
+ 	at org.jfrog.build.extractor.clientConfiguration.client.ArtifactoryBuildInfoClient.doDeployArtifact(ArtifactoryBuildInfoClient.java:379)
+ 	at org.jfrog.build.extractor.clientConfiguration.client.ArtifactoryBuildInfoClient.deployArtifact(ArtifactoryBuildInfoClient.java:367)
+ 	at org.jfrog.build.extractor.clientConfiguration.util.spec.SpecDeploymentConsumer.consumerRun(SpecDeploymentConsumer.java:39)
+ 	... 2 more 
 Failed uploading artifacts by spec
 ```
 
