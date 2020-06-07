@@ -1,14 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Hexo site CI
+name: Hexo site CI workflow
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: master
   pull_request:
-    branches: [ master ]
+    branches: master
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -21,12 +21,15 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
+      with:
+        fetch-depth: 0
+        
     # Runs a single command using the runners shell
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@v1.3
       env:
-        SONAR_TOKEN: a38d39b377d89ea83ac464713dcb915bd33ade0a
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
         # Set the sonar.projectBaseDir analysis property
         projectBaseDir: ../../
