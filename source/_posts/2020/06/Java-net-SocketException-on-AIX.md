@@ -1,7 +1,8 @@
 ---
-title: 花了两天时间解决了使用 Jenkins Artifactory plugin 在 AIX 上无法上传制品到 Artifactory 的问题
+title: 解决 Jenkins Artifactory Plugin 仅在 AIX 上传制品到 https 协议的 Artifactory 失败的问题
 tags:
   - Troubleshooting
+  - Artifactory
   - JFrog
 categories:
   - Jenkins
@@ -9,15 +10,29 @@ date: 2020-06-03 19:30:03
 author: shenxianpeng
 ---
 
-分享一个花了两天时间才解决的一个只在 AIX 平台上只出现的问题。该问题对于同样在 AIX 遇到此问题的人会非常有帮助。如果想了解解决过程可继续阅读，否则无需继续阅读了 :)
+> 本文对于同样在 AIX 遇到这个问题的人会非常有帮助。另外，不要被标题无聊到，解决问题的过程值得参考。
 
-最近计划将之前使用的 Artifactory OSS 版本迁移到 Aritifactory Enterprise 版本上。
+分享一个花了两天时间才解决的一个问题：使用 Jenkins Artifactory 插件上传制品到 https 协议的企业级的 Artifactory 失败。该问题只在 AIX 平台上出现的，其他 Windows，Linux, Unix 均正常。
 
-为什么要迁移？这里有一个 Artifactory 对比的矩阵图 https://www.jfrog.com/confluence/display/JFROG/Artifactory+Comparison+Matrix
+## 前言
 
-可以看到开源版版本缺少与CI集成时常用的功能，比如保留策略(Retention)，提升(Promote)，设置属性(set properties)等这些常用功能，正好公司已经有企业版了，那就开始迁移吧。本以为会很顺利的完成，没想到唯独在 IBM 的 AIX 出现上传制品失败的情况。
+最近计划将之前使用的 Artifactory OSS（开源版）迁移到 Aritifactory Enterprise（企业版）上。为什么要做迁移？这里有一个 Artifactory 对比的矩阵图 https://www.jfrog.com/confluence/display/JFROG/Artifactory+Comparison+Matrix
 
-以下是完整的错误信息。(去掉了无相关的敏感信息)
+简单来说，开源版缺少与 CI 工具集成时常用的 REST API 功能，比如以下常用功能
+
+* 设置保留策略(Retention)。设置上传的制品保留几天等，达到定期清理的目的。
+* 提升(Promote)。通过自动化测试的制品会被提升到 stage（待测试）仓库，通过手工测试的提升到 release（发布）仓库。
+* 设置属性(set properties)。对于通过不同阶段的制品通过 CI 集成进行属性的设置。
+
+正好公司已经有企业版了，那就开始迁移吧。本以为会很顺利的完成，没想到唯独在 IBM 的 AIX 出现上传制品失败的问题。
+
+> 环境信息
+> * Jenkins ver. 2.176.3
+> * Artifactory Plugin 3.6.2
+> * Enterprise Artifactory 6.9.060900900
+> * AIX 7.1 && java version 1.8.0
+
+以下是去掉了无相关的信息的错误日志。
 
 ```java
 [2020-06-03T09:01:00.105Z] [consumer_0] Deploying artifact: https://artifactory.company.com/artifactory/generic-int-den/database/develop/10/database2_cdrom_opt_AIX_24ec6f9.tar.Z
@@ -63,13 +78,17 @@ author: shenxianpeng
 Failed uploading artifacts by spec
 ```
 
-本以为 Google 一下就能找到此类问题的解决办法，可惜这个问题在其他平台都没有，只有 AIX 上才有这个问题，肯定这个 AIX 有什么“过人之处”，非得搞得和其他 Linux/Unix 那么不一样。以下列出了两种处理办法。
+很奇怪会出现上述问题，从开源版的 Artifactory 迁移到企业版的 Artifactory，它们之间最直接的区别是使用了不同的传输协议，前者是 http 后者是 https。
+
+> HTTPS 其实是有两部分组成：HTTP + SSL/TLS，也就是在 HTTP 上又加了一层处理加密信息的模块，因此更安全。
+
+本以为 Google 一下就能找到此类问题的解决办法，可惜这个问题在其他平台都没有，只有 AIX 上才有，肯定这个 AIX 有什么“过人之处”和其他 Linux/Unix 不一样。
 
 ## 使用 `curl` 来替代
 
-由于上述问题重现在需要重新构建，比较花时间，我就先试试用 `curl` 命令是否能否上传呢？
+由于上述问题重现在需要重新构建，比较花时间，就先试试直接用 `curl` 命令来调用 Artifactory REST API 看看结果。
 
-做了一下测试，直接使用 curl 来查看 Artifactory 的版本，果然出错了，`curl` 也不行。
+做了以下测试，查看 Artifactory 的版本
 
 ```bash
 curl  https://artifactory.company.com/artifactory/api/system/version
@@ -90,7 +109,7 @@ bash-4.3$ curl -v  https://artifactory.company.com/artifactory/api/system/versio
 curl: (35) Unknown SSL protocol error in connection to artifactory.company.com:443
 ```
 
-看起来问题可能是 curl 没有找到制定证书，查了help `--cacert` 参数可以指定 cacert.pem 文件，试了下成功了！
+果然也出错了，`curl` 也不行，可能就是执行 `curl` 命令的时候没有找到指定证书，查了 `curl` 的 help，有 `--cacert` 参数可以指定 cacert.pem 文件。
 
 ```bash
 bash-4.3$ curl --cacert /var/ssl/cacert.pem https://artifactory.company.com/artifactory/api/system/version
@@ -102,25 +121,51 @@ bash-4.3$ curl --cacert /var/ssl/cacert.pem https://artifactory.company.com/arti
 }
 ```
 
-到这里问题已经解决了，只要使用 `curl` 调用 Artifactory REST API 就能完成上传操作了。但是我用的 Artifactory Jenkins Plugin 如果使用 `curl` 我需要把之前的实现都转换一遍，还要测试，就为了 AIX 一个平台的问题，做这样的转换实在是“懒”。就本着这样懒惰的性格，还得继续解决 Jenkins 调用 agent 去执行上传失败的问题。
+试了下成功了。
 
-## 继续使用 Artifactory 插件
+到这里问题已经解决了，只要使用 `curl` 调用 Artifactory REST API 就能完成上传操作了。但我用的 Jenkins Artifactory Plugin，如果使用 `curl` 我需要把之前的代码重新再实现一遍，然后再测试，就为了 AIX 一个平台的问题，实在是“懒”的重新开始。本着这样懒惰的性格，还得继续解决 Jenkins 调用 agent 去执行上传失败的问题。
 
-> Jenkins 的 master 管理 agent 是通过在 agent 上启动一个 remote.jar, 
+## 最终解决办法
 
-用同样的办法来解决 Jenkins 的问题。如果有一个环境变量能设置指定 cacert.pem 文件的路径，那样在 Jenkins 调用 agent 执行上传时候可能就能解决同样的问题了。果然有这样的环境变量，设置如下
+### 尝试设置 `SSL_CERT_FILE` 环境变量
+
+想试试用上述的办法来解决 Jenkins 的问题。如果能有一个环境变量能设置指定 cacert.pem 文件的路径，那样在 Jenkins 调用 agent 执行上传时候就能找到证书，可能就能解决这个问题了。果然是有这样的环境变量的 `SSL_CERT_FILE`，设置如下
 
 ```bash
 set SSL_CERT_FILE=/var/ssl/cacert.pem
 ```
-设置之后通过 `curl` 调用，经测试不需要再用 `--cacert` 参数了。带着喜悦的喜悦的心情去 Jenkins 设置如下或是可以修改 `/etc/environment` 文件，把上述的环境变量加到 agent 机器上。
+
+设置好环境变量之后，通过 `curl` 调用，再不需要使用 `--cacert` 参数了。这下看起来有戏了，带着喜悦的心情把这个环境变量加到 agent 机器上，设置如下：
 
 ![](Java-net-SocketException-on-AIX/configure-agent-environment-variable.png)
 
-结果经测试错误信息依旧，看来执行的 remote.jar 去进行上传跟本地配置环境没有关联。看来需要从执行 remote.jar 把相应的设置或是环境变量传进去。`java` 的 `-D` 参数可以完成这一点。
+或者可以修改 agent 机器上的 `/etc/environment` 文件。
 
-废话不多说了，进行了浩瀚的搜索和尝试，最终在 IBM 的官方找到了这篇文档 https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/matchsslcontext_tls.html
+结果经测试错误信息依旧，看来 Jenkins 执行的 remote.jar 进行上传时跟本地配置环境没有关联，看来需要从执行 remote.jar 着手，把相应的设置或是环境变量在启动 remote.jar 时传进去。
 
-文档大意是，IBM SDK system property `com.ibm.jsse2.overrideDefaultTLS =[true|false]` 有 `true` 和 `false` 两个值，如果想要与 Oracle `SSLContext.getInstance("TLS")` 的行为相匹配，请将此属性设置为 `true`，默认值为 `false`。
+> Jenkins 管理 agent 的原理是通过在 agent 上启动一个 remote.jar 实现的
 
-最终我在 Jenkins 的 agent 配置里 JVM Options 区域加上 `-Dcom.ibm.jsse2.overrideDefaultTLS=true` 解决了我的这样问题。
+### 在启动 remote.jar 时设置环境变量
+
+`java` 的 `-D` 参数可以完成这一点。
+
+进行了大量的搜索和尝试，最终在 IBM 的官方找到了这篇文档 https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/matchsslcontext_tls.html
+
+文档大意是，IBM SDK 系统属性 `com.ibm.jsse2.overrideDefaultTLS=[true|false]` 有 `true` 和 `false` 两个值，如果想要与 Oracle `SSLContext.getInstance("TLS")` 的行为相匹配，请将此属性设置为 `true`，默认值为 `false`。
+
+下表显示了系统属性对 SSLContext.getInstance("TLS") 的影响
+
+| Property value setting	 | Protocol enabled | 
+|---|---|
+| false | TLS V1.0 |
+| true | TLS V1.0, V1.1, and V1.2 |
+
+绝大多数的 Java 应用都是使用 Oracle 的 JDK 来开发的，这里要与 Oracle 的行为保持一致；另外 IBM 的 SDK 默认协议只有 TLS V1.0，而上面的 log 可以看到使用的 TLSv1.2 协议，因此需要将属性设置为 `true`。
+
+最终在 Jenkins 的 agent 配置里将 JVM Options 区域加上这句 `-Dcom.ibm.jsse2.overrideDefaultTLS=true`，断开连接，重新启动 agent，再次执行 Pipeline，成功的把 AIX 上的制品上传到 Artifactory 上了，问题解决了。
+
+## 总结
+
+遇到问题并解决问题是一件非常爽的事，从中也学到了很多之前不曾了解过的知识，解决问题的过程比 Google 随便查查更让人印象深刻，再遇到此类问题可能就会举一反三了。
+
+另外，凡事如果觉得自己在短时间内没有头绪、自己搞不定的时候尽快寻求有经验的同事的帮助。感谢帮助我的同事们，没有他们的帮助和指导就不能这么快的解决问题。
