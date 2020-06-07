@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Hexo site CI
+name: build
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -43,7 +43,6 @@ jobs:
       run: |
         npm install
         npm install -g hexo-cli
-        npm install hexo-deployer-git --save
         hexo generate
         hexo server > /dev/null 2>&1 &
         sleep 20 && curl -Is http://localhost:4000/ | head -n 1
