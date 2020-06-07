@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Hexo site CI workflow
+name: Hexo site CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -24,7 +24,6 @@ jobs:
       with:
         fetch-depth: 0
         
-    # Runs a single command using the runners shell
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@v1.3
       env:
@@ -33,13 +32,18 @@ jobs:
       with:
         # Set the sonar.projectBaseDir analysis property
         projectBaseDir: .
-
-    # Runs a set of commands using the runners shell
-    - name: Run Test
-      run: |
+      
+    - name: Setup node 12 
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - run: | 
         npm install
         npm install -g hexo-cli
         npm install hexo-deployer-git --save
+
+    - name: Run Test
+      run: |
         hexo generate
         hexo server > /dev/null 2>&1 &
         sleep 20 && curl -Is http://localhost:4000/ | head -n 1
