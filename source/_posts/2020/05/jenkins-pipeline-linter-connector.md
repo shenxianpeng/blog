@@ -46,12 +46,27 @@ curl --user $username:$password -X POST -F "jenkinsfile=<$PWD/$JENKINS_FILE" $JE
 
 让我们来测试一下效果 `sh linter.sh your-jenkinsfile-path`
 
-```sh
+实例 1
+
+```bash
 $ sh linter.sh Jenkinsfile
 Errors encountered validating Jenkinsfile:
 WorkflowScript: 161: Expected a stage @ line 161, column 9.
            stages {
            ^
+```
+
+实例 2
+
+```bash
+sh linter.sh Jenkinsfile 
+Errors encountered validating Jenkinsfile:
+WorkflowScript: 60: Invalid condition "failed" - valid conditions are [always, changed, fixed, regression, aborted, success, unsuccessful, unstable, failure, notBuilt, cleanup] @ line 60, column 9.
+           failed{
+           ^
+# 将 failed 改为 failure，再次执行，成功。
+sh linter.sh Jenkinsfile 
+Jenkinsfile successfully validated.
 ```
 
 果然当 Pipeline 写的很长的时候，总是很难发现有什么地方写的不对。继续修改，直到再次执行没有错误为止。
