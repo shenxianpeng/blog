@@ -1,5 +1,5 @@
 ---
-title: 《Jenkins Tips 002》 如何把 Shell 返回的数据处理为数组
+title: 《Jenkins Tips 002》 处理 Shell 返回的字符串成字符数组
 tags:
   - Tips
   - Jenkins
@@ -11,28 +11,32 @@ author: shenxianpeng
 
 > Jenkins Tips —— 每期用简短的图文描述一个 Jenkins 小技巧。
 
-![](Jenkins-tips-1/jenkins-tips.png)
+![](Jenkins-tips-2/jenkins-tips.png)
 
 ## 问题
 
-需要对 Linux 上不同的数据文件通过 Jenkins 给不同的人发送邮件，需要将数据变成数组，然后通过循环把他们发给指定的用户。
+想要把 Linux 上不同的文本数据通过 Jenkins 发送邮件给不同的人。
+
+## 思路
+
+想通过 Shell 先对数据进行处理，然后返回到 Jenkins pipeline 里，但只能得到 Shell 返回的字符串，因此需要在 Jenkinsfile 里把字符串处理成数组，然后通过一个 for 循环对数组中的值进行处理。
+
+以下是要处理的文本数据：
 
 ```bash
 # Example
 $ ls
 fail-list-user1.txt  fail-list-user2.txt  fail-list-user3.txt
 ```
-假如要对以上文件分别进行分送邮件给用户 user1，user2，user3 如何处理呢？
-
-初步的想法就是通过一些 Shell 表达式只 `list` 出 user1 user2 user3，将它返回给 Jenkins Pipeline。然后通过 groovy 语法对 Shell 传回的字符串进行 `split`，从而处理成数组。
+要将以上文件通过 Jenkins 分别进行处理，得到用户 user1，user2，user3 然后发送邮件。
 
 ## 解决
 
 <!-- more -->
 
-### Shell 截取字符串
+### 字符串截取
 
-对原文件的名字通过 Shell 进行处理。
+通过 Shell 表达式只过滤出 user1 user2 user3
 
 ```bash
 # list 所有以 fail-list 开头的文件，并赋给一个数组 l
@@ -49,40 +53,45 @@ done
 测试结果如下：
 
 ```bash
-sxp@localhost MINGW64 /c/workspace/test (master)
 $ ls
 fail-list-user1.txt  fail-list-user2.txt  fail-list-user3.txt
-
-sxp@localhost MINGW64 /c/workspace/test (master)
 $ l=$(ls -a fail-list-*) && for f in $l; do f=${f#fail-list-}; f=${f%.txt}; echo $f ; done;
 user1
 user2
 user3
 ```
 
-### Groovy 处理 Shell 返回
+### 处理字符串为数组
+
+以下在 Jenkinsfile 使用 groovy 将 Shell 返回的字符串处理成字符数组。
 
 ```groovy
-// 将 Shell 返回字符串赋给 owners 这个变量。注意在 $ 前面需要加上 \ 进行转义。
-def owners = sh(script: "l=\$(ls -a fail-list-*) && for f in \$l; do f=\${f#fail-list-}; f=\${f%.txt}; echo \$f ; done;", returnStdout:true).trim()
+// Jenkinsfile 
+// 忽略 stage, steps 等其他无关步骤
+...
 
-// 查看 owners 数组是否为空，isEmpty() 是 groovy 内置方法。
-if ( ! owners.isEmpty() ) {
-  // 通过 .split() 对 owners string 进行分解，返回字符串数组。然后通过 .each() 对返回的字符串数组进行循环。
-  owners.split().each { owner ->
-    // 打印最终的用户返回
-    println "owner is ${owner}"
+scripts {
+  // 将 Shell 返回字符串赋给 owners 这个变量。注意在 $ 前面需要加上 \ 进行转义。
+  def owners = sh(script: "l=\$(ls -a fail-list-*) && for f in \$l; do f=\${f#fail-list-}; f=\${f%.txt}; echo \$f ; done;", returnStdout:true).trim()
 
-    // 发送邮件，例子
-    email.SendEx([
-        'buildStatus'  : currentBuild.currentResult,
-        'buildExecutor': "${owner}",
-        'attachment'   : "fail-list-${owner}.txt"
-    ])
+  // 查看 owners 数组是否为空，isEmpty() 是 groovy 内置方法。
+  if ( ! owners.isEmpty() ) {
+    // 通过 .split() 对 owners string 进行分解，返回字符串数组。然后通过 .each() 对返回的字符串数组进行循环。
+    owners.split().each { owner ->
+      // 打印最终的用户返回
+      println "owner is ${owner}"
+
+      // 发送邮件，例子
+      email.SendEx([
+          'buildStatus'  : currentBuild.currentResult,
+          'buildExecutor': "${owner}",
+          'attachment'   : "fail-list-${owner}.txt"
+      ])
+    }
   }
 }
 ```
 
-最终完成了通过 Groovy 将 Shell 返回的字符串，处理成字符数组，实现上述例子中需要对不同人进行邮件通知的需求。
+最终完成了通过 Groovy 将 Shell 返回的字符串处理成字符数组，实现上述例子中对不同人进行邮件通知的需求。
 
-希望以上的例子对你做类似需求的时候有所启示和帮助。
+希望以上例子对你做其他类似需求的时候有所启示和帮助。
