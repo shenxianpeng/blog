@@ -38,3 +38,8 @@ fb_app_id:
 
 # disqus
 disqus_shortname: shenxianpeng
+
+# Google Analytics
+google_analytics:
+  tracking_id: UA-168820225-1
+  localhost_ignored: false
