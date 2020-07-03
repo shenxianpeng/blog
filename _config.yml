@@ -134,9 +134,7 @@ restful:
   pages: false             # 额外的 Hexo 页面数据, 如 About
 
 # Google Analytics
-google_analytics:
-  tracking_id: UA-168820225-1
-  localhost_ignored: false
+google_analytics: UA-168820225-1
 
 server:
   cache: true
