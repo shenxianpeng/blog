@@ -17,6 +17,8 @@ author: shenxianpeng
 
 本文介绍了两种方式来实现如何对 Jenkins 声明式流水线在 Jenkins 构建执行前进行语法错误检查，这两种方式的原理都是通过调用 Jenkins REST API 来实现的。
 
+<!-- more -->
+
 > 注意：
 >
 > 当前只有声明式流水线支持语法校验，脚本式流水线不支持。

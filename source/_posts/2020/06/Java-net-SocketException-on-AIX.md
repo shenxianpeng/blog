@@ -14,6 +14,8 @@ author: shenxianpeng
 
 分享一个花了两天时间才解决的一个问题：使用 Jenkins Artifactory 插件上传制品到 https 协议的企业级的 Artifactory 失败。该问题只在 AIX 平台上出现的，其他 Windows，Linux, Unix 均正常。
 
+<!-- more -->
+
 ## 前言
 
 最近计划将之前使用的 Artifactory OSS（开源版）迁移到 Aritifactory Enterprise（企业版）上。为什么要做迁移？这里有一个 Artifactory 对比的矩阵图 https://www.jfrog.com/confluence/display/JFROG/Artifactory+Comparison+Matrix

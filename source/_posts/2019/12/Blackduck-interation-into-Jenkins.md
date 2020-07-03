@@ -15,6 +15,8 @@ author: shenxianpeng
 
 ## 为什么要做源码扫描
 
+<!-- more -->
+
 在产品开发中经常需要引入一些开源组件，但这些开源的代码会给产品风险。因此我们在发布自己产品的时候需要对这些开源组件的漏洞和许可信息进行评估。
 ![开源不等于安全](Blackduck-interation-into-Jenkins/open-source.png)
 

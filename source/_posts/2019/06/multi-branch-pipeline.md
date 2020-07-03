@@ -23,6 +23,8 @@ How to do it in an elegant way, I would want to share how to use multibranch pip
 2. Reviewers can decide whether to merge base on build results.
 3. After code merged, auto start full build.
 
+<!-- more -->
+
 ## Benefits
 
 What are the benefits:

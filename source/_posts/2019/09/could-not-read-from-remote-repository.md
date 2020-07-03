@@ -24,6 +24,8 @@ and the repository exists.
 
 ## 常见解决方案
 
+<!-- more -->
+
 Google 了没有找到我遇到的这个问题，绝大多数都是应为没有生成 ssh-key，然后将 pub key 添加到 Github 或是其他 Web git 管理平台，对于这个问题是这样解决的，以 GitHub 为例
 
 首先，生成 SSH key

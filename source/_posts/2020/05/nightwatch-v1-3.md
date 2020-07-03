@@ -15,6 +15,8 @@ Nightwatch js 是我之前写自动化测试用例使用了很长一段时间的
 
 Nightwarch.js 是一个端到端的基于 Node.js 使用 W3C Webdriver （以前是 Selenium ）的自动化测试框架。它是一个完整的集成解决方案，用于 web 应用程序和网站的端到端测试，以及 Node.js 单元测试和集成测试。
 
+<!-- more -->
+
 查看了一下 Nightwatch 的发布历史（https://github.com/nightwatchjs/nightwatch/releases），可以看到这期间修复了不少 Bug，而且在 v1.3 ​版本还新增一些新的功能。
 
 * 新增 BDD describe Interface - 可以同时运行以 BDD 描述和导出接口编写的测试，无需其他配置。

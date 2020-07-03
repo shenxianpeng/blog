@@ -14,6 +14,8 @@ author: shenxianpeng
 
 通过集成，可以让 Jenkins 在完成构建之后，可以直接将制品（比如 build）推送到 Artifactory，供测试下载、部署或是后续的 Jenkins 任务去继续进行持续集成。
 
+<!-- more -->
+
 ## Jenkins 里配置 Artifactory
 
 打开 Manage Jenkins->Configure System，找到 Artifactory，点击 Add Artifactory Server， 输入 Server ID 和 URL

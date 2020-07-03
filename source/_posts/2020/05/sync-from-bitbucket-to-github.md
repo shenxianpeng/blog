@@ -16,6 +16,8 @@ author: shenxianpeng
 * 只分享我们想给客户分享的内容
 * 不改变当前的工作流程，即继续使用 Bitbucket
 
+<!-- more -->
+
 因此我们需要在 GitHub 上创建相应的仓库，然后将内部 Bitbucket 仓库中对应的 master 分支定期的通过 CI job 同步到 BitHub 上去。
 
 ![](sync-from-bitbucket-to-github/sync-diagrom.png)

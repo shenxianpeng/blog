@@ -19,6 +19,8 @@ Jenkins 的 multi-branch pipeline 想必很多人已经在用了，使用这种�
 
 那既然这条路不稳定，不好走，那就走一条可以走通的路、直接的硬路，即在 Bitbucket 对应的仓库中添加 webhooks。
 
+<!-- more -->
+
 ## 配置
 
 在申请添加 webhooks 之前，我先在个人的私人仓库下，创建了测试仓库对 webhook 进行了测试，在经过反复的测试，觉得没有问题后，将相应的配置通过管理员添加到对应的 Repository 中。如下示例：

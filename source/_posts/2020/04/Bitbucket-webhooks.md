@@ -13,6 +13,8 @@ author: shenxianpeng
 
 I have set several multi-branch pipeline and it can support Bitbucket Pull Request build. So, when developer create a Pull Request on Bitbucket, Jenkins can auto-trigger PR build. but this jenkins-plugin may not very stable, it had not work two times and I actually don't know why it does that. But I know the use Git webhook is a direct and hard approach could solve this problem. After my test, the answer is yes. it works as expect.
 
+<!-- more -->
+
 Here is my setting.
 
 * Webhook name: test-multibranch

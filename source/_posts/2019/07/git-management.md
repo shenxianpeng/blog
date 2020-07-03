@@ -13,6 +13,8 @@ author: shenxianpeng
 
 从一个分支找到所有的 commit 和 ticket 号，然后去另外一个分支去查找这些提交是否也在这个分支里。
 
+<!-- more -->
+
 找一个分支的所有 commit 和 ticket 号
 
 ```bash

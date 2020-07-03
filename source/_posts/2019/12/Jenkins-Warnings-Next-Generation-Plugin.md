@@ -13,6 +13,8 @@ author: shenxianpeng
 
 Jenkins Warnings Next Generation 插件可收集编译器警告或静态分析工具报告的问题并可视化结果，它内置了对众多静态分析工具（包括多个编译器）的支持，更多[支持的报告格式](https://github.com/jenkinsci/warnings-ng-plugin/blob/master/SUPPORTED-FORMATS.md)。
 
+<!-- more -->
+
 ### 支持的项目类型
 
 Warnings Next Generation 插件支持以下 Jenkins 项目类型：

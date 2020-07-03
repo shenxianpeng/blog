@@ -19,6 +19,8 @@ author: shenxianpeng
 
 几天前发现一个 Git 历史统计信息生成工具叫 GitStats ( http://gitstats.sourceforge.net/ )
 
+<!-- more -->
+
 这是一个用 python 写的，代码量很少，功能却非常强大的分析工具，也是我目前发现为数不多的可以生成漂亮的报告并且使用很方便的开源项目。
 
 gitstats 的报告也很强大 (https://github.com/tomgi/gitstats) 感兴趣的可以试试

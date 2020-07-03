@@ -17,6 +17,8 @@ Artifactory 是 JFrog 的一个产品，用作二进制存储库管理器。二�
 
 我觉得使用 Artifactory 的最大优势是创造了更好的持续集成环境，有助于其他持续集成任务去 Artifactory 里调用，再部署到不同的测试或开发环境，这对于实施 DevOps 至关重要。
 
+<!-- more -->
+
 如果想了解更多有关 Artifactory，请参看 [中文官网](https://www.jfrogchina.com/) 以及 [English Website](https://jfrog.com/artifactory/)。
 
 ## 安装 Artifactory

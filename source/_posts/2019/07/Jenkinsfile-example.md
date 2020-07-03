@@ -18,6 +18,8 @@ author: shenxianpeng
 * 如何同时clone多个repos
 * 如何进行条件判断，anyOf
 
+<!-- more -->
+
 ```bash
 pipeline {
     agent {
