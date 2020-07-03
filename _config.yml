@@ -96,6 +96,9 @@ comments: true
 deploy:
   type: git
   repo: git@github.com:shenxianpeng/shenxianpeng.github.io.git
+  branch: master
+  name: shenxianpeng
+  email: xianpeng.shen@gmail.com
 
 # hexo-generator-search
 search:
