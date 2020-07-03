@@ -15,6 +15,8 @@ author: shenxianpeng
 upload_to_ftp.bat [hostname] [username] [password] [local_path] [remote_pat]
 ```
 
+<!-- more -->
+
 windows batch 由于它的局限性，在实现上是比较麻烦的，但还是有办法。如何用 windows batch 来实现呢？借助一个临时文件，把需要的参数写入到临时文件里，然后通过 ftp -s 参数读取文件，最后把临时文件删除的方式来实现。
 
 ```bash

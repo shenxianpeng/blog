@@ -20,6 +20,8 @@ java.lang.RuntimeException: Method code too large!
 	[...]
 ```
 
+<!-- more -->
+
 当时我也使用了 Jenkins Shared Libraries，但那时候的代码组织的并不是很好，有不少步骤还没来得及单独抽离出来作为单独的方法。为了解决这个问题，经过一番重构，我将原来的 600 多行的 Pipeline 变成了现在的 300 多行，很不巧，随着继续添加功能，最近又遇到了这个问题。
 
 出现这个问题的原因是 Jenkins 将整个声明性管道放入单个方法中，并且在一定大小下，JVM 因 java.lang .RuntimeException 失败：方法代码太大！看来我还是有什么方法超过了 64k。

@@ -11,7 +11,9 @@ author: shenxianpeng
 
 如果你想使用 Linux 但又不想租用云厂商的虚拟机，那么 VirtualBox 是一个比较好的选择。我们可以在 VirtualBox 安装你需要的绝大数的操作系统。
 
-为了保证使用的流畅，这里最好使用内存建议 8G 及以上，硬盘 256 GB 的 Windows 电脑
+为了保证使用的流畅，这里最好使用内存建议 8G 及以上，硬盘 256 GB 的 Windows 电脑。
+
+<!-- more -->
 
 ## 下载
 

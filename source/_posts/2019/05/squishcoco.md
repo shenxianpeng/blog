@@ -15,6 +15,8 @@ author: shenxianpeng
 2. Installed Visual Studio 2010 or higher, I used VS2017 Professional
 3. Install Squish Coco and Add-in
 
+<!-- more -->
+
 ## Add-in
 
 * go to ..squishcoco\Setup, see quishCocoVSIX2017.vsix, double click, reopen VS2017, squishcoco will be there

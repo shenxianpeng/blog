@@ -11,16 +11,14 @@ author: shenxianpeng
 
 > Jenkins Tips —— 每期用简短的图文描述一个 Jenkins 小技巧。
 
-![](Jenkins-tips-1/jenkins-tips.png)
-
 ## 问题
 
 * 不希望 Shell 脚本因失败而中止
 * 想一直运行 Shell 脚本并报告失败
 
-## 解决
-
 <!-- more -->
+
+## 解决
 
 ### 方法一
 

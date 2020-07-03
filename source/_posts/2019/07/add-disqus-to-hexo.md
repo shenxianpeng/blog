@@ -18,6 +18,8 @@ https://YOURSHORTNAMEHERE.disqus.com/admin/settings/general
 
 在你Hexo博客里打开 _config.yml, 然后输入 disqus_shortnameand: YOURSHORTNAMEHERE，像这样：
 
+<!-- more -->
+
 ```bash
 disqus_shortname: myshortnamegoeshere
 comments: true

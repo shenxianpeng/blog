@@ -11,11 +11,11 @@ author: shenxianpeng
 
 > Jenkins Tips —— 每期用简短的图文描述一个 Jenkins 小技巧。
 
-![](Jenkins-tips-2/jenkins-tips.png)
-
 ## 问题
 
 想要把 Linux 上不同的文本数据通过 Jenkins 发送邮件给不同的人。
+
+<!-- more -->
 
 ## 思路
 
@@ -31,8 +31,6 @@ fail-list-user1.txt  fail-list-user2.txt  fail-list-user3.txt
 要将以上文件通过 Jenkins 分别进行处理，得到用户 user1，user2，user3 然后发送邮件。
 
 ## 解决
-
-<!-- more -->
 
 ### 字符串截取
 

@@ -16,6 +16,8 @@ author: shenxianpeng
 
 `-a` 显示所有文件，包括隐藏的和不隐藏的
 
+<!-- more -->
+
 可以组合使用，像这样
 
 ```bash

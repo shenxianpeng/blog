@@ -22,6 +22,8 @@ author: shenxianpeng
 }
 ```
 
+<!-- more -->
+
 不能翻墙的可换成 baidu，相应的 element 需要改一下否则以上代码会报错。
 上面的代码是执行一个按键操作，如果想做组合键操作怎么办呢？比如在 Google 搜索框中输入 nightwatch，然后按 ctrl+a 组合键来进行全选操作。还是以 Google 搜索为例，代码如下：
 

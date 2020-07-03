@@ -11,6 +11,8 @@ author: shenxianpng
 
 记录在使用 Solaris 时所遇到的问题和解决办法，以备以后遇到同样问题不要再因为这些再浪费时间，希望也能帮助到你。
 
+<!-- more -->
+
 ## install packages on solaris
 
 https://www.opencsw.org/get-it/packages/

@@ -13,6 +13,8 @@ author: shenxianpeng
 
 日常工作中需要切换到不同平台（包括 Linux, AIX, Windows, Solris, HP-UX）不同的版本进行开发和验证问题，但是由于虚拟机有限，并不能保证每个开发和测试都有所以平台的虚拟机并且安装了不同的版本，因此准备各种各样的开发和测试环境会花费很长时间。
 
+<!-- more -->
+
 ## 需求分析
 
 对于这样的需求，一般都会首先想到 Docker；其次是从 Artifactory 取 Build 然后通过 CI 工具进行安装；最后从 Source Code 进行构建然后安装。

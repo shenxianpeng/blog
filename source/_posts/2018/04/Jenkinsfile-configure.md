@@ -11,7 +11,7 @@ author: shenxianpeng
 
 最近在做有关 DevOps Build 的时候，学习了 Jenkins 的 Pipeline 的功能，不得不提到的就是 Jenkinsfile 这个文件。
 
-以下面是我配置的 Jenkinsfile 文件及简单说明，更多有关 [Pipeline](https://jenkins.io/doc/book/pipeline/) 请看官方文档
+以下面是我配置的 Jenkinsfile 文件及简单说明，更多有关 [Pipeline](https://jenkins.io/doc/book/pipeline/) 请看官方文档。
 
 ```JavaScript
 pipeline {

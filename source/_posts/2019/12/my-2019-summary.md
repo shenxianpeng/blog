@@ -13,6 +13,8 @@ author: shenxianpeng
 
 这是我作为开发工程师的第二年，虽然 Title 是 SE (Software Engnieer)，但主要的工作内容是产品的构建和发布以及 CI/CD/DevOps 的落地（自称打杂）。流水的记录一下 2019 年发生在工作上的“成绩”。
 
+<!-- more -->
+
 2019 年在工作中除了完成日常产品构建、发布、Git 管理、VM 管理等，尝试在构建和发布自动化上做大的调整，将手工构建和部分自动构建从 Bamboo 迁移到 Jenkins，通过 Jenkins 的 multi-branch pipeline、Shared Libraries 与 Artifactory 做持续集成。
 
 2019 年在公司内部提交了一个创新项目，有幸拿到了第一名和首席产品奖。

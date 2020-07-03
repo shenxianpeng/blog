@@ -14,6 +14,8 @@ author: shenxianpeng
 
 这里通过 NFS 和 Jenkins 来解决。
 
+<!-- more -->
+
 什么是 NFS？NFS（Network File System）即网络文件系统，是 FreeBSD 支持的文件系统中的一种，它允许网络中的计算机之间共享资源。在 NFS 的应用中，本地 NFS 的客户端应用可以透明地读写位于远端 NFS 服务器上的文件，就像访问本地文件一样，Windows 上俗称共享。
 
 Jenkins 不必多说，用它主要是来监测如果这个容量巨大的仓库有代码提交就自动执行 git pull 操作，更新最近的代码到共享服务器上。

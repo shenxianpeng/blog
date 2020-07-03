@@ -22,6 +22,8 @@ sudo systemctl stop docker.service
 sudo systemctl start docker.service
 ```
 
+<!-- more -->
+
 ## Docker run
 
 我们通过 docker 的两个参数 -i -t，让 docker 运行的容器实现"对话"的能力：
