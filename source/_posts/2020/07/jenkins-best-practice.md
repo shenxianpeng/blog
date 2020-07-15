@@ -71,9 +71,10 @@ So, I will share more detailed information here with you.
 
 The thing works behind the scene is called Jenkins Mutli-branch Pipeline. Before getting into the details, let’s first see what it looks like. 
 
-![Multi-Branch Pepeline Branches](jenkins-best-practice/multi-branches.png)
+![Multi-Branch Pipeline Branches](jenkins-best-practice/multi-branches.png)
 > Note: If your branch or Pull Request has been deleted, the branch or Pull Request will either be removed from the multi-branch Job or show a crossed out status as shown above, this depending on your Jenkins setting.
-![Multi-Branch Pepeline Pull Requests](jenkins-best-practice/multi-pull-request.png)
+
+![Multi-Branch Pipeline Pull Requests](jenkins-best-practice/multi-pull-request.png)
 
 So, as you can see from this page, there are multi Jenkins jobs. That is because for each bugfix or feature branch in Bitbucket, this multi-branch pipeline will automatically create a Jenkins job for them. 
 
