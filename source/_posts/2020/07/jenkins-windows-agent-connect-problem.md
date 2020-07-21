@@ -31,7 +31,7 @@ Then try to reconnect Jenkins agnet it shoule back to work.
 
 If you can not found `Jenkins agent` like me. 
 
-![Features](jenkins-windows-agent-connect-problem/4.png)
+![Jenkins agent service](jenkins-windows-agent-connect-problem/4.png)
 
 you can try these steps to install `Jenkins agent`.
 
