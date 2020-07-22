@@ -1,5 +1,5 @@
 ---
-title: 《Jenkins Tips 2》 处理 Shell 返回的字符串成字符数组
+title: 将 Jenkins Shell 返回的字符串处理为字符数组
 tags:
   - Tips
   - Jenkins
@@ -9,7 +9,7 @@ date: 2020-06-22 14:37:29
 author: shenxianpeng
 ---
 
-> Jenkins Tips —— 每期用简短的图文描述一个 Jenkins 小技巧。
+> 《Jenkins Tips 2》 —— 每期用简短的图文描述一个 Jenkins 小技巧。
 
 ## 问题
 

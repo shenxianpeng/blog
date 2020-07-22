@@ -1,5 +1,5 @@
 ---
-title: 《Jenkins Tips 1》 忽略 Shell 步骤中的故障
+title: 忽略 Jenkins Shell 步骤中的故障
 tags:
   - Tips
   - Jenkins
@@ -9,7 +9,7 @@ date: 2020-06-21 21:42:17
 author: shenxianpeng
 ---
 
-> Jenkins Tips —— 每期用简短的图文描述一个 Jenkins 小技巧。
+> 《Jenkins Tips 1》 —— 每期用简短的图文描述一个 Jenkins 小技巧。
 
 ## 问题
 
