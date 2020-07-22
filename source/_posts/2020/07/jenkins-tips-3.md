@@ -1,5 +1,5 @@
 ---
-title: 《Jenkins Tips 3》 Jenkins 执行 Shell 如果返回值不为0，作业(Job)停止并失败怎么办？
+title: Jenkins 执行 Shell 如果返回值不为0，作业(Job)停止并失败怎么办？
 tags:
   - Tips
   - Jenkins
@@ -9,7 +9,7 @@ date: 2020-07-22 16:11:36
 author: shenxianpeng
 ---
 
-> Jenkins Tips —— 每期用简短的图文描述一个 Jenkins 小技巧。
+> 《Jenkins Tips 3》—— 每期用简短的图文描述一个 Jenkins 小技巧。
 
 ## 问题
 
