@@ -1,5 +1,5 @@
 ---
-title: 《Jenkins Tips 001》 忽略 Shell 步骤中的故障
+title: 《Jenkins Tips 1》 忽略 Shell 步骤中的故障
 tags:
   - Tips
   - Jenkins

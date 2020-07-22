@@ -1,5 +1,5 @@
 ---
-title: 《Jenkins Tips 002》 处理 Shell 返回的字符串成字符数组
+title: 《Jenkins Tips 2》 处理 Shell 返回的字符串成字符数组
 tags:
   - Tips
   - Jenkins

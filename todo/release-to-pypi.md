@@ -18,7 +18,7 @@ author: shenxianpeng
 pip install xxxx
 ```
 
-就可以轻松下载，真是即酷炫又方便，你有没有想过这个是怎么实现的，赶上最近又开始写 Python 借此机会分享一下。
+就可以轻松下载，真是即酷炫又方便，你有没有想过这个是怎么实现的？最近正好赶上又开始写 Python 借此机会分享一下。
 
 ## 什么是 PyPI
 
@@ -28,7 +28,7 @@ PyPI 又两个环境，一个是测试环境 [TestPyPI](https://test.pypi.org/) 
 
 ## 准备条件
 
-1. 如果想先尝试 PyPI 发布工具和发布流程可以使用测试环境 [TestPyPI](https://test.pypi.org/) 
+1. 如果想熟悉 PyPI 发布工具和发布流程可以使用测试环境 [TestPyPI](https://test.pypi.org/) 
 2. 如果已经熟悉了 PyPI 的发布工具和流程可以直接使用正式环境 [PyPI](https://pypi.org/)
 3. TestPyPI 和 PyPI 需要单独注册，即在正式环境注册了，如果去使用测试环境也同样需要注册。
 4. 已经写好并且可以正常使用的项目/库/方法。
