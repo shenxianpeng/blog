@@ -9,6 +9,8 @@ date: 2020-07-26 08:39:22
 author: shenxianpeng
 ---
 
+## 背景
+
 在使用 Git 提交代码的时候，在与他人合作同时开发的项目，一个良好的提交信息规范我总结有三个好处：
 
 1. 有助于其他人接手，进行 Bug 修复或是新功能的添加都是很好的参考
@@ -19,19 +21,21 @@ author: shenxianpeng
 
 <!-- more -->
 
-没有任何规范的提交
+随便找的一个没有任何规范的提交信息
 
 ![没有规范的 Git 提交信息](commit-messages-specification/bad-commit-message.png)
 
 
-有规范的提交，并且遵循了常规提交 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+这是 Angular 有规范的提交信息，并且遵循了常规提交 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-![有规范的 Git 提交信息](commit-messages-specification/good-commit-message.png)
+![有规范的 Git 提交信息](commit-messages-specification/angular-commit-message.png)
+
+## 如何治理提交信息规范
 
 在治理提交信息规范问题上，有两个解决办法。
 
-* 一是为团队制定出提交信息的规范，让团队了解和遵守。
-* 二是在提交代码时，设置 Git Hook 把不规范的提交排除在外，比如提示用户当前提交的信息不符合规范。
+1. 为团队制定出提交信息的规范，让团队了解和遵守。
+2. 在提交代码时，设置 Git Hook 把不规范的提交排除在外，比如提示用户当前提交的信息不符合规范。
 
 ## 制定规范
 
@@ -66,8 +70,6 @@ Must be one of the following:
 
 ### 参考文档
 
-这里附上我所参考的文档
-
 > Conventional Commits https://www.conventionalcommits.org/en/v1.0.0/
 
 > Angular Commit Guidelines: https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits
@@ -76,11 +78,13 @@ Must be one of the following:
 
 ## 设置 Git Hook
 
-以 Bitbuket 为例，开启[Yet Another Commit Checker](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/1442119700/Yet+Another+Commit+Checker+YACC+for+Bitbucket) 这个免费插件。
+以 Bitbuket 为例，开启 [Yet Another Commit Checker](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/1442119700/Yet+Another+Commit+Checker+YACC+for+Bitbucket) 这个免费插件。
 
 ![](commit-messages-specification/git-hook.png)
 
 这里的设置很多，我举两个不那么严格的常见设置。
+
+![Commit Checker 设置](commit-messages-specification/commit-checker-setting.png)
 
 1. 开启 Require Valid JIRA Issue(s)
 
@@ -100,12 +104,12 @@ ABCD-1234 Balabala......
 
 ### 其他设置
 
-![Yet Another Commit Checker 插件的其他](commit-messages-specification/commit-checker.png)
+![Yet Another Commit Checker 插件的其他设置选项](commit-messages-specification/commit-checker.png)
 
 另外还有一些其他的设置，比如关联的 Jira 单子必须处于什么样的状态，这个可以防止已经关闭的 Jira 单子，开发还往上面偷偷的修改代码，这时候测试也发现不了。
 
 还有 Require Matching Committer Email 和 Require Matching Committer Name 来限定开发者必须配置好与登录用户名和邮箱相匹配的用户名和邮箱，来规范提交信息里显示的用户名和邮箱，也方便进行 Git 信息的统计等后续数据的收集。
 
 
-> [Yet Another Commit Checker 插件文档](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/1442119700/Yet+Another+Commit+Checker+YACC+for+Bitbucket)
+更多请参考 [Yet Another Commit Checker 插件文档](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/1442119700/Yet+Another+Commit+Checker+YACC+for+Bitbucket)。
 
