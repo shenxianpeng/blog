@@ -1,5 +1,5 @@
 ---
-title: Annual work summary from 2019 - 2020
+title: Annual work summary from 2019.03 - 2020.07
 tags:
   - Summary
   - Work
@@ -12,11 +12,12 @@ author: shenxianpeng
 Summarize what did I do from 2019.03 to 2020.07 when I became a Build Release/DevOps engineer.
 
 ## Build automation
-* Support all server windows platform manual to auto.
+
+* Support all server windows platform build manual to auto.
 * Support clents build from manual to auto.
 * Switch linux/unix build from Bamboo to Jenkins.
-* Support all platforms branches and Pull Request build.
-* Provide auto builld as self-service to developer, not need to involve build engineer, they could build themselves.
+* Support all platforms branches/Pull Request build.
+* Provide auto builld as self-service for developer, no need to involve build engineer, they could build themselves.
 
 ## Integration
 
@@ -26,7 +27,7 @@ Summarize what did I do from 2019.03 to 2020.07 when I became a Build Release/De
   * Blackduck, polaris integaration.
   * Git stats, analyze Bitbucket data with Elastic stack.
   * Monitor legacy build machines status.
-  * Product escrow, sync xdemo, provide NFS and SYNC mvopensrc, update Jenkins build status, etc.
+  * Product escrow, sync xdemo, provide NFS and SYNC mvopensrc, update Bitbucket Jenkins build status, etc.
  
 * Integration with JFrog Ariifactory
 
@@ -34,7 +35,8 @@ Summarize what did I do from 2019.03 to 2020.07 when I became a Build Release/De
   * Handle artifacts(build, etc) with different maturity.
 
 ## Infrastructure management
-* Manage Jenkins for setting, update backup.
-* Ariifactory Build cleanup, retention, backup.
+
+* Manage Jenkins for setting, update and backup.
+* Ariifactory artifacts cleanup, retention, backup.
 * Git branches/hooks management.
 * VMs tracking, management build machines.
