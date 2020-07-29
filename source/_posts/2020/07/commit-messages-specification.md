@@ -76,7 +76,7 @@ Must be one of the following:
 
 > Projects Using Conventional Commits: https://www.conventionalcommits.org/en/v1.0.0/#projects-using-conventional-commits
 
-## 设置 Git Hook
+## 设置 Git Hooks
 
 以 Bitbuket 为例，开启 [Yet Another Commit Checker](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/1442119700/Yet+Another+Commit+Checker+YACC+for+Bitbucket) 这个免费插件。
 
@@ -101,6 +101,30 @@ ABCD-1234，并且在写描述之前必须与 Jira 单号之前有一个空格�
 ```
 ABCD-1234 Balabala......
 ```
+
+当然还有更复杂的正则表达式，比如如下
+
+```
+^[A-Z-0-9]+ .*(?<type>chore|ci|docs|feat|fix|perf|refactor|revert|style|test|Bld|¯\\_\(ツ\)_\/¯)(?<scope>\(\w+\)?((?=:\s)|(?=!:\s)))?(?<breaking>!)?(?<subject>:\s.*)?|^(?<merge>Merge.* \w+)|^(?<revert>Revert.* \w+)
+```
+
+看起来是不是很头晕，这个正则表达式限制了开头必须以 JIRA 单号开始，中间有一个空格，然后是 type 类型，之后是描述。
+
+这里一并考虑了如果是 Merge 或是 Revert 会产生其他的描述信息。如果你要在你的 Git 仓库里也要设置这样严格并且复杂的正则表达式，建议一定要经过充分的考虑和测试才把它正式放入你的 Git 仓库的 Hooks 设置中。
+
+以上正则的测试结果供你参考 https://regex101.com/r/5m0SIJ/3 （这正则表达式还有一个 Bug 你注意到了吗）
+
+### 分支正则表达式
+
+这里顺便提一下，Bitbucket Hooks 还是支持分支正则表达式。如果设置了相应的正则表达后，开发在创建分支时，只有符合正则表达式的条件才能创建分支。
+
+![](commit-messages-specification/branch-regex.png)
+
+分享一个我写的分支正则表达式 `^(bugfix|feature|release|diag|hotfix).*|(master)|(.*-dev)`
+
+这里限制了所有的分支必须以 bugfix, feature, release, diag, hotfix 开头或是也可以这样的 v1.0-dev 这种类型，提供一个编写和测试正则表达式的网址：https://regex101.com 。
+
+你可根据的项目不同来创建属于自己项目的分支正则表达式。
 
 ### 其他设置
 
