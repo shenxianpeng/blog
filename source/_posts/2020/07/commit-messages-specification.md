@@ -44,13 +44,13 @@ author: shenxianpeng
 在此基础上，总结了适合自己团队的规范：
 
 ```
-JIRA-1234 Feat: support for async execution
+JIRA-1234 feat: support for async execution
 
 ^-------^ ^--^: ^-------------------------^
 |         |     |
 |         |     +--> Summary in present tense.
 |         |
-|         +--> Type: Feat, Fix, Docs, Style, Refactor, Perf, Test or Chore.
+|         +--> Type: feat, fix, docs, style, refactor, perf, test or chore.
 |
 +--> Jira ticket number
 
@@ -58,14 +58,14 @@ Type
 
 Must be one of the following:
 
-    Feat: A new feature
-    Fix: A bug fix
-    Docs: Documentation only changes
-    Style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-    Refactor: A code change that neither fixes a bug nor adds a feature
-    Perf: A code change that improves performance
-    Test: Adding missing or correcting existing tests
-    Chore: Changes to the build process, .gitignore or auxiliary tools and libraries such as documentation generation, etc.
+    feat: A new feature
+    fix: A bug fix
+    docs: Documentation only changes
+    style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+    refactor: A code change that neither fixes a bug nor adds a feature
+    perf: A code change that improves performance
+    test: Adding missing or correcting existing tests
+    chore: Changes to the build process, .gitignore or auxiliary tools and libraries such as documentation generation, etc.
 ```
 
 ### 参考文档
