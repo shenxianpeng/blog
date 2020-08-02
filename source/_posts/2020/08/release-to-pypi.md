@@ -1,12 +1,12 @@
 ---
-title: Python 如果打包自己的库到 PyPI
+title: 如果自己的 Python 库打包发布到 PyPI
 tags:
   - Python
   - PyPI
   - Release
 categories:
   - Python
-date: 2020-07-21 23:13:17
+date: 2020-00-02 08:13:17
 author: shenxianpeng
 ---
 
@@ -26,22 +26,18 @@ PyPI 是 The Python Package Index 的缩写，意思是 Python 包索引仓库�
 
 PyPI 又两个环境，一个是测试环境 [TestPyPI](https://test.pypi.org/) 和 正式环境 [PyPI](https://pypi.org/)
 
-## 准备条件
+## 准备
 
 1. 如果想熟悉 PyPI 发布工具和发布流程可以使用测试环境 [TestPyPI](https://test.pypi.org/) 
 2. 如果已经熟悉了 PyPI 的发布工具和流程可以直接使用正式环境 [PyPI](https://pypi.org/)
 3. TestPyPI 和 PyPI 需要单独注册，即在正式环境注册了，如果去使用测试环境也同样需要注册。
 4. 已经写好并且可以正常使用的项目/库/方法。
 
-## 从准备一个项目到发布
+## 如何发布
 
-### 创建一个示例项目
+这里就不多做演示和翻译了，官方有详细的示例和文档，攒点耐心看完 https://packaging.python.org/tutorials/packaging-projects/
 
-### 使用测试账号发布到测试环境
-
-### 使用正式正好发布到正式账号
-
-### 如果出问题了可以撤回或是删除
+你就完全了解如何发布项目到 PyPI 上面了。
 
 ## 总结
 
