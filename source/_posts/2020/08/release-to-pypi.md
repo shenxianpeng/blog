@@ -1,12 +1,12 @@
 ---
-title: 如果自己的 Python 库打包发布到 PyPI
+title: 如何把自己的 Python 代码打包发布到 PyPI
 tags:
   - Python
   - PyPI
   - Release
 categories:
   - Python
-date: 2020-00-02 08:13:17
+date: 2020-08-02 08:13:17
 author: shenxianpeng
 ---
 
@@ -19,6 +19,8 @@ pip install xxxx
 ```
 
 就可以轻松下载，真是即酷炫又方便，你有没有想过这个是怎么实现的？最近正好赶上又开始写 Python 借此机会分享一下。
+
+<!-- more -->
 
 ## 什么是 PyPI
 
@@ -35,9 +37,9 @@ PyPI 又两个环境，一个是测试环境 [TestPyPI](https://test.pypi.org/) 
 
 ## 如何发布
 
-这里就不多做演示和翻译了，官方有详细的示例和文档，攒点耐心看完 https://packaging.python.org/tutorials/packaging-projects/
+官方有详细的示例和文档，这里就不多做演示和翻译了，攒点耐心看完 https://packaging.python.org/tutorials/packaging-projects/
 
-你就完全了解如何发布项目到 PyPI 上面了。
+全当（一定要）锻炼自己的阅读官方有英文文档的能力，你就完全了解如何发布项目到 PyPI 上面了。
 
 ## 总结
 
