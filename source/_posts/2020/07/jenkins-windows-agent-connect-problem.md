@@ -49,7 +49,7 @@ sc delete jenkinsslave-C__agent
 
 Btw, if you could not installed .NET Framework 3.5 successful. you can try to install manully by this step
 
-1. Manually download microsoft-windows-netfx3-ondemand-package.cab 
+1. Manually download [microsoft-windows-netfx3-ondemand-package.cab](https://androidfilehost.com/?w=file-thanks&fid=745425885120760819&mid=281&download_id=ae5a0bbf16ac7040fc659c1ab314a4d1&tid=1596439593&hc=5d26b6c7dad0b741ec6767407c715296cd418b810a28d46cf136fa579b0e008d)
 
 2. Specify the file path like below to install
 
