@@ -1,5 +1,5 @@
 ---
-title: 通过 generic 插件来实时获取 Bitbucket Repository Events
+title: 通过 generic-webhook-trigger 插件实时获取 Bitbucket Repository Events
 tags:
   - Bitbucket
   - Jenkins
@@ -13,7 +13,7 @@ author: shenxianpeng
 
 ## 背景
 
-本篇讨论如何通过 Jenkins generic webhook trigger 插件来获取 Git 仓库事件（Event）。比如获取仓库的 Pull Request ID 等。
+本篇讨论如何通过 Jenkins generic webhook trigger 插件来获取 Git 仓库事件（Events）。比如获取仓库的 Pull Request ID 等。
 
 使用过 Jenkins Multi-branch pipeline Job 的用户知道，这个 Job 类型的环境变量中可以得到 Pull Request 的相关信息如下
 
@@ -64,9 +64,9 @@ author: shenxianpeng
     ![获取到了 Pull Request ID](bitbucket-pull-request-event/pull-request-id.png)
 
 
-## 有什么用
+## 使用扩展
 
-假如你有个程序，可以通过传入的 Pull Request ID 通过 Bitbucket REST API 来获取并分析指定 Pull Request 的内容的。比如获取相关文件的历史记录，从而知道这些文件谁修改的最多以及这次修改涉及到了哪些 Jira 单号，从而做一些 Review 或是执行回归测试的推荐等等。
+假如你有个程序，可以通过传入的 Pull Request ID 并借助 Bitbucket REST API 来获取并分析指定 Pull Request 的内容的。比如获取相关文件的历史记录，从而知道这些文件谁修改的最多以及这次修改涉及到了哪些 Jira 单号，从而做一些 Review 或是执行回归测试的推荐等等。
 
 有了这个 PR ID 就可以通过 Jenkins 来自动触发去执行你程序了。
 
