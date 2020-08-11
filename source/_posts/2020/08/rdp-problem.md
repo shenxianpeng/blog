@@ -22,7 +22,7 @@ Please contact the server administrator.
 
 ## How to Fix
 
-You could login to the vSphere Web Client if you have via console.
+You could login to the vSphere Web Client if you have via console or have some other way to login that machine.
 
 1. Go into regedit and navigate to 
 
@@ -35,10 +35,3 @@ You could login to the vSphere Web Client if you have via console.
 > You could follow related [videos](https://www.youtube.com/results?search_query=unable+to+delete+all+specified+values) on YouTuBe
 >
 > Thanks Bill K. share with me above fix solution.
-
-
-
-
-
-
-
