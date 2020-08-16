@@ -14,7 +14,7 @@ author: shenxianpeng
 
 <!-- more -->
 
-以下 pipeline 片段供参考使用：
+以下 `pipeline` 片段供参考使用：
 
 ```bash
 // This pipeline is used for bumping build number
