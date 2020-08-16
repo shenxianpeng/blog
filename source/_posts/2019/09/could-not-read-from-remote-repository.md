@@ -12,7 +12,7 @@ author: shenxianpeng
 最近我在运行 Jenkins Job 时候突然发现 git clone 代码的时候突然报了这个错误：
 
 ```bash
-$ git clone ssh://git@git.companyname.com:7999/mvcc/opensrc.git
+$ git clone ssh://git@git.companyname.com:7999/repo/opensrc.git
 Cloning into 'opensrc'...
 fatal: Could not read from remote repository.
 
@@ -26,7 +26,7 @@ and the repository exists.
 
 <!-- more -->
 
-Google 了没有找到我遇到的这个问题，绝大多数都是应为没有生成 ssh-key，然后将 pub key 添加到 Github 或是其他 Web git 管理平台，对于这个问题是这样解决的，以 GitHub 为例
+Google 了没有找到我遇到的这个问题，绝大多数都是应为没有生成 ssh-key，生成后将 pub key 添加到 Github 或是其他 Web git 管理平台，基本就解决了。以 GitHub 为例
 
 首先，生成 SSH key
 
@@ -45,16 +45,15 @@ notepad id_rsa.pub
 
 最后，打开 <https://github.com/settings/ssh/new> 把你复制的内容贴进去保存即可。
 
+对于我遇到的问题，这种解决方式是无效的，因为同样的账号在别的虚拟机上并不存在这个问题，因为同样是 HP-UX 虚拟机，我用另外一个账号生成 ssh-key, git clone 代码是没有问题的，那我猜测是这两个账号的之间存在差异。
+
 ## 通过 SSH 连接测试排查
 
-对于我遇到的问题，这种解决方式是无效的，因为同样的账号在别的虚拟机上并不存在这个问题，因此我在这个 HP-UX 虚拟机上用了另外一个账号生成 ssh-key, git clone 代码没有问题，那我知道了就是这两个账号的之间存在差异。
-
-首先，我查看了这两个账号的 .gitconfig 文件，确实有差异，当我将好用的账号的 .gitconfig 内容复制到不好用的账号的 .gitconfig 文件时，并不好用。
+首先，我查看了这两个账号的 .gitconfig 文件，确实有差异。当我将好用的账号的 .gitconfig 内容复制到不好用的账号的 .gitconfig 文件时，并不好用。
 
 其次，我发现执行 git clone 的时候在当前目录下生成了一个 core 文件，说明已经 coredump 了，但是这个 core 直接打开大部分都是乱码，错误信息很难准确定位。
 
-最后，我发现有一个命令是可以用来测试 SSH 连接的
-对于 Github 是这个命令
+最后，我通过命令来测试 SSH 连接的。对于 Github 是这个命令
 
 ```bash
 ssh -T git@github.com
