@@ -20,6 +20,8 @@ Please contact the server administrator.
 
 ![RDP connect problem](rdp-problem/RDP-failed.png)
 
+<!-- more -->
+
 ## How to Fix
 
 You could login to the vSphere Web Client if you have via console or have some other way to login that machine.
