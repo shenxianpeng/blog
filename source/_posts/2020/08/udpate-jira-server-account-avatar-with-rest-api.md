@@ -11,9 +11,9 @@ author: shenxianpeng
 
 ## Backgroud
 
-When you are using server account in CI/CD, if you want to updat the server account avatar to looks professional on Jira but you can't login with server account to update the avatar. you could use Jira REST API to do this.
+When you are using a server account for CI/CD, if you want to make the server account avatar to looks professional on Jira update but the server account may not allowed to log to Jira, so you can not update the avatar though GUI, you could use Jira REST API to do this.
 
-I assume you have an account called robot. here are the examples of how to update.
+I assume you have an account called `robot`, here are the examples of how to update though REST API.
 
 ## Example in Python
 
@@ -44,10 +44,15 @@ print(data.decode("utf-8"))
 <!-- more -->
 
 ```bash
-# Method PUT
+# URL and Method is PUT
 https://jira.your-company.com/rest/api/latest/user/avatar?username=robot
 
-# json
+# Authorization
+# Type: Basic Auth
+# Username: server-account-username
+# Password: server-accoutn-password
+
+# Body
 {
 	"id": "24880",
 	"isSelected": false,
@@ -60,6 +65,6 @@ https://jira.your-company.com/rest/api/latest/user/avatar?username=robot
 }
 ```
 
-## How to find avator id
+## How to find the avator id
 
 You replace other avator ids you like. Here is how to find you avator id you want ![find avator id](udpate-jira-server-account-avatar-with-rest-api/find-avatar-id.png)
