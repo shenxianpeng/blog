@@ -14,9 +14,9 @@ author: shenxianpeng
 
 * [选择License](#选择License)
 * [配置setup.py](#配置setup.py)
-* [发布到PyPI](发布到PyPI)
-* [关于pydoc](关于pydoc)
-* [关于版本号](关于版本号)
+* [发布到PyPI](#发布到PyPI)
+* [关于pydoc](#关于pydoc)
+* [关于版本号](#关于版本号)
 
 ## 选择License
 
