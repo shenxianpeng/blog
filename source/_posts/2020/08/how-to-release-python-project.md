@@ -12,19 +12,17 @@ author: shenxianpeng
 
 ## 目录
 
-* 选择 License
-* 配置 setup.py
-* 发布到 PyPI
-* 关于 pydoc
-* 关于版本号
+* [选择License](#选择License)
+* [配置setup.py](#配置setup.py)
+* [发布到PyPI](发布到PyPI)
+* [关于pydoc](关于pydoc)
+* [关于版本号](关于版本号)
 
-<!-- more -->
-
-## 选择 License
+## 选择License
 
 这里由一篇关于如何选择 GitHub License 的文章 [Github仓库如何选择开源许可证](https://mp.weixin.qq.com/s/CjeWol3BdGkmGZi-zMnDkQ)，这里就不过多介绍。
 
-## 配置 setup.py
+## 配置setup.py
 
 官方有详细的示例和文档 https://packaging.python.org/tutorials/packaging-projects/。
 
@@ -50,6 +48,8 @@ demo
 └── docs
 ```
 
+<!-- more -->
+
 在使用打包命令 `python setup.py sdist bdist_wheel`，将会生成在 dist 目录下生成两个文件 `demo-1.0.0-py3-none-any.whl` 和 `demo-1.0.0.tar.gz`
 
 `.whl` 文件是用于执行 `pip install dist/demo-1.0.0-py3-none-any.whl` 将其安装到 `...\Python38\Lib\site-packages\demo` 目录时使用的文件。
@@ -74,7 +74,7 @@ global-exclude *.pyc
 
 更多关于  `MANIFEST.in` 文件的语法请参看 https://packaging.python.org/guides/using-manifest-in/
 
-## 发布到 PyPI
+## 发布到PyPI
 
 使用 Python 编程的人都知道，Python 的优势之一就是有大量的第三方库，通常使用如下命令
 
@@ -99,7 +99,7 @@ PyPI 又两个环境，一个是测试环境 [TestPyPI](https://test.pypi.org/) 
 
 发布一个 Python 项目到 PyPI 还是非常简单的，遵照上述的步骤，每个人都可以将上面的项目发布到自己账户下。
 
-## 关于 pydoc
+## 关于pydoc
 
 Python 内置了 doc 的功能，叫 `pydoc`。执行 `python -m pydoc` 可以看到它有哪些选项和功能。
 
