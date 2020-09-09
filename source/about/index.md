@@ -20,7 +20,11 @@ QA/AUTOMATION/CI - Otc 2009 - May 2018
 
 ### 联系方式
 
-* 微信公众号「DevOps攻城狮」和微信小程序「HelloWorldPro」
+* 微信公众号「DevOps攻城狮」
 
-    ![DevOps攻城狮](index/qrcode.jpg) ![HelloWorldPro](index/qrcode_applet.jpg)
+![DevOps攻城狮](index/qrcode.jpg) 
+
+* 微信小程序「HelloWorldPro」
+
+![HelloWorldPro](index/qrcode_applet.jpg)
 
