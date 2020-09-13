@@ -1,5 +1,5 @@
 ---
-title: 在 GitHub 上发布一个企业级的 Python 项目需要注意哪些
+title: 在 GitHub 上发布一个 Python 项目需要注意哪些
 tags:
   - Python
   - PyPI
@@ -16,7 +16,7 @@ author: shenxianpeng
 2. [如何发布到PyPI](#发布到PyPI)
 3. [生成pydoc](#关于pydoc)
 4. [版本号的选择](#关于版本号)
-5. [Lincense的选择](#选择License)
+5. [License的选择](#选择License)
 
 ## 配置setup.py
 
@@ -26,7 +26,7 @@ author: shenxianpeng
 demo
 ├── LICENSE
 ├── README.md
-├── MANIFEST.in       # 打包时，用来定制化生成 `dist/*.tar.gz` 里的内容
+├── MANIFEST.in # 打包时，用来定制化生成 `dist/*.tar.gz` 里的内容
 ├── demo
 │   └── __init__.py
 ├── setup.py
@@ -58,11 +58,11 @@ global-exclude *.log
 global-exclude *.pyc
 ```
 
-根据以上文件描述，在使用命令 `python setup.py sdist bdist_wheel` 生成 `demo-1.0.0.tar.gz` 文件时会包含 `LICENSE`, `README.md`, `MANIFEST.in` 这三个文件，并且还会包含 `demo`, `tests`, `docs` 三个目录下的所有文件，最后排除掉所有的 `__pycache__`, `*.log`, `*.pyc` 文件。
+根据以上文件内容，在使用命令 `python setup.py sdist bdist_wheel` 生成 `demo-1.0.0.tar.gz` 文件时会包含 `LICENSE`, `README.md`, `MANIFEST.in` 这三个文件，并且还会包含 `demo`, `tests`, `docs` 三个目录下的所有文件，最后排除掉所有的 `__pycache__`, `*.log`, `*.pyc` 文件。
 
 更多关于  `MANIFEST.in` 文件的语法请参看 https://packaging.python.org/guides/using-manifest-in/
 
-> 官方有详细的示例和文档 https://packaging.python.org/tutorials/packaging-projects/。
+> 官方有详细的示例和文档 https://packaging.python.org/tutorials/packaging-projects/
 >
 > Python sample 项目供你参考 https://github.com/pypa/sampleproject
 
@@ -79,7 +79,10 @@ pip install xxxx
 
 PyPI 是 The Python Package Index 的缩写，意思是 Python 包索引仓库，用来查找、安装和发布 Python 包。
 
-PyPI 又两个环境，一个是测试环境 [TestPyPI](https://test.pypi.org/) 和正式环境 [PyPI](https://pypi.org/)
+PyPI 有两个环境
+
+* 测试环境 [TestPyPI](https://test.pypi.org/) 
+* 正式环境 [PyPI](https://pypi.org/)
 
 ### 准备
 
@@ -108,11 +111,11 @@ cd docs
 python -m pydoc -w ..\   # 生成全部文档
 ```
 
-执行 `python -m pydoc -b` 可以在本地理解启动一个 web 页面来访问你 `...\Python38\Lib\site-packages\` 目录下所有 Libraries 文档。
+执行 `python -m pydoc -b` 可以在本地立即启动一个 web 页面来访问你 `...\Python38\Lib\site-packages\` 目录下所有 Libraries 文档。
 
 ![以 elasticsearch 文档为例](how-to-release-python-project/pydoc-es.png)
 
-这些本吧的 web 文档如何在线访问？可以通过 GitHub 有内置的 GitHub Pages 功能，很容易提供一个在线网址。
+这些本地的 web 文档如何在外网进行访问？可以通过 GitHub 有内置的 GitHub Pages 功能，很容易提供一个在线网址。
 
 打开你的 GitHub python 项目设置选项 -> 找到 GitHub Pages -> Source 选择你的分支和路径，保存后就立刻拥有了一个网址。例如：
 
@@ -121,9 +124,12 @@ python -m pydoc -w ..\   # 生成全部文档
 
 ## 关于版本号
 
-另外如果是正式版本，在发布还需要注意版本号的选择。如果是功能很简答，完成度也不高，建议从 0.0.1 版本开始。如果是一个完成度很高的产品了，那么可以从 1.0.0 版本开始。
+另外如果是正式版本，在发布还需要注意版本号的选择。
 
-比如一个项目从准备发布到正式发布有四个阶段：Alpha, Beta, 候选发布以及正式发布。假如正式发布的版本号是 1.1.0 版本，根据以下的版本标识的规范
+* 如果是功能简单，完成度也不高，建议从 0.0.1 版本开始。
+* 如果是功能完善，且完成度很高，那么可以从 1.0.0 版本开始。
+
+比如一个项目从准备发布到正式发布有四个阶段：Alpha, Beta, 候选发布以及正式发布。假如正式发布的版本号是 1.1.0 版本，根据以下的版本标识的规范：
 
 ```
 X.YaN   # Alpha release
@@ -132,7 +138,7 @@ X.YrcN  # Release Candidate
 X.Y     # Final release
 ```
 
-得出 Alpha, Beta, 候选发布及正式发布版本分别如下：
+得到 Alpha, Beta, 候选发布及正式发布版本分别如下：
 
 Alpha release 版本号是 `1.1.0a1, 1.1.0a1, 1.1.0aN...`\
 Beta release  版本号是 `1.1.0b1, 1.1.0b1, 1.1.0bN...`\
@@ -143,7 +149,7 @@ Final release 版本号 `1.1.0, 1.1.1, 1.1.N...`
 
 ## 选择License
 
-企业级的项目 License 一般由公司的法律团队来提供，发布者只是拿到 License 文件做一些格式化工作（比如将 license.txt 格式化为 70~80 个字符）。
+企业级的项目 License 一般由公司的法律团队来提供，发布者只需拿到 License 文件做一些格式化工作（比如将 license.txt 文件格式化为每行 70~80 个字符）。
 
 如果是个人项目或是想了解开源许可相关的介绍，常见的软件开源许可证（以下许可证是按条件数量排序的）
 
@@ -156,10 +162,12 @@ Final release 版本号 `1.1.0, 1.1.1, 1.1.N...`
 * Boost Software License 1.0 
 * The Unlicense 
 
-> （英文）如何选项 License https://choosealicense.com/licenses\
-> （英文）如何选项 License GitHub 仓库 https://github.com/github/choosealicense.com\
-> （英文）如何选项 License 附录 https://choosealicense.com/appendix \
-> （中文）Github仓库如何选择开源许可证 https://mp.weixin.qq.com/s/CjeWol3BdGkmGZi-zMnDkQ
+这里有一篇关于《[Github仓库如何选择开源许可证](https://mp.weixin.qq.com/s/CjeWol3BdGkmGZi-zMnDkQ)》文章供参考。
+
+> 如何选项 License https://choosealicense.com/licenses\
+> 如何选项 License GitHub 仓库 https://github.com/github/choosealicense.com\
+> 如何选项 License 附录 https://choosealicense.com/appendix \
+
 
 
 
