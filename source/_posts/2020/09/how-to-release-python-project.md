@@ -143,7 +143,25 @@ Final release 版本号 `1.1.0, 1.1.1, 1.1.N...`
 
 ## 选择License
 
-企业级的项目 License 一般由公司的法律团队来提供，发布者只是拿到 License 文件做一些格式化工作（比如将 license.txt 格式化为 70~80 个字符）。如果是个人项目或是想了解开源许可相关的介绍，可以参看这篇文章 [Github仓库如何选择开源许可证](https://mp.weixin.qq.com/s/CjeWol3BdGkmGZi-zMnDkQ)。
+企业级的项目 License 一般由公司的法律团队来提供，发布者只是拿到 License 文件做一些格式化工作（比如将 license.txt 格式化为 70~80 个字符）。
+
+如果是个人项目或是想了解开源许可相关的介绍，常见的软件开源许可证（以下许可证是按条件数量排序的）
+
+* GNU AGPLv3 
+* GNU GPLv3 
+* GNU LGPLv3 
+* Mozilla Public License 2.0 
+* Apache License 2.0 
+* MIT License 
+* Boost Software License 1.0 
+* The Unlicense 
+
+> （英文）如何选项 License https://choosealicense.com/licenses\
+> （英文）如何选项 License GitHub 仓库 https://github.com/github/choosealicense.com\
+> （英文）如何选项 License 附录 https://choosealicense.com/appendix \
+> （中文）Github仓库如何选择开源许可证 https://mp.weixin.qq.com/s/CjeWol3BdGkmGZi-zMnDkQ
+
+
 
 
 
