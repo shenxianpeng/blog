@@ -1,47 +1,55 @@
 ---
-title: 程序员的自我修养 —— Git 提交信息规范
+title: 项目必备：Git仓库提交信息和分支创建规范的制定与实施
 tags:
   - Git
   - Specification
+  - Branch
+  - Conventional Commits
 categories:
   - Git
 date: 2020-07-26 08:39:22
 author: shenxianpeng
 ---
 
-## 背景
+## 为什么要标准化提交信息
 
-在使用 Git 提交代码的时候，在与他人合作同时开发的项目，一个良好的提交信息规范我总结有三个好处：
+### 1. 没有规范的提交信息
 
-1. 有助于其他人接手，进行 Bug 修复或是新功能的添加都是很好的参考
-2. 并且良好的规范有助于自动化脚本的识别
-3. 最后这也是体现了一个程序员的自我修养
-
-因此对于一个长期发展的项目必须要有良好的信息信息规范的约定。先看两个例子：
-
-<!-- more -->
-
-随便找的一个没有任何规范的提交信息
+先看一个没有任何规范的 Git 提交信息记录。从这个提交信息里你不知道他修改了什么，修改意图是什么。
 
 ![没有规范的 Git 提交信息](commit-messages-specification/bad-commit-message.png)
 
+特别是对于一个团队，当很多人在一起合作开发一个项目的时候，预先设定好提交信息规范，对于项目的长远发展以及后续人员加入和维护都至关重要。
 
-这是 Angular 有规范的提交信息，并且遵循了常规提交 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+因此对于一个长期发展的项目必须要有良好的信息信息规范的约定。先看两个例子：总结以下几个好处：
+
+1. 有助于他人更好的理解你的变更意图，更容易贡献/修改代码。
+2. 结构化的提交信息有助于自动化脚本的识别，便于CI/CD。
+3. 提供自动化生成 `CHANGELOGs` 的能力。
+3. 最后，这也是体现了一个程序员的自我修养。
+
+### 2. 有规范的提交信息
+
+<!-- more -->
+
+让我们再看看一个有规范的提交信息。这是 Angular 有规范的提交信息，它遵循了常规提交 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)。
 
 ![有规范的 Git 提交信息](commit-messages-specification/angular-commit-message.png)
 
-## 如何治理提交信息规范
+这也是我检索到唯一应用最广泛的Git提交信息规范，已经有不少的项目在follow。当然，如果你的项目已经有了很好的规范，那继续保持；如果没有，建议参考这个规范。
 
-在治理提交信息规范问题上，有两个解决办法。
+## 解决规范问题
 
-1. 为团队制定出提交信息的规范，让团队了解和遵守。
-2. 在提交代码时，设置 Git Hook 把不规范的提交排除在外，比如提示用户当前提交的信息不符合规范。
+在解决规范问题上，应该从两方面着手：
 
-## 制定规范
+* 首先，为团队制定出提交信息以及创建分支规范，让团队了解并遵守。
+* 然后，在提交代码或创建分支时，设置 Git Hook。把不规范的提交排除在外，比如提示用户当前提交不符合规范。
 
-制定合理的规范，最便捷的方法是参考软件行业里是否有大家通用的规范。经过一番搜索，虽然行业里并没有绝对的提交信息规范，但我看到有很多项目已经在采用这个 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 的提交信息规范，比较有代表性的是 Auglar 及很多项目也在使用。
+### 制定Git提交信息规范
 
-在此基础上，总结了适合自己团队的规范：
+制定合理的规范，最有效的方法是参考软件行业里是否有大家通用的规范。[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 目前是最为流行的规范，很多项目在follow，比如 Auglar 等项目在使用。
+
+在此基础上，我们可以制定适合自己团队的规范，比如：
 
 ```
 JIRA-1234 feat: support for async execution
@@ -68,33 +76,26 @@ Must be one of the following:
     chore: Changes to the build process, .gitignore or auxiliary tools and libraries such as documentation generation, etc.
 ```
 
-### 参考文档
-
-> Conventional Commits https://www.conventionalcommits.org/en/v1.0.0/
-
-> Angular Commit Guidelines: https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits
-
-> Projects Using Conventional Commits: https://www.conventionalcommits.org/en/v1.0.0/#projects-using-conventional-commits
-
 ## 设置 Git Hooks
 
 以 Bitbuket 为例，开启 [Yet Another Commit Checker](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/1442119700/Yet+Another+Commit+Checker+YACC+for+Bitbucket) 这个免费插件。
 
-![](commit-messages-specification/git-hook.png)
+开启 Yet Another Commit Checker
 
-这里的设置很多，我举两个不那么严格的常见设置。
+![开启 Yet Another Commit Checker](commit-messages-specification/git-hook.png)
 
-![Commit Checker 设置](commit-messages-specification/commit-checker-setting.png)
+Commit Checker 设置，下面进行逐一介绍
 
-1. 开启 Require Valid JIRA Issue(s)
+![Yet Another Commit Checker 插件的其他设置选项](commit-messages-specification/commit-checker.png)
+
+
+### 1. 开启 Require Valid JIRA Issue(s)
 
 这个功能的开启，在开发者提交信息的时候如果不含有相关联的 Jira 单号，或是这个单号不存在，那么都会提交失败。这样就强制将代码与 Jira 单号进行关联。
 
-2. 设置 Commit Message Regex（提交信息正则表达式）
+### 2. Commit Message Regex
 
-我设置了 `[A-Z\-0-9]+ .*` 这样的正则表达式，这就要求比如有以这样的 Jira 单号
-
-ABCD-1234，并且在写描述之前必须与 Jira 单号之前有一个空格。
+我设置了 `[A-Z\-0-9]+ .*` 这样的正则表达式，这就要求比如有以这样的 Jira 单号 ABCD-1234 为开头，并且在写描述之前必须与 Jira 单号之前有一个空格。
 
 通过以上两个功能的设置，就将提交信息限定为如下格式：
 
@@ -108,32 +109,92 @@ ABCD-1234 Balabala......
 ^[A-Z-0-9]+ .*(?<type>chore|ci|docs|feat|fix|perf|refactor|revert|style|test|Bld|¯\\_\(ツ\)_\/¯)(?<scope>\(\w+\)?((?=:\s)|(?=!:\s)))?(?<breaking>!)?(?<subject>:\s.*)?|^(?<merge>Merge.* \w+)|^(?<revert>Revert.* \w+)
 ```
 
-看起来是不是很头晕，这个正则表达式限制了开头必须以 JIRA 单号开始，中间有一个空格，然后是 type 类型，之后是描述。
+第一眼看起来可能有点头晕，这个正则表达式不但限制了开头必须以 JIRA 单号开始，中间有一个空格，之后要有 type 类型，最后是描述。
 
 这里一并考虑了如果是 Merge 或是 Revert 会产生其他的描述信息。如果你要在你的 Git 仓库里也要设置这样严格并且复杂的正则表达式，建议一定要经过充分的考虑和测试才把它正式放入你的 Git 仓库的 Hooks 设置中。
 
-以上正则的测试结果供你参考 https://regex101.com/r/5m0SIJ/3 （这正则表达式还有一个 Bug 你注意到了吗）
+通过以下的测试用例就很容易理解具体的提交规范是什么样子的。
 
-### 分支正则表达式
+```
+# 测试通过的用例
+NV-1234 chore: change build progress
+DT-123456 docs: update xdemo usage
+QA-123 ci: update jenkins automatic backup
+CC-1234 feat: new fucntional about sync
+Merge branch master into develop
+Reverted: Revert support feature & bugfix branches build
+Merge pull request #36 in cicd from test to develop
 
-这里顺便提一下，Bitbucket Hooks 还是支持分支正则表达式。如果设置了相应的正则表达后，开发在创建分支时，只有符合正则表达式的条件才能创建分支。
+# 测试不通过的用例
+NV-1234 build: update
+NV-1234 Chore: change progress
+DT-123456 Docs: update xdemo
+QA-123ci: update jenkins automatic backup
+CC-1234 Feat: new fucntional about sync
+DT-17734: 8.2.2 merge from CF1/2- Enhance PORT.STATUS
+DT-17636 fix AIX cord dump issue
+DT-18183 Fix the UDTHOME problem for secure telnet
+DT-18183 Add new condition to get UDTHOME
+DT-15567 code merge by Peter Shen.
+```
 
-![](commit-messages-specification/branch-regex.png)
+以上正则的测试结果可以在这里找到 https://regex101.com/r/5m0SIJ/10
 
-分享一个我写的分支正则表达式 `^(bugfix|feature|release|diag|hotfix).*|(master)|(.*-dev)`
+### 3. Commit Regex Error
 
-这里限制了所有的分支必须以 bugfix, feature, release, diag, hotfix 开头或是也可以这样的 v1.0-dev 这种类型，提供一个编写和测试正则表达式的网址：https://regex101.com 。
+这个是用来团队成员在提交的时候，如果不符合规范失败了，给出合理的提示信息，有助于找到问题所在。比如可以是这样的：
 
-你可根据的项目不同来创建属于自己项目的分支正则表达式。
+```
+Commit Message Specifications:
 
-### 其他设置
+<Jira-ticket-number> <type>: <Description>
 
-![Yet Another Commit Checker 插件的其他设置选项](commit-messages-specification/commit-checker.png)
+Example:
+
+ABC-1234 feat: Support for async execution
+
+1. Between Jira ticket number and type MUST has one space.
+2. Between type and description MUST has a colon and a space.
+
+Type MUST be one of the following and lowercase
+
+feat: A new feature
+fix: A bug fix
+docs: Documentation only changes
+style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+refactor: A code change that neither fixes a bug nor adds a feature
+perf: A code change that improves performance
+test: Adding missing or correcting existing tests
+chore: Changes to the build process, .gitignore or auxiliary tools and libraries such as documentation generation, etc.
+```
+
+### 4. Branch Name Regex
+
+Bitbucket Hooks 同样还支持分支正则表达式。如果设置了相应的正则表达后，开发在创建分支时，只有符合正则表达式的条件才能创建分支。
+
+分享一个分支正则表达式 `^(bugfix|feature|release|hotfix).*|(master)|(.*-dev)`
+
+这里限制了所有的分支必须以 bugfix, feature, release, hotfix 开头或是也可以这样的 v1.0-dev 这种类。
+
+你可以根据上面的正则表达式来设计属于自己项目的分支正则表达式。
+
+### 5. Branch Name Regex Error
+
+这个是用来团队成员在推送分支的时候，如果不符合规范，推送失败，给出合理的提示信息。比如：
+
+```
+Branches must begin with these types: bugfix/ feature/ release/ hotfix/
+```
+
+### 6. 其他设置
 
 另外还有一些其他的设置，比如关联的 Jira 单子必须处于什么样的状态，这个可以防止已经关闭的 Jira 单子，开发还往上面偷偷的修改代码，这时候测试也发现不了。
 
 还有 Require Matching Committer Email 和 Require Matching Committer Name 来限定开发者必须配置好与登录用户名和邮箱相匹配的用户名和邮箱，来规范提交信息里显示的用户名和邮箱，也方便进行 Git 信息的统计等后续数据的收集。
 
+## 参考文档
 
-更多请参考 [Yet Another Commit Checker 插件文档](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/1442119700/Yet+Another+Commit+Checker+YACC+for+Bitbucket)。
-
+> Conventional Commits https://www.conventionalcommits.org/en/v1.0.0/ \
+> Angular Commit Guidelines: https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits \
+> Projects Using Conventional Commits: https://www.conventionalcommits.org/en/v1.0.0/#projects-using-conventional-commits \
+> Yet Another Commit Checker: https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/1442119700/Yet+Another+Commit+Checker+YACC+for+Bitbucket
