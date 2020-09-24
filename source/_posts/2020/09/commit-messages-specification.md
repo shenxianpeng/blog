@@ -1,5 +1,5 @@
 ---
-title: 项目必备：Git仓库提交信息和分支创建规范的制定与实施
+title: 程序员必读：Git提交信息和分支创建规范
 tags:
   - Git
   - Specification
@@ -7,28 +7,17 @@ tags:
   - Conventional Commits
 categories:
   - Git
-date: 2020-07-26 08:39:22
+date: 2020-09-24 20:39:22
 author: shenxianpeng
 ---
 
-## 为什么要标准化提交信息
+## 为什么要制定规范
 
-### 1. 没有规范的提交信息
+### 提交信息：没规范 vs 有规范
 
 先看一个没有任何规范的 Git 提交信息记录。从这个提交信息里你不知道他修改了什么，修改意图是什么。
 
 ![没有规范的 Git 提交信息](commit-messages-specification/bad-commit-message.png)
-
-特别是对于一个团队，当很多人在一起合作开发一个项目的时候，预先设定好提交信息规范，对于项目的长远发展以及后续人员加入和维护都至关重要。
-
-因此对于一个长期发展的项目必须要有良好的信息信息规范的约定。先看两个例子：总结以下几个好处：
-
-1. 有助于他人更好的理解你的变更意图，更容易贡献/修改代码。
-2. 结构化的提交信息有助于自动化脚本的识别，便于CI/CD。
-3. 提供自动化生成 `CHANGELOGs` 的能力。
-3. 最后，这也是体现了一个程序员的自我修养。
-
-### 2. 有规范的提交信息
 
 <!-- more -->
 
@@ -36,20 +25,37 @@ author: shenxianpeng
 
 ![有规范的 Git 提交信息](commit-messages-specification/angular-commit-message.png)
 
-这也是我检索到唯一应用最广泛的Git提交信息规范，已经有不少的项目在follow。当然，如果你的项目已经有了很好的规范，那继续保持；如果没有，建议参考这个规范。
+这是我检索到唯一应用最为广泛的 Git 提交信息规范，已经有不少的项目在使用。如果你的项目还没有制定 Git 提交信息规范，建议参考这个规范。
 
-## 解决规范问题
+对于一个团队，当很多人在一起合作开发一个项目的时候，预先制定好提交信息规范，对于项目的长远发展以及后续人员加入和维护都非常有帮助。
+
+总结有以下几个好处：
+
+1. 有助于他人更好的理解你的变更意图，更容易贡献/修改代码。
+2. 结构化的提交信息有助于自动化脚本的识别和 CI/CD。
+3. 提供自动化生成 `CHANGELOGs` 的能力。
+4. 最后，这也是体现了一个程序员的自我修养。
+
+### 分支创建：没规范 vs 有规范
+
+如果创建分支没有规范，不加以限制，很多分支是这样的甚至更糟 `ABC-1234-Test`, `ABC-2345-demo`, `Hotfix-ABC-3456`, `Release-1.0`
+
+如果制定分支创建规范，分支必须以一个类型开头，比如 `bugfix/ABC-1234`, `feature/ABC-2345`, `hotfix/ABC-3456`, `release/1.0` 这不但有助于检索，还方便他人知道该分支的属性，以及方便后续的 CI/CD 做分支判断时使用。
+
+## 如何解决规范问题
 
 在解决规范问题上，应该从两方面着手：
 
-* 首先，为团队制定出提交信息以及创建分支规范，让团队了解并遵守。
-* 然后，在提交代码或创建分支时，设置 Git Hook。把不规范的提交排除在外，比如提示用户当前提交不符合规范。
+* 首先，为团队制定出提交信息以及创建分支规范，让团队成员了解并遵守。
+* 然后，在提交代码或创建分支时，设置 Git Hook 将不规范的提交排除在外。
 
 ### 制定Git提交信息规范
 
-制定合理的规范，最有效的方法是参考软件行业里是否有大家通用的规范。[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 目前是最为流行的规范，很多项目在follow，比如 Auglar 等项目在使用。
+制定合理的规范，最有效的方法是参考软件行业里是否有通用的规范。
 
-在此基础上，我们可以制定适合自己团队的规范，比如：
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 目前是最为流行的规范，很多项目在使用，比如 Auglar 等项目也在使用。
+
+基于此规范，我们可以制定适合自己团队的规范，比如下面的规范：
 
 ```
 JIRA-1234 feat: support for async execution
@@ -78,13 +84,15 @@ Must be one of the following:
 
 ## 设置 Git Hooks
 
-以 Bitbuket 为例，开启 [Yet Another Commit Checker](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/1442119700/Yet+Another+Commit+Checker+YACC+for+Bitbucket) 这个免费插件。
+这里只是以 Bitbuket 为例，其他 Git 工具，比如 GitHub，Gitlab 都有类似的功能。
 
-开启 Yet Another Commit Checker
+这里 Bitbucket 使用的是 [Yet Another Commit Checker](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/1442119700/Yet+Another+Commit+Checker+YACC+for+Bitbucket) 这个免费插件。
+
+首先，开启 Yet Another Commit Checker。
 
 ![开启 Yet Another Commit Checker](commit-messages-specification/git-hook.png)
 
-Commit Checker 设置，下面进行逐一介绍
+然后逐一介绍 Yet Another Commit Checker 的一些常用设置。
 
 ![Yet Another Commit Checker 插件的其他设置选项](commit-messages-specification/commit-checker.png)
 
@@ -138,7 +146,7 @@ DT-18183 Add new condition to get UDTHOME
 DT-15567 code merge by Peter Shen.
 ```
 
-以上正则的测试结果可以在这里找到 https://regex101.com/r/5m0SIJ/10
+上述测试结果可以在 https://regex101.com/r/5m0SIJ/10 找到​。​
 
 ### 3. Commit Regex Error
 
