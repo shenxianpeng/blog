@@ -13,19 +13,24 @@ author: shenxianpeng
 
 ## 为什么要制定规范
 
-### 提交信息：没规范 vs 有规范
+古话说，没有规矩不成方圆。在团队协作开发时，每个人提交代码时都会写 commit message，但如果没有规范，每个人都会有自己的书写风格，在翻看 git log 时经常看到的是五花八门，十分不利于阅读和维护。
 
-先看一个没有任何规范的 Git 提交信息记录。从这个提交信息里你不知道他修改了什么，修改意图是什么。
+通过下面两个例子来看看没规范对比有规范，以及有规范能带来哪些好处。
+
+**提交信息 没规范 vs 有规范**
 
 ![没有规范的 Git 提交信息](commit-messages-specification/bad-commit-message.png)
 
-<!-- more -->
+从这个提交信息里你不知道他修改了什么，修改意图是什么。
 
-让我们再看看一个有规范的提交信息。这是 Angular 有规范的提交信息，它遵循了常规提交 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)。
+<!-- more -->
 
 ![有规范的 Git 提交信息](commit-messages-specification/angular-commit-message.png)
 
-这是我检索到唯一应用最为广泛的 Git 提交信息规范，已经有不少的项目在使用。如果你的项目还没有制定 Git 提交信息规范，建议参考这个规范。
+这是 Angular 的提交信息，它遵循了 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)，直译过来为常规提交。
+
+
+这也是行业内使用最为广泛的 Git 提交信息规范，已经有不少的项目在使用，如果你的项目还没有制定 Git 提交信息规范，建议照搬或参考这个规范来制定。
 
 对于一个团队，当很多人在一起合作开发一个项目的时候，预先制定好提交信息规范，对于项目的长远发展以及后续人员加入和维护都非常有帮助。
 
@@ -36,15 +41,15 @@ author: shenxianpeng
 3. 提供自动化生成 `CHANGELOGs` 的能力。
 4. 最后，这也是体现了一个程序员的自我修养。
 
-### 分支创建：没规范 vs 有规范
+**分支创建 没规范 vs 有规范**
 
-如果创建分支没有规范，不加以限制，很多分支是这样的甚至更糟 `ABC-1234-Test`, `ABC-2345-demo`, `Hotfix-ABC-3456`, `Release-1.0`
+如果创建分支没有规范，不加以限制，很多分支是这样的 `ABC-1234-Test`, `ABC-2345-demo`, `Hotfix-ABC-3456`, `Release-1.0`，甚至更糟。这样当分支很多的时候会很乱，并且难以检索。
 
-如果制定分支创建规范，分支必须以一个类型开头，比如 `bugfix/ABC-1234`, `feature/ABC-2345`, `hotfix/ABC-3456`, `release/1.0` 这不但有助于检索，还方便他人知道该分支的属性，以及方便后续的 CI/CD 做分支判断时使用。
+如果制定分支创建规范，比如上面的分支在创建时在开头加上分支类型 `bugfix/ABC-1234`, `feature/ABC-2345`, `hotfix/ABC-3456`, `release/1.0` 这不但有助于检索，还方便他人知道该分支的属性，以及方便后续的 CI/CD 流水线的开发。
 
 ## 如何解决规范问题
 
-在解决规范问题上，应该从两方面着手：
+应该从两方面着手：
 
 * 首先，为团队制定出提交信息以及创建分支规范，让团队成员了解并遵守。
 * 然后，在提交代码或创建分支时，设置 Git Hook 将不规范的提交排除在外。
@@ -53,9 +58,9 @@ author: shenxianpeng
 
 制定合理的规范，最有效的方法是参考软件行业里是否有通用的规范。
 
-[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 目前是最为流行的规范，很多项目在使用，比如 Auglar 等项目也在使用。
+目前行业最为广泛规范是 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 很多项目包括 Auglar 也在使用。
 
-基于此规范，我们可以制定适合自己团队的规范，比如下面的规范：
+制定适合自己团队的规范，比如下面的规范：
 
 ```
 JIRA-1234 feat: support for async execution
