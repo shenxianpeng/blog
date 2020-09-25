@@ -52,7 +52,7 @@ author: shenxianpeng
 应该从两方面着手：
 
 * 首先，为团队制定提交信息以及创建分支规范，让团队成员了解规范并遵守。
-* 然后，在提交代码或创建分支时，通过设置得 Git Hook 将不规范的禁止提交到远程仓库。
+* 然后，在提交代码或创建分支时，通过设置的 Git Hook 将不规范的禁止提交到远程仓库。
 
 ### 制定Git提交信息规范
 
@@ -130,7 +130,7 @@ QA-123 ci: update jenkins automatic backup
 CC-1234 feat: new fucntional about sync
 Merge branch master into develop
 Reverted: Revert support feature & bugfix branches build
-Merge pull request #36 in cicd from test to develop
+Merge pull request from develop to master
 
 # 测试不通过的用例
 NV-1234 build: update
