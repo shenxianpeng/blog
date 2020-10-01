@@ -1,5 +1,5 @@
 ---
-title: 程序员必读：Git提交信息和分支创建规范
+title: 程序员自我修养之Git提交信息和分支创建规范
 tags:
   - Git
   - Specification
