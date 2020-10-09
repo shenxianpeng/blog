@@ -3,7 +3,7 @@ title: About
 author: shenxianpeng
 ---
 
-I'm Xianpeng(Peter) Shen from Dalian, China. A Build & DevOps Engineer at Rocket Software.
+I'm Xianpeng(Peter) Shen from Dalian, China. A Build & DevOps Engineer at RocketSoftware.
 
 DEV/BUILD/DevOps - Jun 2018 - Present
 
@@ -15,16 +15,17 @@ QA/AUTOMATION/CI - Otc 2009 - May 2018
 
 ### Contact Info
 
-* LinkedIn Home: https://www.linkedin.com/in/xianpeng-shen
-* Personal Email: [xianpeng.shen@qq.com](mailto:xianpeng.shen@qq.com) or [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)
+* LinkedIn: https://www.linkedin.com/in/xianpeng-shen
+* GitHub: https://github.com/shenxianpeng
+* Email: [xianpeng.shen@qq.com](mailto:xianpeng.shen@qq.com) or [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)
 
 ### 联系方式
 
 * 微信公众号「DevOps攻城狮」
 
-![DevOps攻城狮](index/qrcode.jpg) 
+![](index/qrcode.jpg) 
 
 * 微信小程序「HelloWorldPro」
 
-![HelloWorldPro](index/qrcode_applet.jpg)
+![](index/qrcode_applet.jpg)
 
