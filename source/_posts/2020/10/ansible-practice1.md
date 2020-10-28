@@ -100,6 +100,6 @@ run.yml
 # run with playbook
 ansible-playbook -i hosts run.yml
 ```
-> 上面的代码是脱敏过的，不保证能一次性运行成功。
+> 注：上面的代码是脱敏过的，不保证能一次性运行成功。
 
 
