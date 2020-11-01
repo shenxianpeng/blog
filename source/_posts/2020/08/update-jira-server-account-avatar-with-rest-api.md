@@ -1,5 +1,5 @@
 ---
-title: Update Jira server account avatar with rest api
+title: Update Jira server account avatar with rest API
 tags:
   - Jira
   - REST-API
@@ -65,6 +65,6 @@ https://jira.your-company.com/rest/api/latest/user/avatar?username=robot
 }
 ```
 
-## How to find the avator id
+## How to find the avatar id
 
-You replace other avator ids you like. Here is how to find you avator id you want ![find avator id](udpate-jira-server-account-avatar-with-rest-api/find-avatar-id.png)
+You replace other avatar ids you like. Here is how to find you avatar id you want ![find avatar id](update-jira-server-account-avatar-with-rest-api/find-avatar-id.png)

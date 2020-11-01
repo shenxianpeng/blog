@@ -14,17 +14,17 @@ Summarize what did I do from 2019.03 to 2020.07 when I became a Build Release/De
 ## Build automation
 
 * Support all server windows platform build manual to auto.
-* Support clents build from manual to auto.
-* Switch linux/unix build from Bamboo to Jenkins.
+* Support clients build from manual to auto.
+* Switch Linux/Unix build from Bamboo to Jenkins.
 * Support all platforms branches/Pull Request build.
-* Provide auto builld as self-service for developer, no need to involve build engineer, they could build themselves.
+* Provide auto-build as self-service for a developer, no need to involve build engineer, they could build themselves.
 
 ## Integration
 
 * Integration with Jenkins
 
   * Self-service installation.
-  * Blackduck, polaris integaration.
+  * Blackduck, Polaris integration.
   * Git stats, analyze Bitbucket data with Elastic stack.
   * Monitor legacy build machines status.
   * Product escrow, sync xdemo, provide NFS and SYNC mvopensrc, update Bitbucket Jenkins build status, etc.

@@ -9,5 +9,10 @@
         "webhook",
         "webhooks",
         "xianpeng"
+    ],
+    "grammarly.userWords": [
+        "elasticsearch",
+        "sdist",
+        "shenxianpeng"
     ]
 }
