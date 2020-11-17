@@ -1,5 +1,5 @@
 ---
-title: [翻译]JaCoCo 实现原理 (JaCoCo Implementation Design)
+title: JaCoCo 实现原理 (JaCoCo Implementation Design)
 tags:
   - JaCoCo
 categories:
