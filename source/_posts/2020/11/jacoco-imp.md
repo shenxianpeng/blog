@@ -42,5 +42,7 @@ jacocoTestReport {
 
 ![JaCoCo报告首页](jacoco-imp/index.png)
 
+<!-- more -->
+
 TBD...
 
