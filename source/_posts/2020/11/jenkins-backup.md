@@ -22,6 +22,8 @@ I used the `ThinBackup` plugin, here is my thinBackup configuration.
 
 ![ThinBackup Configuration](jenkins-backup/thinBackup-Configuration.png)
 
+<!-- more -->
+
 * backup to a folder which user `jenkins` has permission to write. this is important.
 
   > Previously I backup Jenkins to a mount folder, but it doesn't work recently. so I use user `jenkins` to log in on the Jenkins server and found my `jenkins` can't access the directory, but I personal user can.

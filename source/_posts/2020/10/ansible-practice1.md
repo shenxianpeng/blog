@@ -41,6 +41,8 @@ author: shenxianpeng
 
 #### Playbook具体代码
 
+<!-- more -->
+
 vars/vars.yml
 
 ```yml
