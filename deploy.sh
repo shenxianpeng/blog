@@ -15,5 +15,13 @@ _check_result
 hexo clean
 _check_result
 
-hexo generate -deploy
+hexo generate
+_check_result
+
+
+if [ -d public/ ];then
+    cp source/README.md public/
+fi
+
+hexo deploy
 _check_result
