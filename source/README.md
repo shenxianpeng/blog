@@ -2,4 +2,5 @@
 
 ## This is my [blog](https://shenxianpeng.github.io/) code used [hexo](https://hexo.io) 
 
-Watch this repository or subscribe [RSS](https://shenxianpeng.github.io/atom.xml) will be miss any update.
+Watch this repository or subscribe [RSS](https://shenxianpeng.github.io/atom.xml) will not miss any updates.
+
