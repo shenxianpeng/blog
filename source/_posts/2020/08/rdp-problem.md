@@ -26,14 +26,17 @@ Please contact the server administrator.
 
 You could login to the vSphere Web Client if you have via console or have some other way to login that machine.
 
-1. Go into regedit and navigate to 
+1. Open regedit.exe and navigate to 
 
     ![Regedit](rdp-problem/regedit.jpg)
 
 2. Search and Delete `LicensingGracePeriod` and `LicensingGracePeriodExpirationWarningDays`
 
-3. If deletion failed, this failure message appears `unable to delete all specified values`, you need change permission.
+3. If deletion failed, this failure message appears `unable to delete all specified values`, you need change permission. Refer to the related [videos](https://www.youtube.com/results?search_query=unable+to+delete+all+specified+values) on YouTuBe.
 
-> You could follow related [videos](https://www.youtube.com/results?search_query=unable+to+delete+all+specified+values) on YouTuBe
->
-> Thanks Bill K. share with me above fix solution.
+4. Reboot if still not work.
+
+
+In my case, every 90 to 120 days the RDP end of grace period shows up. this is not the final solution. please let me know if you have a better solution.
+
+> Finally thanks Bill K. share with me above fix solution.
