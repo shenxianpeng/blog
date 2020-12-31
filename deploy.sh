@@ -4,7 +4,7 @@ _check_result()
     if [ $? -ne 0 ]; then
         exit 1
     else
-        echo "[√] last execution successful."
+        echo "[√] last command was successfully executed."
     fi
 }
 
