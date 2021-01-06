@@ -39,6 +39,6 @@ Verisign Support 给出的回复是：
 
 ![](verisign-server-not-working/reply.png)
 
-大意如下：几年前，Verisign 的身份验证和证书业务被出售给赛门铁克(Symantec)，目前已过渡到Digicert。您将需要与当前供应商合作以获得支持或更新的时间戳URL。请访问www.digicert.com<http://www.digicert.com>了解更多信息。
+大意如下：几年前，Verisign 的身份验证和证书业务被出售给赛门铁克(Symantec)，目前已过渡到Digicert。您将需要与当前供应商合作以获得支持或更新的时间戳URL。请访问 http://www.digicert.com 了解更多信息。
 
 好了，这下实锤了，放心大胆的开始动手修改到新的时间戳吧。
