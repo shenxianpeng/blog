@@ -1,8 +1,9 @@
 ---
-title: 解决 InstallShield 默认时间戳服务器 http://timestamp.verisign.com/scripts/timstamp.dll 不可用
+title: 解决 Code Sign 默认时间戳服务器 http://timestamp.verisign.com/scripts/timstamp.dll 不可用
 tags:
-  - InstallShield
+  - CodeSign
   - Build
+  - Timestamp
 categories:
   - DevOps
 date: 2021-01-06 09:35:41
