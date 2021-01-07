@@ -4,4 +4,4 @@
 
 关注微信公众号《DevOps攻城狮》或订阅 [RSS](https://shenxianpeng.github.io/atom.xml) 就能及时收到更新。
 
-![欢迎扫码关注](about/index/qrcode.jpg)
+![微信公众号](about/index/qrcode.jpg) ![博客小程序](about/index/qrcode_applet.jpg)
