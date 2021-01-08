@@ -28,7 +28,7 @@ QA/AUTOMATION/CI - Otc 2009 - May 2018
 <p align="left">
   <a href="mailto:xianpeng.shen@gmail.com"><img alt="Gmail" title="Gmail" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/gmail.svg"></a>
   <a href="https://github.com/shenxianpeng"><img alt="GitHub" title="GitHub" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/github.svg"></a>
-  <a href="https://linkedin.com/in/xianpeng-shen"><img alt="LinkedIn" title="LinkedIn" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/linkedin.svg"></a>
+  <a href="https://www.linkedin.com/in/xianpeng-shen/"><img alt="LinkedIn" title="LinkedIn" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/linkedin.svg"></a>
 </p>
 
 
