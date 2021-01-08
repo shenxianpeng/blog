@@ -9,8 +9,7 @@ author: shenxianpeng
 
 从 2017 年我开始写技术文章，把在工作上遇到有价值的问题以及解决问题、从测试转开发、以及其他思考分享出来，更新到这里以及我的微信公众号「DevOps攻城狮」上。
 
-![欢迎扫码关注](index/qrcode.jpg) 
-
+![>欢迎扫码关注](index/qrcode.jpg)
 ## About Me
 
 I'm Xianpeng(Peter) Shen from Dalian, China. A Build & DevOps Engineer at RocketSoftware.
@@ -23,9 +22,9 @@ QA/AUTOMATION/CI - Otc 2009 - May 2018
 
 * Engaged in software testing in Neusoft, JD Mall, Rocket Software, and was responsible for product function testing, automation testing and performance testing test design, implementation and integration.
 
-## Contacts
+<p align="middle">Contacts</p>
 
-<p align="left">
+<p align="middle">
   <a href="mailto:xianpeng.shen@gmail.com"><img alt="Gmail" title="Gmail" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/gmail.svg"></a>
   <a href="https://github.com/shenxianpeng"><img alt="GitHub" title="GitHub" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/github.svg"></a>
   <a href="https://www.linkedin.com/in/xianpeng-shen/"><img alt="LinkedIn" title="LinkedIn" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/linkedin.svg"></a>
