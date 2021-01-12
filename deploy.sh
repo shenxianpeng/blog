@@ -19,7 +19,7 @@ kill_port_4000_pid()
     if [ -z "${PIDS}" ]; then
         exit 0
     else 
-        echo "port 4000 is using by anther process."
+        echo "port 4000 is using by another process."
         exit 1
     fi
 }
