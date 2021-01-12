@@ -17,7 +17,7 @@ kill_port_4000_pid()
     done
     PIDS=`netstat -ano | findstr :4000 | awk '{print $5}'`
     if [ -z "${PIDS}" ]; then
-        exit 0
+        echo "[√] ready for next."
     else 
         echo "port 4000 is using by another process."
         exit 1
