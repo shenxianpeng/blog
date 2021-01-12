@@ -8,6 +8,22 @@ _check_result()
     fi
 }
 
+kill_port_4000_pid()
+{
+    PIDS=`netstat -ano | findstr :4000 | awk '{print $5}'`
+    for pid in $PIDS
+    do
+        tskill $pid
+    done
+    PIDS=`netstat -ano | findstr :4000 | awk '{print $5}'`
+    if [ -z "${PIDS}" ]; then
+        exit 0
+    else 
+        echo "port 4000 is using by anther process."
+        exit 1
+    fi
+}
+
 check_server()
 {
     hexo server > /dev/null 2>&1 &
@@ -44,6 +60,7 @@ deploy(){
 ########################
 # Update Blog Websites #
 ########################
+kill_port_4000_pid
 check_server
 clean
 generate
