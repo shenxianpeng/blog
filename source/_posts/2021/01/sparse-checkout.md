@@ -27,8 +27,9 @@ $ git fetch
 $ git checkout master
 ```
 
-```bash
 Case 2: when you already cloned a repository
+
+```bash
 $ cd git-src
 $ git config core.sparseCheckout true
 $ echo "/assets/" >> .git/info/sparse-checkout
