@@ -48,6 +48,7 @@ copy_readme()
     if [ -d public/ ];then
         rm -rf public/README.*
         cp source/README.md public/
+        ls public/README.md
         _check_result
     fi
 }
