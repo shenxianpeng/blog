@@ -11,7 +11,9 @@
         "xianpeng"
     ],
     "grammarly.userWords": [
+        "currentResult",
         "elasticsearch",
+        "jenkins",
         "sdist",
         "shenxianpeng"
     ]
