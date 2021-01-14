@@ -14,7 +14,7 @@ author: shenxianpeng
 
 Here is a test code from this ticket [JENKINS-46325](https://issues.jenkins.io/browse/JENKINS-46325)
 
-```
+```bash
 pipeline {
     agent any
     stages {
@@ -52,9 +52,10 @@ pipeline {
     }
 }
 ```
+
 Output
 
-```
+```bash
 Init result: null
 Init currentResult: SUCCESS
 Post-Init result: null
@@ -73,11 +74,11 @@ Finished: FAILURE
 
 ## Scripted Pipeline
 
-Here is a test code from [cloudbees support](https://support.cloudbees.com/hc/en-us/articles/218554077-How-to-set-current-build-result-in-Pipeline-)
+Here is a test code from [cloudbees support case](https://support.cloudbees.com/hc/en-us/articles/218554077-How-to-set-current-build-result-in-Pipeline-)
 
 Example that forces a failure then prints result:
 
-```
+```bash
 node {
     try {
         // do something that fails
@@ -89,8 +90,10 @@ node {
     echo "RESULT: ${currentBuild.result}"
 }
 ```
+
 Output:
-```
+
+```bash
 Started by user anonymous
 [Pipeline] Allocate node : Start
 Running on master in /tmp/example/workspace/test
@@ -105,9 +108,10 @@ RESULT: FAILURE
 [Pipeline] End of Pipeline
 Finished: FAILURE
 ```
+
 Example that doesn’t fail then prints result:
 
-```
+```bash
 node {
     try {
         // do something that doesn't fail
@@ -123,7 +127,7 @@ node {
 
 Output:
 
-```
+```bash
 Started by user anonymous
 [Pipeline] Allocate node : Start
 Running on master in /tmp/example/workspace/test
