@@ -9,11 +9,11 @@ date: 2021-01-12 11:13:18
 author: shenxianpeng
 ---
 
-Recently our Bamboo server has an error when connect to the Windows build system.
+Recently our Bamboo server has an error when connecting to the Windows build system.
 
 Some errors like: Can not connect to the host XXXX 22 port.
 
-I log in the build machine find port 22 with the below command 
+I log into the build machine find port 22 with the below command
 
 ```
 $ netstat -aon|findstr "22"
