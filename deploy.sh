@@ -11,15 +11,14 @@ _check_result()
 kill_port_4000_pid()
 {
     PIDS=`netstat -ano | findstr :4000 | awk '{print $5}'`
-    for pid in $PIDS
-    do
-        tskill $pid
-    done
-    PIDS=`netstat -ano | findstr :4000 | awk '{print $5}'`
     if [ -z "${PIDS}" ]; then
         echo "[√] ready for next."
     else 
         echo "port 4000 is using by another process."
+        for pid in $PIDS
+        do
+            tskill $pid
+        done
         exit 1
     fi
 }
