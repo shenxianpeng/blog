@@ -35,7 +35,7 @@ Also:   java.lang.Throwable: launched here
 
 Change `jenkins-agent.exe.config` file. remove or comment out this line `<supportedRuntime version="v2.0.50727" />`
 
-> also do this for `jenkins-slave.exe.config` in case of it also exist.
+> also do this for `jenkins-slave.exe.config` in case it exists.
 
 then your config file will be like this 
 
