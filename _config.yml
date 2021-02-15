@@ -138,3 +138,11 @@ google_analytics: UA-168820225-1
 
 server:
   cache: true
+
+# Firestore Counter
+firestore:
+  enable: true
+  collection: articles #required, a string collection name to access firestore database
+  apiKey: AIzaSyBJQlZ0Cx36iHf8D-0Pndw_g6FqtcOKZho
+  projectId: blog-helloworld
+  bluebird: true #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill
