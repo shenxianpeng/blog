@@ -1,32 +1,44 @@
 ---
-title: About
+title: 
 author: shenxianpeng
 ---
 
-## 关于我
-
-Build/DevOps 工程师，目前在从事相关领域工作。
-
-从 2017 年，我开始把在工作上遇到有价值的问题以及解决问题的办法，还有我从测试转开发，再到DevOps记录下来，更新到这里以及我的微信公众号「DevOps攻城狮」。
-
-![](index/qrcode.jpg)
-## About Me
+# About Me
 
 I'm Xianpeng(Peter) Shen from Dalian, China. A Build & DevOps Engineer at RocketSoftware.
 
-DEV/BUILD/DevOps - Jun 2018 - Present
+DevOps/BUILD/DEV - Jun 2018 - Present
 
 * From QA to Dev, leading the automated build, release, and infrastructure construction of products. Familiar with SDLC, testing, R&D, build/release process, CI/CD tools/integration; proficient in continuous integration.
 
-QA/AUTOMATION/CI - Otc 2009 - May 2018
+QA/AUTOMATION - Otc 2009 - May 2018
 
 * Engaged in software testing in Neusoft, JD Mall, Rocket Software, and was responsible for product function testing, automation testing, and performance testing test design, implementation, and integration.
 
-## Contacts
+
+Feel free to connect me at [Github](https://github.com/shenxianpeng) and [Linkedin](https://www.linkedin.com/in/xianpeng-shen/), leave your thoughts in this blog, or share your ideas by writing an email.
+
 
 <a href="mailto:xianpeng.shen@gmail.com"><img title="Gmail" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/gmail.svg"></a>
 <a href="https://github.com/shenxianpeng"><img title="GitHub" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/github.svg"></a>
 <a href="https://www.linkedin.com/in/xianpeng-shen/"><img title="LinkedIn" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/linkedin.svg"></a>
 
+---
 
+# 关于我
 
+我是沈显鹏，一名 DevOps/Build 工程师。
+
+DevOps/Build - 2018年6月 ~ 至今
+
+* 我从测试转开发，从事自动化构建、发布，基础设施建设，以及 CI/CD，以及 DevOps 相关工作。
+
+测试工程师 - 2009年10月 ~ 2018年5月
+
+* 在东软、京东商城、Rocket Software 等公司从事软件测试工作，负责产品功能、自动化、性能测试等设计、实施、持续集成。
+
+从事 IT 行业有十多余年，我在这里**分享软件测试、持续集成、持续交付、DevOps 领域的知识。**
+
+也欢迎关注我的我的微信公众号「**DevOps攻城狮**」
+
+![](index/qrcode.jpg)
