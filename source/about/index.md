@@ -16,12 +16,14 @@ QA/AUTOMATION - Otc 2009 - May 2018
 * Engaged in software testing in Neusoft, JD Mall, Rocket Software, and was responsible for product function testing, automation testing, and performance testing test design, implementation, and integration.
 
 
-Feel free to connect me at [Github](https://github.com/shenxianpeng) and [Linkedin](https://www.linkedin.com/in/xianpeng-shen/), leave your thoughts in this blog, or share your ideas by writing an email.
+Feel free to connect me at Github [1] and Linkedin [2], leave your thoughts in this blog, or writing an email [3].
 
-
-<a href="mailto:xianpeng.shen@gmail.com"><img title="Gmail" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/gmail.svg"></a>
+[1]: Github: https://github.com/shenxianpeng
+[2]: Linkedin: https://www.linkedin.com/in/xianpeng-shen/
+[3]: Gmail: xianpeng.shen@gmail.com
+<!-- <a href="mailto:xianpeng.shen@gmail.com"><img title="Gmail" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/gmail.svg"></a>
 <a href="https://github.com/shenxianpeng"><img title="GitHub" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/github.svg"></a>
-<a href="https://www.linkedin.com/in/xianpeng-shen/"><img title="LinkedIn" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/linkedin.svg"></a>
+<a href="https://www.linkedin.com/in/xianpeng-shen/"><img title="LinkedIn" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/linkedin.svg"></a> -->
 
 ---
 
