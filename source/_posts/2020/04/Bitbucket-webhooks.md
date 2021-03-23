@@ -15,7 +15,13 @@ I have set several multi-branch pipeline and it can support Bitbucket Pull Reque
 
 <!-- more -->
 
-Here is my setting.
+## Principle
+
+By setting Webhook events, you can listen for git push, create Pull requests and other events, and automatically trigger Jenkins scan when these events occur, so that Jenkins can get the latest branch (or Pull Request) created (or deleted), and automatically build Jenkins Job.
+
+![Scan Multibranch Pipeline](Bitbucket-webhooks/scan-multibranch.png)
+
+## Setting.
 
 * Webhook name: test-multibranch
 * Webhook URL: http://localhost:8080/multibranch-webhook-trigger/invoke?token=test-multibranch

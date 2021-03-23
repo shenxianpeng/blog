@@ -21,6 +21,12 @@ Jenkins 的 multi-branch pipeline 想必很多人已经在用了，使用这种�
 
 <!-- more -->
 
+## 原理
+
+通过设置 Webhook 事件，比如 git push，创建 Pull Request 等，在这些事件发生时触发 Jenkins 扫描，从而 Jenkins 可以获取到最新的创建（或删除）的分支（或Pull Request）。
+
+![扫描 Multibranch Pipeline](Bitbucket-webhooks-cn/scan-multibranch.png)
+
 ## 配置
 
 在申请添加 webhooks 之前，我先在个人的私人仓库下，创建了测试仓库对 webhook 进行了测试，在经过反复的测试，觉得没有问题后，将相应的配置通过管理员添加到对应的 Repository 中。如下示例：
@@ -29,7 +35,7 @@ Jenkins 的 multi-branch pipeline 想必很多人已经在用了，使用这种�
 * Webhook URL: http://localhost:8080/multibranch-webhook-trigger/invoke?token=test-multibranch
 * Test connection: 返回 200, 连接测试通过。
 * Events:
-  * Repository: N/A
+  * Repository: Push
   * Pull Request: Opened, Merged, Declined, Deleted.
 * Active: enable
 
