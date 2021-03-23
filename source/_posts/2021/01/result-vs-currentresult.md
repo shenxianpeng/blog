@@ -8,7 +8,7 @@ date: 2021-01-14 10:48:18
 author: shenxianpeng
 ---
 
-> This is just a note to myself about Jenkins result or currentResult
+> This is just a note to myself about the difference between Jenkins `result` and `currentResult`.
 
 ## Declarative Pipeline
 
