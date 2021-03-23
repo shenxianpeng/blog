@@ -23,7 +23,7 @@ Jenkins 的 multi-branch pipeline 想必很多人已经在用了，使用这种�
 
 ## 原理
 
-通过设置 Webhook 事件，比如 git push，创建 Pull Request 等，在这些事件发生时触发 Jenkins 扫描，从而 Jenkins 可以获取到最新的创建（或删除）的分支（或Pull Request）。
+通过设置 Webhook 事件，可以监听 git push，创建 Pull Request 等事件，在这些事件发生时自动触发 Jenkins 扫描，从而 Jenkins 可以获取到最新的创建（或删除）的分支（或Pull Request），从而自动构建Jenkins Job。
 
 ![扫描 Multibranch Pipeline](Bitbucket-webhooks-cn/scan-multibranch.png)
 
