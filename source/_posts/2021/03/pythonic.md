@@ -82,7 +82,7 @@ Namespaces are one honking great idea -- let's do more of those!
 >>>
 ```
 
-翻译过来就是：Tim Peters的《Python的禅意》
+直译过来是：Tim Peters的《Python的禅意》
 
 ```
 美丽的比丑陋的好。
