@@ -9,14 +9,16 @@ date: 2021-03-24 10:50:53
 author: shenxianpeng
 ---
 
-## Question
+## Problem
 
-When you use Jenkins multibranch pipeline, you may want to have different default parameters settings for defferent branches.
+When you use Jenkins multibranch pipeline, you may want to have different default parameters settings for defferent branches build.
 
 For example:
 
-For develop/hotfix/release branches, except regular build, you also want to do some code scanning, 
-For other branches, like feature/bugfix or PR, you just want to do regular build.
+For develop/hotfix/release branches, except regular build, you also want to do some code analyzes, like code scanning, etc.
+For other branches, like feature/bugfix or Pull Request that you just want to do a regular build.
+
+So you need to have dynamic parameter settings for your multibranch pipeline job.
 
 ## Solution
 
