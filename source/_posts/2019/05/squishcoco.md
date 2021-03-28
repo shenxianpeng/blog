@@ -1,9 +1,11 @@
 ---
-title: Code Coverage - Squishcoco
+title: A Code Coverage Tool - Squish Coco use examples
 date: 2019-05-21 15:53:55
 tags: 
 - Squishcoco
 - CodeCoverage
+- Squish
+- Coco
 categories: 
 - DevOps
 author: shenxianpeng
@@ -11,9 +13,10 @@ author: shenxianpeng
 
 ## Preparation
 
-1. On windows platform
-2. Installed Visual Studio 2010 or higher, I used VS2017 Professional
-3. Install Squish Coco and Add-in
+1. You need to ask for a [free trial license](https://www.froglogic.com/coco/free-trial/) and install
+    * You will receive a mail with username/password to login for downloading  
+2. I test it on the Windows platform, so I download the Windows installer, then install Squish Coco and Add-in
+3. Installed Visual Studio 2010 or higher, I used VS2017 Professional
 
 <!-- more -->
 
