@@ -42,12 +42,17 @@ generate()
     _check_result
 }
 
-copy_readme()
+copy_files()
 {
     if [ -d public/ ];then
         rm -rf public/README.*
         cp source/README.md public/
         ls public/README.md
+        _check_result
+        
+        rm -rf public/LICENSE
+        cp source/LICENSE public/
+        ls public/LICENSE
         _check_result
     fi
 }
@@ -64,7 +69,7 @@ kill_port_4000_pid
 check_server
 clean
 generate
-copy_readme
+copy_files
 deploy
 
 exit 0
