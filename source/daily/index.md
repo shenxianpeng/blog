@@ -1,11 +1,17 @@
 ---
 title: Daily 
-date: 2020-08-07 17:37:33
 ---
 
 > Start from Aug 7, 2020, I would like to start recording my weekly or some regular daily things in English.
 
 ---
+## 04/11/2021 - Just an update
+
+1. I have moved to my new home for almost one month. It's very happy to go to work only needs 15 minutes.
+2. I'm reading several very thick books. like `Code Complete` and `C++ Primer Plus`. be patient and take my time.
+3. Btw, I got promoted this month that I have worked here for 6 years.
+
+
 ## 02/18/2021 - The coach (Qiao Q) left Rocket and started his new career
 
 I called Qiao a coach because he swims very well and tells me how to freestyle. He also does DevOps/Build-related works in Rocket, then we have a lot of things to talk about, so we have a very good relationship.
