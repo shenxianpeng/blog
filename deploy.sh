@@ -19,7 +19,6 @@ kill_port_4000_pid()
         do
             tskill $pid
         done
-        exit 1
     fi
 }
 
@@ -30,26 +29,26 @@ check_server()
     _check_result
 }
 
-clean()
+public_clean()
 {
     hexo clean
     _check_result
 }
 
-generate()
+public_generate()
 {
     hexo generate
     _check_result
 }
 
-copy_files()
+copy_file_to_public()
 {
     if [ -d public/ ];then
         rm -rf public/README.*
         cp source/README.md public/
         ls public/README.md
         _check_result
-        
+
         rm -rf public/LICENSE
         cp source/LICENSE public/
         ls public/LICENSE
@@ -57,7 +56,7 @@ copy_files()
     fi
 }
 
-deploy(){
+public_deploy(){
     hexo deploy
     _check_result
 }
@@ -67,10 +66,12 @@ deploy(){
 ########################
 kill_port_4000_pid
 check_server
-clean
-generate
-copy_files
-deploy
+kill_port_4000_pid
+
+public_clean
+public_generate
+copy_file_to_public
+public_deploy
 
 exit 0
 
