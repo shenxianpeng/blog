@@ -4,17 +4,17 @@ tags:
   - Windows
   - RDP
 categories:
-  - DevOps
+  - Troubleshooting
 date: 2020-08-10 15:40:04
 author: shenxianpeng
 ---
 
 ## Problem
 
-Sometime my Windows server 2012 R2 has RDP connect problem below:
+Sometimes my Windows server 2012 R2 has RDP connect problem below:
 
 ```
-Remote session was disconnected because there are no Remote Desktop client access licenses available for this computer.
+The remote session was disconnected because there are no Remote Desktop client access licenses available for this computer.
 Please contact the server administrator.
 ```
 
@@ -24,7 +24,7 @@ Please contact the server administrator.
 
 ## How to Fix
 
-You could login to the vSphere Web Client if you have via console or have some other way to login that machine.
+You could log in to the vSphere Web Client if you have via console or have some other way to log in to the machine.
 
 1. Open regedit.exe and navigate to 
 
@@ -34,9 +34,9 @@ You could login to the vSphere Web Client if you have via console or have some o
 
 3. If deletion failed, this failure message appears `unable to delete all specified values`, you need change permission. Refer to the related [videos](https://www.youtube.com/results?search_query=unable+to+delete+all+specified+values) on YouTuBe.
 
-4. Reboot if still not work.
+4. Reboot the system if it is still doesn't work.
 
 
-In my case, every 90 to 120 days the RDP end of grace period shows up. this is not the final solution. please let me know if you have a better solution.
+In my case, every 90 to 120 days, the RDP end of grace period shows up, this is not the final solution. please let me know if you have a better solution.
 
-> Finally thanks Bill K. share with me above fix solution.
+> Finally, thanks to Bill K. shared with me the above solution.
