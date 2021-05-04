@@ -4,7 +4,7 @@ tags:
   - Artifactory
   - JFrog
 categories:
-  - DevOps
+  - JFrog
 date: 2019-11-10 17:52:58
 author: shenxianpeng
 ---

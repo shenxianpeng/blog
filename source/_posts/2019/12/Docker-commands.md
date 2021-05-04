@@ -4,7 +4,7 @@ tags:
   - Docker
   - DevOps
 categories:
-  - DevOps
+  - Docker
 date: 2019-12-02 14:30:41
 author: shenxianpeng
 ---
