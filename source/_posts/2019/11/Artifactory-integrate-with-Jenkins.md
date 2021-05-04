@@ -4,7 +4,7 @@ tags:
   - Artifactory
   - Jenkins
 categories:
-  - Jenkins
+  - JFrog
 date: 2019-11-17 16:00:34
 author: shenxianpeng
 ---

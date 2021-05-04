@@ -4,7 +4,7 @@ tags:
   - Jenkins
   - Docker
 categories:
-  - Jenkins
+  - Docker
 date: 2019-12-01 15:17:39
 author: shenxianpeng
 ---
