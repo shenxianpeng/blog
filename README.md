@@ -10,7 +10,8 @@
 ## :cloud: Installation
 
 ```bash
-git clone https://github.com/shenxianpeng/blog.git && cd blog
+git clone https://github.com/shenxianpeng/blog.git
+cd blog
 npm install                                 # Install dependencies
 npm install -g hexo-cli                     # Install hexo cli
 npm install hexo-deployer-git --save        # Install hexo deploy
@@ -29,20 +30,33 @@ hexo deploy                                 # Deploy your website
 hexo generate -deploy                       # Generate then deploy
 hexo g -d                                   # Abbreviations generate then deploy
 ```
-
 ## :memo: Article storage structure
 
-Articles are stored according to folder, with the hierarchy of year/month. for example, when create a article `abc.md` in August 2019.
+Articles are saved by folder, with the hierarchy of year/month. 
+
+I follow below steps when I create an article, for example `abc.md` in August 2019. 
+
 
 1. use command `hexo new "abc"` to generate `abc.md`
-2. manually create `2019/08/` under `source/_post` folder
-3. move `abc.md` to `source/_post/2019/08/`
+2. manually create `2021/05/` under `source/_post` folder
+3. move `abc.md` to `source/_post/2021/05/`
+4. update `tags`, `categories` and `author` fields in `abc.md` file
+5. start writing... I always use `hexo s` to see how it looks
 
-Any draft posts need to move `todo` folder first. after finished will move to `source/_post/...`
+> Any unfished posts need to be moved `todo` folder first. when done move to `source/_post/...` in published.
 
-## :memo: Post
+## 🚀 Auto deploy
 
-Before post this articles, if need should convert to markdown format first.
+Use below command will automatically update the new article to web site [repository](https://github.com/shenxianpeng/shenxianpeng.github.io).
+
+```bash
+sh deploy.sh
+```
+
+
+## 🧰 Format optimization tools
+
+Before publishing the article to other sharing platforms, I need to optimize the format first.
 
 * For WeChat: 
     * [Convert to Markdown](http://blog.didispace.com/tools/online-markdown/)
