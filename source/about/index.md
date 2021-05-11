@@ -5,7 +5,7 @@ author: shenxianpeng
 
 # About Me
 
-I'm Xianpeng(Peter) Shen from Dalian, China. A Build & DevOps Engineer at RocketSoftware.
+I'm Xianpeng(Peter) Shen, a DevOps engineer from Dalian, China.
 
 DevOps/BUILD/DEV - Jun 2018 - Present
 
@@ -30,18 +30,16 @@ Feel free to connect me at Github [1] and Linkedin [2], leave your thoughts in t
 
 # 关于我
 
-我是沈显鹏，一名 DevOps/Build 工程师。
+我是沈显鹏，一名 DevOps 工程师。
 
-DevOps/Build - 2018年6月 ~ 至今
+DevOps - 2018年6月 ~ 至今
 
-* 我从测试转开发，从事自动化构建、发布，基础设施建设，以及 CI/CD，以及 DevOps 相关工作。
+* 从测试到开发，从事自动化构建、发布，基础设施建设，以及 CI/CD，以及 DevOps 相关工作。
 
 测试工程师 - 2009年10月 ~ 2018年5月
 
-* 在东软、京东商城、Rocket Software 等公司从事软件测试工作，负责产品功能、自动化、性能测试等设计、实施、持续集成。
+* 在东软、京东商城、Rocket Software 等公司从事软件测试工作，负责产品的功能、自动化、性能测试、以及设计、实施、持续集成。
 
-从事 IT 行业有十多余年，我在这里**分享软件测试、持续集成、持续交付、DevOps 领域的知识。**
-
-也欢迎关注我的我的微信公众号「**DevOps攻城狮**」
+在这里**分享软件测试、持续集成、持续交付、DevOps 等领域知识。**，也欢迎关注我的微信公众号「**DevOps攻城狮**」
 
 ![](index/qrcode.jpg)
