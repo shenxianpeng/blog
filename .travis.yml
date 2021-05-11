@@ -10,6 +10,7 @@ matrix:
         sonarcloud:
           organization: "shenxianpeng"
           token: a38d39b377d89ea83ac464713dcb915bd33ade0a # encrypted value of your token
+      jdk: oraclejdk11
       script:
         # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
         - sonar-scanner -Dproject.settings=sonar-project.properties
@@ -33,7 +34,7 @@ matrix:
 
 notifications:
   email:
-    - xianpeng.shen@qq.com   
+    - xianpeng.shen@gmail.com   
 
 
   
