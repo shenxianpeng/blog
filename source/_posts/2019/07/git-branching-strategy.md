@@ -44,3 +44,5 @@ author: shenxianpeng
 * release 分支上发现的缺陷将会修复到 release 分支
 
 如果你是那 1% 不能满足的产品需求，欢迎留言。
+
+> 相关阅读：[分支命名约定](https://shenxianpeng.github.io/2021/05/branch-naming-convention/)
