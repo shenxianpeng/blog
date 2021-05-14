@@ -44,3 +44,5 @@ If you have to provide diagnostic build to custom, you can name your branch `dia
 ## Summary
 
 Anyway, having a unified branch naming convention is very important for implement CI/CD and your whole team.
+
+> Related Reading: [Git Branch Strategy](https://shenxianpeng.github.io/2019/07/git-branching-strategy/) (Chinese)
