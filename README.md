@@ -3,7 +3,6 @@
 ## This is my [blog](https://shenxianpeng.github.io/) code used [hexo](https://hexo.io)
 
 ![Build](https://github.com/shenxianpeng/blog/workflows/build/badge.svg?branch=master)
-[![Build Status](https://travis-ci.org/shenxianpeng/blog.svg?branch=master)](https://travis-ci.org/shenxianpeng/blog)
 [![CodeQL](https://github.com/shenxianpeng/blog/workflows/CodeQL/badge.svg)](https://github.com/shenxianpeng/blog/actions?query=workflow%3ACodeQL)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=shenxianpeng_blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=shenxianpeng_blog)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2eff1062ed5c4971b06f33feb9696f88)](https://www.codacy.com/manual/xianpeng.shen/blog?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shenxianpeng/blog&amp;utm_campaign=Badge_Grade)
