@@ -9,11 +9,11 @@ date: 2021-03-28 10:27:57
 author: shenxianpeng
 ---
 
-Python 不必多说，它是众多编程语言中最为容易学习的动态类型语言。它的跨平台、易读、易写、丰富的 Package 等众多特性，也是众多DevOps/测试/开发工程师是最常用的语言之一。
+Python 不必多说，它是众多编程语言中最容易学习的动态类型语言。它的跨平台、易读、易写、丰富的 Packages 等众多特性，也是众多DevOps/测试/开发工程师是最常用的语言之一。
 
-相信不少人和我一样用 Python 完成了很多工作，但你有没有觉得随着使用的越多，不满足于仅仅实现功能，希望通过最恰当的方式去实现，因此投入时间去学习如何去写出更优雅的 Python 代码？
+相信不少人用它完成了很多工作，但你是不是仅仅止步于功能的实现而忽略了去写出更加简洁，优美的 `Pythonic` 代码呢？
 
-在最开始用 Python 时，我还不知道 `Pythonic` 这个词，直到多年前一位非常资深的程序员在给我培训的时候提到了项目中有一些代码不够 `Pythonic`，需要重构。根据语境，我理解他的意思：就是 Python 的代码没有按照 Python 的方式来写。
+在我最开始用 Python 时，我还不知道 `Pythonic` 这个词，直到多年前一位资深的程序员在给我培训的时候提到了项目中有一些代码不够 `Pythonic`，需要重构。根据语境，我理解他的意思：就是 Python 的代码没有按照 Python 的方式来写。
 
 ## 什么是 Pythonic
 
@@ -78,7 +78,7 @@ for item in items:
 
 其实，Python 命令行里已经秘密“隐藏”了关于 `Pythonic` 的介绍。只要打开 Python 控制台，输入 `import this`，你就能看到：
 
-```
+```text
 C:\Users\xshen>python
 Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
@@ -109,7 +109,7 @@ Namespaces are one honking great idea -- let's do more of those!
 
 直译过来是：Tim Peters 的《Python的禅意》
 
-```
+```text
 美丽的比丑陋的好。
 明确的比含蓄的好。
 简单的比复杂的好
