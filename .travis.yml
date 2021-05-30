@@ -21,15 +21,15 @@
         "install": [
           "gem install travis"
         ],
-        "script": [
-          "sonar-scanner -X -Dproject.settings=sonar-project.properties"
-        ],
         "addons": {
           "sonarcloud": {
             "organization": "shenxianpeng",
             "token": "a38d39b377d89ea83ac464713dcb915bd33ade0a"
           }
         },
+        "script": [
+          "sonar-scanner"
+        ],
         "jdk": "oraclejdk11"
       },
       {
