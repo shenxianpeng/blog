@@ -3,6 +3,7 @@ title: Resolved problem that ESlint HTML report is not displayed correctly in Je
 tags:
   - ESlint
   - Jenkins
+  - Troubleshooting
 categories:
   - Jenkins
 date: 2021-06-07 12:30:02
@@ -15,7 +16,7 @@ When I want to integrate the ESlint report with Jenkins. I encourage a problem
 
 That is eslint-report.html display different with it on my local machine, and I also log to Jenkins server and grab the eslint-report.html to local, it works well. 
 
-I used [HTML Publisher](https://plugins.jenkins.io/htmlpublisher/) plugin to display the HTML report, but only ESlint HTML report has problems other report work well, so I guess this problem may be caused by Jenkins.
+I used [HTML Publisher](https://plugins.jenkins.io/htmlpublisher/) plugin to display the HTML report, but only the ESlint HTML report has problems other report work well, so I guess this problem may be caused by Jenkins.
 
 Finally, I find it. (Stackoverflow [URL](https://stackoverflow.com/questions/34315723/jenkins-error-blocked-script-execution-in-url-because-the-documents-frame/46197356?stw=2#46197356))
 
@@ -24,7 +25,7 @@ Finally, I find it. (Stackoverflow [URL](https://stackoverflow.com/questions/343
 1. Open the Jenkin home page.
 2. Go to Manage Jenkins.
 3. Now go to Script Console.
-4. And in that console paste below statement and click on Run. 
+4. And in that console paste the below statement and click on Run. 
 ```
 System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 ```
