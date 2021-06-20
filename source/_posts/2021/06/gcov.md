@@ -10,9 +10,17 @@ date: 2021-06-18 16:28:11
 author: shenxianpeng
 ---
 
-[Gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov-Intro.html#Gcov-Intro) 是一个开源的代码覆盖率工具。
+## 前言
 
-通过以下示例来了解 Gcov 是如何使用并生成代码覆盖率报告。
+在很早之前我做过一次 C/C++ 项目的代码覆盖率工具的调查，是一款叫 [Squish Coco](https://shenxianpeng.github.io/2019/05/squishcoco/) 的付费工具，当时由于有一些问题没有解决，就搁置了并没有最终购买。最近又开始了这项工作，也有购买工具的预算，但作为个人还是希望有好用的开源软件可以来做这件事，为产品减少每年几千刀的 License 的支出。
+
+本次调查的是 [Gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov-Intro.html#Gcov-Intro)，一个可以与 GCC 结合使用的工具，用于测试程序中的代码覆盖率。
+
+本篇文章通过以下示例带你初步了解 Gcov 是如何工作的。
+
+> 关于 Squish Coco 与 Gcov/LCOV 的对比，froglogic 官方有一个说明：https://www.froglogic.com/coco/faq/
+
+## Gcov 演示示例
 
 1. 首先创建一个简单的 C 程序
 
@@ -71,4 +79,5 @@ Creating 'test.c.gcov'
 a.out  test.c  test.c.gcov  test.gcda  test.gcno
 ```
 
-> 另外一篇关于 C/C++ 代码覆盖率工具 Squish Coco 的使用示例：https://shenxianpeng.github.io/2019/05/squishcoco/
+
+
