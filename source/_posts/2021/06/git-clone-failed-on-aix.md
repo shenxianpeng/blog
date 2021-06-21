@@ -100,7 +100,9 @@ ssh_exchange_identification: read: Connection reset by peer
 
 在 `~/.ssh/config` 文件里添加选项 `AllowPKCS12keystoreAutoOpen no`
 
-但问题来了，这个选项是 AIX 上的一个定制选项，在 Linux 上是没有的。这会导致同一个账户在 Linux 上通过 SSH 进行 clone 会失败。
+但问题又来了，这个选项是 AIX 上的一个定制选项，在 Linux 上是没有的。
+
+这会导致同一个域账户在 AIX 通过 SSH 可以 git clone 成功，但在 Linux 上 git clone 会失败。
 
 ```bash
 # Linux 上不识别改选项
