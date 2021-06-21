@@ -85,3 +85,22 @@ Check Artifactory status with:
 
 NOTE: Updating the ownership of files and directories. This may take several minutes. Do not stop the installation/upgrade process.
 ```
+
+## Artifactory 卸载
+
+1. 停止 Artifactory 服务
+
+```bash
+systemctl stop artifactory.service
+```
+
+2. 使用 root 用户执行 RPM uninstall 命令
+
+```bash
+# remove OSS version
+yum erase jfrog-artifactory-oss
+# remove PRO version, etc.
+yum erase jfrog-artifactory-pro
+```
+
+更多关于 JFrog 产品的卸载，请看：https://www.jfrog.com/confluence/display/JFROG/Uninstalling+JFrog+Products
