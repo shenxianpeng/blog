@@ -112,7 +112,7 @@ fatal: Could not read from remote repository.
 ```
 
 1. 如果 `config` 文件可以支持条件选项就好了，即当为 AIX 是添加选项 `AllowPKCS12keystoreAutoOpen no`，其他系统则没有该选项。可惜 `config` 并不支持。
-2. 如果能单独的设置当前 AIX 的 ssh config 文件就好了。尝试将 `/etc/ssh/config` 文件修改如下，重启服务，再次通过 SSH clone，成功~！
+2. 如果能单独的设置当前 AIX 的 ssh config 文件就好了。尝试将 `/etc/ssh/ssh_config` 文件修改如下，重启服务，再次通过 SSH clone，成功~！
 
 ```bash
 Host *
