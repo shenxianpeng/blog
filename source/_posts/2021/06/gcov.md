@@ -69,7 +69,7 @@ a.out  test.c  test.gcda  test.gcno
 
 4. 执行 `gcov test.c` 生成报告文件 `test.c.gcov`
 
-```
+```bash
 [xshen@dendevblr01 gcov]$ gcov test.c
 File 'test.c'
 Lines executed:100.00% of 3

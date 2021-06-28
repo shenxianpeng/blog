@@ -55,7 +55,7 @@ pipeline {
 
 Here is the output log
 
-```
+```log
 00:00:01.326  [Pipeline] Start of Pipeline
 00:00:01.475  [Pipeline] stage
 00:00:01.478  [Pipeline] { (Hello)

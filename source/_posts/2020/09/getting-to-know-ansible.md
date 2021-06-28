@@ -18,18 +18,18 @@ author: shenxianpeng
 
 ## Ansible TroubleShotting
 
-`"msg": "winrm or requests is not installed: No module named winrm"` 
+`"msg": "winrm or requests is not installed: No module named winrm"`
 
-Need install `pywinrm` on your master server. 
+Need install `pywinrm` on your master server.
 
 "msg": "plaintext: auth method plaintext requires a password"
 
 when I run `ansible mywin -i hosts -m win_ping -vvv`, I notice the output used Python2.7, so I install `pywinrm` with command `sudo pip2 install pywinrm`, then my problem was resolved.
 
-```
+```json
 mywin | UNREACHABLE! => {
-    "changed": false, 
-    "msg": "plaintext: auth method plaintext requires a password", 
+    "changed": false,
+    "msg": "plaintext: auth method plaintext requires a password",
     "unreachable": true
 }
 ```

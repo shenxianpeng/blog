@@ -55,7 +55,7 @@ author: shenxianpeng
 
 ### 打开归档结果如下
 
-```
+```bash
 #####################################################
 ######### VM login check via SSH results ############
 #####################################################
@@ -64,8 +64,8 @@ author: shenxianpeng
 #                                                   #
 # Below 2 host(s) login faied, need to check.       #
 #                                                   #
-      abc.company.com 
-      xyz.company.com 
+      abc.company.com
+      xyz.company.com
 #                                                   #
 #####################################################
 ```

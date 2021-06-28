@@ -71,7 +71,7 @@ global-exclude *.pyc
 ## 发布到PyPI
 
 使用 Python 大家都知道可以通过以下命令来下载你要是使用的外部库，Python 有着大量的第三方库，将开源项目发布到 PyPI 上方便用户使用。
-```
+```bash
 pip install xxxx
 ```
 
@@ -81,12 +81,12 @@ PyPI 是 The Python Package Index 的缩写，意思是 Python 包索引仓库�
 
 PyPI 有两个环境
 
-* 测试环境 [TestPyPI](https://test.pypi.org/) 
+* 测试环境 [TestPyPI](https://test.pypi.org/)
 * 正式环境 [PyPI](https://pypi.org/)
 
 ### 准备
 
-1. 如果想熟悉 PyPI 发布工具和发布流程可以使用测试环境 [TestPyPI](https://test.pypi.org/) 
+1. 如果想熟悉 PyPI 发布工具和发布流程可以使用测试环境 [TestPyPI](https://test.pypi.org/)
 2. 如果已经熟悉了 PyPI 的发布工具和流程可以直接使用正式环境 [PyPI](https://pypi.org/)
 3. TestPyPI 和 PyPI 需要单独注册，即在正式环境注册了，如果去使用测试环境也同样需要注册。注意：同一个账号不能在 PyPI 和 TestPyPI 同时注册。
 
@@ -119,7 +119,7 @@ python -m pydoc -w ..\   # 生成全部文档
 
 打开你的 GitHub python 项目设置选项 -> 找到 GitHub Pages -> Source 选择你的分支和路径，保存后就立刻拥有了一个网址。例如：
 
-* https://xxxxx.github.io/demo/ 是你的项目主页，显示是 README.md 信息 
+* https://xxxxx.github.io/demo/ 是你的项目主页，显示是 README.md 信息
 * https://xxxxx.github.io/demo/docs/demo.html 是你的项目的 pydoc 文档
 
 ## 关于版本号
@@ -153,14 +153,14 @@ Final release 版本号 `1.1.0, 1.1.1, 1.1.N...`
 
 如果是个人项目或是想了解开源许可相关的介绍，常见的软件开源许可证（以下许可证是按条件数量排序的）
 
-* GNU AGPLv3 
-* GNU GPLv3 
-* GNU LGPLv3 
-* Mozilla Public License 2.0 
-* Apache License 2.0 
-* MIT License 
-* Boost Software License 1.0 
-* The Unlicense 
+* GNU AGPLv3
+* GNU GPLv3
+* GNU LGPLv3
+* Mozilla Public License 2.0
+* Apache License 2.0
+* MIT License
+* Boost Software License 1.0
+* The Unlicense
 
 这里有一篇关于《[Github仓库如何选择开源许可证](https://mp.weixin.qq.com/s/CjeWol3BdGkmGZi-zMnDkQ)》文章供参考。
 

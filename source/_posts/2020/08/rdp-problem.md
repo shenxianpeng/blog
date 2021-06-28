@@ -13,7 +13,7 @@ author: shenxianpeng
 
 Sometimes my Windows server 2012 R2 has RDP connect problem below:
 
-```
+```text
 The remote session was disconnected because there are no Remote Desktop client access licenses available for this computer.
 Please contact the server administrator.
 ```
@@ -26,7 +26,7 @@ Please contact the server administrator.
 
 You could log in to the vSphere Web Client if you have via console or have some other way to log in to the machine.
 
-1. Open regedit.exe and navigate to 
+1. Open regedit.exe and navigate to
 
     ![Regedit](rdp-problem/regedit.jpg)
 
