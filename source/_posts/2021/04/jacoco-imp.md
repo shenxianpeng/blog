@@ -23,7 +23,6 @@ plugins {
     id 'jacoco'
 }
 
-
 jacoco {
     toolVersion = "0.8.5"
 }
@@ -112,7 +111,6 @@ v(G) = B - D + 1
 
 [覆盖率的计算原文](https://www.eclemma.org/jacoco/trunk/doc/counters.html)
 
-
 ## 从代码覆盖率报告中忽略指定的包或代码
 
 对于有些包和代码可能不属于你的项目，但也被统计在内，可以通修改在 `build.gradle` 将指定的代码或是包从 JaCoCo 报告中忽略掉。如下：
@@ -139,5 +137,3 @@ jacocoTestReport {
     }
 }
 ```
-
-

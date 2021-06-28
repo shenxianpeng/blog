@@ -15,7 +15,6 @@ author: shenxianpeng
 
 但生活总归要继续。刷微博、抖音各种社交媒体是一天；工作学习也是一天。我是那种一段时间感觉没进步就特别恐慌的人，做完后者总会让我感觉更安心一些。
 
-
 ## 回顾 2020
 
 ### 关于工作
@@ -94,7 +93,3 @@ author: shenxianpeng
 >
 > [2019 年终总结](https://shenxianpeng.github.io/2019/12/2019-summary/)
 > [2018 从测试到开发的五个月](https://shenxianpeng.github.io/2018/12/from-qa-to-dev/)
-
-
-
-

@@ -26,7 +26,6 @@ For now, everyone can not trail overseas. I hope that the pandemic can go away A
 2. I'm reading several very thick books, such as `Code Complete` and `C++ Primer Plus` books.
 3. Btw, I got promoted this month that I have worked here for six years.
 
-
 ## 02/18/2021 - The coach (Qiao Q) left Rocket and started his new career
 
 I called Qiao a coach because he swims very well and tells me how to freestyle. He also does DevOps/Build-related works in Rocket, then we have a lot of things to talk about, so we have a good relationship.

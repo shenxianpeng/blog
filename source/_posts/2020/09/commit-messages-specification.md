@@ -29,7 +29,6 @@ author: shenxianpeng
 
 这是 Angular 的提交信息，它遵循了 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)，直译过来为常规提交。
 
-
 这也是行业内使用最为广泛的 Git 提交信息规范，已经有不少的项目在使用，如果你的项目还没有制定 Git 提交信息规范，建议照搬或参考这个规范来制定。
 
 对于一个团队，当很多人在一起合作开发一个项目的时候，预先制定好提交信息规范，对于项目的长远发展以及后续人员加入和维护都非常有帮助。
@@ -96,7 +95,6 @@ Bitbucket 使用的是 [Yet Another Commit Checker](https://mohamicorp.atlassian
 然后逐一介绍 Yet Another Commit Checker 的一些常用的设置。
 
 ![Yet Another Commit Checker 插件的其他设置选项](commit-messages-specification/commit-checker.png)
-
 
 ### 1. 开启 Require Valid JIRA Issue(s)
 

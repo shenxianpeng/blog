@@ -36,7 +36,6 @@ You could log in to the vSphere Web Client if you have via console or have some 
 
 4. Reboot the system if it is still doesn't work.
 
-
 In my case, every 90 to 120 days, the RDP end of grace period shows up, this is not the final solution. please let me know if you have a better solution.
 
 > Finally, thanks to Bill K. shared with me the above solution.

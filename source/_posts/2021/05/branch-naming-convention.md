@@ -40,7 +40,6 @@ Maybe your Jira task ticket you don't want to make it in `bugfix` or `feature`, 
 
 If you have to provide diagnostic build to custom, you can name your branch `diag/ABC-5678`.
 
-
 ## Summary
 
 Anyway, having a unified branch naming convention is very important for implement CI/CD and your whole team.

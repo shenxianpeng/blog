@@ -25,7 +25,6 @@ Base on the below test results, I summarized as follows:
   a.	One option is the official release version start from 1.1.0.1000, beta version starts from 1.1.0.0001, 1.1.0.0002… Or the beta version should be less than 1.1.0, maybe 1.0.0.xxxx
   b.	Another option is follow up [python official versioning](https://www.python.org/dev/peps/pep-0440/) that is the best practice, then the beta release version will be 1.1.b1, 1.1.b2, 1.1.bN… (it passed No.5 test below)
 
- 
 ## My Test Case
 
 <!-- more -->

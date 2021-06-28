@@ -32,7 +32,6 @@ You will see an error message returned if the Artifactory is not allowed to down
 ```
 > More details about the API could find here [Retrieve Folder or Repository Archive](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-RetrieveFolderorRepositoryArchive)
 
-
 ## Workaround
 
 So to be enabled to download entire folder artifacts, I found other JFrog Artifactory APIs provide a workaround.
@@ -86,6 +85,3 @@ Take an example screenshot of pattern search:
 Then you can use Shell, Python language to get the file path from the response, then use ` curl -u $USERNAME:$PASSWORD -O $PATH_TO_FILE` command to download the file one by one.
 
 If you have better solutions, suggestions, or questions, you can leave a comment.
-
-
-

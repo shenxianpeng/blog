@@ -43,7 +43,6 @@ sudo vi /etc/exports
 
 启动 NFS 服务，需要启动 portmap 和 nfs 两个服务，并且 portmap 一定要先于 nfs 启动
 
-
 ```bash
 service portmap start
 service nfs start

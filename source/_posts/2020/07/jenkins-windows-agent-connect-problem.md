@@ -58,6 +58,3 @@ Btw, if you could not install .NET Framework 3.5 successfully. you can try to in
 In my case no need to reboot the Windows agent.
 
 Hopefully, this also works for you. Let me know in case you have any comments.
-
-
-

@@ -12,7 +12,6 @@ If you like it or if it helps you, welcome Star to encourage the author 😀
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c11eed2252634f68a4a4f62a5e069fa6)](https://www.codacy.com/gh/shenxianpeng/blog/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shenxianpeng/blog&amp;utm_campaign=Badge_Grade)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F) ![Blog views](https://gpvc.arturio.dev/blog)
 
-
 ## :cloud: Installation
 
 ```bash
@@ -58,7 +57,6 @@ Use below command will automatically update the new article to web site [reposit
 ```bash
 sh deploy.sh
 ```
-
 
 ## 🧰 Format Tools
 

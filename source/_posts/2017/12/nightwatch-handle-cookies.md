@@ -72,4 +72,3 @@ client.getCookies(function cb(result) {
 以成功百度登录时为例，可以看到 Headers 里的参数，我们可以通过验证这些参数来确定登录成功了。
 
 这样我们就可以这些参数来实现对 cookie，token 等等参数进行自动化测试的验证。
-

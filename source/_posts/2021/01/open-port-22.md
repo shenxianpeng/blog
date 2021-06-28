@@ -34,6 +34,3 @@ My problem is when I inbound port 22, execute the above command still can't see 
 So I install the [Win32-OpenSSH](https://github.com/PowerShell/Win32-OpenSSH), this will lanch two services, then port 22 is listening.
 
 Here are the wiki page about download and installation https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH
-
-
-
