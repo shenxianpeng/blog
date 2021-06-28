@@ -2,9 +2,13 @@
 title: Daily 
 ---
 
-> Starting August 7, 2020, I would like to start recording some regular daily affairs in English.
+> Starting August 7, 2020, I would like to start recording some daily chores in English.
 
 ---
+
+## 06/26/2021 - mentee and mentor program
+
+Since this month(June), I begin to have a mentor :) (WIP)
 
 ## 05/26/2021 - Congrats to myself
 
