@@ -80,6 +80,3 @@ author: shenxianpeng
 
 > * [做了9年测试，我为何转开发？](https://shenxianpeng.github.io/2018/07/why-I-move-to-development/)
 > * [从测试到开发的五个月](https://shenxianpeng.github.io/2018/12/from-qa-to-dev/)
-
-
-

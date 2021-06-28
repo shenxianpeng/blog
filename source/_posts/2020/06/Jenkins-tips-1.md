@@ -77,4 +77,3 @@ $    exit -1
 $ fi
 ```
 ![示例四：测试结果](Jenkins-tips-1/4.png)
-

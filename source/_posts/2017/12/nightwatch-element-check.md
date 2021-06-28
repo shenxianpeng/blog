@@ -1,11 +1,12 @@
 ---
 title: Nightwatch 元素判断
-date: 2017-12-14 17:34:18
 tags: 
-- Nightwatch
-- Automation
+  - Nightwatch
+  - Automation
 categories: 
-- Automation
+  - Automation
+date: 2017-12-14 17:34:18
+author: shenxianpeng
 ---
 
 ### Nightwatch 元素常用验证方法

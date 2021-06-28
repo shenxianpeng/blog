@@ -27,5 +27,3 @@ docker run docker.bintray.io/jfrog/jfrog-cli-go:latest jfrog -v
 ## CLI for JFrog Aritifactory
 
 [如何在 Artifactory 上使用 JFrog CLI](https://www.jfrog.com/confluence/display/CLI/CLI+for+JFrog+Artifactory)
-
-

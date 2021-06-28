@@ -65,7 +65,6 @@ author: shenxianpeng
 
     ![获取到了 Pull Request ID](bitbucket-pull-request-event/pull-request-id.png)
 
-
 ## 使用扩展
 
 假如你有个程序，可以通过传入的 Pull Request ID 并借助 Bitbucket REST API 来获取并分析指定 Pull Request 的内容的。比如获取相关文件的历史记录，从而知道这些文件谁修改的最多以及这次修改涉及到了哪些 Jira 单号，从而做一些 Review 或是执行回归测试的推荐等等。

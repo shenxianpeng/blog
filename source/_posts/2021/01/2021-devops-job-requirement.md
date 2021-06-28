@@ -20,7 +20,6 @@ author: shenxianpeng
 
 ## 主要技能
 
-
 * 国外很多公司他们使用的云服务商主要是 AWS，因此熟悉和使用 AWS
 * 熟练使用 DevOps 工具，如 Jenkins, Ansible（Chef）, Git 等
 * Docker 和 Kubernetes 是每个想从事 DevOps 需要掌握的
@@ -202,4 +201,3 @@ ZOOM 不用过多介绍了，2020 年因为疫情，业务极具增长的一家�
 * 交付和创作持续集成构建和部署自动化方面的丰富经验，例如 CI/CD 管道对 CloudFormation 模板，Ansible 和类似框架等解决方案的丰富经验
 * 与应用程序和基础架构部署相关的 AWS 平台的丰富经验
 * 能够在 Python，Go和 Java 中流畅开发
-

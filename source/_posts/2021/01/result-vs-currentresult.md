@@ -124,7 +124,6 @@ node {
 }
 ```
 
-
 Output:
 
 ```bash

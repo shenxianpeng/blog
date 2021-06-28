@@ -78,6 +78,3 @@ Creating 'test.c.gcov'
 [xshen@dendevblr01 gcov]$ ls
 a.out  test.c  test.c.gcov  test.gcda  test.gcno
 ```
-
-
-

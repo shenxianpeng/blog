@@ -37,7 +37,6 @@ I used the `ThinBackup` plugin, here is my thinBackup configuration.
     * Backup plugins archives
     * Move old backups to ZIP files
 
-
 ## Using shell script backup
 
 Here is a popular repository and code for your reference.

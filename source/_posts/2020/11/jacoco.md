@@ -103,16 +103,8 @@ boolean[] probes = (boolean[]) args[0];
 
 直接使用VM标识符不会在运行时造成任何转换开销。有几种基于Java VM的编程语言可能使用不同的符号。因此，特定的转换应该只在用户界面级别发生，例如在报表生成期间。
 
-
 ## JaCoCo实现的模块化(Modularization of the JaCoCo implementation)
 
 > JaCoCo是在提供不同功能的几个模块中实现的。这些模块是作为带有适当清单文件的OSGi包提供的。但是它不依赖于OSGi本身。
 
 使用OSGi bundle允许在开发时和运行时在OSGi容器中定义良好的依赖关系。由于对OSGi没有依赖关系，捆绑包也可以像普通的JAR文件一样使用。
-
-
-
-
-
-
-
