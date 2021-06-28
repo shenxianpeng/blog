@@ -1,12 +1,17 @@
-# Blog
+# Peter Shen's Blog
 
-## This is my [blog](https://shenxianpeng.github.io/) code used [hexo](https://hexo.io)
+Share knowledge about CI/CD, DevOps domain. Blog URL: https://shenxianpeng.github.io
+
+If you have any questions or mistakes, please feel free to ask via [issues](https://github.com/shenxianpeng/blog/issues)
+
+If you like it or if it helps you, welcome Star to encourage the author 😀
 
 ![Build](https://github.com/shenxianpeng/blog/workflows/build/badge.svg?branch=master)
 [![CodeQL](https://github.com/shenxianpeng/blog/workflows/CodeQL/badge.svg)](https://github.com/shenxianpeng/blog/actions?query=workflow%3ACodeQL)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=shenxianpeng_blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=shenxianpeng_blog)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2eff1062ed5c4971b06f33feb9696f88)](https://www.codacy.com/manual/xianpeng.shen/blog?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shenxianpeng/blog&amp;utm_campaign=Badge_Grade)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F) ![Blog views](https://gpvc.arturio.dev/blog)
+
 
 ## :cloud: Installation
 
@@ -18,7 +23,7 @@ npm install -g hexo-cli                     # Install hexo cli
 npm install hexo-deployer-git --save        # Install hexo deploy
 ```
 
-## :clipboard: Example commands
+## :clipboard: Commands
 
 ```bash
 hexo server                                 # Start local server. by default is http://localhost:4000/
@@ -31,7 +36,7 @@ hexo deploy                                 # Deploy your website
 hexo generate -deploy                       # Generate then deploy
 hexo g -d                                   # Abbreviations generate then deploy
 ```
-## :memo: Article storage structure
+## :memo: Article Structure
 
 Articles are saved by folder, with the hierarchy of year/month. 
 
@@ -46,7 +51,7 @@ I follow below steps when I create an article, for example `abc.md` in August 20
 
 > Any unfished posts need to be moved `todo` folder first. when done move to `source/_post/...` in published.
 
-## 🚀 Auto deploy
+## 🚀 Deploy
 
 Use below command will automatically update the new article to web site [repository](https://github.com/shenxianpeng/shenxianpeng.github.io).
 
@@ -55,7 +60,7 @@ sh deploy.sh
 ```
 
 
-## 🧰 Format optimization tools
+## 🧰 Format Tools
 
 Before publishing the article to other sharing platforms, I need to optimize the format first.
 
