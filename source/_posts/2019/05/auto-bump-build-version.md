@@ -1,7 +1,7 @@
 ---
 title: Automatically commit code by Jenkins
 date: 2019-05-12 21:21:55
-tags: 
+tags:
 - Jenkins
 - Release
 - Pipeline
@@ -11,7 +11,7 @@ author: shenxianpeng
 ---
 
 When we need to release a product, we should change copyright, build version, release month, release note...
-How to modify multiple files automatically? 
+How to modify multiple files automatically?
 I used a Jenkins pipeline project, the project is parameterized(string parameter) and regular expressions to implement.
 
 1. Here is the string parameter for copyright:
@@ -71,7 +71,7 @@ I used a Jenkins pipeline project, the project is parameterized(string parameter
         agent {
             label 'master'
         }
-        
+
         stages{
             stage('git clone') {
                 steps{
@@ -80,13 +80,13 @@ I used a Jenkins pipeline project, the project is parameterized(string parameter
                     url: 'git@github.com:shenxianpeng/blog.git'
                 }
             }
-            
+
             stage('change copyrigh') {
             steps {
                 sh label: '', script: 'sed -i -E "s/(1995—[0-9]{4})/${copyright}/" 1033/AutoRun.ini'
             }
             }
-            
+
             stage('change release month') {
             steps {
                 sh label: '', script: '''
@@ -95,13 +95,13 @@ I used a Jenkins pipeline project, the project is parameterized(string parameter
                 '''
             }
             }
-            
+
             stage('change build version') {
             steps {
                 sh label: '', script: 'sed -i -E "s/([0-9].[0-9].[0-9].[0-9]{4})/${build_version}/" 1033/AutoRun.ini'
             }
             }
-            
+
             stage('git push to Git') {
                 steps {
                     sshagent(['8dd766ba-ac0f-4302-afa8-bee59c726dee']) {

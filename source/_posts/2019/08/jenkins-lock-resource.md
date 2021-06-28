@@ -4,7 +4,7 @@ date: 2019-08-10
 tags:
 - Jenkins
 - Pipeline
-categories: 
+categories:
 - Jenkins
 author: shenxianpeng
 ---
@@ -28,6 +28,7 @@ author: shenxianpeng
 ## 演示 Demo
 
 1. 设置 Lockable Resources
+
     * Jenkins -> configuration -> Lockable Resources Manager -> Add Lockable Resource
     ![我设置了两个 Resources ](jenkins-lock-resource/config-lock-resource.png)
     这里的 Labels 是你的 node 的 Label，在 Jenkins -> Nodes 设置

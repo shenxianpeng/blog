@@ -59,7 +59,7 @@ author: shenxianpeng
 
 可以根据以上规范制定适合自己团队的规范，例如：
 
-```
+```text
 JIRA-1234 feat: support for async execution
 
 ^-------^ ^--^: ^-------------------------^

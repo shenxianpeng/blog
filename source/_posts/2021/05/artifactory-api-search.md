@@ -14,13 +14,13 @@ author: shenxianpeng
 
 When you do CI with JFrog Artifactory when you want to download the entire folder artifacts, but maybe your IT doesn't enable this function, whatever some seasons.
 
-You can try the below JFrog Artifactory API to know if you're using Artifactory whether allowed to download the entire folder artifacts. 
+You can try the below JFrog Artifactory API to know if you're using Artifactory whether allowed to download the entire folder artifacts.
 
 just visit this API URL: `https://den-artifactory.company.com/artifactory/api/archive/download/team-generic-release-den/project/abc/main/?archiveType=zip`
 
 You will see an error message returned if the Artifactory is not allowed to download the entire folder.
 
-```
+```json
 {
   "errors": [
     {
@@ -67,7 +67,7 @@ echo $RESULTS
 for RESULT in $RESULTS ; do
     echo "fetching path from $RESULT"
     PATH_TO_FILE=`curl -s -X GET -u $USERNAME:$PASSWORD $RESULT | grep downloadUri | awk '{print $3}' | sed s'/.$//' | sed s'/.$//' | sed -r 's/^.{1}//'`
-    
+
 	echo "download file path $PATH_TO_FILE"
   curl -u $USERNAME:$PASSWORD -O $PATH_TO_FILE
 done

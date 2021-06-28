@@ -1,5 +1,5 @@
 ---
-title: How to open port 22 and make it listening 
+title: How to open port 22 and make it listening
 tags:
   - OpenSSH
   - Windows
@@ -15,7 +15,7 @@ Some errors like: Can not connect to the host XXXX 22 port.
 
 I log into the build machine find port 22 with the below command
 
-```
+```bash
 $ netstat -aon|findstr "22"
 ```
 

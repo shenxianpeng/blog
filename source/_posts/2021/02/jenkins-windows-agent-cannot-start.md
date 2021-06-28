@@ -10,7 +10,7 @@ author: shenxianpeng
 
 Today, when I tried to upgrade my team's Jenkins server from Jenkins 2.235.1 to Jenkins 2.263.3, I met a problem that can not launch the Windows agent.
 
-```
+```log
 [2021-01-29 23:50:40] [windows-agents] Connecting to xxx.xxx.xxx.xxx
 Checking if Java exists
 java -version returned 11.0.2.
@@ -38,7 +38,7 @@ Finally, I fixed this problem by the following steps:
 
 Then the error should be like this
 
-```
+```log
 [2021-01-30 23:53:40] [windows-agents] Connecting to xxx.xxx.xxx.xxx
 Checking if Java exists
 java -version returned 11.0.2.
@@ -60,7 +60,7 @@ Also:   java.lang.Throwable: launched here
 
 > also do this for `jenkins-slave.exe.config` in case it also exists.
 
-```
+```xml
 <configuration>
   <runtime>
     <!-- see http://support.microsoft.com/kb/936707 -->

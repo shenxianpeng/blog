@@ -37,9 +37,9 @@ Change `jenkins-agent.exe.config` file. remove or comment out this line `<suppor
 
 > also do this for `jenkins-slave.exe.config` in case it exists.
 
-then your config file will be like this 
+then your config file will be like this
 
-```
+```xml
 <configuration>
   <runtime>
     <!-- see http://support.microsoft.com/kb/936707 -->

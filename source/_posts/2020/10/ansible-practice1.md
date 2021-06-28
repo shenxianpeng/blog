@@ -31,8 +31,8 @@ author: shenxianpeng
 
 #### Playbook结构
 
-```
-+- vars                
+```bash
++- vars
 |   +- vars.yml
 |   +- ...
 +- hosts               # save all hosts you want to monitor
