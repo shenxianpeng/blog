@@ -1,4 +1,6 @@
 
+#!/bin/bash
+
 _check_result()
 {
     if [ $? -ne 0 ]; then
@@ -13,7 +15,7 @@ kill_port_4000_pid()
     PIDS=`netstat -ano | findstr :4000 | awk '{print $5}'`
     if [ -z "${PIDS}" ]; then
         echo "[√] ready to go."
-    else 
+    else
         echo "port 4000 is using by another process."
         for pid in $PIDS
         do
@@ -74,10 +76,3 @@ copy_file_to_public
 public_deploy
 
 exit 0
-
-
-
-
-
-
-

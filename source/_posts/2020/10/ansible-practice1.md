@@ -58,7 +58,7 @@ vcpus: "{{ ansible_processor_vcpus }}"
 
 hosts
 
-```
+```yml
 [unix-vm]
 aix ansible_host=walbld01.dev.company.com ansible_user=test ansible_become_pass=test
 hp-ux  ansible_host=walbld04.dev.company.com ansible_user=test ansible_become_pass=test
@@ -105,5 +105,3 @@ run.yml
 ansible-playbook -i hosts run.yml
 ```
 > 注：上面的代码是脱敏过的，不保证能一次性运行成功 :)
-
-

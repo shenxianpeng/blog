@@ -1,9 +1,9 @@
 ---
 title: Jenkins Linux agent configuration
 date: 2019-05-12 19:49:20
-tags: 
+tags:
 - Jenkins
-categories: 
+categories:
 - Jenkins
 author: shenxianpeng
 ---
@@ -31,11 +31,11 @@ OpenJDK 64-Bit Server VM (build 25.65-b01, mixed mode)
 |---|---|
 | Name | Linux-build-machine |
 | Description | used for Linux build |
-| of executors | 1 |  
-| Remote root directory | /home/agent |  
-| Labels | Linux, build |  
-| Usage | Use this node as much as possible  |  
-| Launch method| Launch agent agents via SSH |  
+| of executors | 1 |
+| Remote root directory | /home/agent |
+| Labels | Linux, build |
+| Usage | Use this node as much as possible  |
+| Launch method| Launch agent agents via SSH |
 | Host | 192.168.1.112 |
 | Credentials | username/password|
 | Host Key Verification Strategy | Manually trusted key Verification Strategy |
@@ -47,14 +47,14 @@ OpenJDK 64-Bit Server VM (build 25.65-b01, mixed mode)
 |---|---|
 | Domain | Global credentials (unrestricted) |
 | Kind | Username with password |
-| Scope | Global(Jenkins, nodes, items, all child items, etc) |  
-| Username | root |  
-| Password | mypassword |  
-| Description | Linux agent username & password |  
+| Scope | Global(Jenkins, nodes, items, all child items, etc) |
+| Username | root |
+| Password | mypassword |
+| Description | Linux agent username & password |
 
 #### 4. Save then Connect
 
-```bash
+```log
 Remoting version: 3.29
 This is a Unix agent
 Evacuated stdout

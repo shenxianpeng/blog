@@ -1,16 +1,16 @@
 ---
-title: Daily 
+title: Daily
 ---
 
 > Starting August 7, 2020, I would like to start recording some daily chores in English.
 
 ---
 
-## 06/26/2021 - mentee and mentor program
+# 06/26/2021 - mentee and mentor program
 
 Since this month(June), I begin to have a mentor :) (WIP)
 
-## 05/26/2021 - Congrats to myself
+# 05/26/2021 - Congrats to myself
 
 This week I had two things that were worth remembering for me:
 
@@ -20,69 +20,69 @@ It gives more motivation to learn English.
 The second, this year, my Build project Quality Gate goes into the next round. The first time was in 2019 that before the pandemic, we could go to our company's HQ to attend five days Build event in the USA.
 For now, everyone can not trail overseas. I hope that the pandemic can go away ASAP, then maybe I can attend a face-to-face Build event.
 
-## 04/11/2021 - Just an update
+# 04/11/2021 - Just an update
 
 1. I have moved to my new home for almost one month. It's very happy to go to work only needs 15 minutes.
 2. I'm reading several very thick books, such as `Code Complete` and `C++ Primer Plus` books.
 3. Btw, I got promoted this month that I have worked here for six years.
 
-## 02/18/2021 - The coach (Qiao Q) left Rocket and started his new career
+# 02/18/2021 - The coach (Qiao Q) left Rocket and started his new career
 
 I called Qiao a coach because he swims very well and tells me how to freestyle. He also does DevOps/Build-related works in Rocket, then we have a lot of things to talk about, so we have a good relationship.
 
-I a little upset when I heard that he told me he would leave Rocket. As we talk more, I understand him and support him in this decision. 
+I a little upset when I heard that he told me he would leave Rocket. As we talk more, I understand him and support him in this decision.
 
 Since age and experience are no longer our advantages in Dev, the new challenges will help him get more opportunities in DevOps than he did in his job here, so he made a wise choice, and I hope he will have better development in the future.
-## 11/1/2020 - Learn/Test English/Update decorate progress.
+# 11/1/2020 - Learn/Test English/Update decorate progress.
 
 > Sunday, sunny.
 
-### English
+## English
 
 Today I clean English from App and have a test of the TOEiC, and the test score is 64, and my test results have never been more than 70. I hope I can keep testing every weekend so that to improve my English and hope next time the test will achieve about 70 :)
 
-### The House Decoration
+## The House Decoration
 
-From October, my house had finished ceramic tile seam beauty, suspended ceiling, the laying off part of the marble, and now is whitewashing. 
+From October, my house had finished ceramic tile seam beauty, suspended ceiling, the laying off part of the marble, and now is whitewashing.
 
-Last Friday I paid the money for the custom kitchen and furniture, it's more than 40,000 RMB, it's over my budget in total. IKEA will ship furniture on Friday and install them next Saturday. Before that, I must prepare the kitchen appliances, so from Last Night (11.1) start to buy, the price is very well. 
+Last Friday I paid the money for the custom kitchen and furniture, it's more than 40,000 RMB, it's over my budget in total. IKEA will ship furniture on Friday and install them next Saturday. Before that, I must prepare the kitchen appliances, so from Last Night (11.1) start to buy, the price is very well.
 
 So in the next two weeks, the decoration's progress very well, which was well worth the wait.
 
 Cheers!
 
-## 8/30/2020 - Demonstrate Project Build & formal start of decoration
+# 8/30/2020 - Demonstrate Project Build & formal start of decoration
 
 > Sunday, sunny.
 
 I review my daily report so that I could remember what I've been doing for the past two weeks at work. I don't want to talk about my regular work like build, release products, etc. I want to write down what I've learned in the past two weeks.
 
-### About Work
+## About Work
 
 1. Learn how to show python project doc files online. you could create a GitHub Pages that is a GitHub build-in feature. then will have a website like https://\<github-username\>.github.io/\<repo-name\>.html
 
 2. Live demo - our team build project which analyzes Bitbucket git history and provides below features
 
     * Recommend reviewer for Pull Request
-    * Recommend test cases for regression testing 
+    * Recommend test cases for regression testing
     * Recommend test scope for QA engineer
     * Visualization based on data
 
 3. Enhancement currently our Artifactory usage, like provide move artifacts from INT(integration) repo to STAGE repo when build passed the smoke test.
 
-### About Life
+## About Life
 
 1. From the last two weeks, my colleagues and I start swimming in the indoor pool every Friday night. we want to lose weight in these activities, but we always eat after swimming, this is not good for us to lose weight :(
 
-2. We finally decide to use IKEA to decorate our house and completed the final design last Saturday. We finally started on Saturday, and they set up a simple start ceremony for me. 
+2. We finally decide to use IKEA to decorate our house and completed the final design last Saturday. We finally started on Saturday, and they set up a simple start ceremony for me.
 
 The first task was to look at tiles, and after all kinds of research and comparison, we finally ordered a big brand of tiles. Although it is more expensive, it's still worth it.
 
-## 8/16/2020 - What is the core knowledge I need to learn
+# 8/16/2020 - What is the core knowledge I need to learn
 
 > Sunday, cloudy. IKEA measures house then I go to the company to study.
 
-This week I always thinking about what is my most important knowledge? Learn more about DevOps tools? or others? 
+This week I always thinking about what is my most important knowledge? Learn more about DevOps tools? or others?
 
 Finally, I come out with the two points I need to enhance, the ability to communicate and knowledge of the primordial.
 
