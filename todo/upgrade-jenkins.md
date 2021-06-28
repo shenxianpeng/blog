@@ -15,7 +15,7 @@ author: shenxianpeng
 
 定期版：
 
-
+```log
 [2021-01-30 23:53:40] [windows-agents] Connecting to dendevu2uvbw01.dev.rocketsoftware.com
 Checking if Java exists
 java -version returned 11.0.2.
@@ -31,7 +31,7 @@ Caused: java.lang.reflect.InvocationTargetException
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.kohsuke.jinterop.JInteropInvocationHandler.invoke(JInteropInvocationHandler.java:140)
 Also:   java.lang.Throwable: launched here
-
+```
 
 Change `jenkins-agent.exe.config` file. remove or comment out this line `<supportedRuntime version="v2.0.50727" />`
 
@@ -55,7 +55,7 @@ then your config file will be like this
 
 Back to works
 
-```
+```log
 [2021-01-31 00:05:01] [windows-agents] Connecting to dendevmvasuvb02.dev.rocketsoftware.com
 Checking if Java exists
 java -version returned 11.0.2.
