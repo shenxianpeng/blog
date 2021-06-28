@@ -2,11 +2,11 @@
 title: Blog
 ---
 
-# Peter Shen's Blog ![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
+# Peter Shen's Blog
 
-分享 CI/CD、DevOps 等软件领域知识，博客地址：https://shenxianpeng.github.io
+分享 CI/CD、DevOps 等软件领域知识，博客地址：https://shenxianpeng.github.io ![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
 
-##  我的公众号
+## 我的公众号
 
 ![公众号二维码](about/index/qrcode.jpg)
 
