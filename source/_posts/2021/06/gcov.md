@@ -1,5 +1,5 @@
 ---
-title: Gcov 一个免费开源的 C/C++ 代码覆盖率工具
+title: Gcov 一个免费开源的 C/C++ 代码覆盖率工具以及生成报告
 tags:
   - Gcov
   - Coco
@@ -14,9 +14,9 @@ author: shenxianpeng
 
 在很早之前我做过一次 C/C++ 项目的代码覆盖率工具的调查，是一款叫 [Squish Coco](https://shenxianpeng.github.io/2019/05/squishcoco/) 的付费工具，当时由于有一些问题没有解决，就搁置了并没有最终购买。最近又开始了这项工作，也有购买工具的预算，但作为个人还是希望有好用的开源软件可以来做这件事，为产品减少每年几千刀的 License 的支出。
 
-本次调查的是 [Gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov-Intro.html#Gcov-Intro)，一个可以与 GCC 结合使用的工具，用于测试程序中的代码覆盖率。
+本次调查的是 [Gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov-Intro.html#Gcov-Intro)，一个可以与 GCC 结合使用的工具，测试程序中的代码覆盖率。
 
-本篇文章通过以下示例带你初步了解 Gcov 是如何工作的。
+本篇文章通过一个最简单的示例来了解 Gcov 是如何工作的，以及通过 gcovr 来生成 Code Coverage 报告。
 
 > 关于 Squish Coco 与 Gcov/LCOV 的对比，froglogic 官方有一个说明：https://www.froglogic.com/coco/faq/
 
@@ -78,3 +78,53 @@ Creating 'test.c.gcov'
 [xshen@dendevblr01 gcov]$ ls
 a.out  test.c  test.c.gcov  test.gcda  test.gcno
 ```
+
+可以看到 `test.c` 代码被 100% 执行了。
+
+## 生成 Code Coverage 报告
+
+这里使用的是 gcovr 这个项目：https://github.com/gcovr/gcovr
+
+1. 安装 `gcovr`
+
+```bash
+pip install gcovr
+```
+
+2. 重新编译上面的代码
+
+```bash
+g++ -fprofile-arcs -ftest-coverage -O0 test.c -o test
+```
+
+3. 执行 `./test`
+
+4. 执行 `gcovr -r .` 生成报告
+
+```
+-sh-4.2$ gcovr -r .
+------------------------------------------------------------------------------
+                           GCC Code Coverage Report
+Directory: .
+------------------------------------------------------------------------------
+File                                       Lines    Exec  Cover   Missing
+------------------------------------------------------------------------------
+test.c                                         3       3   100%
+------------------------------------------------------------------------------
+TOTAL                                          3       3   100%
+------------------------------------------------------------------------------
+-sh-4.2$
+```
+
+生成 html 报告
+
+```bash
+gcovr -r . --html --html-details -o coverage.html
+
+-sh-4.2$ ls
+coverage.css  coverage.html  coverage.test.c.d02a618fa88f46a768e6df00dddaad2a.html  test  test.c  test.gcda  test.gcno
+```
+
+打开 coverage.html
+
+![](gcov/coverage.png)
