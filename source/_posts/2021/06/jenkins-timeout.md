@@ -41,9 +41,9 @@ pipeline {
                             sleep 1
                         }
                     } catch(err) {
-                        // timeout reached or input false
+                        // timeout reached
                         println err
-                        echo 'Time out reached or user aborted'
+                        echo 'Time out reached.'
                         error 'build timeout failed'
                     }
                 }
@@ -74,7 +74,7 @@ Here is the output log
 00:00:02.619  [Pipeline] echo
 00:00:02.621  org.jenkinsci.plugins.workflow.steps.FlowInterruptedException
 00:00:02.625  [Pipeline] echo
-00:00:02.627  Time out reached or user aborted
+00:00:02.627  Time out reached.
 00:00:02.630  [Pipeline] error
 00:00:02.638  [Pipeline] }
 00:00:02.656  [Pipeline] // script
