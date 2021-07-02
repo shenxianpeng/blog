@@ -132,3 +132,5 @@ coverage.css  coverage.html  coverage.test.c.d02a618fa88f46a768e6df00dddaad2a.ht
 ## 参考文档
 
 `--coverage` https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html#index-coverage
+
+数据文件环境变量 `GCOV_PREFIX` 和 `GCOV_PREFIX_STRIP` 的设置：https://gcc.gnu.org/onlinedocs/gcc/Cross-profiling.html#Cross-profiling
