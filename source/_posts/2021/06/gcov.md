@@ -128,3 +128,7 @@ coverage.css  coverage.html  coverage.test.c.d02a618fa88f46a768e6df00dddaad2a.ht
 打开 coverage.html
 
 ![](gcov/coverage.png)
+
+## 参考文档
+
+`--coverage` https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html#index-coverage
