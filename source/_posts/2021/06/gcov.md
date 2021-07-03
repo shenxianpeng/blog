@@ -1,9 +1,10 @@
 ---
-title: Gcov 一个免费开源的 C/C++ 代码覆盖率工具以及生成报告 - WIP
+title: Gcov 一个免费开源的 C/C++ 代码覆盖率工具以及生成报告（WIP）
 tags:
   - Gcov
   - Coco
   - CodeCoverage
+  - WIP
 categories:
   - DevOps
 date: 2021-06-18 16:28:11
@@ -150,13 +151,13 @@ Overall coverage rate:
 
 3. 查看报告
 
-    ![](gcov/lcov.png)
+![](gcov/lcov.png)
 
-    ![](gcov/lcov-files.png)
+![](gcov/lcov-files.png)
 
-    ![](gcov/lcov-main.c.png)
+![](gcov/lcov-main.c.png)
 
-    ![](gcov/lcov-foo.c.png)
+![](gcov/lcov-foo.c.png)
 
 ### gcovr
 
@@ -202,9 +203,15 @@ gcovr -r . --html --html-details -o coverage.html
 coverage.css  coverage.html  coverage.test.c.d02a618fa88f46a768e6df00dddaad2a.html  test  test.c  test.gcda  test.gcno
 ```
 
+5. 查看报告
+
 打开 coverage.html
 
-![](gcov/coverage.png)
+![](gcov/gcovr.png)
+
+![](gcov/gcovr-main.c.png)
+
+![](gcov/gcovr-foo.c.png)
 
 ## 更多用法
 
@@ -221,5 +228,3 @@ https://stackoverflow.com/questions/7671612/crossprofiling-with-gcov-but-gcov-pr
 3. Linux kernel 使用 gcov 的文章，非常好的示例。
 
 https://01.org/linuxgraphics/gfx-docs/drm/dev-tools/gcov.html
-
-
