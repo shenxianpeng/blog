@@ -197,10 +197,11 @@ TOTAL                                          3       3   100%
 生成 html 报告
 
 ```bash
-gcovr -r . --html --html-details -o coverage.html
+mkdir report
+gcovr -r . --html --html-details -o report/coverage.html
 
--sh-4.2$ ls
-coverage.css  coverage.html  coverage.test.c.d02a618fa88f46a768e6df00dddaad2a.html  test  test.c  test.gcda  test.gcno
+-sh-4.2$ ls report
+coverage.css  coverage.html  coverage.test.c.d02a618fa88f46a768e6df00dddaad2a.html
 ```
 
 5. 查看报告
