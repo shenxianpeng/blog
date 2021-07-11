@@ -1,19 +1,24 @@
 ---
-title: Gcov 一个免费开源的 C/C++ 代码覆盖率工具以及生成报告（WIP）
+title: Gcov 一个免费开源的 C/C++ 代码覆盖率工具以及生成报告
 tags:
   - Gcov
   - Coco
+  - LCOV
   - CodeCoverage
-  - WIP
+  - gcovr
 categories:
   - DevOps
 date: 2021-06-18 16:28:11
 author: shenxianpeng
 ---
 
+注：这篇文章是边调查边写的，可能存在一些示例、命令输出、以及截图对应不上的情况，因此在调查完成后，我又重新编写了整理的示例代码，并放在 GitHub 上，这是 README: https://github.com/shenxianpeng/gcov-example/blob/master/README-CN.md
+
+因为这篇文章中有用到 gcovr （上面的链接里没有），因此保留这篇就不删除了。
+
 ## 前言
 
-在很早之前我做过一次 C/C++ 项目的代码覆盖率工具的调查，是一款叫 [Squish Coco](https://shenxianpeng.github.io/2019/05/squishcoco/) 的付费工具，当时由于有一些问题没有解决，就搁置了并没有最终购买。最近又开始了这项工作，也有购买工具的预算，但作为个人还是希望有好用的开源软件可以来做这件事，为产品减少每年几千刀的 License 的支出。
+在很早之前我做过一次 C/C++ 项目的代码覆盖率工具的调查，是一款叫 [Squish Coco](https://shenxianpeng.github.io/2019/05/squishcoco/) 的付费工具，当时由于有一些问题没有解决，就搁置了并没有最终购买。最近又开始了这项工作，也有购买工具的预算，但作为个人还是希望有好用的开源软件可以来做这件事，也能为产品减少每年几千刀的 License 的支出。
 
 本次调查的是 [Gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov-Intro.html#Gcov-Intro)，一个可以与 GCC 结合使用的工具，测试程序中的代码覆盖率。
 
