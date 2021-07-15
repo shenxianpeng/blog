@@ -2,7 +2,6 @@
 title: 解决 Code Sign 默认时间戳服务器 http://timestamp.verisign.com/scripts/timstamp.dll 不可用
 tags:
   - CodeSign
-  - Build
   - Timestamp
 categories:
   - DevOps

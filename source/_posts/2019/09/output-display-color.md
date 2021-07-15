@@ -2,7 +2,6 @@
 title: Jenkins Console Output 显示彩色
 tags:
   - Jenkins
-  - AnsiColor
 categories:
   - Jenkins
 date: 2019-09-24 22:11:40

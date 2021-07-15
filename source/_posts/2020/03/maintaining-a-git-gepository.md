@@ -1,8 +1,7 @@
 ---
 title: 如何给你的 Git 仓库“瘦身”
 tags:
-  - Cleanup
-  - Azure
+  - Git
 categories:
   - Git
 date: 2020-03-21 20:54:34

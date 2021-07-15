@@ -1,9 +1,7 @@
 ---
 title: 基于谷歌代码审查（Code Review）法则的思考与实践
 tags:
-  - Review
-  - PR
-  - Code
+  - CodeReview
 categories:
   - DevOps
 date: 2021-03-20 17:10:14

@@ -2,7 +2,7 @@
 title: Bitbucket Webhooks Configuration
 tags:
   - Bitbucket
-  - Webhooks
+  - Webhook
 categories:
   - Jenkins
 date: 2020-04-24 17:40:21

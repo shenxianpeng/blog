@@ -2,22 +2,21 @@
 title: About Python pip install and versioning
 tags:
   - Python
-  - pip
-  - versioning
+  - Pip
 categories:
-  - Python
+  - Language
 date: 2020-08-30 22:30:50
 author: shenxianpeng
 ---
 
 ## Backgroup
 
-If you want to release python project on PyPI, you must need to know about PyPI usage characteristics, then I did some test about pip install command. 
+If you want to release python project on PyPI, you must need to know about PyPI usage characteristics, then I did some test about pip install command.
 
 For example: I have a Python project called `demo-pip`. and beta release would like `1.1.0.xxxx`, offical release version is `1.1.0` to see if could success upgrade when using `pip` command.
 
 Base on the below test results, I summarized as follows:
- 
+
 1.	Install a specific version of demo-pip from PyPI, with `--upgrade` option or not, they'll all both success.
 2.	Install the latest package version of demo-pip from PyPI that version is large than the locally installed package version, with `--upgrade` option installs successfully. without `--upgrade` option install failed.
 3.	Install the latest package version of demo-pip from PyPI that version is less than the locally installed package version, with `--upgrade` option or not, install failed.

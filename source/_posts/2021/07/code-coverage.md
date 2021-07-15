@@ -2,8 +2,9 @@
 title: 关于代码覆盖率(About Code Coverage)
 tags:
   - Coverage
-categories:
   - DevOps
+categories:
+  - Coverage
 date: 2021-07-14 22:49:39
 author: shenxianpeng
 ---

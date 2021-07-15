@@ -1,10 +1,9 @@
 ---
 title: HP-UX 安装工具以及一些使用总结
 tags:
-  - UNIX
   - HP-UX
 categories:
-  - LinuxUnix
+  - OS
 date: 2020-02-05 10:28:37
 author: shenxianpeng
 ---

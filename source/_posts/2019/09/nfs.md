@@ -6,7 +6,7 @@ tags:
   - Shell
   - Jenkins
 categories:
-  - LinuxUnix
+  - OS
 date: 2019-09-10 22:38:47
 author: shenxianpeng
 ---
@@ -21,7 +21,7 @@ author: shenxianpeng
 
 什么是 NFS？NFS（Network File System）即网络文件系统，是 FreeBSD 支持的文件系统中的一种，它允许网络中的计算机之间共享资源。在 NFS 的应用中，本地 NFS 的客户端应用可以透明地读写位于远端 NFS 服务器上的文件，就像访问本地文件一样，Windows 上俗称共享。
 
-## 设置 NFS 
+## 设置 NFS
 
 ```bash
 # 例如在 Linux 上, 共享服务器的 ip 是 192.168.1.1

@@ -2,7 +2,6 @@
 title: Jenkins privilege management
 tags:
   - Jenkins
-  - Authorization
 categories:
   - Jenkins
 date: 2019-09-24 15:40:23

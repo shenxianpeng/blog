@@ -2,9 +2,7 @@
 title: 程序员自我修养之Git提交信息和分支创建规范
 tags:
   - Git
-  - Specification
   - Branch
-  - Conventional Commits
 categories:
   - Git
 date: 2020-09-24 20:39:22

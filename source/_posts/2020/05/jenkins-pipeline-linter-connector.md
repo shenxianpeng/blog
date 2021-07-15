@@ -1,8 +1,7 @@
 ---
 title: 如何确保在提交 Jenkins Pipeline 前没有语法错误
 tags:
-  - Pipeline
-  - vscode
+  - Jenkins
 categories:
   - Jenkins
 date: 2020-05-23 14:38:59
@@ -65,13 +64,13 @@ WorkflowScript: 161: Expected a stage @ line 161, column 9.
 实例 2
 
 ```bash
-sh linter.sh Jenkinsfile 
+sh linter.sh Jenkinsfile
 Errors encountered validating Jenkinsfile:
 WorkflowScript: 60: Invalid condition "failed" - valid conditions are [always, changed, fixed, regression, aborted, success, unsuccessful, unstable, failure, notBuilt, cleanup] @ line 60, column 9.
            failed{
            ^
 # 将 failed 改为 failure，再次执行，成功。
-sh linter.sh Jenkinsfile 
+sh linter.sh Jenkinsfile
 Jenkinsfile successfully validated.
 ```
 
@@ -92,7 +91,7 @@ Jenkinsfile successfully validated.
 ### 配置插件
 
 打开 File -> Preferences -> Settings -> Extensions， 找到 `Jenkins Pipeline Linter Connector`，参考如下配置。
- 
+
 ![](jenkins-pipeline-linter-connector/settings.png)
 
 ### 运行插件

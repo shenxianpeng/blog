@@ -3,7 +3,6 @@ title: How to download the entire folder artifacts when Artifactory "Download Fo
 tags:
   - JFrog
   - Artifactory
-  - API
 categories:
   - JFrog
 date: 2021-05-04 14:37:00

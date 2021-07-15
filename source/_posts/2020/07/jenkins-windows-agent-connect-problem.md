@@ -1,7 +1,7 @@
 ---
 title: How to fix ".NET Framework 2.0 or later is required on this computer to run a Jenkins agent as a Windows service"
 tags:
-  - troubleshooting
+  - Troubleshooting
   - Jenkins
 categories:
   - Jenkins
@@ -17,11 +17,11 @@ It means I need to upgrade my Windows agent .NET Framework. Here are steps about
 
 ## Install .NET Framework 3.5
 
-1. Open Programs and Features 
+1. Open Programs and Features
 
    ![Programs and Features](jenkins-windows-agent-connect-problem/1.png)
 
-2. Select .NET Framework 3.5 Features (In my screenshot, it had already installed) 
+2. Select .NET Framework 3.5 Features (In my screenshot, it had already installed)
 
     ![Features](jenkins-windows-agent-connect-problem/2.png)
 

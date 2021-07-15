@@ -1,11 +1,11 @@
 ---
 title: Fix flask errors
 date: 2017-11-14 13:34:46
-tags: 
+tags:
 - Flask
 - Python
-categories: 
-- Snippet
+categories:
+- Troubleshooting
 author: shenxianpeng
 ---
 

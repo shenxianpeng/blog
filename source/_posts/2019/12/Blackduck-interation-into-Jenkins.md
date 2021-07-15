@@ -1,10 +1,8 @@
 ---
-title: Blackduck 与 Jenkins 集成
+title: Black Duck 与 Jenkins 集成
 tags:
-  - Blackduck
+  - BlackDuck
   - Jenkins
-  - Synopsys
-  - Detect
 categories:
   - Jenkins
 date: 2019-12-08 14:48:02

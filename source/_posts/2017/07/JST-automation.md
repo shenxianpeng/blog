@@ -1,11 +1,11 @@
 ---
 title: JST automation framework
 date: 2017-07-13 10:07:02
-tags: 
+tags:
 - Java
 - TestNG
 - Selenium
-categories: 
+categories:
 - Automation
 ---
 

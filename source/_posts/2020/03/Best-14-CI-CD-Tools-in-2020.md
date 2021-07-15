@@ -1,12 +1,11 @@
 ---
 title: 2020年务必知道的最好用的14款CI/CD工具
 tags:
-  - CI
-  - CD
+  - CICD
 categories:
   - DevOps
 date: 2020-03-29 11:37:07
-author: 
+author:
 ---
 
 > [原文](https://www.katalon.com/resources-center/blog/ci-cd-tools/)

@@ -1,7 +1,6 @@
 ---
 title: Git 常见设置指北
 tags:
-  - Guidelines
   - Git
 categories:
   - DevOps

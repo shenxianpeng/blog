@@ -1,7 +1,7 @@
 ---
 title: Branch Naming Convention
 tags:
-  - Naming
+  - Git
   - Branch
 categories:
   - DevOps
@@ -17,7 +17,7 @@ For example, good unified partition naming can help the team easily find and int
 
 ## Branches naming convention
 
-### main branch naming 
+### main branch naming
 
 In general, the main's branch names most like `master` or `main`.
 

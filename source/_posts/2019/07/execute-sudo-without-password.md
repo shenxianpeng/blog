@@ -1,12 +1,12 @@
 ---
 title: Execute sudo without password
 date: 2019-07-16 21:07:39
-tags: 
+tags:
 - Jenkins
 - Pipeline
 - Shell
-categories: 
-- LinuxUnix
+categories:
+- OS
 author: shenxianpeng
 ---
 

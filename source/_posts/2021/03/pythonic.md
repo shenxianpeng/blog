@@ -4,7 +4,7 @@ tags:
   - Pythonic
   - Python
 categories:
-  - Python
+  - Language
 date: 2021-03-28 10:27:57
 author: shenxianpeng
 ---

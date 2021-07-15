@@ -2,7 +2,6 @@
 title: Why Windows Installer pop up? (Resolved)
 tags:
   - Windows
-  - installer
 categories:
   - Troubleshooting
 date: 2021-04-22 13:33:01
@@ -15,7 +14,7 @@ Today I am having a problem where the Windows installer I created is not install
 
 ![](why-windows-installer-pop-up/windows-installer.png)
 
-But it works well in the previous build, and I didn't make any code changes. It is strange, actually fix this problem is very easy but not easy to find. 
+But it works well in the previous build, and I didn't make any code changes. It is strange, actually fix this problem is very easy but not easy to find.
 
 ## How to fix it?
 
@@ -25,7 +24,7 @@ My previous build name is `v2.2.2.3500-da121sa-Developer`, but for this build, I
 
 ## How to find the solution?
 
-This problem takes me several hours until I google this [article](https://community.spiceworks.com/topic/874022-msiexec-just-returns-a-pop-up) which inspired me. 
+This problem takes me several hours until I google this [article](https://community.spiceworks.com/topic/874022-msiexec-just-returns-a-pop-up) which inspired me.
 
 Just like the above article, if I try to use the command line `msiexec.exe other-commands ...`, compare with the works installer will also quick to find the root cause.
 

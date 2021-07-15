@@ -1,10 +1,11 @@
 ---
 title: 通过参数化上传文件到 FTP 服务器
 date: 2019-05-13 23:43:21
-tags: 
+tags:
 - Automation
-- Batch
-categories: 
+- Shell
+- FTP
+categories:
 - Automation
 author: shenxianpeng
 ---
@@ -37,7 +38,7 @@ if %remote_path%! == ! ( echo "remote_path not set correctly" & goto USAGE )
 echo open %ftp_hostname% > ftp.txt
 echo user %ftp_username% %ftp_password% >> ftp.txt
 echo cd %remote_path% >> ftp.txt
-echo lcd %local_path% >>ftp.txt  
+echo lcd %local_path% >>ftp.txt
 echo prompt off >>ftp.txt
 echo bin >> ftp.txt
 echo mput * >> ftp.txt
