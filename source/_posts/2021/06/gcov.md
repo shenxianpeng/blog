@@ -4,8 +4,8 @@ tags:
   - Gcov
   - Coco
   - LCOV
-  - CodeCoverage
   - gcovr
+  - Coverage
 categories:
   - DevOps
 date: 2021-06-18 16:28:11
