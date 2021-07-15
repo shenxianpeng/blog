@@ -3,7 +3,7 @@ title: Use Gcov and LCOV to perform code coverage testing for C/C++ projects
 tags:
   - Gcov
   - LCOV
-  - CodeCoverage
+  - Coverage
 categories:
   - DevOps
 date: 2021-07-12 00:10:21

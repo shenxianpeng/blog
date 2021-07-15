@@ -1,7 +1,7 @@
 ---
 title: 关于代码覆盖率(About Code Coverage)
 tags:
-  - CodeCoverage
+  - Coverage
 categories:
   - DevOps
 date: 2021-07-14 22:49:39

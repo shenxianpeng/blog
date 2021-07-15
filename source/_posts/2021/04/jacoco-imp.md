@@ -4,6 +4,7 @@ tags:
   - JaCoCo
   - Gradle
   - CodeCoverage
+  - Coverage
 categories:
   - DevOps
 date: 2021-04-06 19:18:33

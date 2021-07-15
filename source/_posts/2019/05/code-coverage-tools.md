@@ -1,10 +1,10 @@
 ---
 title: Code Coverage tools of C/C++
 date: 2019-05-21 11:19:13
-tags:  
-- CodeCoverage
+tags:
+- Coverage
 - C
-categories: 
+categories:
 - DevOps
 author: shenxianpeng
 ---
