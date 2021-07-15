@@ -1,10 +1,9 @@
 ---
 title: Solaris 安装工具以及一些使用总结
 tags:
-  - UNIX
   - Solaris
 categories:
-  - LinuxUnix
+  - OS
 date: 2020-01-07 22:55:05
 author: shenxianpng
 ---

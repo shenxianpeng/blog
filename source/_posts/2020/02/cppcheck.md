@@ -2,9 +2,9 @@
 title: 一款免费的 C/C++ 静态代码分析工具 Cppcheck 与 Jenkins 集成
 tags:
   - Jenkins
-  - cppcheck
+  - Cppcheck
 categories:
-  - DevOps
+  - Jenkins
 date: 2020-02-16 21:14:12
 author: shenxianpeng
 ---

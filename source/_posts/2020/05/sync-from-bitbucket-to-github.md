@@ -3,6 +3,7 @@ title: Synchronize from Bitbucket to GitHub via Jenkins
 tags:
   - GitHub
   - Bitbucket
+  - Jenkins
 categories:
   - Jenkins
 date: 2020-05-05 16:54:09

@@ -2,12 +2,11 @@
 title: A Code Coverage Tool - Squish Coco use examples
 date: 2019-05-21 15:53:55
 tags:
-- Squishcoco
+- SquishCoco
 - Coverage
-- Squish
-- Coco
-categories:
 - DevOps
+categories:
+- Coverage
 author: shenxianpeng
 ---
 

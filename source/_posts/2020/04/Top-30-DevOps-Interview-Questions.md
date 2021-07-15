@@ -2,6 +2,7 @@
 title: DevOps Top 30+ 面试问题
 tags:
   - Interview
+  - DevOps
 categories:
   - DevOps
 date: 2020-03-29 13:18:14

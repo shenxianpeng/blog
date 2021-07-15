@@ -4,7 +4,7 @@ tags:
   - Linux
   - VirtualBox
 categories:
-  - LinuxUnix
+  - OS
 date: 2020-02-08 11:25:48
 author: shenxianpeng
 ---

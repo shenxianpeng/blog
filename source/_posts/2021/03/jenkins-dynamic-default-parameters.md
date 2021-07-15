@@ -1,7 +1,6 @@
 ---
 title: Different branches have different default parameters in Jenkins
 tags:
-  - parameter
   - Jenkins
 categories:
   - Jenkins
@@ -28,7 +27,7 @@ So for these cases, how to deal with Jenkins multibranch pipeline. Here are some
 	def polarisValue = false
 	def blackduckValue = false
 
-	if (env.BRANCH_NAME.startsWith("develop") || env.BRANCH_NAME.startsWith("hotfix") 
+	if (env.BRANCH_NAME.startsWith("develop") || env.BRANCH_NAME.startsWith("hotfix")
   || env.BRANCH_NAME.startsWith("release")) {
 		polarisValue = true
 		blackduckValue = true

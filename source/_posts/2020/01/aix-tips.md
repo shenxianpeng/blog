@@ -1,10 +1,9 @@
 ---
 title: AIX 上安装工具以及一些使用总结
 tags:
-  - UNIX
   - AIX
 categories:
-  - LinuxUnix
+  - OS
 date: 2020-01-09 09:55:26
 author: shenxianpeng
 ---

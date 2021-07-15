@@ -1,10 +1,10 @@
 ---
 title: Git branching strategy
 date: 2019-07-28 23:27:21
-tags: 
+tags:
 - Git
 - Branch
-categories: 
+categories:
 - Git
 author: shenxianpeng
 ---

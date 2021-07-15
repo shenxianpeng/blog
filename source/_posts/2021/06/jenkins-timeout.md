@@ -1,7 +1,6 @@
 ---
 title: How to make Jenkins job fail after timeout? (Resolved)
 tags:
-  - timeout
   - Jenkins
 categories:
   - Jenkins

@@ -3,8 +3,9 @@ title: JaCoCo 实现原理 (JaCoCo Implementation Design)
 tags:
   - JaCoCo
   - Coverage
-categories:
   - DevOps
+categories:
+  - Coverage
 date: 2020-11-17 18:26:14
 author: shenxianpeng
 ---

@@ -3,8 +3,7 @@ title: 通过 generic-webhook-trigger 插件实时获取 Bitbucket Repository Ev
 tags:
   - Bitbucket
   - Jenkins
-  - webhook
-  - generic
+  - Webhook
 categories:
   - DevOps
 date: 2020-08-07 16:53:03

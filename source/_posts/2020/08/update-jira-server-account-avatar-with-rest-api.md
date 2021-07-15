@@ -2,7 +2,6 @@
 title: Update Jira server account avatar with rest API
 tags:
   - Jira
-  - REST-API
 categories:
   - DevOps
 date: 2020-08-17 14:17:10

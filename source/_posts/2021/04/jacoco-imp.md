@@ -3,7 +3,6 @@ title: JaCoCo 代码覆盖率实践分享
 tags:
   - JaCoCo
   - Gradle
-  - CodeCoverage
   - Coverage
 categories:
   - DevOps

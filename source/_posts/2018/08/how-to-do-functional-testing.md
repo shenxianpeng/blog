@@ -1,10 +1,9 @@
 ---
 title: 如何做好功能测试
 date: 2018-08-07 22:31:22
-tags: 
-  - Test
-  - Work
-categories: 
+tags:
+  - FunctionTest
+categories:
   - MyNotes
 author: shenxianpeng
 ---

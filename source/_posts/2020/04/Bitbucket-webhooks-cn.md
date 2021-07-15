@@ -2,7 +2,8 @@
 title: Jenkins 与 Bitbucket Webhooks 的配置和使用
 tags:
   - Bitbucket
-  - Webhooks
+  - Webhook
+  - Jenkins
 categories:
   - Jenkins
 date: 2020-04-28 22:40:21

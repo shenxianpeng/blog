@@ -1,7 +1,6 @@
 ---
 title: Jenkins Warnings Next Generation 插件
 tags:
-  - Translate
   - Jenkins
 categories:
   - Jenkins
@@ -84,7 +83,7 @@ Warnings Next Generation 插件支持以下 Jenkins 项目类型：
 
 ```java
 recordIssues(
-    enabledForFailure: true, aggregatingResults: true, 
+    enabledForFailure: true, aggregatingResults: true,
     tools: [java(), checkStyle(pattern: 'checkstyle-result.xml', reportEncoding: 'UTF-8')]
 )
 ```
@@ -125,10 +124,10 @@ def config = io.jenkins.plugins.analysis.warnings.groovy.ParserConfiguration.get
 
 if(!config.contains('pep8-groovy')){
   def newParser = new io.jenkins.plugins.analysis.warnings.groovy.GroovyParser(
-    'pep8-groovy', 
-    'Pep8 Groovy Parser', 
-    '(.*):(\\d+):(\\d+): (\\D\\d*) (.*)', 
-    'return builder.setFileName(matcher.group(1)).setCategory(matcher.group(4)).setMessage(matcher.group(5)).buildOptional()', 
+    'pep8-groovy',
+    'Pep8 Groovy Parser',
+    '(.*):(\\d+):(\\d+): (\\D\\d*) (.*)',
+    'return builder.setFileName(matcher.group(1)).setCategory(matcher.group(4)).setMessage(matcher.group(5)).buildOptional()',
     "optparse.py:69:11: E401 multiple imports on one line"
   )
   config.setParsers(config.getParsers().plus(newParser))
@@ -168,7 +167,7 @@ unclassified:
 为了在管道中使用 Groovy 解析器，你需要使用以下形式的脚本语句：
 
 ```bash
-recordIssues sourceCodeEncoding: 'UTF-8', 
+recordIssues sourceCodeEncoding: 'UTF-8',
     tool: groovyScript(parserId: 'groovy-id-in-system-config', pattern:'**/*report.log', reportEncoding:'UTF-8')
 ```
 
@@ -266,8 +265,8 @@ recordIssues tool: java(pattern: '*.log'), healthy: 10, unhealthy: 100, minimumS
 
 ```bash
 recordIssues(
-    enabledForFailure: true, 
-    tool: java(pattern: '*.log'), 
+    enabledForFailure: true,
+    tool: java(pattern: '*.log'),
     filters: [includeFile('MyFile.*.java'), excludeCategory('WHITESPACE')]
 )
 ```
@@ -335,7 +334,7 @@ node {
 
     def java = scanForIssues tool: java()
     def javadoc = scanForIssues tool: javaDoc()
-    
+
     publishIssues issues: [java, javadoc], filters: [includePackage('io.jenkins.plugins.analysis.*')]
   }
 
@@ -349,16 +348,16 @@ node {
 
     def pmd = scanForIssues tool: pmdParser(pattern: '**/target/pmd.xml')
     publishIssues issues: [pmd]
-    
+
     def cpd = scanForIssues tool: cpd(pattern: '**/target/cpd.xml')
     publishIssues issues: [cpd]
-    
+
     def spotbugs = scanForIssues tool: spotBugs(pattern: '**/target/findbugsXml.xml')
     publishIssues issues: [spotbugs]
 
     def maven = scanForIssues tool: mavenConsole()
     publishIssues issues: [maven]
-    
+
     publishIssues id: 'analysis', name: 'All Issues', issues: [checkstyle, pmd, spotbugs], filters: [includePackage('io.jenkins.plugins.analysis.*')]
   }
 }

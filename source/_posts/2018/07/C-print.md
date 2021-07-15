@@ -1,8 +1,10 @@
 ---
 title: C-print
 date: 2018-07-08 21:53:01
-tags: C
-categories: Snippet
+tags:
+    - C
+categories:
+    - Language
 author: shenxianpeng
 ---
 

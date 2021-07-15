@@ -2,12 +2,11 @@
 title: Gcov 一个免费开源的 C/C++ 代码覆盖率工具以及生成报告
 tags:
   - Gcov
-  - Coco
   - LCOV
-  - gcovr
   - Coverage
-categories:
   - DevOps
+categories:
+  - Coverage
 date: 2021-06-18 16:28:11
 author: shenxianpeng
 ---

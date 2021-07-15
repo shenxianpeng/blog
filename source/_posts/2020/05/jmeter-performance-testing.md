@@ -2,7 +2,6 @@
 title: How to use JMeter to do Performance Testing
 tags:
   - JMeter
-  - performance
 categories:
   - Automation
 date: 2020-05-09 14:28:09

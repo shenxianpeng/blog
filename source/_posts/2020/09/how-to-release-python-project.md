@@ -5,7 +5,7 @@ tags:
   - PyPI
   - Release
 categories:
-  - Python
+  - DevOps
 date: 2020-09-13 16:13:17
 author: shenxianpeng
 ---
