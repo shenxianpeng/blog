@@ -1,7 +1,6 @@
 ---
 title: 将 Jenkins Shell 返回的字符串处理为字符数组
 tags:
-  - Tips
   - Jenkins
 categories:
   - Jenkins
@@ -40,8 +39,8 @@ fail-list-user1.txt  fail-list-user2.txt  fail-list-user3.txt
 # list 所有以 fail-list 开头的文件，并赋给一个数组 l
 l=$(ls -a fail-list-*)
 
-for f in $l; 
-do 
+for f in $l;
+do
   f=${f#fail-list-} # 使用#号截取左边字符
   f=${f%.txt}       # 使用%号截取右边字符
   echo $f           # 最终输出仅包含 user 的字符串
@@ -64,7 +63,7 @@ user3
 以下在 Jenkinsfile 使用 groovy 将 Shell 返回的字符串处理成字符数组。
 
 ```groovy
-// Jenkinsfile 
+// Jenkinsfile
 // 忽略 stage, steps 等其他无关步骤
 ...
 
