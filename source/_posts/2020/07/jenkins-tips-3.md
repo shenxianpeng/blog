@@ -1,7 +1,6 @@
 ---
 title: Jenkins 执行 Shell 如果返回值不为0，作业(Job)停止并失败怎么办？
 tags:
-  - Tips
   - Jenkins
 categories:
   - Jenkins

@@ -1,7 +1,6 @@
 ---
 title: 忽略 Jenkins Shell 步骤中的故障
 tags:
-  - Tips
   - Jenkins
 categories:
   - Jenkins
@@ -72,7 +71,7 @@ $ ls no-exit-file || error=true
 
 # 然后去判断 error 变量的值。如果为真，则退出 Shell
 $ if [ $error ]
-$ then 
+$ then
 $    exit -1
 $ fi
 ```
