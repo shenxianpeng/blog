@@ -5,7 +5,7 @@ tags:
   - Gradle
   - Coverage
 categories:
-  - DevOps
+  - Coverage
 date: 2021-04-06 19:18:33
 author: shenxianpeng
 ---
