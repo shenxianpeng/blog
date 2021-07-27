@@ -5,7 +5,7 @@ tags:
   - LCOV
   - Coverage
 categories:
-  - DevOps
+  - Coverage
 date: 2021-07-12 00:10:21
 author: shenxianpeng
 ---
