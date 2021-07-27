@@ -17,13 +17,13 @@ When we introduced Gocv to build my project for code coverage, I encountered the
 ### error 1
 
 ```bash
-g++     -m64 -z muldefs -L/lib64 -L/usr/lib64 -lglib-2.0 -m64 -DUV_64PORT -DU2_64_BUILD -fPIC -g  DU_starter.o  \
-NFA_msghandle.o NFA_svr_exit.o du_err_printf.o  -L/workspace/code/myproject/src/home/x64debug/bin/              \
--L/workspace/code/myproject/src/home/x64debug/bin/lib/ -lundata -lutcallc_nfasvr                                \
--Wl,-rpath=/workspace/code/myproject/src/home/x64debug/bin/ -Wl,-rpath=/.dulibs28  -Wl,--enable-new-dtags       \
--L/.dulibs28 -lodbc  -lm -lncurses -lrt -lcrypt -lgdbm -ldl -lpam -lpthread  -ldl -lglib-2.0                    \
--lstdc++ -lnsl -lrt -lgcov -o /workspace/code/myproject/src/home/x64debug/objs/du/share/dutsvr                  \
-/usr/bin/ld: /workspace/code/myproject/src/home/x64debug/objs/du/share/dutsvr:                                  \
+g++     -m64 -z muldefs -L/lib64 -L/usr/lib64 -lglib-2.0 -m64 -DUV_64PORT -DU2_64_BUILD -fPIC -g  DU_starter.o
+NFA_msghandle.o NFA_svr_exit.o du_err_printf.o  -L/workspace/code/myproject/src/home/x64debug/bin/
+-L/workspace/code/myproject/src/home/x64debug/bin/lib/ -lundata -lutcallc_nfasvr
+-Wl,-rpath=/workspace/code/myproject/src/home/x64debug/bin/ -Wl,-rpath=/.dulibs28  -Wl,--enable-new-dtags
+-L/.dulibs28 -lodbc  -lm -lncurses -lrt -lcrypt -lgdbm -ldl -lpam -lpthread  -ldl -lglib-2.0
+-lstdc++ -lnsl -lrt -lgcov -o /workspace/code/myproject/src/home/x64debug/objs/du/share/dutsvr
+/usr/bin/ld: /workspace/code/myproject/src/home/x64debug/objs/du/share/dutsvr:
 hidden symbol `__gcov_init' in /usr/lib/gcc/x86_64-redhat-linux/4.8.5/libgcov.a(_gcov.o) is referenced by DSO
 ```
 
@@ -40,11 +40,11 @@ CuTest.o:(.data+0x184): undefined reference to `__gcov_merge_add'
 
 Let's take the **error 1**.
 
-From the error message, I noticed `-lundata -lutcallc_nfasvr` are all the linked libraries (-l*library*), I checked libraries `undata` and `utcallc_nfasvr` one by one.
+From the error message, I noticed `-lundata -lutcallc_nfasvr` are all the linked libraries (-l*library*)
+
+I checked libraries `undata` and `utcallc_nfasvr` one by one, and found it displayed `U __gcov_init` and `U` means undefined symbols.
 
 > Use the `find` command to search the library and the `nm` command to list symbols in the library.
-
-And found it displayed `U __gcov_init` and `U` means undefined symbols.
 
 ```bash
 -sh-4.2$ find -name *utcallc_nfasvr*
@@ -55,7 +55,6 @@ And found it displayed `U __gcov_init` and `U` means undefined symbols.
 ```
 
 ## How to fix
-
 
 In my case, I just added the following code `LIB_1_LIBS := -lgcov` to allow the `utcallc_nfasvr` library to call gcov.
 
@@ -78,7 +77,6 @@ Or in your case may build a shared library like so, similarly, just add the comp
 g++   -shared -o libMyLib.so src_a.o src_b.o src_c.o -lgcov
 ```
 
-
 ## Summary
 
 I have encountered the following problems many times
@@ -93,4 +91,4 @@ undefined reference to `__gcov_merge_add'
 
 Each time I can fix it by adding `-glcov` then recompile. the error has gone after rebuild. (you use the `nm` command to double-check whether the symbol has been added successfully.)
 
-I hope this can helps you.
+Hopes it can help you.
