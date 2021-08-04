@@ -1,5 +1,5 @@
 ---
-title: Document some important steps on how to set up SonarQube
+title: Document some important steps on how to setup SonarQube
 tags:
   - SonarQube
   - LDAP
