@@ -71,22 +71,43 @@ SonarQube needs you to have installed a database. It supports several database e
 
 How to download and install PostgreSQL please see this page: https://www.postgresql.org/download/linux/redhat/
 
-## The final `sonar.properties` file
+## Problems
 
-About the following questions, you can refer to my final `sonar.properties` file.
+### 1. How to establish a connection with SonarQube and PostgreSQL
 
-1. How to establish a connection with SonarQube and PostgreSQL
-2. How to setup LDAP for other employees to log in
+Please refer to the `sonar.properties` file at the end of this post.
 
-Notes:
+### 2. How to setup LDAP for users to log in
 
-1. To output more logs, change `sonar.log.level=INFO` to `sonar.log.level=DEBUG` in below.
-2. Need to restart for `sonar.properties` changes to take effect.
+```bash
+sonar.security.realm=LDAP
+ldap.url=ldap://den.exmaple-org:389
+ldap.bindDn=user@exmaple-org.com
+ldap.bindPassword=mypassword
+ldap.authentication=simple
+ldap.user.baseDn=DC=exmaple-org,DC=com
+ldap.user.request=(&(objectClass=user)(sAMAccountName={login}))
+ldap.user.realNameAttribute=cn
+ldap.user.emailAttribute=email
+```
+
+### 3. How to fix LDAP login SonarQube is very slowly
+
+Comment out `ldap.followReferrals=false` in sonar.properties file would be help.
+
+Related post: https://community.sonarsource.com/t/ldap-login-takes-2-minutes-the-first-time/1573/7
+
+### 4. How to output to more logs
+
+To output more logs, change `sonar.log.level=INFO` to `sonar.log.level=DEBUG` in below.
+
+> Note: all above changes of `sonar.properties` need to restart the SonarQube instance to take effect.
+
+## Final `sonar.properties`
+
+For the `sonar.properties` file, please see below or [link](https://gist.github.com/shenxianpeng/a1eec786210b421f8be34e3263f1a002)
 
 <!-- more -->
-
-Whole `sonar.properties` file see in the gist: https://gist.github.com/shenxianpeng/a1eec786210b421f8be34e3263f1a002
-
 ```bash
 # DATABASE
 #
@@ -119,6 +140,9 @@ sonar.web.context=
 sonar.web.port=9000
 
 # LDAP CONFIGURATION
+
+# Follow or not referrals. See http://docs.oracle.com/javase/jndi/tutorial/ldap/referral/jndi.html (default: true)
+ldap.followReferrals=false
 
 # Enable the LDAP feature
 sonar.security.realm=LDAP
