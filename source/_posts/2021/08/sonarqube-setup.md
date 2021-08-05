@@ -1,5 +1,5 @@
 ---
-title: Document some important steps on how to setup SonarQube
+title: The problems encountered while installing SonarQube
 tags:
   - SonarQube
   - LDAP
