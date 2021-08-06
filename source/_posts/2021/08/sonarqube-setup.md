@@ -1,5 +1,5 @@
 ---
-title: The problems encountered while installing SonarQube
+title: SonarQube installation and troubleshootings
 tags:
   - SonarQube
   - LDAP
@@ -71,7 +71,7 @@ SonarQube needs you to have installed a database. It supports several database e
 
 How to download and install PostgreSQL please see this page: https://www.postgresql.org/download/linux/redhat/
 
-## Problems
+## Troubleshooting
 
 ### 1. How to establish a connection with SonarQube and PostgreSQL
 
@@ -97,6 +97,31 @@ Comment out `ldap.followReferrals=false` in sonar.properties file would be help.
 
 Related post: https://community.sonarsource.com/t/ldap-login-takes-2-minutes-the-first-time/1573/7
 
+## 4. How to fix 'Could not resolve 11 file paths in lcov.info'
+
+I want to display Javascript code coverage result in SonarQube, so I added `sonar.javascript.lcov.reportPaths=coverage/lcov.info` to the `sonar-project.properties`
+
+But when I run `sonar-scanner.bat` in the command line, the code coverage result can not show in sonar. I noticed the following error from the output:
+
+```bash
+INFO: Analysing [C:\workspace\xvm-ide\client\coverage\lcov.info]
+WARN: Could not resolve 11 file paths in [C:\workspace\xvm-ide\client\coverage\lcov.info]
+```
+There are some posts related to this problem, for example, https://github.com/kulshekhar/ts-jest/issues/542, but no one works in my case.
+
+```bash
+# here is an example error path in lcov.info
+..\src\auto-group\groupView.ts
+```
+
+Finally, I have to use the `sed` command to remove `..\` in front of the paths before running `sonar-scanner.bat`, then the problem was solved.
+
+```bash
+sed -i 's/\..\\//g' lcov.info
+```
+
+Please comment if you can solve the problem with changing options in the `tsconfig.json` file.
+
 ### 4. How to output to more logs
 
 To output more logs, change `sonar.log.level=INFO` to `sonar.log.level=DEBUG` in below.
@@ -108,6 +133,7 @@ To output more logs, change `sonar.log.level=INFO` to `sonar.log.level=DEBUG` in
 For the `sonar.properties` file, please see below or [link](https://gist.github.com/shenxianpeng/a1eec786210b421f8be34e3263f1a002)
 
 <!-- more -->
+
 ```bash
 # DATABASE
 #
