@@ -1,9 +1,10 @@
 ---
-title: Hexo添加Disqus留言功能
+title: Hexo 添加 Disqus 留言功能
 date: 2019-07-07 20:20:50
-tags: 
+tags:
 - Hexo
-categories: 
+- Disqus
+categories:
 - Hexo
 author: shenxianpeng
 ---
@@ -12,11 +13,11 @@ author: shenxianpeng
 
 去 Disqus 创建一个账号，在这个过程中有需要选择一个 shortname，完成后，你可以在设置页码找到你的 shortname
 
-```url
+```bash
 https://YOURSHORTNAMEHERE.disqus.com/admin/settings/general
 ```
 
-在你Hexo博客里打开 _config.yml, 然后输入 disqus_shortnameand: YOURSHORTNAMEHERE，像这样：
+在你 Hexo 博客里打开 `_config.yml`, 然后输入 disqus_shortnameand: YOURSHORTNAMEHERE，像这样：
 
 <!-- more -->
 
@@ -25,16 +26,16 @@ disqus_shortname: myshortnamegoeshere
 comments: true
 ```
 
-也需要更改_config.yml文件如下，例如我的：
+也需要更改 `_config.yml` 文件如下，例如我的：
 
 ```bash
 # 修改默认 url: http://yoursite.com 为：
 url: https://shenxianpeng.github.io
 ```
 
-复制这段代码到blog\themes\landscape\layout\_partial\footer.ejs
+复制这段代码到 `blog\themes\landscape\layout\_partial\footer.ejs`
 
-```js
+```javascript
 <% if (config.disqus_shortname){ %>
 <script>
   var disqus_shortname = '<%= config.disqus_shortname %>';
@@ -52,15 +53,15 @@ url: https://shenxianpeng.github.io
 <% } %>
 ```
 
-也需要复制这些文件到 footer.ejs 到最底部：
+也需要复制这些文件到 `footer.ejs` 到最底部：
 
 ```js
 <div id="disqus_thread"></div>
 ```
 
-最后最footer.ejs文件是这样的：
+最后 `footer.ejs` 文件是这样的：
 
-```js
+```javascript
 <% if (theme.sidebar === 'bottom'){ %>
   <%- partial('_partial/sidebar') %>
 <% } %>
