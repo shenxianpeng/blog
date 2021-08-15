@@ -1,5 +1,5 @@
 ---
-title: Use Gcov and LCOV to perform code coverage testing for C/C++ projects
+title: Use Gcov and LCOV to perform code coverage testing on C/C++ projects
 tags:
   - Gcov
   - LCOV
@@ -12,114 +12,92 @@ author: shenxianpeng
 
 ## Question
 
-How do you do when your C/C++ project does not have unit test code, and you want to do code coverage testing?
+How can you do when your C/C++ project does not have unit test code, but you want to do code coverage testing?
 
-There are some of these tools for C/C++ project code coverage testing on the market, but most of them are charged.
+There are some tools for C/C++ project code coverage testing in the market, but most are paid software, like Squish Coco, Bullseye, etc.
 
-I researched a paid C/C++ code coverage tool [Squish Coco](https://shenxianpeng.github.io/2019/05/squishcoco/) a long time ago. Since there were some compilation problems that were not resolved at that time, I just No purchase on hold.
+I learned [Squish Coco](https://shenxianpeng.github.io/2019/05/squishcoco/) a long time ago, as there are still some compilation problems not fixed, so I didn't purchase that one.
 
-When I restarted the work on code coverage testing of C/C++ projects, I learned that GCC actually provides code coverage compilation options `-fprofile-arcs` and `-ftest-coverage`. In order to figure out how [Gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html) works, I did some investigations, and the results are summarized as follows.
-
+When I started the work on code coverage testing of C/C++ projects again, I just knew that GCC originally had code coverage compilation options `-fprofile-arcs` and `-ftest-coverage`. To figure out how [Gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html) works, I did some investigations, and please refer to the following steps to see how it works.
 
 ## Precondition
 
-The demo code is in this GitHub [repository](https://github.com/shenxianpeng/gcov-example). You can clone with `git clone https://github.com/shenxianpeng/gcov-example.git`
-
-If you need to run the program in this repository, you need to install [gcc](https://gcc.gnu.org/install/index.html) and [lcov](http://ltp.sourceforge.net/coverage/lcov.php) first.
-
-## About the branch
-
-The `master` branch only saves files such as `.c`, `.h`, and `makefile` that need to be used for demonstration.
-
-The `coverage` branch saves all the files generated during the compilation process, as well as the final code coverage HTML report file (under the `out` directory).
-
-## Generate code coverage
-
-Step by step
+If you want to run this demo program of this repository, you need to install [GCC](https://gcc.gnu.org/install/index.html) and [lcov](http://ltp.sourceforge.net/coverage/lcov.php) first.
 
 ```bash
-# compile with -fprofile-arcs -ftest-coverage
-gcc -Wall -Werror -fPIC -fprofile-arcs -ftest-coverage  main.c foo.c -o main
+# The versions of GCC and lcov in my environment.
+sh-4.2$ gcc --version
+gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-39)
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-# run run executable
-./main
-
-# generate gcov files.
-gcov main.c foo.c
-
-# generate coverage.info file
-lcov --capture --directory . --output-file coverage.info
-
-# generate HTML report
-genhtml coverage.info --output-directory out
-```
-Or introduce it to the `makefile` and you can compile and generate reports in just 3 steps like the following, or even 1 step if you want.
-
-```bash
-# step 1 compile
-make
-
-# step 2 run executable
-./main
-
-# step 3 generate the report
-make report
-
-# delete all files generated above
-make clean
+sh-4.2$ lcov -v
+lcov: LCOV version 1.14
 ```
 
-Each step output please refer to below.
+## How to run
 
-<!-- more -->
+Here is the demonstration repository: https://github.com/shenxianpeng/gcov-example
 
 ### 1. Compile
 
 ```bash
-$ make
-# this is the output after adding -fprofile-arcs -ftest-coverage compilation options
+make
+```
+
+<details>
+<summary> click to expand the output of make</summary>
+
+```bash
+sh-4.2$ make
 gcc -fPIC -fprofile-arcs -ftest-coverage -c -Wall -Werror main.c
 gcc -fPIC -fprofile-arcs -ftest-coverage -c -Wall -Werror foo.c
 gcc -fPIC -fprofile-arcs -ftest-coverage -o main main.o foo.o
 ```
+</details>
 
-Let's take a look at what files are generated in the current workspace.
+The program is built with these two options `-fprofile-arcs` and `-ftest-coverage`. After compilation, not only generated `main` and `.o` files, but also two `.gcno` files.
 
-```bash
-$ ls
-foo.c  foo.gcno  foo.h  foo.o  img  main  main.c  main.gcno  main.o  makefile  README.md
-```
-
-After compilation, in addition to generating `main` and `.o` files, there are also two `.gcno` files.
-
-> The `.gcno` notes file is generated when the source file is compiled with the GCC `-ftest-coverage` option. It contains information to reconstruct the basic block graphs and assign source line numbers to blocks.
+> The `.gcno` notes file is generated by adding GCC `-ftest-coverage` option to the source file when running `make`, it contains information to reconstruct the basic block graphs and assign source line numbers to blocks.
 
 ### 2. Run executable
 
-The program is compiled with the options `-fprofile-arcs` and `-ftest-coverage`, after running the executable file `main`, the run data is recorded in the count data `.gcda` file.
+```bash
+./main
+```
+
+<details>
+<summary> click to expand the output of running main</summary>
 
 ```bash
-$ ./main
+sh-4.2$ ./main
 Start calling foo() ...
 when num is equal to 1...
 when num is equal to 2...
+```
 
-# After main is executed, two .gcda files are generated
+</details>
+
+After running the executable file `main`, the result is recorded in the `.gcda` count data file. In this case, there are two `.gcda` files are generated.
+
+```bash
 $ ls
 foo.c  foo.gcda  foo.gcno  foo.h  foo.o  img  main  main.c  main.gcda  main.gcno  main.o  makefile  README.md
 ```
-
 > The `.gcda` count data file is generated when a program containing object files built with the GCC `-fprofile-arcs` option is executed. A separate `.gcda` file is created for each object file compiled with this option. It contains arc transition counts, value profile counts, and some summary information.
 
 ### 3. Generate report
 
-Finally, execute `make report` to generate the final HTML report, which actually does the following things:
+```bash
+make report
+```
 
-First, generate a report file
-
-When the two files `.gcno` and `.gcda` are available, the report file is generated through the `gcov` command, `.gcov` file is generated by executing `gcov main.c foo.c` command.
+<details>
+<summary> click to expand the output of make report</summary>
 
 ```bash
+sh-4.2$ make report
 gcov main.c foo.c
 File 'main.c'
 Lines executed:100.00% of 5
@@ -130,31 +108,16 @@ Lines executed:85.71% of 7
 Creating 'foo.c.gcov'
 
 Lines executed:91.67% of 12
-```
-
-Second, generate an HTML report
-
-Although the above output can already know the code coverage of the two source files of `main.c` and `foo.c`, it is not intuitive enough, and it is impossible to see which line is not executed. `LCOV` is a tool that can help us generate more intuitive HTML reports.
-
-> LCOV is a graphical front-end for GCC's coverage testing tool gcov. It collects gcov data for multiple source files and creates HTML pages containing the source code annotated with coverage information. It also adds overview pages for easy navigation within the file structure. LCOV supports statement, function and branch coverage measurement.
-
-1. using `lcov --capture --directory. --output-filecoverage.info` command to generate coverage.info data file.
-
-```bash
-$ lcov --capture --directory . --output-file coverage.info
+lcov --capture --directory . --output-file coverage.info
 Capturing coverage data from .
 Found gcov version: 4.8.5
 Scanning . for .gcda files ...
 Found 2 data files in .
 Processing foo.gcda
+geninfo: WARNING: cannot find an entry for main.c.gcov in .gcno file, skipping file!
 Processing main.gcda
 Finished .info-file creation
-```
-
-2. execute `genhtml coverage.info --output-directory out` to generate HTML report.
-
-```bash
-$ genhtml coverage.info --output-directory out
+genhtml coverage.info --output-directory out
 Reading data file coverage.info
 Found 2 entries.
 Found common filename prefix "/workspace/coco"
@@ -167,6 +130,40 @@ Overall coverage rate:
   lines......: 91.7% (11 of 12 lines)
   functions..: 100.0% (2 of 2 functions)
 ```
+</details>
+
+Finally, execute `make report` to generate the HTML report, which does the following things:
+
+First, generate `.gcov` file
+
+When the two files `.gcno` and `.gcda` were created, the report file can be generated by the `gcov` command, `.gcov` file is generated when running `gcov main.c foo.c` command.
+
+Second, generate HTML report
+
+Although the above output can know the code coverage of the two source files `main.c` and `foo.c`, but it is not visualized.
+
+We need a tool that can visualize the results, `LCOV` is a tool that can help us generate more intuitive HTML reports.
+
+1. `lcov --capture --directory . --output-file coverage.info` command to generate coverage.info data file.
+
+2. `genhtml coverage.info --output-directory out` to generate HTML report.
+
+> LCOV is a graphical front-end for GCC's coverage testing tool gcov. It collects gcov data for multiple source files and creates HTML pages containing the source code annotated with coverage information. It also adds overview pages for easy navigation within the file structure. LCOV supports statement, function and branch coverage measurement.
+
+### 4. Delete all generate files
+
+```bash
+make clean
+```
+
+<details>
+<summary> click to expand the output of make clean</summary>
+
+```bash
+sh-4.2$ make clean
+rm -rf main *.o *.so *.gcno *.gcda *.gcov coverage.info out
+```
+</details>
 
 ## Code coverage report
 
@@ -178,11 +175,14 @@ Overall coverage rate:
 
 ![foo.c](gcov-example/foo.c.png)
 
-Note: git checkout to `coverage` branch, under `out` directory to view or download the report.
+Note: git checkout to `coverage` branch, under `out` directory to view or download the HTML report.
+
+> The `master` branch only saves source files such as `.c`, `.h`, and `makefile` only to be used for demonstration. \
+> The `coverage` branch saves all the files generated during the demonstration process, as well as the final code coverage HTML report file (under the `out` directory).
 
 ## Reference
 
-Some useful documents related to this research:
+Some helpful documents links about this research:
 
 * Gcov homepage: https://gcc.gnu.org/onlinedocs/gcc/Gcov.html
 * Lcov homepage: http://ltp.sourceforge.net/coverage/lcov.php
