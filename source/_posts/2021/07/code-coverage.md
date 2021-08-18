@@ -67,7 +67,7 @@ author: shenxianpeng
 
 ## 当前主流代码覆盖率工具
 
-代码覆盖率的工具有很多，以下是我用过的不同编程语言的代码覆盖率工具。在选择工具时，我力求去选择那些开源、流行（活跃）、好用的工具。
+代码覆盖率的工具有很多，以下是我用过的不同编程语言的代码覆盖率工具。在选择工具时，力求去选择那些开源、流行（活跃）、好用的工具。
 
 | 编程语言 | 代码覆盖率工具 |
 | ----------- | ----------- |
@@ -81,4 +81,3 @@ author: shenxianpeng
 
 > https://www.lambdatest.com/blog/code-coverage-vs-test-coverage/
 > https://www.atlassian.com/continuous-delivery/software-testing/code-coverage
-

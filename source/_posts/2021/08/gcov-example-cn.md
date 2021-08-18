@@ -1,5 +1,5 @@
 ---
-title: 使用 Gcov 和 LCOV 测量 C/C++ 项目的代码覆盖率
+title: 使用 Gcov 和 LCOV 度量 C/C++ 项目的代码覆盖率
 tags:
   - Gcov
   - LCOV
@@ -10,10 +10,9 @@ date: 2021-08-17 00:10:21
 author: shenxianpeng
 ---
 
-本篇分享如何使用 Gcov 和 LCOV 对 C/C++ 项目进行代码覆盖率的测量。
+本篇分享如何使用 Gcov 和 LCOV 对 C/C++ 项目进行代码覆盖率的度量，以及在之前**关于代码覆盖率(Code Coverage)**篇中没有提到的观点写在了本文最后的《不要高估代码覆盖率指标》部分。
 
-如果你想了解代码覆盖率工具是如何工作的，或是以后需要做这方便的工作，尤其是 C/C++ 项目的代码覆盖率，希望本篇对你有所帮助。
-
+如果你想了解代码覆盖率工具 Gcov 是如何工作的，或是以后需要做 C/C++ 项目的代码覆盖率，希望本篇对你有所帮助。
 ## 问题
 
 其实最开始源于这一连串的问题：八十年代的 C Language 项目没有单元测试，只有回归测试，想知道回归测试测了哪些源代码？代码覆盖率是多少？哪些地方需要编写自动化测试用例？
@@ -26,7 +25,7 @@ author: shenxianpeng
 
 其中我比较深入的了解过 [Squish Coco](https://shenxianpeng.github.io/2019/05/squishcoco/) 它如何使用，但对于大型项目，引入这类工具都或多或少的需要解决编译上的问题。也正是因为有一些编译问题没有解决，就一直没有购买这款价格不菲的工具 License。
 
-当我再次重新调查代码覆盖率的时候，我很惭愧的发现原来正在使用的 GCC 其实有内置的测试覆盖率的工具的，叫 [Gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html)
+当我再次重新调查代码覆盖率的时候，我很惭愧的发现原来正在使用的 GCC 其实有内置的代码覆盖率的工具的，叫 [Gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html)
 
 ## 前提条件
 
@@ -194,23 +193,29 @@ rm -rf main *.o *.so *.gcno *.gcda *.gcov coverage.info out
 
 ![foo.c](gcov-example/foo.c.png) 红色表示没有被覆盖的语句
 
-> LCOV 支持语句、函数和分支覆盖测量。
+> LCOV 支持语句、函数和分支覆盖度量。
 
 旁注：
 
-* 还有另外一个生成 HTML 报告的工具叫 [gcovr](https://github.com/gcovr/gcovr)，使用 Python 开发的，它的报告在显示方式上于 LCOV 略有不同。比如 LCOV 以目录结构显示， gcovr 以文件路径来显示，前者与代码结构一直因此我更倾向于使用前者。
+* 还有另外一个生成 HTML 报告的工具叫 [gcovr](https://github.com/gcovr/gcovr)，使用 Python 开发的，它的报告在显示方式上与 LCOV 略有不同。比如 LCOV 以目录结构显示， gcovr 以文件路径来显示，前者与代码结构一直因此我更倾向于使用前者。
 
-## 最后
+## 不要高估代码覆盖率指标
 
-获得了代码覆盖率是接下来工作的开始，有了这个结果能够帮助团队知道哪些代码测到了？哪些重要的代码/模块没有被测到？以及未来需要在哪些地方新增自动化测试用例。
+代码覆盖率不是灵丹妙药，它只是告诉我们有哪些代码没有被测试用例“执行到”而已，高百分比的代码覆盖率不等于高质量的有效测试。
 
-## 参考
+首先，高代码覆盖率不足以衡量有效测试。相反，代码覆盖率更准确地给出了代码未被测试的程度的度量。这意味着，如果我们的代码覆盖率指标较低，那么我们可以确定代码的重要部分没有经过测试。然而，反过来不一定正确。具有高代码覆盖率并不能充分表明我们的代码已经过充分测试。
 
-一些关于 Gcov 和 LCOV 一些参考内容：
+其次，100% 的代码覆盖率不应该是我们明确努力的目标之一。这是因为在实现 100% 的代码覆盖率与实际测试重要的代码之间总是需要权衡。虽然可以测试所有代码，但考虑到为了满足覆盖率要求而编写更多无意义测试的趋势，当你接近此限制时，测试的价值也很可能会减少。
 
-* Gcov 首页: https://gcc.gnu.org/onlinedocs/gcc/Gcov.html
-* Lcov 首页: http://ltp.sourceforge.net/coverage/lcov.php
-* 在 Linux 内核中使用 Gcov 的示例: https://01.org/linuxgraphics/gfx-docs/drm/dev-tools/gcov.html
-* 如果你的构建环境与测试环境不是同一个环境，那么就需要看看下面两个链接：
+那么代码覆盖率指标被高估了吗？是的！但是，只有当你尝试将它们用作对所编写代码质量的客观整体衡量标准时，而不是理解它们只是一个大型多方面难题的一个信息丰富的部分。
+
+> 代码覆盖率是查找代码库中未测试部分的有用工具，然而它作为一个数字说明你的测试有多好用处不大。
+> -- [Martin Fowler](https://www.martinfowler.com/bliki/TestCoverage.html) 
+## 扩展阅读
+
+在 Linux 内核中使用 Gcov 的示例: https://01.org/linuxgraphics/gfx-docs/drm/dev-tools/gcov.html
+
+当构建环境与测试环境不同时，如何设置环境变量：
+
   * https://gcc.gnu.org/onlinedocs/gcc/Cross-profiling.html#Cross-profiling
   * https://stackoverflow.com/questions/7671612/crossprofiling-with-gcov-but-gcov-prefix-and-gcov-prefix-strip-is-ignored
