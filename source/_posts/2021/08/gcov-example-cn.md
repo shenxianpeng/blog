@@ -50,15 +50,21 @@ lcov: LCOV version 1.14
 
 ## Gcov 是如何工作的
 
-简单来说就三步：
+Gcov 工作流程图
 
-1. 在编译的时候加入特殊的编译选项，生成可执行文件
-2. 运行（测试）这些可执行文件，生成了跟踪和记录运行结果的数据文件
-3. 根据这些数据文件生成代码覆盖率报告
+![flow](gcov-example-cn/gcov-flow.jpg)
+
+主要分四步：
+
+1. 在 GCC 编译的时加入特殊的编译选项，生成可执行文件，和 `*.gcno`；
+2. 运行（测试）生成的可执行文件，生成了 `*.gcda` 数据文件；
+3. 有了 `*.gcno` 和 `*.gcda`，通过源码生成 `gcov` 文件，最后生成代码覆盖率报告。
+
+下面就开始介绍其中每一步具体是怎么做的。
 
 ### 1. 编译
 
-第一步编译，我已经将编译用到的参数和文件都写在了 `makefile` 里了，只要执行 `make` 就可以编译了。
+第一步编译，这里已经将编译用到的参数和文件都写在了 `makefile` 里了，只要执行 `make` 就可以编译了。
 
 ```bash
 make
@@ -75,13 +81,13 @@ gcc -fPIC -fprofile-arcs -ftest-coverage -o main main.o foo.o
 ```
 </details>
 
-通过输出可以看到，这个程序在编译的时候填加了两个编译选项 `-fprofile-arcs` and `-ftest-coverage`。在编译成功后，不仅生成了 `main` and `.o` 文件，同时还生成了两个 `.gcno` 文件.
+通过输出可以看到，这个程序在编译的时候添加了两个编译选项 `-fprofile-arcs` and `-ftest-coverage`。在编译成功后，不仅生成了 `main` and `.o` 文件，同时还生成了两个 `.gcno` 文件.
 
 > `.gcno` 记录文件是在加入 GCC 编译选项 `-ftest-coverage` 后生成的，在编译过程中它包含用于重建基本块图和为块分配源行号的信息。
 
 ### 2. 运行可执行文件
 
-在编译完成后，生成了 `main` 这个可执行文件，运行它：
+在编译完成后，生成了 `main` 这个可执行文件，运行（测试）它：
 
 ```bash
 ./main
@@ -99,7 +105,7 @@ when num is equal to 2...
 
 </details>
 
-当运行 `main` 后，执行的结果被记录在了 `.gcda` 这个数据文件里，查看当前目录下可以看到一共有两个 `.gcda` 文件生成了，即每个源文件都对应一个  `.gcda` 文件。
+当运行 `main` 后，执行结果被记录在了 `.gcda` 这个数据文件里，查看当前目录下可以看到一共有生成了两个 `.gcda` 文件，每个源文件都对应一个  `.gcda` 文件。
 
 ```bash
 $ ls
@@ -153,13 +159,13 @@ Overall coverage rate:
 ```
 </details>
 
-最后，执行 `make report` 来生成 HTML 报告，这条命令实际上执行了以下两个主要步骤：
+执行 `make report` 来生成 HTML 报告，这条命令的背后实际上主要执行了以下两个步骤：
 
-1. 在有了编译源码生成的  `.gcno` 和 `.gcda` 文件后，执行命令 `gcov main.c foo.c` 即可生成 `.gcov` 文件。
+1. 在有了编译和运行时候生成的 `.gcno` 和 `.gcda` 文件后，执行命令 `gcov main.c foo.c` 即可生成 `.gcov` 代码覆盖率文件。
 
-2. 生成 HTML 报告
+2. 有了代码覆盖率 `.gcov` 文件，通过 [LCOV](http://ltp.sourceforge.net/coverage/lcov.php) 生成可视化代码覆盖率报告。
 
-为了让代码覆盖率的测试结果更加可视化，这里我们用的是 [LCOV](http://ltp.sourceforge.net/coverage/lcov.php) 这个工具。具体执行了如下两个命令：
+生成 HTML 结果报告的步骤如下：
 
 ```bash
 # 1. 生成 coverage.info 数据文件
@@ -168,11 +174,9 @@ lcov --capture --directory . --output-file coverage.info
 genhtml coverage.info --output-directory out
 ```
 
-### 4. 删除所有生成的文件
+### 删除所有生成的文件
 
-```bash
-make clean
-```
+上传过程中所有生成的文件可通过执行 `make clean` 命令来彻底删除掉。
 
 <details>
 <summary> 点击查看 make clean 命令的输出 </summary>
@@ -185,13 +189,13 @@ rm -rf main *.o *.so *.gcno *.gcda *.gcov coverage.info out
 
 ## 代码覆盖率报告
 
-![index](gcov-example/index.png) 首页以目录结构显示
+![index](gcov-example-cn/index.png) 首页以目录结构显示
 
-![example](gcov-example/example.png) 进入目录后，显示该目录下的源文件
+![example](gcov-example-cn/example.png) 进入目录后，显示该目录下的源文件
 
-![main.c](gcov-example/main.c.png) 蓝色表示这些语句被覆盖
+![main.c](gcov-example-cn/main.c.png) 蓝色表示这些语句被覆盖
 
-![foo.c](gcov-example/foo.c.png) 红色表示没有被覆盖的语句
+![foo.c](gcov-example-cn/foo.c.png) 红色表示没有被覆盖的语句
 
 > LCOV 支持语句、函数和分支覆盖度量。
 
@@ -203,19 +207,16 @@ rm -rf main *.o *.so *.gcno *.gcda *.gcov coverage.info out
 
 代码覆盖率不是灵丹妙药，它只是告诉我们有哪些代码没有被测试用例“执行到”而已，高百分比的代码覆盖率不等于高质量的有效测试。
 
-首先，高代码覆盖率不足以衡量有效测试。相反，代码覆盖率更准确地给出了代码未被测试的程度的度量。这意味着，如果我们的代码覆盖率指标较低，那么我们可以确定代码的重要部分没有经过测试。然而，反过来不一定正确。具有高代码覆盖率并不能充分表明我们的代码已经过充分测试。
+首先，高代码覆盖率不足以衡量有效测试。相反，代码覆盖率更准确地给出了代码未被测试程度的度量。这意味着，如果我们的代码覆盖率指标较低，那么我们可以确定代码的重要部分没有经过测试，然而反过来不一定正确。具有高代码覆盖率并不能充分表明我们的代码已经过充分测试。
 
-其次，100% 的代码覆盖率不应该是我们明确努力的目标之一。这是因为在实现 100% 的代码覆盖率与实际测试重要的代码之间总是需要权衡。虽然可以测试所有代码，但考虑到为了满足覆盖率要求而编写更多无意义测试的趋势，当你接近此限制时，测试的价值也很可能会减少。
+其次，`100%` 的代码覆盖率不应该是我们明确努力的目标之一。这是因为在实现 `100%` 的代码覆盖率与实际测试重要的代码之间总是需要权衡。虽然可以测试所有代码，但考虑到为了满足覆盖率要求而编写更多无意义测试的趋势，当你接近此限制时，测试的价值也很可能会减少。
 
-那么代码覆盖率指标被高估了吗？是的！但是，只有当你尝试将它们用作对所编写代码质量的客观整体衡量标准时，而不是理解它们只是一个大型多方面难题的一个信息丰富的部分。
+借用 Martin Fowler 在这篇[测试覆盖率]((https://www.martinfowler.com/bliki/TestCoverage.html))的文章说的一句话：
 
 > 代码覆盖率是查找代码库中未测试部分的有用工具，然而它作为一个数字说明你的测试有多好用处不大。
-> -- [Martin Fowler](https://www.martinfowler.com/bliki/TestCoverage.html) 
+
 ## 扩展阅读
 
-在 Linux 内核中使用 Gcov 的示例: https://01.org/linuxgraphics/gfx-docs/drm/dev-tools/gcov.html
+* 在 Linux 内核中使用 Gcov 的 [示例](https://01.org/linuxgraphics/gfx-docs/drm/dev-tools/gcov.html)
 
-当构建环境与测试环境不同时，如何设置环境变量：
-
-  * https://gcc.gnu.org/onlinedocs/gcc/Cross-profiling.html#Cross-profiling
-  * https://stackoverflow.com/questions/7671612/crossprofiling-with-gcov-but-gcov-prefix-and-gcov-prefix-strip-is-ignored
+* 当构建环境与测试环境不同时 [环境变量设置](https://gcc.gnu.org/onlinedocs/gcc/Cross-profiling.html#Cross-profiling)
