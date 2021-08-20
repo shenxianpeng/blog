@@ -9,9 +9,7 @@ date: 2021-07-14 22:49:39
 author: shenxianpeng
 ---
 
-最近做了一些关于代码覆盖率工具的调查，对一些主流的代码覆盖率的工具比如 Gcov，JaCoCo，Istanbul 等都做了一些实践和持续集成的工作，也有了一定的了解。
-
-本篇简要介绍：什么是代码覆盖率？为什么要做代码覆盖率？以及它的指标、工作方式和一些主流的代码覆盖率工具。
+本篇简要介绍：什么是代码覆盖率？为什么要做代码覆盖率？代码覆盖率的指标、工作原理，主流的代码覆盖率工具以及不要高估代码覆盖率指标。
 
 ## 什么是代码覆盖率？
 
@@ -77,7 +75,20 @@ author: shenxianpeng
 | Python | Coverage.py |
 | Golang | cover |
 
+## 不要高估代码覆盖率指标
+
+代码覆盖率不是灵丹妙药，它只是告诉我们有哪些代码没有被测试用例“执行到”而已，高百分比的代码覆盖率不等于高质量的有效测试。
+
+首先，高代码覆盖率不足以衡量有效测试。相反，代码覆盖率更准确地给出了代码未被测试程度的度量。这意味着，如果我们的代码覆盖率指标较低，那么我们可以确定代码的重要部分没有经过测试，然而反过来不一定正确。具有高代码覆盖率并不能充分表明我们的代码已经过充分测试。
+
+其次，`100%` 的代码覆盖率不应该是我们明确努力的目标之一。这是因为在实现 `100%` 的代码覆盖率与实际测试重要的代码之间总是需要权衡。虽然可以测试所有代码，但考虑到为了满足覆盖率要求而编写更多无意义测试的趋势，当你接近此限制时，测试的价值也很可能会减少。
+
+借 Martin Fowler 在这篇[测试覆盖率]((https://www.martinfowler.com/bliki/TestCoverage.html))的文章说的一句话：
+
+> 代码覆盖率是查找代码库中未测试部分的有用工具，然而它作为一个数字说明你的测试有多好用处不大。
+
 ## 参考
 
 > https://www.lambdatest.com/blog/code-coverage-vs-test-coverage/
 > https://www.atlassian.com/continuous-delivery/software-testing/code-coverage
+> https://www.thoughtworks.com/insights/blog/are-test-coverage-metrics-overrated

@@ -10,9 +10,8 @@ date: 2021-08-17 00:10:21
 author: shenxianpeng
 ---
 
-本篇分享如何使用 Gcov 和 LCOV 对 C/C++ 项目进行代码覆盖率的度量，以及在之前**关于代码覆盖率(Code Coverage)**篇中没有提到的观点写在了本文最后的《不要高估代码覆盖率指标》部分。
+本篇分享如何使用 Gcov 和 LCOV 对 C/C++ 项目进行代码覆盖率的度量。如果你想了解代码覆盖率工具 Gcov 是如何工作的，或是以后需要做 C/C++ 项目的代码覆盖率，希望本篇对你有所帮助。
 
-如果你想了解代码覆盖率工具 Gcov 是如何工作的，或是以后需要做 C/C++ 项目的代码覆盖率，希望本篇对你有所帮助。
 ## 问题
 
 其实最开始源于这一连串的问题：八十年代的 C Language 项目没有单元测试，只有回归测试，想知道回归测试测了哪些源代码？代码覆盖率是多少？哪些地方需要编写自动化测试用例？
@@ -54,7 +53,7 @@ Gcov 工作流程图
 
 ![flow](gcov-example-cn/gcov-flow.jpg)
 
-主要分四步：
+主要分三步：
 
 1. 在 GCC 编译的时加入特殊的编译选项，生成可执行文件，和 `*.gcno`；
 2. 运行（测试）生成的可执行文件，生成了 `*.gcda` 数据文件；
@@ -189,13 +188,21 @@ rm -rf main *.o *.so *.gcno *.gcda *.gcov coverage.info out
 
 ## 代码覆盖率报告
 
-![index](gcov-example-cn/index.png) 首页以目录结构显示
+![index](gcov-example-cn/index.png)
 
-![example](gcov-example-cn/example.png) 进入目录后，显示该目录下的源文件
+首页以目录结构显示
 
-![main.c](gcov-example-cn/main.c.png) 蓝色表示这些语句被覆盖
+![example](gcov-example-cn/example.png)
 
-![foo.c](gcov-example-cn/foo.c.png) 红色表示没有被覆盖的语句
+进入目录后，显示该目录下的源文件
+
+![main.c](gcov-example-cn/main.c.png)
+
+蓝色表示这些语句被覆盖
+
+![foo.c](gcov-example-cn/foo.c.png)
+
+红色表示没有被覆盖的语句
 
 > LCOV 支持语句、函数和分支覆盖度量。
 
@@ -203,20 +210,9 @@ rm -rf main *.o *.so *.gcno *.gcda *.gcov coverage.info out
 
 * 还有另外一个生成 HTML 报告的工具叫 [gcovr](https://github.com/gcovr/gcovr)，使用 Python 开发的，它的报告在显示方式上与 LCOV 略有不同。比如 LCOV 以目录结构显示， gcovr 以文件路径来显示，前者与代码结构一直因此我更倾向于使用前者。
 
-## 不要高估代码覆盖率指标
+## 相关阅读
 
-代码覆盖率不是灵丹妙药，它只是告诉我们有哪些代码没有被测试用例“执行到”而已，高百分比的代码覆盖率不等于高质量的有效测试。
+* 关于代码覆盖率(About Code Coverage)：https://shenxianpeng.github.io/2021/07/code-coverage/
+* 在 Linux 内核中使用 Gcov 的示例：https://01.org/linuxgraphics/gfx-docs/drm/dev-tools/gcov.html
+* 当构建环境与测试环境不同时设置环境变量：https://gcc.gnu.org/onlinedocs/gcc/Cross-profiling.html#Cross-profiling
 
-首先，高代码覆盖率不足以衡量有效测试。相反，代码覆盖率更准确地给出了代码未被测试程度的度量。这意味着，如果我们的代码覆盖率指标较低，那么我们可以确定代码的重要部分没有经过测试，然而反过来不一定正确。具有高代码覆盖率并不能充分表明我们的代码已经过充分测试。
-
-其次，`100%` 的代码覆盖率不应该是我们明确努力的目标之一。这是因为在实现 `100%` 的代码覆盖率与实际测试重要的代码之间总是需要权衡。虽然可以测试所有代码，但考虑到为了满足覆盖率要求而编写更多无意义测试的趋势，当你接近此限制时，测试的价值也很可能会减少。
-
-借用 Martin Fowler 在这篇[测试覆盖率]((https://www.martinfowler.com/bliki/TestCoverage.html))的文章说的一句话：
-
-> 代码覆盖率是查找代码库中未测试部分的有用工具，然而它作为一个数字说明你的测试有多好用处不大。
-
-## 扩展阅读
-
-* 在 Linux 内核中使用 Gcov 的 [示例](https://01.org/linuxgraphics/gfx-docs/drm/dev-tools/gcov.html)
-
-* 当构建环境与测试环境不同时 [环境变量设置](https://gcc.gnu.org/onlinedocs/gcc/Cross-profiling.html#Cross-profiling)
