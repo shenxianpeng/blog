@@ -83,7 +83,7 @@ author: shenxianpeng
 
 其次，`100%` 的代码覆盖率不应该是我们明确努力的目标之一。这是因为在实现 `100%` 的代码覆盖率与实际测试重要的代码之间总是需要权衡。虽然可以测试所有代码，但考虑到为了满足覆盖率要求而编写更多无意义测试的趋势，当你接近此限制时，测试的价值也很可能会减少。
 
-借 Martin Fowler 在这篇[测试覆盖率]((https://www.martinfowler.com/bliki/TestCoverage.html))的文章说的一句话：
+借 Martin Fowler 在这篇[测试覆盖率](https://www.martinfowler.com/bliki/TestCoverage.html)的文章说的一句话：
 
 > 代码覆盖率是查找代码库中未测试部分的有用工具，然而它作为一个数字说明你的测试有多好用处不大。
 
