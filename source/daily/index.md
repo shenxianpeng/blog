@@ -5,6 +5,10 @@ title: Daily
 > Starting August 7, 2020, I would like to start recording some daily chores in English.
 
 ---
+## 08/30/2021 - Bless my wife and me
+
+Hopes our dream could come true this time. Bless us ❤️
+
 ## 06/26/2021 - mentee and mentor program
 
 Since this month(June), I begin to have a mentor :) (WIP)
