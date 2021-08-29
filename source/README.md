@@ -4,15 +4,17 @@ Blog: 简介
 
 ## 我的博客
 
-分享 CI/CD、DevOps 等软件领域知识，博客地址：https://shenxianpeng.github.io ![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
 
-## 我的公众号
+分享 CI/CD、DevOps 等软件领域知识，博客地址：https://shenxianpeng.github.io
 
-![公众号二维码](about/index/qrcode.jpg)
+## 微信公众号
+
+![欢迎扫码关注](about/index/qrcode.jpg)
 
 ## ？
 
-如果有任何疑问或错误，欢迎在 [issue](https://github.com/shenxianpeng/blog/issues) 进行提问或给予修正意见；如果喜欢或对你有所帮助，欢迎 [Star](https://github.com/shenxianpeng/blog/) 对作者进行鼓 😀
+如果有任何疑问或错误，欢迎通过 [Issue](https://github.com/shenxianpeng/blog/issues) 进行提出；如果想第一时间收到更新可以 [Star](https://github.com/shenxianpeng/blog/) 进行订阅。
 
 ## License
 
@@ -20,11 +22,9 @@ Blog: 简介
 
 ---
 
-My 🔥[blog](https://shenxianpeng.github.io/) to share knowledge about CI/CD, DevOps domain.
+My [blog](https://shenxianpeng.github.io/) to share knowledge in the fields of CI/CD and DevOps.
 
-If you have any questions or mistakes, please feel free to ask questions or create [issue](https://github.com/shenxianpeng/blog/issues)
-
-If you like it or if it helps you, welcome [Star](https://github.com/shenxianpeng/blog) to encourage the author 😀
+If you have any questions or mistakes, please feel free to ask questions or create [Issue](https://github.com/shenxianpeng/blog/issues). If you want to receive updates as soon as possible, welcome to [Star](https://github.com/shenxianpeng/blog).
 
 And more ways to communicate with me.
 
