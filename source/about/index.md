@@ -5,15 +5,15 @@ author: shenxianpeng
 
 ## About Me
 
-I'm Xianpeng(Peter) Shen, a DevOps engineer from Dalian, China.
+I'm Peter Shen, a DevOps engineer. I'm here to share knowledge in the fields of CI/CD and DevOps.
 
 DevOps/BUILD/DEV - Jun 2018 - Present
 
-* As a DevOps engineer at Rocket Software MultiValue, I'm responsible for DevOps planning for products and establishing DevOps pipelines.
+* As a DevOps engineer at Rocket MV, I'm responsible for DevOps planning and establishing DevOps pipelines.
 
 QA/AUTOMATION - Otc 2009 - May 2018
 
-* Engaged in software testing in Neusoft, JD Mall, Rocket Software, and was responsible for product function testing, automation testing. Lead team to carry out automation testing from scratch to improve the efficiency of regression testing.
+* Engaged in software testing in Neusoft, JD Mall, Rocket, and was responsible for product function testing, automation testing. Lead team to carry out automation testing from scratch to improve the efficiency of regression testing.
 
 Feel free to connect me at Github [1] and Linkedin [2], leave your thoughts in this blog, or writing an email [3].
 
@@ -28,16 +28,16 @@ Feel free to connect me at Github [1] and Linkedin [2], leave your thoughts in t
 
 ## 关于我
 
-沈显鹏，DevOps工程师，来自大连。
+沈显鹏，DevOps工程师，在这里分享 CI/CD 和 DevOps 领域知识。
 
 DevOps - 2018年6月 ~ 至今
 
-* 负责RocketSoftware MultiValue产品的自动化构建、发布、DevOps流水线规划、设计和设施。
+* 负责 Rocket MV 产品的自动化构建、发布、DevOps流水线规划、设计和设施。
 
-测试工程师 - 2009年10月 ~ 2018年5月
+自动化测试工程师 - 2009年10月 ~ 2018年5月
 
-* 在东软、京东商城、RocketSoftare从事软件测试工作。负责产品功能测试、自动化测试。带领团队从无到有开展自动化测试，提高回归测试的效率。
+* 在东软、京东商城、Rocket 从事软件测试工作。负责产品功能测试、自动化测试。带领团队从无到有开展自动化测试，提高回归测试的效率。
 
-微信公众号「**DevOps攻城狮**」，分享软件测试、持续集成、持续交付、DevOps 等领域知识。有缘关注，随缘更新。
+微信公众号「**DevOps攻城狮**」- 分享CI/CD、DevOps领域知识。有缘关注，随缘更新。
 
-![](index/qrcode.jpg)
+![欢迎扫码关注](index/qrcode.jpg)

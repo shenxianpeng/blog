@@ -1,10 +1,8 @@
 # Peter Shen's Blog
 
-Share knowledge about CI/CD, DevOps domain. Blog URL: https://shenxianpeng.github.io
+Share knowledge in the fields of CI/CD and DevOps. Blog URL: https://shenxianpeng.github.io
 
-If you have any questions or mistakes, please feel free to ask via [issues](https://github.com/shenxianpeng/blog/issues)
-
-If you like it or if it helps you, welcome Star to encourage the author 😀
+If you have any questions or mistakes, please feel free to ask via [Issues](https://github.com/shenxianpeng/blog/issues), and to receive updates as soon as possible welcome to [Star](https://github.com/shenxianpeng/blog).
 
 ![Build](https://github.com/shenxianpeng/blog/workflows/build/badge.svg?branch=master)
 [![CodeQL](https://github.com/shenxianpeng/blog/workflows/CodeQL/badge.svg)](https://github.com/shenxianpeng/blog/actions?query=workflow%3ACodeQL)
@@ -25,7 +23,7 @@ npm install hexo-deployer-git --save        # Install hexo deploy
 ## :clipboard: Commands
 
 ```bash
-hexo server                                 # Start local server. by default is http://localhost:4000/
+hexo server                                 # Start the local server. by default is http://localhost:4000/
 hexo new "My New Post"                      # Create a new article
 hexo new page "About"                       # Create a new page named About
 hexo clean                                  # Cleans the cache file (db.json) and generate files (public)
@@ -37,18 +35,18 @@ hexo g -d                                   # Abbreviations generate then deploy
 ```
 ## :memo: Article Structure
 
-Articles are saved by folder, with the hierarchy of year/month. 
+Articles are saved by folder, with the hierarchy of year/month.
 
-I follow below steps when I create an article, for example `abc.md` in August 2019. 
+Follow the following steps when creating an article, for example: `abc.md` in August 2019.
 
 
 1. use command `hexo new "abc"` to generate `abc.md`
 2. manually create `2021/05/` under `source/_post` folder
 3. move `abc.md` to `source/_post/2021/05/`
 4. update `tags`, `categories` and `author` fields in `abc.md` file
-5. start writing... I always use `hexo s` to see how it looks
+5. start writing ... I always use `hexo s` to see how it looks
 
-> Any unfished posts need to be moved `todo` folder first. when done move to `source/_post/...` in published.
+> Any unfished articles need to be moved to `todo` folder. When it's done, move to `source/_post/...` for publishing.
 
 ## 🚀 Deploy
 
@@ -62,7 +60,7 @@ sh deploy.sh
 
 Before publishing the article to other sharing platforms, I need to optimize the format first.
 
-* For WeChat: 
+* For WeChat:
     * [Convert to Markdown](http://blog.didispace.com/tools/online-markdown/)
     * [Markdown Nice](https://www.mdnice.com/)
 * For Medium: [markdown to medium](http://markdown-to-medium.surge.sh/)
