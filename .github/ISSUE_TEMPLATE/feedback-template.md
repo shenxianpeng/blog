@@ -1,13 +1,13 @@
 ---
-name: Feedback template
+name: Issue template
 about: Any feedback or issue reported
-title: 'Feedback: '
+title: 
 labels: feedback
 assignees: ''
 
 ---
 
-[Enter feedback/issue here]
+[Enter feedback or issue here]
 
 ---
 
