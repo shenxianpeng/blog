@@ -1,4 +1,5 @@
 ---
+name: feedback template
 about: Any feedback or issue reported
 title: 
 labels: feedback
