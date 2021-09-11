@@ -58,12 +58,10 @@ sh deploy.sh
 
 ## 🧰 Format Tools
 
-Before publishing the article to other sharing platforms, I need to optimize the format first.
+Format tools for publishing to other medium platforms
 
-* For WeChat:
-    * [Convert to Markdown](http://blog.didispace.com/tools/online-markdown/)
-    * [Markdown Nice](https://www.mdnice.com/)
-* For Medium: [markdown to medium](http://markdown-to-medium.surge.sh/)
+* [Convert to Markdown](http://blog.didispace.com/tools/online-markdown/)
+* [Markdown Nice](https://www.mdnice.com/)
 
 ## 📜 License
 
