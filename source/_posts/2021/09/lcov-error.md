@@ -9,7 +9,7 @@ date: 2021-09-07 10:18:22
 author: shenxianpeng
 ---
 
-When execute command: `lcov --capture --directory . --no-external --output-file coverage.info` to generate code coverage report, I encountered the following error.
+When execute command: `lcov --capture --directory . --no-external --output-file coverage.info` to generate code coverage report, I encountered the following error:
 
 ```bash
 $ lcov --capture --directory . --no-external --output-file coverage.info
