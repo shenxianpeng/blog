@@ -1,5 +1,5 @@
 ---
-title: git 常用命令小纸条
+title: Git 常用命令备忘录
 tags:
   - Git
   - Cheatsheet
@@ -8,6 +8,8 @@ categories:
 date: 2021-10-23 19:40:06
 author: shenxianpeng
 ---
+
+如果你刚接触 Git，在使用 Git 的过程中总遇到一些命令很难想起来，不妨将下面总结的一些 Git 常用的命令以及小技巧收藏或打印出来，以备不时之需。
 
 ## `git config`
 
@@ -133,8 +135,11 @@ git reset HEAD -p
 ## `git commit`
 
 ```bash
-# 修改并添加对最近提交的更改
+# 修改最近的提交信息
 git commit --amend
+
+# 修改最近的提交信息为：New commit message
+git commit --amend -m "New commit message"
 ```
 
 ## `git revert`
@@ -156,7 +161,6 @@ git branch branch_name
 # 创建分支并切到该分支
 git checkout -b branch_name
 
-
 # 显示当前分支
 git branch
 
@@ -165,7 +169,6 @@ git branch -a
 
 # 检查当前正在跟踪的远程分支
 git branch -r
-
 
 # 删除分支
 git branch -d branch_name
@@ -221,3 +224,35 @@ git remote -v
 # 查看远程仓库的更多信息
 git remote show origin
 ```
+
+## Git技巧和窍门
+
+### 清理已合并分支
+
+清理已经合并的本地分支
+
+```bash
+git branch --merged master | grep -v "master" | xargs -n 1 git branch -d
+```
+
+### `.gitignore`
+
+指明 Git 应该忽略的故意不跟踪的文件的文件，比如 `.gitignore` 如下
+
+```bash
+# 忽略 .vscode 目录
+.vscode/
+
+# 忽略 Build 目录
+build/
+
+# 忽略文件
+output.log
+```
+
+### `.gitattributes`
+
+参考
+
+* https://www.git-scm.com/docs/gitattributes
+* https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
