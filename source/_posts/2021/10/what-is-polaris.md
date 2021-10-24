@@ -20,7 +20,6 @@ author: shenxianpeng
 
 ## Polaris 支持哪些语言？
 
-Languages
 ```
 C/C++
 C#
