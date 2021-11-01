@@ -8,7 +8,7 @@ Blog: 简介
 
 分享 CI/CD、DevOps 等软件领域知识，博客地址：https://shenxianpeng.github.io
 
-## 微信公众号
+## 微信公众号「DevOps攻城狮」
 
 ![欢迎扫码关注](about/index/qrcode.jpg)
 
