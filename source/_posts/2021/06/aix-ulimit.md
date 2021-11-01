@@ -3,8 +3,9 @@ title: 通过解除文件资源限制：解决在 AIX 使用 Git 下载大容量
 tags:
   - Git
   - AIX
+  - ulimit
 categories:
-  - Troubleshooting
+  - AIX
 date: 2021-06-17 13:52:44
 author: shenxianpeng
 ---

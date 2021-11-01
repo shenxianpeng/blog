@@ -4,7 +4,7 @@ tags:
   - Windows
   - RDP
 categories:
-  - Troubleshooting
+  - Windows
 date: 2020-08-10 15:40:04
 author: shenxianpeng
 ---

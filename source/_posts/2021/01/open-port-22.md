@@ -1,10 +1,10 @@
 ---
-title: How to open port 22 and make it listening
+title: How to open port 22 and make it listening on Windows
 tags:
   - OpenSSH
   - Windows
 categories:
-  - Troubleshooting
+  - Windows
 date: 2021-01-12 11:13:18
 author: shenxianpeng
 ---
