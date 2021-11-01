@@ -3,7 +3,7 @@ title: Why Windows Installer pop up? (Resolved)
 tags:
   - Windows
 categories:
-  - Troubleshooting
+  - Windows
 date: 2021-04-22 13:33:01
 author: shenxianpeng
 ---
