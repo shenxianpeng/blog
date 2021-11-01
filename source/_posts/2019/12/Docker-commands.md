@@ -9,6 +9,8 @@ date: 2019-12-02 14:30:41
 author: shenxianpeng
 ---
 
+> Docker 常用命令小纸条
+
 ## Docker start|stop|restart
 
 ```bash
@@ -37,11 +39,11 @@ docker run -i -t ubuntu:15.10 /bin/bash
 注意：Open Source 版本 Artifactory 不支持 Docker，需要下载 [JFrog Container Registry](https://jfrog.com/container-registry/) 或是 Artifactory 企业版。
 
 ```bash
-docker login -u <USER_NAME> -p <USER_PASSWORD> dendevmvasvm01.dev.rocketsoftware.com:<REPOSITORY_PORT>
+docker login -u <USER_NAME> -p <USER_PASSWORD> devasvm.dev.org.com:<REPOSITORY_PORT>
 ```
 
 ```bash
--sh-4.2$ sudo docker login dendevmvasvm03.dev.rocketsoftware.com:8040
+-sh-4.2$ sudo docker login devasvm.dev.org.com:8040
 Username: admin
 Password:
 WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
@@ -51,15 +53,15 @@ https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 Login Succeeded
 ```
 
-把 Docker image 推送到仓库
+把 Docker image 推送到远程仓库
 
 ```bash
-// docker tag SOURCE_IMAGE[:TAG] dendevmvasvm03.dev.rocketsoftware.com:8040/docker-local/IMAGE[:TAG]
--sh-4.2$ sudo docker tag ubuntu:15.10 dendevmvasvm03.dev.rocketsoftware.com:8040/docker-local/ubuntu:15.10
+// docker tag SOURCE_IMAGE[:TAG] devasvm.dev.org.com:8040/docker-local/IMAGE[:TAG]
+-sh-4.2$ sudo docker tag ubuntu:15.10 devasvm.dev.org.com:8040/docker-local/ubuntu:15.10
 
-// docker push dendevmvasvm03.dev.rocketsoftware.com:8040/docker-local/IMAGE[:TAG]
--sh-4.2$ sudo docker push dendevmvasvm03.dev.rocketsoftware.com:8040/docker-local/ubuntu:15.10
-The push refers to repository [dendevmvasvm03.dev.rocketsoftware.com:8040/docker-local/ubuntu]
+// docker push devasvm.dev.org.com:8040/docker-local/IMAGE[:TAG]
+-sh-4.2$ sudo docker push devasvm.dev.org.com:8040/docker-local/ubuntu:15.10
+The push refers to repository [devasvm.dev.org.com:8040/docker-local/ubuntu]
 98d59071f692: Pushed
 af288f00b8a7: Pushed
 4b955941a4d0: Pushed
@@ -67,6 +69,6 @@ f121afdbbd5d: Pushed
 15.10: digest: sha256:a3f5e428c0cfbfd55cffb32d30b1d78fedb8a9faaf08efdd9c5208c94dc66614 size: 1150
 ```
 
-## 其他
+## TODO
 
-之后会更新更多的常用的 Docker 命令到这篇文章。
+更多 Docker 常用命令记录到这里。
