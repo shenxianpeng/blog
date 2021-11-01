@@ -64,7 +64,7 @@ FULL-2019-09-14_02-00  FULL-2019-09-28_02-00  FULL-2019-10-19_02-00  FULL-2019-1
 FULL-2019-09-21_02-00  FULL-2019-10-05_02-00  FULL-2019-10-26_02-00  FULL-2019-11-09_02-00  FULL-2019-11-30_02-00
 ```
 
-## 将 Jenkins Docker Image 保持在 Artifactory
+## 将 Jenkins Docker Image 保存在 Artifactory
 
 下载并安装 Artifactory 企业版或是 JFrog Container Registry，注意 Artifactory Open Source 版本不支持 Docker Registry。
 
