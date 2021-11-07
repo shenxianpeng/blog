@@ -19,12 +19,12 @@ git config -l
 
 # 设置你的 git 提交 username 和 email
 # 例如：对于公司里项目
-git config --global user.name "Xianpeng Shen"
-git config --global user.email "xianpeng.shen@organization.com"
+git config --global user.name "Your Name"
+git config --global user.email "your_email@organization.com"
 
 # 例如：对于个人的 GitHub 项目
-git config user.name "Xianpeng Shen"
-git config user.email "xianpeng.shen@gmail.com"
+git config user.name "Your Name"
+git config user.email "your_emailn@gmail.com"
 
 # 使用 HTTP/HTTPS 避免每次输入密码
 git config --global credential.helper cache
