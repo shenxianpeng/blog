@@ -9,7 +9,7 @@ date: 2021-10-23 19:40:06
 author: shenxianpeng
 ---
 
-如果你刚接触 Git，在使用 Git 的过程中总遇到一些命令很难想起来，不妨将下面总结的一些 Git 常用的命令以及小技巧收藏或打印出来，以备不时之需。
+不管是对于 Git 的初学者还是经常使用 Git 的码农们，在日常工作中难免会有遇到有的命令一时想不起来。不妨将下面总结的一些 Git 常用命令及技巧收藏或打印出来，以备需要的时候可以很快找到。
 
 ## `git config`
 
@@ -243,7 +243,7 @@ git branch --merged master | grep -v "master" | xargs -n 1 git branch -d
 # 忽略 .vscode 目录
 .vscode/
 
-# 忽略 Build 目录
+# 忽略 build 目录
 build/
 
 # 忽略文件
@@ -252,7 +252,7 @@ output.log
 
 ### `.gitattributes`
 
-参考
+关于 `.gitattributes` 请参考
 
 * https://www.git-scm.com/docs/gitattributes
 * https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
