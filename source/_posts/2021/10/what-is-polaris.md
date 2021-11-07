@@ -11,6 +11,7 @@ date: 2021-10-24 21:33:53
 author: shenxianpeng
 ---
 
+> 这可能是中文网里介绍Polaris最详细的文章了
 ## 什么是 Polaris？
 
 **Polaris** - 托管静态应用程序软件测试(SAST)工具的 SaaS 平台，它是用于分类和修复漏洞并运行报告的 Web 站点。
@@ -75,8 +76,8 @@ YAML 配置文件可以包含三种类型的 Capture：
 | C, C++, ObjectiveC, Objective C++,Go, Scala, Swift  | 使用 Build 捕获
 | PHP, Python, Ruby  | 使用 Buildless 或 Filesystem 捕获 |
 | C#, Visual Basic. | 如果想获得更准确的结果使用 Build 捕获；如用寻求简单使用 Buildless 捕获 |
-| Java | 如果想获得更准确的结果使用 Build 捕获；如用寻求简单使用 Buildless 捕获  |
-| JavaScript,TypeScript | 使用 Filesystem 捕获；如用寻求简单使用 Buildless 捕获
+| Java | 如果想获得更准确的结果使用 Build 捕获；如果寻求简单使用 Buildless 捕获  |
+| JavaScript,TypeScript | 使用 Filesystem 捕获；如果寻求简单使用 Buildless 捕获
 
 
 #### Analyze - 分析
@@ -190,7 +191,7 @@ serverUrl: https://organization.polaris.synopsys.com
 
 ### 执行分析
 
-通过我会使用如下命令进行 Polaris 分析：
+可以使用如下命令进行 Polaris 分析：
 
 ```bash
 polaris -c polaris.yml analyze -w --coverity-ignore-capture-failure
@@ -227,7 +228,7 @@ Job issue summary
 }
 ```
 
-这里显示了一共发现了多少 690 个漏洞，以及每种不同严重程度各站多少个。具体的漏洞信息需要登录到 Polaris SaaS 平台进行查看。
+这里显示了一共发现了多少 690 个漏洞，以及每种不同严重程度各占多少个。具体的漏洞信息需要登录到 Polaris SaaS 平台进行查看。
 
 点击 `SummaryUrl` 中的链接将会直接跳转到该项目的 Polaris 扫描结果。
 
