@@ -1,5 +1,5 @@
 ---
-title: 解读 2021-22 世界质量报告（World Quality Report）
+title: 2021-22 世界质量报告（World Quality Report）
 tags:
   - Report
   - Quality
