@@ -93,6 +93,8 @@ analyze:
 
 #### Polaris YAML 示例文件
 
+<!-- more -->
+
 示例1：一个C/C++ 项目
 ```yml
 version: "1"
