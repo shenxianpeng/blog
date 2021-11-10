@@ -117,7 +117,8 @@ name: Tigger special repository
 on:
   push:
     # 当 master 分支有变更的时候触发 workflow
-    branches: [ master ]
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
