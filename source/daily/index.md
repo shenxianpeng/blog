@@ -5,6 +5,15 @@ title: Daily
 > Starting August 7, 2020, I would like to start recording some daily chores in English.
 
 ---
+
+## 11/10/2021 - Record every time I was praised.
+
+I would record every time I was praised, so that when I failed on something, I will look back to see these praised to gain confidence.
+
+Today, I have a meeting with foreign colleagues, I say more fluent than ever, and my manage mentioned my English improved a lot. this is the senond time he praised my English imporved.
+
+Next week, I need to prepare to share related to CI/CD/DevOps best practice I did before with other colleagues, this time just need to use Chinese :)
+
 ## 08/30/2021 - Bless my wife and me
 
 Hopes our dream could come true this time. Bless us ❤️
