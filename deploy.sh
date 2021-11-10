@@ -43,17 +43,23 @@ public_generate()
     _check_result
 }
 
-copy_file_to_public()
+copy_files_to_public()
 {
     if [ -d public/ ];then
-        rm -rf public/README.*
+        # copy new README.md
         cp source/README.md public/
         ls public/README.md
         _check_result
 
-        rm -rf public/LICENSE
+        # copy new LICENSE
         cp source/LICENSE public/
         ls public/LICENSE
+        _check_result
+
+        # copy new workflow yml
+        mkdir -p public/.github/workflows/
+        cp -r source/.github/workflows/send-dispatch.yml public/.github/workflows/send-dispatch.yml
+        ls public/.github/workflows/send-dispatch.yml
         _check_result
     fi
 }
@@ -72,7 +78,7 @@ kill_port_4000_pid
 
 public_clean
 public_generate
-copy_file_to_public
+copy_files_to_public
 public_deploy
 
 exit 0
