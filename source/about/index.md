@@ -22,7 +22,7 @@ Hi, 我是沈显鹏，一名 DevOps 工程师。我在这个博客上分享我�
 
 欢迎关注我的
 * 👨🏼‍💻微信公众号「DevOps攻城狮」
-* 🚩[知乎](https://www.zhihu.com/people/xpshen)
+* 🚩[知乎](https://www.zhihu.com/people/shenxianpeng)
 * 🤙🏻[领英](https://www.linkedin.com/in/xianpeng-shen/)
 
 ![扫码关注微信公众号](index/qrcode.jpg)
