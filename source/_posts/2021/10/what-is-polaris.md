@@ -56,7 +56,7 @@ Swift
 
 ### Polaris YAML 文件配置
 
-在进行扫描之前，你需要为你的项目创建 YAML 文件。默认配置文件名为 `polaris.yml`，位于项目根目录。如果你希望指定不同的配置文件名，您可以在 `polaris` 命令中使用 `-c` 选项。
+在进行扫描之前，你需要为你的项目创建 YAML 文件。默认配置文件名为 `polaris.yml`，位于项目根目录。如果你希望指定不同的配置文件名，你可以在 `polaris` 命令中使用 `-c` 选项。
 
 在项目根目录运行 `polaris setup` 以生成通用的 `polaris.yml` 文件。
 
@@ -75,14 +75,14 @@ YAML 配置文件可以包含三种类型的 Capture：
 |---|---|
 | C, C++, ObjectiveC, Objective C++,Go, Scala, Swift  | 使用 Build 捕获
 | PHP, Python, Ruby  | 使用 Buildless 或 Filesystem 捕获 |
-| C#, Visual Basic. | 如果想获得更准确的结果使用 Build 捕获；如用寻求简单使用 Buildless 捕获 |
+| C#, Visual Basic. | 如果想获得更准确的结果使用 Build 捕获；如果寻求简单使用 Buildless 捕获 |
 | Java | 如果想获得更准确的结果使用 Build 捕获；如果寻求简单使用 Buildless 捕获  |
 | JavaScript,TypeScript | 使用 Filesystem 捕获；如果寻求简单使用 Buildless 捕获
 
 
 #### Analyze - 分析
 
-如果您正在扫描 C/C++ 代码，则应包括此分析部分以充分利用 Polaris 的扫描功能：
+如果你正在扫描 C/C++ 代码，则应包括此分析部分以充分利用 Polaris 的扫描功能：
 
 ```yml
 analyze:
