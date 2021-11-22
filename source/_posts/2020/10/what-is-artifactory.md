@@ -163,7 +163,7 @@ environment {
 
 对于 Pull Request Build 如果也想放到 Artifactory 上面，建议像下面这样设置：
 
-```
+```Jenkinsfile
 environment {
   PR_INT_REPO_PATH = "team1-generic-int-den/ART/PRs/${BRANCH_NAME}/${BUILD_NUMBER}/"
 }

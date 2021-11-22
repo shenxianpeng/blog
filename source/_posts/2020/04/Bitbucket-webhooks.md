@@ -21,7 +21,7 @@ By setting Webhook events, you can listen for git push, create Pull requests and
 
 ![Scan Multibranch Pipeline](Bitbucket-webhooks/scan-multibranch.png)
 
-## Setting.
+## Setting
 
 * Webhook name: test-multibranch
 * Webhook URL: http://localhost:8080/multibranch-webhook-trigger/invoke?token=test-multibranch

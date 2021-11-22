@@ -77,6 +77,7 @@ gcc -fPIC -fprofile-arcs -ftest-coverage -c -Wall -Werror main.c
 gcc -fPIC -fprofile-arcs -ftest-coverage -c -Wall -Werror foo.c
 gcc -fPIC -fprofile-arcs -ftest-coverage -o main main.o foo.o
 ```
+
 </details>
 
 通过输出可以看到，这个程序在编译的时候添加了两个编译选项 `-fprofile-arcs` and `-ftest-coverage`。在编译成功后，不仅生成了 `main` and `.o` 文件，同时还生成了两个 `.gcno` 文件.

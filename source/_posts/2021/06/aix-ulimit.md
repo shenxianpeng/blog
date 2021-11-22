@@ -67,10 +67,11 @@ nofiles(descriptors) 2000
 threads(per process) unlimited
 processes(per user)  unlimited
 ```
+
 此时 file(blocks) 已经变成 unlimited 了。再次尝试 git clone
 
 ```bash
-$ git clone -b dev https://<username>:<password>@git.company.com/scm/vmcc/opensrc.git --depth 1
+git clone -b dev https://<username>:<password>@git.company.com/scm/vmcc/opensrc.git --depth 1
 Cloning into 'opensrc'...
 remote: Counting objects: 2390, done.
 remote: Compressing objects: 100% (1546/1546), done.

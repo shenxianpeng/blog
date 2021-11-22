@@ -19,6 +19,7 @@ I used a Jenkins pipeline project, the project is parameterized(string parameter
     * Name: copyright
     * Default Value: 1995—2019
     * Description: Copyright format:1995—2019
+
         ```bash
         stage('change copyrigh') {
             steps {
@@ -26,10 +27,12 @@ I used a Jenkins pipeline project, the project is parameterized(string parameter
             }
         }
         ```
+
 2. Here is the string parameter for build version:
     * Name: build_version
     * Default Value: 1.2.2.1002
     * Description: build version format: 1.2.2.1002
+
         ```bash
         stage('change build version') {
             steps {
@@ -37,10 +40,12 @@ I used a Jenkins pipeline project, the project is parameterized(string parameter
             }
         }
         ```
+
 3. Here is the string parameter for build version:
     * Name: release_month
     * Default Value: May 2019
     * Description: release month format: May 2019
+
         ```bash
         stage('change release month') {
             steps {
@@ -51,7 +56,9 @@ I used a Jenkins pipeline project, the project is parameterized(string parameter
             }
         }
         ```
+
 4. push change to Git
+
     ```bash
     stage('git push to Git') {
         steps {
@@ -66,6 +73,7 @@ I used a Jenkins pipeline project, the project is parameterized(string parameter
     ```
 
 5. Whole Jenkins Pipeline looks like:
+
     ```bash
     pipeline {
         agent {

@@ -50,8 +50,6 @@ _该篇是我在看到这篇非常好的英文文章后翻译而来的。篇幅�
 
 <!-- more -->
 
-## Dockerfiles
-
 ### 使用多阶段的构建
 
 利用多阶段构建的优势来创建更精简、更安全的Docker镜像。
@@ -657,6 +655,7 @@ FROM python:3.9-slim
 
 ARG DATABASE_PASSWORD
 ```
+
 构建
 
 ```bash

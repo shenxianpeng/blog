@@ -78,6 +78,7 @@ gcc -fPIC -fprofile-arcs -ftest-coverage -c -Wall -Werror main.c
 gcc -fPIC -fprofile-arcs -ftest-coverage -c -Wall -Werror foo.c
 gcc -fPIC -fprofile-arcs -ftest-coverage -o main main.o foo.o
 ```
+
 </details>
 
 As you can see from the output, this program is compiled with two compile options `-fprofile-arcs` and `-ftest-coverage`. After successful compilation, not only the `main` and `.o` files are generated, but also two `.gcno` files are generated.
