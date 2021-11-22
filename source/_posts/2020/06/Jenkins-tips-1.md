@@ -34,6 +34,7 @@ set +e
 ls no-exit-file
 whoami
 ```
+
 ![示例一：测试结果](Jenkins-tips-1/1.png)
 
 #### 示例二
@@ -45,6 +46,7 @@ set -e
 ls no-exit-file
 whoami
 ```
+
 ![示例二：测试结果](Jenkins-tips-1/2.png)
 
 ### 方法二
@@ -75,4 +77,5 @@ then
    exit -1
 fi
 ```
+
 ![示例四：测试结果](Jenkins-tips-1/4.png)

@@ -28,7 +28,7 @@ Summarize what did I do from 2019.03 to 2020.07 when I became a Build Release/De
   * Git stats, analyze Bitbucket data with Elastic stack.
   * Monitor legacy build machines status.
   * Product escrow, sync xdemo, provide NFS and SYNC mvopensrc, update Bitbucket Jenkins build status, etc.
- 
+
 * Integration with JFrog Ariifactory
 
   * Establish deploy strategy and directory structure organization.

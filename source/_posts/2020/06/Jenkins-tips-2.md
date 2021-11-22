@@ -27,6 +27,7 @@ author: shenxianpeng
 $ ls
 fail-list-user1.txt  fail-list-user2.txt  fail-list-user3.txt
 ```
+
 要将以上文件通过 Jenkins 分别进行处理，得到用户 user1，user2，user3 然后发送邮件。
 
 ## 解决

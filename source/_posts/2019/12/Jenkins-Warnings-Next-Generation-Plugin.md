@@ -46,7 +46,7 @@ Warnings Next Generation 插件支持以下 Jenkins 项目类型：
   * 问题趋势图
 
 该插件不会运行静态分析，它只是可视化此类工具报告的结果。你仍然需要在构建文件或 Jenkinsfile 中启用和配置静态分析工具。
- 
+
 ## 配置
 
 你可以在 Jenkins 作业配置用户界面中配置插件的每个选项（在自由式，maven 或矩阵作业中）。在这里你需要在工作中添加并启用生成后操作“记录编译器警告和静态分析结果”。
@@ -89,6 +89,7 @@ recordIssues(
     tools: [java(), checkStyle(pattern: 'checkstyle-result.xml', reportEncoding: 'UTF-8')]
 )
 ```
+
 如果使用单个工具，则可以使用属性工具代替工具：
 
 ```bash
@@ -105,6 +106,7 @@ recordIssues enabledForFailure: true, aggregatingResults: true, tool: checkStyle
 这些格式已经在用户界面中注册，你可以直接使用它们。你甚至可以在包含单行 JSON 问题的简单日志文件中提供问题，请参见示例。
 
 这是一个示例步骤，可用于解析本机 JSON（或 XML）格式：
+
 ```bash
 recordIssues(tool: issues())
 ```
@@ -122,6 +124,7 @@ recordIssues(tool: issues())
 #### 以编程方式创建 Groovy 解析器
 
 还可以使用 Groovy 脚本从管道，Jenkins 启动脚本或脚本控制台中创建基于 Groovy 的解析器，请参见以下示例：
+
 ```bash
 def config = io.jenkins.plugins.analysis.warnings.groovy.ParserConfiguration.getInstance()
 

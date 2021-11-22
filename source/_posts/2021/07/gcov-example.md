@@ -34,7 +34,6 @@ If you don't have the environment or don't want to install it, you can just chec
 
 Note: The source code is under the master branch `master`, and the `out` directory under the branch `coverage` is the final report of the results.
 
-
 ```bash
 # This is the version of GCC and lcov on my test environment.
 sh-4.2$ gcc --version
@@ -157,6 +156,7 @@ Overall coverage rate:
   lines......: 91.7% (11 of 12 lines)
   functions..: 100.0% (2 of 2 functions)
 ```
+
 </details>
 
 Executing `make report` to generate an HTML report actually performs two main steps behind this command.
