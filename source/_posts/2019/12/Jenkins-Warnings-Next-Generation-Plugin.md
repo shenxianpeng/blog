@@ -30,6 +30,7 @@ Warnings Next Generation 插件支持以下 Jenkins 项目类型：
 当作为后续构建任务操作（或步骤）添加时，Warnings Next Generation 插件提供以下功能：
 
 1. 该插件会扫描 Jenkins 版本的控制台日志或你工作区中的文件中是否存在任何问题。支持一百多种[报告格式](https://github.com/jenkinsci/warnings-ng-plugin/blob/master/SUPPORTED-FORMATS.md)，它可以检测到的问题包括：
+
   * 来自编译器的错误（C，C＃，Java等）
   * 来自静态分析工具（CheckStyle，StyleCop，SpotBugs 等）的警告
   * 来自复制粘贴检测器（CPD, Simian 等）的重复
@@ -37,6 +38,7 @@ Warnings Next Generation 插件支持以下 Jenkins 项目类型：
   * 在源文件的注释中打开任务
 
 2. 该插件会发布有关在构建中发现的问题的报告，因此可以从以下位置导航到摘要报告，主构建页面。你还可以从那里深入了解细节：
+
   * 发行新的，固定的和未解决的问题
   * 按严重性，类别，类型，模块或程序包分发问题
   * 所有问题的列表，包括来自报告工具的有用评论

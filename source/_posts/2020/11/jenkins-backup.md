@@ -31,11 +31,11 @@ I used the `ThinBackup` plugin, here is my thinBackup configuration.
 * I will daily backup my Jenkins server, from Monday to Saturday.
 * Fo me max number of backup sets is 3, because every backup archive more than 400 MB.
 * Others check boxs
-    * Backup build results
-    * Backup 'userContent' folder
-    * Backup next build number file
-    * Backup plugins archives
-    * Move old backups to ZIP files
+  * Backup build results
+  * Backup 'userContent' folder
+  * Backup next build number file
+  * Backup plugins archives
+  * Move old backups to ZIP files
 
 ## Using shell script backup
 

@@ -62,9 +62,10 @@ author: shenxianpeng
 另外提醒作为 Reviewer 要 Peaceful ！！！在代码审查时注意不要带有“教育”性质的去给别人提出修改建议，那样很容易适得其反。
 
 以下是一些不完全实践，供参考。
+
 ### 流程控制
 
-**规避任何不经 Review 的代码进入到主分支**
+### 规避任何不经 Review 的代码进入到主分支
 
 > 以 Bitucket 为例。GitHub，GitLab 在设置上大同小异。
 
@@ -74,7 +75,7 @@ author: shenxianpeng
 
 ### 自动化检查
 
-**通过CI流水线验证编译和测试**
+### 通过CI流水线验证编译和测试
 
 * 建立自动化构建和测试 Pipeline，这样在创建 Pull Request 的时候可以自动构建、测试以及检查。Jenkins 的 Multi-branch pipeline 可以满足这个需求。
 

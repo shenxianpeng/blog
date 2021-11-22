@@ -19,7 +19,7 @@ _该篇是我在看到这篇非常好的英文文章后翻译而来的。篇幅�
 
 ## 文章目录
 
-**Dockerfiles**
+### Dockerfiles
 
 1. 使用多阶段的构建
 2. 调整 Dockerfile 命令的顺序
@@ -33,7 +33,7 @@ _该篇是我在看到这篇非常好的英文文章后翻译而来的。篇幅�
 10. 理解 `ENTRYPOINT` 和 `CMD` 之间的区别
 11. 添加健康检查 `HEALTHCHECK`
 
-**Images**
+### Images
 
 1. Docker 镜像的版本
 2. 不要在图像中存储密钥
@@ -41,7 +41,7 @@ _该篇是我在看到这篇非常好的英文文章后翻译而来的。篇幅�
 4. 检查和扫描你的 Docker 文件和镜像
 5. 签署和验证图像
 
-**更多实践**
+### 更多实践
 
 1. 使用 `Python` 虚拟环境
 2. 设置内存和CPU的限制
@@ -205,11 +205,11 @@ python       3.9.6-buster        cba42c28d9b8   3 days ago   886MB
 你可以用 `docker history` 命令来测试一下。
 
 ```bash
-$ docker images
+docker images
 REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
 dockerfile   latest    180f98132d02   51 seconds ago   259MB
 
-$ docker history 180f98132d02
+docker history 180f98132d02
 
 IMAGE          CREATED              CREATED BY                                      SIZE      COMMENT
 180f98132d02   58 seconds ago       COPY . . # buildkit                             6.71kB    buildkit.dockerfile.v0
@@ -236,13 +236,13 @@ RUN apt-get update && apt-get install -y netcat
 
 虽然减少层数是个好主意，但更重要的是，这本身不是一个目标，而是减少镜像大小和构建时间的一个副作用。换句话说，比起试图优化每一条命令，你更应该关注前面的三种做法--多阶段构建，Dockerfile命令的顺序，以及使用一个小的基础镜像。
 
-**注意**
+### 注意
 
 1. `RUN`、`COPY` 和 `ADD` 都会创建图层
 2. 每个图层都包含与前一个图层的差异
 3. 图层会增加最终图像的大小
 
-**提示**
+### 提示
 
 1. 合并相关命令
 2. 在创建文件的同一 `RUN` 步骤中删除不必要的文件
@@ -289,7 +289,7 @@ USER app
 验证
 
 ```bash
-$ docker run -i sample id
+docker run -i sample id
 
 uid=1001(app) gid=1001(app) groups=1001(app)
 ```
@@ -623,12 +623,12 @@ ENV DATABASE_PASSWORD "SuperSecretSauce"
 你可以通过环境变量来传递密钥，但它们会在所有子进程、链接的容器和日志以及 `docker inspect` 中可见。要更新它们也很困难。
 
 ```bash
-$ docker run --detach --env "DATABASE_PASSWORD=SuperSecretSauce" python：3.9-slim
+docker run --detach --env "DATABASE_PASSWORD=SuperSecretSauce" python：3.9-slim
 
 d92cf5cf870eb0fdbf03c666e7fcf18f9664314b79ad58bc7618ea3445e39239
 
 
-$ docker inspect --format='{{range .Config.Env}}{{println .}}{{end}}' d92cf5cf870eb0fdbf03c666e7fcf18f9664314b79ad58bc7618ea3445e39239
+docker inspect --format='{{range .Config.Env}}{{println .}}{{end}}' d92cf5cf870eb0fdbf03c666e7fcf18f9664314b79ad58bc7618ea3445e39239
 
 DATABASE_PASSWORD=SuperSecretSauce
 PATH=/usr/local/bin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -746,16 +746,16 @@ IMAGE          CREATED         CREATED BY                                      S
 例如，启动 Docker Swarm 模式。
 
 ```bash
-$ docker swarm init
+docker swarm init
 ```
 
 创建一个 docker 密钥。
 
 ```bash
-$ echo "supersecretpassword" | docker secret create postgres_password -
+echo "supersecretpassword" | docker secret create postgres_password -
 qdqmbpizeef0lfhyttxqfbty0
 
-$ docker secret ls
+docker secret ls
 ID                          NAME                DRIVER    CREATED         UPDATED
 qdqmbpizeef0lfhyttxqfbty0   postgres_password             4 seconds ago   4 seconds ago
 ```
@@ -819,7 +819,7 @@ Linting 是检查源代码中是否存在可能导致潜在缺陷的编程和风
 [Hadolint](https://github.com/hadolint/hadolint) 是最流行的 Dockerfile linter：
 
 ```bash
-$ hadolint Dockerfile
+hadolint Dockerfile
 
 Dockerfile:1 DL3006 warning: Always tag the version of an image explicitly
 Dockerfile:7 DL3042 warning: Avoid the use of cache directory with pip. Use `pip install --no-cache-dir <package>`

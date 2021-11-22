@@ -123,7 +123,7 @@ ZOOM 不用过多介绍了，2020 年因为疫情，业务极具增长的一家�
 
 ## NVIDIA DevOps Engineer
 
-工作地点：Santa Clara, CA 
+工作地点：Santa Clara, CA
 职位链接：https://www.linkedin.com/jobs/view/2249840303/?alternateChannel=search&refId=Y17t502dpy%2FAU43SIQPRIA%3D%3D
 
 工作内容

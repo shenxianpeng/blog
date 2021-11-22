@@ -212,11 +212,11 @@ coverage.css  coverage.html  coverage.test.c.d02a618fa88f46a768e6df00dddaad2a.ht
 
 打开 coverage.html
 
-![](gcov/gcovr.png)
+![summary](gcov/gcovr.png)
 
-![](gcov/gcovr-main.c.png)
+![gcovr-main.c](gcov/gcovr-main.c.png)
 
-![](gcov/gcovr-foo.c.png)
+![gcovr-foo.c](gcov/gcovr-foo.c.png)
 
 ## 更多用法
 

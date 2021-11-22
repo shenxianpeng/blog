@@ -21,7 +21,7 @@ Nightwarch.js 是一个端到端的基于 Node.js 使用 W3C Webdriver （以前
 
 * 新增 BDD describe Interface - 可以同时运行以 BDD 描述和导出接口编写的测试，无需其他配置。
 * 新增 `assert.not` 断言
-  
+
   ```javascript
   // 原来这么写
   browser.assert.elementNotPresent()
@@ -30,7 +30,7 @@ Nightwarch.js 是一个端到端的基于 Node.js 使用 W3C Webdriver （以前
   ```
 * 新增一些 APIs - 比如 `getElementProperty`, `domPropertyContains`, `domPropertyEquals`, `.property`
 
-* 新增了 CLI 选项 
+* 新增了 CLI 选项
   * `--headless` - 以无头模式启动浏览器（Chrome或Firefox）
   * `--timeout` - 设置断言失败之前重试断言的全局超时
 

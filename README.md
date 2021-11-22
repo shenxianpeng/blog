@@ -33,6 +33,7 @@ hexo deploy                                 # Deploy your website
 hexo generate -deploy                       # Generate then deploy
 hexo g -d                                   # Abbreviations generate then deploy
 ```
+
 ## :memo: Article Structure
 
 Articles are saved by folder, with the hierarchy of year/month.

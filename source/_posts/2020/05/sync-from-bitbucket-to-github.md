@@ -10,7 +10,7 @@ date: 2020-05-05 16:54:09
 author: shenxianpeng
 ---
 
-### 背景
+## 背景
 
 最近我们团队需要将一些示例和例子从内部的 Bitbucket 同步到 GitHub。我了解 GitHub 可以创建公共的或是私人的仓库，但我们需要保持以下两点
 
@@ -23,7 +23,7 @@ author: shenxianpeng
 
 ![](sync-from-bitbucket-to-github/sync-diagrom.png)
 
-### 分支策略
+## 分支策略
 
 首先，需要对 Bitbucket 进行分支权限设置
 
@@ -39,7 +39,7 @@ author: shenxianpeng
 
 ![分支策略](sync-from-bitbucket-to-github/branch-strategy.png)
 
-### Jenkins Pipeline
+## Jenkins Pipeline
 
 基于这样的工作不是特别的频繁，也为了方便维护 Jenkins Pipeline 的简单和易于维护，我没有在需要同步的每个仓库里添加 `Jenkinsfile` 或在 Bitbucket 里添加 `webhooks`。有以下几点好处：
 

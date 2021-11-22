@@ -29,7 +29,7 @@ To those who have experience with Bamboo jobs, you know how hard it is to grasp 
 
 #### Secondly, Traceability
 
-Another drawback of configuring Jenkins Jobs through GUI is that it cannot trace the history and see who did what. The ability to see who made changes is very very important for some critical Jenkins jobs, such as build jobs. With Configuration as code, we treat the Jenkins job code the same way as other application code, the benefits are not only on traceability-wise, but also the ability to roll-back to a specific version if needed. 
+Another drawback of configuring Jenkins Jobs through GUI is that it cannot trace the history and see who did what. The ability to see who made changes is very very important for some critical Jenkins jobs, such as build jobs. With Configuration as code, we treat the Jenkins job code the same way as other application code, the benefits are not only on traceability-wise, but also the ability to roll-back to a specific version if needed.
 
 #### Thirdly, Quick Recovery
 
@@ -37,7 +37,7 @@ Using Configuration as code has another benefit, which is the ability to quickly
 
 ## Jenkins Shared Libraries
 
-Just like writing any application code, that we need to create functions, subroutines for reuse and sharing purpose. The same logic applies to the Jenkins configuration code. Functionalities such as sending emails, printing logs, deploying the build to FTP/Artifactory can be put into Jenkins Shared Libraries. Jenkins Shared Libraries is managed in Bitbucket. 
+Just like writing any application code, that we need to create functions, subroutines for reuse and sharing purpose. The same logic applies to the Jenkins configuration code. Functionalities such as sending emails, printing logs, deploying the build to FTP/Artifactory can be put into Jenkins Shared Libraries. Jenkins Shared Libraries is managed in Bitbucket.
 
 So, let’s take a look, …
 
@@ -55,36 +55,36 @@ drwxr-xr-x 1 xshen 1049089    0 Jun  8 12:10 utils/
 ```
 
 As you can see, these groovy files are so-called shared libraries that complete works such as sending emails, git operations, updating opensource and so on.
-So, it is becoming very clear why we want to use shared libraries because it can reduce duplicate code. 
+So, it is becoming very clear why we want to use shared libraries because it can reduce duplicate code.
 
-It is also easier to maintain because instead of updating several places, we just need to update the shared libraries if any changes required. The last but not least, it encourages reuse and sharing cross teams. For example, the shared libraries I created are also used other team. 
+It is also easier to maintain because instead of updating several places, we just need to update the shared libraries if any changes required. The last but not least, it encourages reuse and sharing cross teams. For example, the shared libraries I created are also used other team.
 
 ## Multi-branch pipeline
 
-Next, Multi-branch pipeline. Some of you may have seen the same diagram like this. 
+Next, Multi-branch pipeline. Some of you may have seen the same diagram like this.
 
 ![Pull Request diagram](jenkins-best-practice/pull-request.png)
 
 In this picture, the pull request will trigger an automatic build, which is very helpful to engineers because their changes will not be merged to the main branch unless it passes the build test and smoke test.
 
-So, I will share more detailed information here with you. 
+So, I will share more detailed information here with you.
 
-The thing works behind the scene is called Jenkins Multi-branch Pipeline. Before getting into the details, let’s first see what it looks like. 
+The thing works behind the scene is called Jenkins Multi-branch Pipeline. Before getting into the details, let’s first see what it looks like.
 
 ![Multi-Branch Pipeline Branches](jenkins-best-practice/multi-branches.png)
 > Note: If your branch or Pull Request has been deleted, the branch or Pull Request will either be removed from the multi-branch Job or show a crossed-out status as shown above, this depending on your Jenkins setting.
 
 ![Multi-Branch Pipeline Pull Requests](jenkins-best-practice/multi-pull-request.png)
 
-So, as you can see from this page, there are multi Jenkins jobs. That is because for each bugfix or feature branch in Bitbucket, this multi-branch pipeline will automatically create a Jenkins job for them. 
+So, as you can see from this page, there are multi Jenkins jobs. That is because for each bugfix or feature branch in Bitbucket, this multi-branch pipeline will automatically create a Jenkins job for them.
 
-So, when developers complete their works, they can use these Jenkins jobs to create official build by themselves without the need of involving a build engineer. However, this was not the case in the past. At the time that we did not have these self-service jobs, developers always ask help from me, the build engineer to create a build for them. We have around twenty U2 developers in the team, you can image the efforts needed to satisfy these requirements. 
+So, when developers complete their works, they can use these Jenkins jobs to create official build by themselves without the need of involving a build engineer. However, this was not the case in the past. At the time that we did not have these self-service jobs, developers always ask help from me, the build engineer to create a build for them. We have around twenty U2 developers in the team, you can image the efforts needed to satisfy these requirements.
 
-So, I just covered the first benefit of this multi-branch pipeline, which creates a self-service for the team, save their time, save my time. 
+So, I just covered the first benefit of this multi-branch pipeline, which creates a self-service for the team, save their time, save my time.
 
 Another benefit of this self-service build and install is that our main branch will be more stable and save us from the time spent on investigating whose commit was problematic because only changes passed build, install and smoke test will be merged into the main branch.
 
-Now, you may wonder the value of this work, like how many issues have been discovered by this auto build and install test. 
+Now, you may wonder the value of this work, like how many issues have been discovered by this auto build and install test.
 
 Taking our current development as an example, there were about 30 pull requests merged last month, and six of them were found has built problems on some platforms.
 

@@ -107,6 +107,7 @@ But when I run `sonar-scanner.bat` in the command line, the code coverage result
 INFO: Analysing [C:\workspace\xvm-ide\client\coverage\lcov.info]
 WARN: Could not resolve 11 file paths in [C:\workspace\xvm-ide\client\coverage\lcov.info]
 ```
+
 There are some posts related to this problem, for example, https://github.com/kulshekhar/ts-jest/issues/542, but no one works in my case.
 
 ```bash

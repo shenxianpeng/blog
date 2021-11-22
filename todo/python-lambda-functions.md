@@ -12,7 +12,7 @@ author: Joe Marini
 如果你用其他语言（例如JavaScript，C＃或Java）进行过任何编程，则可能已经看过或使用过匿名函数。 Python 也支持这些功能，它们被称为 lambda 函数。
 
 * Small, anonymours functions
-* Can be passed as arguments 
+* Can be passed as arguments
 
 Lambda 函数可以作为参数传递给其他函数以执行某些处理工作，就像 JavaScript 语言中的回调函数一样。通常，你会在定义整个单独功能的情况下不必要地增加代码的复杂性并降低可读性的情况下使用它们。通过使用关键字 lambda 定义 Lambda，后跟 lambda 函数采用的所有参数，然后是表达式。因此，让我们看一下它们在实际中的用法，因为这通常是理解某些事物的最佳方法。
 
@@ -35,7 +35,7 @@ print(list(map(CelsiusToFahrenheit, ctemps)))
 # 使用 lambdas 来实现同样的转换
 print(list(map(lambda t: (t-32) * 5/9, ftemps)))
 print(list(map(lambda t: (t * 9/5) + 32, ctemps)))
-``` 
+```
 
 我将去调试视图。而且，请记住，如果你不想使用 VS Code，则可以从终端命令行运行。因此，我将运行它。并且，你可以在这里看到每个温度都已转换的结果。
 

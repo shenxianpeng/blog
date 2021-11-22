@@ -52,6 +52,7 @@ default:
         stack = 65536
         nofiles = 2000
 ```
+
 将上述的值 fsize = 2097151 改成 fsize = -1 就将解除了文件块大小的限制了。修改完成后，重新登录，再次执行 `ulimit -a`
 
 ```bash
