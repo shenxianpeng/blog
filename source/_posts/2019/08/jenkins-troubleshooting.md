@@ -5,7 +5,7 @@ date: 2019-08-16
 tags:
 - Jenkins
 - Troubleshooting
-categories: 
+categories:
 - Jenkins
 keywords:
 - Jenkins
@@ -44,28 +44,28 @@ using credential d1cbab74-823d-41aa-abb7
   > C:\Program Files\Git\bin\git.exe fetch --no-tags --progress https://git.company.com/scm/db/blog.git +refs/heads/develop:refs/remotes/origin/develop
  ERROR: Error cloning remote repo 'origin'
  hudson.plugins.git.GitException: Command "C:\Program Files\Git\bin\git.exe fetch --no-tags --progress https://git.company.com/scm/db/blog.git +refs/heads/develop:refs/remotes/origin/develop" returned status code 130:
- stdout: 
- stderr: remote: Counting objects: 1           
-remote: Counting objects: 242690, done.        
- remote: Compressing objects:   0% (1/75028)           
-remote: Compressing objects:   1% (751/75028)           
-remote: Compressing objects:   2% (1501/75028)           
-remote: Compressing objects:   3% (2251/75028)           
-remote: Compressing objects:   4% (3002/75028)           
-remote: Compressing objects:   5% (3752/75028)           
+ stdout:
+ stderr: remote: Counting objects: 1
+remote: Counting objects: 242690, done.
+ remote: Compressing objects:   0% (1/75028)
+remote: Compressing objects:   1% (751/75028)
+remote: Compressing objects:   2% (1501/75028)
+remote: Compressing objects:   3% (2251/75028)
+remote: Compressing objects:   4% (3002/75028)
+remote: Compressing objects:   5% (3752/75028)
 ... ...
-remote: Compressing objects: 100% (75028/75028), done.        
- Receiving objects:   0% (1/242690)   
-Receiving objects:   1% (2427/242690)   
-Receiving objects:   1% (4762/242690), 972.00 KiB | 949.00 KiB/s   
-Receiving objects:   2% (4854/242690), 972.00 KiB | 949.00 KiB/s   
-Receiving objects:   3% (7281/242690), 1.38 MiB | 919.00 KiB/s   
-Receiving objects:   3% (8998/242690), 1.82 MiB | 645.00 KiB/s   
-Receiving objects:   4% (9708/242690), 1.82 MiB | 645.00 KiB/s   
-Receiving objects:   4% (9778/242690), 1.82 MiB | 645.00 KiB/s   
-Receiving objects:   5% (12135/242690), 1.82 MiB | 645.00 KiB/s   
+remote: Compressing objects: 100% (75028/75028), done.
+ Receiving objects:   0% (1/242690)
+Receiving objects:   1% (2427/242690)
+Receiving objects:   1% (4762/242690), 972.00 KiB | 949.00 KiB/s
+Receiving objects:   2% (4854/242690), 972.00 KiB | 949.00 KiB/s
+Receiving objects:   3% (7281/242690), 1.38 MiB | 919.00 KiB/s
+Receiving objects:   3% (8998/242690), 1.82 MiB | 645.00 KiB/s
+Receiving objects:   4% (9708/242690), 1.82 MiB | 645.00 KiB/s
+Receiving objects:   4% (9778/242690), 1.82 MiB | 645.00 KiB/s
+Receiving objects:   5% (12135/242690), 1.82 MiB | 645.00 KiB/s
 ... ...
-Receiving objects:  86% (209321/242690), 1.01 GiB | 2.08 MiB/s   
+Receiving objects:  86% (209321/242690), 1.01 GiB | 2.08 MiB/s
  	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2042)
  	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandWithCredentials(CliGitAPIImpl.java:1761)
  	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.access$400(CliGitAPIImpl.java:72)
