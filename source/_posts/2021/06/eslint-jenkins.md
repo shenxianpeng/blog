@@ -30,6 +30,7 @@ Finally, I find it. (Stackoverflow [URL](https://stackoverflow.com/questions/343
 ```java
 System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 ```
+
 5. After that, it will load CSS and JS.
 
 According to Jenkins's new [Content Security Policy](https://www.jenkins.io/doc/book/security/configuring-content-security-policy/) and I saw `No frames allowed`.

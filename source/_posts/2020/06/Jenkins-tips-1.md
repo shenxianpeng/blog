@@ -30,9 +30,9 @@ author: shenxianpeng
 执行的时候如果出现了返回值为非零（即命令执行失败）将会忽略错误，继续执行下面的脚本。
 
 ```bash
-$ set +e
-$ ls no-exit-file
-$ whoami
+set +e
+ls no-exit-file
+whoami
 ```
 ![示例一：测试结果](Jenkins-tips-1/1.png)
 
@@ -41,9 +41,9 @@ $ whoami
 执行的时候如果出现了返回值为非零，整个脚本就会立即退出。
 
 ```bash
-$ set -e
-$ ls no-exit-file
-$ whoami
+set -e
+ls no-exit-file
+whoami
 ```
 ![示例二：测试结果](Jenkins-tips-1/2.png)
 
@@ -55,7 +55,7 @@ $ whoami
 
 ```bash
 # 做可能会失败，但并不关注失败的命令时
-$ ls no-exit-file || true
+ls no-exit-file || true
 ```
 
 ![示例三：测试结果](Jenkins-tips-1/3.png)
@@ -67,12 +67,12 @@ $ ls no-exit-file || true
 ```bash
 # 做可能会失败的事情，并关注失败的命令
 # 如果存在错误，则会创建变量 error 并将其设置为 true
-$ ls no-exit-file || error=true
+ls no-exit-file || error=true
 
 # 然后去判断 error 变量的值。如果为真，则退出 Shell
-$ if [ $error ]
-$ then
-$    exit -1
-$ fi
+if [ $error ]
+then
+   exit -1
+fi
 ```
 ![示例四：测试结果](Jenkins-tips-1/4.png)

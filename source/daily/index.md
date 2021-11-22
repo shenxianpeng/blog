@@ -6,7 +6,7 @@ title: Daily
 
 ---
 
-## 11/10/2021 - Record every time I was praised.
+## 11/10/2021 - Record every time I was praised
 
 I would record every time I was praised, so that when I failed on something, I will look back to see these praised to gain confidence.
 
@@ -46,7 +46,7 @@ I a little upset when I heard that he told me he would leave Rocket. As we talk 
 
 Since age and experience are no longer our advantages in Dev, the new challenges will help him get more opportunities in DevOps than he did in his job here, so he made a wise choice, and I hope he will have better development in the future.
 
-## 11/1/2020 - Learn/Test English/Update decorate progress.
+## 11/1/2020 - Learn/Test English/Update decorate progress
 
 > Sunday, sunny.
 

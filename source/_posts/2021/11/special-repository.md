@@ -26,7 +26,7 @@ author: shenxianpeng
 
 针对这个功能 GitHub 上有很多丰富多彩的个人介绍（如下）。更多灵感可以参看这个链接：https://awesomegithubprofile.tech/
 
-![](special-repository/profile.png)
+![profile](special-repository/profile.png)
 
 ## 如何自动获取文章并更新 `README.md`
 

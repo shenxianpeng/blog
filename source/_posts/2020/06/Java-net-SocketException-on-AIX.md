@@ -75,7 +75,7 @@ Error occurred for request PUT /artifactory/generic-int-den/database/develop/10/
  	at org.jfrog.build.extractor.clientConfiguration.client.ArtifactoryBuildInfoClient.doDeployArtifact(ArtifactoryBuildInfoClient.java:379)
  	at org.jfrog.build.extractor.clientConfiguration.client.ArtifactoryBuildInfoClient.deployArtifact(ArtifactoryBuildInfoClient.java:367)
  	at org.jfrog.build.extractor.clientConfiguration.util.spec.SpecDeploymentConsumer.consumerRun(SpecDeploymentConsumer.java:39)
- 	... 2 more 
+ 	... 2 more
 Failed uploading artifacts by spec
 ```
 
@@ -156,7 +156,7 @@ set SSL_CERT_FILE=/var/ssl/cacert.pem
 
 下表显示了系统属性对 SSLContext.getInstance("TLS") 的影响
 
-| Property value setting	 | Protocol enabled | 
+| Property value setting | Protocol enabled |
 |---|---|
 | false | TLS V1.0 |
 | true | TLS V1.0, V1.1, and V1.2 |
