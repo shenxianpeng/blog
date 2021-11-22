@@ -8,7 +8,7 @@ A brand new default theme for [Hexo].
 
 ### Install
 
-``` bash
+```bash
 $ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
 ```
 

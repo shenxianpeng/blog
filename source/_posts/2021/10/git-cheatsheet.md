@@ -132,7 +132,7 @@ git reset HEAD file_name
 git reset HEAD -p
 ```
 
-## `git commit`
+## `git commit --amend`
 
 ```bash
 # 修改最近的提交信息
@@ -210,7 +210,6 @@ git push -u origin branch_name
 # 删除远程仓库分支
 git push --delete origin branch_name
 ```
-
 
 ## `git remote`
 

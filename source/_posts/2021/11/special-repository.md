@@ -20,24 +20,23 @@ author: shenxianpeng
 1. 通过 Workflow 自动获取最新的文章的标题和地址并更新 `README.md`
 2. 只有当有新的文章发布的时候才触发上面的自动获取文章 Workflow
 
-_如果你不了解为什么 GitHub 个人主页可以显示这些丰富的信息，这里做个简单介绍：这其实是 GitHub 早在 2020 年发布的一个新功能。即创建一个与你的 GitHub 账号同名的仓库，添加的 `README.md` 会在 GitHub 个人主页显示。_
+如果你不了解为什么 GitHub 个人主页可以显示这些丰富的信息，这里做个简单介绍：这其实是 GitHub 早在 2020 年发布的一个新功能。即创建一个与你的 GitHub 账号同名的仓库，添加的 `README.md` 会在 GitHub 个人主页显示。
 
-_举个例子：如果你的 GitHub 名叫 `gebilaowang`，那么当你创建一个叫 `gebilaowang` 的 Git 仓库，添加 README.md 后就会在主页显示。_
+举个例子：如果你的 GitHub 名叫 `gebilaowang`，那么当你创建一个叫 `gebilaowang` 的 Git 仓库，添加 README.md 后就会在主页显示。
 
-_针对这个功能 GitHub 上有很多丰富多彩的个人介绍（如下）。更多灵感可以参看这个链接：https://awesomegithubprofile.tech/_
+针对这个功能 GitHub 上有很多丰富多彩的个人介绍（如下）。更多灵感可以参看这个链接：https://awesomegithubprofile.tech/
 
 ![](special-repository/profile.png)
-
 
 ## 如何自动获取文章并更新 `README.md`
 
 这一点要表扬一下 GitHub Actions 这个功能，在 GitHub 上面有非常丰富的针对 Actions 开发的小功能。
 
-_我也是其中之一，最近我和另外一个贡献者在维护 [C/C++ Lint Action](https://github.com/marketplace/actions/c-c-lint-action) 如果喜欢的话不妨点个 Star 支持一下 :)_
+另外：最近我和另外一个贡献者在维护 [C/C++ Lint Action](https://github.com/marketplace/actions/c-c-lint-action) 如果喜欢的话不妨点个 Star 支持一下。
 
 因此这个自动获取最新文章标题和链接的轮子也不用造了，我用了一个开源项目叫 [blog-post-workflow](https://github.com/gautamkrishnar/blog-post-workflow)，它可以通过 RSS（订阅源）来获取到博客的最新文章。
 
-_它不但支持博客还支持 StackOverflow 以及 Youtube 视频等资源。_
+它不但支持博客还支持 StackOverflow 以及 Youtube 视频等资源。
 
 然后在 GitHub 同名的仓库下添加一个 Workflow YML `.github/workflows/blog-post-workflow.yml` 。
 

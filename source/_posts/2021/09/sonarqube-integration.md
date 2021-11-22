@@ -19,7 +19,7 @@ For example, the demo project name and ID in SonarQube are both `test-demo`, and
 
 1. Add the following to your `pom.xml` file:
 
-    ```
+    ```xml
     <properties>
       <sonar.projectKey>test-demo</sonar.projectKey>
     </properties>
@@ -27,7 +27,7 @@ For example, the demo project name and ID in SonarQube are both `test-demo`, and
 
 2. Add the following code to your `Jenkinsfile`:
 
-    ```
+    ```Jenkinsfile
     stage('SonarQube Analysis') {
       def mvn = tool 'Default Maven';
       withSonarQubeEnv() {
@@ -40,7 +40,7 @@ For example, the demo project name and ID in SonarQube are both `test-demo`, and
 
 1. Add the following to your `build.gradle` file:
 
-    ```
+    ```gradle
     plugins {
       id "org.sonarqube" version "3.3"
     }
@@ -54,7 +54,7 @@ For example, the demo project name and ID in SonarQube are both `test-demo`, and
 
 2. Add the following code to your `Jenkinsfile`:
 
-    ```
+    ```Jenkinsfile
     stage('SonarQube Analysis') {
       withSonarQubeEnv() {
         sh "./gradlew sonarqube"
@@ -66,13 +66,13 @@ For example, the demo project name and ID in SonarQube are both `test-demo`, and
 
 1. Create a `sonar-project.properties` file in your repository and paste the following code:
 
-    ```
+    ```text
     sonar.projectKey=test-demo
     ```
 
 2. Add the following code to your `Jenkinsfile`:
 
-    ```
+    ```Jenkinsfile
     stage('SonarQube Analysis') {
       def scannerHome = tool 'SonarScanner';
       withSonarQubeEnv() {

@@ -17,30 +17,30 @@ Just in my case, I cloned a git repo exists problems on the Windows platform wit
 Case 1: when you not already cloned a repository
 
 ```bash
-$ mkdir git-src
-$ cd git-src
-$ git init
-$ git config core.sparseCheckout true
-$ echo "/assets/" >> .git/info/sparse-checkout
-$ git remote add origin git@github.com:shenxianpeng/shenxianpeng.git
-$ git fetch
-$ git checkout master
+mkdir git-src
+cd git-src
+git init
+git config core.sparseCheckout true
+echo "/assets/" >> .git/info/sparse-checkout
+git remote add origin git@github.com:shenxianpeng/shenxianpeng.git
+git fetch
+git checkout master
 ```
 
 Case 2: when you already cloned a repository
 
 ```bash
-$ cd git-src
-$ git config core.sparseCheckout true
-$ echo "/assets/" >> .git/info/sparse-checkout
-$ rm -rf <other-file/folder-you-dont-need>
-$ git checkout
+cd git-src
+git config core.sparseCheckout true
+echo "/assets/" >> .git/info/sparse-checkout
+rm -rf <other-file/folder-you-dont-need>
+git checkout
 ```
 
 ## Disable git sparse-checkout
 
 ```bash
-$ git config core.sparseCheckout false
-$ git read-tree --empty
-$ git reset --hard
+git config core.sparseCheckout false
+git read-tree --empty
+git reset --hard
 ```

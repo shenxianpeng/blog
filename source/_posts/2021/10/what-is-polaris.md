@@ -21,7 +21,7 @@ author: shenxianpeng
 
 ## Polaris 支持哪些语言？
 
-```
+```text
 C/C++
 C#
 Java
@@ -62,7 +62,6 @@ Swift
 
 运行 `polaris configure` 以确认你的文件在语法上是正确的并且 `polaris` 没有任何问题。
 
-
 #### Capture - 捕获
 
 YAML 配置文件可以包含三种类型的 Capture：
@@ -78,7 +77,6 @@ YAML 配置文件可以包含三种类型的 Capture：
 | C#, Visual Basic. | 如果想获得更准确的结果使用 Build 捕获；如果寻求简单使用 Buildless 捕获 |
 | Java | 如果想获得更准确的结果使用 Build 捕获；如果寻求简单使用 Buildless 捕获  |
 | JavaScript,TypeScript | 使用 Filesystem 捕获；如果寻求简单使用 Buildless 捕获
-
 
 #### Analyze - 分析
 

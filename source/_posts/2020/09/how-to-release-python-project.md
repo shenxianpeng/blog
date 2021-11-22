@@ -131,7 +131,7 @@ python -m pydoc -w ..\   # 生成全部文档
 
 比如一个项目从准备发布到正式发布有四个阶段：Alpha, Beta, 候选发布以及正式发布。假如正式发布的版本号是 1.1.0 版本，根据以下的版本标识的规范：
 
-```
+```text
 X.YaN   # Alpha release
 X.YbN   # Beta release
 X.YrcN  # Release Candidate
@@ -167,9 +167,3 @@ Final release 版本号 `1.1.0, 1.1.1, 1.1.N...`
 > 如何选项 License https://choosealicense.com/licenses\
 > 如何选项 License GitHub 仓库 https://github.com/github/choosealicense.com\
 > 如何选项 License 附录 https://choosealicense.com/appendix \
-
-
-
-
-
-

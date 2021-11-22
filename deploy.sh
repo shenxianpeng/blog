@@ -19,7 +19,7 @@ kill_port_4000_pid()
         echo "port 4000 is using by another process."
         for pid in $PIDS
         do
-            tskill $pid
+            tskill "$pid"
         done
     fi
 }

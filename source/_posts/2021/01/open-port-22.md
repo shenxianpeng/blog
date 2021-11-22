@@ -16,12 +16,12 @@ Some errors like: Can not connect to the host XXXX 22 port.
 I log into the build machine find port 22 with the below command
 
 ```bash
-$ netstat -aon|findstr "22"
+netstat -aon|findstr "22"
 ```
 
 but not found port 22 is inbound.
 
-## inbound port 22
+## Inbound port 22
 
 There's a lot of articles will tell you how to open ports on Windows. see this one
 

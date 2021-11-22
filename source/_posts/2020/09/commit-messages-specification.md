@@ -15,7 +15,7 @@ author: shenxianpeng
 
 通过下面两个例子来看看没规范和有规范的对比，以及有规范能带来哪些好处。
 
-**提交信息 没规范 vs 有规范**
+### 提交信息 没规范 vs 有规范
 
 ![没有规范的 Git 提交信息](commit-messages-specification/bad-commit-message.png)
 
@@ -38,7 +38,7 @@ author: shenxianpeng
 3. 提供自动化生成 `CHANGELOGs` 的能力。
 4. 最后，这也是体现了一个程序员的自我修养。
 
-**分支创建 没规范 vs 有规范**
+### 分支创建 没规范 vs 有规范
 
 如果创建分支没有规范，不加以限制，很多分支会是这样的 `ABC-1234-Test`, `ABC-2345-demo`, `Hotfix-ABC-3456`, `Release-1.0`，甚至更糟。当分支很多的时候会显得混乱，并且不方便检索。
 
@@ -104,13 +104,13 @@ Bitbucket 使用的是 [Yet Another Commit Checker](https://mohamicorp.atlassian
 
 通过以上设置，就将提交信息限定为如下格式：
 
-```
+```text
 ABCD-1234 Balabala......
 ```
 
 再比如这个更为复杂的正则表达式，如下
 
-```
+```text
 ^[A-Z-0-9]+ .*(?<type>chore|ci|docs|feat|fix|perf|refactor|revert|style|test|Bld|¯\\_\(ツ\)_\/¯)(?<scope>\(\w+\)?((?=:\s)|(?=!:\s)))?(?<breaking>!)?(?<subject>:\s.*)?|^(?<merge>Merge.* \w+)|^(?<revert>Revert.* \w+)
 ```
 
@@ -118,7 +118,7 @@ ABCD-1234 Balabala......
 
 通过下面的测试用例来具体理解上述的正则表达式会产生什么样的提交信息规范限制。
 
-```
+```text
 # 测试通过的用例
 NV-1234 chore: change build progress
 DT-123456 docs: update xdemo usage
@@ -149,7 +149,7 @@ DT-15567 code merge by Peter Shen.
 
 这个设置是用来提示错误信息的。当团队成员在提交时，如果不符合规范提交失败了，会给出合理的提示信息，这有助于找到问题所在。比如提交失败了，会在命令行里看到如下信息：
 
-```
+```text
 Commit Message Specifications:
 
 <Jira-ticket-number> <type>: <Description>
@@ -189,7 +189,7 @@ chore: Changes to the build process, .gitignore or auxiliary tools and libraries
 
 这个设置是提示推送不规范的分支时的错误信息。预先设置好相应的错误提示信息，有助于用户快速找到推送失败的原因。比如下面的错误信息：
 
-```
+```text
 Branches must begin with these types: bugfix/ feature/ release/ hotfix/
 ```
 

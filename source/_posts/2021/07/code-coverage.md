@@ -45,15 +45,15 @@ author: shenxianpeng
 
 代码覆盖率测量主要有以下三种方式：
 
-**1. Source code instrumentation - 源代码检测**
+### 1. Source code instrumentation - 源代码检测
 
 将检测语句添加到源代码中，并使用正常的编译工具链编译代码以生成检测的程序集。这是我们常说的插桩，Gcov 是属于这一类的代码覆盖率工具。
 
-**2. Runtime instrumentation - 运行时收集**
+### 2. Runtime instrumentation - 运行时收集
 
 这种方法在代码执行时从运行时环境收集信息以确定覆盖率信息。以我的理解 JaCoCo 和 Coverage 这两个工具的原理属于这一类别。
 
-**3. Intermediate code instrumentation - 中间代码检测**
+### 3. Intermediate code instrumentation - 中间代码检测
 
 通过添加新的字节码来检测编译后的类文件，并生成一个新的检测类。说实话，我 Google 了很多文章并找到确定的说明哪个工具是属于这一类的。
 

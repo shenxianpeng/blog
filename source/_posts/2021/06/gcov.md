@@ -183,7 +183,7 @@ g++ -fprofile-arcs -ftest-coverage -O0 test.c -o test
 
 4. 执行 `gcovr -r .` 生成报告
 
-```
+```text
 -sh-4.2$ gcovr -r .
 ------------------------------------------------------------------------------
                            GCC Code Coverage Report
