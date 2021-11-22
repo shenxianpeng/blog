@@ -156,6 +156,7 @@ Overall coverage rate:
   lines......: 91.7% (11 of 12 lines)
   functions..: 100.0% (2 of 2 functions)
 ```
+
 </details>
 
 执行 `make report` 来生成 HTML 报告，这条命令的背后实际上主要执行了以下两个步骤：

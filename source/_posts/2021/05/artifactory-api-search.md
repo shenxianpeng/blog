@@ -72,6 +72,7 @@ for RESULT in $RESULTS ; do
   curl -u $USERNAME:$PASSWORD -O $PATH_TO_FILE
 done
 ```
+
 Then you just use this as: `sh download.sh ${USERNAME} ${PASSWORD} ${REPO_PATH} ${N_DAY_AGO}`
 
 ### 2. Get all artifacts matching the given Ant path pattern

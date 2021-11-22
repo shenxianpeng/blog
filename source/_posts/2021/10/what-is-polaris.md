@@ -95,6 +95,7 @@ analyze:
 <!-- more -->
 
 示例1：一个C/C++ 项目
+
 ```yml
 version: "1"
 project:

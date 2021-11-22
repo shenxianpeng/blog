@@ -28,6 +28,7 @@ Nightwarch.js 是一个端到端的基于 Node.js 使用 W3C Webdriver （以前
   // 现在可以这么写
   browser.assert.not.elementPresent('.not_present')
   ```
+
 * 新增一些 APIs - 比如 `getElementProperty`, `domPropertyContains`, `domPropertyEquals`, `.property`
 
 * 新增了 CLI 选项

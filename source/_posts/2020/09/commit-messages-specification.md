@@ -195,7 +195,6 @@ Branches must begin with these types: bugfix/ feature/ release/ hotfix/
 
 告诉用户，分支必须以 `bugfix/` `feature/` `release/` `hotfix/` 开头。
 
-
 ### 6. 其他设置
 
 另外还有一些其他设置，比如关联的 Jira 单子必须处于什么样的状态。这个可以防止已经是关闭状态 Jira 单子，开发还往上面偷偷的提交代码，这样可能导致未经测试的代码进入仓库。
