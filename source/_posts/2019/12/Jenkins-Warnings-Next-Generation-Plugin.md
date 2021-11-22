@@ -94,6 +94,7 @@ recordIssues(
 ```bash
 recordIssues enabledForFailure: true, aggregatingResults: true, tool: checkStyle(pattern: 'checkstyle-result.xml')
 ```
+
 ### 创建对自定义工具的支持
 
 如果你的项目中没有内置工具，则可以通过多种方式添加其他工具。

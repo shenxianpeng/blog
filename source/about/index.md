@@ -21,6 +21,7 @@ Follow me on:
 Hi, 我是沈显鹏，一名 DevOps 工程师。我在这个博客上分享我在 CI/CD 和 DevOps 领域的学习成果。
 
 欢迎关注我的
+
 * 👨🏼‍💻微信公众号「DevOps攻城狮」
 * 🚩[知乎](https://www.zhihu.com/people/shenxianpeng)
 * 🤙🏻[领英](https://www.linkedin.com/in/xianpeng-shen/)

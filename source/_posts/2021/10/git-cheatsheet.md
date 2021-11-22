@@ -116,6 +116,7 @@ git mv old_file_name new_file_name
 ```
 
 ## `git checkout`
+
 ```bash
 # 切换分支
 git checkout branch_name
