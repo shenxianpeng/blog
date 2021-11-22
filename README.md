@@ -39,7 +39,6 @@ Articles are saved by folder, with the hierarchy of year/month.
 
 Follow the following steps when creating an article, for example: `abc.md` in August 2019.
 
-
 1. use command `hexo new "abc"` to generate `abc.md`
 2. manually create `2021/05/` under `source/_post` folder
 3. move `abc.md` to `source/_post/2021/05/`

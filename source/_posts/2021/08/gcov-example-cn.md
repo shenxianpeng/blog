@@ -34,7 +34,6 @@ author: shenxianpeng
 
 注：主分支 `master` 下面放的是源码，分支 `coverage` 下的 `out` 目录是最终的结果报告。
 
-
 ```bash
 # 这是我的测试环境上的 GCC 和 lcov 的版本
 sh-4.2$ gcc --version
@@ -215,4 +214,3 @@ rm -rf main *.o *.so *.gcno *.gcda *.gcov coverage.info out
 * 关于代码覆盖率(About Code Coverage)：https://shenxianpeng.github.io/2021/07/code-coverage/
 * 在 Linux 内核中使用 Gcov 的示例：https://01.org/linuxgraphics/gfx-docs/drm/dev-tools/gcov.html
 * 当构建环境与测试环境不同时设置环境变量：https://gcc.gnu.org/onlinedocs/gcc/Cross-profiling.html#Cross-profiling
-

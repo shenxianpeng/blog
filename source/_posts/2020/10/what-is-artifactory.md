@@ -146,7 +146,7 @@ ad62c72fb097fc4aa7723e1fc72b08a6ebcacfd1 *test.zip
 
 Jenkins Pipeline 里的环境变量设置如下：
 
-```
+```Jenkinsfile
 environment {
   INT_REPO_PATH = "team1-generic-int-den/ART/${BRANCH_NAME}/${BUILD_NUMBER}/"
 }

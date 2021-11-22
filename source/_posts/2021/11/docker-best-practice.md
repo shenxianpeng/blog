@@ -9,7 +9,6 @@ date: 2021-10-31 10:57:16
 author: shenxianpeng
 ---
 
-
 本文探讨了在编写 Dockerfiles 和使用 Docker 时应遵循的一些最佳实践。
 
 所列举的大多数做法适用于所有的开发人员，无论使用何种语言。但有一些做法只适用于 Python 相关的开发程序。
@@ -504,7 +503,6 @@ CONTAINER ID   IMAGE         COMMAND                  CREATED              STATU
 
 > 省略了部分输出，因为它包含整个 HTML 输出。
 
-
 ```bash
 ❯ docker inspect --format "{{json .State.Health }}" ab94f2ac7889
 {
@@ -581,7 +579,6 @@ docker build -t web-prod-a072c4e5d94b5a769225f621f08af3d4bf820a07-0.1.4 .
 4. 语义学版本： 0.1.4
 
 选择一个标签方案并与之保持一致是至关重要的。由于提交哈希值（commit hashes）使得人们可以很容易地将图像标签与代码联系起来，因此建议将它们纳入你的标签方案。
-
 
 ### 不要在镜像中存储机密信息
 
@@ -663,7 +660,7 @@ ARG DATABASE_PASSWORD
 构建
 
 ```bash
-$ docker build --build-arg "DATABASE_PASSWORD=SuperSecretSauce" .
+docker build --build-arg "DATABASE_PASSWORD=SuperSecretSauce" .
 ```
 
 如果你只需要临时使用密钥作为构建的一部分。例如，用于克隆私有 repo 或下载私有软件包的 SSH 密钥。你应该使用多阶段构建，因为构建者的历史会被临时阶段忽略。
@@ -772,7 +769,6 @@ qdqmbpizeef0lfhyttxqfbty0   postgres_password             4 seconds ago   4 seco
 * Google Kubernetes引擎 - [与其他产品一起使用密钥管理器](https://cloud.google.com/secret-manager/docs/using-other-products#google-kubernetes-engine)
 * Nomad - [Vault 集成和检索动态密钥](https://learn.hashicorp.com/tutorials/nomad/vault-postgres?in=nomad/integrate-vault)
 
-
 ### 使用 .dockerignore 文件
 
 我们已经提到过几次使用 .dockerignore 文件。这个文件用来指定你不希望被添加到发送给 Docker 守护进程的初始构建上下文中的文件和文件夹，后者将构建你的镜像。
@@ -867,7 +863,6 @@ notary.docker.io does not have trust data for docker.io/namespace/unsigned-image
 
 当从 Docker Hub下 载图像时，确保使用官方图像或来自可信来源的经过验证的图像。较大的团队应该使用他们自己的内部私有容器仓库。
 
-
 ## 更多实践
 
 ### 使用Python虚拟环境
@@ -938,13 +933,12 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 ### 设置内存和CPU的限制
 
-
 限制 Docker 容器的内存使用是一个好主意，特别是当你在一台机器上运行多个容器时。这可以防止任何一个容器使用所有可用的内存，从而削弱其他容器的功能。
 
 限制内存使用的最简单方法是在 Docker cli 中使用 `--memory` 和 `--cpu` 选项。
 
 ```bash
-$ docker run --cpus=2 -m 512m nginx
+docker run --cpus=2 -m 512m nginx
 ```
 
 上述命令将容器的使用限制在 2 个 CPU 和 512 兆的主内存。
@@ -980,7 +974,6 @@ services:
 然后你可以配置 Docker 守护进程，将你的日志信息发送到一个集中的日志解决方案（如 CloudWatch Logs 或 Papertrail）。
 
 更多信息，请查看[The Twelve-Factor App](https://12factor.net/logs) 的 [Treat logs as event streams](https://12factor.net/) 和 Docker docs 的 [Configure logging drivers](https://docs.docker.com/config/containers/logging/configure/)
-
 
 ### 为 Gunicorn 心跳系统使用共享内存挂载
 

@@ -95,7 +95,6 @@ lrwxrwxrwx    1 root     system           27 Oct 31 23:27 /usr/lib/libldap.a -> 
 
 重新链接完成后，重新连接 AIX agent，再次执行 clone 代码，成功！
 
-
 ## 问题2：通过 SSH 进行 git clone 出现 Authentication failed
 
 由于 AIX 7.1-TL4-SP1 即将 End of Service Pack Support，因此需要升级。但是升级到 AIX 7.1-TL5-SP6 后无法通过 SSH 下载代码。

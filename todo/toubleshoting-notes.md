@@ -24,7 +24,6 @@ C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(
 
 https://developercommunity.visualstudio.com/t/cannot-find-wrapper-assembly-for-type-library-envd/15434#T-N16833
 
-
 "C:\dotnet\Developer\dotfuscator\Build\Obfuscator.proj" (default target) (1) ->
 "C:\dotnet\Developer\dotfuscator\Developer_Dotfuscator\Developer_Dotfuscator.dotfuproj" (clean;rebuild target) (2) ->
   C:\dotnet\Developer\dotfuscator\Developer_Dotfuscator\Developer_Dotfuscator.dotfuproj(32,3): error MSB4019: The impor
@@ -32,7 +31,6 @@ ted project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MS
 tive.Dotfuscator.Targets" was not found. Confirm that the expression in the Import declaration "C:\Program Files (x86)\
 Microsoft Visual Studio\2019\Professional\MSBuild\PreEmptive\Dotfuscator\4.0\PreEmptive.Dotfuscator.Targets" is correct
 , and that the file exists on disk.
-
 
 "C:\dotnet\Plus\BuildPlus\PlushBuild.proj" (default target) (1) ->
 "C:\dotnet\Plus\src\VSPackage\VSPackage.csproj" (clean;rebuild target) (9) ->
