@@ -6,6 +6,13 @@ title: Daily
 
 ---
 
+## 11/24/2021 - Brother Ma told me that I am very good at CI/CD
+
+Yestoday I gave a presentation to other teams in Dalian, and to be honest I'm not a good speaker, but the content is good, it's all about my practices in the DevOps.
+Brother Ma is a very very senior software engineer and I think he is also full stack engineer. He told me I am very good at CI/CD and he wants to learn from me in the next year. I'm very surprised that he gave me such a high praise. I will keep on to make more efforts in DevOps.
+
+Thank you very much, Brother Ma.
+
 ## 11/10/2021 - Record every time I was praised
 
 I would record every time I was praised, so that when I failed on something, I will look back to see these praised to gain confidence.
