@@ -104,3 +104,20 @@ yum erase jfrog-artifactory-pro
 ```
 
 更多关于 JFrog 产品的卸载，请看：https://www.jfrog.com/confluence/display/JFROG/Uninstalling+JFrog+Products
+
+## 安装 JFrog CLI
+
+```bash
+# ON MAC
+brew install jfrog-cli-go
+# WITH CURL
+curl -fL https://getcli.jfrog.io | sh
+# WITH NPM
+npm install -g jfrog-cli-go
+# WITH DOCKER
+docker run docker.bintray.io/jfrog/jfrog-cli-go:latest jfrog -v
+```
+
+CLI for JFrog Aritifactory
+
+[如何在 Artifactory 上使用 JFrog CLI](https://www.jfrog.com/confluence/display/CLI/CLI+for+JFrog+Artifactory)
