@@ -1,5 +1,5 @@
 ---
-title: 如何通过 GitHub Actions 将每次发布的博客文章自动同步到 GitHub 个人主页？
+title: GitHub Actions 还能这么玩？自动将发布的博客文章更新到 GitHub 个人主页
 tags:
   - Actions
   - GitHub
@@ -31,7 +31,7 @@ GitHub 同名的个人仓库是一个特殊仓库，即创建一个与你的 Git
 
 ![profile](special-repository/profile.png)
 
-## 如何自动获取文章并更新 `README.md`
+## 自动获取文章并更新 `README.md`
 
 在 GitHub 上有很多开发者为 GitHub Actions 开发新的小功能。我这里用到一个开源项目叫 [blog-post-workflow](https://github.com/gautamkrishnar/blog-post-workflow)，它可以通过 RSS（订阅源）来获取到博客的最新文章。
 
@@ -64,7 +64,7 @@ jobs:
 
 这个做法还可以，但不够节省资源也不够完美。最好的做法是：只有当有新文章发布时才触发上面的 Workflow 更新 `README.md`。这就需要有一个 Webhook 当检测到有文章更新时自动触发这里的 Workflow。
 
-## 如何触发另一个 GitHub Action
+## 触发另一个 GitHub Action
 
 GitHub Actions 提供了一个 Webhook 事件叫做 [`repository_dispatch`](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#repository_dispatch) 可以来做这件事。
 
@@ -74,7 +74,7 @@ GitHub Actions 提供了一个 Webhook 事件叫做 [`repository_dispatch`](http
 
 这里我定义事件类型名叫 `special_repository`，它只接受来自 GitHub API `repository_dispatch` 事件。
 
-再次调整上面的 `.github/workflows/blog-post-workflow.yml` 文件，更新如下：
+再次调整上面的 `.github/workflows/blog-post-workflow.yml` 文件如下：
 
 ```yml
 # special_repository.yml
@@ -98,7 +98,7 @@ jobs:
           max_post_count: 10
 ```
 
-接受事件的 Workflow 修改好了。如何发攻类型为 `special_repository` 的 `repository_dispatch` 事件呢？我这里通过 `curl` 直接调用 API 来完成。
+接受事件的 Workflow 修改好了。如何发送类型为 `special_repository` 的 `repository_dispatch` 事件呢？我这里通过 `curl` 直接调用 API 来完成。
 
 ```bash
 curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" \
@@ -135,4 +135,6 @@ jobs:
 
 ![](special-repository/secrets.png)
 
-以上就是通过 GitHub Actions 实现当博客有新发布的文章后自动更新 GitHub 首页的所有内容了，如果还有什么更好玩的介绍欢迎评论区里安利。
+以上就是通过 GitHub Actions 实现当博客有新发布的文章后自动更新 GitHub 首页的所有内容了。
+
+如果还有什么有意思的玩法欢迎评论区里分享一下吧。
