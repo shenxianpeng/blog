@@ -9,7 +9,7 @@ date: 2021-11-09 22:02:15
 author: shenxianpeng
 ---
 
-最近实现了一个很有意思的 Worflow，就是通过 GitHub Actions 自动将每次最新发布的文章自动同步到我的 GitHub 首页。
+最近实现了一个很有意思的 Workflow，就是通过 GitHub Actions 自动将每次最新发布的文章自动同步到我的 GitHub 首页。
 
 就像这样在首页显示最近发布的博客文章。
 
@@ -60,9 +60,9 @@ jobs:
           max_post_count: 10
 ```
 
-刚开始我需要让这个 Worflow 能工作即可。因此用的定时触发，即就是每天早上两点就自动获取一次最新文章并更新这个特殊仓库 `README.md`。
+刚开始我需要让这个 Workflow 能工作即可。因此用的定时触发，即就是每天早上两点就自动获取一次最新文章并更新这个特殊仓库 `README.md`。
 
-这个做法还可以，但不够节省资源也不够完美。最好的做法是：只有当有新文章发布时才触发上面的 Worflow 更新 `README.md`。这就需要有一个 Webhook 当检测到有文章更新时自动触发这里的 Workflow。
+这个做法还可以，但不够节省资源也不够完美。最好的做法是：只有当有新文章发布时才触发上面的 Workflow 更新 `README.md`。这就需要有一个 Webhook 当检测到有文章更新时自动触发这里的 Workflow。
 
 ## 如何触发另一个 GitHub Action
 
@@ -70,7 +70,7 @@ GitHub Actions 提供了一个 Webhook 事件叫做 [`repository_dispatch`](http
 
 它的原理：使用 GitHub API 来触发一个 Webhook 事件，这个事件叫做 `repository_dispatch`，这个事件里的类型是可以自定义的，并且在要被触发的 workflow 里需要使用 `repository_dispatch` 事件。
 
-即：在存放博客文章的仓库里要有一个 Worflow 通过发送 `repository_dispatch` 事件触发特殊仓库中的 Worflow 来更新 `README.md`。
+即：在存放博客文章的仓库里要有一个 Workflow 通过发送 `repository_dispatch` 事件触发特殊仓库中的 Workflow 来更新 `README.md`。
 
 这里我定义事件类型名叫 `special_repository`，它只接受来自 GitHub API `repository_dispatch` 事件。
 
@@ -98,7 +98,7 @@ jobs:
           max_post_count: 10
 ```
 
-接受事件的 Worflow 修改好了。如何发攻类型为 `special_repository` 的 `repository_dispatch` 事件呢？我这里通过 `curl` 直接调用 API 来完成。
+接受事件的 Workflow 修改好了。如何发攻类型为 `special_repository` 的 `repository_dispatch` 事件呢？我这里通过 `curl` 直接调用 API 来完成。
 
 ```bash
 curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" \
