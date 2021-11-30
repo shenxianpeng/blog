@@ -1,5 +1,5 @@
 ---
-title: Ansible 实践（一）
+title: Ansible 实践
 tags:
   - Ansible
 categories:
@@ -9,6 +9,12 @@ author: shenxianpeng
 ---
 
 最近在思考如何将团队里的所有的虚拟机都很好的管理并监控起来，但是由于我们的虚拟机的操作系统繁多，包括 Windows, Linux, AIX, HP-UX, Solaris SPARC 和 Solaris x86. 到底选择哪种方式来管理比较好呢？这需要结合具体场景来考虑。
+
+## Ansible 和其他工具的对比
+
+这里有一个关于 Chef，Puppet，Ansible 和 Saltstack 的对比文章
+
+> https://www.edureka.co/blog/chef-vs-puppet-vs-ansible-vs-saltstack/
 
 ## 选择合适的工具
 
@@ -105,4 +111,24 @@ run.yml
 ansible-playbook -i hosts run.yml
 ```
 
-> 注：上面的代码是脱敏过的，不保证能一次性运行成功 :)
+> 注：上面的代码是脱敏过的，需要根据你的环境进行调整才能执行成功。
+
+## Ansible TroubleShotting
+
+`"msg": "winrm or requests is not installed: No module named winrm"`
+
+Need install `pywinrm` on your master server.
+
+"msg": "plaintext: auth method plaintext requires a password"
+
+when I run `ansible mywin -i hosts -m win_ping -vvv`, I notice the output used Python2.7, so I install `pywinrm` with command `sudo pip2 install pywinrm`, then my problem was resolved.
+
+```json
+mywin | UNREACHABLE! => {
+    "changed": false,
+    "msg": "plaintext: auth method plaintext requires a password",
+    "unreachable": true
+}
+```
+
+Result: You should be using ansible_password and not ansible_pass. [link](https://github.com/ansible/ansible/issues/16858#issuecomment-250908554)
