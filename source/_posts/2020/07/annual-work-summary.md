@@ -4,7 +4,7 @@ tags:
   - Summary
   - Work
 categories:
-  - MyNotes
+  - Nontechnical
 date: 2020-07-29 13:52:04
 author: shenxianpeng
 ---

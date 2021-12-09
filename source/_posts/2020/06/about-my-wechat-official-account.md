@@ -3,7 +3,7 @@ title: 一名软件测试工程师的成长之路
 tags:
   - Thought
 categories:
-  - MyNotes
+  - Nontechnical
 date: 2020-06-30 22:13:26
 author: shenxianpeng
 ---

@@ -4,7 +4,7 @@ date: 2018-08-07 22:31:22
 tags:
   - FunctionTest
 categories:
-  - MyNotes
+  - Nontechnical
 author: shenxianpeng
 ---
 

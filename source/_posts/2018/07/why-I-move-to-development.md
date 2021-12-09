@@ -1,10 +1,10 @@
 ---
 title: 做了9年测试，我为何转开发？
 date: 2018-07-21 22:52:35
-tags: 
+tags:
 - Work
-categories: 
-- MyNotes
+categories:
+- Nontechnical
 author: shenxianpeng
 ---
 
