@@ -1,10 +1,10 @@
 ---
 title: 我眼中的高级测试工程师
 date: 2018-05-06 16:35:34
-tags: 
+tags:
 - Work
-categories: 
-- MyNotes
+categories:
+- Nontechnical
 author: shenxianpeng
 ---
 
