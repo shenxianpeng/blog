@@ -1,5 +1,5 @@
 ---
-title: 通过建立统一的规则来评估 CI/CD 成熟度
+title: 组织内如何评估 CI/CD 成熟度
 tags:
   - CI
   - CD
@@ -31,9 +31,9 @@ author: shenxianpeng
 
 ![cii](cicd-assessment/cii.png)
 
-更多关于标准的细分可以参考 [中文文档](https://hardenedlinux.github.io/2016/08/04/best-practices-criteria-for-floss-part1.html) 或 [GitHub英文文档](https://github.com/coreinfrastructure/best-practices-badge/blob/main/doc/criteria.md)。
+更多关于标准的细分可以参考 [CII 中文文档](https://hardenedlinux.github.io/2016/08/04/best-practices-criteria-for-floss-part1.html) 或 [CII 英文文档](https://github.com/coreinfrastructure/best-practices-badge/blob/main/doc/criteria.md)。
 
-已经很多知名的项目比如 [Kubernetes](https://bestpractices.coreinfrastructure.org/en/projects/569), [Node.js](https://bestpractices.coreinfrastructure.org/zh-CN/projects/29) 等在使用这个最佳实践徽章计划
+已经很多知名的项目比如 [Kubernetes](https://bestpractices.coreinfrastructure.org/en/projects/569), [Node.js](https://bestpractices.coreinfrastructure.org/en/projects/29) 等在使用这个最佳实践徽章计划
 
 ![badge-owners](cicd-assessment/badge-owners.png)
 
@@ -93,7 +93,7 @@ author: shenxianpeng
 ## Q&A
 
 Q: 为什么使用徽章而不是分数？\
-A: 使用徽章能更好的帮助团队朝着目标而不是分数努力
+A: 使用徽章能更好的帮助团队朝着目标而不是分数努力。
 
 Q: 建立最佳实践标准还有哪些帮助？\
-A: 团队之间容易进行技术共享，更容易地构建高质量的安全软件，保持团队之间在统一的高水准
+A: 团队之间容易进行技术共享，更容易地构建高质量的安全软件，保持团队之间在统一的高水准。
