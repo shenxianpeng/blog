@@ -1,9 +1,11 @@
 name: Tigger special repository
 
 on:
-  push:
-    branches:
-      - master
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    branches: [master]
+    types: [completed]
+
   workflow_dispatch:
 
 jobs:
@@ -11,8 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send repository dispatch event
+        # Wait 120s for github page build finish
         run: |
-          sleep 15
+          sleep 5
           curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" \
           -H "Accept: application/vnd.github.everest-preview+json" \
           -H "Content-Type: application/json" https://api.github.com/repos/shenxianpeng/shenxianpeng/dispatches \
