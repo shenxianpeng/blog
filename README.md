@@ -1,8 +1,12 @@
 # Peter Shen's Blog
 
+微信公众号「DevOps攻城狮」- 持续分享CI/CD、DevOps领域内容。
+
+![欢迎扫码关注](source\about\index\qrcode.jpg)
+
 Share knowledge in the fields of CI/CD and DevOps. Blog URL: https://shenxianpeng.github.io
 
-If you have any questions or mistakes, please feel free to ask via [Issues](https://github.com/shenxianpeng/blog/issues), and to receive updates as soon as possible welcome to [Star](https://github.com/shenxianpeng/blog).
+If you find any mistakes or questions, please feel free to ask via [issues](https://github.com/shenxianpeng/blog/issues).
 
 ![Build](https://github.com/shenxianpeng/blog/workflows/build/badge.svg?branch=master)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5067/badge)](https://bestpractices.coreinfrastructure.org/projects/5067)
@@ -35,7 +39,7 @@ hexo generate -deploy                       # Generate then deploy
 hexo g -d                                   # Abbreviations generate then deploy
 ```
 
-## :memo: Article Structure
+## :memo: Article structure
 
 Articles are saved by folder, with the hierarchy of year/month.
 
@@ -51,21 +55,25 @@ Follow the following steps when creating an article, for example: `abc.md` in Au
 
 ## 🚀 Deploy
 
-Use below command will automatically update the new article to web site [repository](https://github.com/shenxianpeng/shenxianpeng.github.io).
+Automatically update new commits to web site [repository](https://github.com/shenxianpeng/shenxianpeng.github.io) by following command.
 
 ```bash
 sh deploy.sh
 ```
 
-## 🧰 Format Tools
+## 🧰 Format tools
 
 Format tools for publishing to other medium platforms
 
 * [Convert to Markdown](http://blog.didispace.com/tools/online-markdown/)
 * [Markdown Nice](https://www.mdnice.com/)
 
-## 📜 License
+## 📜 Licenses
 
 [GPL-3.0](https://github.com/shenxianpeng/blog/blob/master/LICENSE) © [Hexo](https://hexo.io)
+
+[署名-非商业性使用-相同方式共享 3.0 中国大陆 (CC BY-NC-SA 3.0 CN)](https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh)
+
+[Attribution-NonCommercial-ShareAlike 3.0 China Mainland (CC BY-NC-SA 3.0 CN)](https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.en)
 
 ![Blog views](https://gpvc.arturio.dev/blog)
