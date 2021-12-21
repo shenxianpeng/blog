@@ -3,10 +3,7 @@ name: Tigger special repository
 on:
   workflow_run:
     workflows: ["pages build and deployment"]
-    branches: [master]
     types: [completed]
-
-  workflow_dispatch:
 
 jobs:
   build:
