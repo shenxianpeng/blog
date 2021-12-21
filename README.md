@@ -1,5 +1,12 @@
 # Peter Shen's Blog
 
+![Build](https://github.com/shenxianpeng/blog/workflows/build/badge.svg?branch=master)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5067/badge)](https://bestpractices.coreinfrastructure.org/projects/5067)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=shenxianpeng_blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=shenxianpeng_blog)
+[![CodeQL](https://github.com/shenxianpeng/blog/workflows/CodeQL/badge.svg)](https://github.com/shenxianpeng/blog/actions?query=workflow%3ACodeQL)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c11eed2252634f68a4a4f62a5e069fa6)](https://www.codacy.com/gh/shenxianpeng/blog/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shenxianpeng/blog&amp;utm_campaign=Badge_Grade)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
+
 微信公众号「DevOps攻城狮」- 持续分享CI/CD、DevOps领域内容。
 
 ![欢迎扫码关注](source/about/index/qrcode.jpg)
@@ -7,13 +14,6 @@
 Share knowledge in the fields of CI/CD and DevOps. Blog URL: https://shenxianpeng.github.io
 
 If you find any mistakes or questions, please feel free to ask via [issues](https://github.com/shenxianpeng/blog/issues).
-
-![Build](https://github.com/shenxianpeng/blog/workflows/build/badge.svg?branch=master)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5067/badge)](https://bestpractices.coreinfrastructure.org/projects/5067)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=shenxianpeng_blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=shenxianpeng_blog)
-[![CodeQL](https://github.com/shenxianpeng/blog/workflows/CodeQL/badge.svg)](https://github.com/shenxianpeng/blog/actions?query=workflow%3ACodeQL)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c11eed2252634f68a4a4f62a5e069fa6)](https://www.codacy.com/gh/shenxianpeng/blog/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shenxianpeng/blog&amp;utm_campaign=Badge_Grade)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
 
 ## :cloud: Installation
 
