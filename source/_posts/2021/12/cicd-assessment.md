@@ -3,7 +3,6 @@ title: 组织内如何评估 CI/CD 成熟度
 tags:
   - CI
   - CD
-  - BadgeApp
   - Badge
 categories:
   - DevOps
@@ -40,9 +39,11 @@ author: shenxianpeng
 如果你的项目在 GitHub 上或是你可以按照上述的徽章计划进行评估，就可以使用它来评估你项目的最佳实践，并可以在项目主页的 README 上显示徽章结果。
 
 ![badge-result](cicd-assessment/badge-result.png)
+
 ## 定制最佳实践标准
 
 如果上述项目不能满足你的评估要求，结合我的实践，制定了如下“最佳实践标准”并分配了相应的成熟度徽章，供参考。
+
 ### 计算规则
 
 1. 每个最佳实践标准都有分数，通常一般的标准是10分，重要的标准是20分
@@ -55,7 +56,7 @@ author: shenxianpeng
 |徽章  | 分数 | 描述
 |----  | --  | -- |
 | 🚩WIP | < 100 | 小于100分获得 🚩Work In Progress 徽章 |
-| ✅PASSING | = 100 | 等于100分获得 ✅PASSING 徽章 |
+| ✔️PASSING | = 100 | 等于100分获得 ✔️PASSING 徽章 |
 | 🥈SILVER | > 100 && <= 150 | 大于100，小于等于150分获得🥈银牌徽章 |
 | 🥇GOLD | > 150 | 大于等于150分获得🥇金牌徽章 |
 
@@ -86,7 +87,7 @@ author: shenxianpeng
 |No | Repository Name | 实现的最佳实践标准 |徽章 |
 |---| --------------- | --------- | ---- |
 | 1 | project-a       | 🔰**构建任何分支**</br>🔰**构建任何PR**</br>🔰上传制品</br>🔰**自动化测试**</br>🔰Email或Slack通知 | 🚩WIP |
-| 2 | project-b       | 🔰**构建任何分支**</br>🔰**构建任何PR**</br>🔰上传制品</br>🔰**自动化测试**</br>🔰漏洞扫描</br>🔰License扫描</br>🔰Email或Slack通知 | ✅PASSING |
+| 2 | project-b       | 🔰**构建任何分支**</br>🔰**构建任何PR**</br>🔰上传制品</br>🔰**自动化测试**</br>🔰漏洞扫描</br>🔰License扫描</br>🔰Email或Slack通知 | ✔️PASSING |
 | 3 | project-c       | 🔰**构建任何分支**</br>🔰**构建任何PR**</br>🔰上传制品</br>👍容器化构建</br>🔰**自动化测试**</br>🔰漏洞扫描</br>🔰License扫描</br>🔰Email或Slack通知 | 🥈SILVER |
 | 4 | project-d       | 🔰**构建任何分支**</br>🔰**构建任何PR**</br>🔰上传制品</br>👍容器化构建</br>🔰**自动化测试**</br>👍性能测试</br>👍代码覆盖率收集</br>🔰漏洞扫描</br>🔰License扫描</br>👍Code Lint</br>👍静态代码分析</br>👍动态代码分析</br>🔰Email或Slack通知 | 🥇GOLD |
 

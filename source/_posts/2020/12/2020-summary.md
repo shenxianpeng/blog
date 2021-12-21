@@ -4,7 +4,7 @@ tags:
   - Thought
   - Summary
 categories:
-  - Nontechnical
+  - Others
 date: 2020-12-31 15:00:00
 author: shenxianpeng
 ---

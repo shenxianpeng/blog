@@ -4,7 +4,7 @@ date: 2018-07-21 22:52:35
 tags:
 - Work
 categories:
-- Nontechnical
+- Others
 author: shenxianpeng
 ---
 
