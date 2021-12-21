@@ -2,7 +2,7 @@
 
 微信公众号「DevOps攻城狮」- 持续分享CI/CD、DevOps领域内容。
 
-![欢迎扫码关注](source\about\index\qrcode.jpg)
+![欢迎扫码关注](source/about/index/qrcode.jpg)
 
 Share knowledge in the fields of CI/CD and DevOps. Blog URL: https://shenxianpeng.github.io
 
