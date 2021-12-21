@@ -3,7 +3,7 @@ title: 在二线城市，我用了七年追上了我在一线城市的工资
 tags:
   - Salary
 categories:
-  - Nontechnical
+  - Others
 date: 2021-05-03 12:44:36
 author: shenxianpeng
 ---
