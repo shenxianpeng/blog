@@ -24,7 +24,7 @@ Blog: 简介
 
 My [blog](https://shenxianpeng.github.io/) to share knowledge in the fields of CI/CD and DevOps.
 
-If you have any questions or mistakes, please feel free to ask questions or create [Issue](https://github.com/shenxianpeng/blog/issues). If you want to receive updates as soon as possible, welcome to [Star](https://github.com/shenxianpeng/blog).
+If you have any questions or mistakes, please feel free to ask questions or create [issue](https://github.com/shenxianpeng/blog/issues). If you want to receive updates as soon as possible, welcome to [star](https://github.com/shenxianpeng/blog).
 
 And more ways to communicate with me.
 
