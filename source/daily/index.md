@@ -6,6 +6,13 @@ title: Daily
 
 ---
 
+## 12/25/2021 - I was surprised
+
+Several days ago, A female financial colleague told me I did a great job sharing about CI/CD practices.
+(I posted the recording to slack channel of the China lab for all the engineers who had attended the meeting.)
+
+I was surprised that as a non-tech colleague she was also watched, and this was our first conversation. Thanks so much.
+
 ## 11/24/2021 - Brother Ma told me that I am very good at CI/CD
 
 Yesterday I gave a presentation to other teams in Dalian, it's all about my practices in the DevOps. To be honest I’m not a good speaker.
