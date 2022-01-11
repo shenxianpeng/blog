@@ -1,25 +1,21 @@
 ---
-title: Docker 最佳实践
+title: 【必读】Docker 最佳实践
 tags:
   - Dokerfile
   - Docker
 categories:
   - Docker
-date: 2021-10-31 10:57:16
+date: 2022-01-12 12:18:16
 author: shenxianpeng
 ---
 
-本文探讨了在编写 Dockerfiles 和使用 Docker 时应遵循的一些最佳实践。
+本篇分享在编写 Dockerfiles 和使用 Docker 时应遵循的一些最佳实践。篇幅较长，但保证看完会很有收获。
 
-所列举的大多数做法适用于所有的开发人员，无论使用何种语言。但有一些做法只适用于 Python 相关的开发程序。
-
----
-
-_该篇是我在看到这篇非常好的英文文章后翻译而来的。篇幅很长，很保证看完会有收获。原文：[Docker Best Practices for Python Developers](https://testdriven.io/blog/docker-best-practices/)_
+下面所列举的大多数做法适用于所有的开发人员，不论使用何种编程语言。但有一些做法只适用于 Python 相关的开发程序。
 
 ## 文章目录
 
-### Dockerfiles
+### 关于 Dockerfiles
 
 1. 使用多阶段的构建
 2. 调整 Dockerfile 命令的顺序
@@ -33,7 +29,7 @@ _该篇是我在看到这篇非常好的英文文章后翻译而来的。篇幅�
 10. 理解 `ENTRYPOINT` 和 `CMD` 之间的区别
 11. 添加健康检查 `HEALTHCHECK`
 
-### Images
+### 关于 Images
 
 1. Docker 镜像的版本
 2. 不要在图像中存储密钥
@@ -50,24 +46,19 @@ _该篇是我在看到这篇非常好的英文文章后翻译而来的。篇幅�
 
 <!-- more -->
 
-### 使用多阶段的构建
+### 1. 使用多阶段的构建
 
-利用多阶段构建的优势来创建更精简、更安全的Docker镜像。
+利用多阶段构建的优势来创建更精简、更安全的Docker镜像。多阶段 Docker 构建([multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/))允许你将你的 Dockerfile 分成几个阶段。
 
-多阶段 Docker 构建([multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/))允许你将你的 Dockerfile 分成几个阶段。
-
-例如，你可以有一个阶段用于编译和构建你的应用程序，然后可以复制到后续阶段。由于只有最后一个阶段被用来创建镜像，与构建应用程序相关的依赖关系和工具就会被丢弃，留下一个精简的、模块化的、可用于生产的镜像。
+例如，你可以有一个阶段用于编译和构建你的应用程序，然后可以复制到后续阶段。由于只有最后一个阶段被用来创建镜像，与构建应用程序相关的依赖关系和工具就会被丢弃，因此可以留下一个精简的、模块化的、可用于生产的镜像。
 
 Web 开发示例：
 
 ```Dockerfile
-# temp stage
+# 临时阶段
 FROM python:3.9-slim as builder
 
 WORKDIR /app
-
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends gcc
@@ -76,7 +67,7 @@ COPY requirements.txt .
 RUN pip wheel --no-cache-dir --no-deps --wheel-dir /app/wheels -r requirements.txt
 
 
-# final stage
+# 最终阶段
 FROM python:3.9-slim
 
 WORKDIR /app
@@ -87,9 +78,9 @@ COPY --from=builder /app/requirements.txt .
 RUN pip install --no-cache /wheels/*
 ```
 
-在这个例子中，GCC 编译器在安装某些 Python 包时是必需的，所以我们添加了一个临时的、构建时的阶段来处理构建阶段。由于最终的运行时映像不包含 GCC，所以它更轻，更安全。
+在这个例子中，GCC 编译器在安装某些 Python 包时是必需的，所以我们添加了一个临时的、构建时的阶段来处理构建阶段。
 
-镜像大小比较：
+由于最终的运行时映像不包含 GCC，所以它更轻，也更安全。镜像大小比较：
 
 ```bash
 REPOSITORY                 TAG                    IMAGE ID       CREATED          SIZE
@@ -100,13 +91,13 @@ docker-multi               latest                 813c2fa9b114   3 minutes ago  
 再来看一个例子：
 
 ```Dockerfile
-# temp stage
+# 临时阶段
 FROM python:3.9 as builder
 
 RUN pip wheel --no-cache-dir --no-deps --wheel-dir /wheels jupyter pandas
 
 
-# final stage
+# 最终阶段
 FROM python:3.9-slim
 
 WORKDIR /notebooks
@@ -125,7 +116,7 @@ ds-single                   latest                7c23c43aeda6   6 minutes ago  
 
 总之，多阶段构建可以减少你的生产镜像的大小，帮助你节省时间和金钱。此外，这将简化你的生产容器。由于尺寸较小和简单，相对会有较小的攻击面。
 
-### 调整 Dockerfile 命令的顺序
+### 2. 调整 Dockerfile 命令的顺序
 
 密切注意你的 Dockerfile 命令的顺序，以利用层缓存。
 
@@ -149,7 +140,7 @@ RUN pip install -r /requirements.txt
 
 > 你也可以通过使用 .dockerignore 文件来排除不必要的文件，使其不被添加到 Docker 构建环境和最终镜像中，从而帮助防止不必要的缓存失效。更多信息后面会提到。
 
-因此，在上面的 Dockerfile 中，你应该把 `COPY sample.py .` 命令移到底部。
+因此，在上面的 Dockerfile 中，你应该把 `COPY sample.py .` 命令移到底部，如下所示：
 
 ```Dockerfile
 FROM python:3.9-slim
@@ -166,18 +157,14 @@ COPY sample.py .
 注意。
 
 1. 总是把可能发生变化的层放在 Dockerfile 中尽可能的低。
-2. 结合 `RUN apt-get update` 和 `RUN apt-get install` 命令。(这也有助于减少镜像的大小，后面会很快就会提到这一点)。
+2. 将多个 `RUN apt-get update`，`RUN apt-get install` 等命令结合到一起执行。(这也有助于减少镜像的大小，后面会很快就会提到这一点)。
 3. 如果你想关闭某个 Docker 构建的缓存，可以添加 `--no-cache=True` 标志。
 
-### 使用小型 Docker 基础镜像
+### 3. 使用小型 Docker 基础镜像
 
-_较小的 Docker 镜像更具有模块化和安全性。_
+较小的 Docker 镜像更具有模块化和安全性。较小的 Docker 基础镜像在构建、推送和拉动镜像的速度较小，它们也往往更安全，因为它们只包括运行应用程序所需的必要库和系统依赖。
 
-较小的 Docker 基础镜像在构建、推送和拉动镜像的速度较小，它们也往往更安全，因为它们只包括运行应用程序所需的必要库和系统依赖。
-
-_你应该使用哪个 Docker 基础镜像？_ 这个没有一个固定的答案，它这取决于你要做什么。
-
-下面是 Python 的各种 Docker 基础镜像的大小比较。
+你应该使用哪个 Docker 基础镜像？这个没有一个固定的答案，它这取决于你要做什么。下面是 Python 的各种 Docker 基础镜像的大小比较。
 
 ```bash
 REPOSITORY   TAG                 IMAGE ID       CREATED      SIZE
@@ -190,13 +177,13 @@ python       3.9.6-buster        cba42c28d9b8   3 days ago   886MB
 
 虽然基于 Alpine Linux 的 Alpine flavor 是最小的，但如果你找不到可以与之配合的编译二进制文件，往往会导致构建时间的增加。因此，你最终可能不得不自己构建二进制文件，这可能会增加图像的大小（取决于所需的系统级依赖）和构建时间（由于必须从源头编译）。
 
-> 关于为什么最好不要使用基于 Alpine 的基础镜像，请参考[The best Docker base image for your Python application](https://pythonspeed.com/articles/base-image-python-docker-images/) and [Using Alpine can make Python Docker builds 50× slower](https://pythonspeed.com/articles/alpine-docker-python/) 了解更多关于为什么最好避免使用基于 Alpine 的基础图像。
+> 关于为什么最好不要使用基于 Alpine 的基础镜像，请参考[适用于 Python 应用程序的最佳 Docker 基础映像](https://pythonspeed.com/articles/base-image-python-docker-images/) 和 [使用 Alpine 可以使 Python Docker 构建速度慢 50 倍](https://pythonspeed.com/articles/alpine-docker-python/) 了解更多关于为什么最好避免使用基于 Alpine 的基础图像。
 
 归根结底，这都是关于平衡的问题。如果有疑问，从 `*-slim` flavor 开始，特别是在开发模式下，因为你正在构建你的应用程序。你想避免在添加新的 `Python` 包时不得不不断地更新 Dockerfile 以安装必要的系统级依赖。当你为生产强化你的应用程序和 Dockerfile 时，你可能想探索使用 Alpine 来完成多阶段构建的最终镜像。
 
 另外，别忘了定期更新你的基础镜像，以提高安全性和性能。当一个基础镜像的新版本发布时，例如：`3.9.6-slim` --> `3.9.7-slim`，你应该拉出新的镜像并更新你正在运行的容器以获得所有最新的安全补丁。
 
-## 尽量减少层的数量
+### 4. 尽量减少层的数量
 
 尽量把 `RUN`、`COPY` 和 `ADD` 命令结合起来使用，因为它们会创建层。每一层都会增加图像的大小，因为它们是被缓存的。因此，随着层数的增加，镜像大小也会增加。
 
@@ -221,33 +208,35 @@ IMAGE          CREATED              CREATED BY                                  
 
 ```Dockerfile
 RUN apt-get update
-RUN apt-get install -y netcat
+RUN apt-get install -y gcc
 ```
 
 可以合并成一个 `RUN` 命令：
 
 ```Dockerfile
-RUN apt-get update && apt-get install -y netcat
+RUN apt-get update && apt-get install -y gcc
 ```
 
-因此，创建一个单层而不是两个，这就减少了最终图像的大小。
+因此，创建一个单层而不是两个，这就减少了最终图像的大小。虽然减少层数是个好主意，但更重要的是，这本身不是一个目标，而是减少镜像大小和构建时间的一个副作用。换句话说呢，与其试图优化每一条命令，你更应该关注前面的三种做法！！！
 
-虽然减少层数是个好主意，但更重要的是，这本身不是一个目标，而是减少镜像大小和构建时间的一个副作用。换句话说，比起试图优化每一条命令，你更应该关注前面的三种做法--多阶段构建，Dockerfile命令的顺序，以及使用一个小的基础镜像。
+1. 多阶段构建
+2. Dockerfile命令的顺序
+3. 以及使用一个小的基础镜像。
 
-### 注意
+#### 注意
 
 1. `RUN`、`COPY` 和 `ADD` 都会创建图层
 2. 每个图层都包含与前一个图层的差异
 3. 图层会增加最终图像的大小
 
-### 提示
+#### 提示
 
 1. 合并相关命令
-2. 在创建文件的同一 `RUN` 步骤中删除不必要的文件
+2. 在创建过程中执行 `RUN` 步骤中删除不必要的文件
 3. 尽量减少运行 `apt-get upgrade` 的次数，因为它将所有软件包升级到最新版本。
 4. 对于多阶段的构建，不要太担心过度优化临时阶段的命令
 
-最后，为了便于阅读，将多行参数按字母数字排序。
+最后，为了便于阅读，建议将多行参数按字母数字排序。
 
 ```Dockerfile
 RUN apt-get update && apt-get install -y \
@@ -258,11 +247,11 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 ```
 
-### 使用无特权的容器
+### 5. 使用无特权的容器
 
 默认情况下，Docker 在容器内以 root 身份运行容器进程。然而，这是一个糟糕的做法，因为在容器内以 root 身份运行的进程在 Docker 主机中也是以 root 身份运行。
 
-因此，如果攻击者获得了对容器的访问权，他们就可以获得所有的 root 权限，并可以对 Docker 主机进行一些攻击，例如
+因此，如果攻击者获得了对容器的访问权，他们就可以获得所有的 root 权限，并可以对 Docker 主机进行一些攻击，例如：
 
 1. 将敏感信息从主机的文件系统复制到容器中
 2. 执行远程命令
@@ -296,13 +285,13 @@ uid=1001(app) gid=1001(app) groups=1001(app)
 
 请务必查看以非根用户身份运行 Docker 守护进程，以获得以非根用户身份运行守护进程和容器的帮助。
 
-### 优先选择 `COPY ` 而不是 `ADD`
+### 6. 优先选择 `COPY` 而不是 `ADD`
 
 除非你确定你需要 `ADD` 所带来的额外功能，否则请使用 `COPY`。
 
-`COPY` 和 `ADD` 的区别是什么？
+那么 `COPY` 和 `ADD` 的区别是什么？
 
-这两个命令都允许你从一个特定的位置复制文件到 Docker 镜像中。
+首先，这两个命令都允许你从一个特定的位置复制文件到 Docker 镜像中。
 
 ```dockerfile
 ADD <src> <dest>
@@ -326,46 +315,49 @@ ADD http://external.file/url  /destination/path
 ADD source.file.tar.gz /destination/path
 ```
 
-### 缓存 Python 包到 Docker 主机上
+最后 `COPY` 在语义上比 `ADD` 更加明确和更容易理解。
 
-当一个需求文件被改变时，镜像需要被重建以安装新的包。先前的步骤将被缓存，正如在最小化层数中提到的。在重建映像时下载所有的包会导致大量的网络活动，并需要大量的时间。每次重建都要占用相同的时间来下载不同构建中的通用包。
+### 7. 缓存安装包到 Docker 主机上
 
-你可以通过将 pip 缓存目录映射到主机上的一个目录来避免这种情况。所以对于每次重建，缓存的版本会持续存在，可以提高构建速度。
+当一个需求文件被改变时，镜像需要被重建以安装新的包。先前的步骤将被缓存，正如在最小化层数中提到的。在重建镜像时下载所有的包会导致大量的网络活动，并需要大量的时间。每次重建都要占用同等的时间来下载不同构建中的通用包。
+
+以 Python 为例，你可以通过将 pip 缓存目录映射到主机上的一个目录来避免这种情况。所以对于每次重建，缓存的版本会持续存在，这可以提高构建速度。
 
 在 Docker 运行中添加一个卷，作为 `-v $HOME/.cache/pip-docker/:/root/.cache/pip` 或者作为 Docker Compose 文件中的映射。
 
-上面介绍的目录只供参考。确保你映射的是 cache 目录，而不是 site-packages（内置包所在的位置）。
+上面介绍的目录只供参考，要确保你映射的是 cache 目录，而不是 site-packages（内置包所在的位置）。
 
-将缓存从 docker 镜像中移到主机上可以为你节省最终镜像的空间。如果你利用 [Docker BuildKit](https://docs.docker.com/develop/develop-images/build_enhancements/)，使用 BuildKit 缓存挂载来管理缓存。
+将缓存从 docker 镜像中移到主机上可以为你节省最终镜像的空间。
 
 ```dockerfile
-# syntax = docker/dockerfile:1.2
 
-...
+# 忽略 ...
 
 COPY requirements.txt .
 
 RUN --mount=type=cache,target=/root/.cache/pip \
         pip install -r requirements.txt
 
-...
+# 忽略 ...
 
 ```
 
-### 每个容器只运行一个进程
+### 8. 每个容器只运行一个进程
 
 为什么建议每个容器只运行一个进程？
 
-让我们假设你的应用程序栈由两个 Web 服务器和一个数据库组成。虽然你可以很容易地从一个容器中运行所有三个，但你应该在一个单独的容器中运行每个服务，以使其更容易重复使用和扩展每个单独的服务。
+让我们假设你的应用程序栈由两个 Web 服务器和一个数据库组成。虽然你可以很容易地从一个容器中运行所有三个，但你应该在一个单独的容器中运行每个服务，以便更容易重复使用和扩展每个单独的服务。
 
-* 扩展性 - 由于每个服务都在一个单独的容器中，你可以根据需要水平地扩展你的一个网络服务器，以处理更多的流量。
-* 可重用性 - 也许你有另一个服务需要一个容器化的数据库,你可以简单地重复使用同一个数据库容器，而不需要带着两个不必要的服务。
-* 日志 - 耦合容器使得日志更加复杂。我们将在本文后面进一步详细讨论这个问题。
-* 可移植性和可预测性 - 当有较少的表面区域可供工作时，制作安全补丁或调试问题就会容易得多。
+* 扩展性 - 由于每个服务都在一个单独的容器中，你可以根据需要水平地扩展你的一个网络服务器来处理更多的流量。
+* 可重用性 - 也许你有另一个服务需要一个容器化的数据库，你可以简单地重复使用同一个数据库容器，而不需要带着两个不必要的服务。
+* 日志 - 耦合容器会让日志变得更加复杂。（我们将在本文后面进一步详细讨论这个问题）
+* 可移植性和可预测性 - 当容器有较少的部分在工作时，制作安全补丁或调试问题就会容易得多。
 
-### 优先选择数组而不是字符串语法
+### 9. 优先选择数组而不是字符串语法
 
-你可以在你的 Dockerfiles 中以数组（exec）或字符串（shell）格式编写 `CMD` 和 `ENTRYPOINT` 命令。
+你可以在你的 Dockerfiles 中以数组（exec）或字符串（shell）格式
+
+在 Dockerfile 中，你可以以数组（exec）或字符串（shell）格式来使用 `CMD` 和 `ENTRYPOINT` 命令
 
 ```dockerfile
 # 数组（exec）
@@ -377,9 +369,9 @@ CMD "gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app"
 
 两者都是正确的，并且实现了几乎相同的事情；但是，你应该尽可能地使用 exec 格式。
 
-以下来自 [Docker文档](https://docs.docker.com/compose/faq/#why-do-my-services-take-10-seconds-to-recreate-or-stop)。
+以下来自 [Docker的官方文档](https://docs.docker.com/compose/faq/#why-do-my-services-take-10-seconds-to-recreate-or-stop)内容：
 
-* 确保你在 Docker 文件中使用 `CMD` 和 `ENTRYPOINT` 的 exec 形式。
+* 确保你在 Dockerfile 中使用 `CMD` 和 `ENTRYPOINT` 的 exec 形式。
 * 例如，使用 `["program", "arg1", "arg2"]` 而不是 `"program arg1 arg2"`。使用字符串形式会导致 Docker 使用 `bash` 运行你的进程，而 `bash` 并不能正确处理信号。Compose 总是使用 JSON 形式，所以不用担心如果你在你的 Compose 文件中覆盖了命令或入口。
 
 因此，由于大多数 shell 不处理对子进程的信号，如果你使用 shell 格式，CTRL-C（产生 `SIGTERM`）可能不会停止一个子进程。
@@ -420,7 +412,7 @@ root@ede24a5ef536:/app# ps ax
   342 pts/0    R+     0:00 ps ax
 ```
 
-### 了解 `ENTRYPOINT` 和 `CMD` 之间的区别
+#### 了解 `ENTRYPOINT` 和 `CMD` 之间的区别
 
 我应该使用 `ENTRYPOINT` 还是 `CMD` 来运行容器进程？有两种方法可以在容器中运行命令。
 
@@ -465,7 +457,7 @@ docker run <image_name> 6
 
 这样就将用 6 个 Gunicorn workers 启动容器，而不是默认的 4 个。
 
-### 添加健康检查 `HEALTHCHECK`
+### 10. 添加健康检查 `HEALTHCHECK`
 
 使用 `HEALTHCHECK` 来确定容器中运行的进程是否不仅已启动并正在运行，而且是“健康”的。
 
@@ -499,7 +491,7 @@ CONTAINER ID   IMAGE         COMMAND                  CREATED              STATU
 
 以下是使用 `docker inspect` 查看运行状况检查状态的方法：
 
-> 省略了部分输出，因为它包含整个 HTML 输出。
+> 这里省略了部分输出。
 
 ```bash
 ❯ docker inspect --format "{{json .State.Health }}" ab94f2ac7889
@@ -544,45 +536,45 @@ services:
 
 ## 镜像
 
-### Docker 镜像版本
+### 1. Docker 镜像版本
 
-只要有可能，就要避免使用 `latest` 标签。
+只要有可能，就要避免使用 `latest` 标签的镜像。
 
-如果你依赖 `latest` 标签（这并不是一个真正的 "标签"，因为当图像没有明确的标签时，它是默认应用的），你无法根据图像标签来判断你的代码正在运行哪个版本。这使得回滚具有挑战性，并且很容易被覆盖（无论是意外还是恶意的）。标签，就像你的基础设施和部署，应该是不可改变的。
+如果你依赖 `latest` 标签（这并不是一个真正的 "标签"，因为当图像没有明确的标签时，它是默认应用的），你无法根据镜像标签来判断你的代码正在运行哪个版本。
 
-无论你如何对待你的内部镜像，你都不应该对基本镜像使用 `latest` 标签，因为你可能会无意中把一个带有破坏性变化的新版本部署到生产中。
+如果你像回滚就变得很困难，并且很容易被覆盖（无论是意外还是恶意的）。标签，就像你的基础设施和部署，应该是不可改变的。
 
-对于内部镜像，使用描述性的标签，以便更容易分辨哪个版本的代码正在运行，处理回滚，并避免命名冲突。
+所以无论你如何对待你的内部镜像，都不应该对基本镜像使用 `latest` 标签，因为你可能会无意中把一个带有破坏性变化的新版本部署到生产中。
 
-例如，你可以使用以下描述符来组成一个标签。
+对于内部镜像，应使用描述性的标签，以便更容易分辨哪个版本的代码正在运行，处理回滚，并避免命名冲突。例如，你可以使用以下描述符来组成一个标签。
 
 1. 时间戳
 2. Docker 镜像 ID
-3. Git提交哈希值
-4. 语义版本(Semantic version)
+3. Git 提交哈希值
+4. 语义版本 (Semantic version)
 
-关于更多的选择，请查看 Stack Overflow [问题](https://stackoverflow.com/a/56213290/1799408) "Properly Versioning Docker Images" 中的这个答案。
+关于更多的选择，也可以参考 Stack Overflow [问题](https://stackoverflow.com/a/56213290/1799408) "Properly Versioning Docker Images" 中的这个答案。
 
 比如说
 
 ```bash
-docker build -t web-prod-a072c4e5d94b5a769225f621f08af3d4bf820a07-0.1.4 .
+docker build -t web-prod-b25a262-1.0.0 .
 ```
 
 在这里，我们用下面的内容来形成标签
 
 1. 项目名称：web
 2. 环境名称: prod
-3. Git commit hash: a072c4e5d94b5a769225f621f08af3d4bf820a07
-4. 语义学版本： 0.1.4
+3. Git commit short hash: b25a262 (通过命令 `git rev-parse --short HEAD` 来获得)
+4. 语义学版本：1.0.0
 
-选择一个标签方案并与之保持一致是至关重要的。由于提交哈希值（commit hashes）使得人们可以很容易地将图像标签与代码联系起来，因此建议将它们纳入你的标签方案。
+选择一个标签方案并与之保持一致是至关重要的。由于提交哈希值（commit hashes）可以很容易地将镜像标签与代码联系起来，建议将它们纳入你的标签方案。
 
-### 不要在镜像中存储机密信息
+### 2. 不要在镜像中存储机密信息
 
-_Secrets 是敏感的信息，如密码、数据库凭证、SSH密钥、令牌和TLS证书，仅此而已。这些信息不应该在没有加密的情况下被放入你的镜像中，因为未经授权的用户如果获得了镜像的访问权，只需要检查这些层就可以提取密钥。_
+Secrets 是敏感的信息，如密码、数据库凭证、SSH密钥、令牌和 TLS 证书等。这些信息不应该在没有加密的情况下被放入你的镜像中，因为未经授权的用户如果获得了镜像的访问权，只需要检查这些层就可以提取密钥。
 
-不要在 Docker 文件中添加明文的密钥，尤其是当你把镜像推送到像 Docker Hub 这样的公共仓库时。
+因此不要在 Docker 文件中添加明文的密钥，尤其是当你把镜像推送到像 Docker Hub 这样的公共仓库！！
 
 ```dockerfile
 FROM python:3.9-slim
@@ -596,7 +588,7 @@ ENV DATABASE_PASSWORD "SuperSecretSauce"
 2. 构建时参数（在构建时)
 3. 协调工具，如 Docker Swarm（通过 Docker secrets）或 Kubernetes（通过 Kubernetes secrets）。
 
-此外，你还可以通过在你的 _.dockerignore_ 文件中添加常见的密钥文件和文件夹来帮助防止密钥的泄露。
+此外，你还可以通过在你的 `.dockerignore` 文件中添加常见的密钥文件和文件夹来帮助防止密钥的泄露。
 
 ```bash
 **/.env
@@ -607,11 +599,11 @@ ENV DATABASE_PASSWORD "SuperSecretSauce"
 最后，要明确哪些文件会被复制到镜像中，而不是递归地复制所有文件。
 
 ```dockerfile
-# BAD
-复制 . .
+# 不好的做法
+COPY . .
 
-# 好的
-复制 ./app.py .
+# 好的做法
+COPY ./app.py .
 ```
 
 明确的做法也有助于限制缓存的破坏。
@@ -623,10 +615,9 @@ ENV DATABASE_PASSWORD "SuperSecretSauce"
 ```bash
 docker run --detach --env "DATABASE_PASSWORD=SuperSecretSauce" python：3.9-slim
 
-d92cf5cf870eb0fdbf03c666e7fcf18f9664314b79ad58bc7618ea3445e39239
+b25a262f870eb0fdbf03c666e7fcf18f9664314b79ad58bc7618ea3445e39239
 
-
-docker inspect --format='{{range .Config.Env}}{{println .}}{{end}}' d92cf5cf870eb0fdbf03c666e7fcf18f9664314b79ad58bc7618ea3445e39239
+docker inspect --format='{{range .Config.Env}}{{println .}}{{end}}' b25a262f870eb0fdbf03c666e7fcf18f9664314b79ad58bc7618ea3445e39239
 
 DATABASE_PASSWORD=SuperSecretSauce
 PATH=/usr/local/bin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -645,7 +636,7 @@ PYTHON_GET_PIP_SHA256=fa6f3fb93cce234cd4e8dd2beb54a51ab9c247653b52855a48dd44e6b2
 
 #### 构建时参数
 
-你可以在构建时使用构建时参数来传递密钥，但这些密钥对于那些可以通过docker历史访问镜像的人来说是可见的。
+你可以在构建时使用构建时参数来传递密钥，但这些密钥对于那些可以通过 docker 历史访问镜像的人来说是可见的。
 
 例子
 
@@ -665,17 +656,17 @@ docker build --build-arg "DATABASE_PASSWORD=SuperSecretSauce" .
 如果你只需要临时使用密钥作为构建的一部分。例如，用于克隆私有 repo 或下载私有软件包的 SSH 密钥。你应该使用多阶段构建，因为构建者的历史会被临时阶段忽略。
 
 ```dockerfile
-# temp stage
+# 临时阶段
 FROM python:3.9-slim as builder
 
-# secret
+# 密钥参数
 arg ssh_private_key
 
 # 安装 git
 RUN apt-get update && （运行 apt-get update）。
     apt-get install -y --no-install-recommends git
 
-# 使用ssh密钥来克隆 repo
+# 使用 ssh 密钥来克隆 repo
 RUN mkdir -p /root/.ssh/ && \\
     echo "${PRIVATE_SSH_KEY}" > /root/.ssh/id_rsa
 RUN touch /root/.ssh/known_hosts & &
@@ -691,12 +682,11 @@ FROM python:3.9-slim
 # 从临时镜像中复制版本库
 COPY --from=builder /your-repo /app/your-repo
 
-# 使用该版本库来做一些事情!
 ```
 
-多阶段构建只保留了最终镜像的历史。请记住，你可以把这个功能用于你的应用程序需要的永久密钥，比如数据库凭证。
+多阶段构建只保留了最终镜像的历史。你可以把这个功能用于你的应用程序需要的永久密钥，比如数据库凭证。
 
-你也可以使用Docker build中新的--secret选项来向Docker镜像传递密钥，这些密钥不会被存储在镜像中。
+你也可以使用 docker build 中新的 `--secret` 选项来向 Docker 镜像传递密钥，这些密钥不会被存储在镜像中。
 
 ```dockerfile
 # "docker_is_awesome" > secrets.txt
@@ -738,7 +728,7 @@ IMAGE          CREATED         CREATED BY                                      S
 <missing>      4 weeks ago     /bin/sh -c #(nop) ADD file:aad4290d27580cc1a…   5.6MB
 ```
 
-#### Docker密钥
+#### Docker 密钥
 
 如果你正在使用 Docker Swarm，你可以用 Docker secrets 来管理密钥。
 
@@ -761,7 +751,7 @@ qdqmbpizeef0lfhyttxqfbty0   postgres_password             4 seconds ago   4 seco
 
 当一个容器被赋予上述密钥的访问权时，它将挂载在 `/run/secrets/postgres_password`。这个文件将包含明文的密钥的实际值。
 
-使用不同的编排工具？
+使用其他的编排工具？
 
 * [使用 AWS Secrets Manager 的密钥与 Kubernetes 的密钥](https://docs.aws.amazon.com/eks/latest/userguide/manage-secrets.html)
 * DigitalOcean Kubernetes - [保护 DigitalOcean Kubernetes 集群的推荐步骤](https://www.digitalocean.com/community/tutorials/recommended-steps-to-secure-a-digitalocean-kubernetes-cluster)
@@ -770,23 +760,23 @@ qdqmbpizeef0lfhyttxqfbty0   postgres_password             4 seconds ago   4 seco
 
 ### 使用 .dockerignore 文件
 
-我们已经提到过几次使用 .dockerignore 文件。这个文件用来指定你不希望被添加到发送给 Docker 守护进程的初始构建上下文中的文件和文件夹，后者将构建你的镜像。
-换句话说，你可以用它来定义你需要的构建环境。
+之前已经提到过几次使用 `.dockerignore` 文件。这个文件用来指定你不希望被添加到发送给 Docker 守护进程的初始构建上下文中的文件和文件夹，后者将构建你的镜像。换句话说，你可以用它来定义你需要的构建环境。
 
-当一个 Docker 镜像被构建时，整个 Docker上下文 - 即你的项目的根在 `COPY` 或`ADD` 命令被评估之前就被发送给 Docker 守护进程。
-这可能是相当费资源，尤其是当你的项目中有许多依赖关系、大型数据文件或构建工件时。
+当一个 Docker 镜像被构建时，整个 Docker 上下文 - 即你的项目的根在 `COPY` 或 `ADD` 命令执行之前就被发送给了 Docker 守护进程。
 
-另外，Docker CLI 和守护程序可能不在同一台机器上。因此，如果守护进程是在远程机器上执行的，你就更应该注意构建环境的大小了。
+这可能是相当费资源，尤其是当你的项目中有许多依赖关系、大量的数据文件或构建工件时。
 
-你应该在 .dockerignore 文件中添加什么？
+另外，当 Docker CLI 和守护程序不在同一台机器上。比如守护进程是在远程机器上执行的，你就更应该注意构建环境的大小了。
+
+你应该在 `.dockerignore` 文件中添加什么？
 
 1. 临时文件和文件夹
 2. 构建日志
 3. 本地 secrets
 4. 本地开发文件，如 `docker-compose.yml`
-5. 版本控制文件夹，如".git"、".hg" 和 ".vscode"
+5. 版本控制文件夹，如 ".git"、".hg" 和 ".vscode" 等
 
-例子。
+例子：
 
 ```bash
 **/.git
@@ -806,12 +796,12 @@ docker-compose.yml
 
 总之，结构合理的 .dockerignore 可以帮助
 
-1. 减少Docker镜像的大小
+1. 减少 Docker 镜像的大小
 2. 加快构建过程
 3. 防止不必要的缓存失效
 4. 防止泄密
 
-### 整理并扫描你的 Dockerfile 和图像
+### 4. 检查并扫描你的 Dockerfile 和图像
 
 Linting 是检查源代码中是否存在可能导致潜在缺陷的编程和风格错误以及不良做法的过程。就像编程语言一样，静态文件也可以被 lint。特别是对于你的 Dockerfile，linter 可以帮助确保它们的可维护性、避免弃用语法并遵守最佳实践。整理图像应该是 CI 管道的标准部分。
 
@@ -830,18 +820,18 @@ Dockerfile:17 DL3025 warning: Use arguments JSON notation for CMD and ENTRYPOINT
 
 你可以将 Dockerfile 与扫描图像和容器的漏洞结合使用。
 
-一些选项：
+以下时一些有影响力的镜像扫描工具：
 
 * [Snyk](https://docs.docker.com/engine/scan/) 是 Docker 本地漏洞扫描的独家提供商。你可以使用 `docker scan` CLI 命令来扫描图像。
 * [Trivy](https://aquasecurity.github.io/trivy/) 可用于扫描容器镜像、文件系统、git 存储库和其他配置文件。
 * [Clair](https://github.com/quay/clair) 是一个开源项目，用于对应用程序容器中的漏洞进行静态分析。
 * [Anchore](https://github.com/anchore/anchore-engine) 是一个开源项目，为容器镜像的检查、分析和认证提供集中式服务。
 
-总而言之，对你的 Dockerfile 和图像进行 lint 和扫描，以发现任何偏离最佳实践的潜在问题。
+总而言之，对你的 Dockerfile 和图像进行 lint 和扫描，来发现任何偏离最佳实践的潜在问题。
 
-### 签名和验证图像
+### 5. 签名和验证图像
 
-_你怎么知道用于运行生产代码的图像没有被篡改？_
+你怎么知道用于运行生产代码的图像没有被篡改？
 
 篡改可以通过中间人（MITM）攻击或注册表被完全破坏来实现。Docker 内容信任（DCT）可以对来自远程注册中心的 Docker 镜像进行签名和验证。
 
@@ -862,18 +852,18 @@ notary.docker.io does not have trust data for docker.io/namespace/unsigned-image
 
 当从 Docker Hub下 载图像时，确保使用官方图像或来自可信来源的经过验证的图像。较大的团队应该使用他们自己的内部私有容器仓库。
 
-## 更多实践
+## 更多实践分享
 
-### 使用Python虚拟环境
+### 1. 使用 Python 虚拟环境
 
 你应该在一个容器中使用虚拟环境吗？
 
-在大多数情况下，只要你坚持在每个容器中只运行一个进程，虚拟环境就是不必要的。因为容器本身提供了隔离，所以包可以在整个系统内安装。也就是说，你可能想在多阶段构建中使用虚拟环境，而不是构建轮子文件。
+在大多数情况下，只要你坚持在每个容器中只运行一个进程，虚拟环境就是不必要的。因为容器本身提供了隔离，所以包可以在整个系统内安装。也就是说，你可能想在多阶段构建中使用虚拟环境，而不是构建 wheels 文件。
 
 使用 wheels 的例子
 
 ```dockerfile
-# temp stage
+# 临时阶段
 FROM python:3.9-slim as builder
 
 WORKDIR /app
@@ -888,7 +878,7 @@ COPY requirements.txt .
 RUN pip wheel --no-cache-dir --no-deps --wheel-dir /app/wheels -r requirements.txt
 
 
-# final stage
+# 最终阶段
 FROM python:3.9-slim
 
 WORKDIR /app
@@ -902,7 +892,7 @@ RUN pip install --no-cache /wheels/*
 使用 virtualenv 的例子
 
 ```dockerfile
-# temp stage
+# 临时阶段
 FROM python:3.9-slim as builder
 
 WORKDIR /app
@@ -920,7 +910,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 
-# final stage
+# 最终阶段
 FROM python:3.9-slim
 
 COPY --from=builder /opt/venv /opt/venv
@@ -930,7 +920,7 @@ WORKDIR /app
 ENV PATH="/opt/venv/bin:$PATH"
 ```
 
-### 设置内存和CPU的限制
+### 设置内存和 CPU 的限制
 
 限制 Docker 容器的内存使用是一个好主意，特别是当你在一台机器上运行多个容器时。这可以防止任何一个容器使用所有可用的内存，从而削弱其他容器的功能。
 
@@ -940,7 +930,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 docker run --cpus=2 -m 512m nginx
 ```
 
-上述命令将容器的使用限制在 2 个 CPU 和 512 兆的主内存。
+上述命令将容器的使用限制在 2 个 CPU 和 512 兆的内存。
 
 你可以在 Docker Compose 文件中做同样的事情，像这样。
 
@@ -966,7 +956,7 @@ services:
 1. 带有内存、CPU和GPU的运行时选项：https://docs.docker.com/config/containers/resource_constraints/
 2. Docker Compose 的资源限制：https://docs.docker.com/compose/compose-file/compose-file-v3/#resources
 
-### 记录 Log 到 stdout 或 stderr
+### 3. 记录 Log 到 stdout 或 stderr
 
 在 Docker 容器中运行的应用程序应该将日志信息写入标准输出（stdout）和标准错误（stderr），而不是写入文件。
 
@@ -988,7 +978,7 @@ gunicorn --worker-tmp-dir /dev/shm config.wsgi -b 0.0.0.0:8000
 
 ## 总结
 
-本文介绍了一些最佳实践，使你的 Dockerfiles 和镜像更干净、更精简、更安全。
+以上就是本文介绍了一些最佳实践，利用这些最佳实践一定会让你的 Dockerfiles 和镜像变得更干净、更精简、更安全。
 
 更多资源
 
