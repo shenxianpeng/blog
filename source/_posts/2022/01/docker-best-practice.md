@@ -1,5 +1,5 @@
 ---
-title: 【必读】Docker 最佳实践
+title: 17 条关于 Docker 的最佳实践
 tags:
   - Dokerfile
   - Docker
@@ -15,7 +15,7 @@ author: shenxianpeng
 
 ## 文章目录
 
-### 关于 Dockerfiles
+### Dockerfile 最佳实践
 
 1. 使用多阶段的构建
 2. 调整 Dockerfile 命令的顺序
@@ -29,20 +29,14 @@ author: shenxianpeng
 10. 理解 `ENTRYPOINT` 和 `CMD` 之间的区别
 11. 添加健康检查 `HEALTHCHECK`
 
-### 关于 Images
+### Docker 镜像最佳实践
 
 1. Docker 镜像的版本
 2. 不要在图像中存储密钥
 3. 使用 `.dockerignore` 文件
 4. 检查和扫描你的 Docker 文件和镜像
 5. 签署和验证图像
-
-### 更多实践
-
-1. 使用 `Python` 虚拟环境
-2. 设置内存和CPU的限制
-3. 记录到 stdout 或 stderr
-4. 为 Gunicorn Heartbeat 使用共享内存挂载
+6. 设置内存和 CPU 的限制
 
 <!-- more -->
 
@@ -534,7 +528,7 @@ services:
 
 如果你使用的是 Docker Swarm 以外的编排工具（比如 Kubernetes 或 AWS ECS），它们很可能有自己的内部系统来处理健康检查。在添加 `HEALTHCHECK` 指令之前，请参阅特定工具的文档。
 
-## 镜像
+## Docker 镜像最佳实践
 
 ### 1. Docker 镜像版本
 
@@ -850,77 +844,9 @@ notary.docker.io does not have trust data for docker.io/namespace/unsigned-image
 
 你可以从使用 Docker 内容信任签署图像文档中了解签署图像的情况。
 
-当从 Docker Hub下 载图像时，确保使用官方图像或来自可信来源的经过验证的图像。较大的团队应该使用他们自己的内部私有容器仓库。
+当从 Docker Hub下 载图像时，确保使用官方图像或来自可信来源的经过验证的图像。较大的团队应该使用他们自己的内部私有容器仓库
 
-## 更多实践分享
-
-### 1. 使用 Python 虚拟环境
-
-你应该在一个容器中使用虚拟环境吗？
-
-在大多数情况下，只要你坚持在每个容器中只运行一个进程，虚拟环境就是不必要的。因为容器本身提供了隔离，所以包可以在整个系统内安装。也就是说，你可能想在多阶段构建中使用虚拟环境，而不是构建 wheels 文件。
-
-使用 wheels 的例子
-
-```dockerfile
-# 临时阶段
-FROM python:3.9-slim as builder
-
-WORKDIR /app
-
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends gcc
-
-COPY requirements.txt .
-RUN pip wheel --no-cache-dir --no-deps --wheel-dir /app/wheels -r requirements.txt
-
-
-# 最终阶段
-FROM python:3.9-slim
-
-WORKDIR /app
-
-COPY --from=builder /app/wheels /wheels
-COPY --from=builder /app/requirements.txt .
-
-RUN pip install --no-cache /wheels/*
-```
-
-使用 virtualenv 的例子
-
-```dockerfile
-# 临时阶段
-FROM python:3.9-slim as builder
-
-WORKDIR /app
-
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends gcc
-
-RUN python -m venv /opt/venv
-ENV PATH="/opt/venv/bin:$PATH"
-
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-
-
-# 最终阶段
-FROM python:3.9-slim
-
-COPY --from=builder /opt/venv /opt/venv
-
-WORKDIR /app
-
-ENV PATH="/opt/venv/bin:$PATH"
-```
-
-### 设置内存和 CPU 的限制
+### 6. 设置内存和 CPU 的限制
 
 限制 Docker 容器的内存使用是一个好主意，特别是当你在一台机器上运行多个容器时。这可以防止任何一个容器使用所有可用的内存，从而削弱其他容器的功能。
 
@@ -956,29 +882,10 @@ services:
 1. 带有内存、CPU和GPU的运行时选项：https://docs.docker.com/config/containers/resource_constraints/
 2. Docker Compose 的资源限制：https://docs.docker.com/compose/compose-file/compose-file-v3/#resources
 
-### 3. 记录 Log 到 stdout 或 stderr
-
-在 Docker 容器中运行的应用程序应该将日志信息写入标准输出（stdout）和标准错误（stderr），而不是写入文件。
-
-然后你可以配置 Docker 守护进程，将你的日志信息发送到一个集中的日志解决方案（如 CloudWatch Logs 或 Papertrail）。
-
-更多信息，请查看[The Twelve-Factor App](https://12factor.net/logs) 的 [Treat logs as event streams](https://12factor.net/) 和 Docker docs 的 [Configure logging drivers](https://docs.docker.com/config/containers/logging/configure/)
-
-### 为 Gunicorn 心跳系统使用共享内存挂载
-
-Gunicorn 使用一个基于文件的心跳系统来确保所有分叉的工作进程都活着。
-
-在大多数情况下，心跳文件是在 "/tmp" 中找到的，它通常通过 tmpfs 在内存中。由于 Docker 默认不利用 tmpfs，这些文件将被存储在磁盘支持的文件系统中。这可能会导致一些问题，比如随机冻结，因为心跳系统使用 `os.fchmod`，如果该目录实际上是在一个磁盘支持的文件系统上，它可能会阻塞 worker。
-
-幸运的是，有一个简单的解决办法。通过 `--worker-tmp-dir` 标志将心跳目录改为内存映射的目录。
-
-```bash
-gunicorn --worker-tmp-dir /dev/shm config.wsgi -b 0.0.0.0:8000
-```
 
 ## 总结
 
-以上就是本文介绍了一些最佳实践，利用这些最佳实践一定会让你的 Dockerfiles 和镜像变得更干净、更精简、更安全。
+以上就是本文介绍了一些最佳实践，利用这些最佳实践一定会让你的 Dockerfiles 和 Docker Image 变得更干净、精简和安全。
 
 更多资源
 
