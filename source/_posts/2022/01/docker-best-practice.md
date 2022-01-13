@@ -882,12 +882,6 @@ services:
 1. 带有内存、CPU和GPU的运行时选项：https://docs.docker.com/config/containers/resource_constraints/
 2. Docker Compose 的资源限制：https://docs.docker.com/compose/compose-file/compose-file-v3/#resources
 
-
 ## 总结
 
-以上就是本文介绍了一些最佳实践，利用这些最佳实践一定会让你的 Dockerfiles 和 Docker Image 变得更干净、精简和安全。
-
-更多资源
-
-* [Docker 开发的最佳实践](https://docs.docker.com/develop/dev-best-practices/)
-* [编写 Dockerfiles 的最佳实践](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+以上就是本文介绍了 17 条最佳实践，利用这些最佳实践一定会让你的 Dockerfiles 和 Docker Image 变得更干净、精简和安全。
