@@ -1,5 +1,5 @@
 ---
-title: 17 条关于 Docker 的最佳实践
+title: 你一定要了解这 17 条 Docker 最佳实践！
 tags:
   - Dokerfile
   - Docker
@@ -9,13 +9,11 @@ date: 2022-01-12 12:18:16
 author: shenxianpeng
 ---
 
-本篇分享在编写 Dockerfiles 和使用 Docker 时应遵循的一些最佳实践。篇幅较长，但保证看完会很有收获。
-
-下面所列举的大多数做法适用于所有的开发人员，不论使用何种编程语言。但有一些做法只适用于 Python 相关的开发程序。
+本篇分享在编写 Dockerfiles 和使用 Docker 时应遵循的一些最佳实践。篇幅较长，建议先收藏慢慢看，保证看完会很有收获。
 
 ## 文章目录
 
-### Dockerfile 最佳实践
+Dockerfile 最佳实践
 
 1. 使用多阶段的构建
 2. 调整 Dockerfile 命令的顺序
@@ -29,7 +27,7 @@ author: shenxianpeng
 10. 理解 `ENTRYPOINT` 和 `CMD` 之间的区别
 11. 添加健康检查 `HEALTHCHECK`
 
-### Docker 镜像最佳实践
+Docker 镜像最佳实践
 
 1. Docker 镜像的版本
 2. 不要在图像中存储密钥
@@ -38,7 +36,7 @@ author: shenxianpeng
 5. 签署和验证图像
 6. 设置内存和 CPU 的限制
 
-<!-- more -->
+## Dockerfile 最佳实践
 
 ### 1. 使用多阶段的构建
 
@@ -47,6 +45,8 @@ author: shenxianpeng
 例如，你可以有一个阶段用于编译和构建你的应用程序，然后可以复制到后续阶段。由于只有最后一个阶段被用来创建镜像，与构建应用程序相关的依赖关系和工具就会被丢弃，因此可以留下一个精简的、模块化的、可用于生产的镜像。
 
 Web 开发示例：
+
+<!-- more -->
 
 ```Dockerfile
 # 临时阶段
@@ -406,7 +406,7 @@ root@ede24a5ef536:/app# ps ax
   342 pts/0    R+     0:00 ps ax
 ```
 
-#### 了解 `ENTRYPOINT` 和 `CMD` 之间的区别
+#### 10. 了解 `ENTRYPOINT` 和 `CMD` 之间的区别
 
 我应该使用 `ENTRYPOINT` 还是 `CMD` 来运行容器进程？有两种方法可以在容器中运行命令。
 
@@ -449,9 +449,9 @@ gunicorn config.wsgi -w 4
 docker run <image_name> 6
 ```
 
-这样就将用 6 个 Gunicorn workers 启动容器，而不是默认的 4 个。
+这样就将有 6 个 Gunicorn workers 启动容器，而不是默认的 4 个。
 
-### 10. 添加健康检查 `HEALTHCHECK`
+### 11. 添加健康检查 `HEALTHCHECK`
 
 使用 `HEALTHCHECK` 来确定容器中运行的进程是否不仅已启动并正在运行，而且是“健康”的。
 
@@ -536,7 +536,7 @@ services:
 
 如果你依赖 `latest` 标签（这并不是一个真正的 "标签"，因为当图像没有明确的标签时，它是默认应用的），你无法根据镜像标签来判断你的代码正在运行哪个版本。
 
-如果你像回滚就变得很困难，并且很容易被覆盖（无论是意外还是恶意的）。标签，就像你的基础设施和部署，应该是不可改变的。
+如果你想回滚就变得很困难，并且很容易被覆盖（无论是意外还是恶意的）。标签，就像你的基础设施和部署，应该是不可改变的。
 
 所以无论你如何对待你的内部镜像，都不应该对基本镜像使用 `latest` 标签，因为你可能会无意中把一个带有破坏性变化的新版本部署到生产中。
 
@@ -752,7 +752,7 @@ qdqmbpizeef0lfhyttxqfbty0   postgres_password             4 seconds ago   4 seco
 * Google Kubernetes引擎 - [与其他产品一起使用密钥管理器](https://cloud.google.com/secret-manager/docs/using-other-products#google-kubernetes-engine)
 * Nomad - [Vault 集成和检索动态密钥](https://learn.hashicorp.com/tutorials/nomad/vault-postgres?in=nomad/integrate-vault)
 
-### 使用 .dockerignore 文件
+### 3. 使用 .dockerignore 文件
 
 之前已经提到过几次使用 `.dockerignore` 文件。这个文件用来指定你不希望被添加到发送给 Docker 守护进程的初始构建上下文中的文件和文件夹，后者将构建你的镜像。换句话说，你可以用它来定义你需要的构建环境。
 
@@ -814,7 +814,7 @@ Dockerfile:17 DL3025 warning: Use arguments JSON notation for CMD and ENTRYPOINT
 
 你可以将 Dockerfile 与扫描图像和容器的漏洞结合使用。
 
-以下时一些有影响力的镜像扫描工具：
+以下是一些有影响力的镜像扫描工具：
 
 * [Snyk](https://docs.docker.com/engine/scan/) 是 Docker 本地漏洞扫描的独家提供商。你可以使用 `docker scan` CLI 命令来扫描图像。
 * [Trivy](https://aquasecurity.github.io/trivy/) 可用于扫描容器镜像、文件系统、git 存储库和其他配置文件。
@@ -884,4 +884,8 @@ services:
 
 ## 总结
 
-以上就是本文介绍了 17 条最佳实践，利用这些最佳实践一定会让你的 Dockerfiles 和 Docker Image 变得更干净、精简和安全。
+以上就是本文介绍的 17 条最佳实践，掌握这些最佳实践一定会让你的 Dockerfile 和 Docker Image 变得精简，干净，和安全。
+
+---
+
+本文出自 [Docker Best Practices for Python Developers](https://testdriven.io/blog/docker-best-practices/)。
