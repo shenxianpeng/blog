@@ -1,5 +1,5 @@
 ---
-title: 【必读】Docker 最佳实践
+title: 你一定要了解这 17 条 Docker 最佳实践！
 tags:
   - Dokerfile
   - Docker
@@ -9,13 +9,11 @@ date: 2022-01-12 12:18:16
 author: shenxianpeng
 ---
 
-本篇分享在编写 Dockerfiles 和使用 Docker 时应遵循的一些最佳实践。篇幅较长，但保证看完会很有收获。
-
-下面所列举的大多数做法适用于所有的开发人员，不论使用何种编程语言。但有一些做法只适用于 Python 相关的开发程序。
+本篇分享在编写 Dockerfiles 和使用 Docker 时应遵循的一些最佳实践。篇幅较长，建议先收藏慢慢看，保证看完会很有收获。
 
 ## 文章目录
 
-### 关于 Dockerfiles
+Dockerfile 最佳实践
 
 1. 使用多阶段的构建
 2. 调整 Dockerfile 命令的顺序
@@ -29,7 +27,7 @@ author: shenxianpeng
 10. 理解 `ENTRYPOINT` 和 `CMD` 之间的区别
 11. 添加健康检查 `HEALTHCHECK`
 
-### 关于 Images
+Docker 镜像最佳实践
 
 1. Docker 镜像的版本
 2. 不要在镜像中存储密钥
@@ -37,14 +35,7 @@ author: shenxianpeng
 4. 检查和扫描你的 Docker 文件和镜像
 5. 签署和验证镜像
 
-### 更多实践
-
-1. 使用 `Python` 虚拟环境
-2. 设置内存和CPU的限制
-3. 记录到 stdout 或 stderr
-4. 为 Gunicorn Heartbeat 使用共享内存挂载
-
-<!-- more -->
+## Dockerfile 最佳实践
 
 ### 1. 使用多阶段的构建
 
@@ -53,6 +44,8 @@ author: shenxianpeng
 例如，你可以有一个阶段用于编译和构建你的应用程序，然后可以复制到后续阶段。由于只有最后一个阶段被用来创建镜像，与构建应用程序相关的依赖关系和工具就会被丢弃，因此可以留下一个精简的、模块化的、可用于生产的镜像。
 
 Web 开发示例：
+
+<!-- more -->
 
 ```Dockerfile
 # 临时阶段
@@ -412,7 +405,7 @@ root@ede24a5ef536:/app# ps ax
   342 pts/0    R+     0:00 ps ax
 ```
 
-#### 了解 `ENTRYPOINT` 和 `CMD` 之间的区别
+#### 10. 了解 `ENTRYPOINT` 和 `CMD` 之间的区别
 
 我应该使用 `ENTRYPOINT` 还是 `CMD` 来运行容器进程？有两种方法可以在容器中运行命令。
 
@@ -455,9 +448,9 @@ gunicorn config.wsgi -w 4
 docker run <image_name> 6
 ```
 
-这样就将用 6 个 Gunicorn workers 启动容器，而不是默认的 4 个。
+这样就将有 6 个 Gunicorn workers 启动容器，而不是默认的 4 个。
 
-### 10. 添加健康检查 `HEALTHCHECK`
+### 11. 添加健康检查 `HEALTHCHECK`
 
 使用 `HEALTHCHECK` 来确定容器中运行的进程是否不仅已启动并正在运行，而且是“健康”的。
 
@@ -534,7 +527,7 @@ services:
 
 如果你使用的是 Docker Swarm 以外的编排工具（比如 Kubernetes 或 AWS ECS），它们很可能有自己的内部系统来处理健康检查。在添加 `HEALTHCHECK` 指令之前，请参阅特定工具的文档。
 
-## 镜像
+## Docker 镜像最佳实践
 
 ### 1. Docker 镜像版本
 
@@ -542,7 +535,7 @@ services:
 
 如果你依赖 `latest` 标签（这并不是一个真正的 "标签"，因为当镜像没有明确的标签时，它是默认应用的），你无法根据镜像标签来判断你的代码正在运行哪个版本。
 
-如果你像回滚就变得很困难，并且很容易被覆盖（无论是意外还是恶意的）。标签，就像你的基础设施和部署，应该是不可改变的。
+如果你想回滚就变得很困难，并且很容易被覆盖（无论是意外还是恶意的）。标签，就像你的基础设施和部署，应该是不可改变的。
 
 所以无论你如何对待你的内部镜像，都不应该对基本镜像使用 `latest` 标签，因为你可能会无意中把一个带有破坏性变化的新版本部署到生产中。
 
@@ -758,7 +751,7 @@ qdqmbpizeef0lfhyttxqfbty0   postgres_password             4 seconds ago   4 seco
 * Google Kubernetes引擎 - [与其他产品一起使用密钥管理器](https://cloud.google.com/secret-manager/docs/using-other-products#google-kubernetes-engine)
 * Nomad - [Vault 集成和检索动态密钥](https://learn.hashicorp.com/tutorials/nomad/vault-postgres?in=nomad/integrate-vault)
 
-### 使用 .dockerignore 文件
+### 3. 使用 .dockerignore 文件
 
 之前已经提到过几次使用 `.dockerignore` 文件。这个文件用来指定你不希望被添加到发送给 Docker 守护进程的初始构建上下文中的文件和文件夹，后者将构建你的镜像。换句话说，你可以用它来定义你需要的构建环境。
 
@@ -820,7 +813,7 @@ Dockerfile:17 DL3025 warning: Use arguments JSON notation for CMD and ENTRYPOINT
 
 你可以将 Dockerfile 与扫描镜像和容器的漏洞结合使用。
 
-以下时一些有影响力的镜像扫描工具：
+以下是一些有影响力的镜像扫描工具：
 
 * [Snyk](https://docs.docker.com/engine/scan/) 是 Docker 本地漏洞扫描的独家提供商。你可以使用 `docker scan` CLI 命令来扫描镜像。
 * [Trivy](https://aquasecurity.github.io/trivy/) 可用于扫描容器镜像、文件系统、git 存储库和其他配置文件。
@@ -850,77 +843,9 @@ notary.docker.io does not have trust data for docker.io/namespace/unsigned-image
 
 你可以从使用 Docker 内容信任签署镜像文档中了解签署镜像的情况。
 
-当从 Docker Hub下 载镜像时，确保使用官方镜像或来自可信来源的经过验证的镜像。较大的团队应该使用他们自己的内部私有容器仓库。
+当从 Docker Hub下 载镜像时，确保使用官方镜像或来自可信来源的经过验证的镜像。较大的团队应该使用他们自己的内部私有容器仓库
 
-## 更多实践分享
-
-### 1. 使用 Python 虚拟环境
-
-你应该在一个容器中使用虚拟环境吗？
-
-在大多数情况下，只要你坚持在每个容器中只运行一个进程，虚拟环境就是不必要的。因为容器本身提供了隔离，所以包可以在整个系统内安装。也就是说，你可能想在多阶段构建中使用虚拟环境，而不是构建 wheels 文件。
-
-使用 wheels 的例子
-
-```dockerfile
-# 临时阶段
-FROM python:3.9-slim as builder
-
-WORKDIR /app
-
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends gcc
-
-COPY requirements.txt .
-RUN pip wheel --no-cache-dir --no-deps --wheel-dir /app/wheels -r requirements.txt
-
-
-# 最终阶段
-FROM python:3.9-slim
-
-WORKDIR /app
-
-COPY --from=builder /app/wheels /wheels
-COPY --from=builder /app/requirements.txt .
-
-RUN pip install --no-cache /wheels/*
-```
-
-使用 virtualenv 的例子
-
-```dockerfile
-# 临时阶段
-FROM python:3.9-slim as builder
-
-WORKDIR /app
-
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends gcc
-
-RUN python -m venv /opt/venv
-ENV PATH="/opt/venv/bin:$PATH"
-
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-
-
-# 最终阶段
-FROM python:3.9-slim
-
-COPY --from=builder /opt/venv /opt/venv
-
-WORKDIR /app
-
-ENV PATH="/opt/venv/bin:$PATH"
-```
-
-### 设置内存和 CPU 的限制
+### 6. 设置内存和 CPU 的限制
 
 限制 Docker 容器的内存使用是一个好主意，特别是当你在一台机器上运行多个容器时。这可以防止任何一个容器使用所有可用的内存，从而削弱其他容器的功能。
 
@@ -956,31 +881,10 @@ services:
 1. 带有内存、CPU和GPU的运行时选项：https://docs.docker.com/config/containers/resource_constraints/
 2. Docker Compose 的资源限制：https://docs.docker.com/compose/compose-file/compose-file-v3/#resources
 
-### 3. 记录 Log 到 stdout 或 stderr
-
-在 Docker 容器中运行的应用程序应该将日志信息写入标准输出（stdout）和标准错误（stderr），而不是写入文件。
-
-然后你可以配置 Docker 守护进程，将你的日志信息发送到一个集中的日志解决方案（如 CloudWatch Logs 或 Papertrail）。
-
-更多信息，请查看[The Twelve-Factor App](https://12factor.net/logs) 的 [Treat logs as event streams](https://12factor.net/) 和 Docker docs 的 [Configure logging drivers](https://docs.docker.com/config/containers/logging/configure/)
-
-### 为 Gunicorn 心跳系统使用共享内存挂载
-
-Gunicorn 使用一个基于文件的心跳系统来确保所有分叉的工作进程都活着。
-
-在大多数情况下，心跳文件是在 "/tmp" 中找到的，它通常通过 tmpfs 在内存中。由于 Docker 默认不利用 tmpfs，这些文件将被存储在磁盘支持的文件系统中。这可能会导致一些问题，比如随机冻结，因为心跳系统使用 `os.fchmod`，如果该目录实际上是在一个磁盘支持的文件系统上，它可能会阻塞 worker。
-
-幸运的是，有一个简单的解决办法。通过 `--worker-tmp-dir` 标志将心跳目录改为内存映射的目录。
-
-```bash
-gunicorn --worker-tmp-dir /dev/shm config.wsgi -b 0.0.0.0:8000
-```
-
 ## 总结
 
-以上就是本文介绍了一些最佳实践，利用这些最佳实践一定会让你的 Dockerfiles 和镜像变得更干净、更精简、更安全。
+以上就是本文介绍的 17 条最佳实践，掌握这些最佳实践一定会让你的 Dockerfile 和 Docker Image 变得精简，干净，和安全。
 
-更多资源
+---
 
-* [Docker 开发的最佳实践](https://docs.docker.com/develop/dev-best-practices/)
-* [编写 Dockerfiles 的最佳实践](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+本文出自 [Docker Best Practices for Python Developers](https://testdriven.io/blog/docker-best-practices/)。
