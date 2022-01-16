@@ -32,10 +32,10 @@ author: shenxianpeng
 ### 关于 Images
 
 1. Docker 镜像的版本
-2. 不要在图像中存储密钥
+2. 不要在镜像中存储密钥
 3. 使用 `.dockerignore` 文件
 4. 检查和扫描你的 Docker 文件和镜像
-5. 签署和验证图像
+5. 签署和验证镜像
 
 ### 更多实践
 
@@ -175,9 +175,9 @@ python       3.9.6               cba42c28d9b8   3 days ago   886MB
 python       3.9.6-buster        cba42c28d9b8   3 days ago   886MB
 ```
 
-虽然基于 Alpine Linux 的 Alpine flavor 是最小的，但如果你找不到可以与之配合的编译二进制文件，往往会导致构建时间的增加。因此，你最终可能不得不自己构建二进制文件，这可能会增加图像的大小（取决于所需的系统级依赖）和构建时间（由于必须从源头编译）。
+虽然基于 Alpine Linux 的 Alpine flavor 是最小的，但如果你找不到可以与之配合的编译二进制文件，往往会导致构建时间的增加。因此，你最终可能不得不自己构建二进制文件，这可能会增加镜像的大小（取决于所需的系统级依赖）和构建时间（由于必须从源头编译）。
 
-> 关于为什么最好不要使用基于 Alpine 的基础镜像，请参考[适用于 Python 应用程序的最佳 Docker 基础映像](https://pythonspeed.com/articles/base-image-python-docker-images/) 和 [使用 Alpine 可以使 Python Docker 构建速度慢 50 倍](https://pythonspeed.com/articles/alpine-docker-python/) 了解更多关于为什么最好避免使用基于 Alpine 的基础图像。
+> 关于为什么最好不要使用基于 Alpine 的基础镜像，请参考[适用于 Python 应用程序的最佳 Docker 基础映像](https://pythonspeed.com/articles/base-image-python-docker-images/) 和 [使用 Alpine 可以使 Python Docker 构建速度慢 50 倍](https://pythonspeed.com/articles/alpine-docker-python/) 了解更多关于为什么最好避免使用基于 Alpine 的基础镜像。
 
 归根结底，这都是关于平衡的问题。如果有疑问，从 `*-slim` flavor 开始，特别是在开发模式下，因为你正在构建你的应用程序。你想避免在添加新的 `Python` 包时不得不不断地更新 Dockerfile 以安装必要的系统级依赖。当你为生产强化你的应用程序和 Dockerfile 时，你可能想探索使用 Alpine 来完成多阶段构建的最终镜像。
 
@@ -185,7 +185,7 @@ python       3.9.6-buster        cba42c28d9b8   3 days ago   886MB
 
 ### 4. 尽量减少层的数量
 
-尽量把 `RUN`、`COPY` 和 `ADD` 命令结合起来使用，因为它们会创建层。每一层都会增加图像的大小，因为它们是被缓存的。因此，随着层数的增加，镜像大小也会增加。
+尽量把 `RUN`、`COPY` 和 `ADD` 命令结合起来使用，因为它们会创建层。每一层都会增加镜像的大小，因为它们是被缓存的。因此，随着层数的增加，镜像大小也会增加。
 
 你可以用 `docker history` 命令来测试一下。
 
@@ -204,7 +204,7 @@ IMAGE          CREATED              CREATED BY                                  
 ...
 ```
 
-请注意尺寸。只有 `RUN`、`COPY` 和 `ADD` 命令增加了图像的尺寸，你可以尽可能地通过合并命令来减少图像的大小。比如：
+请注意尺寸。只有 `RUN`、`COPY` 和 `ADD` 命令增加了镜像的尺寸，你可以尽可能地通过合并命令来减少镜像的大小。比如：
 
 ```Dockerfile
 RUN apt-get update
@@ -217,7 +217,7 @@ RUN apt-get install -y gcc
 RUN apt-get update && apt-get install -y gcc
 ```
 
-因此，创建一个单层而不是两个，这就减少了最终图像的大小。虽然减少层数是个好主意，但更重要的是，这本身不是一个目标，而是减少镜像大小和构建时间的一个副作用。换句话说呢，与其试图优化每一条命令，你更应该关注前面的三种做法！！！
+因此，创建一个单层而不是两个，这就减少了最终镜像的大小。虽然减少层数是个好主意，但更重要的是，这本身不是一个目标，而是减少镜像大小和构建时间的一个副作用。换句话说呢，与其试图优化每一条命令，你更应该关注前面的三种做法！！！
 
 1. 多阶段构建
 2. Dockerfile命令的顺序
@@ -227,7 +227,7 @@ RUN apt-get update && apt-get install -y gcc
 
 1. `RUN`、`COPY` 和 `ADD` 都会创建图层
 2. 每个图层都包含与前一个图层的差异
-3. 图层会增加最终图像的大小
+3. 图层会增加最终镜像的大小
 
 #### 提示
 
@@ -540,7 +540,7 @@ services:
 
 只要有可能，就要避免使用 `latest` 标签的镜像。
 
-如果你依赖 `latest` 标签（这并不是一个真正的 "标签"，因为当图像没有明确的标签时，它是默认应用的），你无法根据镜像标签来判断你的代码正在运行哪个版本。
+如果你依赖 `latest` 标签（这并不是一个真正的 "标签"，因为当镜像没有明确的标签时，它是默认应用的），你无法根据镜像标签来判断你的代码正在运行哪个版本。
 
 如果你像回滚就变得很困难，并且很容易被覆盖（无论是意外还是恶意的）。标签，就像你的基础设施和部署，应该是不可改变的。
 
@@ -714,7 +714,7 @@ docker build --no-cache --progress=plain --secret id=mysecret,src=secrets.txt .
 #5 sha256:75601a522ebe80ada66dedd9dd86772ca932d30d7e1b11bba94c04aa55c237de
 #5 0.635 docker_is_awesome#5 DONE 0.7s
 
-#6 导出到图像
+#6 导出到镜像
 ```
 
 最后，检查历史记录，看看密钥是否泄露了。
@@ -801,9 +801,9 @@ docker-compose.yml
 3. 防止不必要的缓存失效
 4. 防止泄密
 
-### 4. 检查并扫描你的 Dockerfile 和图像
+### 4. 检查并扫描你的 Dockerfile 和镜像
 
-Linting 是检查源代码中是否存在可能导致潜在缺陷的编程和风格错误以及不良做法的过程。就像编程语言一样，静态文件也可以被 lint。特别是对于你的 Dockerfile，linter 可以帮助确保它们的可维护性、避免弃用语法并遵守最佳实践。整理图像应该是 CI 管道的标准部分。
+Linting 是检查源代码中是否存在可能导致潜在缺陷的编程和风格错误以及不良做法的过程。就像编程语言一样，静态文件也可以被 lint。特别是对于你的 Dockerfile，linter 可以帮助确保它们的可维护性、避免弃用语法并遵守最佳实践。整理镜像应该是 CI 管道的标准部分。
 
 [Hadolint](https://github.com/hadolint/hadolint) 是最流行的 Dockerfile linter：
 
@@ -818,20 +818,20 @@ Dockerfile:17 DL3025 warning: Use arguments JSON notation for CMD and ENTRYPOINT
 
 这是 Hadolint 一个在线的链接 https://hadolint.github.io/hadolint/ 也可以安装 VS Code [插件](https://marketplace.visualstudio.com/items?itemName=exiasr.hadolint)
 
-你可以将 Dockerfile 与扫描图像和容器的漏洞结合使用。
+你可以将 Dockerfile 与扫描镜像和容器的漏洞结合使用。
 
 以下时一些有影响力的镜像扫描工具：
 
-* [Snyk](https://docs.docker.com/engine/scan/) 是 Docker 本地漏洞扫描的独家提供商。你可以使用 `docker scan` CLI 命令来扫描图像。
+* [Snyk](https://docs.docker.com/engine/scan/) 是 Docker 本地漏洞扫描的独家提供商。你可以使用 `docker scan` CLI 命令来扫描镜像。
 * [Trivy](https://aquasecurity.github.io/trivy/) 可用于扫描容器镜像、文件系统、git 存储库和其他配置文件。
 * [Clair](https://github.com/quay/clair) 是一个开源项目，用于对应用程序容器中的漏洞进行静态分析。
 * [Anchore](https://github.com/anchore/anchore-engine) 是一个开源项目，为容器镜像的检查、分析和认证提供集中式服务。
 
-总而言之，对你的 Dockerfile 和图像进行 lint 和扫描，来发现任何偏离最佳实践的潜在问题。
+总而言之，对你的 Dockerfile 和镜像进行 lint 和扫描，来发现任何偏离最佳实践的潜在问题。
 
-### 5. 签名和验证图像
+### 5. 签名和验证镜像
 
-你怎么知道用于运行生产代码的图像没有被篡改？
+你怎么知道用于运行生产代码的镜像没有被篡改？
 
 篡改可以通过中间人（MITM）攻击或注册表被完全破坏来实现。Docker 内容信任（DCT）可以对来自远程注册中心的 Docker 镜像进行签名和验证。
 
@@ -848,9 +848,9 @@ Error: remote trust data does not exist for docker.io/namespace/unsigned-image:
 notary.docker.io does not have trust data for docker.io/namespace/unsigned-image
 ```
 
-你可以从使用 Docker 内容信任签署图像文档中了解签署图像的情况。
+你可以从使用 Docker 内容信任签署镜像文档中了解签署镜像的情况。
 
-当从 Docker Hub下 载图像时，确保使用官方图像或来自可信来源的经过验证的图像。较大的团队应该使用他们自己的内部私有容器仓库。
+当从 Docker Hub下 载镜像时，确保使用官方镜像或来自可信来源的经过验证的镜像。较大的团队应该使用他们自己的内部私有容器仓库。
 
 ## 更多实践分享
 
