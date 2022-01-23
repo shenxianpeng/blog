@@ -29,7 +29,7 @@ npm install hexo-deployer-git --save        # Install hexo deploy
 
 ```bash
 hexo server                                 # Start the local server. by default is http://localhost:4000/
-hexo new "My New Post"                      # Create a new article
+hexo new "My New Post"                      # Create a new post
 hexo new page "About"                       # Create a new page named About
 hexo clean                                  # Cleans the cache file (db.json) and generate files (public)
 hexo generate                               # Generate static files
@@ -39,27 +39,23 @@ hexo generate -deploy                       # Generate then deploy
 hexo g -d                                   # Abbreviations generate then deploy
 ```
 
-## :memo: Article structure
+## :memo: Create and publish posts
 
-Articles are saved by folder, with the hierarchy of year/month.
+Posts are saved by folder, with the hierarchy of year/month.
 
-Follow the following steps when creating an article, for example: `abc.md` in August 2019.
+Creating an post with following steps:
 
-1. use command `hexo new "abc"` to generate `abc.md`
-2. manually create `2021/05/` under `source/_post` folder
-3. move `abc.md` to `source/_post/2021/05/`
-4. update `tags`, `categories` and `author` fields in `abc.md` file
-5. start writing ... I always use `hexo s` to see how it looks
+1. Running command `hexo new "post"` can generate `post.md` under `source/_drafts`
+2. Then update `post.md`, and fields such as `tags`, `categories` or `author`
+3. Once it's ready to post, move `post.md` to `source/_post/2022/01/` and run `hexo s` to see how it looks like
 
-> Any unfished articles need to be moved to `todo` folder. When it's done, move to `source/_post/...` for publishing.
-
-## 🚀 Deploy
-
-Automatically update new commits to web site [repository](https://github.com/shenxianpeng/shenxianpeng.github.io) by following command.
+If some all look good, run this following command to publish 🚀
 
 ```bash
 sh deploy.sh
 ```
+
+A new commit will be pushed to the blog static files [repository](https://github.com/shenxianpeng/shenxianpeng.github.io)
 
 ## 🧰 Format tools
 
