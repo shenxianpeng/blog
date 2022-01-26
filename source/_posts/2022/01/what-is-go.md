@@ -101,4 +101,10 @@ Python 已有 30 多年的历史，但它的受欢迎程度仍在继续增长。
   * github.com/enescakir/emoji - 表情符号库，支持在终端输出表情符号
   * github.com/mgutz/ansi - 可以创建 ANSI 彩色字符串
 
+---
+
+公众号「DevOps攻城狮」- 专注于CI/CD、DevOps领域知识分享。
+
+👇 欢迎扫扫码关注 👀
+
 ![ ](https://github.com/shenxianpeng/shenxianpeng.github.io/blob/master/about/index/qrcode.jpg?raw=true)
