@@ -12,7 +12,7 @@ author: shenxianpeng
 
 ## Vagrant 简介
 
-关于 Vagrant 的简介，可以参看前一篇文章：[Vagrant 介绍](vagrant.md)
+关于 Vagrant 的简介，可以参看前一篇文章：[Vagrant 介绍](https://shenxianpeng.github.io/2022/01/vagrant/)
 
 ## Vagrant 和 Docker 区别
 
