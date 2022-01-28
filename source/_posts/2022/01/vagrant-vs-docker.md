@@ -1,45 +1,22 @@
 ---
-title: 什么是 Vagrant？Vagrant 和 Docker 该怎么选？
+title: Vagrant 和 Docker 的区别，该如何选？
 tags:
   - Docker
   - VirtualBox
   - Vagrant
 categories:
   - Vagrant
-date: 2022-01-26 22:57:27
+date: 2022-01-28 22:57:27
 author: shenxianpeng
 ---
 
-## 什么是 Vagrant
+## Vagrant 简介
 
-Vagrant 是对传统虚拟机的一层封装，能够让你更方便的使用虚拟机，主要解决环境配置的问题。它可以基于 VirtualBox，VMware，Hyper-V，甚至是 Docker 等提供商来构建你的环境。
-
-## 为什么要用 Vagrant
-
-对比按照传统模式如果我们需要在自己的电脑上安装一台虚拟机时，步骤如下：
-
-首先，下载对应的 ISO 文件
-然后，用 VirtualBox 或 VMware 来加载 ISO
-最后，通过一步步的配置 CPU、内存、磁盘，网络、用户等设置，等待安装完成安装
-
-如果使用 vagrant 来创建一台虚拟机，只需要两条命令
-
-```bash
-# 初始化 Vagrant，这时会在你当前目录下生成一个 Vagrantfile
-vagrant init hashicorp/bionic64
-# 启动虚拟机
-vagrant up
-```
-
-大概几十秒钟就可以完成了（第一次需要下载镜像，时间会长一点，取决于网速）。
-
-Vagrant 之所以可以这么方便，其实是它站在了这些巨人（VirtualBox、VMware、AWS、OpenStack 或其他提供商）的肩膀上，然后通过 Shell 脚本、Ansbile、Chef、Puppet 等工具实现自动在虚拟机上安装和配置软件。
-
-好处就是：提供易于配置、可重现和便携的工作环境，提高生产力和灵活性。
-
-Vagrant 可以说是创建、管理虚拟化环境的最简单、最快捷的方式！
+关于 Vagrant 的简介，可以参看前一篇文章：[Vagrant 介绍](vagrant.md)
 
 ## Vagrant 和 Docker 区别
+
+关于 Vagrant 被问到问到最多的问题可能就是它和 Docker 之前有什么区别。
 
 如果不分场景而直接比对 Vagrant 和 Docker 是不恰当的。在一些简单场景中，它们的作用是重复的，但在更多场景中，它们是无法相互替代的。
 
@@ -48,8 +25,6 @@ Vagrant 可以说是创建、管理虚拟化环境的最简单、最快捷的方
 **所以如果你仅仅是想管理虚拟机，那么你应该使用 Vagrant；如果你想快速开发和部署应用，那么应该使用 Docker。**
 
 下面具体来说说为什么。
-
-<!-- more -->
 
 Vagrant 是 VM 的管理工具，或是说编排工具。Docker 是用来构建、运行、管理容器的工具。那么这个问题其实落在了虚拟机（VM）和 容器（Container）的区别。
 
@@ -79,6 +54,8 @@ Vagrant 是 VM 的管理工具，或是说编排工具。Docker 是用来构建�
 
 总结：Vagrant 和 Docker 的使用场景区别
 
+<!-- more -->
+
 **Vagrant 设计使用来管理虚拟机的，而 Docker 设计是用来管理应用环境。**
 
 Vagrant 更适合用来做开发、测试，解决环境一致性的问题；Docker 更适合做快速开发和部署（CI/CD）。
@@ -87,8 +64,6 @@ Vagrant 更适合用来做开发、测试，解决环境一致性的问题；Doc
 
 ---
 
-公众号「DevOps攻城狮」- 专注于CI/CD、DevOps领域知识分享。
-
-👇 欢迎扫扫码关注 👀
+欢迎扫码关注公众号「DevOps攻城狮」- 专注于DevOps领域知识分享。
 
 ![ ](https://github.com/shenxianpeng/shenxianpeng.github.io/blob/master/about/index/qrcode.jpg?raw=true)

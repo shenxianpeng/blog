@@ -885,6 +885,10 @@ services:
 
 以上就是本文介绍的 17 条最佳实践，掌握这些最佳实践一定会让你的 Dockerfile 和 Docker Image 变得精简，干净，和安全。
 
+本文出自 [Docker Best Practices for Python Developers](https://testdriven.io/blog/docker-best-practices/)。
+
 ---
 
-本文出自 [Docker Best Practices for Python Developers](https://testdriven.io/blog/docker-best-practices/)。
+欢迎扫码关注公众号「DevOps攻城狮」- 专注于DevOps领域知识分享。
+
+![ ](https://github.com/shenxianpeng/shenxianpeng.github.io/blob/master/about/index/qrcode.jpg?raw=true)
