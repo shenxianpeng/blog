@@ -1,12 +1,12 @@
 ---
-title: Vagrant 介绍
+title: 什么是 Vagrant? Vagrant 和 VirtualBox 的区别
 tags:
   - VirtualBox
   - Vagrant
 categories:
   - Vagrant
 author: shenxianpeng
-date: 2022-01-27 23:00:57
+date: 2022-02-11 08:30:00
 ---
 
 ## 什么是 Vagrant
@@ -29,7 +29,7 @@ Vagrant 的第一个稳定版本 Vagrant 1.0 于 2012 年 3 月发布，正好�
 
 同年 11 月，Mitchell 成立了 HashiCorp 公司，以支持 Vagrant 的全职开发。Vagrant 仍然是开源软件，HashiCorp 公司致力于创建商业版本，并为 Vagrant 提供专业支持和培训。
 
-现在 HashiCorp 已经成为世界顶级开源公司，它通过一些列的产品，包括 Vagrant，Packer（打包），Momad（部署），Terraform（配置云环境），Vault（权限管理） 以及 Consul（监控），从端到端重新定义了整个 DevOps。
+现在 HashiCorp 已经成为世界顶级开源公司，它通过一系列的产品，包括 Vagrant，Packer（打包），Momad（部署），Terraform（配置云环境），Vault（权限管理） 以及 Consul（监控），从端到端重新定义了整个 DevOps。
 
 Vagrant 最初支持 VirtualBox，在 1.1 版增加了对其他虚拟化软件（如 VMware 和 KVM）的支持，以及对 Amazon EC2 等服务器环境的支持。从 1.6 版开始，Vagrant 原生支持 Docker 容器，在某些情况下可以替代完全虚拟化的操作系统。
 
@@ -37,7 +37,7 @@ Vagrant 最初支持 VirtualBox，在 1.1 版增加了对其他虚拟化软件�
 
 使用 Vagrant 的前提条件：
 
-1. 安装 Vagrant。下载[Vagrant](https://www.vagrantup.com/downloads)
+1. 安装 Vagrant。下载 [Vagrant](https://www.vagrantup.com/downloads)
 2. 安装 [VirtualBox](https://www.virtualbox.org/)
 
 当以上两个都准备好了，你就可以通过命令行创建并使用你的虚拟机了。
@@ -70,7 +70,9 @@ vagrant ssh
 
 <!-- more -->
 
-Vagrant 相比传统使用虚拟机的方式要方便的多，我们来看看传统方式是怎样创建一台虚拟机的。
+![](vagrant/vagrant_virtualbox.png)
+
+Vagrant 相比传统使用虚拟机的方式要方便得多，我们来看看传统方式是怎样创建一台虚拟机的。
 
 还是以 VirtualBox 为例，假设你已经安装好了 VirtualBox，使用传统方式要创建一个虚拟机的动作是这样的：
 
@@ -78,7 +80,7 @@ Vagrant 相比传统使用虚拟机的方式要方便的多，我们来看看传
 然后，用 VirtualBox 或 VMware 来加载 ISO
 最后，通过一步步的配置 CPU、内存、磁盘，网络、用户等设置，等待安装完成安装
 
-这种方式配置起来就非常繁琐，需要一步步的进行。这些配置的步骤往往还会写一个文档来记录下来才能保证以后能够创建出来“一摸一样”的虚拟开发环境。
+这种方式配置起来就非常繁琐，需要一步步地进行。这些配置的步骤往往还会写一个文档来记录下来才能保证以后能够创建出来“一模一样”的虚拟开发环境。
 
 相信通过对比你已经大概了解 Vagrant 是怎么使用的，以及它和传统使用虚拟机之间的一些区别了。
 
