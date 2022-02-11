@@ -6,13 +6,15 @@ tags:
   - Vagrant
 categories:
   - Vagrant
-date: 2022-01-28 22:57:27
+date: 2022-02-12 08:30:00
 author: shenxianpeng
 ---
 
+关于 Vagrant 的介绍，可以参看前一篇文章：[什么是 Vagrant? Vagrant 和 VirtualBox 的区别](https://shenxianpeng.github.io/2022/01/vagrant/)
+
 ## 什么是 Vagrant
 
-关于 Vagrant 的简介，可以参看前一篇文章：[什么是 Vagrant? Vagrant 和 VirtualBox 的区别](https://shenxianpeng.github.io/2022/01/vagrant/)
+关于 Vagrant 的介绍，可以参看前一篇文章：什么是 Vagrant? Vagrant 和 VirtualBox 的区别
 
 ## Vagrant 和 Docker 区别
 
@@ -56,7 +58,7 @@ Vagrant 是 VM 的管理工具，或是说编排工具；Docker 是用来构建�
 
 <!-- more -->
 
-**Vagrant 设计使用来管理虚拟机的，Docker 设计是用来管理应用环境。**
+**Vagrant 设计是用来管理虚拟机的，Docker 设计是用来管理应用环境。**
 
 Vagrant 更适合用来做开发、测试，解决环境一致性的问题；Docker 更适合做快速开发和部署，CI/CD。
 
