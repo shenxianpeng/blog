@@ -6,7 +6,7 @@ tags:
   - Vagrant
 categories:
   - Vagrant
-date: 2022-02-12 08:30:00
+date: 2022-02-14 08:30:00
 author: shenxianpeng
 ---
 
