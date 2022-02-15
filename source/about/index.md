@@ -15,10 +15,12 @@ author: shenxianpeng
 [1] 作者：沈显鹏
 [2] 出处：https://shenxianpeng.github.io
 
-欢迎关注我的微信公众号「DevOps攻城狮」及其他社交账号 👇
+👨🏼‍💻欢迎关注我的微信公众号「DevOps攻城狮」
 
-* 👨🏼‍💻 微信公众号「DevOps攻城狮」
 ![ ](index/qrcode.jpg)
+
+其他社交账号 👇
+
 * 🚩 [知乎](https://www.zhihu.com/people/shenxianpeng)
 * 🤙🏻 [领英](https://www.linkedin.com/in/xianpeng-shen/)
 * 👨‍💻 [Github](https://github.com/shenxianpeng)
