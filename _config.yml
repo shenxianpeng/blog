@@ -39,7 +39,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace:
 
@@ -92,7 +92,7 @@ disqus_shortname: shenxianpeng
 comments: true
 
 # Deployment
-## Docs: https://hexo.io/docs/deployment.html
+## https://github.com/hexojs/hexo-deployer-git
 deploy:
   type: git
   repo: git@github.com:shenxianpeng/shenxianpeng.github.io.git
