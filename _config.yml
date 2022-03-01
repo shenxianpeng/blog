@@ -99,6 +99,7 @@ deploy:
   branch: master
   name: shenxianpeng
   email: xianpeng.shen@gmail.com
+  message: Site updated
   ignore_hidden: false # default is true
 
 # hexo-generator-search
