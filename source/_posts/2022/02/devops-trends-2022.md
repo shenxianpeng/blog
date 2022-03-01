@@ -40,11 +40,11 @@ DevOps 是 IT 界最近几年的一个热门话题，而且还会越来越热。
 
 ### 趋势三：Kubernetes 成为基础架构
 
-Kubernetes，也称 K8s，是容器编排开源平台，它与容器组交互，能够同时管理更多集群。除了容器管理，还提供安全、网络和存储服务，自我监控，节点和容器的健康状况检查。它可以处理从虚拟机集群管理到负载平衡等所有方方面面，提高生产力，简化 DevOps 开发、测试和部署流程。
+Kubernetes，也称 K8s，是容器编排开源平台，它能够与容器组交互，同时管理更多集群。除了容器管理，还提供安全、网络和存储服务，自我监控，节点和容器的健康状况检查。它可以处理从虚拟机集群管理到负载平衡等所有方方面面，提高生产力，简化 DevOps 开发、测试和部署流程。
 
 根据 Flexera 的 2021 年云计算状况报告，48% 的企业使用 Kubernetes，另有 25% 的企业计划使用它。另外 53% 的组织使用 Docker，21% 的组织计划使用。
 
-### 趋势四：DevSecOps 兴起
+### 趋势四：DevSecOps 成为重要组成部分
 
 安全性正在成为 DevOps 领域的另一个日益关注的问题。
 
@@ -82,7 +82,7 @@ DevOps 市场目前处在相对成熟的阶段，每个细分领域都有很多�
 
 ### 问题五：有哪些主流或平时重点关注的行业媒体号或自媒体公众号？
 
-会经常看一些 DevOps 公众号，还包括 InfoQ，阿里、腾讯、美团等。
+会经常看一些 DevOps 相关的以及 InfoQ，阿里、腾讯、美团等技术公众号。
 
 还会看 YouTube 上一些 DevOps 的个人及公司频道：TechWorld with Nana, CloudBeesTV，CNCF，DevOps Paradox，DevOps Toolkit 等。
 
@@ -94,13 +94,11 @@ DevOps 市场目前处在相对成熟的阶段，每个细分领域都有很多�
 
 ## 参考
 
-[Top DevOps Trends to Watch in 2022](https://www.itbusinessedge.com/development/devops-trends-2022/)
-[DevOps Trends To Look Out for in 2022](https://blog.qasource.com/devops-trends-to-look-out-for-in-2022)
+* [Top DevOps Trends to Watch in 2022](https://www.itbusinessedge.com/development/devops-trends-2022/)
+* [DevOps Trends To Look Out for in 2022](https://blog.qasource.com/devops-trends-to-look-out-for-in-2022)
 
 ---
 
 ![ ](https://github.com/shenxianpeng/shenxianpeng.github.io/blob/master/about/index/qrcode.jpg?raw=true)
 
-关注公众号「DevOps攻城狮」
-
-（转载本站文章请注明作者和出处，请勿用于任何商业用途）
+关注公众号「DevOps攻城狮」（转载本站文章请注明作者和出处，请勿用于任何商业用途）
