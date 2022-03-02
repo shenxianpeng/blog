@@ -4,7 +4,7 @@ tags:
   - BlackDuck
   - Jenkins
 categories:
-  - Jenkins
+  - BlackDuck
 date: 2019-12-08 14:48:02
 author: shenxianpeng
 ---
@@ -16,7 +16,7 @@ author: shenxianpeng
 <!-- more -->
 
 在产品开发中经常需要引入一些开源组件，但这些开源的代码会给产品风险。因此我们在发布自己产品的时候需要对这些开源组件的漏洞和许可信息进行评估。
-![开源不等于安全](Blackduck-interation-into-Jenkins/open-source.png)
+![开源不等于安全](blackduck-interate-with-jenkins/open-source.png)
 
 Black Duck（黑鸭）是一款对源代码进行扫描、审计和代码管理的软件工具（同类型的工具还有 JFrog Xray）。能够搜索安全的开源代码，检测产品的开源代码使用情况，以检查外来代码的开源代码使用情况和风险情况。
 
@@ -60,13 +60,13 @@ Black Duck（黑鸭）是一款对源代码进行扫描、审计和代码管理�
 * Jenkins -> Confiruration（系统配置）
 * Black Duck URL： 公司内部的 Black Duck 网址，例如 https://yourcompany.blackducksoftware.com
 * Black Duck credentials： 注意要选择 credentials 类型为 Secret text, Secret 填写你用户的 Token
-![Secret text 配置](Blackduck-interation-into-Jenkins/blackduck-credentials.png)
+![Secret text 配置](blackduck-interate-with-jenkins/blackduck-credentials.png)
 * 配置完成后点击 Test connections to Black Duck，显示 Connection successful 表示配置成功。
-![Connection successful](Blackduck-interation-into-Jenkins/blackduck-config.png)
+![Connection successful](blackduck-interate-with-jenkins/blackduck-config.png)
 
 ## Black Duck 流水线任务效果
 
-![Build with Parameters](Blackduck-interation-into-Jenkins/blackduck-Jenkins-job.png)
+![Build with Parameters](blackduck-interate-with-jenkins/blackduck-Jenkins-job.png)
 
 ## Black Duck 流水线代码
 
