@@ -74,7 +74,9 @@ DEBUG [main-Executable_Stream_Thread] --- Python 2.7.5
 
 ## Solution
 
-Link python to python3, for example
+Link python to python3, it works in my case.
+
+For example
 
 ```bash
 # save python to other name
@@ -89,7 +91,32 @@ Then try to run `bash <(curl -s -L https://detect.synopsys.com/detect7.sh)` agai
 bash <(curl -s -L https://detect.synopsys.com/detect7.sh) --blackduck.url=https://org.blackducksoftware.com --blackduck.api.token=MmMwMjdlOTctMT --detect.project.name=HUB --detect.project.version.name=TEST_v1.1.1 --detect.source.path=/workdir/test --logging.level.com.synopsys.integration=DEBUG --blackduck.trust.cert=TRUE --detect.tools.excluded=POLARIS --detect.blackduck.signature.scanner.snippet.matching=SNIPPET_MATCHING
 ```
 
-It works in my case. hope this help.
+If you want to use Docker to do Blackduck scan, you can create a Docker image. like this
+
+```Dockerfile
+FROM openjdk:11
+
+# Set DETECT version you need, if it's empty download the latest version.
+# https://sig-repo.synopsys.com/artifactory/bds-integrations-release/com/synopsys/integration/synopsys-detect
+ENV DETECT_LATEST_RELEASE_VERSION=""
+
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install -y \
+        git \
+        python \
+        pip \
+    && apt-get autoremove \
+    && apt-get clean
+
+RUN curl -sSOL https://detect.synopsys.com/detect7.sh && bash detect7.sh --help \
+    && rm -rf /usr/bin/python \
+    && ln -s /usr/bin/python3 /usr/bin/python
+
+WORKDIR /src
+```
+
+Hope this help.
 
 ---
 
