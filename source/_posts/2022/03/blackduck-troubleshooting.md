@@ -93,6 +93,8 @@ bash <(curl -s -L https://detect.synopsys.com/detect7.sh) --blackduck.url=https:
 
 If you want to use Docker to do Blackduck scan, you can create a Docker image. like this
 
+<!-- more -->
+
 ```Dockerfile
 FROM openjdk:11
 
