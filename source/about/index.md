@@ -4,11 +4,11 @@ author: shenxianpeng
 
 # 关于我
 
-我叫沈显鹏，一名 Build/DevOps 工程师。
+我叫沈显鹏，一名 Build/DevOps 工程师。专注于分享 DevOps 实践、工具、技术、趋势等。
 
-做过近 10 年的软件测试，相比于“发现”问题，现在的我更喜欢“解决”问题，因此从测试转开发，目前在从事 Build/DevOps 相关工作。专注 DevOps 知识分享，帮助测试新人在转行、自我提升方面少走弯路。
+IT 从业 13 年，从大厂到外企，从测试到开发到 DevOps。生命不息，学习不止。
 
-如果你喜欢其中的文章，欢迎给我留言。
+如果你喜欢其中的文章，欢迎给我留言，这是对我的最大鼓励。
 
 > 除非文章内特别说明，你可以转载这里的文章，但请加入文章作者[1]和出处[2] 。谢谢。
 
@@ -27,7 +27,11 @@ author: shenxianpeng
 
 ---
 
-Hi, I'm Peter Shen, a Build/DevOps engineer. I share my learnings on this blog related to CI/CD and DevOps fields.
+Hi, I'm Peter Shen, a Build/DevOps engineer. I focus on sharing DevOps practices, tools, technologies and trends.
+
+I've been working in IT industry for 13 years, from big factories to foreign companies, from QA to DEV to DevOps.
+
+If you like any of the articles, feel free to leave me a comment, it's the biggest encouragement for me.
 
 Follow me on:
 
