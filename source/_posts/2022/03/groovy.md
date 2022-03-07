@@ -1,5 +1,5 @@
 ---
-title: 用了这么久的 Jenkins 和 Groovy，是时候认识一下 Groovy 了
+title: 在 Jenkins 上用了这么久的 Groovy，是时候认识一下它了
 tags:
   - Groovy
   - Jenkins
