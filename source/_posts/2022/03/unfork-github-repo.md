@@ -1,5 +1,5 @@
 ---
-title: 最靠谱的办法：在不删除和重建 GitHub 仓库的情况下与父(Fork)仓库分离
+title: 靠谱：在不删除和重建 GitHub 仓库的情况下与父(Fork)仓库分离(Unfork)
 tags:
   - Git
   - GitHub
@@ -22,13 +22,13 @@ date: 2022-03-09 11:16:05
 
 如果直接删除项目并重建可以达到分离的目的，但这样会丢失一些重要的信息，比如项目中的 Issues，Wikis 以及 Pull Requests 等。
 
-> Unfork 跟字节旗下火山引擎白嫖 Apache SkyWalking 有本质区别，更像是 Hudson 和 Jenkins 的分道扬镳。
+> Unfork 跟某节旗下某引擎白嫖 Apache SkyWalking 有本质区别，它更像是 Hudson 和 Jenkins 的分道扬镳。
 
 ## 解决办法
 
 在经过一番调查和测试，目前最可行的办法就是通过 GitHub Support 来处理，具体操作如下：
 
-1. 打开这个连接：https://support.github.com/contact?tags=rr-forks
+1. 打开这个链接：https://support.github.com/contact?tags=rr-forks
 2. 选择你的账户或是组织，然后在 Subject 中输入 "unfork" 会自动弹出虚拟助手，选择虚拟机助手
     ![](unfork-github-repo/type-unfork.png)
 3. 然后根据虚拟助手的问题然后选择答案（如下是部分截图）
@@ -40,7 +40,7 @@ date: 2022-03-09 11:16:05
 
 另外，通过其他方式，比如命令 `git clone --bare` 和 `git push --mirror`，可以保留完成的 Git 历史，但不能保留 Issues，Wikis 以及 Pull Requests 等信息。
 
-希望对你有所帮助。
+希望对有需要的你有所帮助。
 
 ## 参考
 
