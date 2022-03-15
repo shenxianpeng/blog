@@ -7,9 +7,6 @@ tags:
 - Troubleshooting
 categories:
 - Jenkins
-keywords:
-- Jenkins
-- Troubleshooting
 ---
 
 ## Jenkins 问题解决记录（一）
