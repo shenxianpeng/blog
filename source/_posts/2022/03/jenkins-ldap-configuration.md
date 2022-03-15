@@ -1,5 +1,5 @@
 ---
-title: How to enable, setup and disable Jenkins LDAP
+title: How to enable, configure and disable Jenkins LDAP
 tags:
   - LDAP
   - Jenkins
