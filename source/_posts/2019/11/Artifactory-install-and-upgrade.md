@@ -42,6 +42,13 @@ sudo rpm -ivh jfrog-artifactory-oss-6.14.0.rpm
 ```bash
 # 启动服务
 sudo systemctl start artifactory.service
+
+# 在使用上面的命令启动服务的时候遇到如下错误：
+# Job for artifactory.service failed because a configured resource limit was exceeded. See "systemctl status artifactory.service" and "journalctl -xe" for details.
+# 详情：https://www.jfrog.com/jira/browse/RTFACT-19988
+# 可尝试如下命令启动
+cd /opt/jfrog/artifactory/app/bin && ./artifactory.sh start &
+
 # 停止服务
 sudo systemctl stop artifactory.service
 # 查看服务状态
