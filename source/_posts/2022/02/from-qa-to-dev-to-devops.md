@@ -78,6 +78,4 @@ author: shenxianpeng
 
 ---
 
-欢迎扫码关注公众号「DevOps攻城狮」- 专注于DevOps领域知识分享。
-
-![ ](https://github.com/shenxianpeng/shenxianpeng.github.io/blob/master/about/index/qrcode.jpg?raw=true)
+转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「DevOps攻城狮」
