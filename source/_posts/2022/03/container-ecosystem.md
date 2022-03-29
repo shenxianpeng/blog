@@ -1,5 +1,5 @@
 ---
-title: 一篇文章搞懂什么是 Docker，containerd，CRI，CRI-O，OCI，runc
+title: 一篇文章带你了解 Docker，containerd，CRI，CRI-O，OCI，runc
 tags:
   - containerd
   - Docker
