@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:12
 
 EXPOSE 4000
 
@@ -10,6 +10,6 @@ RUN npm install \
     && npm install -g hexo-cli \
     && npm install hexo-deployer-git --save
 
-ENTRYPOINT ["hexo"]
+ENTRYPOINT ["make"]
 
 CMD ["server"]
