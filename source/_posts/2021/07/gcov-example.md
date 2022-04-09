@@ -1,4 +1,13 @@
-# Code coverage testing of C/C++ projects using Gcov and LCOV
+---
+title: Code coverage testing of C/C++ projects using Gcov and LCOV
+tags:
+  - Gcov
+  - LCOV
+categories:
+  - Coverage
+date: 2021-07-11 22:49:39
+author: shenxianpeng
+---
 
 This article shares how to use Gcov and LCOV to metrics code coverage for C/C++ projects.
 If you want to know how Gcov works, or you need to metrics code coverage for C/C++ projects later,
