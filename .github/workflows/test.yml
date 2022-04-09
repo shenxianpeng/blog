@@ -26,7 +26,7 @@ jobs:
         fetch-depth: 0
   
     - name: SonarCloud Scan
-      uses: SonarSource/sonarcloud-github-action@v1.3
+      uses: SonarSource/sonarcloud-github-action@v1.6
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
@@ -34,10 +34,10 @@ jobs:
         # Set the sonar.projectBaseDir analysis property
         projectBaseDir: .
 
-    - name: Setup Node 12 
-      uses: actions/setup-node@v1
+    - name: Setup Node 13 
+      uses: actions/setup-node@v3
       with:
-        node-version: 12.x
+        node-version: '14'
   
     - name: Build then Test
       run: |
