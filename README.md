@@ -15,7 +15,17 @@ Share knowledge in the fields of CI/CD and DevOps. Blog URL: https://shenxianpen
 
 If you find any mistakes or questions, please feel free to ask via [issues](https://github.com/shenxianpeng/blog/issues).
 
-## :cloud: Installation
+## Start web with Docker
+
+```bash
+git clone https://github.com/shenxianpeng/blog.git
+cd blog
+docker-compose up
+```
+
+## Start web on host
+
+### Installation
 
 ```bash
 git clone https://github.com/shenxianpeng/blog.git
@@ -25,7 +35,7 @@ npm install -g hexo-cli                     # Install hexo cli
 npm install hexo-deployer-git --save        # Install hexo deploy
 ```
 
-## :clipboard: Commands
+### Hexo commands
 
 ```bash
 hexo server                                 # Start the local server. by default is http://localhost:4000/
@@ -39,7 +49,7 @@ hexo generate -deploy                       # Generate then deploy
 hexo g -d                                   # Abbreviations generate then deploy
 ```
 
-## :memo: Create and publish posts
+## Create and publish new post
 
 Posts are saved by folder, with the hierarchy of year/month.
 
@@ -57,14 +67,14 @@ sh deploy.sh
 
 A new commit will be pushed to the blog static files [repository](https://github.com/shenxianpeng/shenxianpeng.github.io)
 
-## 🧰 Format tools
+## Format tools
 
 Format tools for publishing to other medium platforms
 
 * [Convert to Markdown](http://blog.didispace.com/tools/online-markdown/)
 * [Markdown Nice](https://www.mdnice.com/)
 
-## 📜 Licenses
+## Licenses
 
 [GPL-3.0](https://github.com/shenxianpeng/blog/blob/master/LICENSE) © [Hexo](https://hexo.io)
 
