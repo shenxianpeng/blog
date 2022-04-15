@@ -7,7 +7,7 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c11eed2252634f68a4a4f62a5e069fa6)](https://www.codacy.com/gh/shenxianpeng/blog/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shenxianpeng/blog&amp;utm_campaign=Badge_Grade)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
 
-微信公众号「DevOps攻城狮」- 持续分享CI/CD、DevOps领域内容。
+微信公众号「DevOps攻城狮」- 专注于分享CI/CD、DevOps领域知识。
 
 ![欢迎扫码关注](source/about/index/qrcode.jpg)
 
@@ -35,18 +35,11 @@ npm install -g hexo-cli                     # Install hexo cli
 npm install hexo-deployer-git --save        # Install hexo deploy
 ```
 
-### Hexo commands
+### Build and run
 
 ```bash
-hexo server                                 # Start the local server. by default is http://localhost:4000/
-hexo new "My New Post"                      # Create a new post
-hexo new page "About"                       # Create a new page named About
-hexo clean                                  # Cleans the cache file (db.json) and generate files (public)
-hexo generate                               # Generate static files
-hexo deploy                                 # Deploy your website
-
-hexo generate -deploy                       # Generate then deploy
-hexo g -d                                   # Abbreviations generate then deploy
+make server     # Start server
+make help       # Help for make
 ```
 
 ## Create and publish new post
@@ -62,7 +55,7 @@ Creating an post with following steps:
 If some all look good, run this following command to publish 🚀
 
 ```bash
-sh deploy.sh
+make publish
 ```
 
 A new commit will be pushed to the blog static files [repository](https://github.com/shenxianpeng/shenxianpeng.github.io)
