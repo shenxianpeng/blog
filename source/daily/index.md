@@ -6,6 +6,10 @@ title: Daily
 
 ---
 
+## 04/20/2022 - Bless my wife and baby
+
+It's been a tough April, wish my wife well and my baby well. Bless us ❤️
+
 ## 12/25/2021 - I was surprised
 
 Several days ago, A female financial colleague told me I did a great job sharing about CI/CD practices.
