@@ -1,5 +1,5 @@
 ---
-title: 努力做好一个爸爸
+title: 严于律己，做一个好爸爸
 tags:
   - Father
 categories:
