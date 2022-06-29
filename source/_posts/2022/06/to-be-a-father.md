@@ -1,5 +1,5 @@
 ---
-title: 严于律己，做一个好爸爸
+title: 做爸爸了以及未来三个月陪产假期间得学习计划
 tags:
   - Father
 categories:
@@ -33,6 +33,12 @@ date: 2022-06-13 14:57:24
 - 《代码整洁之道》 P26 - P56
 - 创建了 `cpp-linter-hooks` 仓库，学习别人的代码
 - 计划本周末和乔教练去游泳
+
+第 3 - 4 周：
+
+- 《代码整洁之道》 P56 - P130
+- 在实现 `cpp-linter-hooks` 之前需要实现 install clang-tools with pip, 因此我创建了 `clang-tools-pip`
+- 去市游泳馆游了一次泳，第二次本已约好但临时有事取消了
 
 ---
 
