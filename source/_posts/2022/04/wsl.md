@@ -1,5 +1,5 @@
 ---
-title: WSL + VS Code + Docker Desktop 在 Windows 做开发还能这么爽！
+title: 在 Windows 做开发还能这么爽？WSL + VS Code + Docker Desktop 你值得有用
 tags:
   - WSL
   - Docker
@@ -10,17 +10,17 @@ author: shenxianpeng
 date: 2022-04-19 22:12:31
 ---
 
-许久以来，大部分程序员都遇到过在 Windows 做开发那种不便。
+很久以来很多程序员都遇到过在 Windows 做开发的各种不便。
 
-比如不能像 Linux 和 Mac 那样只需要输入一行命令就能安装 openjdk，python，node 等等。因此有的程序员从此转到了 Mac 上开发，也有的干脆就使用 Linux 作为开发机。
+比如不能像 Linux 和 Mac 那样只需要输入一行命令就能安装各种 command 和 package。因此有的程序员从此转到了 Mac 上开发，也有的干脆就使用 Linux 作为开发机。只有那些不得不使用 Windows 作为开发环境程序员还一直留在了 Windows 上继续凑合中。
 
-只有那些不得不用 Windows 作为开发环境程序员还一直留在了 Windows 上继续凑合中。
+直到 WSL 的到来，准确来说是 WSL2。
 
-直到 WSL 的到来，WSL + VS Code + Docker Desktop 这三剑客的组合，开始让我觉得在 Windows 上做开发是一件很爽的事情。
+WSL + VS Code + Docker Desktop 这三剑客的组合，开始让我觉得在 Windows 上做开发是一件很爽的事情。
 
 ## 什么是 WSL
 
-WSL 是 Windows Subsystem for Linux 的缩写。它是 Windows 10 操作系统的一项功能，使你能够在 Windows 上直接运行 Linux 文件系统，以及 Linux 命令行工具和 GUI 应用程序，并与传统的 Windows 桌面和应用程序一起运行。
+WSL 是 Windows Subsystem for Linux 的缩写，它是 Windows 10 操作系统的一项功能，使你能够在 Windows 上直接运行 Linux 文件系统，以及 Linux 命令行工具和 GUI 应用程序，并与传统的 Windows 桌面和应用程序一起运行。
 
 > WSL 的最低版本要求是 Windows 10 version 1903 及更高。
 
@@ -32,8 +32,8 @@ WSL 适用于喜欢使用 Bash、常用 Linux 工具（sed、awk等）和 Linux 
 
 ## 使用 WSL 的几点优势
 
-1. 与完整的虚拟机相比，WSL需要的资源（CPU、内存和存储）更少
-2. WSL 允许你在 Windows 命令行、桌面和商店应用程序旁边运行 Linux 命令行工具和应用程序，并从 Linux 中访问你的 Windows 文件，有更好的交互体验。
+1. 与完整的虚拟机相比，WSL 需要的资源（CPU、内存和存储）更少
+2. 你可以同时使用 Windows 和 Linux，并从 Linux 中访问你的 Windows 文件，有更好的交互体验。
 3. 最最重要的是，使用 WSL 结合 VS Code + Docker 既有 Linux 的完美体验感，也同时拥有在 Windows 上的办公生产力。这是虚拟机或是 Linux 操作系统所办不到。Mac 可以，但并不是所有人都适合 Mac。
 
 下面就来说说如何安装 WSL，以及和 VS Code + Docker 进行搭配使用。
