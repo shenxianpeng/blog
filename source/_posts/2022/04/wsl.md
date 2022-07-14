@@ -10,10 +10,9 @@ author: shenxianpeng
 date: 2022-04-19 22:12:31
 ---
 
-很久以来很多程序员都遇到过在 Windows 做开发的各种不便。
+很久以来很多程序员都遇到过在 Windows 做开发的各种不便：
 
-比如不能像 Linux 和 Mac 那样只需要输入一行命令就能安装各种 command 和 package。因此有的程序员从此转到了 Mac 上开发，也有的干脆就使用 Linux 作为开发机。只有那些不得不使用 Windows 作为开发环境程序员还一直留在了 Windows 上继续凑合中。
-
+比如设置开发环境不能像 Linux 和 Mac 那样只需要输入一行命令就能安装各种 command 和 package，因此有的程序员从此转到了 Mac 上开发，也有的干脆就使用 Linux 作为开发机，只有那些不得不使用 Windows 作为开发环境程序员还一直留在了 Windows 上继续凑合中。
 直到 WSL 的到来，准确来说是 WSL2。
 
 WSL + VS Code + Docker Desktop 这三剑客的组合，开始让我觉得在 Windows 上做开发是一件很爽的事情。
