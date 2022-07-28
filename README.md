@@ -76,3 +76,4 @@ Format tools for publishing to other medium platforms
 [Attribution-NonCommercial-ShareAlike 3.0 China Mainland (CC BY-NC-SA 3.0 CN)](https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.en)
 
 ![Blog views](https://gpvc.arturio.dev/blog)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/93d6583c-4dfd-4e07-a606-1d0108eb39fe/deploy-status)](https://app.netlify.com/sites/shenxianpeng-blog/deploys)
