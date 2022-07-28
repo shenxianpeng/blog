@@ -9,17 +9,7 @@ author: shenxianpeng
 date: 2022-07-28 14:45:04
 ---
 
-## 什么是 GPG key
-
-TODO
-
-## 为什么要添加 GPG key
-
-TODO
-
-## How to create GPG keys and add to GitHub
-
-### List your GPG key
+### First, List your GPG key
 
 ```bash
 # If folders does not exist will create be related automatically
@@ -31,7 +21,7 @@ gpg: /home/ubuntu/.gnupg/trustdb.gpg: trustdb created
 $ gpg --list-key
 ```
 
-### Generate your GPG key
+### Second, generate GPG key
 
 ```bash
 $ gpg --gen-key
@@ -68,18 +58,23 @@ uid                      shenxianpeng <xianpeng.shen@gmail.com>
 sub   rsa3072 2022-07-28 [E] [expires: 2024-07-27]
 ```
 
-### Get your public key content
+### Third, get your public key content
 
 ```bash
 # get with your email
 gpg --armor --export xianpeng.shen@gmail.com
 # or with your pub key id
 pg --armor --export F0F32CB8C65536ECE0187EAD5F72A7D009FC935A
+
+#
+# public key content output below
+#
+
 ```
 
-### Add GPG keys to GitHub
+### Fourth, add the public key content (GPG keys) to GitHub
 
-Settings -> SSH and GPG keys -> New GPG key
+Open GitHub, Settings -> SSH and GPG keys -> New GPG key
 
 ![add-gpg-key](create-gpg-keys/add-gpg-key.png)
 
