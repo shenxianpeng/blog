@@ -1,11 +1,13 @@
 # Peter Shen's Blog
 
-![Build](https://github.com/shenxianpeng/blog/workflows/build/badge.svg?branch=master)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5067/badge)](https://bestpractices.coreinfrastructure.org/projects/5067)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=shenxianpeng_blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=shenxianpeng_blog)
+[![Test and SonarScan](https://github.com/shenxianpeng/blog/actions/workflows/test.yml/badge.svg)](https://github.com/shenxianpeng/blog/actions/workflows/test.yml)
 [![CodeQL](https://github.com/shenxianpeng/blog/workflows/CodeQL/badge.svg)](https://github.com/shenxianpeng/blog/actions?query=workflow%3ACodeQL)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=shenxianpeng_blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=shenxianpeng_blog)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c11eed2252634f68a4a4f62a5e069fa6)](https://www.codacy.com/gh/shenxianpeng/blog/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shenxianpeng/blog&amp;utm_campaign=Badge_Grade)
+
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5067/badge)](https://bestpractices.coreinfrastructure.org/projects/5067)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/93d6583c-4dfd-4e07-a606-1d0108eb39fe/deploy-status)](https://app.netlify.com/sites/shenxianpeng-blog/deploys)
 
 微信公众号「DevOps攻城狮」- 专注于分享CI/CD、DevOps领域知识。
 
@@ -76,4 +78,3 @@ Format tools for publishing to other medium platforms
 [Attribution-NonCommercial-ShareAlike 3.0 China Mainland (CC BY-NC-SA 3.0 CN)](https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.en)
 
 ![Blog views](https://gpvc.arturio.dev/blog)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/93d6583c-4dfd-4e07-a606-1d0108eb39fe/deploy-status)](https://app.netlify.com/sites/shenxianpeng-blog/deploys)
