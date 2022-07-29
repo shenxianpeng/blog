@@ -4,8 +4,9 @@ tags:
   - WSL
   - Docker
   - VSCode
-categories:
   - Windows
+categories:
+  - HowTo
 author: shenxianpeng
 date: 2022-04-19 22:12:31
 ---

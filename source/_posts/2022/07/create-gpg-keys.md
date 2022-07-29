@@ -4,7 +4,7 @@ tags:
   - Git
   - GPG
 categories:
-  - Git
+  - HowTo
 author: shenxianpeng
 date: 2022-07-28 14:45:04
 ---
