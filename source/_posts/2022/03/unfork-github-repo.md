@@ -5,7 +5,7 @@ tags:
   - GitHub
   - Fork
 categories:
-  - Git
+  - HowTo
 author: shenxianpeng
 date: 2022-03-09 11:16:05
 ---
