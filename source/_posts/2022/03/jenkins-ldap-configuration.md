@@ -4,7 +4,7 @@ tags:
   - LDAP
   - Jenkins
 categories:
-  - Jenkins
+  - HowTo
 author: shenxianpeng
 date: 2022-03-15 13:54:43
 ---
