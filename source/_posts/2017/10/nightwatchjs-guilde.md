@@ -1,10 +1,10 @@
 ---
 title: Nightwatchjs 中文参考手册
 date: 2017-10-19 16:31:57
-tags: 
+tags:
 - Nightwatch
 - Automation
-categories: 
+categories:
 - Automation
 author: shenxianpeng
 ---

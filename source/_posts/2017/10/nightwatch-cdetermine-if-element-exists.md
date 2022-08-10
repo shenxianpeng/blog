@@ -1,10 +1,10 @@
 ---
 title: Nightwatch 验证元素是否存在
 date: 2017-10-26 17:09:06
-tags: 
+tags:
 - Nightwatch
 - Automation
-categories: 
+categories:
 - Automation
 author: shenxianpeng
 ---

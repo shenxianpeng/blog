@@ -1,10 +1,10 @@
 ---
 title: Nightwatch 测试用例失败继续执行
 date: 2017-10-27 17:04:49
-tags: 
+tags:
 - Nightwatch
 - Automation
-categories: 
+categories:
 - Automation
 author: shenxianpeng
 ---

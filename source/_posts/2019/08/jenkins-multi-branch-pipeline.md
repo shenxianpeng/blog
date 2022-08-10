@@ -9,7 +9,7 @@ date: 2019-08-06
 tags:
 - Jenkins
 - Pipeline
-categories: 
+categories:
 - Jenkins
 keywords:
 - Jenkins 多分支流水线

@@ -1,10 +1,10 @@
 ---
 title: GitSCM clone code don't display branch
 date: 2019-05-14 22:41:22
-tags: 
+tags:
 - Jenkins
 - Pipeline
-categories: 
+categories:
 - Jenkins
 author: shenxianpeng
 ---

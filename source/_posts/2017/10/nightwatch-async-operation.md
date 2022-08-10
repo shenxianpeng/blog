@@ -1,10 +1,10 @@
 ---
 title: Nightwatch 异步操作
 date: 2017-10-21 21:26:43
-tags: 
+tags:
 - Nightwatch
 - Automation
-categories: 
+categories:
 - Automation
 ---
 

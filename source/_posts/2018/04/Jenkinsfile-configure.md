@@ -1,10 +1,10 @@
 ---
 title: Jenkinsfile 配置
 date: 2018-04-14 13:07:49
-tags: 
+tags:
 - Jenkins
 - Pipeline
-categories: 
+categories:
 - Jenkins
 author: shenxianpeng
 ---
@@ -64,15 +64,15 @@ pipeline {
 
     post {
         // 执行成功是触发
-        success {  
+        success {
             mail bcc: 'email@qq.com',
             body: "<b>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br>Build URL: ${env.BUILD_URL} ", cc: '', charset: 'UTF-8', from: 'jenkins@qq.com', mimeType: 'text/html', replyTo: '', subject: "SUCCESS: Project Name -> ${env.JOB_NAME}", to: "";
         }
 
         // 执行失败时触发
-        failure {  
+        failure {
             mail bcc: 'email@qq.com',
-            body: "<b>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br>Build URL: ${env.BUILD_URL} ", cc: '', charset: 'UTF-8', from: 'jenkins@qq.com', mimeType: 'text/html', replyTo: '', subject: "FAILURE: Project Name -> ${env.JOB_NAME}", to: "";  
+            body: "<b>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br>Build URL: ${env.BUILD_URL} ", cc: '', charset: 'UTF-8', from: 'jenkins@qq.com', mimeType: 'text/html', replyTo: '', subject: "FAILURE: Project Name -> ${env.JOB_NAME}", to: "";
         }
     }
 }
