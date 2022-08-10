@@ -1,0 +1,12 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: \.output
+      - id: end-of-file-fixer
+        exclude: \.(cp?p?$|output)
+      - id: check-docstring-first
+      - id: check-added-large-files
+      - id: check-yaml
+      - id: debug-statements
