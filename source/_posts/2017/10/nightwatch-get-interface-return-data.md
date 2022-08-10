@@ -1,10 +1,10 @@
 ---
 title: Nightwatch 获取接口返回数据
 date: 2017-10-22 22:38:50
-tags: 
+tags:
 - Nightwatch
 - Automation
-categories: 
+categories:
 - Automation
 author: shenxianpeng
 ---

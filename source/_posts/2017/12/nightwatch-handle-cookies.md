@@ -1,10 +1,10 @@
 ---
 title: Nightwatch 得到和验证 cookies
 date: 2017-12-14 14:21:56
-tags: 
+tags:
 - Nightwatch
 - Javascript
-categories: 
+categories:
 - Automation
 author: shenxianpeng
 ---

@@ -1,9 +1,9 @@
 ---
 title: DevOps 实践
 date: 2018-04-14 12:45:14
-tags: 
+tags:
 - DevOps
-categories: 
+categories:
 - DevOps
 author: shenxianpeng
 ---

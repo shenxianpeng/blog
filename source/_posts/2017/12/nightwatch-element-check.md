@@ -1,9 +1,9 @@
 ---
 title: Nightwatch 元素判断
-tags: 
+tags:
   - Nightwatch
   - Automation
-categories: 
+categories:
   - Automation
 date: 2017-12-14 17:34:18
 author: shenxianpeng

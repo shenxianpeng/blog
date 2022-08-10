@@ -1,9 +1,9 @@
 ---
 title: Change Hexo code highlight
 date: 2017-11-20 09:56:28
-tags: 
+tags:
 - Hexo
-categories: 
+categories:
 - Hexo
 ---
 

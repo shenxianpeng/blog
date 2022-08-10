@@ -1,11 +1,11 @@
 ---
 title: 通过 Jenkins 来提交修改的代码 git push by Jenkins
 date: 2019-07-22 21:54:42
-tags: 
+tags:
 - Jenkins
 - Git
 - Pipeline
-categories: 
+categories:
 - Jenkins
 author: shenxianpeng
 ---

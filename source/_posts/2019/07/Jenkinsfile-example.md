@@ -1,10 +1,10 @@
 ---
 title: Jenkinsfile example - 实现交互、clone 多个仓库以及 git push
 date: 2019-07-07 18:45:53
-tags: 
+tags:
 - Jenkins
 - Pipeline
-categories: 
+categories:
 - Jenkins
 author: shenxianpeng
 ---

@@ -1,9 +1,9 @@
 ---
 title: Hexo 博客文章中插入图片
 date: 2017-10-25 17:07:11
-tags: 
+tags:
 - Hexo
-categories: 
+categories:
 - Hexo
 ---
 

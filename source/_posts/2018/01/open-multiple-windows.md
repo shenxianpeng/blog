@@ -1,10 +1,10 @@
 ---
 title: Nightwatch 打开多个窗口
 date: 2018-01-02 09:57:32
-tags: 
+tags:
 - Nightwatch
 - Automation
-categories: 
+categories:
 - Automation
 author: shenxianpeng
 ---

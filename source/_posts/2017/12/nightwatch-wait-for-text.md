@@ -1,10 +1,10 @@
 ---
 title: Nightwatch wait For Text
 date: 2017-12-19 10:29:41
-tags: 
+tags:
 - Nightwatch
 - Automation
-categories: 
+categories:
 - Automation
 ---
 

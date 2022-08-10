@@ -1,10 +1,10 @@
 ---
 title: Nightwatch 模拟键盘操作
 date: 2017-10-19 16:56:20
-tags: 
+tags:
 - Nightwatch
 - Automation
-categories: 
+categories:
 - Automation
 author: shenxianpeng
 ---

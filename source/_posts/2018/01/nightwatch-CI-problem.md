@@ -1,10 +1,10 @@
 ---
 title: Nightwatch 持续集成问题
 date: 2018-01-15 22:53:53
-tags: 
+tags:
 - Nightwatch
 - Automation
-categories: 
+categories:
 - Automation
 ---
 

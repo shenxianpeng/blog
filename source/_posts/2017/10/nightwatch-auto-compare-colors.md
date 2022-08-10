@@ -1,10 +1,10 @@
 ---
 title: Nightwatch 自动化测试中比较颜色
 date: 2017-10-25 15:28:49
-tags: 
+tags:
 - Nightwatch
 - Automation
-categories: 
+categories:
 - Automation
 ---
 
