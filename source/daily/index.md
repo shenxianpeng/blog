@@ -6,6 +6,17 @@ title: Daily
 
 ---
 
+## 06/13/2022 - Be thankful
+
+It's been over a month since I've written anything because my daughter was born and I've been busy all May.
+
+First, I worked remotely in the confinement center for nearly a month.
+After leaving the club, I started to take paternity leave.
+
+The two of us are taking care of the children, which is still very busy for new parents.
+
+Aside from being busy, thank goodness it all went smoothly.
+
 ## 04/20/2022 - Bless my wife and baby
 
 It's been a tough April, wish my wife well and my baby well. Bless us ❤️
