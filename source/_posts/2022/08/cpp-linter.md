@@ -1,5 +1,5 @@
 ---
-title: 关于 C/C++ 代码格式化和静态分析的持续集成（CI）实践
+title: 关于 C/C++ 代码格式化 & 静态分析的持续集成（CI）实践
 tags:
   - Clang-Format
   - Clang-Tidy
@@ -10,33 +10,34 @@ author: shenxianpeng
 date: 2022-08-23 17:27:31
 ---
 
-正如标题所说本篇主要分享关于 C/C++ 代码格式化和静态分析的一些实践。
+正如标题所说本篇主要介绍对于 C/C++ 项目的代码格式化以及静态分析实践分享。
 
-对于 C/C++ 语言的代码格式化和检查工具用的最为广泛的就是使用 [LLVM](https://llvm.org/) 项目中的 [Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) 和 [Clang-Tidy](https://clang.llvm.org/extra/clang-tidy/) 工具。
+目前 C/C++ 语言的代码格式化和检查工具使用的最为广泛的是使用 [LLVM](https://llvm.org/) 项目中的 [Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) 和 [Clang-Tidy](https://clang.llvm.org/extra/clang-tidy/)。
 
 > LLVM 项目是模块化和可重用的编译器和工具链技术的集合。
 
-如果想使用 clang-format 和 clang-tidy，可以通过在 IDE 中安装插件，然后利用 IDE 进行代码的格式化和静态检查。
+通常使用 clang-format 和 clang-tidy 可以在 IDE 中安装插件，然后利用 IDE 进行代码的格式化和静态检查。但这样的问题是：
 
-但问题是不同的开发人员会使用不同的 IDE，安装不同的插件，这本身就需要比较高的学习成本。另外没法保证所有开发人员都会造作并且在提交代码的时候运行了 Clang-Format 或 Clang-Tidy。
+* 当有多个开发人员时，他们可能会使用不同的 IDE，这样在不同的 IDE 上安装插件需要比较高的学习成本。
+* 另外没法保证所有开发人员在提交代码的时候运行了 Clang-Format 或 Clang-Tidy。
 
-## 怎样确保每次提交都执行了 Clang-Format 或 Clang-Tidy
+那么怎样确保每次提交代码都执行了 Clang-Format 或 Clang-Tidy 呢？有两个办法：
 
-1. 通过 CI 在代码合并前自动检查。并报告问题，然后倒逼开发执行 Clang-Format 和 Clang-Tidy 的操作。
-2. 通过 git hook 在提交代码时自动检查。让开发提交代码的时候自动执行 Clang-Format 和 Clang-Tidy，如果不符合规范则提示并自动 Format，如果符合规范则 `git commit` 成功。
+1. 通过 CI 在代码合并前做自动检查，如果没有 CI 没有通过无法进行 Merge，这样倒逼开发提交代码之前执行 Clang-Format 和 Clang-Tidy 的操作。
+2. 通过 git hook 让开发提交代码的时候自动执行 Clang-Format 和 Clang-Tidy，如果不符合规范则提示并自动 Format，如果符合规范则提交成功。
 
-### 通过 CI 在代码合并前自动检查
+下面分别介绍这两种方法。
 
-如果你的代码是存放在 GitHub 上面，那么非常建议你使用 [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) 这个 GitHub Action。它有以下这些重要特性：
+## 通过 CI 在代码合并前做自动检查
 
-1. 支持 public 和 private 仓库
-2. 分析结果支持 Annotations 或 Thread Comment 进行展示
-3. 支持绝大多数版本的 Clang 工具，从最新版本 `v14` 到最旧版本 `v3`
+如果你的代码是放在 GitHub 上，那么非常建议你使用 [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) 这个 GitHub Action，以下是它的一些重要特性：
+
+1. 运行结果支持 Annotations 和 Thread Comment 两种方式展示
+2. 支持 GitHub 的 public 和 private 仓库
+3. 支持绝大多数 Clang 版本，从最新版本 `v14` 到最旧版本 `v3`
 4. 还有很多其他的 [optional-inputs](https://github.com/cpp-linter/cpp-linter-action#optional-inputs)
 
-下面就来如何使用：
-
-只需要在 `.github/workflows/` 下面创建一个 cpp-linter.yml，内容如下：
+那么如何来使用这个 Action，只需要在 `.github/workflows/` 下面创建一个 cpp-linter.yml，内容如下：
 
 ```yaml
 name: cpp-linter
@@ -81,7 +82,7 @@ jobs:
 
 注意 annotations 和 comment 这两个功能目前只支持 GitHub，该项目未来考虑支持其他 SCM，像 Bitbucket，GitLab。
 
-### 通过 git hook 在提交代码时自动检查
+## 通过 git hook 在提交代码时自动检查
 
 cpp-linter 还提供了另外一种方式：即通过 git hook 在提交代码时自动检查，这种方式不限制使用任何 SCM。
 
