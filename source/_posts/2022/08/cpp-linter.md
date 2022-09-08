@@ -70,7 +70,7 @@ jobs:
 
 ![annotations](cpp-linter/annotations.png)
 
-如果开启了 Thread Comment 选项（即 `thread-comments: true`）就会在 Pull Request 中添加如下 Comment。
+如果开启了 Thread Comment 选项（即 `thread-comments: true`）就会将在 Pull Request 中自动添加下面的错误评论。
 
 ![comment](cpp-linter/comment.png)
 
@@ -96,7 +96,7 @@ cpp-linter 还提供了另外一种方式：即通过 git hook 在提交代码�
     pip install pre-commit
     ```
 
-2. 添加 `pre-commit` 的配置文件。更多配置可以参考 [README](https://github.com/cpp-linter/cpp-linter-hooks)
+2. 添加 `pre-commit` 的配置文件，更多配置可以参考 [README](https://github.com/cpp-linter/cpp-linter-hooks)
 
     ```yaml
     repos:
@@ -109,18 +109,18 @@ cpp-linter 还提供了另外一种方式：即通过 git hook 在提交代码�
           args: [--checks=.clang-tidy] # path/to/.clang-tidy
     ```
 
-    > 这里的 file 是指 `.clang-format`, clang-format 默认支持的编码格式包括 LLVM, GNU, Google, Chromium, Microsoft, Mozilla, WebKit，如果需要特殊设置的时候可以在仓库的根目录下面创建配置文件 `.clang-format`。同理，如果默认的静态分析不满足要求，可以在仓库的根目录下创建配置文件 `.clang-tidy`。
+    > 这里的 file 是指 `.clang-format`, clang-format 默认支持的编码格式包括 LLVM, GNU, Google, Chromium, Microsoft, Mozilla, WebKit，如果需要特殊设置可以在仓库的根目录下面创建配置文件 `.clang-format`。同理，如果默认的静态分析设置不满足要求，可以在仓库的根目录下创建 `.clang-tidy` 配置文件。
 
 3. 安装 git hook 脚本
 
     ```bash
-    pre-commit install
+    $ pre-commit install
     pre-commit installed at .git/hooks/pre-commit
     ```
 
 4. 之后每次提交代码都会自动执行 clang-format 和 chang-tidy。
 
-    如果检查到没有格式化或有静态分析错误，会提示如下错误信息。
+    如果检查到没有格式化或有静态分析错误，会提示如下错误信息：
 
     chang-format 的输出
 
@@ -130,7 +130,7 @@ cpp-linter 还提供了另外一种方式：即通过 git hook 在提交代码�
     - files were modified by this hook
     ```
 
-    并自动进行格式化
+    并自动帮你进行格式化
 
     ```diff
     --- a/testing/main.c
@@ -169,7 +169,11 @@ cpp-linter 还提供了另外一种方式：即通过 git hook 在提交代码�
 
 ## 选择 CI 还是 git hook
 
-当然也可以两个都选。如果你的团队已经在使用 [`pre-commit`](https://pre-commit.com/)，那么使用 git hook 更为方便，只需要添加 [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 即可，否则可以通过添加 CI 来检查。
+当然也可以两个都选。
+
+如果你的团队已经在使用 [`pre-commit`](https://pre-commit.com/)，那么推荐使用 git hook，只需要添加 [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 即可。
+
+如果不希望引入 `pre-commit` 则可以通过添加 CI 来进行检查。
 
 ---
 
