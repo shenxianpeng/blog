@@ -1,5 +1,5 @@
 ---
-title: "ERROR: Error cloning remote repo 'origin' timeout=10"
+title: Jenkins troubleshooting summary
 author: shenxianpeng
 date: 2019-08-16
 tags:
@@ -9,20 +9,20 @@ categories:
 - Jenkins
 ---
 
-## Jenkins 问题解决记录（一）
+## ERROR: Error cloning remote repo 'origin' timeout=10
 
-最近 Jenkins Build 不知为何总是 git clone 失败，报这个错误,  ERROR: Error cloning remote repo 'origin'。
+Recently, my Jenkins build failed when execute `git clone` with following this error message: ERROR: Error cloning remote repo 'origin'.
 
-1. 我首先怀疑是网络原因，我们的 Bitbucket 在 Git clone 时所占带宽很大造成短暂断网情况，怀疑是 IT 更改了 Bitbucket 的设置，但我手动去那台 agent 上执行却没问题，好像跟 IT 无关
-2. 再看日志这里有一处显示 timeout=10，这时候我突然想起来前些日子我删除了非常大的一个文件夹，然后做了一次提交，这会导致我们的仓库增大，在做一次完整的 clone 的时候所需要的时间可能超过 Jenkins 默认 10 分钟。
+1. first I suspect it is the network reason, maybe because clone from Bitbucket need took up a lot bandwidth during `git clone` and causing this disconnection. but when I try to git clone on the agent, it works well.
+2. Then I noticed the there is `timeout=10` in the Jenkins console log, I suddenly remembered that I deleted a very large folder a few days ago from git repo, and this may cause the repo more bigger, so it may take more time do a complete clone and it exceeds the Jenkins default clone timeout `10`.
 
-去 Google 搜索最后找到这个 issue JENKINS-47660，和我的问题一样。
+Googling and finally I found this issue JENKINS-47660 which is the same problem as mine.
 
 <!-- more -->
 
-## 解决办法 Troubleshooting
+## Solution
 
-最终我找到 Git clone 有个 Behaviors 属性，找到里面的 Advanced clone behaviours 功能，将 Fetch tags 去掉（因为我暂时不用，去掉也可能减少那么一丁点的时间吧），勾选了 Shallow clone，然后将 Shallow clone depth 设置为 1，（这个设置等同于 --depth 1），Timeout 时间从 10 分钟改为 15 分钟。最终的设置如图：
+Finally I found the the property of Advanced clone behaviors in Git clone in Jenkins, an checked Shallow clone then set Shallow clone depth equals to 1. (This setting is equivalent to --depth 1), and I changed timeout from 10 minutes to 15 minutes.
 
 ![Advanced clone behaviours](jenkins-troubleshooting/advanced-clone-behaviour.png)
 
@@ -108,3 +108,12 @@ Receiving objects:  86% (209321/242690), 1.01 GiB | 2.08 MiB/s
  [Pipeline] }
  Failed in branch Windows build
 ```
+
+## java.io.IOException: error=24, Too many open files
+
+I'm using a centos VM as Jenkins server, recently I have this problem "java.io.IOException: error=24, Too many open files", and run any Jenkins job will be failure.
+
+1. Run `ulimit -n` the default value on my machine is `1024`.
+2. Run `ulimit -n 4096` to increase this value to `4096` solved my problem
+
+> https://stackoverflow.com/questions/46065008/too-many-open-files-error-cant-open-jenkins-after-installing-many-plugins
