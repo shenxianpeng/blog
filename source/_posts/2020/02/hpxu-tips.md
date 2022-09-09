@@ -56,3 +56,28 @@ sudo ln -s /opt/java8/bin/java /bin/java
 /usr/bin/sudo ln -s /usr/contrib/bin/gzip /usr/bin/gzip
 /usr/bin/sudo ln -s /usr/contrib/bin/gunzip /usr/bin/gunzip
 ```
+
+## Can not use `bash` in HP-UX
+
+For example, when you run `bash` command, you have the following error:
+
+```bash
+$ bash
+/usr/lib/hpux64/dld.so: Unable to find library 'libtermcap.so'.
+```
+
+Here is the solution：https://community.hpe.com/t5/HP-UX-General/Unable-to-use-bash-for-ia-machine-11-23/m-p/3980789#M128592
+
+It bcasue the `LIBTERMCAP` is not installed, you can go [here](http://hpux.connect.org.uk/hppd/hpux/Shells/bash-3.2/) to see `bash`'s dependencies include `gettext` `libiconv` `termcap`, etc.
+
+Here are two very useful commands of install and uninstall.
+
+* Download `bash` to command `depothelper`
+
+  ```bash
+  depothelper bash
+  ```
+
+* If you wang to remove the package on your HP-UX system, you can run the command
+
+   `sudo /usr/sbin/swremove [package-name]`
