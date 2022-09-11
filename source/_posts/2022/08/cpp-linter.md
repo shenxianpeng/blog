@@ -1,5 +1,5 @@
 ---
-title: 终于为 C/C++ 代码格式化和静态分析检查找到了一站式 CI 工作流
+title: C/C++ 代码格式化和静态分析检查的一站式的解决方案
 tags:
   - Clang-Format
   - Clang-Tidy
@@ -14,16 +14,16 @@ date: 2022-08-23 17:27:31
 
 > LLVM 项目是模块化和可重用的编译器和工具链技术的集合。
 
-关于 C/C++ 代码格式化和静态分析检查用到是 LLVM 项目中 clang-format 和 clang-tidy，放在一起我们称它为 clang-tools。
+对于 C/C++ 代码格式化和静态分析检查用到是 LLVM 项目中 clang-format 和 clang-tidy，放在一起我们称它为 clang-tools。
 
-虽然我们有了工具，但**如何把工具更好的集成到我们的工作流中**才是本篇要讨论的。
+虽然我们有了工具，但**如何把工具更好的集成到我们的工作流中**才是本篇重点要讨论的。
 
-[cpp-linter](https://github.com/cpp-linter) 组织应运而生，它提供了：
+[cpp-linter](https://github.com/cpp-linter) 组织的诞生就是为 C/C++ 代码格式化和静态分析检查提供一站式的工作流，主要包括：
 
-1. 更方便的下载 clang-tools。提供了下载 Docker images 和 binaries；
-2. 更方便的与 CI 工作流进行集成，包括 cpp-linter-action 和 cpp-linter-hooks。
+1. 方便的下载 clang-tools，提供了下载 Docker images 和 binaries；
+2. 方便的与 CI 工作流进行集成，包括 cpp-linter-action 和 cpp-linter-hooks。
 
-下面我想分别介绍如何使用工具并集成到 CI 工作流中。
+下面分别介绍如何使用 clang-tools 下载工具，以及集成到工作流中。
 
 ## 下载 clang-tools Docker images
 
