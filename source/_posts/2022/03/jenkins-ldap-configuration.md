@@ -17,15 +17,17 @@ In organizations, using LDAP login very common way for users to log in with thei
 
 Preparation: Installed LDAP Jenkins plugin
 
-![](jenkins-ldap-configuration/ldap-plugin.png)
+![LDAP plugin](jenkins-ldap-configuration/ldap-plugin.png)
 
 About how to configure it, you can refer to Jenkins LDAP Plugin documentation https://plugins.jenkins.io/ldap/
 
 This is my LDAP configuration just for testing.
 
-![](jenkins-ldap-configuration/ldap-configure1.png)
+<!-- more -->
 
-![](jenkins-ldap-configuration/ldap-configure2.png)
+![LDAP configure1](jenkins-ldap-configuration/ldap-configure1.png)
+
+![LDAP configure2](jenkins-ldap-configuration/ldap-configure2.png)
 
 ## Can not login with LDAP?
 

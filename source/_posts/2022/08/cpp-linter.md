@@ -25,6 +25,8 @@ date: 2022-08-23 17:27:31
 
 下面分别介绍如何使用 clang-tools 下载工具，以及集成到工作流中。
 
+<!-- more -->
+
 ## 下载 clang-tools Docker images
 
 如果你想通过 Docker 来使用 clang-format 和 clang-tidy，[clang-tools](https://github.com/cpp-linter/clang-tools) 项目是来提供 Docker 镜像。

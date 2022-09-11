@@ -31,6 +31,8 @@ Google 说：它叫 Go。之所以有人称它为 Golang 是由于之前的 Go �
 
 今天，Go 被用于各种应用程序：
 
+<!-- more -->
+
 * Go 在基于云或服务器端的应用程序中很受欢迎
 * 云基础设施方面。当今最流行的基础设施工具是用 Go 编写的，例如 Kubernetes、Docker 和 Prometheus
 * 许多命令行工具都是用 Go 编写的

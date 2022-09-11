@@ -38,6 +38,8 @@ Apache Groovy 是一种强大的、可选类型的动态语言，具有静态类
 
 ## Groovy 和 Java 的区别
 
+<!-- more -->
+
 ![ Groovy vs Java](groovy/groovy-vs-java.png)
 
 1. Groovy 是一种编程语言，也支持脚本语言；Java 是一种面向对象的编程语言。
