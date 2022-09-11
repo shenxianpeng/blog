@@ -1,5 +1,5 @@
 ---
-title: cpp-linter 项目为 C/C++ 代码格式化和静态分析检查提供一站式解决方案
+title: 终于为 C/C++ 代码格式化和静态分析检查找到了一站式 CI 工作流
 tags:
   - Clang-Format
   - Clang-Tidy
