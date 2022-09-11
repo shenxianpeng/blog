@@ -1,5 +1,5 @@
 ---
-title: 关于 C/C++ 代码格式化 & 静态分析的持续集成（CI）实践
+title: cpp-linter 项目为 C/C++ 代码格式化和静态分析检查提供一站式解决方案
 tags:
   - Clang-Format
   - Clang-Tidy
@@ -10,27 +10,105 @@ author: shenxianpeng
 date: 2022-08-23 17:27:31
 ---
 
-正如标题所说本篇主要介绍对于 C/C++ 项目的代码格式化以及静态分析实践分享。
-
 目前 C/C++ 语言的代码格式化和检查工具使用的最为广泛的是使用 [LLVM](https://llvm.org/) 项目中的 [Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) 和 [Clang-Tidy](https://clang.llvm.org/extra/clang-tidy/)。
 
 > LLVM 项目是模块化和可重用的编译器和工具链技术的集合。
 
-通常使用 clang-format 和 clang-tidy 可以在 IDE 中安装插件，然后利用 IDE 进行代码的格式化和静态检查。但这样的问题是：
+关于 C/C++ 代码格式化和静态分析检查用到是 LLVM 项目中 clang-format 和 clang-tidy，放在一起我们称它为 clang-tools。
 
-* 当有多个开发人员时，他们可能会使用不同的 IDE，这样在不同的 IDE 上安装插件需要比较高的学习成本。
-* 另外没法保证所有开发人员在提交代码的时候运行了 Clang-Format 或 Clang-Tidy。
+虽然我们有了工具，但**如何把工具更好的集成到我们的工作流中**才是本篇要讨论的。
 
-那么怎样确保每次提交代码都执行了 Clang-Format 或 Clang-Tidy 呢？有两个办法：
+[cpp-linter](https://github.com/cpp-linter) 组织应运而生，它提供了：
 
-1. 通过 CI 在代码合并前做自动检查，如果没有 CI 没有通过无法进行 Merge，这样倒逼开发提交代码之前执行 Clang-Format 和 Clang-Tidy 的操作。
-2. 通过 git hook 让开发提交代码的时候自动执行 Clang-Format 和 Clang-Tidy，如果不符合规范则提示并自动 Format，如果符合规范则提交成功。
+1. 更方便的下载 clang-tools。提供了下载 Docker images 和 binaries；
+2. 更方便的与 CI 工作流进行集成，包括 cpp-linter-action 和 cpp-linter-hooks。
 
-下面分别介绍这两种方法。
+下面我想分别介绍如何使用工具并集成到 CI 工作流中。
 
-## 通过 CI 在代码合并前做自动检查
+## 下载 clang-tools Docker images
 
-如果你的代码是放在 GitHub 上，那么非常建议你使用 [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) 这个 GitHub Action，以下是它的一些重要特性：
+如果你想通过 Docker 来使用 clang-format 和 clang-tidy，[clang-tools](https://github.com/cpp-linter/clang-tools) 项目是来提供 Docker 镜像。
+
+例如：下载 clang-tools 镜像，使用 clang-format 来进行代码格式化
+
+```bash
+# 检查 clang-format 版本
+$ docker run xianpengshen/clang-tools:12 clang-format --version
+Ubuntu clang-format version 12.0.0-3ubuntu1~20.04.4
+
+# 格式化代码 (helloworld.c 在仓库的 demo 目录下)
+$ docker run -v $PWD:/src xianpengshen/clang-tools:12 clang-format --dry-run -i helloworld.c
+```
+
+使用 clang-tidy 来进行代码格诊断
+
+```bash
+# 查看 clang-tidy 版本
+$ docker run xianpengshen/clang-tools:12 clang-tidy --version
+LLVM (http://llvm.org/):
+  LLVM version 12.0.0
+
+  Optimized build.
+  Default target: x86_64-pc-linux-gnu
+  Host CPU: cascadelake
+# 诊断代码 (helloworld.c 在仓库的 demo 目录下)
+$ docker run -v $PWD:/src xianpengshen/clang-tools:12 clang-tidy helloworld.c \
+-checks=boost-*,bugprone-*,performance-*,readability-*,portability-*,modernize-*,clang-analyzer-cplusplus-*,clang-analyzer-*,cppcoreguidelines-*
+```
+
+## 下载 clang-tools binaries
+
+当如如果你需要下载 clang-tools binaries，以 Windows 为例，通常下载这指定版本 clang-tools 你需要先安装 LLVM 这个大的安装包才能获得 clang-format & clang-tidy 这些工具；在 Linux 上会方便很多可以使用命令来下载，但如果想下载指定版本的 clang-format & clang-tidy 也不是那么容易获得。
+
+[clang-tools-pip](https://github.com/cpp-linter/clang-tools-pip) 项目提供了支持在 Windows，Linux，MacOs 上面通过命令行下载任何指定版本的 clang-tools 可执行文件。
+
+只需要通过 `pip` 安装 `clang-tools`，即 `pip install clang-tools`，然后通过 `clang-tools` 命令就可以安装任何版本的可执行文件了。
+
+例如，安装 clang-tools 版本 13：
+
+`$ clang-tools --install 13`
+
+也可以将它安装到指定目录下面：
+
+`$ clang-tools --install 13 --directory .`
+
+安装成功后，可以查看安装版本：
+
+```bash
+$ clang-format-13 --version
+clang-format version 13.0.0
+
+$ clang-tidy-13 --version
+LLVM (http://llvm.org/):
+  LLVM version 13.0.0
+  Optimized build.
+  Default target: x86_64-unknown-linux-gnu
+  Host CPU: skylake
+```
+
+更多关于 `clang-tools` CLI 提供的选项可以查看它的 CLI [文档](https://cpp-linter.github.io/clang-tools-pip/cli_args.html)。
+
+## 把 clang-tools 集成到工作流
+
+虽然上面提供了很方便的下载 clang-tools 的 Docker images 和 binaries，但如何把它们集成到工作流中才是我们最终所关心的。
+
+通常在使用 clang-format 和 clang-tidy 可以在 IDE 中安装插件，然后利用 IDE 进行代码的格式化和静态检查。但这样的问题是：
+
+1. 当有多个开发人员时，他们可能会使用不同的 IDE，这样在不同的 IDE 上安装插件需要比较高的学习成本。
+2. 另外没法保证所有开发人员在提交代码的时候运行了 Clang-Format 或 Clang-Tidy。
+
+那么怎样确保每次提交代码都执行了 Clang-Format 或 Clang-Tidy 呢？
+
+1. [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) 提供了通过 CI 在代码合并前做自动检查，如果 CI 没有通过则无法进行 Merge，这样倒逼开发提交代码之前运行 Clang-Format 和 Clang-Tidy。
+2. [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 通过 git hook 在开发提交代码的时候自动运行 Clang-Format 和 Clang-Tidy，如果不符合规范则提示并自动格式化；符合规范则提交成功。
+
+## cpp-linter-action 在代码合并前做自动检查
+
+如果你的代码是放在 GitHub 上，那么非常推荐你使用 [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) 这个 GitHub Action。
+
+> 目前 [cpp-linter](https://github.com/cpp-linter/cpp-linter) 还没有与除 GitHub 以外其他 SCM 做深度集成，例如 Bitbucket 和 GitLab，可以使用后面介绍的 [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks)
+
+以下是它的一些重要特性：
 
 1. 运行结果支持 Annotations 和 Thread Comment 两种方式展示
 2. 支持 GitHub 的 public 和 private 仓库
@@ -76,15 +154,13 @@ jobs:
 
 目前该项目已经受到了很多知名项目所使用，在 GitHub Marketplace 上面搜索它的排名也非常靠前，开发者也在积极维护可以放心使用。
 
-![Search results](cpp-linter/search-result.png)
-
 如果你使用的不是 GitHub 作为代码管理工具，比如 Bitbucket，GitLab 等，可以直接使用该项目的 core package [cpp-linter](https://github.com/cpp-linter/cpp-linter)
 
 注意 annotations 和 comment 这两个功能目前只支持 GitHub，该项目未来考虑支持其他 SCM，像 Bitbucket，GitLab。
 
-## 通过 git hook 在提交代码时自动检查
+## cpp-linter-hooks 在提交代码时自动检查
 
-cpp-linter 还提供了另外一种方式：即通过 git hook 在提交代码时自动检查，这种方式不限制使用任何 SCM。
+[cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 是通过 git hook 在提交代码时做自动检查，这种方式不限制使用任何 SCM。
 
 只需要在项目仓库中添加一个 `.pre-commit-config.yaml` 配置文件，然后将 [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 这个 hook 添加进去，具体设置如下：
 
@@ -169,11 +245,9 @@ cpp-linter 还提供了另外一种方式：即通过 git hook 在提交代码�
 
 ## 选择 CI 还是 git hook
 
+如果你的团队已经在使用 [`pre-commit`](https://pre-commit.com/)，那么推荐使用 git hook，只需要添加 [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 即可。如果不希望引入 `pre-commit` 则可以通过添加 CI 来进行检查。
+
 当然也可以两个都选。
-
-如果你的团队已经在使用 [`pre-commit`](https://pre-commit.com/)，那么推荐使用 git hook，只需要添加 [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 即可。
-
-如果不希望引入 `pre-commit` 则可以通过添加 CI 来进行检查。
 
 ---
 
