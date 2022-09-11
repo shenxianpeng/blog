@@ -23,6 +23,8 @@ $ gpg --list-key
 
 ### Second, generate GPG key
 
+<!-- more -->
+
 ```bash
 $ gpg --gen-key
 gpg (GnuPG) 2.2.19; Copyright (C) 2019 Free Software Foundation, Inc.

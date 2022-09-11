@@ -25,7 +25,9 @@ date: 2022-03-29 20:52:42
 
 这张图显示了 Docker、Kubernetes、CRI、OCI、containerd 和 runc 在这个生态系统中是如何结合的。
 
-![](container-ecosystem/container-ecosystem.png)
+<!-- more -->
+
+![container ecosystem](container-ecosystem/container-ecosystem.png)
 
 其工作流程简单来说是这样的：
 
@@ -35,8 +37,6 @@ date: 2022-03-29 20:52:42
     * 这些容器运行时都遵循了 OCI 规范，并通过 runc 来实现与操作系统内核交互来完成容器的创建和运行
 
 下面就分别介绍图中所提到的术语和规范。
-
-<!-- more -->
 
 ## Docker
 

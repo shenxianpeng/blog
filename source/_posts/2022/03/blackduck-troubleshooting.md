@@ -61,6 +61,8 @@ ENVIRONMENT:
 
 ## Root cause
 
+<!-- more -->
+
 More output of this run, I see it used `python` (which is python2) not `python3`,
 so run [pip-inspector.py](https://github.com/blackducksoftware/synopsys-detect/blob/master/src/main/resources/pip-inspector.py) failed.
 

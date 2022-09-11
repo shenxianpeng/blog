@@ -28,6 +28,8 @@ date: 2022-03-09 11:16:05
 
 在经过一番调查和测试，目前最可行的办法就是通过 GitHub Support 来处理，具体操作如下：
 
+<!-- more -->
+
 1. 打开这个链接：https://support.github.com/contact?tags=rr-forks
 2. 选择你的账户或是组织，然后在 Subject 中输入 "unfork" 会自动弹出虚拟助手，选择虚拟机助手
     ![](unfork-github-repo/type-unfork.png)

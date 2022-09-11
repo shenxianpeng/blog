@@ -21,6 +21,8 @@ Vagrant 是用 Ruby 语言开发的，但它的生态系统支持使用其他几
 
 ## Vagrant 的发展史
 
+<!-- more -->
+
 Vagrant 最初是由 [Mitchell Hashimoto](https://www.hashicorp.com/about?name=mitchell-hashimoto) 于 2010 年 1 月作为个人项目启动的。
 
 Vagrant 的第一个版本于 2010 年 3 月发布。2010 年 10 月，Engine Yard 宣布他们将赞助 Vagrant 项目。
