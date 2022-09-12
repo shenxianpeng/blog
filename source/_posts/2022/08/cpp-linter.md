@@ -1,5 +1,5 @@
 ---
-title: Cpp-Linter 为 C/C++ 代码格式化和静态分析检查提供了一站式工作流
+title: Cpp Linter 为 C/C++ 代码格式化和静态分析检查提供了一站式工作流
 tags:
   - Clang-Format
   - Clang-Tidy
@@ -251,9 +251,9 @@ jobs:
 
 如果你的团队已经在使用 `pre-commit`，那么推荐使用 git hook，只需要添加 [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 即可。如果不希望引入 `pre-commit` 则可以通过添加 CI 来进行检查。当然也可以两个都选。
 
-cpp-linter 是我创建的，并由 Brendan Doherty（来自美国）和我在共同维护的项目，这几乎花掉了绝大多数的业余时间，我们都是力求去写最完美的代码并构建最好的软件，目前 cpp-linter 可以说是 GitHub 最好用的 C/C++ Linter Action。
+cpp-linter 是我创建的，并由 [Brendan Doherty](https://github.com/2bndy5) 和我在共同维护的开源项目，我们都是力求去写最完美的代码去构建最好的软件，这几乎花掉了绝大多数的业余时间。
 
-欢迎大家使用，有什么意见或问题欢迎提 issue 反馈。
+目前 cpp-linter 可以说是 GitHub 最好用的 C/C++ Linter Action。欢迎大家使用，有什么意见或问题欢迎通过 Issue 反馈。
 
 ---
 
