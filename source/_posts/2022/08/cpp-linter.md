@@ -20,8 +20,8 @@ date: 2022-08-23 17:27:31
 
 [cpp-linter](https://github.com/cpp-linter) 组织的诞生就是为 C/C++ 代码格式化和静态分析检查提供一站式的工作流，主要包括：
 
-1. 方便的下载 clang-tools，提供了下载 Docker images 和 binaries；
-2. 方便的与 CI 工作流进行集成，包括 cpp-linter-action 和 cpp-linter-hooks。
+1. 方便下载 clang-tools，提供了下载 Docker images 和 binaries；
+2. 方便与 CI 工作流进行集成，包括 cpp-linter-action 和 cpp-linter-hooks。
 
 下面分别介绍如何使用 clang-tools 下载工具，以及集成到工作流中。
 
@@ -60,7 +60,7 @@ $ docker run -v $PWD:/src xianpengshen/clang-tools:12 clang-tidy helloworld.c \
 
 ## 下载 clang-tools binaries
 
-当如如果你需要下载 clang-tools binaries，以 Windows 为例，通常下载这指定版本 clang-tools 你需要先安装 LLVM 这个大的安装包才能获得 clang-format & clang-tidy 这些工具；在 Linux 上会方便很多可以使用命令来下载，但如果想下载指定版本的 clang-format & clang-tidy 也不是那么容易获得。
+如果你需要下载 clang-tools binaries，以 Windows 为例，通常下载这指定版本 clang-tools 你需要先安装 LLVM 这个大的安装包才能获得 clang-format & clang-tidy 这些工具；在 Linux 上会方便很多可以使用命令来下载，但如果想下载指定版本的 clang-format & clang-tidy 也不是那么容易获得。
 
 [clang-tools-pip](https://github.com/cpp-linter/clang-tools-pip) 项目提供了支持在 Windows，Linux，MacOs 上面通过命令行下载任何指定版本的 clang-tools 可执行文件。
 
@@ -154,7 +154,7 @@ jobs:
 
 ![comment](cpp-linter/comment.png)
 
-目前该项目已经受到了很多知名项目所使用，在 GitHub Marketplace 上面搜索它的排名也非常靠前，开发者也在积极维护可以放心使用。
+目前该项目已经有很多知名项目所使用，在 GitHub Marketplace 上面搜索它的排名也非常靠前，开发者也在积极维护可以放心使用。
 
 如果你使用的不是 GitHub 作为代码管理工具，比如 Bitbucket，GitLab 等，可以直接使用该项目的 core package [cpp-linter](https://github.com/cpp-linter/cpp-linter)
 
@@ -245,11 +245,15 @@ jobs:
             ^~~~~~~~~~
     ```
 
-## 选择 CI 还是 git hook
+## 最后
 
-如果你的团队已经在使用 `pre-commit`，那么推荐使用 git hook，只需要添加 [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 即可。如果不希望引入 `pre-commit` 则可以通过添加 CI 来进行检查。
+选择 CI 还是 git hook？
 
-当然也可以两个都选。
+如果你的团队已经在使用 `pre-commit`，那么推荐使用 git hook，只需要添加 [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 即可。如果不希望引入 `pre-commit` 则可以通过添加 CI 来进行检查。当然也可以两个都选。
+
+cpp-linter 是我创建的，并由 Brendan Doherty（来自美国）和我在共同维护的项目，这几乎花掉了绝大多数的业余时间，我们都是力求去写最完美的代码并构建最好的软件，目前 cpp-linter 可以说是 GitHub 最好用的 C/C++ Linter Action。
+
+欢迎大家使用，有什么意见或问题欢迎提 issue 反馈。
 
 ---
 
