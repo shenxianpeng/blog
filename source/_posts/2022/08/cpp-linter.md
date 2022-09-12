@@ -1,5 +1,5 @@
 ---
-title: C/C++ 代码格式化和静态分析检查的一站式的解决方案
+title: Cpp-Linter 为 C/C++ 代码格式化和静态分析检查提供了一站式工作流
 tags:
   - Clang-Format
   - Clang-Tidy
@@ -247,7 +247,7 @@ jobs:
 
 ## 选择 CI 还是 git hook
 
-如果你的团队已经在使用 [`pre-commit`](https://pre-commit.com/)，那么推荐使用 git hook，只需要添加 [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 即可。如果不希望引入 `pre-commit` 则可以通过添加 CI 来进行检查。
+如果你的团队已经在使用 `pre-commit`，那么推荐使用 git hook，只需要添加 [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 即可。如果不希望引入 `pre-commit` 则可以通过添加 CI 来进行检查。
 
 当然也可以两个都选。
 
