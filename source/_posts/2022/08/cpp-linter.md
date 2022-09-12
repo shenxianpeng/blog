@@ -251,7 +251,7 @@ jobs:
 
 如果你的团队已经在使用 pre-commit，那么推荐使用 git hook 这种方式，只需要添加 [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks) 即可。如果不希望引入 pre-commit 则可以通过添加 CI 来进行检查。当然也可以两个都选。
 
-cpp-linter 是我创建的，由 [Brendan Doherty](https://github.com/2bndy5) 和我为主要贡献者共同维护的开源项目，我们都是那种追求代码质量、力求构建最好的软件的人，为此这几乎花掉了我绝大多数的业余时间，但这个过程中也收获了很多。
+cpp-linter 是我创建的，由 [Brendan Doherty](https://github.com/2bndy5) 和我为主要贡献者共同维护的开源项目，我们都是那种追求代码质量、力求构建最好的软件的人，为此这几乎花掉了我绝大多数的业余时间，与此同时也学到了很多。
 
 目前 cpp-linter 可以说是 GitHub 最好用的 C/C++ Linter Action，欢迎大家使用，有什么意见或问题都可以通过 Issue 反馈。
 
