@@ -10,6 +10,8 @@ author: shenxianpeng
 date: 2022-08-23 17:27:31
 ---
 
+本篇是关于 C/C++ 代码格式化和静态分析检查的实践分享。
+
 目前 C/C++ 语言的代码格式化和检查工具使用的最为广泛的是 [LLVM](https://llvm.org/) 项目中的 [Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) 和 [Clang-Tidy](https://clang.llvm.org/extra/clang-tidy/)。
 
 > LLVM 项目是模块化和可重用的编译器和工具链技术的集合。
