@@ -116,4 +116,32 @@ I'm using a centos VM as Jenkins server, recently I have this problem "java.io.I
 1. Run `ulimit -n` the default value on my machine is `1024`.
 2. Run `ulimit -n 4096` to increase this value to `4096` solved my problem
 
-> https://stackoverflow.com/questions/46065008/too-many-open-files-error-cant-open-jenkins-after-installing-many-plugins
+### Permanent solution
+
+Use your root user to change `etc/security/limits.conf` file as below:
+
+```bash
+jenkins      soft   nofile  4096
+jenkins      hard   nofile  8192
+```
+
+Explanation
+
+jenkins   -- a user/group name
+soft/hard -- type of link. Note: soft link can be from 0 to hard link.
+nofile    -- number of open files And the is value.
+
+Log out then log in to your Jenkins server and use your ID `jenkins` to run `ulimit -a` command again.
+
+If the output like below, Congrats, your change already take effect.
+
+```bash
+bash-4.2$ id
+uid=990(jenkins) gid=984(jenkins) groups=984(jenkins)
+bash-4.2$ ulimit -a
+
+open files                      (-n) 4096
+
+```
+
+> Refers to https://stackoverflow.com/questions/46065008/too-many-open-files-error-cant-open-jenkins-after-installing-many-plugins
