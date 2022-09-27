@@ -21,6 +21,8 @@ I commented out the access settings for TEAM A, and add some user accounts can a
 + : shenx, map, xiar : ALL
 ```
 
+<!-- more -->
+
 **Be careful not to restrict everyone including yourself.**
 
 It would be best to allow several people can also access it to prevent any issues to log in with your account or you leave the organization.
