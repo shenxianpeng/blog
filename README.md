@@ -1,6 +1,6 @@
 # Peter Shen's Blog
 
-[![Test and SonarScan](https://github.com/shenxianpeng/blog/actions/workflows/test.yml/badge.svg)](https://github.com/shenxianpeng/blog/actions/workflows/test.yml)
+[![Test and SonarScan](https://github.com/shenxianpeng/blog/actions/workflows/CI.yml/badge.svg)](https://github.com/shenxianpeng/blog/actions/workflows/CI.yml)
 [![CodeQL](https://github.com/shenxianpeng/blog/workflows/CodeQL/badge.svg)](https://github.com/shenxianpeng/blog/actions?query=workflow%3ACodeQL)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=shenxianpeng_blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=shenxianpeng_blog)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c11eed2252634f68a4a4f62a5e069fa6)](https://www.codacy.com/gh/shenxianpeng/blog/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shenxianpeng/blog&amp;utm_campaign=Badge_Grade)
