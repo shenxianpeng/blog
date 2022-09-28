@@ -47,7 +47,6 @@ jobs:
         # Set the sonar.projectBaseDir analysis property
         projectBaseDir: .
 
-    - name: Publish
     - uses: dorny/paths-filter@v2
       id: changes
       with:
@@ -55,5 +54,6 @@ jobs:
           source:
             - 'source/_posts/**'
       # run only if some file in 'source' folder was changed
+    - name: Publish
     - if: steps.changes.outputs.source == 'true'
       run: make publish
