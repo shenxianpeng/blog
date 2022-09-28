@@ -21,9 +21,15 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Clone code
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       with:
         fetch-depth: 0
+    - uses: dorny/paths-filter@v2
+      id: changes
+      with:
+        filters: |
+          source:
+            - 'source/_posts/**'
 
     - name: Setup Node 13
       uses: actions/setup-node@v3
@@ -48,12 +54,6 @@ jobs:
         projectBaseDir: .
 
     - name: Publish
-      uses: dorny/paths-filter@v2
-      id: changes
-      with:
-        filters: |
-          source:
-            - 'source/_posts/**'
       # run only if some file in 'source' folder was changed
       if: steps.changes.outputs.source == 'true'
       run: make publish
