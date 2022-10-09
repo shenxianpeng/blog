@@ -45,3 +45,5 @@ Follow me on:
 <!-- <a href="mailto:xianpeng.shen@gmail.com"><img title="Gmail" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/gmail.svg"></a>
 <a href="https://github.com/shenxianpeng"><img title="GitHub" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/github.svg"></a>
 <a href="https://www.linkedin.com/in/xianpeng-shen/"><img title="LinkedIn" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/linkedin.svg"></a> -->
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H85WC9L)
