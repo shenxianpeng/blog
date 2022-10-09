@@ -24,6 +24,8 @@ jobs:
         filters: |
           source:
             - 'source/_posts/**'
+            - 'source/about/**'
+            - 'source/daily/**'
 
     - name: Setup Node 13
       uses: actions/setup-node@v3
