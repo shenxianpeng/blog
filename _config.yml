@@ -101,6 +101,7 @@ deploy:
   email: xianpeng.shen@gmail.com
   message: Site updated
   ignore_hidden: false # default is true
+  token: $GITHUB_TOKEN
 
 # hexo-generator-search
 search:
