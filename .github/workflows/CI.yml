@@ -50,6 +50,8 @@ jobs:
         projectBaseDir: .
 
     - name: Publish
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # run only if 'source' files was changed
       if: steps.filter.outputs.source == 'true'
       run: make publish
