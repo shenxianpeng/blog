@@ -10,7 +10,9 @@ date: 2021-06-17 13:52:44
 author: shenxianpeng
 ---
 
-最近使用 AIX 7.1 从 Bitucket 下载代码的时候遇到了这个错误 `fatal: write error: A file cannot be larger than the value set by ulimit.`
+最近使用 AIX 7.1 从 Bitbucket 下载代码的时候遇到了这个错误：
+
+`fatal: write error: A file cannot be larger than the value set by ulimit.`
 
 ```bash
 $ git clone -b dev https://<username>:<password>@git.company.com/scm/vmcc/opensrc.git --depth 1
@@ -21,7 +23,22 @@ fatal: write error: A file cannot be larger than the value set by ulimit.
 fatal: index-pack failed
 ```
 
-这是由于这个仓库里的文件太大，超过了 AIX 对于用户文件资源使用的上限。通过 `ulimit -a` 可以来查看。更多关于 `ulimit` 命令的使用 [ulimit Command](https://www.ibm.com/docs/en/aix/7.1?topic=u-ulimit-command)
+在 AIX 7.3 我遇到的是这个错误：
+
+`fatal: fetch-pack: invalid index-pack output`
+
+```bash
+$ git clone -b dev https://<username>:<password>@git.company.com/scm/vmcc/opensrc.git --depth 1
+Cloning into 'opensrc'...
+remote: Counting objects: 2390, done.
+remote: Compressing objects: 100% (1546/1546), done.
+fatal: write error: File too large68), 1012.13 MiB | 15.38 MiB/s
+fatal: fetch-pack: invalid index-pack output
+```
+
+这是由于这个仓库里的文件太大，超过了 AIX 对于用户文件资源使用的上限。
+
+通过 `ulimit -a` 可以来查看。更多关于 `ulimit` 命令的使用 [ulimit Command](https://www.ibm.com/docs/en/aix/7.1?topic=u-ulimit-command)
 
 ```bash
 $ ulimit -a
@@ -53,7 +70,9 @@ default:
         nofiles = 2000
 ```
 
-将上述的值 fsize = 2097151 改成 fsize = -1 就将解除了文件块大小的限制了。修改完成后，重新登录，再次执行 `ulimit -a`
+将上述的值 fsize = 2097151 改成 fsize = -1 就将解除了文件块大小的限制了。修改完成后，**重新登录**来让这次修改生效。
+
+再次执行 `ulimit -a`，已经生效了。
 
 ```bash
 $ ulimit -a
