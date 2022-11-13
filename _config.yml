@@ -95,7 +95,7 @@ comments: true
 ## https://github.com/hexojs/hexo-deployer-git
 deploy:
   type: git
-  repo: git@github.com:shenxianpeng/shenxianpeng.github.io.git
+  repo: https://github.com/shenxianpeng/shenxianpeng.github.io.git
   branch: master
   name: shenxianpeng
   email: xianpeng.shen@gmail.com
