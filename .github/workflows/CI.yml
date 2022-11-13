@@ -9,6 +9,7 @@ on:
     branches: master
   pull_request:
     branches: master
+  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -50,8 +51,8 @@ jobs:
         projectBaseDir: .
 
     - name: Publish
+      # run only if 'source' files was changed
+      if: steps.filter.outputs.source == 'true' || github.event_name == 'workflow_dispatch'
+      run: make publish
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # run only if 'source' files was changed
-      if: steps.filter.outputs.source == 'true'
-      run: make publish
