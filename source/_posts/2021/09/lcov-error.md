@@ -45,3 +45,18 @@ $ ls
 backportPP  backportPP.pm
 $ cp backportPP.pm PP.pm
 ```
+
+## Can't locate Module/Load.pm
+
+```bash
+bash-4.2$ geninfo --version
+Can't locate Module/Load.pm in @INC (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at /usr/local/bin/geninfo line 63.
+BEGIN failed--compilation aborted at /usr/local/bin/geninfo line 63.
+bash-4.2$
+```
+
+Install `perl-Module-Load-Conditional` can resolved.
+
+```bash
+sudo yum install perl-Module-Load-Conditional
+```
