@@ -6,6 +6,17 @@ title: Daily
 
 ---
 
+## 12/02/2022 - I don't have time
+
+I don't have time to contribute to open source
+I don't have time to learn from Udemy or YouTuBe
+I don't have time to update my blog and WeChat Account
+I don't have time to play football after work
+
+Most of my time is at work, taking care of children, resting, and sleeping.
+
+If I want to do some of the above part-time things, just rest and sleep less :)
+
 ## 06/13/2022 - Be thankful
 
 It's been over a month since I've written anything because my daughter was born and I've been busy all May.

@@ -58,4 +58,9 @@ jobs:
       if: steps.filter.outputs.source == 'true' || github.event_name == 'workflow_dispatch'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        external_repository: shenxianpeng/shenxianpeng.github.io
+        publish_branch: master
         publish_dir: ./public
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: "Site updated"
