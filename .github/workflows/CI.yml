@@ -57,7 +57,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       if: steps.filter.outputs.source == 'true' || github.event_name == 'workflow_dispatch'
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
         external_repository: shenxianpeng/shenxianpeng.github.io
         publish_branch: master
         publish_dir: ./public
