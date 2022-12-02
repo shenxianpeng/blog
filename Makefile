@@ -12,20 +12,24 @@ help: # Help
 	@awk -F':+ |$(HELP_TARGET_DEPTH)' '/^[0-9a-zA-Z._%-]+:+.+$(HELP_TARGET_DEPTH).+$$/ { printf "$(GREEN)%-20s\033[0m %s\n", $$1, $$3 }' $(MAKEFILE_LIST) | sort
 	@echo
 
-server: # Start the deamon server with default port 4000
-	@hexo server
-
-new-server: # Start the server with new port 4001
-	@hexo server --port 4001 > /dev/null 2>&1 &
-
-test: # Test hexo server
-	@curl -Is http://localhost:4001/ | head -n 1
+deps: # Install dependencies
+	npm install
+	npm install -g hexo-cli
 
 clean: # Remove generated files and cache
 	@hexo clean
 
 generate: # Generate static files
 	@hexo generate
+
+server: # Start the deamon server with default port 4000
+	@hexo server
+
+test-server: generate # Start the server with new port 4001
+	@hexo server --port 4001 > /dev/null 2>&1 &
+
+test: # Test hexo server with port 4001
+	@curl -Is http://localhost:4001/ | head -n 1
 
 package: # Copy files for packaing
 	@echo "== copy new README.md"
@@ -41,9 +45,8 @@ package: # Copy files for packaing
 	@cp -r source/.github/workflows/send-dispatch.yml public/.github/workflows/send-dispatch.yml
 	@ls public/.github/workflows/send-dispatch.yml
 
-
 deploy: # Deploy your website
 	@hexo deploy
 
-publish: clean generate new-server test package deploy # Publish blog
-	@echo "== Publish ✅ Succeeded."
+release: clean generate new-server test package deploy # Release blog manully
+	@echo "== Release ✅ Succeeded."
