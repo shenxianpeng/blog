@@ -60,3 +60,26 @@ Install `perl-Module-Load-Conditional` can resolved.
 ```bash
 sudo yum install perl-Module-Load-Conditional
 ```
+
+## Can't locate Capture/Tiny.pm in @INC
+
+```bash
+sh-4.2$ lcov --version
+Can't locate Capture/Tiny.pm in @INC (@INC contains: /usr/local/bin/../lib /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at /usr/local/bin/../lib/lcovutil.pm line 13.
+BEGIN failed--compilation aborted at /usr/local/bin/../lib/lcovutil.pm line 13.
+Compilation failed in require at /usr/local/bin/lcov line 104.
+BEGIN failed--compilation aborted at /usr/local/bin/lcov line 104.
+```
+
+Fixed with following command
+
+```bash
+perl -MCPAN -e 'install Capture::Tiny'
+```
+
+Then run `lcov --version` back to work.
+
+```bash
+sh-4.2$ lcov --version
+lcov: LCOV version v1.16-16-g038c2ca
+```
