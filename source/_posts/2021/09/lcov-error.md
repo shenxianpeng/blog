@@ -83,3 +83,36 @@ Then run `lcov --version` back to work.
 sh-4.2$ lcov --version
 lcov: LCOV version v1.16-16-g038c2ca
 ```
+
+## Can't locate DateTime.pm
+
+```bash
+$ genhtml --help
+Can't locate DateTime.pm in @INC (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at /usr/local/bin/genhtml line 87.
+BEGIN failed--compilation aborted at /usr/local/bin/genhtml line 87.
+```
+
+Need to install the perl module DateTime, On Centos7 run
+
+`sudo yum install 'perl(DateTime)'`
+
+But this still doesn't work for me.
+
+## Run `geninfo` command failed
+
+```bash
+Capturing coverage data from .
+Compress::Raw::Zlib version 2.201 required--this is only version 2.061 at /usr/local/share/perl5/IO/Uncompress/RawInflate.pm line 8.
+BEGIN failed--compilation aborted at /usr/local/share/perl5/IO/Uncompress/RawInflate.pm line 8.
+Compilation failed in require at /usr/local/share/perl5/IO/Uncompress/Gunzip.pm line 12.
+BEGIN failed--compilation aborted at /usr/local/share/perl5/IO/Uncompress/Gunzip.pm line 12.
+Compilation failed in require at /usr/local/bin/geninfo line 62.
+BEGIN failed--compilation aborted at /usr/local/bin/geninfo line 62.
+sh-4.2$
+```
+
+Install package `Compress::Raw::Zlib` fixed.
+
+```bash
+perl -MCPAN -e 'install Compress::Raw::Zlib'
+```
