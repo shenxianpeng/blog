@@ -1,4 +1,4 @@
-name: Tigger special repository
+name: Trigger special repository
 
 on:
   push:
