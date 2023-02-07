@@ -144,7 +144,11 @@ Pipeline 代码经过 CPS 转换，以便 pipeline 能够在 Jenkins 重启后�
 
 > 此注释的存在是为了告知用户此行为的根本原因。不建议纯粹为了避免可串行化问题而将 pipeline 的持久性设置设置为性能优化。
 
-[原文链接](https://www.jenkins.io/doc/book/pipeline/pipeline-best-practices/)。
+* https://www.jenkins.io/doc/book/pipeline/pipeline-best-practices/
+* https://www.cloudbees.com/blog/top-10-best-practices-jenkins-pipeline-plugin
+* https://github.com/jenkinsci/pipeline-examples/blob/master/docs/BEST_PRACTICES.md
+* https://devopscook.com/jenkinsfile-best-practices/
+
 
 ---
 
