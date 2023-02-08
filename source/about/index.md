@@ -4,15 +4,15 @@ author: shenxianpeng
 
 # 关于我
 
-* 一名 Build/DevOps 工程师
+* 一名 DevOps/Build/Release 工程师
 * 微信公众号「DevOps攻城狮」作者
-* [cpp-linter](https://github.com/cpp-linter) 的创建者和贡献者
+* [cpp-linter](https://github.com/cpp-linter) 和 [commit-check](https://github.com/commit-check) 的创建者和贡献者
 
 👨🏼‍💻欢迎关注我的微信公众号「DevOps攻城狮」
 
 ![ ](index/qrcode.jpg)
 
-其他社交账号 👇
+其他社交平台账号 👇
 
 * 🚩 [知乎](https://www.zhihu.com/people/shenxianpeng)
 * 🤙🏻 [领英](https://www.linkedin.com/in/xianpeng-shen/)
@@ -28,9 +28,9 @@ author: shenxianpeng
 
 Hi, I'm Peter Shen
 
-* A Build/DevOps engineer
+* A DevOps/Build/Release Engineer
 * Author of the official account DevOps-Engineer
-* Creator and contributor of [cpp-linter](https://github.com/cpp-linter)
+* Creator and contributor of [cpp-linter](https://github.com/cpp-linter) and  [commit-check](https://github.com/commit-check)
 
 If you like any of the articles, feel free to leave me a comment, it's the biggest encouragement for me.
 
@@ -45,4 +45,4 @@ Follow me on:
 <a href="https://github.com/shenxianpeng"><img title="GitHub" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/github.svg"></a>
 <a href="https://www.linkedin.com/in/xianpeng-shen/"><img title="LinkedIn" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/linkedin.svg"></a> -->
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H85WC9L)
+[![](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H85WC9L)
