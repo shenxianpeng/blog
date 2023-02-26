@@ -8,3 +8,10 @@ repos:
       - id: check-added-large-files
       - id: check-yaml
       - id: debug-statements
+  - repo: https://github.com/commit-check/commit-check
+    rev: v0.5.3
+    hooks:
+      - id: check-message
+      - id: check-branch
+      - id: check-author-name
+      - id: check-author-email
