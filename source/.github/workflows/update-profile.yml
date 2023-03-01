@@ -10,26 +10,26 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Wait website up
-        run: | 
-          i=0
-          while [ $i -lt 10 ]
-          do
-              curl -Is  https://shenxianpeng.github.io  | head -n 1 | grep 200
-              if [ $? = "0" ];then
-                  i=10
-              else
-                  i=`expr $i + 1`
-                  sleep $i
-              fi
-          done
-          sleep 10
-      - name: Trigger workflow
-      - uses: convictional/trigger-workflow-and-wait@v1.6.5
-        with:
-          owner: shenxianpeng
-          repo: shenxianpeng
-          workflow_file_name: blog-post-workflow.yml
-          ref: master
-          trigger_workflow: true
-          github_token: ${{secrets.PAT_TOKEN}}
+    - name: Wait website up
+      run: |
+        i=0
+        while [ $i -lt 10 ]
+        do
+            curl -Is  https://shenxianpeng.github.io  | head -n 1 | grep 200
+            if [ $? = "0" ];then
+                i=10
+            else
+                i=`expr $i + 1`
+                sleep $i
+            fi
+        done
+        sleep 10
+    - name: Trigger workflow
+      uses: convictional/trigger-workflow-and-wait@v1.6.5
+      with:
+        owner: shenxianpeng
+        repo: shenxianpeng
+        workflow_file_name: blog-post-workflow.yml
+        ref: master
+        trigger_workflow: true
+        github_token: ${{secrets.PAT_TOKEN}}
