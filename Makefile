@@ -42,8 +42,8 @@ package: # Copy files for packaing
 
 	@echo "== copy new workflow yml"
 	@mkdir -p public/.github/workflows/
-	@cp -r source/.github/workflows/send-dispatch.yml public/.github/workflows/send-dispatch.yml
-	@ls public/.github/workflows/send-dispatch.yml
+	@cp -r source/.github/workflows/*.yml public/.github/workflows/
+	@ls public/.github/workflows/*.yml
 
 deploy: # Deploy your website
 	@hexo deploy
