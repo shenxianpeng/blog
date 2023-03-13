@@ -1,5 +1,5 @@
 ---
-title: 解决两个 AIX 上 Git Clone 失败的问题
+title: 解决在 AIX 上 Git Clone 失败的两个问题
 tags:
   - Git
   - AIX
@@ -19,7 +19,7 @@ author: shenxianpeng
 
 ## 问题1：Dependent module /usr/lib/libldap.a(libldap-2.4.so.2) could not be loaded
 
-Jenkins 通过 HTTPS 来 checkout 代码的时候，出现了如下错误：
+Jenkins 通过 **HTTPS** 来 checkout 代码的时候，出现了如下错误：
 
 ```bash
 [2021-06-20T14:50:25.166Z] ERROR: Error cloning remote repo 'origin'
@@ -46,14 +46,14 @@ Jenkins 通过 HTTPS 来 checkout 代码的时候，出现了如下错误：
 [2021-06-20T15:21:20.525Z] Cloning repository https://git.company.com/scm/vas/db.git
 ```
 
-直接在虚拟机上通过命令 `git clone https://git.company.com/scm/vas/db.git` ，可以成功下载，没有出现任何问题。
+但是直接在虚拟机上通过命令 `git clone https://git.company.com/scm/vas/db.git` ，可以成功下载，没有出现任何问题。
 
-* 如果将 `LIBPATH` 设置为 `LIBPATH=/usr/lib` 就能重新上面的错误，这说明通过 Jenkins 下载代码的时候它是去 `/usr/lib/` 下面找 `libldap.a`
+* 如果将 `LIBPATH` 设置为 `LIBPATH=/usr/lib` 就能重现上面的错误，这说明通过 Jenkins 下载代码的时候它是去 `/usr/lib/` 下面找 `libldap.a`
 * 如果将变量 `LIBPATH` 设置为空 `export LIBPATH=` 或 `unset LIBPATH`，执行 `git clone https://...` 就正常了。
 
-> 尝试在 Jenkins 启动 agent 的时候修改 `LIBPATH` 变量设置为空，但均都没设置成功。
+> 尝试在 Jenkins 启动 agent 的时候修改 `LIBPATH` 变量设置为空，但都不能解决这个问题，不明白为什么不行！？
 
-那看看 `/usr/lib/libldap.a` 是什么问题了。
+那就看看 `/usr/lib/libldap.a` 是什么问题了。
 
 ```bash
 # ldd 的时候发现这个静态库有问题
@@ -85,7 +85,8 @@ lrwxrwxrwx    1 root     system           13 May 27 2020  /opt/freeware/lib/libl
 ## 问题1：解决办法
 
 ```bash
-# 尝试替换。先将 libldap.a 重名为 libldap.a.old（不要删除以防需要恢复）
+# 尝试替换
+# 先将 libldap.a 重名为 libldap.a.old（不删除以防需要恢复）
 $ sudo mv /usr/lib/libldap.a /usr/lib/libldap.a.old
 # 重新链接
 $ sudo ln -s /opt/freeware/lib/libldap.a /usr/lib/libldap.a
@@ -93,7 +94,7 @@ $ ls -l /usr/lib/libldap.a
 lrwxrwxrwx    1 root     system           27 Oct 31 23:27 /usr/lib/libldap.a -> /opt/freeware/lib/libldap.a
 ```
 
-重新链接完成后，重新连接 AIX agent，再次执行 clone 代码，成功！
+重新链接完成后，重新连接 AIX agent，再次执行 Jenkins job 来 clone 代码，成功了！
 
 ## 问题2：通过 SSH 进行 git clone 出现 Authentication failed
 
