@@ -1,5 +1,5 @@
 ---
-title: 为什么我的 Jenkins 越来越慢？你可能犯了这些错误
+title: 为什么我的 Jenkins Controller 越来越慢？可能犯了这些错误...
 tags:
   - Jenkins
   - pipeline
@@ -9,21 +9,21 @@ author: shenxianpeng
 date: 2023-02-06 21:52:12
 ---
 
-就像标题所说的，为什么你的 Jenkins server 越来越慢，这可能是你没有遵循 Jenkins pipeline 编写的一些最佳实践。
+就像标题所说的，为什么我的 Jenkins Controller 越来越慢，可能是因为没有遵循 Jenkins pipeline 编写的一些最佳实践。
 
-所以主要介绍 Jenkins pipeline 的一些最佳实践，目的是为了向 pipeline 作者和维护者展示这些他们过去可能并没有意识到的反模式。
+所以主要介绍 Jenkins pipeline 的一些最佳实践，目的是为了向 pipeline 作者和维护者展示一些他们过去可能并没有意识到的“反模式”。
 
-我会尽量列出所有可能的 Pipeline 最佳实践，并提供一些有助于追踪常见实践的具体示例。
+我会尽量列出所有可能的 Pipeline 最佳实践，并提供一些实践中常见的具体示例。
 
 ## 一般问题
 
-### 确保在 pipeline 中使用 Groovy 代码作为胶水
+### 确保在 pipeline 中使用 Groovy 代码作为粘帖剂
 
 使用 Groovy 代码连接一组操作而不是作为 pipeline 的主要功能。
 
 换句话说，与其依赖 pipeline 功能（Groovy 或 pipeline 步骤）来推动构建过程向前发展，不如使用单个步骤（例如 `sh`）来完成构建的多个部分。
 
- pipeline 随着其复杂性的增加（Groovy 代码量、使用的步骤数等），需要 controller 上的更多资源（CPU、内存、存储）。将 Pipeline 视为完成构建的工具，而不是构建的核心。
+pipeline 随着其复杂性的增加（Groovy 代码量、使用的步骤数等），需要 controller 上的更多资源（CPU、内存、存储）。将 Pipeline 视为完成构建的工具，而不是构建的核心。
 
 示例：使用单个 Maven 构建步骤通过其构建/测试/部署过程来驱动构建。
 
