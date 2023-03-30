@@ -18,7 +18,7 @@ The remote session was disconnected because there are no Remote Desktop client a
 Please contact the server administrator.
 ```
 
-![RDP connect problem](rdp-problem/RDP-failed.png)
+![RDP connect problem](rdp-problem/rdp-failed.png)
 
 <!-- more -->
 

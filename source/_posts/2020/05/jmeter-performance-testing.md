@@ -118,4 +118,4 @@ Example: Test results of each scenario shown in the following table
 
 Test results analysis chart
 
-![Response Chart](jmeter-performance-testing/response-chart.png) ![PerMon Metrics](jmeter-performance-testing/PerMon-Metrics.png)
+![Response Chart](jmeter-performance-testing/response-chart.png) ![PerMon Metrics](jmeter-performance-testing/permon-metrics.png)
