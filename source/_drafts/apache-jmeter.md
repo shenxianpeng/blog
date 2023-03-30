@@ -85,4 +85,4 @@ JMeter 的功能包括：
 1. 运行 Jmeter。去到 `JMETER_HOME/bin` 目录下，在 Windows 执行 `jmeterw.bat` 这个 batch 文件，在 Linux/Unix 上执行 `jmeter.sh` 这个 shell 文件。
 2. 选择菜单栏选择 `Templates…`
 
-  ![](apache-jmeter/Select-Templates-Icon.png)
+  ![](apache-jmeter/select-templates-icon.png)

@@ -48,7 +48,7 @@ Posts are saved by folder, with the hierarchy of year/month.
 
 Creating an post with following steps:
 
-1. Running command `hexo new "post"` can generate `post.md` under `source/_drafts`
+1. Running command `hexo new "post"`(the post name MUST lowercase) can generate `post.md` under `source/_drafts`
 2. Then update `post.md`, and fields such as `tags`, `categories` or `author`
 3. Once it's ready to post, move `post.md` to `source/_post/2022/01/` and run `hexo s` to see how it looks like
 
