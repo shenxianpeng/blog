@@ -18,7 +18,7 @@ author: shenxianpeng
 
 ## 前言
 
-最近计划将之前使用的 Artifactory OSS（开源版）迁移到 Aritifactory Enterprise（企业版）上。为什么要做迁移？这里有一个 Artifactory 对比的矩阵图 https://www.jfrog.com/confluence/display/JFROG/Artifactory+Comparison+Matrix
+最近计划将之前使用的 Artifactory OSS（开源版）迁移到 Artifactory Enterprise（企业版）上。为什么要做迁移？这里有一个 Artifactory 对比的矩阵图 https://www.jfrog.com/confluence/display/JFROG/Artifactory+Comparison+Matrix
 
 简单来说，开源版缺少与 CI 工具集成时常用的 REST API 功能，比如以下常用功能
 
@@ -138,7 +138,7 @@ set SSL_CERT_FILE=/var/ssl/cacert.pem
 
 设置好环境变量之后，通过 `curl` 调用，再不需要使用 `--cacert` 参数了。这下看起来有戏了，带着喜悦的心情把这个环境变量加到 agent 机器上，设置如下：
 
-![](Java-net-SocketException-on-AIX/configure-agent-environment-variable.png)
+![](java-net-socketexception-on-aix/configure-agent-environment-variable.png)
 
 或者可以修改 agent 机器上的 `/etc/environment` 文件。
 
