@@ -1,5 +1,5 @@
 ---
-title: Jenkins agent service can not start automatically on Windows even the Startup type is Automatic
+title: Jenkins agent service can not start automatically on Windows
 tags:
   - Pipeline
   - Troubleshooting
@@ -16,7 +16,7 @@ start automatically even I have set the startup type to Automatic.
 
 ![](jenkins-troubleshooting/service-general.png)
 
-## Solution
+## Solution 1
 
 After some research, select "Allow service to interact with desktop" with service properties on Log On tab can fix this problem.
 
@@ -24,11 +24,13 @@ In service properties -> Log On -> Select "Local System account" and select the 
 
 ![](jenkins-troubleshooting/service-log-on.png)
 
-If above solution still does not work, you can write a restart jenkins agent service batch script.
+## Solution 2
 
-Here is a example for reference: [Setup autostart Jenkins agent service after Windows reboot](https://github.com/shenxianpeng/win-jenkins-agent#setup-autostart-jenkins-agent-service-after-windows-reboot)
+If above solution still does not work, you can write a restart jenkins agent service batch script and put it to Startup folder.
 
-## Semi-automatic setup of Jenkins Agent on Windows
+Here is a example: [Setup autostart Jenkins agent service after Windows reboot](https://github.com/shenxianpeng/win-jenkins-agent#setup-autostart-jenkins-agent-service-after-windows-reboot)
+
+## Semi-automatic setup Jenkins Agent on Windows
 
 The above mentioned project [win-jenkins-agent](https://github.com/shenxianpeng/win-jenkins-agent) not only supports auto start Jenkins agent server after Windows reboot, but also supports semi-automatic setup Jenkins agent on Windows.
 
