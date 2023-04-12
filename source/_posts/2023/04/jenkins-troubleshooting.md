@@ -21,13 +21,16 @@ start automatically even I have set the startup type to Automatic.
 After some research, select "Allow service to interact with desktop" with service properties on Log On tab can fix this problem.
 
 In service properties -> Log On -> Select "Local System account" and select the checkbox for "Allow service to interact with desktop"
+
 ![](jenkins-troubleshooting/service-log-on.png)
 
-Reference is [HERE](https://stackoverflow.com/questions/41210060/even-after-installing-jenkins-as-a-windows-service-i-have-to-start-it-through-c).
+If above solution still does not work, you can write a restart jenkins agent service batch script.
+
+Here is a example for reference: [Setup autostart Jenkins agent service after Windows reboot](https://github.com/shenxianpeng/win-jenkins-agent#setup-autostart-jenkins-agent-service-after-windows-reboot)
 
 ## Semi-automatic setup of Jenkins Agent on Windows
 
-By the way, if you want to set a jenkins agent as service on Windows more easier, you can use this [project](https://github.com/shenxianpeng/win-jenkins-agent) to semi-automatic setup.
+The above mentioned project [win-jenkins-agent](https://github.com/shenxianpeng/win-jenkins-agent) not only supports auto start Jenkins agent server after Windows reboot, but also supports semi-automatic setup Jenkins agent on Windows.
 
 ---
 
