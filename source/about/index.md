@@ -14,9 +14,9 @@ author: shenxianpeng
 
 其他社交平台账号 👇
 
-* 🚩 [知乎](https://www.zhihu.com/people/shenxianpeng)
-* 🤙🏻 [领英](https://www.linkedin.com/in/xianpeng-shen/)
 * 👨‍💻 [Github](https://github.com/shenxianpeng)
+* 🚩 [知乎](https://www.zhihu.com/people/shenxianpeng)
+<!-- * 🤙🏻 [领英](https://www.linkedin.com/in/xianpeng-shen/) -->
 
 如果你喜欢其中的文章，欢迎给我留言，这是对我的最大鼓励。
 
@@ -37,9 +37,9 @@ If you like any of the articles, feel free to leave me a comment, it's the bigge
 Follow me on:
 
 * 👨‍💻 [Github](https://github.com/shenxianpeng)
-* 🤙🏻 [Linkedin](https://www.linkedin.com/in/xianpeng-shen/)
-* 🚩 [RSS Feed](https://shenxianpeng.github.io/atom.xml)
 * 📧 [Email](mailto:xianpeng.shen@gmail.com)
+<!-- * 🤙🏻 [Linkedin](https://www.linkedin.com/in/xianpeng-shen/) -->
+* 🚩 [RSS Feed](https://shenxianpeng.github.io/atom.xml)
 
 <!-- <a href="mailto:xianpeng.shen@gmail.com"><img title="Gmail" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/gmail.svg"></a>
 <a href="https://github.com/shenxianpeng"><img title="GitHub" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/github.svg"></a>
