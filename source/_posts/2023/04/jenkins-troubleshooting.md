@@ -9,7 +9,7 @@ author: shenxianpeng
 date: 2023-04-11 03:49:13
 ---
 
-## Issue
+## What's the issue
 
 My Windows build machine is regular reboot after Windows updates, but my Jenkins agent service on this Windows can not
 start automatically even I have set the startup type to Automatic.
@@ -20,11 +20,13 @@ start automatically even I have set the startup type to Automatic.
 
 After some research, select "Allow service to interact with desktop" with service properties on Log On tab can fix this problem.
 
-In service properties -> Log On -> Select "Local System account" and select the checkbox for "Allow service to interact with desktop"
+In service properties -> Log On -> Select "Local System account" and select the checkbox for "Allow service to interact with desktop". 
 
 ![](jenkins-troubleshooting/service-log-on.png)
 
 ## Solution 2
+
+<!-- more -->
 
 If above solution still does not work, you can write a restart jenkins agent service batch script and put it to Startup folder.
 
