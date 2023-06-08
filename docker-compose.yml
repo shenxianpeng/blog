@@ -1,7 +1,15 @@
-version: "2"
+version: "3"
 services:
   web:
-    build: .
+    image: node:12
+    command: >
+      sh -c "
+        cd /blog && 
+        npm install && 
+        npm install -g hexo-cli && 
+        npm install hexo-deployer-git --save
+        hexo server
+      "
     ports:
       - '4000:4000'
       - '4001:4001'
