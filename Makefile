@@ -31,6 +31,12 @@ test-server: generate # Start the server with new port 4001
 test: # Test hexo server with port 4001
 	@curl -Is http://localhost:4001/ | head -n 1
 
+image: # Create blog docker image
+	@docker build -t xianpengshen/blog .
+
+release-image: image # Publish docker image to Docker Hub.
+	@docker push xianpengshen/blog:latest
+
 package: # Copy files for packaing
 	@echo "== copy new README.md"
 	@cp source/README.md public/
