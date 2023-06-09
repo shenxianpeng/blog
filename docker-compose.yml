@@ -1,17 +1,12 @@
 version: "3"
 services:
   web:
-    image: node:12
-    command: >
-      sh -c "
-        cd /blog && 
-        npm install && 
-        npm install -g hexo-cli && 
-        npm install hexo-deployer-git --save
-        hexo server
-      "
+    image: xianpengshen/blog
+    container_name: blog
     ports:
       - '4000:4000'
-      - '4001:4001'
     volumes:
       - .:/blog
+    entrypoint: 
+      - make
+      - server
