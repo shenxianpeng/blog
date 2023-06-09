@@ -35,7 +35,6 @@ image: # Create blog docker image
 	@docker build -t xianpengshen/blog .
 
 release-image: image # Publish docker image to Docker Hub.
-	@docker login -u xianpengshen
 	@docker push xianpengshen/blog:latest
 
 package: # Copy files for packaing

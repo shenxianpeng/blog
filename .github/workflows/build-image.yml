@@ -1,0 +1,23 @@
+name: Build Docker Image
+
+on:
+  push: 
+    paths: package.json
+  pull_request:
+    paths: package.json
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build Image
+      run: make image
+
+    - name: Release Image
+      run: |
+        echo ${{ secrets.DOCKER_PASSWORD }} | docker login --username xianpengshen --password-stdin
+        make release-image
+
