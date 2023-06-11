@@ -1,5 +1,5 @@
 ---
-title: 一篇文章搞清楚什么是 SBOM（Software Bill of Materials）以及它与 SLSA 等概念的区别
+title: 一篇文章搞清楚什么是 SBOM（软件材料清单）以及它与 SLSA 等概念的区别
 tags:
  - SBOM 
 categories:
@@ -10,7 +10,7 @@ author: shenxianpeng
 
 ## 什么是 SBOM 
 
-SBOM 是软件构建物料清单（Software Bill of Materials）的缩写。它是一份详细记录软件构建过程中使用的所有组件、库和依赖项的清单。
+SBOM 是软件材料清单（Software Bill of Materials）的缩写。它是一份详细记录软件构建过程中使用的所有组件、库和依赖项的清单。
 
 SBOM 类似于产品的配方清单，它列出了构成软件应用程序的各种元素，包括开源软件组件、第三方库、框架、工具等。每个元素在SBOM中都会有详细的信息，如名称、版本号、许可证信息、依赖关系等。
 
@@ -22,7 +22,7 @@ SBOM 还可以用于软件审计、合规性要求和法规遵从性等方面。
 
 ## SBOM 和 SLSA 之间有什么关系，两者的区别是什么
 
-SBOM（软件构建物料清单）和 SLSA（Supply Chain Levels for Software Artifacts）是两个不同但相关的概念。
+SBOM（软件材料清单）和 SLSA（Supply Chain Levels for Software Artifacts）是两个不同但相关的概念。
 
 SBOM 是一份详细记录软件构建过程中使用的所有组件、库和依赖项的清单。它提供了对软件供应链的可见性，包括组件的版本、许可证信息、漏洞等。SBOM 旨在帮助组织更好地管理和控制软件供应链，识别和处理潜在的漏洞、合规性问题和安全风险。
 
@@ -52,9 +52,9 @@ Synopsys Black Duck：
 
 综上所述，SBOM 是一种文档或清单，记录软件构建中使用的组件和依赖项，提供对软件供应链的可见性和管理。而 Synopsys Black Duck 是一种供应链风险管理工具，通过扫描和分析软件项目中的开源组件和第三方库，提供许可证合规性、安全漏洞和风险分析等功能。Black Duck 可以用于生成 SBOM，并提供更全面的风险和合规性分析。因此，Black Duck 是一个具体的工具，而 SBOM 是一种记录和管理软件供应链信息的概念。
 
-## SBOM 的最佳实践，以及有哪些工具推荐使用
+## SBOM 的最佳实践，以及有哪些工具可以生成 SBOM
 
-以下是 SBOM 的最佳实践和一些推荐使用的工具：
+以下是 SBOM 的最佳实践和一些可以生成 SBOM 的工具：
 
 SBOM 的最佳实践：
 
@@ -75,3 +75,15 @@ SBOM 的最佳实践：
 5. JFrog Xray：JFrog Xray 是一种软件供应链分析工具，可以扫描和分析构建物料清单，提供漏洞警报、许可证合规性和安全性分析。
 
 这些工具提供了 SBOM 生成、管理和分析的功能，可以根据具体需求选择适合的工具来实施SBOM的最佳实践。
+
+## 总结
+
+对于企业，通过 SBOM 无论是自主开发的代码还是组织外部引入的软件组件，企业将拥有统一的数据来识别风险，从而主动识别软件许可证和安全风险，确保不会破坏企业软件或危及企业在软件供应链中的角色。
+
+
+> Read more
+
+https://www.csoonline.com/article/3658916/7-top-software-supply-chain-security-tools.html
+https://www.chainguard.dev/unchained/auto-sboms-with-ko
+https://github.com/microsoft/sbom-tool
+https://github.com/awesomeSBOM/awesome-sbom
