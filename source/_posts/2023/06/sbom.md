@@ -1,5 +1,5 @@
 ---
-title: 一篇文章说清楚什么是 SBOM（软件材料清单）
+title: 深入了解 SBOM：定义、关系、区别、最佳实践和生成工具
 tags:
  - SBOM 
 categories:
