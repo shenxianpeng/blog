@@ -4,6 +4,7 @@ public/
 db.json
 package-lock.json
 .vscode
+venv
 
 # dagger
 cue.mod
