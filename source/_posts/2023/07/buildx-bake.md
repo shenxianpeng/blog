@@ -142,6 +142,10 @@ $ docker buildx bake -f docker-bake.dev.hcl --print db
 
 上述示例中的 demo 放在这里了：https://github.com/shenxianpeng/docker-buildx-bake-demo
 
+### 5. Buildx Bake 高级用法
+
+更多的高级用法，比如 `variable`, `function `, `matrix` 等，请请见官方 [Buildx Bake reference](https://docs.docker.com/build/bake/reference/) 文档。
+
 ## 结论
 
 Docker Buildx Bake 是一个功能强大的构建工具，它提供了一种简化和加速构建过程的方法。通过使用 Bake 你可以高效地构建和测试多个镜像，并且可以跨多个平台和架构进行构建。所以说 Bake 是开发人员和构建工程师的重要利器，掌握 Docker Buildx Bake 的使用方法将帮助你更好地应对多镜像构建的带来的挑战、加快应用程序的交付速度。
