@@ -20,7 +20,7 @@ If you find any mistakes or questions, please feel free to ask via [issues](http
 ```bash
 git clone https://github.com/shenxianpeng/blog.git
 cd blog
-docker-compose up
+docker-compose up -d
 ```
 
 ## Start web on host
