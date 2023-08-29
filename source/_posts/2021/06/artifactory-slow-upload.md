@@ -2,8 +2,9 @@
 title: 关于 Artifactory 上传制品变得非常缓慢，偶尔失败的问题分享
 tags:
   - Artifactory
+  - Troubleshooting
 categories:
-  - Artifactory
+  - JFrog
 date: 2021-06-16 23:44:59
 author: shenxianpeng
 ---
