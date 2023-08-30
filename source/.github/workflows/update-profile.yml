@@ -23,7 +23,7 @@ jobs:
                 sleep $i
             fi
         done
-        sleep 10
+        sleep 60
     - name: Trigger workflow
       uses: convictional/trigger-workflow-and-wait@v1.6.5
       with:
