@@ -47,11 +47,11 @@ author: shenxianpeng
 
 ### 开始执行，提供输入新的 hostname
 
-![](vm-status-check-via-jenkins/pipeline-start.png)
+![Bulid with parameters](vm-status-check-via-jenkins/pipeline-start.png)
 
 ### 执行完成，将执行结果归档以便查看
 
-![](vm-status-check-via-jenkins/pipeline-result.png)
+![VM 检查结果](vm-status-check-via-jenkins/pipeline-result.png)
 
 ### 打开归档结果如下
 

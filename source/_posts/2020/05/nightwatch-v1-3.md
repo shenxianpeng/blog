@@ -11,7 +11,7 @@ author: shenxianpeng
 
 Nightwatch js 是我之前写自动化测试用例使用了很长一段时间的测试框架，我当时的使用 v0.9 版本并且对使用和 API 进行了翻译。作为一名前测试工程师，对于自动化的知识不能不更新下自己的知识库，一转眼 Nightwatch 1.3 版本已经发布了，可以看到它在 GitHub 上的使用和关注度还是很高的。
 
-![](nightwatch-v1-3/nightwatch-star.png)
+![Nightwatch star 数量](nightwatch-v1-3/nightwatch-star.png)
 
 Nightwarch.js 是一个端到端的基于 Node.js 使用 W3C Webdriver （以前是 Selenium ）的自动化测试框架。它是一个完整的集成解决方案，用于 web 应用程序和网站的端到端测试，以及 Node.js 单元测试和集成测试。
 

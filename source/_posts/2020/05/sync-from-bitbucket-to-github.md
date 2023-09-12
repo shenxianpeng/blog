@@ -21,7 +21,7 @@ author: shenxianpeng
 
 因此我们需要在 GitHub 上创建相应的仓库，然后将内部 Bitbucket 仓库中对应的 master 分支定期的通过 CI job 同步到 BitHub 上去。
 
-![](sync-from-bitbucket-to-github/sync-diagrom.png)
+![同步](sync-from-bitbucket-to-github/sync-diagrom.png)
 
 ## 分支策略
 
