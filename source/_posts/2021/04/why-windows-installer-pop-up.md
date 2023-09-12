@@ -12,7 +12,7 @@ author: shenxianpeng
 
 Today I am having a problem where the Windows installer I created is not installing, and the following Windows installer box pops up.
 
-![](why-windows-installer-pop-up/windows-installer.png)
+![Windows Installer](why-windows-installer-pop-up/windows-installer.png)
 
 But it works well in the previous build, and I didn't make any code changes. It is strange, actually fix this problem is very easy but not easy to find.
 

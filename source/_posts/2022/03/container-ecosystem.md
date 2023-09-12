@@ -55,7 +55,7 @@ Docker 启动了整个容器的革命，它创造了一个很好用的工具来�
 
 Docker 可以轻松地构建容器镜像，从 Docker Hub 中拉取镜像，创建、启动和管理容器。实际上，当你用 Docker 运行一个容器时实际上是通过 Docker 守护程序、containerd 和 runc 来运行它。
 
-![](container-ecosystem/docker.png)
+![Docker](container-ecosystem/docker.png)
 
 为了实现这一切，Docker 是由这些项目组成（还有其他项目，但这些是主要的）。
 
@@ -81,7 +81,7 @@ CRI（容器运行时接口）是 Kubernetes 用来控制创建和管理容器�
 
 Kubernetes 项目不必手动添加对每个运行时的支持，CRI API 描述了 Kubernetes 如何与每个运行时进行交互，由运行时决定如何实际管理容器，因此只要它遵守 CRI 的 API 即可。
 
-![](container-ecosystem/cri.png)
+![CRI](container-ecosystem/cri.png)
 
 你可以使用你喜欢的 containerd 来运行你的容器，也可以使用 CRI-O 来运行你的容器，因为这两个运行时都实现了 CRI 规范。
 

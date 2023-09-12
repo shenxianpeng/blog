@@ -138,7 +138,7 @@ set SSL_CERT_FILE=/var/ssl/cacert.pem
 
 设置好环境变量之后，通过 `curl` 调用，再不需要使用 `--cacert` 参数了。这下看起来有戏了，带着喜悦的心情把这个环境变量加到 agent 机器上，设置如下：
 
-![](java-net-socketexception-on-aix/configure-agent-environment-variable.png)
+![Jenkins agent 环境变量设置](java-net-socketexception-on-aix/configure-agent-environment-variable.png)
 
 或者可以修改 agent 机器上的 `/etc/environment` 文件。
 

@@ -81,7 +81,7 @@ More about this API see: [Pattern Search](https://www.jfrog.com/confluence/displ
 
 Take an example screenshot of pattern search:
 
-![](artifactory-api-search/pattern-search.png)
+![通过模式来搜索](artifactory-api-search/pattern-search.png)
 
 Then you can use Shell, Python language to get the file path from the response, then use `curl -u $USERNAME:$PASSWORD -O $PATH_TO_FILE` command to download the file one by one.
 

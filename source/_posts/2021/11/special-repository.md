@@ -13,7 +13,7 @@ author: shenxianpeng
 
 就像这样在首页显示最近发布的博客文章。
 
-![](special-repository/final.png)
+![最终效果](special-repository/final.png)
 
 要实现这样的工作流需要了解以下这几点：
 
@@ -133,7 +133,7 @@ jobs:
 
 注：`PAT_USERNAME` 和 `PAT_TOKEN` 需要在当前的仓库【设置 -> Secrets】里进行添加，这里就不具体介绍了，需要可以自行搜索。
 
-![](special-repository/secrets.png)
+![设置 PAT](special-repository/secrets.png)
 
 以上就是通过 GitHub Actions 实现当博客有新发布的文章后自动更新 GitHub 首页的所有内容了。
 

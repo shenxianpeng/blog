@@ -72,7 +72,7 @@ vagrant ssh
 
 <!-- more -->
 
-![](vagrant/vagrant_virtualbox.png)
+![Vagrant](vagrant/vagrant_virtualbox.png)
 
 Vagrant 相比传统使用虚拟机的方式要方便得多，我们来看看传统方式是怎样创建一台虚拟机的。
 

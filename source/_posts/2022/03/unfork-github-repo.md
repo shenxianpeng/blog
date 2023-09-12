@@ -32,11 +32,11 @@ date: 2022-03-09 11:16:05
 
 1. 打开这个链接：https://support.github.com/contact?tags=rr-forks
 2. 选择你的账户或是组织，然后在 Subject 中输入 "unfork" 会自动弹出虚拟助手，选择虚拟机助手
-    ![](unfork-github-repo/type-unfork.png)
+    ![视图 1](unfork-github-repo/type-unfork.png)
 3. 然后根据虚拟助手的问题然后选择答案（如下是部分截图）
-     ![](unfork-github-repo/virtual-assistant-1.png)
+    ![视图 2](unfork-github-repo/virtual-assistant-1.png)
 4. 最后这些对话会自动转换成文字脚本，然后 Send request，等着 Support 处理就可以了（不会太久）
-    ![](unfork-github-repo/virtual-assistant-2.png)
+    ![视图 3](unfork-github-repo/virtual-assistant-2.png)
 
 这里要注意一下，如果你的仓库被其他人 Fork 了，你想跟父仓库分离之后继续保留你的子仓库的 Fork 记录，你应该选择 "Bring the child forks with the repository"。
 

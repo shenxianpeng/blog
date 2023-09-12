@@ -92,7 +92,7 @@ Jenkinsfile successfully validated.
 
 打开 File -> Preferences -> Settings -> Extensions， 找到 `Jenkins Pipeline Linter Connector`，参考如下配置。
 
-![](jenkins-pipeline-linter-connector/settings.png)
+![Jenkins pipeline linter 设置](jenkins-pipeline-linter-connector/settings.png)
 
 ### 运行插件
 

@@ -35,7 +35,7 @@ JFrog Artifactory 企业版完全支持所有主要包格式的存储库管理�
 
 它支持所有主流 CI 工具（如下图所示），并在部署期间能捕获详尽的构建环境信息，以实现可完全复制的构建
 
-![](what-is-artifactory/ci-tools.png)
+![支持的 CI 工具](what-is-artifactory/ci-tools.png)
 
 另外通过提供的丰富的 REST API，因此 GUI 页面上的任何操作都可以通过代码以编程方式完成，方便实现 CI/CD。
 
@@ -49,13 +49,13 @@ Artifactory 提供了强大的搜索功能，可以通过带有正则表达的�
 
 你想找某一个提交点的构建制品，比如那个提交点的 commit hash 是 `a422912`，那么你就可以直接输入 `*a422912*` 回车，就能快速的从众多的制品中找到，例如 Demo_Linux_bin_a422912.zip
 
-![](what-is-artifactory/search-by-name.png)
+![通过名字来搜索](what-is-artifactory/search-by-name.png)
 
 #### 例2：通过属性搜索
 
 比如要找属性 `release.status` 为 `released` 的所有构建那么就可以这样搜索。
 
-![](what-is-artifactory/search-by-property.png)
+![通过属性来搜索](what-is-artifactory/search-by-property.png)
 
 #### 例3：通过 checksum 搜索
 
@@ -66,7 +66,7 @@ $ sha1sum test.zip
 ad62c72fb097fc4aa7723e1fc72b08a6ebcacfd1 *test.zip
 ```
 
-![](what-is-artifactory/search-by-checksum.png)
+![通过 Checksum 来搜索](what-is-artifactory/search-by-checksum.png)
 
 ### 优势4：管理制品的生命周期
 

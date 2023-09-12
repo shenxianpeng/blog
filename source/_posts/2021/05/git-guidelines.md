@@ -29,7 +29,7 @@ $ git config --global user.email "xianpeng.shen@gmail.com"
 
 当你不设置头像的时候，只有把鼠标放到头像上才知道 Pull Request 的 Reviewers 是谁（来自于Bitubkcet）。
 
-![](git-guidelines/avatar.png)
+![Bitbucket头像](git-guidelines/avatar.png)
 
 ## 2. 设置 core.autocrlf=false
 
