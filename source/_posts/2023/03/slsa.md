@@ -36,7 +36,7 @@ SLSA 是一个端到端框架，一个标准和控制的清单确保软件构建
 
 ### 供应链攻击包括哪些
 
-![threats](slsa/supply-chain-threats.png)
+![Supply Chain Threats](slsa/supply-chain-threats.png)
 
 A 提交未经认证的修改
 B 泄露源码仓库
