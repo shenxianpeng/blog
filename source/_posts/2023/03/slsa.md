@@ -3,7 +3,7 @@ title: SLSA 框架与软件供应链安全防护
 tags:
   - SLSA
 categories:
-  - DevOps
+  - DevSecOps
 author: shenxianpeng
 date: 2023-03-23 15:09:39
 ---
