@@ -2,8 +2,9 @@
 title: Python 和 SLSA 💃
 tags:
   - SLSA
+  - Python
 categories:
-  - DevOps
+  - DevSecOps
 author: shenxianpeng
 date: 2023-11-15 14:25:39
 ---
