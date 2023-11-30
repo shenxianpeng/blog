@@ -24,13 +24,17 @@ date: 2023-11-15 14:25:39
 5. [二进制Python包](#二进制Python包)
 6. [文中用到的项目](#文中用到的项目)
 
-注意：本文主要介绍**托管在 GitHub 上的 Python 项目**。SLSA 框架可通过 GitHub Actions 来实现开箱即用，只需最少的配置即可完成。
+注意：本文介绍的是针对**托管在 GitHub 上的 Python 项目**。SLSA 框架可通过 GitHub Actions 来实现开箱即用，只需最少的配置即可完成。
+
+对于托管在非 GitHub 上的项目（例如 Bitbucket）可以尝试 [Witness](https://witness.dev/)，下一篇我将更新关于如何使用 Witness。
 
 如果你对 Python 打包的术语或流程感到好奇，[Python 打包用户指南](https://packaging.python.org/en/latest/overview/#packaging-python-libraries-and-tools) 是了解更多信息的最佳场所。
 
 下面是维护人员和用户的端到端工作流程，从构建 distributions、生成出处证明、验证出处、发布到 PyPI，以及在验证其出处后安装 wheel。让我们一起完成每一步！
 
 ![端到端流程](python-and-slsa/workflows.svg)
+
+<!-- more -->
 
 ## 构建纯净的Python包
 
