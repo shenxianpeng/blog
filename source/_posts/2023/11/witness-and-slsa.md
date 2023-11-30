@@ -6,7 +6,7 @@ tags:
 categories:
   - DevSecOps
 author: shenxianpeng
-date: 2023-11-15 14:25:39
+date: 2023-11-30 14:25:39
 ---
 
 Witness 是一个可插拔的软件供应链风险管理框架，它能自动、规范和验证软件工件出处。
