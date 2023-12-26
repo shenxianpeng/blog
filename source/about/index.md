@@ -16,7 +16,7 @@ author: shenxianpeng
 
 * 👨‍💻 [Github](https://github.com/shenxianpeng)
 * 🚩 [知乎](https://www.zhihu.com/people/shenxianpeng)
-* 🤙🏻 [简历](hhttps://shenxianpeng.github.io/resume-cn/)
+* 🤙🏻 [简历](https://shenxianpeng.github.io/resume-cn/)
 <!-- * 🤙🏻 [领英](https://www.linkedin.com/in/xianpeng-shen/) -->
 
 如果你喜欢其中的文章，欢迎给我留言。
@@ -38,7 +38,7 @@ Follow me on:
 
 * 👨‍💻 [Github](https://github.com/shenxianpeng)
 * 📧 [Email](mailto:xianpeng.shen@gmail.com)
-* 🤙🏻 [CV](hhttps://shenxianpeng.github.io/resume/)
+* 🤙🏻 [CV](https://shenxianpeng.github.io/resume)
 * 🚩 [RSS Feed](https://shenxianpeng.github.io/atom.xml)
 <!-- * 🤙🏻 [Linkedin](https://www.linkedin.com/in/xianpeng-shen/) -->
 
