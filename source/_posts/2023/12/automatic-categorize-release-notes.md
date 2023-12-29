@@ -15,7 +15,7 @@ date: 2023-12-27 18:25:39
 
 ![Example 1](automatic-categorize-release-notes/example-1.png)
 
-这个截图里的 Release Notes 内容很少，看起来还很清晰。但如果内容很多，以 Jenkinsci 组织下的 [configuration-as-code-plugin](https://github.com/jenkinsci/configuration-as-code-plugin) 项目为例，可以看出来这里的 Release Notes 中的内容是按照标题进行分类的。(不要误以为这是手动进行分类的😅)
+这个截图里的 Release Notes 内容很少，看起来还很清晰。但如果内容很多，以 Jenkinsci 组织下的 [configuration-as-code-plugin](https://github.com/jenkinsci/configuration-as-code-plugin) 项目为例，可以看出来这里的 Release Notes 中的内容是按照标题进行分类的，假如这些内容混在一起将会非常糟糕的体验。(不要误以为这是手动进行分类的，程序员才不愿意干这种事😅)
 
 ![Example 2](automatic-categorize-release-notes/example-2.png)
 
