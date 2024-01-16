@@ -1,10 +1,11 @@
 ---
-title: 从测试到开发的五个月
+title: 从测试转开发
 date: 2018-12-26 22:57:20
 tags:
-- Work
+  - Thought
+  - Summary
 categories:
-- Others
+  - Others
 author: shenxianpeng
 ---
 
