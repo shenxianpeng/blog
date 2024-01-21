@@ -11,8 +11,6 @@ date: 2024-01-21 11:27:18
 
 本篇介绍的是大名鼎鼎的开源软件基金会 Apache 所使用的服务(Services)和工具(Tools)，这或许能帮助你打开视野，在选择工具的时候提供参考。如果你是一名 DevOps、SRE 或是 Infra 工程师，通过本篇文章内容结果帮助你更好的展示团队所提供的服务有哪些，以及窥探到 Apache Infra 是怎样组织和管理他们的。
 
-> 为了文章的可读性，本文做了部分删减，原文在[这里](https://infra.apache.org/services.html)。
-
 ## Apache 是谁
 
 如果你不太了解 Apache，下面是关于 Apache 的简要介绍。
@@ -62,6 +60,8 @@ Apache Infra 团队维护着供 PMC（项目管理委员会）、项目提交者
 
 * 所有新建电子邮件列表的申请都应通过[自助服务系统](https://selfserve.apache.org/mailinglist-new.html)进行。
 * 电子邮件服务器 - QMail/QSMTPD
+
+<!-- more -->
 
 ### ASF自助服务平台
 
@@ -234,3 +234,11 @@ Whimsy 有许多对项目管理委员会和个人提交者有用的工具，例�
 * 由于历史原因，还有项目还在使用 Bugzilla 和 SVN 等工具。
 
 以上 Apache 所使用的服务和工具，借用理财中风险评估等级划分是属于**稳健型**，而非一味的追求“新”、“开源”和“免费”。
+
+> 为了文章的可读性，本文做了部分修改和删减。原文在[这里](https://infra.apache.org/services.html)。
+
+---
+
+转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「DevOps攻城狮」
+
+
