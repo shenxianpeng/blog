@@ -2,9 +2,19 @@
 title: Daily
 ---
 
-> Starting August 7, 2020, I would like to start recording some daily chores in English.
+> Starting August 7, 2020, I would like to start recording some small daily happiness in English.
 
 ---
+
+## 1/31/2024 - Grateful your recognitions
+
+I want to thank my boss and leader. Thank them for for their recognition and wanting me to move to the next level. ❤️
+
+_It was very nice to talk with you. I have an honor to work alongside such talented people like yourself! Your presentation was awesome! -- from Pavel_
+
+2023 is the busy year. In life, I'm the "daddy"; In work, I 'm stickler for "best practices", and after work, I'm a fan of "open source and writing". 
+
+Onward and Upward.
 
 ## 12/02/2022 - I don't have time
 
@@ -54,7 +64,7 @@ Thank you very much, Brother Ma.
 
 I would record every time I was praised, so that when I failed on something, I will look back to see these praised to gain confidence.
 
-Today, I have a meeting with foreign colleagues, I say more fluent than ever, and my manage mentioned my English improved a lot. this is the senond time he praised my English imporved.
+Today, I have a meeting with foreign colleagues, I say more fluent than ever, and my manage mentioned my English improved a lot. this is the second time he praised my English improved.
 
 Next week, I need to prepare to share related to CI/CD/DevOps best practice I did before with other colleagues, this time just need to use Chinese :)
 
@@ -62,7 +72,7 @@ Next week, I need to prepare to share related to CI/CD/DevOps best practice I di
 
 Hopes our dream could come true this time. Bless us ❤️
 
-## 06/26/2021 - mentee and mentor program
+## 06/26/2021 - Mentor and mentee program
 
 Since this month(June), I begin to have a mentor :) (WIP)
 
@@ -90,15 +100,15 @@ I a little upset when I heard that he told me he would leave Rocket. As we talk 
 
 Since age and experience are no longer our advantages in Dev, the new challenges will help him get more opportunities in DevOps than he did in his job here, so he made a wise choice, and I hope he will have better development in the future.
 
-## 11/1/2020 - Learn/Test English/Update decorate progress
+## 11/1/2020 - English and Decoration
 
 > Sunday, sunny.
 
-### English
+**English**
 
-Today I clean English from App and have a test of the TOEiC, and the test score is 64, and my test results have never been more than 70. I hope I can keep testing every weekend so that to improve my English and hope next time the test will achieve about 70 :)
+Today I clean English from App and have a test of the TOEIC, and the test score is 64, and my test results have never been more than 70. I hope I can keep testing every weekend so that to improve my English and hope next time the test will achieve about 70 :)
 
-### The House Decoration
+**The House Decoration**
 
 From October, my house had finished ceramic tile seam beauty, suspended ceiling, the laying off part of the marble, and now is whitewashing.
 
@@ -108,13 +118,13 @@ So in the next two weeks, the decoration's progress very well, which was well wo
 
 Cheers!
 
-## 8/30/2020 - Demonstrate Project Build & formal start of decoration
+## 8/30/2020 - About work and life
 
 > Sunday, sunny.
 
 I review my daily report so that I could remember what I've been doing for the past two weeks at work. I don't want to talk about my regular work like build, release products, etc. I want to write down what I've learned in the past two weeks.
 
-### About Work
+**About Work**
 
 1. Learn how to show python project doc files online. you could create a GitHub Pages that is a GitHub build-in feature. then will have a website like https://\<github-username\>.github.io/\<repo-name\>.html
 
@@ -127,7 +137,7 @@ I review my daily report so that I could remember what I've been doing for the p
 
 3. Enhancement currently our Artifactory usage, like provide move artifacts from INT(integration) repo to STAGE repo when build passed the smoke test.
 
-### About Life
+**About Life**
 
 1. From the last two weeks, my colleagues and I start swimming in the indoor pool every Friday night. we want to lose weight in these activities, but we always eat after swimming, this is not good for us to lose weight :(
 
