@@ -1,11 +1,12 @@
 ---
 title: C/C++ 代码格式化和静态分析检查的一站式工作流 Cpp Linter
 tags:
-  - Clang-Format
-  - Clang-Tidy
-  - Clang
+  - clang-format
+  - clang-tidy
+  - clang
+  - cpp-linter
 categories:
-  - DevOps
+  - cpp-linter
 author: shenxianpeng
 date: 2022-08-23 17:27:31
 ---
