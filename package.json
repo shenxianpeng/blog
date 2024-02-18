@@ -6,7 +6,9 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "hexo": {
     "version": "6.3.0"
@@ -26,6 +28,8 @@
     "hexo-renderer-marked": "^6.0.0",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
-    "save": "^2.4.0"
-  }
+    "save": "^2.4.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }

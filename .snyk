@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - hexo-asset-image > cheerio > lodash:
+        patched: '2024-02-18T16:18:15.315Z'
+        id: 'npm:lodash:20180130'
+        path: hexo-asset-image > cheerio > lodash
