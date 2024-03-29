@@ -97,6 +97,23 @@ jobs:
       target: stage
 ```
 
+更多关于 Reusable Workflows 的实际项目示例可以参考 [cpp-linter 组织](https://github.com/cpp-linter)下的 [.github](https://github.com/cpp-linter/.github) 仓库。
+
+```bash
+# cpp-linter/.github/.github/workflows
+.
+├── codeql.yml
+├── main.yml
+├── mkdocs.yml
+├── pre-commit.yml
+├── py-coverage.yml
+├── py-publish.yml
+├── release-drafter.yml
+├── snyk-container.yml
+├── sphinx.yml
+└── stale.yml
+```
+
 ### GitHub Reusable Workflows 的 7 点最佳实践：
 
 1. **模块化设计**：将工作流程分解为小的、可重用的模块，每个模块专注于执行特定的任务。这样可以提高工作流程的灵活性和可维护性，并使其更容易被重用和组合。
