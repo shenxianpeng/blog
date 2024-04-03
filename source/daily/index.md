@@ -6,6 +6,12 @@ title: Daily
 
 ---
 
+## 4/3/2024 - I accepted an offer position in Lithuania
+
+After two months back and force, I finally get the offer in Lithuania.
+
+It's a big change for me and my family. I hope it's a better choice without regrets.
+
 ## 1/31/2024 - Grateful your recognitions
 
 I want to thank my boss and leader. Thank them for for their recognition and wanting me to move to the next level. ❤️
