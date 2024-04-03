@@ -4,13 +4,11 @@ author: shenxianpeng
 
 # 关于我
 
-* DevOps/Build/Release 工程师
-* 微信公众号「DevOps攻城狮」作者
-* [cpp-linter](https://github.com/cpp-linter) 和 [commit-check](https://github.com/commit-check) 的创建者和贡献者
+沈显鹏，一名 DevOps/Build/Release 工程师；微信公众号「DevOps攻城狮」作者；开源爱好者，[cpp-linter](https://github.com/cpp-linter) 和 [commit-check](https://github.com/commit-check) 的创建者和贡献者。
 
-👨🏼‍💻欢迎关注我的微信公众号「DevOps攻城狮」
+<!-- 👨🏼‍💻欢迎关注我的微信公众号「DevOps攻城狮」
 
-![ ](index/qrcode.jpg)
+![ ](index/qrcode.jpg) -->
 
 其他社交平台账号 👇
 
@@ -26,20 +24,17 @@ author: shenxianpeng
 
 # About Me
 
-Hi, I'm Peter Shen
+I'm Peter Shen, A DevOps/Build/Release Engineer; Author of the official account DevOps-Engineer; Founder and contributor of [cpp-linter](https://github.com/cpp-linter) and [commit-check](https://github.com/commit-check)
 
-* A DevOps/Build/Release Engineer
-* Author of the official account DevOps-Engineer
-* Founder and contributor of [cpp-linter](https://github.com/cpp-linter) and  [commit-check](https://github.com/commit-check)
-
-If you like any of the articles, feel free to leave me a comment.
-
-Follow me on:
+Follow me on 👇
 
 * 👨‍💻 [Github](https://github.com/shenxianpeng)
 * 📧 [Email](mailto:xianpeng.shen@gmail.com)
 * 🤙🏻 [CV](https://shenxianpeng.github.io/resume)
 * 🚩 [RSS Feed](https://shenxianpeng.github.io/atom.xml)
+
+If you like any of the articles, feel free to leave me a comment.
+
 <!-- * 🤙🏻 [Linkedin](https://www.linkedin.com/in/xianpeng-shen/) -->
 
 <!-- <a href="mailto:xianpeng.shen@gmail.com"><img title="Gmail" height="32" width="32" src="https://raw.githubusercontent.com/shenxianpeng/shenxianpeng/master/assets/gmail.svg"></a>
