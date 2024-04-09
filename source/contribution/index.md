@@ -18,9 +18,12 @@ My biggest contributions in open source was I created [cpp-linter](https://githu
 
 ## Code contributor projects
 
-1. ansible-collections/community.general: ([PR-8176](https://github.com/ansible-collections/community.general/pull/8176))
+1. ansible-collections/community.general: [PR-8176](https://github.com/ansible-collections/community.general/pull/8176)
+2. pypa/pip：[PR-12572](https://github.com/pypa/pip/pull/12572), [PR-12614](https://github.com/pypa/pip/pull/12614), [PR-12615](https://github.com/pypa/pip/pull/12615), [PR-12616](https://github.com/pypa/pip/pull/12616)
+3. pypa/twine: [PR-1080](https://github.com/pypa/twine/pull/1080)
+4. sloria/sphinx-issues: [PR-145](https://github.com/sloria/sphinx-issues/pull/145)
 
-## Documentations contributor projects
+## Documentations contributor projects (merged)
 
 1. tox-dev/tox: [PR-3257](https://github.com/tox-dev/tox/pull/3257)
 2. ansible/ansible-documentation: [PR-766](https://github.com/ansible/ansible-documentation/pull/766)
