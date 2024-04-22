@@ -11,9 +11,11 @@ date: 2024-04-21 20:34:18
 
 今天翻译一篇我在 [Jenkins Contributors](https://contributors.jenkins.io/) 页面上看到的一篇文章。
 
-其作者是 Hervé Le Meur，我早在关注 Jenkins-Infra 的项目的时候就关注到他，他是一个法国人。以下是关于他通过 Jenkins-X 社区最终进入到 Jenkins 基础设施团队成为 SRE 的经历。
+其作者是 Hervé Le Meur，我早在关注 Jenkins-Infra 的项目的时候就关注到他，他是一个法国人。以下是关于他如何通过 Jenkins-X 社区最终进入到 Jenkins 基础设施团队成为 SRE 的经历。
 
-说实话有点羡慕。希望这个分享能给每一个想加入开源、并且在开源组织中找到一份全职工作带来一点启发。
+**说实话有点羡慕。希望这个分享能给每一个想加入开源、并且在开源组织中找到一份全职工作带来一点启发。**
+
+以下是我对[原文](https://contributors.jenkins.io/pages/contributors/herve-le-meur/)的翻译：
 
 ---
 
@@ -77,5 +79,3 @@ Jenkins 花费了大量的时间和精力，以配合开发人员的流程和功
 不要犹豫，大胆尝试；开源意味着对所有人开放。不要害怕提交 pull request，它并不需要完美无缺。
 
 你可能最终会喜欢它，并继续提交贡献！
-
-> 原文：https://contributors.jenkins.io/pages/contributors/herve-le-meur/
