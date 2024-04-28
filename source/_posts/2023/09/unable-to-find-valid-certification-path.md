@@ -39,7 +39,7 @@ author: shenxianpeng
 比如我生成的安全认证文件的名字叫：`artifactory.mycompany.der`（名字可以任意起，只要后缀名不变即可）
 
 ## 通过命令行导入安全认证
- 
+
 登录到那台有问题的 Solaris agent，上传 `artifactory.mycompany.der` 到指定目录下，然后找到 cacerts 的路径，执行如下命令：
 
 ```bash

@@ -96,7 +96,7 @@ jobs:
 
 > 注意：这里有一点令人困惑的是 GitHub job 中的 `id-token` 需要 `write` 权限才能读取 GitHub OIDC 令牌。`read` 不允许你读取 OIDC...🤷。有关 `id-token` 权限的更多信息，请参阅 [GitHub 文档](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect#adding-permissions-settings)。
 
-## 上传到PyPI 
+## 上传到PyPI
 
 我们使用官方 [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) GitHub Action 将 wheel 包上传到 PyPI。
 
@@ -169,7 +169,7 @@ git 标签 (`--source-tag`)
 
 ```bash
 # 这里仅验证 wheel package 的 GitHub 仓库
-slsa-verifier verify-artifact --provenance-path multiple.intoto.jsonl --source-uri github.com/urllib3/urllib3 urllib3-2.1.0-py3-none-any.whl 
+slsa-verifier verify-artifact --provenance-path multiple.intoto.jsonl --source-uri github.com/urllib3/urllib3 urllib3-2.1.0-py3-none-any.whl
 Verified signature against tlog entry index 49513169 at URL: https://rekor.sigstore.dev/api/v1/log/entries/24296fb24b8ad77a08c2f012d69948ed5d12e8e020852bb7936ea9208d684688e5108cca859a3302
 Verified build using builder "https://github.com/slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@refs/tags/v1.9.0" at commit 69be2992f8a25a1f27e49f339e4d5b98dec07462
 Verifying artifact urllib3-2.1.0-py3-none-any.whl: PASSED
@@ -180,7 +180,7 @@ PASSED: Verified SLSA provenance
 **成功了**！🥳 我们已经验证了这个 wheel 的出处，所以现在我们可以放心的安装它，因为我们知道它是按照我们的预期构建的：
 
 ```bash
-python3 -m pip install urllib3-2.1.0-py3-none-any.whl 
+python3 -m pip install urllib3-2.1.0-py3-none-any.whl
 Defaulting to user installation because normal site-packages is not writeable
 Processing ./urllib3-2.1.0-py3-none-any.whl
 Installing collected packages: urllib3
@@ -201,7 +201,7 @@ Successfully installed urllib3-2.1.0
 * [pypa/build](https://github.com/pypa/build)
 * [urllib3/urllib3](https://github.com/urllib3/urllib3/blob/main/.github/workflows/publish.yml)
 
-> 英文原文：https://sethmlarson.dev/python-and-slsa 
+> 英文原文：https://sethmlarson.dev/python-and-slsa
 
 ---
 

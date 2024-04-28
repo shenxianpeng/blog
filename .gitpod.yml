@@ -8,5 +8,5 @@ tasks:
   - init: make deps
 
 vscode:
-  extensions: 
+  extensions:
   - streetsidesoftware.code-spell-checker

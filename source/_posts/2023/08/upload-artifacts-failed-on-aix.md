@@ -1,5 +1,5 @@
 ---
-title: Upload artifacts failed to Artifactory from AIX 
+title: Upload artifacts failed to Artifactory from AIX
 tags:
   - Artifactory
   - Troubleshooting
@@ -9,7 +9,7 @@ author: shenxianpeng
 date: 2023-08-29 06:36:46
 ---
 
-Recently my CI pipeline suddenly does not work on AIX 7.1 with error `Caused by: javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.`. 
+Recently my CI pipeline suddenly does not work on AIX 7.1 with error `Caused by: javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.`.
 
 
 <details>
@@ -18,21 +18,21 @@ Recently my CI pipeline suddenly does not work on AIX 7.1 with error `Caused by:
 ```bash
 22:13:30  Executing command: /bin/sh -c git log --pretty=format:%s -1
 22:13:36  [consumer_0] Deploying artifact: https://artifactory.company.com/artifactory/generic-int-den/myproject/PRs/PR-880/1/myproject_bin_rel_AIX_5797b20.tar.Z
-22:13:36  Error occurred for request GET /artifactory/api/system/version HTTP/1.1: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
-22:13:36  	java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is: 
+22:13:36  Error occurred for request GET /artifactory/api/system/version HTTP/1.1: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is:
+22:13:36  	java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is:
 22:13:36  	java.security.cert.CertPathValidatorException: Certificate chaining error.
-22:13:36  Error occurred for request PUT /artifactory/generic-int-den/myproject/PRs/PR-880/1/cpplinter_bin_rel_AIX_5797b20.tar.Z;build.timestamp=1693273923987;build.name=PR-880;build.number=1 HTTP/1.1: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
-22:13:36  	java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is: 
+22:13:36  Error occurred for request PUT /artifactory/generic-int-den/myproject/PRs/PR-880/1/cpplinter_bin_rel_AIX_5797b20.tar.Z;build.timestamp=1693273923987;build.name=PR-880;build.number=1 HTTP/1.1: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is:
+22:13:36  	java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is:
 22:13:36  	java.security.cert.CertPathValidatorException: Certificate chaining error.
 22:13:36  [consumer_0] An exception occurred during execution:
-22:13:36  java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
-22:13:36  	java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is: 
+22:13:36  java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is:
+22:13:36  	java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is:
 22:13:36  	java.security.cert.CertPathValidatorException: Certificate chaining error
 22:13:36  	at org.jfrog.build.extractor.clientConfiguration.util.spec.SpecDeploymentConsumer.consumerRun(SpecDeploymentConsumer.java:44)
 22:13:36  	at org.jfrog.build.extractor.producerConsumer.ConsumerRunnableBase.run(ConsumerRunnableBase.java:11)
 22:13:36  	at java.lang.Thread.run(Thread.java:785)
-22:13:36  Caused by: javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
-22:13:36  	java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is: 
+22:13:36  Caused by: javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is:
+22:13:36  	java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is:
 22:13:36  	java.security.cert.CertPathValidatorException: Certificate chaining error
 22:13:36  	at com.ibm.jsse2.j.a(j.java:3)
 22:13:36  	at com.ibm.jsse2.as.a(as.java:213)
@@ -67,8 +67,8 @@ Recently my CI pipeline suddenly does not work on AIX 7.1 with error `Caused by:
 22:13:36  	at org.jfrog.build.extractor.clientConfiguration.client.artifactory.ArtifactoryManager.upload(ArtifactoryManager.java:262)
 22:13:36  	at org.jfrog.build.extractor.clientConfiguration.util.spec.SpecDeploymentConsumer.consumerRun(SpecDeploymentConsumer.java:39)
 22:13:36  	... 2 more
-22:13:36  Caused by: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
-22:13:36  	java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is: 
+22:13:36  Caused by: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is:
+22:13:36  	java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is:
 22:13:36  	java.security.cert.CertPathValidatorException: Certificate chaining error
 22:13:36  	at com.ibm.jsse2.util.f.a(f.java:107)
 22:13:36  	at com.ibm.jsse2.util.f.b(f.java:143)
@@ -78,14 +78,14 @@ Recently my CI pipeline suddenly does not work on AIX 7.1 with error `Caused by:
 22:13:36  	at com.ibm.jsse2.aA.checkServerTrusted(aA.java:28)
 22:13:36  	at com.ibm.jsse2.D.a(D.java:588)
 22:13:36  	... 29 more
-22:13:36  Caused by: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is: 
-22:13:36  	java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is: 
+22:13:36  Caused by: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.; internal cause is:
+22:13:36  	java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is:
 22:13:36  	java.security.cert.CertPathValidatorException: Certificate chaining error
 22:13:36  	at com.ibm.security.cert.PKIXCertPathBuilderImpl.engineBuild(PKIXCertPathBuilderImpl.java:422)
 22:13:36  	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:268)
 22:13:36  	at com.ibm.jsse2.util.f.a(f.java:120)
 22:13:36  	... 35 more
-22:13:36  Caused by: java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is: 
+22:13:36  Caused by: java.security.cert.CertPathValidatorException: The certificate issued by CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US is not trusted; internal cause is:
 22:13:36  	java.security.cert.CertPathValidatorException: Certificate chaining error
 22:13:36  	at com.ibm.security.cert.BasicChecker.<init>(BasicChecker.java:111)
 22:13:36  	at com.ibm.security.cert.PKIXCertPathValidatorImpl.engineValidate(PKIXCertPathValidatorImpl.java:199)
@@ -98,7 +98,7 @@ Recently my CI pipeline suddenly does not work on AIX 7.1 with error `Caused by:
 22:13:36  	at com.ibm.security.cert.CertPathUtil.findIssuer(CertPathUtil.java:316)
 22:13:36  	at com.ibm.security.cert.BasicChecker.<init>(BasicChecker.java:108)
 22:13:36  	... 42 more
-22:13:36  
+22:13:36
 ```
 
 </details>

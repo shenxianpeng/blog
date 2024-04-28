@@ -4,7 +4,7 @@ title: Open Source Contributions
 
 > I'm also an open source enthusiast, and starting today(4/3/2024), I'll keep track of the projects I've contributed to 💪
 
-## As creator and contributor projects 
+## As creator and contributor projects
 
 My biggest contributions in open source was I created [cpp-linter](https://github.com/cpp-linter/) and [commit-check](https://github.com/commit-check) organizations and repositories which include:
 
