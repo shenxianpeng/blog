@@ -1,9 +1,10 @@
 ---
 title: 详解SBOM：定义、关系、区别、最佳实践和生成工具
 tags:
- - SBOM 
+ - SBOM
+ - SLSA
 categories:
- - DevOps
+ - DevSecOps
 date: 2023-06-10 22:43:37
 author: shenxianpeng
 ---
