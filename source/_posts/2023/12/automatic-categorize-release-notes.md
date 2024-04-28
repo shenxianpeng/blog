@@ -57,7 +57,7 @@ changelog:
 
 ![Example 3](automatic-categorize-release-notes/example-3.png)
 
-## 方式二：使用 Release Drafter 
+## 方式二：使用 Release Drafter
 
 方式二是使用 [Release Drafter](https://github.com/release-drafter/release-drafter)，即在仓库创建配置文件 `.github/release-drafter.yml`。
 

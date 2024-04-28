@@ -15,7 +15,7 @@ Software supply chain security is the act of securing the components, activities
 
 Attacks in the software supply chain have become more and more frequent in recent years, SonaType reported more than 700% of attacks in open-source software from 2019 to 2022.
 
-![SonaType reported](supply-chain-security/sonatype.png) 
+![SonaType reported](supply-chain-security/sonatype.png)
 
 In this [Google Security Blog](https://security.googleblog.com/2021/06/introducing-slsa-end-to-end-framework.html), there are many real examples of software supply chain attacks that pose growing threats to users and Google proposed a solution called SLSA in 2021.
 
@@ -23,7 +23,7 @@ Also, some well-known organizations such as Linux Foundation and CNCF have creat
 
 ![LF & CNCF](supply-chain-security/lf-cncf.png)
 
-Based on this background, many organizations want to incorporate best practices from the open-source community into our CICD pipeline. 
+Based on this background, many organizations want to incorporate best practices from the open-source community into our CICD pipeline.
 
 ## How to adopt Supply Chain Security for GitHub and Non-GitHub projects
 
@@ -46,20 +46,20 @@ PASSED: Verified SLSA provenance
 
 ### Non-GitHub projects
 
-However, there are many organizations' codes are hosted on Non-GitHub SCM, so you can use the Witness, a tool from CNCF in-toto, which can help us generate and verify attestations. 
+However, there are many organizations' codes are hosted on Non-GitHub SCM, so you can use the Witness, a tool from CNCF in-toto, which can help us generate and verify attestations.
 
-It’s easy to scale Witness to your products, just integrate witness command into the existing build command it will generate proof of the software build and release execution process and can be verified. 
+It’s easy to scale Witness to your products, just integrate witness command into the existing build command it will generate proof of the software build and release execution process and can be verified.
 
 You can follow [this demo to integrate with witness](https://github.com/shenxianpeng/witness-demo), then will generate the build package along with attestations file, policy-signed.json file, and a public key.
 
 Before user installing your product package, they can run the following command manually or in their CI pipeline to verify whether the artifact is tampered or not.
 
 ```bash
-witness verify -f dist/witness_demo-1.0.0-py3-none-any.whl -a witness-demo-att.json -p policy-signed.json -k witness-demo-pub.pem 
-INFO    Using config file: .witness.yaml             
-INFO    Verification succeeded                       
-INFO    Evidence:                                    
-INFO    0: witness-demo-att.json 
+witness verify -f dist/witness_demo-1.0.0-py3-none-any.whl -a witness-demo-att.json -p policy-signed.json -k witness-demo-pub.pem
+INFO    Using config file: .witness.yaml
+INFO    Verification succeeded
+INFO    Evidence:
+INFO    0: witness-demo-att.json
 ```
 
 ---

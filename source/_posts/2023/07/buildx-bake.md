@@ -3,7 +3,7 @@ title: Docker Buildx Bake：加速构建和管理多平台镜像的利器
 tags:
  - Docker
  - Buildx
- - Bake 
+ - Bake
 categories:
  - Docker
 date: 2023-07-17 22:43:37
@@ -111,7 +111,7 @@ target "webapp-release" {
 
 ```bash
 $ docker buildx bake -f docker-bake.dev.hcl --print db
-[+] Building 0.0s (0/0)         
+[+] Building 0.0s (0/0)
 {
   "group": {
     "default": {
