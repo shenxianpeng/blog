@@ -1,17 +1,17 @@
 ---
 title: 代码签名（Code Signing）
 tags:
-  - DevOps
-  - Release
+  - DevSecOps
+  - SLSA
 categories:
-  - DevOps
+  - DevSecOps
 author: shenxianpeng
 date: 2024-04-29 20:34:18
 ---
 
 当谈到软件开发和安全性时，Code Signing（代码签名）是一个至关重要的概念。在这篇文章中，我们将探讨什么是代码签名，为什么它重要，以及两个代码签名工具的对比。
 
-### 什么是代码签名？
+## 什么是代码签名？
 
 代码签名是一种数字签名技术，用于验证软件或代码的真实性和完整性。它通过使用加密技术，为软件文件附加一个数字签名，证明该文件是由特定的开发者创建并未被篡改过。
 
@@ -20,7 +20,7 @@ date: 2024-04-29 20:34:18
 2. **对软件进行签名**：开发者使用专门的工具，如 Microsoft 的 SignTool 或 Apple 的 codesign 工具，对软件进行数字签名。
 3. **分发已签名的软件**：带有数字签名的软件可以被分发到用户设备上。
 
-### 为什么代码签名重要？
+## 为什么代码签名重要？
 
 代码签名的重要性体现在以下几个方面：
 
@@ -32,11 +32,11 @@ date: 2024-04-29 20:34:18
 
 4. **操作系统信任**：大多数操作系统和应用商店要求开发者对软件进行代码签名才能发布。没有签名的软件可能会被视为不安全或不可信。
 
-### 代码签名工具
+## 代码签名工具
 
-我一共接触过两个 Code signing 工具，分别是代码签名证书[Code Signing Certificates](https://www.thawte.com/code-signing/) 和 [GaraSign](https://garantir.io/use-cases/code-signing/)，它们是比较有代表性的两类工具。
+我在工作中主要接触到两个 Code signing 工具，分别是代码签名证书[Code Signing Certificates](https://www.thawte.com/code-signing/) 和 [GaraSign](https://garantir.io/use-cases/code-signing/)，它们是比较有代表性的两类工具。
 
-以下代码签名证书与 GaraSign 的区别：
+这里简单介绍一下代码签名证书与 GaraSign 的区别：
 
 **代码签名证书** 和 **GaraSign** 都是用于验证软件完整性和来源的解决方案，但它们在工作方式和功能方面存在一些关键差异。
 
@@ -50,9 +50,7 @@ date: 2024-04-29 20:34:18
 | **管理** | 需要购买和管理证书 | 无需管理证书 |
 | **可扩展性** | 适用于需要签署大量软件的组织 | 适用于任何规模的组织 |
 
-**总的来说，代码签名证书和 GaraSign 都是有效的解决方案，可用于验证软件完整性和来源。** 最适合你的选择将取决于你的特定需求和预算。
-
-以下是一些需要考虑的因素：
+**总的来说，代码签名证书和 GaraSign 都是有效的解决方案，可用于验证软件完整性和来源。** 最适合你的选择将取决于你的特定需求和预算。以下是一些需要考虑的因素：
 
 * **成本：** 如果你需要签署大量软件，GaraSign 可能更具成本效益。
 * **可扩展性：** 如果你需要签署大量软件，GaraSign 可能是更好的选择。
@@ -61,10 +59,14 @@ date: 2024-04-29 20:34:18
 
 [^1]: 目前我还在初步使用 GaraSign 后续如果有必要，我会单独写一些篇关于它的使用体验文章。
 
-### 结论
+其他签名工具还包括微软的 [SignTool.exe](https://learn.microsoft.com/zh-cn/dotnet/framework/tools/signtool-exe)，[Docker trust sign](https://docs.docker.com/reference/cli/docker/trust/sign/)等，这里就不一一介绍了。
+
+## 结论
 
 通过代码签名，开发者可以增加软件的安全性和可信度，同时帮助用户避免恶意软件和篡改的风险。
-在今天的数字化环境中，代码签名是保障软件完整性和安全性的重要一环。
+在今天的数字化环境中，代码签名是保障软件完整性和安全性的重要一环，提高软件供应链安全。
+
+更过关于软件供应链安全内容可以参考这[一系列文章](https://shenxianpeng.github.io/tags/slsa/)。
 
 ---
 
