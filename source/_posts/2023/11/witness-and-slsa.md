@@ -208,11 +208,11 @@ INFO    Using config file: .witness.yaml
 #### 验证二进制文件是否符合政策要求
 
 ```bash
-witness verify -f dist/witness_demo-1.0.0-py3-none-any.whl -a witness-demo-att.json -p policy-signed.json -k witness-demo-pub.pem 
-INFO    Using config file: .witness.yaml             
-INFO    Verification succeeded                       
-INFO    Evidence:                                    
-INFO    0: witness-demo-att.json 
+witness verify -f dist/witness_demo-1.0.0-py3-none-any.whl -a witness-demo-att.json -p policy-signed.json -k witness-demo-pub.pem
+INFO    Using config file: .witness.yaml
+INFO    Verification succeeded
+INFO    Evidence:
+INFO    0: witness-demo-att.json
 ```
 
 ## 最后

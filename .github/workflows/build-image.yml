@@ -1,7 +1,7 @@
 name: Build Docker Image
 
 on:
-  push: 
+  push:
     paths: package.json
   pull_request:
     paths: package.json
@@ -20,4 +20,3 @@ jobs:
       run: |
         echo ${{ secrets.DOCKER_TOKEN }} | docker login --username xianpengshen --password-stdin
         make release-image
-

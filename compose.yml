@@ -7,6 +7,6 @@ services:
       - '4000:4000'
     volumes:
       - .:/blog
-    entrypoint: 
+    entrypoint:
       - make
       - server

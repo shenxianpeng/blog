@@ -18,7 +18,7 @@ I want to thank my boss and leader. Thank them for for their recognition and wan
 
 _It was very nice to talk with you. I have an honor to work alongside such talented people like yourself! Your presentation was awesome! -- from Pavel_
 
-2023 is the busy year. In life, I'm the "daddy"; In work, I 'm stickler for "best practices", and after work, I'm a fan of "open source and writing". 
+2023 is the busy year. In life, I'm the "daddy"; In work, I 'm stickler for "best practices", and after work, I'm a fan of "open source and writing".
 
 Onward and Upward.
 

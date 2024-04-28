@@ -58,7 +58,7 @@ And check following link of [Mapping of options](https://www.ibm.com/docs/en/ope
 ## 5. error: unsupported option '-G' for target 'powerpc64-ibm-aix7.3.0.0'
 
 ```diff
-- LIB_101_FLAGS := -G 
+- LIB_101_FLAGS := -G
 + LIB_101_FLAGS := -shared -Wl,-G
 ```
 

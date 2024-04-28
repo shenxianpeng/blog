@@ -14,11 +14,11 @@ author: shenxianpeng
 
 ```bash
 16:42:47  Caused by: hudson.plugins.git.GitException: Command "git init /disk1/agent/workspace/e_feature-aix-ci-build" returned status code 255:
-16:42:47  stdout: 
+16:42:47  stdout:
 16:42:47  stderr: exec(): 0509-036 Cannot load program git because of the following errors:
 16:42:47  	0509-150   Dependent module /usr/lib/libiconv.a(libiconv.so.2) could not be loaded.
-16:42:47  	0509-152   Member libiconv.so.2 is not found in archive 
-16:42:47  
+16:42:47  	0509-152   Member libiconv.so.2 is not found in archive
+16:42:47
 16:42:47  	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2734)
 16:42:47  	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2660)
 16:42:47  	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2656)
@@ -53,13 +53,13 @@ println System.getenv("LIBPATH")
 ```
 
 ```bash
-# 返回的结果 
+# 返回的结果
 /usr/java8_64/jre/lib/ppc64/j9vm:/usr/java8_64/jre/lib/ppc64:/usr/java8_64/jre/../lib/ppc64:/usr/java8_64/jre/lib/icc:/usr/lib
 ```
 
 其中果然有 `/usr/lib`，这导致了 git 是去找 `/usr/lib/libiconv.a` 而不是 `/opt/freeware/lib/libiconv.a`。
 
-我尝试过很多种办法但最终还是无法在 Jenkins agent 在 git clone 的时候 `unset LIBPATH`，包括: 
+我尝试过很多种办法但最终还是无法在 Jenkins agent 在 git clone 的时候 `unset LIBPATH`，包括:
 
 1. 重新 link，将 `/usr/lib/libiconv.a` 链接到 `/opt/freeware/lib/libiconv.a`
 
