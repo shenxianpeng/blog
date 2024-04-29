@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -9,7 +9,7 @@ repos:
       - id: check-yaml
       - id: debug-statements
   - repo: https://github.com/commit-check/commit-check
-    rev: v0.7.3
+    rev: v0.7.4
     hooks:
       - id: check-message
       - id: check-branch
