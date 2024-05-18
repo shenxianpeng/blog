@@ -1,5 +1,5 @@
 ---
-title: Python 软件基金会 (PFS) 基础设施概览 
+title: Python 软件基金会 (PFS) 基础设施概览
 tags:
   - Python
   - Infrastructure
