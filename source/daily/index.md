@@ -2,9 +2,19 @@
 title: Daily
 ---
 
-> Starting August 7, 2020, I would like to start recording some small daily happiness in English.
+> Starting August 7, 2020, I would like to start recording some daily/important things in English.
 
 ---
+
+
+## 5/18/2024 - Ready for Lithuania visa interview
+
+Start May, we have become very busy, and I need to not only for work but also prepare for the visa.
+
+For work, I need to do KT, Q&A and our regular work.
+For visa, I need to apply Japan visa first and submit documents to Lithuania Embassy in Japan for some reason.
+
+Hope everything goes well on Tuesday 🙏.
 
 ## 4/3/2024 - I accepted an offer position in Lithuania
 
