@@ -9,7 +9,9 @@ author: shenxianpeng
 date: 2024-05-28 11:27:18
 ---
 
-继上次看完了 [Apache 的基础设施](2024/01/apache-services-and-tools/)介绍，本篇文章我们来看看 PFS 的基础设施。
+Python 软件基金会 (PFS) 或许大家比较熟知，它是开源 Python 编程语言背后的组织，致力于为 Python 和 Python 社区的发展壮大创造条件。
+
+继上次我们看完了 [Apache 的基础设施](2024/01/apache-services-and-tools/)介绍，本篇文章我们一起来看看 Python 软件基金会 (PFS) 的基础设施，看看可以从中学到哪些。
 
 ## PSF 基础设施概述
 
@@ -115,7 +117,7 @@ Python 包索引的负载最多 任何 PSF 服务。它的源代码可在 [GitHu
 **PyPy properties**
 [PyPy 网站](pypy.org)托管在 DigitalOcean VM 上并进行维护作者：pypy-dev@python。
 
-> 如需要参看原文。可访问[这里地址](https://infra.psf.io/overview.html)。
+> 如需要参看原文。可访问[地址](https://infra.psf.io/overview.html)。
 
 ## 最后
 
