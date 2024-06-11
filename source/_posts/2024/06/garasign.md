@@ -35,7 +35,7 @@ Garasign 代码签名散列方法 - 大幅提高速度
 
 ## 安装 GaraSign
 
-关于如何安装 GaraSign 这里不过去介绍，可以到官网找相关的安装文档。这里要注意目前 GaraSign 对操作系统版本的要求还是很高的，比如 
+关于如何安装 GaraSign 这里不过去介绍，可以到官网找相关的安装文档。这里要注意目前 GaraSign 对操作系统版本的要求还是很高的，比如
 
 * Windows 最低要求是 Windows 2019, Win10 and Win11
 * Linux 最低要求是 RHEL 7.9, 8.0, 9.0，CentOS 7.9, 8.0, 9.0，Rocky 8.0
@@ -73,8 +73,8 @@ pipeline{
 
     parameters {
         string(
-            name: 'REPO_PATH', 
-            defaultValue: '', 
+            name: 'REPO_PATH',
+            defaultValue: '',
             description: 'Repository Path on Artifactory. eg. generic-stage/test_repo/devel/54/mybuild_1.1.0_752d0821_64bit.exe'
         )
     }
@@ -145,17 +145,17 @@ openssl dgst -verify <public key file> -signature <signature> <file to verify>
 # 下载安装包、签名文件和公钥
 $ ls
 cli.pem.pub.key  CLI_AIX_1.1.0.zip  CLI_AIX_1.1.0.zip.sig  CLI_LINUXX86_1.1.0.zip  CLI_LINUXX86_1.1.0.zip.sig  CLI_WINDOWS_1.1.0.zip  CLI_WINDOWS_1.1.0.zip.sig
- 
+
 # 验证签名
 openssl dgst -verify cli.pem.pub.key -signature CLI_AIX_1.1.0.zip.sig CLI_AIX_1.1.0.zip
 Verified OK
- 
+
 openssl dgst -verify cli.pem.pub.key -signature CLI_LINUXX86_1.1.0.zip.sig CLI_LINUXX86_1.1.0.zip
 Verified OK
- 
+
 openssl dgst -verify cli.pem.pub.key -signature CLI_WINDOWS_1.1.0.zip.sig CLI_WINDOWS_1.1.0.zip
 Verified OK
- 
+
 # 当包和签名文件不符时会验证失败
 openssl dgst -verify cli.pem.pub.key -signature CLI_AIX_1.1.0.zip.sig CLI_LINUXX86_1.1.0.zip
 Verification Failure
