@@ -6,15 +6,22 @@ title: Daily
 
 ---
 
+## 6/13/2024 - Blue Card Approved
+
+It's been 20 days since my visa interview and I finally know that my blue card is approved, but my familly still has to wait.
+
+I still have a lot of things to do such as normal work, KT, release, looking at appartment, confirming things, and so on.
+
+I hope my family will get approved soon so I can go to Japan and pick up our cards by the end of this month. Hope everthing goes well.
 
 ## 5/18/2024 - Ready for Lithuania visa interview
 
-Start May, we have become very busy, and I need to not only for work but also prepare for the visa.
+Start May, I'm very busy, not only I need to work but also need to prepare for the visa application.
 
 For work, I need to do KT, Q&A and our regular work.
 For visa, I need to apply Japan visa first and submit documents to Lithuania Embassy in Japan for some reason.
 
-Hope everything goes well on Tuesday 🙏.
+Hope everything goes well on Tuesday (5/21) 🙏.
 
 ## 4/3/2024 - I accepted an offer position in Lithuania
 
