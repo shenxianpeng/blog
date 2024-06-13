@@ -1,12 +1,12 @@
 ---
-title: 你使用的软件究竟从那里来？
+title: 你的软件究竟从哪里来？
 tags:
   - SLSA
   - DevSecOps
 categories:
   - DevOps
 author: shenxianpeng
-date: 2024-06-04 11:27:18
+date: 2024-06-13 23:27:18
 ---
 
 软件真是个有趣又深奥的东西，它由看似神奇的代码片段组成，这些代码运行在最终的终端上，本身却并非生命体，但拥有自己的生命周期。
@@ -71,7 +71,7 @@ GitHub 作为托管大量代码和构建管道的全球最大软件开发平台�
 
 这就是 [Sigstore](https://www.sigstore.dev/) 的作用所在，它是一个开源项目，提供 X.509 CA 和基于 RFC 3161 的时间戳机构。它还允许你使用 [OIDC 令牌](https://www.microsoft.com/en-us/security/business/security-101/what-is-openid-connect-oidc)进行身份验证，许多 CI 系统已经生成了令牌并将其与其工作负载相关联。
 
-Sigstore 对软件签名的作用与 [Let’s Encrypt](https://letsencrypt.org/) 对 TLS 证书的作用相同：使其简单、透明且易于采用。
+Sigstore 对软件签名的作用与 [Let's Encrypt](https://letsencrypt.org/) 对 TLS 证书的作用相同：使其简单、透明且易于采用。
 
 GitHub 通过在技术指导委员会中的席位帮助监督 Sigstore 项目的治理，是服务器应用程序和多个客户端库的维护者，并且（与来自 Chainguard、Google、RedHat 和 Stacklok 的人员一起）组成了 Sigstore 公共物品实例的运营团队，该团队的存在是为了支持 OSS 项目的公共证明。
 
