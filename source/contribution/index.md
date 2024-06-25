@@ -8,25 +8,52 @@ title: Open Source Contributions
 
 My biggest contributions in open source was I created [cpp-linter](https://github.com/cpp-linter/) and [commit-check](https://github.com/commit-check) organizations and repositories which include:
 
-1. [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action): A Github Action for linting C/C++ code integrating clang-tidy and clang-format to collect feedback provided in the form of file-annotations, thread-comments, workflow step-summary, and Pull Request reviews.
-2. [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks): C/C++ linter hooks for pre-commit
-3. [clang-tools-pip](https://github.com/cpp-linter/clang-tools-pip): Install clang-format, clang-tidy, clang-query and clang-apply-replacements binaries with clang-tools CLI.
-4. [clang-tools-docker](https://github.com/cpp-linter/clang-tools-docker): 🐳 Clang Tools Docker image includes the clang-format and clang-tidy.
-5. [cpp-linter](https://github.com/cpp-linter/cpp-linter): cpp-linter core Python executable package
-6. [commit-check](https://github.com/commit-check/commit-check): Commit Check supports checking commit messages, branch naming, committer name/email, commit signoff, customizing error messages, suggested commands and more.
-7. [commit-check-action](https://github.com/commit-check/commit-check-action): Commit Check GitHub Action
+1. [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action)
+2. [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks)
+3. [clang-tools-pip](https://github.com/cpp-linter/clang-tools-pip)
+4. [clang-tools-docker](https://github.com/cpp-linter/clang-tools-docker)
+5. [clang-tools-static-binaries](https://github.com/cpp-linter/clang-tools-static-binaries)
+6. [cpp-linter](https://github.com/cpp-linter/cpp-linter)
+7. [commit-check](https://github.com/commit-check/commit-check)
+8. [commit-check-action](https://github.com/commit-check/commit-check-action)
 
-## Code contributor projects
+## Codes contributor projects
 
-1. ansible-collections/community.general: [PR-8176](https://github.com/ansible-collections/community.general/pull/8176)
-2. pypa/pip：[PR-12572](https://github.com/pypa/pip/pull/12572), [PR-12614](https://github.com/pypa/pip/pull/12614), [PR-12615](https://github.com/pypa/pip/pull/12615), [PR-12616](https://github.com/pypa/pip/pull/12616)
-3. pypa/twine: [PR-1080](https://github.com/pypa/twine/pull/1080)
-4. sloria/sphinx-issues: [PR-145](https://github.com/sloria/sphinx-issues/pull/145)
+1. pypa/pip：
+[PR-12572](https://github.com/pypa/pip/pull/12572),
+[PR-12614](https://github.com/pypa/pip/pull/12614),
+[PR-12615](https://github.com/pypa/pip/pull/12615),
+[PR-12616](https://github.com/pypa/pip/pull/12616),
+[PR-12630](https://github.com/pypa/pip/pull/12630).
 
-## Documentations contributor projects (merged)
+2. pypa/twine:
+[PR-1080](https://github.com/pypa/twine/pull/1080).
 
-1. tox-dev/tox: [PR-3257](https://github.com/tox-dev/tox/pull/3257)
-2. ansible/ansible-documentation: [PR-766](https://github.com/ansible/ansible-documentation/pull/766)
-3. jenkinsci/helm-charts: [PR-910](https://github.com/jenkinsci/helm-charts/pull/910)
-4. jenkins-infra/jenkins.io: [PR-5035](https://github.com/jenkins-infra/jenkins.io/pull/5035)
-5. jenkins-x/jx-docs: [PR-1777](https://github.com/jenkins-x/jx-docs/pull/1777)
+3. pypa/gh-action-pypi-publish:
+[PR-231](https://github.com/pypa/gh-action-pypi-publish/pull/231)
+
+4. pypa/setuptools:
+[PR-4312](https://github.com/pypa/setuptools/pull/4312)
+
+5. sloria/sphinx-issues:
+[PR-145](https://github.com/sloria/sphinx-issues/pull/145).
+
+6. ansible-collections/community.general:
+[PR-8176](https://github.com/ansible-collections/community.general/pull/8176).
+
+## Documentations contributor projects
+
+1. tox-dev/tox:
+[PR-3257](https://github.com/tox-dev/tox/pull/3257)
+
+2. ansible/ansible-documentation:
+[PR-766](https://github.com/ansible/ansible-documentation/pull/766)
+
+3. jenkinsci/helm-charts:
+[PR-910](https://github.com/jenkinsci/helm-charts/pull/910)
+
+4. jenkins-infra/jenkins.io:
+[PR-5035](https://github.com/jenkins-infra/jenkins.io/pull/5035)
+
+5. jenkins-x/jx-docs:
+[PR-1777](https://github.com/jenkins-x/jx-docs/pull/1777)

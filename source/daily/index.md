@@ -6,6 +6,13 @@ title: Daily
 
 ---
 
+## 6/25/2024
+
+Wow, I'm in the AUTHORS.txt of [pip](https://github.com/pypa/pip), [see](https://github.com/pypa/pip/blob/main/AUTHORS.txt#L667).
+I just [made some commits](https://github.com/pypa/pip/commits/main/?author=shenxianpeng ) of pip.
+
+Oh, by the way, my family was approved last week. I'm waiting to pick it up in Japan.
+
 ## 6/13/2024 - Blue Card Approved
 
 It's been 20 days since my visa interview and I finally know that my blue card is approved, but my familly still has to wait.
