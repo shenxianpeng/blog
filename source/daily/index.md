@@ -6,6 +6,12 @@ title: Daily
 
 ---
 
+## 7/26/2024
+
+I have arrived LT last week and this week is my first week working in our Vilnius office. 
+
+I feel very good to work here, onboarding was very smooth, the colleagues are very nice, and I like the work environment in and out the office. Hope everything goes well for my faimlly. 
+
 ## 6/25/2024
 
 Wow, I'm in the AUTHORS.txt of [pip](https://github.com/pypa/pip), [see](https://github.com/pypa/pip/blob/main/AUTHORS.txt#L667).
