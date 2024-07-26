@@ -24,7 +24,7 @@ author: shenxianpeng
 
 # About Me
 
-I'm Peter Shen, A DevOps/Build/Release Engineer; Author of the official account DevOps-Engineer; Founder and contributor of [cpp-linter](https://github.com/cpp-linter) and [commit-check](https://github.com/commit-check)
+I'm Xianpeng Shen, A DevOps/Build/Release Engineer; Author of the official account DevOps-Engineer; Founder and contributor of [cpp-linter](https://github.com/cpp-linter) and [commit-check](https://github.com/commit-check)
 
 Follow me on 👇
 
