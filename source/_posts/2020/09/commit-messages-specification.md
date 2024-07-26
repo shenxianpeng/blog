@@ -138,7 +138,7 @@ DT-17734: 8.2.2 merge from CF1/2- Enhance PORT.STATUS
 DT-17636 fix AIX cord dump issue
 DT-18183 Fix the UDTHOME problem for secure telnet
 DT-18183 Add new condition to get UDTHOME
-DT-15567 code merge by Peter Shen.
+DT-15567 code merge by Xianpeng Shen.
 ```
 
 测试结果也可以在这里 https://regex101.com/r/5m0SIJ/10 找到​。​
