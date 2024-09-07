@@ -8,7 +8,7 @@ date: 2024-09-05 00:00:00
 author: shenxianpeng
 ---
 
-PyPA（Python Packaging Authority）是管理和维护 Python 包相关工具的一个社区组织。PyPA 管理的知名项目包括 pip、packaging、setuptools、wheel、twine、build 等等。
+PyPA（Python Packaging Authority）是管理和维护 Python 包相关工具的一个社区组织。PyPA 管理的知名项目包括 pip、packaging、setuptools、wheel、twine、build 等等。了解这些项目的关于有助于我们更好的了解 Python 的生态系统。
 
 以下是这些项目的介绍以及它们之间的关系：
 
@@ -41,7 +41,6 @@ PyPA（Python Packaging Authority）是管理和维护 Python 包相关工具的
 关系：build 提供了比 setuptools 更简洁的构建方式，但它依赖于 setuptools 或其他构建后端（如 flit、poetry）来实际完成构建过程。
 
 8. pyproject.toml
-
 作用：pyproject.toml 不是一个工具，而是一种配置文件格式。它被用来描述项目的构建需求，并支持使用不同的构建后端，如 setuptools、flit、poetry 等。
 关系：pip 和 build 等工具会读取 pyproject.toml 文件，了解如何构建和安装项目。
 
