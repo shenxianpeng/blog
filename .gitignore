@@ -8,3 +8,4 @@ venv
 
 # dagger
 cue.mod
+.venv/
