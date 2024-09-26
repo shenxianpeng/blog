@@ -8,8 +8,8 @@ date: 2024-09-26 00:00:00
 author: shenxianpeng
 ---
 
-作为一名 DevOps 工程师，无论你处于初级、中级还是高级阶段，你是否曾思考过：首席 DevOps 工程师的职责到底是什么？  
-  
+作为一名 DevOps 工程师，无论你处于初级、中级还是高级阶段，你是否曾思考过：首席 DevOps 工程师的职责到底是什么？
+
 最近，我也在探索这个高级角色的工作内容和在团队中的重要性。偶然间，我发现了一篇详细讨论首席 DevOps 工程师职责的文章，于是根据自己的理解做了一些精简和调整。希望这篇分享能够给大家一些启发，帮助我们明确未来的职业发展方向，一起向更高的目标迈进。
 
 > 原文链接：[首席 DevOps 工程师职责](https://www.remotely.works/blog/what-are-the-responsibilities-of-a-principal-devops-engineer)
