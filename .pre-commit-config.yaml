@@ -9,7 +9,7 @@ repos:
       - id: check-yaml
       - id: debug-statements
   - repo: https://github.com/commit-check/commit-check
-    rev: v0.8.1
+    rev: v0.8.2
     hooks:
       - id: check-message
       - id: check-branch
