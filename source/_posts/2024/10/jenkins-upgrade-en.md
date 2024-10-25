@@ -52,6 +52,6 @@ Building on prior best practices, we made the following improvements:
 
 ## Summary
 
-I hope these efforts enable Infrastructure maintenance and Pipeline development to be managed through GitOps. 
+I hope these efforts enable Infrastructure maintenance and Pipeline development to be managed through GitOps.
 
 Through continuous exploration, experimentation, and application of best practices, I aim to establish CI/CD as a healthy, sustainable, self-improving DevOps system.
