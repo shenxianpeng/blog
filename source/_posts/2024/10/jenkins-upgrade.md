@@ -56,3 +56,7 @@ author: shenxianpeng
 我希望通过这些努力，将 Infrastructure 的维护和 Pipeline 的开发通过 GitOps 方式进行管理。
 
 不断探索、尝试和应用最佳实践，使 CI/CD 成为一个健康的、可持续维护的、自我改进和成长的 DevOps 系统。
+
+---
+
+转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「DevOps攻城狮」
