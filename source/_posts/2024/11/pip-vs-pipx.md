@@ -5,8 +5,7 @@ tags:
   - pipx
 categories:
   - Python
-draft: true
-date: 2024-11-24 00:00:00
+date: 2024-11-26 01:21:00
 author: shenxianpeng
 ---
 
