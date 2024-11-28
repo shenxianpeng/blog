@@ -17,32 +17,32 @@ author: shenxianpeng
 * 每个版本的贡献排名
 * 每周/每月/每年的贡献排名等等
 
-几天前发现一个 Git 历史统计信息生成工具叫 GitStats ( http://gitstats.sourceforge.net/ )
+几天前发现一个 Git 历史统计信息生成工具叫 GitStats (https://github.com/shenxianpeng/gitstats)
 
 <!-- more -->
 
 这是一个用 python 写的，代码量很少，功能却非常强大的分析工具，也是我目前发现为数不多的可以生成漂亮的报告并且使用很方便的开源项目。
 
-gitstats 的报告也很强大 (https://github.com/tomgi/gitstats) 感兴趣的可以试试
+gitstats 的报告也很强大 (https://shenxianpeng.github.io/gitstats/previews/main/index.html) 感兴趣的可以试试
 
 ## 如何使用
 
-安装依赖：Git，Python，Gnuplot。
+需要的依赖：Git，Python3，Gnuplot。
 
-如果有 Linux，推荐在 Linux 上下载和安装。我曾尝试用 Windows 来准备环境，要下载 Python2，配置 Cygwin，还要手动配置 Gnuplot （Gnuplot 是一个可移植的命令行驱动的图形工具），挺麻烦的。以下是我在 Linux 上来的安装和使用步骤。
+如果有 Linux，推荐在 Linux 上下载和安装。我曾尝试用 Windows 来准备环境，要配置 Cygwin，还要手动配置 Gnuplot （Gnuplot 是一个可移植的命令行驱动的图形工具），挺麻烦的。以下是我在 Linux 上来的安装和使用步骤。
 
 ```bash
-# 下载 Python 2
-sudo yum -y install python27
 # 安装 Gnuplot
 sudo yum -y install gnuplot
-# 下载 gitstats
-git clone https://github.com/hoxu/gitstats.git
+# 安装 gitstats
+pip install gitstats
+
 # 下载你要分析的代码仓库
 git clone https://github.com/alibaba/fastjson.git
+
 # 执行命令，生产报告
-cd gitstats
-./gitstats ../fastjson ../html/fastjson
+gitstats ../fastjson ../html/fastjson
+
 # 经过 15 秒钟的执行，生成报告
 Generating report...
 [0.00393] >> git --git-dir=/workspace/gitstats/.git --work-tree=/workspace/gitstats rev-parse --short HEAD
