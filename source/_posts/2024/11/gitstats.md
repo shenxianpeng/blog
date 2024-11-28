@@ -1,5 +1,5 @@
 ---
-title: GitStats 重生：让 Git 历史分析焕发新活力
+title: 复活 GitStats：让 Git 历史分析焕发新活力
 tags:
   - git
   - gitstats
@@ -67,7 +67,7 @@ GitStats 是一个用 Python 写的工具，用来分析 Git 仓库的历史记�
 最后，让我们携手合作，让 GitStats 再次焕发活力！
 
 
-                    _写于 2024 年 11 月 28 日凌晨 2:50_
+_写于 2024 年 11 月 28 日凌晨 2:50_
 
 ---
 
