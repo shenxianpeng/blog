@@ -1,5 +1,5 @@
 ---
-title: 'PowerShell' is not recognized as an internal or external command
+title: PowerShell is not recognized as an internal or external command
 tags:
   - ansible-playbook
   - ansible
