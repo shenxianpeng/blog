@@ -12,6 +12,7 @@ author: shenxianpeng
 #include "stdafx.h"
 #include <stdio.h>
 
+<!-- more -->
 /*
 计算图形的面积：
 1. 圆的面积 = π * radius * radius

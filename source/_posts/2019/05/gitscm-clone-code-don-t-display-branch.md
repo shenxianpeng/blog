@@ -12,6 +12,7 @@ author: shenxianpeng
 最近遇到一个 regression bug，是产品完成构建之后，build commit number 不对，显示的 HEAD 而不是常见的 97b34931ac HASH number,这是什么原因呢？
 我检查了 build 脚本没有发现问题，branch 的输出是正确的，那我怀疑是引入 Jenkins 的原因，果然登录到远程的 agent 上去查看分支名称如下：
 
+<!-- more -->
 ```git
 C:\workspace\blog>git branch
 * (HEAD detached at 97b3493)

@@ -2,7 +2,6 @@
 title: 程序员自我修养之Git提交信息和分支创建规范（工具篇）
 tags:
   - Git
-  - Branch
 categories:
   - Git
 author: shenxianpeng
@@ -15,6 +14,7 @@ Git 提交信息和 Git 分支命名规范是团队协作中非常重要的一�
 
 更多关于Git提交信息和分支创建规范可以参看我之前发布的文章[《程序员自我修养之Git提交信息和分支创建规范》](https://shenxianpeng.github.io/2020/09/commit-messages-specification/)，这里不再赘述。
 
+<!-- more -->
 ## Commit Check 简介
 
 Commit Check 是一个可以检查 Git 提交信息，分支命名、提交者用户名、提交者邮箱等等。它是 [Yet Another Commit Checker](https://docs.mohami.io/yet-another-commit-checker-yacc/) 的开源平替版。

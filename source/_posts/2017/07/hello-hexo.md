@@ -18,6 +18,7 @@ hexo generate             #Generate static files
 hexo deploy               #Deploy to remote sites
 ```
 
+<!-- more -->
 ## Also
 
 ```bash

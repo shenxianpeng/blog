@@ -12,6 +12,7 @@ Sometimes you don't want Jenkins pipeline failed for a specific error occurs. so
 
 ![Catch Error Jenkins pipeline](jenkins-catch-error/catch-error.png)
 
+<!-- more -->
 Here is the Jenkinsfile of pipeline
 
 ```

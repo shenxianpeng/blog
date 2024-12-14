@@ -12,6 +12,7 @@ date: 2022-10-09 15:33:41
 When I want to implement [skip ci] or [ci skip] for Jenkins multi-branch pipeline, the existing plugin seems broken.
 
 * [JENKINS-35509](https://issues.jenkins.io/browse/JENKINS-35509)
+<!-- more -->
 * [JENKINS-34130](https://issues.jenkins.io/browse/JENKINS-34130)
 
 > My advice: try not to use the Jenkins plugin if possible.

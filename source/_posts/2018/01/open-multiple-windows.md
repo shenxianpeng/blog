@@ -12,6 +12,7 @@ author: shenxianpeng
 如果想打开两个窗口并控制那个窗口怎么办？
 
 ```javascript
+<!-- more -->
 var url = process.env.BASE_URL, newWindow;
 
 client.execute(function (url, newWindow) {

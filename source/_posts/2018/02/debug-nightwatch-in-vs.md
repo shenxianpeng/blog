@@ -12,6 +12,7 @@ author: shenxianpeng
 除了通过增加
 
 ```javascript
+<!-- more -->
 console.log('===========')
 ```
 

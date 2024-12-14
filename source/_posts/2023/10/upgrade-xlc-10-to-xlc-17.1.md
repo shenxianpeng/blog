@@ -4,7 +4,6 @@ tags:
   - AIX
   - Clang
   - XLC
-  - IBM
 categories:
   - AIX
 date: 2023-10-08 18:53:26
@@ -15,6 +14,7 @@ In this article, I would like to document the problems encountered when upgradin
 
 If you've encountered any other errors, feel free to share your comments with or without a solution.
 
+<!-- more -->
 ## 1. Change cc to ibm-clang
 
 First you need to change all the related `cc` to `ibm-clang` in the the global Makefile. for example:

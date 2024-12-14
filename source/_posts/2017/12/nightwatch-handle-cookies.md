@@ -13,6 +13,7 @@ author: shenxianpeng
 
 验证登录 cookies 和清除 access_token。测试用例设计如下
 
+<!-- more -->
 ## 测试用例设计
 
 登录系统时，不选择记住我按钮，验证 cookies

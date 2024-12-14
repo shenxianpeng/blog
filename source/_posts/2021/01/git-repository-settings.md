@@ -19,6 +19,7 @@ Here are some settings recommend you to enable.
 4. Merge Check -> Minimum approvals (1)
 5. Yet Another Commit Checker
 
+<!-- more -->
 ## Reject Force Push
 
 This is the first setting I highly recommend you/your team to open it. if not, when someone using the `git push -f` command to the git repository, you may lost commits if his local code is old then remote repository.

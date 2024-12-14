@@ -16,6 +16,7 @@ Today I am having a problem where the Windows installer I created is not install
 
 But it works well in the previous build, and I didn't make any code changes. It is strange, actually fix this problem is very easy but not easy to find.
 
+<!-- more -->
 ## How to fix it?
 
 In my case, I just remove the space from my build folder naming. I have made follow mistakes:

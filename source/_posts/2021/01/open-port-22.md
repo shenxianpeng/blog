@@ -21,6 +21,7 @@ netstat -aon|findstr "22"
 
 but not found port 22 is inbound.
 
+<!-- more -->
 ## Inbound port 22
 
 There's a lot of articles will tell you how to open ports on Windows. see this one

@@ -12,6 +12,7 @@ categories:
 创建一个 query, 等待这个query的状态从 Wait 变成 Running 最后到 Available 时再执行操作。
 Nightwatch 并没有提供这样的方法，可以通过下面的方式解决。
 
+<!-- more -->
 ```javascript
 'Wait for text': function waitForText(client) {
     const query = client.page.query();

@@ -12,6 +12,7 @@ author: shenxianpeng
 
 最近遇到了通过 Jenkins agent 无法上传 artifacts 到 Artifactory 的情况，具体错误如下：
 
+<!-- more -->
 ```bash
 [2023-09-11T08:21:53.385Z] Executing command: /bin/sh -c git log --pretty=format:%s -1
 [2023-09-11T08:21:54.250Z] [consumer_0] Deploying artifact: https://artifactory.mycompany.com/artifactory/generic-int-den/my-project/hotfix/1.2.0.HF5/3/pj120_bin_opt_SunOS_3792bcf.tar.Z

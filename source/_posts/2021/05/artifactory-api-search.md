@@ -12,6 +12,7 @@ author: shenxianpeng
 ## Problem
 
 When you do CI with JFrog Artifactory when you want to download the entire folder artifacts, but maybe your IT doesn't enable this function, whatever some seasons.
+<!-- more -->
 
 You can try the below JFrog Artifactory API to know if you're using Artifactory whether allowed to download the entire folder artifacts.
 

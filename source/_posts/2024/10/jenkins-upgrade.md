@@ -18,6 +18,7 @@ author: shenxianpeng
 因此需要将 Jenkins 至少升级到 2.442 或 LTS 2.426.3 及以上版本，也趁此机会重新重构之前没有做满意的部分。
 
 
+<!-- more -->
 ## 升级之前的 Jenkins
 
 升级之前我们使用的是 Jenkins 2.346.3，这是最后一个支持 Java 8 的版本。由于老的操作系统不支持 Java 17，导致无法升级 Jenkins。

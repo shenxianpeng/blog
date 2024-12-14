@@ -17,6 +17,7 @@ Recently, I’ve been working on migrating and upgrading Jenkins. The main motiv
 
 To address this, Jenkins needs to be upgraded to at least version 2.442 or LTS 2.426.3 or above. This was also an opportunity to rework parts of the setup that weren’t initially optimized.
 
+<!-- more -->
 ## Pre-Upgrade Jenkins
 
 Before the upgrade, we were using Jenkins 2.346.3, the last version supporting Java 8. Because older operating systems don’t support Java 17, this blocked us from upgrading Jenkins.

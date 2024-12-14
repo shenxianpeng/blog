@@ -2,7 +2,6 @@
 title: Git 常用命令备忘录
 tags:
   - Git
-  - Cheatsheet
 categories:
   - Git
 date: 2021-10-23 19:40:06
@@ -12,6 +11,7 @@ author: shenxianpeng
 不管是对于 Git 的初学者还是经常使用 Git 的码农们，在日常工作中难免会有遇到有的命令一时想不起来。不妨将下面总结的一些 Git 常用命令及技巧收藏或打印出来，以备需要的时候可以很快找到。
 
 ## `git config`
+<!-- more -->
 
 ```bash
 # 检查 git 配置

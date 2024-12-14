@@ -12,6 +12,7 @@ author: shenxianpeng
 
 When we need to release a product, we should change copyright, build version, release month, release note...
 How to modify multiple files automatically?
+<!-- more -->
 I used a Jenkins pipeline project, the project is parameterized(string parameter) and regular expressions to implement.
 
 1. Here is the string parameter for copyright:

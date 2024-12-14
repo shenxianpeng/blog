@@ -21,6 +21,7 @@ Can't locate CPAN.pm in @INC (@INC contains: /usr/local/lib64/perl5 /usr/local/s
 BEGIN failed--compilation aborted.
 ```
 
+<!-- more -->
 ## Can't locate CPAN.pm
 
 fixed this problem "Can't locate CPAN.pm" by running the command `yum install perl-CPAN`

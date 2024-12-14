@@ -2,7 +2,6 @@
 title: Branch Naming Convention
 tags:
   - Git
-  - Branch
 categories:
   - DevOps
 date: 2021-05-13 23:52:01
@@ -15,6 +14,7 @@ To better manage the branches on Git(I sued Bitbucket), integration with CI tool
 
 For example, good unified partition naming can help the team easily find and integrate without special processing. Therefore, you should unify the partition naming rules for all repositories.
 
+<!-- more -->
 ## Branches naming convention
 
 ### main branch naming

@@ -15,6 +15,7 @@ Because I used the community edition version, it doesn't support the C/C++ proje
 
 For example, the demo project name and ID in SonarQube are both `test-demo`, and I build with Jenkins.
 
+<!-- more -->
 ## Build with Maven
 
 1. Add the following to your `pom.xml` file:

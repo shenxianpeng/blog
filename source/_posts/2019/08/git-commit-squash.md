@@ -12,6 +12,7 @@ author: shenxianpeng
 ## If your commits on local not pushed to remote
 
 ### combine local commits, you could follow this flow
+<!-- more -->
 
 Here is [short video](https://www.youtube.com/watch?v=V5KrD7CmO4o) (only 3 minutes) and good explanation of `git rebase -i` usage.
 

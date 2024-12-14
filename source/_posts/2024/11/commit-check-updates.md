@@ -16,6 +16,7 @@ author: shenxianpeng
 
 这两个功能旨在进一步提升 Pull Request (PR) 的检查能力。
 
+<!-- more -->
 ### 1. pr-comments: 自动添加检查结果到 Pull Request
 
 在团队合作开发中，PR 通常是代码审核的主要入口。为了让代码检查结果更直观，pr-comments 提供了一种新方式：

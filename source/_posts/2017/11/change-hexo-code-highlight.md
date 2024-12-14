@@ -12,6 +12,7 @@ Hexo 默认主题代码高亮是黑色的，如果想换个风格？具体操作
 ```bash
 # 修改 highlight.styl 文件，路径
 themes/landscape/source/css/_partial/highlight.styl
+<!-- more -->
 ```
 
 修改默认代码主题 Tomorrow Night Eighties

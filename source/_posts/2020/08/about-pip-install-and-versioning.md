@@ -2,7 +2,6 @@
 title: About Python pip install and versioning
 tags:
   - Python
-  - Pip
 categories:
   - Language
 date: 2020-08-30 22:30:50

@@ -1,8 +1,7 @@
 ---
 title: 复活 GitStats：让 Git 历史分析焕发新活力
 tags:
-  - git
-  - gitstats
+  - Git
 categories:
   - DevOps
 date: 2024-11-28 02:28:00
@@ -16,6 +15,7 @@ author: shenxianpeng
 * [Git 历史统计信息生成器 GitStats](https://shenxianpeng.github.io/2019/12/git-stats/)
 * [通过 Jenkins 定期自动给老板提供 Git 仓库的多维度代码分析报告](https://shenxianpeng.github.io/2020/01/git-stats-jenkins/)
 
+<!-- more -->
 ## 什么是 GitStats
 
 GitStats 是一个用 Python 写的工具，用来分析 Git 仓库的历史记录，并生成 HTML 报告。

@@ -12,6 +12,7 @@ categories:
 This automation framework was design by Java+Selenium+TestNG when I did automation test work, so I called it JST-automation.
 
 ## Directory Structure
+<!-- more -->
 
 ```bash
 ├──JST-automation

@@ -19,6 +19,7 @@ For other branches, like feature/bugfix or Pull Request that you just want to do
 
 So you need to have dynamic parameter settings for your multibranch pipeline job.
 
+<!-- more -->
 ## Solution
 
 So for these cases, how to deal with Jenkins multibranch pipeline. Here are some code snippet that is works well in my Jenkinsfile.

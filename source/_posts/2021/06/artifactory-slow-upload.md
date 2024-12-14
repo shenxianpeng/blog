@@ -13,6 +13,7 @@ author: shenxianpeng
 
 如果你也遇到类似或许有所帮助。
 
+<!-- more -->
 ## 问题描述
 
 最近发现通过 Jenkins 往 Artifactory 里上传制品的时候偶尔出现上传非常缓慢的情况，尤其是当一个 Jenkins stage 里有多次上传，往往会在第二次上传的时候出现传输速度极为缓慢（KB/s ）。

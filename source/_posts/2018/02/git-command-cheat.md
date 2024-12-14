@@ -12,6 +12,7 @@ git remote
 
 ```bash
 git remote -v                 # 查看当前位置的远程代码库
+<!-- more -->
 git remote remove origin      # 取消远程仓库
 git remote add orgin git@github.com:shenxianpeng/nightwatch.git       # 关联新的仓库
 ```

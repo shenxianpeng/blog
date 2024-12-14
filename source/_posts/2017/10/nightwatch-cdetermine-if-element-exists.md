@@ -12,6 +12,7 @@ author: shenxianpeng
 ## 元素常用验证方法
 
 验证元素的值信息
+<!-- more -->
 
 ```bash
 andesFormSection
