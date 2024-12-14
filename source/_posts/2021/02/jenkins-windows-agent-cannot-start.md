@@ -12,6 +12,7 @@ Today, when I tried to upgrade my team's Jenkins server from Jenkins 2.235.1 to 
 
 ```log
 [2021-01-29 23:50:40] [windows-agents] Connecting to xxx.xxx.xxx.xxx
+<!-- more -->
 Checking if Java exists
 java -version returned 11.0.2.
 [2021-01-29 23:50:40] [windows-agents] Installing the Jenkins agent service

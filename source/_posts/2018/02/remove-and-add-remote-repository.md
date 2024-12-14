@@ -12,6 +12,7 @@ author: shenxianpeng
 ```bash
 # 取消远程仓库
 git remote remove origin
+<!-- more -->
 
 # 关联远程仓库
 git remote add origin git@github.com:shenxianpeng/blog.git

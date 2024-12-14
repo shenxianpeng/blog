@@ -12,6 +12,7 @@ author: shenxianpeng
 相信许多程序员在新年开始在做 code sign (数字签名)的时候可能遇到 Verisign Timestamp 服务器不好用了 http://timestamp.verisign.com/scripts/timstamp.dll 的情况。出现了如下错误：
 
 ![Code Sign 失败了](verisign-server-not-working/failed.png)
+<!-- more -->
 
 原因是 code sign 默认的时间戳服务器无法访问了。
 

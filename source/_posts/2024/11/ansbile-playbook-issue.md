@@ -1,8 +1,7 @@
 ---
 title: PowerShell is not recognized as an internal or external command
 tags:
-  - ansible-playbook
-  - ansible
+  - Ansible
 categories:
   - DevOps
 date: 2024-11-18 00:00:00
@@ -12,6 +11,7 @@ author: shenxianpeng
 Recently, while setting up a new Windows Server 2022, I encountered an issue where my Ansible playbook, which previously worked without problems, failed to execute.
 
 Here’s the configuration I used for the Windows host in my Ansible inventory:
+<!-- more -->
 
 ```ini
 [jenkins-agent-windows:vars]

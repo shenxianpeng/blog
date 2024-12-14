@@ -1,8 +1,8 @@
 ---
 title: 如何设置 Docker 容器来作为 Jenkins 的构建 Agents
 tags:
-  - tag1
-  - tag2
+  - Docker
+  - Jenkins
 categories:
   - category
 author: shenxianpeng

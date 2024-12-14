@@ -2,7 +2,6 @@
 title: 什么是 Go ？Go 的优势和现状。初学者应该学习 Python 还是 Go？
 tags:
   - Go
-  - CLI
 categories:
   - Go
 date: 2022-01-18 22:01:31

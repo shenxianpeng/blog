@@ -12,6 +12,7 @@ categories:
 基本的思路是首先需要取到这个 element 的颜色值，然后跟预期的颜色进行对比。
 比如我要取下面这个会话窗口的颜色，选中这个图标，按 F12，查看这个图标的属性。发现Angular中的颜色属性不是 Elements 下，是在 Styles 下面，如何取到这个颜色值？
 
+<!-- more -->
 ![element](nightwatch-auto-compare-colors/color.png)
 
 这里会用到 getCssProperty 这个方法，具体如何使用，请看如下代码：

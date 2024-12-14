@@ -12,6 +12,7 @@ author: shenxianpeng
 ```c
 #include <stdio.h>
 
+<!-- more -->
 double power(double, int);  // 形式参数
 
 int main()

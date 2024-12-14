@@ -12,6 +12,7 @@ author: shenxianpeng
 
 ## Declarative Pipeline
 
+<!-- more -->
 Here is a test code from this ticket [JENKINS-46325](https://issues.jenkins.io/browse/JENKINS-46325)
 
 ```bash

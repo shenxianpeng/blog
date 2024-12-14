@@ -19,6 +19,7 @@ OpenJDK Runtime Environment (build 1.8.0_65-b17)
 OpenJDK 64-Bit Server VM (build 25.65-b01, mixed mode)
 ```
 
+<!-- more -->
 #### if not Here is an [article](https://www.javahelps.com/2015/03/install-oracle-jdk-in-ubuntu.html) telling you how to install it
 
 ## Create Node

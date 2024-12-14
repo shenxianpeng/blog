@@ -12,6 +12,7 @@ author: shenxianpeng
 
 Code Coverage is a measurement of how many lines, statements, or blocks of your code are tested using your suite of automated tests. It’s an essential metric to understand the quality of your QA efforts.
 
+<!-- more -->
 Code coverage shows you how much of your application is not covered by automated tests and is therefore vulnerable to defects. it is typically measured in percentage values – the closer to 100%, the better.
 
 When you’re trying to demonstrate test coverage to your higher-ups, code coverage tools (and other tools of the trade, of course) come in quite useful.

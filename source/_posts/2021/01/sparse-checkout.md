@@ -12,6 +12,7 @@ This post just a note to myself and it works on my environment. it has not been 
 
 ## Enable git sparse-checkout
 
+<!-- more -->
 Just in my case, I cloned a git repo exists problems on the Windows platform with some folder, in order to work on the Windows platform we get a work around solution as following:
 
 Case 1: when you not already cloned a repository

@@ -12,6 +12,7 @@ categories:
 
 以下面的 get License 数量为例，首先需要 get 一次 License 数量，然后进行一些列操作之后，再一次 get License 数量，比较这两次 License 数量值。
 
+<!-- more -->
 getLicenseNum 方法：
 
 ```javascript

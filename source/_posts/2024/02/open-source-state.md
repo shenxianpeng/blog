@@ -12,6 +12,7 @@ date: 2024-02-22 18:34:18
 ---
 
 最近看到一篇非常有信息量的关于人工智能、云原生、开源的趋势报告，出自于GitHub，翻译并分享给大家，以下是报告全文。
+<!-- more -->
 
 > 英文原文在这里：https://github.blog/2023-11-08-the-state-of-open-source-and-ai/?utm_source=banner&utm_medium=github&utm_campaign=octoverse
 

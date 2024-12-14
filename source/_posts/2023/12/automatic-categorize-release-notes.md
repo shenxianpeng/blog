@@ -21,6 +21,7 @@ date: 2023-12-27 18:25:39
 
 **本文将分享针对需要对 GitHub Release Notes 的内容按照标题进行自动分类的两种方式。**
 
+<!-- more -->
 ## 方式一：使用 GitHub 官方提供的功能
 
 方式一是通过 GitHub 提供的功能对 Release Notes 进行自动分类，即在仓库下面创建配置文件 `.github/release.yml`。这个功能与 GitHub 的 Issue Template 和 Pull Request Template 类似。具体的配置选项可以参考[官方文档](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes#configuration-options)

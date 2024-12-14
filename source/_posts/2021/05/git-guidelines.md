@@ -16,6 +16,7 @@ author: shenxianpeng
 
 废话不多说，看看都需要哪些设置吧。
 
+<!-- more -->
 ## 1. 配置 name 和 email
 
 ```bash

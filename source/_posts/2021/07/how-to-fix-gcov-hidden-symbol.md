@@ -14,6 +14,7 @@ author: shenxianpeng
 
 When we introduced Gocv to build my project for code coverage, I encountered the following error message:
 
+<!-- more -->
 ### error 1
 
 ```bash

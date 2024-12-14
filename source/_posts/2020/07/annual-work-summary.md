@@ -19,6 +19,7 @@ Summarize what did I do from 2019.03 to 2020.07 when I became a Build Release/De
 * Support all platforms branches/Pull Request build.
 * Provide auto-build as self-service for a developer, no need to involve build engineer, they could build themselves.
 
+<!-- more -->
 ## Integration
 
 * Integration with Jenkins

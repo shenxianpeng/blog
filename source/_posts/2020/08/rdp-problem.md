@@ -2,7 +2,6 @@
 title: Fixed "Remote session was disconnected because there are no Remote Desktop client access licenses available"
 tags:
   - Windows
-  - RDP
 categories:
   - Windows
 date: 2020-08-10 15:40:04

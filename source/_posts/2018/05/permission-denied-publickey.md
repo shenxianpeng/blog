@@ -12,6 +12,7 @@ author: shenxianpeng
 输入以下命令生成 SSH Key，注意在生成过程中最好输入新的名字，比如 id_rsa_github 和 id_rsa_bitbucket
 
 ```bash
+<!-- more -->
 ssh-keygen -t rsa -C "your_email@youremail.com"
 ```
 

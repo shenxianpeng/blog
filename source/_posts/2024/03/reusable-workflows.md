@@ -23,6 +23,7 @@ date: 2024-03-25 18:34:18
 
 总的来说，GitHub Reusable Workflows 使得在 GitHub Actions 中管理和组织工作流程变得更加灵活和可维护。
 
+<!-- more -->
 ## 如何使用 Reusable Workflows
 
 使用 GitHub Reusable Workflows 可以让你在 `.github` 或是其他仓库创建一个工作流，然后在其他仓库中调用该工作流。

@@ -12,6 +12,7 @@ categories:
 
 打开Terminal，执行：
 
+<!-- more -->
 ```bash
 sudo /sbin/modprobe tun
 ```

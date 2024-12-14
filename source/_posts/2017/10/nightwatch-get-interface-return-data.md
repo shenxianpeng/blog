@@ -12,6 +12,7 @@ author: shenxianpeng
 如何在 JavaScript 通过接口自动生成和返回接口数据呢？
 
 在自动化测试中常常遇到接口测试，或是使用的数据需要从接口返回，那么如何来实现这种情况？
+<!-- more -->
 例如我想通过 generateLicense 方法生成一个 license，然后在之后的自动化测试用例中使用这个生成的 license 继续做下一步的操作，例如注册 license 等。
 
 在 license.js 文件中创建一个 generateLicense 方法：

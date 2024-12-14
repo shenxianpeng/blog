@@ -1,8 +1,7 @@
 ---
 title: pip vs pipx 的区别
 tags:
-  - pip
-  - pipx
+  - Python
 categories:
   - Python
 date: 2024-11-26 01:21:00
@@ -15,6 +14,7 @@ author: shenxianpeng
 
 ---
 
+<!-- more -->
 #### **1. pip: 通用的 Python 包管理工具**
 
 **pip** 是 Python 官方推荐的包管理工具，用于安装和管理 Python 包（libraries）。

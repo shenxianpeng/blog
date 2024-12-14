@@ -2,8 +2,6 @@
 title: Docker Buildx Bake：加速构建和管理多平台镜像的利器
 tags:
  - Docker
- - Buildx
- - Bake
 categories:
  - Docker
 date: 2023-07-17 22:43:37
@@ -22,6 +20,7 @@ author: shenxianpeng
 
 其中，Docker Buildx Bake 是 Buildx 的一个子命令，也是本篇文章要重点介绍包括概念、优势、使用场景以及如何使用该功能来加速构建和管理多平台镜像。
 
+<!-- more -->
 ## 什么是 Docker Buildx Bake？
 
 Docker Buildx Bake 是 Docker Buildx 的一项功能，它旨在简化和加速镜像构建过程。Bake 是一种声明式的构建定义方式，它允许用户在一个命令中定义多个构建配置和目标平台，实现自动化批量构建和发布跨平台镜像。

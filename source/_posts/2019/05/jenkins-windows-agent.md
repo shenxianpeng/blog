@@ -12,6 +12,7 @@ author: shenxianpeng
 
 ### 1. [Download Java](https://www.java.com/en/download/)
 
+<!-- more -->
 #### 2. Configure Java Windows path
 
 ```bash

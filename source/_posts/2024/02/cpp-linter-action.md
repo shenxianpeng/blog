@@ -19,6 +19,7 @@ date: 2024-02-17 11:34:18
 
 其中 **Bump cpp-linter from 1.6.5 to 1.7.1 by @dependabot in [#191](https://github.com/cpp-linter/cpp-linter-action/pull/191)** 是其中最重要的变化。注：cpp-linter 包是​ cpp-linter-action 的核心依赖。
 
+<!-- more -->
 ## 什么是 cpp-linter-action
 
 如果你还不了解 [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) 可以查看我[之前的文章](https://shenxianpeng.github.io/2022/08/cpp-linter/)。

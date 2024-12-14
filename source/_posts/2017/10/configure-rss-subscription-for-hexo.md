@@ -12,6 +12,7 @@ ategories:
 
 ```bash
 npm install hexo-generator-feed --save
+<!-- more -->
 ```
 
 如果国内 npm 安装不成功，可以先安装 [cnpm](https://npm.taobao.org/)

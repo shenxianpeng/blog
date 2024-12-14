@@ -12,6 +12,7 @@ PyPA（Python Packaging Authority）是管理和维护 Python 包相关工具的
 
 以下是这些项目的介绍以及它们之间的关系：
 
+<!-- more -->
 1. pip
 
 作用：pip 是 Python 的包管理工具，用于安装和管理 Python 库和依赖项。通过 pip，用户可以从 Python Package Index (PyPI) 或其他包源下载并安装所需的 Python 包。

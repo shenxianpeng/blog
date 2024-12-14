@@ -12,6 +12,7 @@ author: shenxianpeng
 
 ```c
 $
+<!-- more -->
 ##
 $$$
 ###

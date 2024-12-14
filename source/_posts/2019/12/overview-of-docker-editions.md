@@ -12,6 +12,7 @@ author: shenxianpeng
 
 * Docker Engine - Community
 * Docker Engine - Enterprise
+<!-- more -->
 * Docker Enterprise
 
 Docker Engine - Community 是希望开始使用 Docker 并尝试基于容器的应用程序的个人开发人员和小型团队的理想选择。

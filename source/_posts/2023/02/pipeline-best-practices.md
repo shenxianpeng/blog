@@ -2,7 +2,6 @@
 title: 为什么我的 Jenkins Controller 越来越慢？可能犯了这些错误...
 tags:
   - Jenkins
-  - pipeline
 categories:
   - Jenkins
 author: shenxianpeng

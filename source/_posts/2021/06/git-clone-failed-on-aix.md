@@ -17,6 +17,7 @@ author: shenxianpeng
 1. Dependent module /usr/lib/libldap.a(libldap-2.4.so.2) could not be loaded.
 2. 通过 SSH 进行 git clone 出现 Authentication failed
 
+<!-- more -->
 ## 问题1：Dependent module /usr/lib/libldap.a(libldap-2.4.so.2) could not be loaded
 
 Jenkins 通过 **HTTPS** 来 checkout 代码的时候，出现了如下错误：

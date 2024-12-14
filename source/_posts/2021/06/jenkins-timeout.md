@@ -12,6 +12,7 @@ I've run into some situations when the build fails, perhaps because some process
 
 So, to fix this problem, I used `try` .. `catch` and `error` to make my Jenkins job failed, hopes this also helps you.
 
+<!-- more -->
 Please see the following example:
 
 ```java

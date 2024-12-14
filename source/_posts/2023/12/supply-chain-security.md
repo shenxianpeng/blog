@@ -25,6 +25,7 @@ Also, some well-known organizations such as Linux Foundation and CNCF have creat
 
 Based on this background, many organizations want to incorporate best practices from the open-source community into our CICD pipeline.
 
+<!-- more -->
 ## How to adopt Supply Chain Security for GitHub and Non-GitHub projects
 
 Next, I will show you how to adopt on both GitHub and Rocket Bitbucket as an example to show you how we integrate software supply chain security

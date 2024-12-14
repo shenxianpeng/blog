@@ -13,6 +13,7 @@ Python 软件基金会 (PFS) 或许大家比较熟知，它是开源 Python 编�
 
 继上次我们看完了 [Apache 的基础设施](2024/01/apache-services-and-tools/)介绍，本篇文章我们一起来看看 Python 软件基金会 (PFS) 的基础设施，看看可以从中学到哪些。
 
+<!-- more -->
 ## PSF 基础设施概述
 
 PSF 运行各种基础设施服务来支持其使命，从 [PyCon 站点](https://us.pycon.org/) 到 [CPython Mercurial](https://hg.python.org/) 服务器。本页的目标是列举所有这些服务，它们在哪里运行，以及主要联系人是谁。

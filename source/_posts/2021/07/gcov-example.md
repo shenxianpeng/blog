@@ -13,6 +13,7 @@ This article shares how to use Gcov and LCOV to metrics code coverage for C/C++ 
 If you want to know how Gcov works, or you need to metrics code coverage for C/C++ projects later,
 I hope this article is useful to you.
 
+<!-- more -->
 ## Problems
 
 The problem I'm having: A C/C++ project from decades ago has no unit tests, only regression tests,

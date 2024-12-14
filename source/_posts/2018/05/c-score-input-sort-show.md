@@ -12,6 +12,7 @@ author: shenxianpeng
 #include <stdio.h>
 #define N 5
 //Score Input Sort Show
+<!-- more -->
 void input(double[]);
 void sortAsc(double[]);
 void sortDesc(double[]);

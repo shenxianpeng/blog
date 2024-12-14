@@ -12,6 +12,7 @@ author: shenxianpeng
 
 最近又遇到了在 AIX 上通过 Jenkins agent 无法下载代码的情况，报了如下错误：
 
+<!-- more -->
 ```bash
 16:42:47  Caused by: hudson.plugins.git.GitException: Command "git init /disk1/agent/workspace/e_feature-aix-ci-build" returned status code 255:
 16:42:47  stdout:

@@ -12,6 +12,7 @@ author: shenxianpeng
 
 最近使用 AIX 7.1 从 Bitbucket 下载代码的时候遇到了这个错误：
 
+<!-- more -->
 `fatal: write error: A file cannot be larger than the value set by ulimit.`
 
 ```bash

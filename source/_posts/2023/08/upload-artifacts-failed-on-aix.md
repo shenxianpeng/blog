@@ -12,6 +12,7 @@ date: 2023-08-29 06:36:46
 Recently my CI pipeline suddenly does not work on AIX 7.1 with error `Caused by: javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.h: PKIX path building failed: java.security.cert.CertPathBuilderException: PKIXCertPathBuilderImpl could not build a valid CertPath.`.
 
 
+<!-- more -->
 <details>
 <summary>Click to see more details about the failure log.</summary>
 

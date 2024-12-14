@@ -1,7 +1,7 @@
 ---
 title: 从 “会写程序的干不过会写PPT的” —— 聊程序员写作
 tags:
-  - Writing
+  - Others
 categories:
   - Others
 date: 2020-05-30 21:32:08
