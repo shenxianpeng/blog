@@ -21,7 +21,11 @@
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2017 - <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
+      <nav id="sub-nav">
+        <a id="nav-linkedin-btn" class="nav-icon" href=https://www.linkedin.com/in/xianpeng-shen/ target="_blank" title="<%= __('LinkedIn') %>"></a>
+        <a id="nav-github-btn" class="nav-icon" href=https://github.com/shenxianpeng target="_blank" title="<%= __('GitHub') %>"></a>
+      </nav>
+      &copy; Copyright 2017 - <%= date(new Date(), 'YYYY') %> <%= "Xianpeng Shen" %><br>
       <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
