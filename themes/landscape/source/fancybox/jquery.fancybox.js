@@ -1,3 +1,4 @@
+import DOMPurify from 'dompurify';
 /*!
  * fancyBox - jQuery Plugin
  * version: 2.1.5 (Fri, 14 Jun 2013)
@@ -1886,6 +1887,7 @@
 				return;
 			}
 
+			text = DOMPurify.sanitize(text);
 			title = $('<div class="fancybox-title fancybox-title-' + type + '-wrap">' + text + '</div>');
 
 			switch (type) {

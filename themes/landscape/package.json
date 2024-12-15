@@ -8,5 +8,8 @@
     "theme",
     "landscape"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dompurify": "^3.2.3"
+  }
 }
