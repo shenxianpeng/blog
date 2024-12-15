@@ -1919,7 +1919,7 @@ import DOMPurify from 'dompurify';
 				break;
 			}
 
-			title[ (opts.position === 'top' ? 'prependTo'  : 'appendTo') ](target);
+			title.html(DOMPurify.sanitize(title.html()))[ (opts.position === 'top' ? 'prependTo'  : 'appendTo') ](target);
 		}
 	};
 
