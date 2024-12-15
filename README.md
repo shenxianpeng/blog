@@ -20,7 +20,7 @@ If you find any mistakes or questions, please feel free to ask via [issues](http
 ```bash
 git clone https://github.com/shenxianpeng/blog.git
 cd blog
-docker-compose up -d
+docker compose up -d
 ```
 
 ## Start web on host
@@ -30,9 +30,7 @@ docker-compose up -d
 ```bash
 git clone https://github.com/shenxianpeng/blog.git
 cd blog
-npm install                                 # Install dependencies
-npm install -g hexo-cli                     # Install hexo cli
-npm install hexo-deployer-git --save        # Install hexo deploy
+sudo make deps  # Install dependencies
 ```
 
 ### Build and run
@@ -52,11 +50,7 @@ Creating an post with following steps:
 2. Then update `post.md`, and fields such as `tags`, `categories` or `author`
 3. Once it's ready to post, move `post.md` to `source/_post/2022/01/` and run `hexo s` to see how it looks like
 
-If some all look good, run this following command to publish 🚀
-
-```bash
-make publish
-```
+If some all look good, push your changes to remote repository, CI will publish it automatically 🚀
 
 A new commit will be pushed to the blog static files [repository](https://github.com/shenxianpeng/shenxianpeng.github.io)
 
