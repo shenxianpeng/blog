@@ -13,7 +13,7 @@
 
 Share knowledge in the fields of CI/CD and DevOps. Blog URL: https://shenxianpeng.github.io
 
-If you find any mistakes or questions, please feel free to ask via [issues](https://github.com/shenxianpeng/blog/issues).
+If you find any mistakes or questions, please don't hesitate to ask via [issues](https://github.com/shenxianpeng/blog/issues).
 
 ## Start web with Docker
 
@@ -44,13 +44,13 @@ make help       # Help for make
 
 Posts are saved by folder, with the hierarchy of year/month.
 
-Creating an post with following steps:
+Creating a post with the following steps:
 
 1. Running command `hexo new "post"`(the post name MUST lowercase) can generate `post.md` under `source/_drafts`
 2. Then update `post.md`, and fields such as `tags`, `categories` or `author`
 3. Once it's ready to post, move `post.md` to `source/_post/2022/01/` and run `hexo s` to see how it looks like
 
-If some all look good, push your changes to remote repository, CI will publish it automatically 🚀
+If some all look good, push your changes to the remote repository, and CI will publish it automatically 🚀
 
 A new commit will be pushed to the blog static files [repository](https://github.com/shenxianpeng/shenxianpeng.github.io)
 
@@ -68,5 +68,3 @@ Format tools for publishing to other medium platforms
 [署名-非商业性使用-相同方式共享 3.0 中国大陆 (CC BY-NC-SA 3.0 CN)](https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh)
 
 [Attribution-NonCommercial-ShareAlike 3.0 China Mainland (CC BY-NC-SA 3.0 CN)](https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.en)
-
-![Blog views](https://gpvc.arturio.dev/blog)
