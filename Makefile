@@ -14,7 +14,7 @@ help: # Help
 
 deps: # Install dependencies
 	npm install
-	npm install -g hexo-cli
+	npm install hexo-cli
 
 clean: # Remove generated files and cache
 	@hexo clean
