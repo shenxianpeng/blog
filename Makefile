@@ -1,5 +1,9 @@
 SHELL := bash # we want bash behaviour in all shell invocations
 
+# Define the node_modules/.bin and append to PATH
+NODE_MODULES_BIN := node_modules/.bin
+export PATH := $(NODE_MODULES_BIN):$(PATH)
+
 # https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
 BOLD := \033[1m
 NORMAL := \033[0m
