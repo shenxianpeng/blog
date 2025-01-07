@@ -28,10 +28,10 @@ jobs:
             - 'source/about/**'
             - 'source/daily/**'
 
-    - name: Setup Node 14
+    - name: Setup Node 18
       uses: actions/setup-node@v4
       with:
-        node-version: '14'
+        node-version: '18'
 
     - name: Test
       run: |
@@ -41,7 +41,7 @@ jobs:
         make test
 
     - name: SonarCloud Scan
-      uses: SonarSource/sonarcloud-github-action@master
+      uses: SonarSource/sonarqube-scan-action@v4.2.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
