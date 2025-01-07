@@ -28,10 +28,10 @@ jobs:
             - 'source/about/**'
             - 'source/daily/**'
 
-    - name: Setup Node 14
+    - name: Setup Node 18
       uses: actions/setup-node@v4
       with:
-        node-version: '14'
+        node-version: '18'
 
     - name: Test
       run: |
