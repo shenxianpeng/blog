@@ -2,11 +2,11 @@
 title: Open Source Contributions
 ---
 
-> I'm also an open source enthusiast, and starting today(4/3/2024), I'll keep track of the projects I've contributed to 💪
+> I'm also an open source contributor, and starting today(4/3/2024), I will track of the projects I've contributed to 💪
 
-## Open Source Contributions
+## Main Contributions
 
-My biggest contributions in open source was I created [cpp-linter](https://github.com/cpp-linter/) and [commit-check](https://github.com/commit-check) organizations and repositories which include:
+My biggest contributions in open source was I created [cpp-linter](https://github.com/cpp-linter/), [commit-check](https://github.com/commit-check) and [conventional-branch](https://github.com/conventional-branch) organizations and repositories which include:
 
 1. [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action)
 2. [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks)
@@ -16,8 +16,9 @@ My biggest contributions in open source was I created [cpp-linter](https://githu
 6. [cpp-linter](https://github.com/cpp-linter/cpp-linter)
 7. [commit-check](https://github.com/commit-check/commit-check)
 8. [commit-check-action](https://github.com/commit-check/commit-check-action)
+9. [conventional-branch](https://github.com/conventional-branch/conventional-branch)
 
-## Other contributed projects
+## Other Contributions
 
 I also contributed to other open source projects, such as: PyPA, Jenkins, Ansible etc.
 
@@ -28,3 +29,4 @@ I also contributed to other open source projects, such as: PyPA, Jenkins, Ansibl
 * jenkinsci/helm-charts: [PR-910](https://github.com/jenkinsci/helm-charts/pull/910)
 * jenkins-infra/jenkins.io: [PR-5035](https://github.com/jenkins-infra/jenkins.io/pull/5035)
 * jenkins-x/jx-docs: [PR-1777](https://github.com/jenkins-x/jx-docs/pull/1777)
+* and many more...
