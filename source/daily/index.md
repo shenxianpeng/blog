@@ -6,6 +6,14 @@ title: Daily
 
 ---
 
+## 1/25/2025 - I have been Vilnius for 6 months
+
+I have been living and working in Vilnius for six months now. I am satisfied with my decision to move here, the work and life are all great.
+
+The only drawback is the weather during winter, as it can be quite gloomy. However, the summer season has been wonderful so far.
+
+I am looking forward to my upcoming trip to China, where I will be able to see my family and enjoy some sunshine. I will return soon.
+
 ## 7/26/2024
 
 I have arrived LT last week and this week is my first week working in our Vilnius office.
