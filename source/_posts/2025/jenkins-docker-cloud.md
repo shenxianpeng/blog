@@ -1,5 +1,5 @@
 ---
-title: Why use Jenkins Docker Cloud
+title: How to use Jenkins Docker Cloud
 tags:
   - Cloud
   - Docker
@@ -99,10 +99,6 @@ pipeline {
 ```
 
 Here is more details about using Docker with pipeline: https://www.jenkins.io/doc/book/pipeline/docker/
-
-## Last but not least
-
-I don't like to use `docker { ... }` too much, becuase it need to work well with you host environment. otherwise, you may have permission issues when you clean workspace at your `post` stage. then you have to use root permissions to clean workspace to avoid your host disk is full.
 
 Feel free to comment if you have any questions.
 
