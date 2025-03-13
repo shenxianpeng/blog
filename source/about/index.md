@@ -6,9 +6,9 @@ author: shenxianpeng
 
 欢迎来到我的个人主页！我是沈显鹏，一名 DevOps/Build/Release 工程师，也是微信公众号「DevOps攻城狮」的作者。
 
-我喜欢研究和分享关于 DevOps、持续集成和持续交付的知识。我创建并贡献了多个开源项目，包括 [cpp-linter](https://github.com/cpp-linter)、[commit-check](https://github.com/commit-check) 和 [conventional-branch](https://github.com/conventional-branch)。[PyPA](https://github.com/pypa) 的贡献者。
+我热衷于研究和分享 DevOps、持续集成 (CI) 和持续交付 (CD) 相关的技术。我创建并贡献了多个开源项目，包括 [cpp-linter](https://github.com/cpp-linter)、[commit-check](https://github.com/commit-check) 和 [conventional-branch](https://github.com/conventional-branch)。并且是 [PyPA](https://github.com/pypa) 的贡献者。
 
-如果你对我的工作感兴趣，请查看我的 [Github](https://github.com/shenxianpeng) 和 微信公众号「DevOps攻城狮」。
+如果你对我的工作感兴趣，欢迎访问我的 [Github](https://github.com/shenxianpeng) 和 关注微信公众号「DevOps攻城狮」。
 
 如果你有任何问题或者想要与我交流，请随时给我发送邮件。
 
@@ -23,32 +23,32 @@ author: shenxianpeng
 * 🤙🏻 [简历](https://shenxianpeng.github.io/resume-cn/)
 <!-- * 🤙🏻 [领英](https://www.linkedin.com/in/xianpeng-shen/) -->
 
-如果你喜欢其中的文章，欢迎给我留言。
+如果你喜欢我的文章，欢迎留言交流。
 
-你可以转载这里的文章，但请加入文章作者 “沈显鹏” 和出处 “https://shenxianpeng.github.io” 。
+**转载须知**：如果你想转载这里的文章，请注明作者「沈显鹏」及出处「https://shenxianpeng.github.io」。
 
 ---
 
 # About Me
 
-Welcome to my personal website! I am Xianpeng Shen, a DevOps/Build/Release Engineer, and the author of the official account DevOps-Engineer.
+Welcome to my personal website! I'm Xianpeng Shen, a DevOps/Build/Release Engineer, and the author of the WeChat official account **DevOps-Engineer**.
 
-I am passionate about DevOps, Continuous Integration, and Continuous Delivery. I have created and contributed to several open-source projects, including [cpp-linter](https://github.com/cpp-linter), [commit-check](https://github.com/commit-check), and [conventional-branch](https://github.com/conventional-branch). [PyPA](https://github.com/pypa) contributor.
+I am passionate about DevOps, Continuous Integration(CI), and Continuous Delivery(CD). I have created and maintained several open-source projects, including [cpp-linter](https://github.com/cpp-linter), [commit-check](https://github.com/commit-check), and [conventional-branch](https://github.com/conventional-branch). I'm also a contributor to [PyPA](https://github.com/pypa).
 
-If you are interested in my work, please check out above links.
+If you're interested in my work, feel free to explore the links below.
 
-If you have any questions or would like to discuss with me, feel free to send me an email.
+If you have any questions or would like to discuss DevOps topics, feel free to reach out via email.
 
-Follow me on 👇
+Connect with me 👇
 
 * 👨‍💻 [Github](https://github.com/shenxianpeng)
 * 📧 [Email](mailto:xianpeng.shen@gmail.com)
 * 🤙🏻 [CV](https://shenxianpeng.github.io/resume)
 * 🚩 [RSS Feed](https://shenxianpeng.github.io/atom.xml)
 
-If you like any of the articles, feel free to leave me a comment.
+If you enjoy any of my articles, feel free to leave a comment.
 
-You can quote my articles, but please add the author "Xianpeng Shen" and the source "https://shenxianpeng.github.io".
+**Content Usage**: You are welcome to reference my articles, but please credit the author "Xianpeng Shen" and link to the source "https://shenxianpeng.github.io".
 
 ---
 

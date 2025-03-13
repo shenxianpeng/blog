@@ -2,11 +2,9 @@
 title: Open Source Contributions
 ---
 
-> I'm also an open source contributor, and starting today(4/3/2024), I will track of the projects I've contributed to 💪
+## **Major Contributions** - cpp-linter and commit-check
 
-## Main Contributions
-
-My main contributions in open source was I created and maintain [cpp-linter](https://github.com/cpp-linter/), [commit-check](https://github.com/commit-check) and [conventional-branch](https://github.com/conventional-branch) organizations.
+My primary contributions include [cpp-linter](https://github.com/cpp-linter/), [commit-check](https://github.com/commit-check) and [conventional-branch](https://github.com/conventional-branch) projects, which I created and continue to maintain alongside other contributors.
 
 * [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action)
 * [cpp-linter-hooks](https://github.com/cpp-linter/cpp-linter-hooks)
@@ -18,13 +16,13 @@ My main contributions in open source was I created and maintain [cpp-linter](htt
 * [commit-check-action](https://github.com/commit-check/commit-check-action)
 * [conventional-branch](https://github.com/conventional-branch/conventional-branch)
 
-## PyPA volunteer
+## **Secondary Contributions** - PyPA (Python Packaging Authority)
 
-* [all merged pull requests](https://github.com/pulls?q=is%3Apr+author%3Ashenxianpeng+archived%3Afalse+is%3Amerged+user%3Apypa) to [PyPA](https://github.com/pypa).
+I have contributed [several merged pull requests](https://github.com/pulls?q=is%3Apr+author%3Ashenxianpeng+archived%3Afalse+is%3Amerged+user%3Apypa) to [PyPA](https://github.com/pypa), supporting the Python packaging ecosystem.
 
 ## Other Contributions
 
-I also like to contribute other open source projects, such as: CPython, Ansible, Jenkins etc.
+Beyond my primary projects, I actively contribute to various open-source projects, including CPython, Ansible, Jenkins, and more. for examples:
 
 * [python/cpython/pull/130596](https://github.com/python/cpython/pull/130596)
 * [ansible-collections/community.general/pull/8176](https://github.com/ansible-collections/community.general/pull/8176)
