@@ -25,6 +25,8 @@ Broadcom（博通）收购 VMware 带来的影响。2023 年 Broadcom 完成了�
 
 ## 替代方案
 
+<!-- more -->
+
 今天就分享一个对于企业用户的潜在替换方案 —— Nutanix。
 
 它是一个超融合基础设施（HCI）（替代 VMware vSAN / vSphere），适用于需要整合计算、存储、网络资源的企业，希望减少对 VMware vSAN 或 vSphere 的依赖。
