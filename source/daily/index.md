@@ -6,6 +6,14 @@ title: Daily
 
 ---
 
+## 3/15/2025 - I appreciate people who say great things about me behind my back
+
+Today, one of my colleagues shared with me:
+
+"For example, Xianpeng does a lot of work, but he’s very modest, so some people might take advantage of that. You have to stand-up for yourself a bit."
+
+I can’t thank him directly, as he’ll know who passed the message to me, but I truly appreciate him for saying these words.
+
 ## 1/25/2025 - I have been Vilnius for 6 months
 
 I have been living and working in Vilnius for six months now. I am satisfied with my decision to move here, the work and life are all great.
