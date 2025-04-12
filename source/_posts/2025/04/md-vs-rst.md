@@ -1,5 +1,5 @@
 ---
-title: Markdown vs RST：写文档时该怎么选？
+title: Markdown 不香了吗？为什么越来越多 Python 项目用 RST？
 tags:
   - Markdown
   - RST
@@ -15,7 +15,7 @@ date: 2025-04-11 01:00:00
 
 那它们之间到底有什么区别？又该在什么场景下选哪个呢？
 
-最近我将 [gitstats](https://github.com/shenxianpeng/gitstats) 项目的文档从 Markdown 转换为 RST，并发布到 [readthedocs](https://gitstats.readthedocs.io/) 上，这篇文章就来聊聊我的一些实践体会。
+最近我将 [gitstats](https://github.com/shenxianpeng/gitstats) 项目的文档从 Markdown 转换为 RST，并发布到 [ReadTheDocs](https://gitstats.readthedocs.io/) 上，这篇文章就来聊聊我的一些实践体会。
 
 <!-- more -->
 
