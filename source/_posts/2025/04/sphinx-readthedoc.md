@@ -42,6 +42,8 @@ sphinx_rtd_theme==1.1.1
 myst_parser==0.18.1
 ```
 
+安装依赖：
+
 ```bash
 pip install -r docs/requirements.txt
 ```
@@ -49,6 +51,7 @@ pip install -r docs/requirements.txt
 说明：
 
 - `sphinx-rtd-theme` 是 ReadTheDocs 使用的默认主题
+- `myst-parser` 用于支持 Markdown
 
 ### 2. 初始化文档项目结构
 
@@ -104,11 +107,10 @@ extensions = [
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
 version: 2
 
-# Set the OS, Python version, and other tools you might need
 build:
   os: ubuntu-24.04
   tools:
-    python: "3.12" # use 3.12 because 3.13 removed imghdr module, it will cause error
+    python: "3.12"
 
 sphinx:
    configuration: docs/source/conf.py
