@@ -26,7 +26,9 @@ jobs:
           source:
             - 'source/_posts/**'
             - 'source/about/**'
+            - 'source/contributions/**'
             - 'source/daily/**'
+            - 'themes/**'
 
     - name: Setup Node 18
       uses: actions/setup-node@v4
