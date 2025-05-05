@@ -1,5 +1,5 @@
 ---
-title: 还在用 pip 和 venv？赶紧试试 uv，别落伍了！
+title: 还在用 pip 和 venv？那你可真落伍了，赶紧体验 uv！
 tags:
   - uv
   - pip
