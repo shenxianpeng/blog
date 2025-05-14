@@ -68,4 +68,3 @@ Format tools for publishing to other medium platforms
 [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
 
 [![](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)]()
-

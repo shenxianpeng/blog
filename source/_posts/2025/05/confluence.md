@@ -22,6 +22,8 @@ date: 2025-05-14 21:41:00
 
 相比之下，开源社区在这方面反而做得很好。
 
+<!-- more -->
+
 以 Python 社区为例：
 
 * Python 官网（[www.python.org）的内容，是通过](http://www.python.org）的内容，是通过) GitHub 上的 [python/pythondotorg](https://github.com/python/pythondotorg) 仓库维护的；
