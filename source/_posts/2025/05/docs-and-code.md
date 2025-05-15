@@ -9,7 +9,6 @@ author: shenxianpeng
 date: 2025-05-14 21:41:00
 ---
 
-
 不知道你是否也在企业中使用过 Confluence，或者其他类似的 Wiki 工具。刚接触它时，我觉得这玩意儿真不错：功能强大、支持各种排版样式、可以插入图片、视频、图标，还能查看历史版本，使用体验比 Git 轻松太多了。
 
 但慢慢地，我也发现了它的一个巨大问题：**每个人都可以创建并维护自己的 Wiki 页面**。
@@ -26,8 +25,8 @@ date: 2025-05-14 21:41:00
 
 以 Python 社区为例：
 
-* Python 官网（[www.python.org）的内容，是通过](http://www.python.org）的内容，是通过) GitHub 上的 [python/pythondotorg](https://github.com/python/pythondotorg) 仓库维护的；
-* 开发者指南（[https://devguide.python.org/）也托管在](https://devguide.python.org/）也托管在) [python/devguide](https://github.com/python/devguide) 仓库。
+* Python 官网 https://www.python.org 的内容，是通过 GitHub 上的 [python/pythondotorg](https://github.com/python/pythondotorg) 仓库维护的；
+* 开发者指南 https://devguide.python.org 的内容，托管在 GitHub 上的 [python/devguide](https://github.com/python/devguide) 仓库。
 
 不管是谁，只要对这些文档有修改建议，都必须通过 PR 提交，经过审查后才能合并。而且因为是开源项目，社区用户也会主动参与反馈和改进，这也帮助文档长期保持高质量。
 
@@ -41,7 +40,11 @@ date: 2025-05-14 21:41:00
 
 所以文档治理这件事，本质上和工具无关，关键在人。**在没有文化和流程支撑的前提下，再先进的工具也可能变成信息垃圾的堆放地。**
 
-你所在的公司又是怎么做文档管理的呢？欢迎在评论区分享交流。
+文档和代码其实不分家。在开源社区的经历让我深有感触：真正优秀的人，往往能独立撑起一个团队的质量与节奏。他们热爱技术、主动负责、乐于分享，是推动项目健康发展的核心力量。
+
+反观一些企业项目，问题往往出在相反的方向。当团队缺乏主人翁意识，人员流动频繁，或者有些人能力一般却意见最多，最终只会在本就技术债累累的代码上继续堆，越堆越多。
+
+你所在的公司又是如何管理内部文档和代码的呢？欢迎在评论区留言交流。
 
 ---
 
