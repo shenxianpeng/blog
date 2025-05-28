@@ -1,7 +1,7 @@
 ---
 title: 选择往往比努力更重要
 tags:
-  - Thought
+  - Thoughts
   - Summary
 categories:
   - Others

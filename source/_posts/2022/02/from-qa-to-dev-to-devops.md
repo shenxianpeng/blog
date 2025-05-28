@@ -1,7 +1,7 @@
 ---
 title: 从QA到DEV到DEVOPS，码字五年有哪些收获
 tags:
-  - Thought
+  - Thoughts
 categories:
   - Others
 date: 2022-02-21 00:15:00
