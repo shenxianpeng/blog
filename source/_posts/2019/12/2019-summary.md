@@ -1,7 +1,7 @@
 ---
 title: 2019 年终总结
 tags:
-  - Thought
+  - Thoughts
   - Summary
 categories:
   - Others

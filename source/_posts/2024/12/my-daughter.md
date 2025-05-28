@@ -1,7 +1,7 @@
 ---
 title: 我的女儿
 tags:
-  - Thought
+  - Thoughts
 categories:
   - Others
 date: 2024-12-28 02:00:00

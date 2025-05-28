@@ -2,7 +2,7 @@
 title: 从测试转开发
 date: 2018-12-26 22:57:20
 tags:
-  - Thought
+  - Thoughts
   - Summary
 categories:
   - Others
