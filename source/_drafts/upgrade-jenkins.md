@@ -16,7 +16,7 @@ author: shenxianpeng
 定期版：
 
 ```log
-[2021-01-30 23:53:40] [windows-agents] Connecting to dendevu2uvbw01.dev.rocketsoftware.com
+[2021-01-30 23:53:40] [windows-agents] Connecting to devbw01.dev.software.com
 Checking if Java exists
 java -version returned 11.0.2.
 [2021-01-30 23:53:47] [windows-agents] Copying jenkins-agent.xml
@@ -56,7 +56,7 @@ then your config file will be like this
 Back to works
 
 ```log
-[2021-01-31 00:05:01] [windows-agents] Connecting to dendevmvasuvb02.dev.rocketsoftware.com
+[2021-01-31 00:05:01] [windows-agents] Connecting to devbw01.dev.software.com
 Checking if Java exists
 java -version returned 11.0.2.
 [2021-01-31 00:05:02] [windows-agents] Copying jenkins-agent.xml

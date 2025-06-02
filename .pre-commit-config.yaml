@@ -12,7 +12,7 @@ repos:
       - id: check-yaml
       - id: debug-statements
   - repo: https://github.com/commit-check/commit-check
-    rev: v0.9.5
+    rev: v0.9.6
     hooks:
       - id: check-message
       - id: check-branch
