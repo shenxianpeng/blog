@@ -29,6 +29,8 @@ But the problem is:
 > Sometimes, during merges, an ongoing build gets aborted midway or near completion because a new build was triggered for the same branch.
 > They requested that if a build is already running, new builds triggered on the same branch should wait in the queue instead of aborting the current build.
 
+<!-- more -->
+
 ### Before the changes:
 
 Let's take a picture bellow of the release/x.x.x branch.
