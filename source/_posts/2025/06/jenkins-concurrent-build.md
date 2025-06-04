@@ -1,5 +1,5 @@
 ---
-title: How to change disableConcurrentBuilds abortPrevious value in Jenkins?
+title: How to Change abortPrevious Value in Jenkins?
 tags:
   - Jenkins
   - DevOps
@@ -8,7 +8,6 @@ categories:
 author: shenxianpeng
 date: 2025-06-04 23:41:00
 ---
-
 
 ## Background
 
@@ -93,4 +92,4 @@ Now, for the `devel` and `release` branches in multi-branch pipeline:
 
 ---
 
-转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「DevOps攻城狮」
+Please credit the author and source when reposting this article. Commercial use is not permitted. You're welcome to subscribe to my blog via RSS.
