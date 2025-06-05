@@ -66,7 +66,7 @@ Here the code snap about how to implement it.
 def call() {
     def isAboutPrevious = true
 
-    if (env.BRANCH_NAME.startsWith('devel') || env.BRANCH_NAME.startsWith('release/')) {
+    if (env.BRANCH_NAME == 'devel' || env.BRANCH_NAME.startsWith('release/')) {
         isAboutPrevious = false // disable abortPrevious for devel and release branches.
     }
 
