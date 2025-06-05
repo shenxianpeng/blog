@@ -34,7 +34,7 @@ But the problem is:
 
 Let's take a picture bellow of the release/x.x.x branch.
 
-![What's the different?](jenkins-concurrent-build/image.png)
+![What's the difference?](jenkins-concurrent-build/image.png)
 
 * Job #104 was aborted because a new merge was triggered on the release/x.x.x branch.
 * Job #105 was also aborted for the same reason, due to another new merge on the release/x.x.x branch.
