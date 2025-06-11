@@ -1,12 +1,12 @@
 ---
-title: Bitbucket 提交信息模板实践：让 Git 记录 PR 的全部价值
+title: 提升代码可追溯性：一招把 PR 描述写入 Git commit
 tags:
   - Git
   - Bitbucket
 categories:
   - Git
 author: shenxianpeng
-date: 2025-06-11 22:41:00
+date: 2025-06-12 12:32:00
 ---
 
 ## 背景
