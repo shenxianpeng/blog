@@ -24,6 +24,8 @@ disableConcurrentBuilds abortPrevious: true
 
 这段代码你可能在不少 Jenkinsfile 中看到，就算是 Jenkins 团队他们自己的 CI 也是这样设置的。
 
+<!--more-->
+
 ![Jenkins buildPlugin.groovy](jenkins-concurrent-build-cn/2.png)
 
 这样做的好处是显而易见的，但在某些情况时也带来了一个新的问题，比如：
@@ -31,8 +33,6 @@ disableConcurrentBuilds abortPrevious: true
 > 当一个 release 分支正在运行的构建任务，会被新的合并触发的构建中断。尤其是当它即将完成时，却因为新的合并代码触发了新的构建任务，导致前一个任务被中断。
 
 这让 QA 同事很抓狂：一个马上就要交付测试的 Build，结果因为新的合并被中断了，还得重新等待……
-
-<!--more-->
 
 于是他们提出了一个需求：
 
