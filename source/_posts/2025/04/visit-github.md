@@ -1,5 +1,7 @@
 ---
 title: 访问 GitHub 的那点坚持，快磨没了
+description: |
+  GitHub 的访问问题让很多程序员感到困扰，尤其是在国内。本文分享了个人的体验和对网络问题的思考。
 tags:
   - GitHub
 categories:

@@ -1,5 +1,7 @@
 ---
 title: CPython 停止更新 Copyright 了，为什么？
+description: |
+  CPython 停止更新 Copyright 的原因和过程。了解 Python 项目法律团队的建议，以及如何处理开源项目中的版权声明。
 tags:
   - Python
   - Copyright

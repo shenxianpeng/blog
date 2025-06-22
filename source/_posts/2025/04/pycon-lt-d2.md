@@ -1,5 +1,7 @@
 ---
 title: 全程记录｜PyCon LT 2025 第二天：被几位女性开发者圈粉了
+description: |
+  今天是 PyCon LT 2025 的 Data Day，主题是 Dataframes、Databases、Orchestration。虽然不太熟悉这些领域，但几位女性讲者的演讲让我印象深刻，收获颇丰。
 tags:
   - PyCon
   - Python

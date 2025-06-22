@@ -1,7 +1,9 @@
 ---
 title: 为什么越来越多的企业用户开始放弃 VMware？
+description: |
+  Broadcom 收购 VMware 后，许多企业用户开始寻找替代方案。Nutanix 作为一个超融合基础设施（HCI）解决方案，提供了更低的成本和更简洁的管理界面，是一个不错的选择。
 tags:
-  - Nutani
+  - Nutanix
   - VMware
 categories:
   - DevOps

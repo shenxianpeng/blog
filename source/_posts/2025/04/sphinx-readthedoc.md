@@ -1,5 +1,7 @@
 ---
 title: 从零配置 Sphinx + ReadTheDocs：快速部署自动化文档
+description: |
+  在开源项目或团队协作中，Sphinx + ReadTheDocs 是一个易于维护、可自动部署的文档系统。本文记录了配置过程和注意事项。
 tags:
   - Sphinx
   - ReadTheDocs

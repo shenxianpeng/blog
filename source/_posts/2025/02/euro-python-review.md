@@ -1,5 +1,7 @@
 ---
 title: 为什么我选择参与 EuroPython 2025 评审？
+description: |
+  最近工作之余没怎么贡献代码，主要把时间都用在了评审 EuroPython 2025 （欧洲 Python 2025 大会）的提案上了。
 tags:
   - EuroPython
   - Reviewer

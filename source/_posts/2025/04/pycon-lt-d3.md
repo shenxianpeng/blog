@@ -1,5 +1,7 @@
 ---
 title: 全程记录｜PyCon LT 2025 第三天：AI 能取代你吗？
+description: |
+  今天是 PyCon LT 2025 的最后一天，主题是 AI and ML Day。分享了几位女性讲者的精彩演讲，以及对数据科学和 AI 的新认识。
 tags:
   - PyCon
   - Python

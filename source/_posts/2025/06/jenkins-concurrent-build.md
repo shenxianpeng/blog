@@ -1,5 +1,7 @@
 ---
 title: How to Change abortPrevious Value in Jenkins?
+description: |
+  In Jenkins, the `disableConcurrentBuilds` option is used to manage concurrent builds. This article explains how to conditionally set the `abortPrevious` value based on the branch being built, allowing for more flexible build management.
 tags:
   - Jenkins
   - DevOps

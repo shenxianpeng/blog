@@ -1,5 +1,7 @@
 ---
 title: 微软、NASA 都在用？我用业余时间维护了 4 年的项目破百了
+description: |
+  cpp-linter-action 是一个 GitHub Action，提供 C/C++ 代码的格式化和静态分析功能。它使用 clang-format 和 clang-tidy，支持多种配置和自定义规则。项目自 2021 年创建以来，已被多个知名组织和开源项目使用。
 tags:
   - clang-format
   - clang-tidy

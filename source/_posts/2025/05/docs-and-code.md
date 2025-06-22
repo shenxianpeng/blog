@@ -1,5 +1,7 @@
 ---
 title: 还在用 Wiki/Confluence？你可能在生产垃圾
+description: |
+  在企业中，Wiki 和 Confluence 等文档工具如果缺乏统一管理和审核机制，可能会导致信息混乱和知识沉淀失败。本文探讨了如何避免这种情况，并借鉴开源社区的成功经验。
 tags:
   - Wiki
   - Confluence
