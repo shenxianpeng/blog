@@ -11,7 +11,7 @@ date: 2025-06-02 23:41:00
 
 今天这篇文章，起因是我看到前同事发的一条朋友圈。
 
-![同事的朋友圈](code-refactor/image.png)
+<img src="code-refactor/image.png" alt="同事的朋友圈" width="400" height="300" />
 
 我感觉他这是在**赤裸裸地夸我** ：）
 （不好意思，得瑟一下~）
