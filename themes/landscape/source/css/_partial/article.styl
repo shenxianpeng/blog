@@ -279,6 +279,14 @@ $article-share-link
   &:hover
     color: #fff
 
+.article-share-linkedin
+  @extend $article-share-link
+  &:before
+    content: "\f0e1"
+  &:hover
+    background: color-linkedin
+    text-shadow: 0 1px darken(color-linkedin, 20%)
+
 .article-share-twitter
   @extend $article-share-link
   &:before
