@@ -1,5 +1,7 @@
 ---
 title: How to use Jenkins Docker Cloud
+description: |
+  This article explains how to use Jenkins Docker Cloud for building and deploying applications, including setting up a Docker host and creating custom Docker images.
 tags:
   - Cloud
   - Docker

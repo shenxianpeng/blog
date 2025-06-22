@@ -1,5 +1,7 @@
 ---
 title: 还在用 pip 和 venv？那你可真落伍了，赶紧体验 uv！
+description: |
+  uv 是一个由 Astral 团队开发的 Python 包管理工具，它能替代 pip、venv、pip-tools 的功能，提供更快的依赖解析速度和更现代的项目管理方式。
 tags:
   - uv
   - pip

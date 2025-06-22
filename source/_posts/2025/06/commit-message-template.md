@@ -1,5 +1,7 @@
 ---
 title: 提升代码可追溯性：一招把 PR 描述写入 Git commit
+description: |
+  在 Bitbucket 中使用 Commit Message Templates 功能，将 PR 描述自动写入 Git commit message，确保关键信息不会随工具变更而丢失。
 tags:
   - Git
   - Bitbucket

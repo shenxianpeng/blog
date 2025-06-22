@@ -1,5 +1,7 @@
 ---
 title: 如何优雅地控制 Jenkins 构建是否中断？只看这篇
+description: |
+  在 Jenkins 中，`disableConcurrentBuilds` 选项用于管理并发构建。本文介绍了如何根据分支类型动态设置 `abortPrevious` 的值，从而实现更灵活的构建管理。
 tags:
   - Jenkins
   - DevOps

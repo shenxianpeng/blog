@@ -1,5 +1,7 @@
 ---
 title: CI/CD 不是一次性的项目，而是一个不断演进的系统
+description: |
+  在 DevOps 中，CI/CD 流水线需要持续维护和重构。本文探讨了为什么 CI/CD 不是一次性的建设项目，而是一个需要长期投入和持续演进的系统。
 tags:
   - CI/CD
   - DevOps

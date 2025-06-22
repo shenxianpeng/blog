@@ -1,5 +1,7 @@
 ---
 title: 全程记录｜PyCon LT 2025 第一天：我在异国 Python 大会上的见闻
+description: |
+  参加了 PyCon LT 2025 的第一天，分享了演讲内容、个人感受以及对 Python 社区的思考。
 tags:
   - PyCon
   - Python

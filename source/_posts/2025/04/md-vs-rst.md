@@ -1,5 +1,7 @@
 ---
 title: Markdown 不香了吗？为什么越来越多 Python 项目用 RST？
+description: |
+  Markdown 和 reStructuredText（RST）是两种常用的标记语言。本文对比了它们的优缺点，并分享了在不同场景下的使用建议。
 tags:
   - Markdown
   - RST
