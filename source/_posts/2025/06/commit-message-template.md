@@ -41,7 +41,7 @@ Bitbucket 支持在合并 PR 时自动生成 commit message，并允许通过模
 
 > 我看到了 GitLab 也有类似的功能，但 GitHub 似乎没有。
 >
-> GitLab commit templates: https://docs.gitlab.com/user/project/merge_requests/commit_templates/
+> 参考 [GitLab Commit Templates 官方文档](https://docs.gitlab.com/user/project/merge_requests/commit_templates/)
 
 你可以在模板中使用以下变量：
 
