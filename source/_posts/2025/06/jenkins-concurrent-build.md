@@ -94,4 +94,4 @@ Now, for the `devel` and `release` branches in multi-branch pipeline:
 
 ---
 
-Please credit the author and source when reposting this article. Commercial use is not permitted. You're welcome to subscribe to my blog via RSS.
+Please credit the author and source when reposing this article. Commercial use is not permitted. You're welcome to subscribe to my blog via RSS.
