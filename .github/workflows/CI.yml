@@ -42,15 +42,6 @@ jobs:
         sleep 20
         make test
 
-    - name: SonarCloud Scan
-      uses: SonarSource/sonarqube-scan-action@v5.2.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      with:
-        # Set the sonar.projectBaseDir analysis property
-        projectBaseDir: .
-
     - name: Package
       if: steps.filter.outputs.source == 'true' || github.event_name == 'workflow_dispatch'
       run: make package
