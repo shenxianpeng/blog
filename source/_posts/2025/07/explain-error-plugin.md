@@ -1,5 +1,5 @@
 ---
-title: Jenkins 插件中心居然还没有这个功能？我写了一个！🤖
+title: Jenkins 插件中心居然还没有 AI 插件？我写了一个！🤖
 description: |
 
 tags:
