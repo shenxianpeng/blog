@@ -29,6 +29,8 @@ date: 2025-08-03 21:41:00
 
 更新后，在插件配置中，你可以选择使用 Google Gemini 模型进行错误分析。只需在 `Manage Jenkins → Configure System` 页面下的 **Explain Error Plugin Configuration** 中，将模型设置为 `Google Gemini`，并提供相应的 API 地址和密钥。
 
+<!-- more -->
+
 ![Explain Error Plugin Configuration](explain-error-plugin-support-gemini/explain-error-plugin-configuration.png)
 
 点击 Test Configuration，确保你的 Google Gemini API Key、URL 和 Model 均已正确填写且可正常访问。
