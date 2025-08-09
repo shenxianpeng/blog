@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NuGet on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/nuget/</link>
+    <description>Recent content in NuGet on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Fri, 25 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/nuget/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>创建 NuGet Organization 的遇到的坑</title>
+      <link>http://localhost:1313/posts/nuget/</link>
+      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/nuget/</guid>
+      <description>本文记录了在创建 NuGet Organization 时遇到的问题和解决方法，特别是关于公司邮箱地址的使用。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/nuget/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

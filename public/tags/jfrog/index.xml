@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JFrog on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/jfrog/</link>
+    <description>Recent content in JFrog on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sat, 28 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/jfrog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>🧊2025软件供应链现状报告：开源时代，我们究竟在和谁打交道？</title>
+      <link>http://localhost:1313/posts/jfrog-report/</link>
+      <pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jfrog-report/</guid>
+      <description>JFrog发布的《2025软件供应链现状报告》揭示了软件供应链的变化和风险，尤其是AI模型的安全问题。本文分享了报告中的关键发现和对DevOps从业者的启示。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jfrog-report/featured.png" />
+    </item>
+    
+    <item>
+      <title>当 Artifactory “Download Folder 功能被禁用”时如何下载整个文件夹的制品</title>
+      <link>http://localhost:1313/posts/artifactory-api-search/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/artifactory-api-search/</guid>
+      <description>本文介绍了在 JFrog Artifactory 禁用“Download Folder”功能时，如何使用 Artifactory REST API 来批量下载整个文件夹的制品，并提供了基于 Shell 脚本的示例实现。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/artifactory-api-search/featured.png" />
+    </item>
+    
+    <item>
+      <title>写给那些想使用 JFrog Artifactory 管理制品的人</title>
+      <link>http://localhost:1313/posts/what-is-artifactory/</link>
+      <pubDate>Sun, 04 Oct 2020 20:43:46 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/what-is-artifactory/</guid>
+      <description>本文介绍了 JFrog Artifactory 的概念、优势、工作原理以及最佳实践，帮助读者了解如何使用 Artifactory 管理软件制品。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/what-is-artifactory/featured.png" />
+    </item>
+    
+    <item>
+      <title>解决 Jenkins Artifactory Plugin 仅在 AIX 上传制品到 https 协议的 Artifactory 失败的问题</title>
+      <link>http://localhost:1313/posts/java-net-socketexception-on-aix/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/java-net-socketexception-on-aix/</guid>
+      <description>本文介绍了在 AIX 上使用 Jenkins Artifactory 插件上传制品到 https 协议的 Artifactory 失败的问题及其解决方法，包括设置环境变量和调整 Java 系统属性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/java-net-socketexception-on-aix/featured.png" />
+    </item>
+    
+    <item>
+      <title>初识 JFrog Artifactory</title>
+      <link>http://localhost:1313/posts/artifactory-install-and-upgrade/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/artifactory-install-and-upgrade/</guid>
+      <description>JFrog Artifactory 是一个强大的二进制存储库管理器，本文介绍其安装、升级和使用方法。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/artifactory-install-and-upgrade/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

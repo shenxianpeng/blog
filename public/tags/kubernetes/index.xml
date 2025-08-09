@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/kubernetes/</link>
+    <description>Recent content in Kubernetes on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2023 年最值得关注的 DevOps 趋势</title>
+      <link>http://localhost:1313/posts/devops-trends-2023/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/devops-trends-2023/</guid>
+      <description>本文介绍了2023年DevOps领域的主要趋势，包括云原生技术的持续采用、加强安全性和合规性、开发与运营团队协作、自动化和人工智能的发展等。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/devops-trends-2023/featured.png" />
+    </item>
+    
+    <item>
+      <title>2022 年最值得关注的 DevOps 趋势和问答</title>
+      <link>http://localhost:1313/posts/devops-trends-2022/</link>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/devops-trends-2022/</guid>
+      <description>本文介绍了2022年DevOps领域的主要趋势，包括无服务器计算、微服务架构、Kubernetes的普及以及DevSecOps的兴起，并回答了一些关于DevOps行业的问题。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/devops-trends-2022/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

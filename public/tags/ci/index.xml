@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CI on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/ci/</link>
+    <description>Recent content in CI on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ci/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CI/CD 不是一次性的项目，而是一个不断演进的系统</title>
+      <link>http://localhost:1313/posts/code-refactor/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/code-refactor/</guid>
+      <description>在 DevOps 中，CI/CD 流水线需要持续维护和重构。本文探讨了为什么 CI/CD 不是一次性的建设项目，而是一个需要长期投入和持续演进的系统。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/code-refactor/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何在 Jenkins 多分支流水线中实现 [skip ci]</title>
+      <link>http://localhost:1313/posts/jenkins-skip-ci/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-skip-ci/</guid>
+      <description>本文介绍如何在 Jenkins 多分支流水线中实现 [skip ci] 功能，根据提交信息跳过构建。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-skip-ci/featured.png" />
+    </item>
+    
+    <item>
+      <title>组织内如何评估 CI/CD 成熟度</title>
+      <link>http://localhost:1313/posts/cicd-assessment/</link>
+      <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/cicd-assessment/</guid>
+      <description>本文介绍了如何使用 Jenkins 的 generic-webhook-trigger 插件来实时获取 Bitbucket 仓库的事件信息，如 Pull Request ID 等。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/cicd-assessment/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

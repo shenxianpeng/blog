@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quality on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/quality/</link>
+    <description>Recent content in Quality on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sat, 06 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/quality/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2021-22 世界质量报告（World Quality Report）</title>
+      <link>http://localhost:1313/posts/world-quality-report/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/world-quality-report/</guid>
+      <description>本文介绍了 2021-22 世界质量报告（WQR）的主要发现和趋势，强调了新冠疫情对软件质量和测试的影响，以及 QA 在敏捷和 DevOps 中的重要作用。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/world-quality-report/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

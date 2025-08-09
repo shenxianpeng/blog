@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Copyright on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/copyright/</link>
+    <description>Recent content in Copyright on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CPython 停止更新 Copyright 了，为什么？</title>
+      <link>http://localhost:1313/posts/copyright/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/copyright/</guid>
+      <description>CPython 停止更新 Copyright 的原因和过程。了解 Python 项目法律团队的建议，以及如何处理开源项目中的版权声明。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/copyright/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

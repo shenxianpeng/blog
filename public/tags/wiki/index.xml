@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wiki on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/wiki/</link>
+    <description>Recent content in Wiki on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Wed, 14 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/wiki/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>还在用 Wiki/Confluence？你可能在生产垃圾</title>
+      <link>http://localhost:1313/posts/docs-and-code/</link>
+      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/docs-and-code/</guid>
+      <description>在企业中，Wiki 和 Confluence 等文档工具如果缺乏统一管理和审核机制，可能会导致信息混乱和知识沉淀失败。本文探讨了如何避免这种情况，并借鉴开源社区的成功经验。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/docs-and-code/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PyCon on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/pycon/</link>
+    <description>Recent content in PyCon on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/pycon/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>全程记录｜PyCon LT 2025 第三天：AI 能取代你吗？</title>
+      <link>http://localhost:1313/misc/pycon-lt-d3/</link>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/pycon-lt-d3/</guid>
+      <description>今天是 PyCon LT 2025 的最后一天，主题是 AI and ML Day。分享了几位女性讲者的精彩演讲，以及对数据科学和 AI 的新认识。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/pycon-lt-d3/featured.png" />
+    </item>
+    
+    <item>
+      <title>全程记录｜PyCon LT 2025 第二天：被几位女性开发者圈粉了</title>
+      <link>http://localhost:1313/misc/pycon-lt-d2/</link>
+      <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/pycon-lt-d2/</guid>
+      <description>今天是 PyCon LT 2025 的 Data Day，主题是 Dataframes、Databases、Orchestration。虽然不太熟悉这些领域，但几位女性讲者的演讲让我印象深刻，收获颇丰。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/pycon-lt-d2/featured.png" />
+    </item>
+    
+    <item>
+      <title>全程记录｜PyCon LT 2025 第一天：我在异国 Python 大会上的见闻</title>
+      <link>http://localhost:1313/misc/pycon-lt-d1/</link>
+      <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/pycon-lt-d1/</guid>
+      <description>参加了 PyCon LT 2025 的第一天，分享了演讲内容、个人感受以及对 Python 社区的思考。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/pycon-lt-d1/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

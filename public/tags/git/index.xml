@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/git/</link>
+    <description>Recent content in Git on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Thu, 12 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>提升代码可追溯性：一招把 PR 描述写入 Git commit</title>
+      <link>http://localhost:1313/posts/commit-message-template/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/commit-message-template/</guid>
+      <description>在 Bitbucket 中使用 Commit Message Templates 功能，将 PR 描述自动写入 Git commit message，确保关键信息不会随工具变更而丢失。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/commit-message-template/featured.png" />
+    </item>
+    
+    <item>
+      <title>🚀 gitstats 升级来袭：支持 JSON 输出、多平台兼容、代码重构！</title>
+      <link>http://localhost:1313/posts/gitstats-update/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/gitstats-update/</guid>
+      <description>gitstats 经过两个月的持续改进，现已支持 JSON 输出、代码重构、argparse 替换 getopt，并全面兼容 Windows 和 macOS。欢迎使用和 Star 支持！</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/gitstats-update/featured.png" />
+    </item>
+    
+    <item>
+      <title>复活 GitStats：让 Git 历史分析焕发新活力</title>
+      <link>http://localhost:1313/posts/gitstats/</link>
+      <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/gitstats/</guid>
+      <description>介绍 GitStats 项目的复活过程，包括迁移到 Python 3、创建现代化流水线、发布到 PyPI 和 Docker，以及未来的改进计划。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/gitstats/featured.png" />
+    </item>
+    
+    <item>
+      <title>约定式分支规范中文版正式发布！</title>
+      <link>http://localhost:1313/posts/conventional-branch/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/conventional-branch/</guid>
+      <description>本文介绍了约定式分支规范的中文版，旨在通过结构化的命名约定提高 Git 分支的可读性和可操作性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/conventional-branch/featured.png" />
+    </item>
+    
+    <item>
+      <title>2023 年开源状况和人工智能的崛起（GitHub）</title>
+      <link>http://localhost:1313/posts/open-source-state/</link>
+      <pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/open-source-state/</guid>
+      <description>本文介绍了 GitHub 发布的 2023 年开源状况和人工智能的崛起报告，分析了开发者社区的增长、生成式 AI 的应用以及云原生技术的发展趋势。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/open-source-state/featured.png" />
+    </item>
+    
+    <item>
+      <title>程序员自我修养之Git提交信息和分支创建规范（工具篇）</title>
+      <link>http://localhost:1313/posts/commit-check/</link>
+      <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/commit-check/</guid>
+      <description>本文介绍如何使用 Commit Check 工具来验证 Git 提交信息、分支命名、提交用户名字、提交用户邮箱等是否符合规范。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/commit-check/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何创建 GPG 密钥并添加到 GitHub</title>
+      <link>http://localhost:1313/posts/git-create-gpg-keys/</link>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-create-gpg-keys/</guid>
+      <description>本文介绍如何生成 GPG 密钥、导出公钥并将其添加到 GitHub，用于提交签名验证。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-create-gpg-keys/featured.png" />
+    </item>
+    
+    <item>
+      <title>靠谱：在不删除和重建 GitHub 仓库的情况下与父(Fork)仓库分离(Unfork)</title>
+      <link>http://localhost:1313/posts/unfork-github-repo/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/unfork-github-repo/</guid>
+      <description>本文介绍了如何通过 GitHub Support 实现与父仓库的分离，避免删除和重建仓库带来的数据丢失问题，帮助开发者更好地管理 Fork 的仓库。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/unfork-github-repo/featured.png" />
+    </item>
+    
+    <item>
+      <title>Git 常用命令备忘录</title>
+      <link>http://localhost:1313/posts/git-cheatsheet/</link>
+      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-cheatsheet/</guid>
+      <description>本文总结了 Git 的常用命令和技巧，帮助开发者快速查找和使用 Git 命令，提高工作效率。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-cheatsheet/featured.png" />
+    </item>
+    
+    <item>
+      <title>解决在 AIX 上 Git Clone 失败的两个问题</title>
+      <link>http://localhost:1313/posts/git-clone-failed-on-aix/</link>
+      <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-clone-failed-on-aix/</guid>
+      <description>本文记录了在 AIX 上使用 Jenkins 进行 Git Clone 时遇到的两个问题及其解决方法，包括依赖库加载失败和 SSH 认证失败。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-clone-failed-on-aix/featured.png" />
+    </item>
+    
+    <item>
+      <title>通过解除文件资源限制：解决在 AIX 使用 Git 下载大容量仓库失败问题</title>
+      <link>http://localhost:1313/posts/aix-ulimit/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/aix-ulimit/</guid>
+      <description>在 AIX 系统中遇到 Git 下载大容量仓库时因文件大小限制导致失败，通过修改 ulimit 设置解决问题。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/aix-ulimit/featured.png" />
+    </item>
+    
+    <item>
+      <title>Git 常见设置指北</title>
+      <link>http://localhost:1313/posts/git-guidelines/</link>
+      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-guidelines/</guid>
+      <description>本文介绍了在使用 Git 提交代码之前需要进行的一些常见设置，包括配置用户名和邮箱、处理换行符、编写规范的提交信息等，帮助开发者更好地管理代码版本。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-guidelines/featured.png" />
+    </item>
+    
+    <item>
+      <title>建议在 Bitbucket/GitHub 中启用的仓库设置</title>
+      <link>http://localhost:1313/posts/git-repository-settings/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-repository-settings/</guid>
+      <description>列出 Bitbucket 和 GitHub 仓库推荐启用的设置，包括禁止强制推送、分支保护、标签管理、合并检查以及提交信息规范等。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-repository-settings/featured.png" />
+    </item>
+    
+    <item>
+      <title>启用与禁用 Git sparse-checkout</title>
+      <link>http://localhost:1313/posts/git-sparse-checkout/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-sparse-checkout/</guid>
+      <description>介绍如何启用与禁用 Git sparse-checkout，包括配置只检出指定目录的示例，以及如何恢复到完整检出状态。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-sparse-checkout/featured.png" />
+    </item>
+    
+    <item>
+      <title>程序员自我修养之Git提交信息和分支创建规范</title>
+      <link>http://localhost:1313/posts/commit-messages-specification/</link>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/commit-messages-specification/</guid>
+      <description>本文介绍了如何制定和实施 Git 提交信息和分支创建规范，以提高代码质量和团队协作效率。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/commit-messages-specification/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何给你的 Git 仓库“瘦身”</title>
+      <link>http://localhost:1313/posts/maintaining-git-repository/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/maintaining-git-repository/</guid>
+      <description>如何从 Git 仓库中删除不需要的文件和历史记录，以减少仓库的大小，并提供了两种方法：使用 BFG Repo Cleaner 或 git filter-branch。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/maintaining-git-repository/featured.png" />
+    </item>
+    
+    <item>
+      <title>通过 Jenkins 定期自动给老板提供 Git 仓库的多维度代码分析报告</title>
+      <link>http://localhost:1313/posts/git-stats-jenkins/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-stats-jenkins/</guid>
+      <description>本文介绍了如何使用 Jenkins 定期自动生成 Git 仓库的多维度代码分析报告，包括手动执行和定时执行的实现方式，帮助开发者和团队更好地了解代码质量和贡献情况。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-stats-jenkins/featured.png" />
+    </item>
+    
+    <item>
+      <title>Git 历史统计信息生成器</title>
+      <link>http://localhost:1313/posts/git-stats/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-stats/</guid>
+      <description>GitStats，一个用 Python 编写的 Git 历史统计信息生成工具，能够生成详细的代码提交统计报告，帮助开发者分析项目活跃度和贡献者情况。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-stats/featured.png" />
+    </item>
+    
+    <item>
+      <title>Git 提交合并（Squash）</title>
+      <link>http://localhost:1313/posts/git-commit-squash/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-commit-squash/</guid>
+      <description>介绍如何将多个 Git 提交合并为一个提交，包括本地和已推送到远程的情况，分别使用交互式 rebase 和在 Bitbucket 中的合并策略。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-commit-squash/featured.png" />
+    </item>
+    
+    <item>
+      <title>Git 分支策略</title>
+      <link>http://localhost:1313/posts/git-branching-strategy/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-branching-strategy/</guid>
+      <description>介绍大型项目的 Git 分支策略，包括 master、develop、release 和 hotfix 分支的作用和使用方法，帮助团队更好地管理代码和版本发布。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-branching-strategy/featured.png" />
+    </item>
+    
+    <item>
+      <title>通过 Jenkins 来提交修改的代码 git push by Jenkins</title>
+      <link>http://localhost:1313/posts/git-push-by-jenkins/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-push-by-jenkins/</guid>
+      <description>如何通过 Jenkins Pipeline 脚本来提交修改的代码到 Git 仓库，包括克隆仓库、修改代码和推送更改等步骤。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-push-by-jenkins/featured.png" />
+    </item>
+    
+    <item>
+      <title>Git 管理</title>
+      <link>http://localhost:1313/posts/git-management/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-management/</guid>
+      <description>本文介绍了 Git 的常见管理操作，包括分支管理、提交规范、代码审查等，帮助开发者更好地使用 Git 进行版本控制。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-management/featured.png" />
+    </item>
+    
+    <item>
+      <title>Error: Permission denied (publickey)</title>
+      <link>http://localhost:1313/posts/permission-denied-publickey/</link>
+      <pubDate>Sun, 06 May 2018 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/permission-denied-publickey/</guid>
+      <description>本文介绍了如何在配置多个 SSH Git Key 时解决 &amp;ldquo;Permission denied (publickey)&amp;rdquo; 错误，确保 GitHub 和 Bitbucket 的 SSH 连接正常工作。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/permission-denied-publickey/featured.png" />
+    </item>
+    
+    <item>
+      <title>Git 命令备忘</title>
+      <link>http://localhost:1313/posts/git-command-cheat/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-command-cheat/</guid>
+      <description>本文总结了 Git 的常用命令和技巧，帮助开发者快速查找和使用 Git 命令，提高工作效率。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-command-cheat/featured.png" />
+    </item>
+    
+    <item>
+      <title>Git remove and add remote repository</title>
+      <link>http://localhost:1313/posts/remove-and-add-remote-repository/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/remove-and-add-remote-repository/</guid>
+      <description>本文介绍了如何在 Git 中移除和添加远程仓库，帮助开发者管理代码仓库的远程连接。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/remove-and-add-remote-repository/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

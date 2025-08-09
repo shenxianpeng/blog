@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ESlint on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/eslint/</link>
+    <description>Recent content in ESlint on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Mon, 07 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/eslint/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>解决 ESlint HTML 报告在 Jenkins 作业中无法正常显示的问题</title>
+      <link>http://localhost:1313/posts/jenkins-eslint/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-eslint/</guid>
+      <description>本文记录了 ESlint HTML 报告在 Jenkins 中因内容安全策略（CSP）限制而无法正确显示的问题，并介绍了如何通过修改 Jenkins 配置使报告正常加载。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-eslint/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

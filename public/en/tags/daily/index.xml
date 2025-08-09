@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daily on DevOps Engineer</title>
+    <link>http://localhost:1313/en/tags/daily/</link>
+    <description>Recent content in Daily on DevOps Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>xianpeng.shen@gmail.com (Xianpeng Shen)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (Xianpeng Shen)</webMaster>
+    <copyright>© 2017 - 2025 Xianpeng Shen</copyright>
+    <lastBuildDate>Fri, 07 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/daily/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Daily Notes</title>
+      <link>http://localhost:1313/en/misc/daily/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/misc/daily/</guid>
+      <description>Starting August 7, 2020, I would like to start recording some daily/important things in English.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/daily/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

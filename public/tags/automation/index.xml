@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/automation/</link>
+    <description>Recent content in Automation on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>通过参数化上传文件到 FTP 服务器</title>
+      <link>http://localhost:1313/posts/upload-to-ftp-parameterization-by-bat/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/upload-to-ftp-parameterization-by-bat/</guid>
+      <description>本文介绍了如何使用 Windows Batch 脚本通过参数化的方式上传文件到 FTP 服务器，避免在脚本中硬编码 FTP 凭据。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/upload-to-ftp-parameterization-by-bat/featured.png" />
+    </item>
+    
+    <item>
+      <title>最受欢迎的 Python 自动化测试框架推荐</title>
+      <link>http://localhost:1313/posts/most-popular-python-automated-testing-framework/</link>
+      <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/most-popular-python-automated-testing-framework/</guid>
+      <description>本文整理了当前最受欢迎的 Python 自动化测试框架，包括 Robot Framework、RedwoodHQ、Jasmine 和 Pytest 的介绍和比较。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/most-popular-python-automated-testing-framework/featured.png" />
+    </item>
+    
+    <item>
+      <title>Nightwatch 使用 VS code 进行调试</title>
+      <link>http://localhost:1313/posts/debug-nightwatch-in-vs/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/debug-nightwatch-in-vs/</guid>
+      <description>本文介绍如何配置 VS Code 来调试 Nightwatch 测试代码，提供了详细的配置示例和步骤。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/debug-nightwatch-in-vs/featured.png" />
+    </item>
+    
+    <item>
+      <title>Nightwatch 自动化测试中比较颜色</title>
+      <link>http://localhost:1313/posts/nightwatch-auto-compare-colors/</link>
+      <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/nightwatch-auto-compare-colors/</guid>
+      <description>本文介绍了如何在 Nightwatch.js 中处理颜色比较，包括获取元素的颜色值并与预期颜色进行对比的示例代码。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/nightwatch-auto-compare-colors/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

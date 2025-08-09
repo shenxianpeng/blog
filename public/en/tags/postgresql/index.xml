@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PostgreSQL on DevOps Engineer</title>
+    <link>http://localhost:1313/en/tags/postgresql/</link>
+    <description>Recent content in PostgreSQL on DevOps Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>xianpeng.shen@gmail.com (Xianpeng Shen)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (Xianpeng Shen)</webMaster>
+    <copyright>© 2017 - 2025 Xianpeng Shen</copyright>
+    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SonarQube installation and troubleshootings</title>
+      <link>http://localhost:1313/en/posts/sonarqube-setup/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/sonarqube-setup/</guid>
+      <description>This article documents the steps to install SonarQube, configure LDAP, and set up PostgreSQL as the database. It also includes troubleshooting tips for common issues encountered during setup.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/sonarqube-setup/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

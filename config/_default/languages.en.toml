@@ -1,0 +1,27 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "DevOps Engineer"
+
+[params]
+displayName = "English"
+isoCode = "en"
+rtl = false
+dateFormat = "2006-01-02"
+logo = "img/logo.png"
+description = "Xianpeng Shen's Blog Site, about DevOps, CI/CD and Open Source"
+copyright = "© 2017 - 2025 Xianpeng Shen"
+
+[params.author]
+name = "Xianpeng Shen"
+email = "xianpeng.shen@gmail.com"
+image = "img/sxp.jpg"
+imageQuality = 96
+headline = "DevOps Engineer | Python Enthusiast | Open Source Maintainer"
+links = [
+  { email = "mailto:xianpeng.shen@gmail.com" },
+  { link = "https://shenxianpeng.github.io/" },
+  { github = "https://github.com/shenxianpeng" },
+  { linkedin = "https://www.linkedin.com/in/xianpeng-shen/" },
+  { medium = "https://medium.com/@xianpeng.shen/"  },
+]

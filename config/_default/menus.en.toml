@@ -1,0 +1,93 @@
+# -- Main Menu --
+# The main menu is displayed in the header at the top of the page.
+# Acceptable parameters are name, pageRef, page, url, title, weight.
+# 
+# The simplest menu configuration is to provide:
+#   name = The name to be displayed for this menu link
+#   pageRef = The identifier of the page or section to link to
+#
+# By default the menu is ordered alphabetically. This can be
+# overridden by providing a weight value. The menu will then be
+# ordered by weight from lowest to highest.
+
+[[main]]
+name = "About"
+pageRef = "about"
+weight = 3
+
+[[main]]
+name = "Posts"
+pageRef = "posts"
+weight = 4
+
+[[main]]
+name = "Mics"
+pageRef = "misc"
+weight = 5
+
+[[main]]
+name = "Resume"
+pageRef = "resume"
+weight = 6
+
+[[main]]
+  name = "Portfolio"
+  weight = 40
+
+[[main]]
+  name = "Cpp Linter"
+  parent = "Portfolio"
+  url = "https://github.com/cpp-linter"
+  weight = 50
+
+[[main]]
+name = "Commit Check"
+parent = "Portfolio"
+url = "https://github.com/commit-check"
+weight = 60
+
+[[main]]
+name = "Conventional Branch"
+parent = "Portfolio"
+url = "https://conventional-branch.github.io/"
+weight = 70
+
+[[main]]
+name = "DevOps Maturity"
+parent = "Portfolio"
+url = "https://devops-maturity.github.io/"
+weight = 80
+
+[[main]]
+name = "Jenkins AI Plugin"
+parent = "Portfolio"
+url = "https://plugins.jenkins.io/explain-error/"
+weight = 90
+
+[[main]]
+  name = "GitStats"
+  parent = "Portfolio"
+  url = "https://gitstats.readthedocs.io/"
+  weight = 100
+
+[[main]]
+  identifier = "twitter"
+  pre = "x-twitter"
+  url = "https://x.com/shenxianpeng"
+  weight = 200
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/shenxianpeng"
+  weight = 400
+
+ [[footer]]
+   name = "Tags"
+   pageRef = "tags"
+   weight = 10
+
+ [[footer]]
+   name = "Authors"
+   pageRef = "authors"
+   weight = 20

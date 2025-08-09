@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CPython on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/cpython/</link>
+    <description>Recent content in CPython on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Thu, 27 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/cpython/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>一觉醒来，我的 PR 已经被 Merge 到 CPython 主分支了！</title>
+      <link>http://localhost:1313/posts/my-first-pr-to-cpython/</link>
+      <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/my-first-pr-to-cpython/</guid>
+      <description>在 CPython 的 Issue 区找到一个合适的 PR，修改代码、测试、提交 Pull Request，第二天醒来发现已经被 Merge 到主分支了！这是一个很好的学习过程，也是对开源社区的贡献。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/my-first-pr-to-cpython/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

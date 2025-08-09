@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/windows/</link>
+    <description>Recent content in Windows on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Tue, 19 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>在 Windows 做开发还能这么爽？WSL &#43; VS Code &#43; Docker Desktop 你值得有用</title>
+      <link>http://localhost:1313/posts/wsl/</link>
+      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/wsl/</guid>
+      <description>本文介绍了如何在 Windows 上使用 WSL、VS Code 和 Docker Desktop 进行开发，提供了安装和配置的详细步骤，以及使用这些工具的优势和体验。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/wsl/featured.png" />
+    </item>
+    
+    <item>
+      <title>为什么 Windows Installer 会弹出窗口？（已解决）</title>
+      <link>http://localhost:1313/posts/why-windows-installer-pop-up/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/why-windows-installer-pop-up/</guid>
+      <description>本文解释了一个常见的 Windows 安装程序问题：安装时意外弹出窗口的原因，以及通过修正构建文件夹命名规则来解决该问题的方法。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/why-windows-installer-pop-up/featured.png" />
+    </item>
+    
+    <item>
+      <title>在 Windows 上开启 22 端口并让其处于监听状态</title>
+      <link>http://localhost:1313/posts/how-to-open-port-22/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/how-to-open-port-22/</guid>
+      <description>本文介绍如何在 Windows 上开启 22 端口并确保其处于监听状态，以便支持 SSH 连接。内容包括安装 OpenSSH 以及防火墙配置步骤。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/how-to-open-port-22/featured.png" />
+    </item>
+    
+    <item>
+      <title>解决 “Remote session was disconnected because there are no Remote Desktop client access licenses available”</title>
+      <link>http://localhost:1313/posts/rdp-problem/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/rdp-problem/</guid>
+      <description>修复 Windows Server 2012 R2 上的 RDP 连接问题，错误提示为没有可用的远程桌面客户端访问许可证。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/rdp-problem/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,13 @@
+{
+  "name": "Xianpeng Shen",
+  "bio": "DevOps Engineer, @shenxianpeng",
+  "image": "img/sxp.jpg",
+  "social": [
+    { "email": "mailto:xianpeng.shen@gmail.com" },
+    { "link": "https://shenxianpeng.github.io/" },
+    { "github": "https://github.com/shenxianpeng" },
+    { "linkedin": "https://www.linkedin.com/in/xianpeng-shen/" },
+    { "medium": "https://medium.com/@xianpeng.shen/"  },
+    { "telegram": "" }
+  ]
+}

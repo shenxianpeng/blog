@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Language on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/language/</link>
+    <description>Recent content in Language on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sun, 08 Jul 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/language/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>C-print</title>
+      <link>http://localhost:1313/posts/c-print/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/c-print/</guid>
+      <description>一个 C 语言打印字符的示例，展示如何使用循环和条件语句打印特定模式的字符。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/c-print/featured.png" />
+    </item>
+    
+    <item>
+      <title>C-Language 计算图形的面积</title>
+      <link>http://localhost:1313/posts/calculate-graph-area/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/calculate-graph-area/</guid>
+      <description>一个 C 语言程序，用于计算圆、矩形和三角形的面积，支持用户输入和验证。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/calculate-graph-area/featured.png" />
+    </item>
+    
+    <item>
+      <title>C-Language 自定义函数</title>
+      <link>http://localhost:1313/posts/c-self-defining-function/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/c-self-defining-function/</guid>
+      <description>介绍 C 语言中自定义函数的基本概念和使用方法，包括函数的声明、定义和调用。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/c-self-defining-function/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

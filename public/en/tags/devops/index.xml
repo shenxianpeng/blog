@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevOps on DevOps Engineer</title>
+    <link>http://localhost:1313/en/tags/devops/</link>
+    <description>Recent content in DevOps on DevOps Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>xianpeng.shen@gmail.com (Xianpeng Shen)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (Xianpeng Shen)</webMaster>
+    <copyright>© 2017 - 2025 Xianpeng Shen</copyright>
+    <lastBuildDate>Wed, 04 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to Change abortPrevious Value in Jenkins?</title>
+      <link>http://localhost:1313/en/posts/jenkins-concurrent-build/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/jenkins-concurrent-build/</guid>
+      <description>In Jenkins, the &lt;code&gt;disableConcurrentBuilds&lt;/code&gt; option is used to manage concurrent builds. This article explains how to conditionally set the &lt;code&gt;abortPrevious&lt;/code&gt; value based on the branch being built, allowing for more flexible build management.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-concurrent-build/featured.png" />
+    </item>
+    
+    <item>
+      <title>What Optimizations I Made During the Jenkins Upgrade</title>
+      <link>http://localhost:1313/en/posts/jenkins-upgrade/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/jenkins-upgrade/</guid>
+      <description>This article discusses the optimizations made during the Jenkins upgrade, including using Docker Compose for deployment, refactoring the Jenkins Shared Library, introducing Windows Docker Containers, and more to enhance the efficiency and security of the CI/CD process.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-upgrade/featured.png" />
+    </item>
+    
+    <item>
+      <title>How to fix &#34;hidden symbol `__gcov_init&#39; in ../libgcov.a(_gcov.o) is referenced by DSO&#34;</title>
+      <link>http://localhost:1313/en/posts/how-to-fix-gcov-hidden-symbol/</link>
+      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/how-to-fix-gcov-hidden-symbol/</guid>
+      <description>This article explains how to resolve the &amp;ldquo;hidden symbol `__gcov_init&amp;rsquo; in ../libgcov.a(_gcov.o) is referenced by DSO&amp;rdquo; error when building a project with Gcov, including how to ensure symbols are not hidden.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/how-to-fix-gcov-hidden-symbol/featured.png" />
+    </item>
+    
+    <item>
+      <title>How to backup Jenkins</title>
+      <link>http://localhost:1313/en/posts/jenkins-backup/</link>
+      <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/jenkins-backup/</guid>
+      <description>This article explains how to backup Jenkins using the ThinBackup plugin and shell scripts, ensuring that your Jenkins configuration and build data are safely stored.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-backup/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins Top 3 best practice</title>
+      <link>http://localhost:1313/en/posts/jenkins-best-practice/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/jenkins-best-practice/</guid>
+      <description>Discusses three best practices for Jenkins: Configuration as Code, Shared Libraries, and Multi-Branch Pipeline, highlighting their benefits in terms of transparency, traceability, and self-service builds.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-best-practice/featured.png" />
+    </item>
+    
+    <item>
+      <title>A Code Coverage Tool - Squish Coco use examples</title>
+      <link>http://localhost:1313/en/posts/squishcoco/</link>
+      <pubDate>Tue, 21 May 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/squishcoco/</guid>
+      <description>introduction to Squish Coco, a code coverage tool, with examples of how to set it up and use it in Visual Studio for C++ projects.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/squishcoco/featured.png" />
+    </item>
+    
+    <item>
+      <title>Code Coverage tools of C/C&#43;&#43;</title>
+      <link>http://localhost:1313/en/posts/code-coverage-tools/</link>
+      <pubDate>Tue, 21 May 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/code-coverage-tools/</guid>
+      <description>Code Coverage is a measurement of how many lines, statements, or blocks of your code are tested using your suite of automated tests. It’s an essential metric to understand the quality of your QA efforts.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/code-coverage-tools/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SBOM on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/sbom/</link>
+    <description>Recent content in SBOM on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sat, 10 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sbom/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>详解SBOM：定义、关系、区别、最佳实践和生成工具</title>
+      <link>http://localhost:1313/posts/sbom/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/sbom/</guid>
+      <description>本文介绍了SBOM的定义、与SLSA和Black Duck的关系和区别、最佳实践以及可用的生成工具，帮助读者更好地理解和应用SBOM。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/sbom/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

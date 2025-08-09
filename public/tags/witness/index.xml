@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Witness on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/witness/</link>
+    <description>Recent content in Witness on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sat, 02 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/witness/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>如何在 GitHub 与非 GitHub 项目中采用软件供应链安全</title>
+      <link>http://localhost:1313/posts/supply-chain-security/</link>
+      <pubDate>Sat, 02 Dec 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/supply-chain-security/</guid>
+      <description>本文介绍如何使用 SLSA 与 Witness 在 GitHub 与非 GitHub 项目中实现软件供应链安全，以提升软件开发与部署流程的安全性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/supply-chain-security/featured.png" />
+    </item>
+    
+    <item>
+      <title>Witness 和 SLSA 💃</title>
+      <link>http://localhost:1313/posts/witness-and-slsa/</link>
+      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/witness-and-slsa/</guid>
+      <description>本文介绍了 Witness 的概念、工作原理以及如何使用 Witness 来生成和验证软件工件的来源，强调了其在提高软件供应链安全性方面的重要性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/witness-and-slsa/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
