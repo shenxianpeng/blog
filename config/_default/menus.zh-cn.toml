@@ -31,44 +31,9 @@ pageRef = "resume"
 weight = 6
 
 [[main]]
-  name = "作品"
-  weight = 40
-
-[[main]]
-  name = "C/C++ 代码检查"
-  parent = "作品"
-  url = "https://github.com/cpp-linter"
-  weight = 50
-
-[[main]]
-  name = "Git 提交检查"
-  parent = "作品"
-  url = "https://github.com/commit-check"
-  weight = 60
-
-[[main]]
-  name = "约定式分支"
-  parent = "作品"
-  url = "https://conventional-branch.github.io/zh/"
-  weight = 70
-
-[[main]]
-  name = "DevOps 成熟度"
-  parent = "作品"
-  url = "https://devops-maturity.github.io/"
-  weight = 80
-
-[[main]]
-  name = "Jenkins AI 插件"
-  parent = "作品"
-  url = "https://plugins.jenkins.io/explain-error/"
-  weight = 90
-
-[[main]]
-  name = "Git 历史统计"
-  parent = "作品"
-  url = "https://gitstats.readthedocs.io/"
-  weight = 100
+name = "作品"
+pageRef = "portfolio"
+weight = 7
 
 [[main]]
   identifier = "twitter"
