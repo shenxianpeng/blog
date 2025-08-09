@@ -1,11 +1,24 @@
 ---
-title: "Xianpeng Shen"
-date: 2024-01-01T00:00:00+00:00
+title: "About"
+date: 2022-06-13T20:55:37+01:00
 draft: false
-authors: 
-  - shenxianpeng
+
+showDate : false
+showDateOnlyInArticle : false
+showDateUpdated : false
+showHeadingAnchors : false
+showPagination : false
+showReadingTime : false
+showTableOfContents : true
+showTaxonomies : false 
+showWordCount : false
+showSummary : false
+sharingLinks : false
+showEdit: false
+showViews: false
+showLikes: false
 showAuthor: true
-showAuthorsBadges: true
+layoutBackgroundHeaderSpace: false
 ---
 
 Hi there! I'm Xianpeng Shen, a DevOps engineer with a passion for DevOps, Python, and open source, focused on creating efficient, reliable, and elegant solutions.
