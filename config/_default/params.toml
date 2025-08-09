@@ -23,7 +23,7 @@ disableTextInHeader = false
 # backgroundImageWidth = 1200
 
 defaultBackgroundImage = "/img/background.svg"
-defaultFeaturedImage = "/img/featured.svg"
+defaultFeaturedImage = "/img/background.svg"
 defaultSocialImage = "/img/blowfish_banner.png"
 
 highlightCurrentMenuArea = true

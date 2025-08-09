@@ -31,44 +31,9 @@ pageRef = "resume"
 weight = 6
 
 [[main]]
-  name = "Portfolio"
-  weight = 40
-
-[[main]]
-  name = "Cpp Linter"
-  parent = "Portfolio"
-  url = "https://github.com/cpp-linter"
-  weight = 50
-
-[[main]]
-name = "Commit Check"
-parent = "Portfolio"
-url = "https://github.com/commit-check"
-weight = 60
-
-[[main]]
-name = "Conventional Branch"
-parent = "Portfolio"
-url = "https://conventional-branch.github.io/"
-weight = 70
-
-[[main]]
-name = "DevOps Maturity"
-parent = "Portfolio"
-url = "https://devops-maturity.github.io/"
-weight = 80
-
-[[main]]
-name = "Jenkins AI Plugin"
-parent = "Portfolio"
-url = "https://plugins.jenkins.io/explain-error/"
-weight = 90
-
-[[main]]
-  name = "GitStats"
-  parent = "Portfolio"
-  url = "https://gitstats.readthedocs.io/"
-  weight = 100
+name = "Portfolio"
+pageRef = "portfolio"
+weight = 7
 
 [[main]]
   identifier = "twitter"
