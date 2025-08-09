@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monitor on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/monitor/</link>
+    <description>Recent content in Monitor on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Tue, 21 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/monitor/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2022年序员如何选择显示器？1080p还是2K? 单屏还是多屏？</title>
+      <link>http://localhost:1313/posts/choose-monitor/</link>
+      <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/choose-monitor/</guid>
+      <description>本文分享了个人在选择显示器时的经验和建议，包括不同尺寸、分辨率和屏幕组合的优缺点，以及如何根据工作需求选择最合适的显示器。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/choose-monitor/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

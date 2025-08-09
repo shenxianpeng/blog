@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artifactory on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/artifactory/</link>
+    <description>Recent content in Artifactory on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Mon, 11 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/artifactory/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>解决通过 Jenkins Artifactory plugin 上传 artifacts 失败的问题 “unable to find valid certification path to requested target”</title>
+      <link>http://localhost:1313/posts/unable-to-find-valid-certification-path/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/unable-to-find-valid-certification-path/</guid>
+      <description>本文介绍了如何解决 Jenkins agent 上传 artifacts 到 Artifactory 时遇到的 SSL 证书验证问题，包括生成安全认证文件和导入到 Java 的 cacerts 中。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/unable-to-find-valid-certification-path/featured.png" />
+    </item>
+    
+    <item>
+      <title>从 AIX 上传构件到 Artifactory 失败</title>
+      <link>http://localhost:1313/posts/upload-artifacts-failed-on-aix/</link>
+      <pubDate>Tue, 29 Aug 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/upload-artifacts-failed-on-aix/</guid>
+      <description>本文介绍在 AIX 上通过 Jenkins 上传构件到 Artifactory 时遇到的 SSL 证书验证问题，包括更新 Java 的 cacerts 文件来解决问题。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/upload-artifacts-failed-on-aix/featured.png" />
+    </item>
+    
+    <item>
+      <title>关于 Artifactory 上传制品变得非常缓慢，偶尔失败的问题分享</title>
+      <link>http://localhost:1313/posts/artifactory-slow-upload/</link>
+      <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/artifactory-slow-upload/</guid>
+      <description>在使用 JFrog Artifactory 上传制品时遇到速度缓慢和上传失败的问题，经过排查和解决，分享经验和教训。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/artifactory-slow-upload/featured.png" />
+    </item>
+    
+    <item>
+      <title>当 Artifactory “Download Folder 功能被禁用”时如何下载整个文件夹的制品</title>
+      <link>http://localhost:1313/posts/artifactory-api-search/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/artifactory-api-search/</guid>
+      <description>本文介绍了在 JFrog Artifactory 禁用“Download Folder”功能时，如何使用 Artifactory REST API 来批量下载整个文件夹的制品，并提供了基于 Shell 脚本的示例实现。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/artifactory-api-search/featured.png" />
+    </item>
+    
+    <item>
+      <title>写给那些想使用 JFrog Artifactory 管理制品的人</title>
+      <link>http://localhost:1313/posts/what-is-artifactory/</link>
+      <pubDate>Sun, 04 Oct 2020 20:43:46 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/what-is-artifactory/</guid>
+      <description>本文介绍了 JFrog Artifactory 的概念、优势、工作原理以及最佳实践，帮助读者了解如何使用 Artifactory 管理软件制品。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/what-is-artifactory/featured.png" />
+    </item>
+    
+    <item>
+      <title>解决 Jenkins Artifactory Plugin 仅在 AIX 上传制品到 https 协议的 Artifactory 失败的问题</title>
+      <link>http://localhost:1313/posts/java-net-socketexception-on-aix/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/java-net-socketexception-on-aix/</guid>
+      <description>本文介绍了在 AIX 上使用 Jenkins Artifactory 插件上传制品到 https 协议的 Artifactory 失败的问题及其解决方法，包括设置环境变量和调整 Java 系统属性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/java-net-socketexception-on-aix/featured.png" />
+    </item>
+    
+    <item>
+      <title>Artifactory 与 Jenkins 集成</title>
+      <link>http://localhost:1313/posts/artifactory-integrate-with-jenkins/</link>
+      <pubDate>Sun, 17 Nov 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/artifactory-integrate-with-jenkins/</guid>
+      <description>本文介绍如何将 JFrog Artifactory 与 Jenkins 集成，实现持续集成和制品管理。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/artifactory-integrate-with-jenkins/featured.png" />
+    </item>
+    
+    <item>
+      <title>初识 JFrog Artifactory</title>
+      <link>http://localhost:1313/posts/artifactory-install-and-upgrade/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/artifactory-install-and-upgrade/</guid>
+      <description>JFrog Artifactory 是一个强大的二进制存储库管理器，本文介绍其安装、升级和使用方法。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/artifactory-install-and-upgrade/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

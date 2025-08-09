@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infrastructure on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/infrastructure/</link>
+    <description>Recent content in Infrastructure on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Python 软件基金会 (PFS) 基础设施概览</title>
+      <link>http://localhost:1313/posts/psf-infra/</link>
+      <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/psf-infra/</guid>
+      <description>本文介绍了 Python 软件基金会 (PFS) 的基础设施，包括其服务、提供商和团队成员，帮助读者了解 PFS 如何支持 Python 社区。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/psf-infra/featured.png" />
+    </item>
+    
+    <item>
+      <title>看看顶级的开源组织都在用哪些服务和工具</title>
+      <link>http://localhost:1313/posts/apache-services-and-tools/</link>
+      <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/apache-services-and-tools/</guid>
+      <description>本篇介绍的是大名鼎鼎的开源软件基金会 Apache 所使用的服务(Services)和工具(Tools)，这或许能帮助你打开视野，在选择工具的时候提供参考。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/apache-services-and-tools/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

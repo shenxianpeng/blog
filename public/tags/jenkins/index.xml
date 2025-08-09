@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jenkins on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/jenkins/</link>
+    <description>Recent content in Jenkins on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Jenkins Explain Error Plugin 支持 Google Gemini 了！🤖</title>
+      <link>http://localhost:1313/posts/explain-error-plugin-support-gemini/</link>
+      <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/explain-error-plugin-support-gemini/</guid>
+      <description>本文介绍了 Jenkins Explain Error Plugin 的新功能，支持 Google Gemini 模型进行错误分析，并提供了配置方法和示例视频。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/explain-error-plugin-support-gemini/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins 插件中心居然还没有 AI 插件？我写了一个！🤖</title>
+      <link>http://localhost:1313/posts/explain-error-plugin/</link>
+      <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/explain-error-plugin/</guid>
+      <description>介绍我开发的第一个 Jenkins 插件：Explain Error Plugin。它可以自动解析构建失败的日志信息，并生成可读性强的错误解释，帮助开发者更快地定位和解决问题。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/explain-error-plugin/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何修复 Shields.io 徽章在 Jenkins 中无法显示</title>
+      <link>http://localhost:1313/posts/jenkins-show-badge/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-show-badge/</guid>
+      <description>如果你的 Shields.io 徽章（例如构建状态或文档状态）在 Jenkins 仪表盘中无法显示，很可能是因为 Jenkins 的严格内容安全策略（CSP）限制所致。本文将演示如何通过 Script Console 临时修复，以及如何通过修改 Jenkins 启动参数永久解决。该方法适用于内部 Jenkins 环境，并已在现代 Jenkins 安装中测试验证。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-show-badge/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何优雅地控制 Jenkins 构建是否中断？只看这篇</title>
+      <link>http://localhost:1313/posts/jenkins-concurrent-build/</link>
+      <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-concurrent-build/</guid>
+      <description>在 Jenkins 中，&lt;code&gt;disableConcurrentBuilds&lt;/code&gt; 选项用于管理并发构建。本文介绍了如何根据分支类型动态设置 &lt;code&gt;abortPrevious&lt;/code&gt; 的值，从而实现更灵活的构建管理。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-concurrent-build/featured.png" />
+    </item>
+    
+    <item>
+      <title>从 Jenkins 升级，我做了哪些优化</title>
+      <link>http://localhost:1313/posts/jenkins-upgrade/</link>
+      <pubDate>Thu, 24 Oct 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-upgrade/</guid>
+      <description>本文介绍了在升级 Jenkins 的过程中所做的优化，包括使用 Docker Compose 部署、重构 Jenkins Shared Library、引入 Windows Docker Container 等，以提升 CI/CD 流程的效率和安全性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-upgrade/featured.png" />
+    </item>
+    
+    <item>
+      <title>《分享》通过 Jenkins-X 社区最终进入到 Jenkins 基础设施团队成为 SRE 的经历</title>
+      <link>http://localhost:1313/posts/jenkins-contributors/</link>
+      <pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-contributors/</guid>
+      <description>本文介绍了 Hervé Le Meur 如何通过 Jenkins-X 社区的贡献，最终成为 Jenkins 基础设施团队的一名 SRE，并分享了他的经历和对 Jenkins 的看法。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-contributors/featured.png" />
+    </item>
+    
+    <item>
+      <title>你一定要了解的 GitHub Action 特性：可重用工作流（Reusable Workflows）</title>
+      <link>http://localhost:1313/posts/reusable-workflows/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/reusable-workflows/</guid>
+      <description>本文介绍了 GitHub Actions 的可重用工作流（Reusable Workflows）特性，帮助开发者和团队更高效地管理和复用 CI/CD 流程。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/reusable-workflows/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何让 Jenkins Pipeline 在特定错误发生时不中断失败</title>
+      <link>http://localhost:1313/posts/jenkins-catch-error/</link>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-catch-error/</guid>
+      <description>介绍如何在 Jenkins Pipeline 中使用 &lt;code&gt;catchError&lt;/code&gt; 捕获特定错误，并在不中断整个构建的情况下更新阶段或构建结果，从而实现更灵活的错误处理。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-catch-error/featured.png" />
+    </item>
+    
+    <item>
+      <title>解决通过 Jenkins Artifactory plugin 上传 artifacts 失败的问题 “unable to find valid certification path to requested target”</title>
+      <link>http://localhost:1313/posts/unable-to-find-valid-certification-path/</link>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/unable-to-find-valid-certification-path/</guid>
+      <description>本文介绍了如何解决 Jenkins agent 上传 artifacts 到 Artifactory 时遇到的 SSL 证书验证问题，包括生成安全认证文件和导入到 Java 的 cacerts 中。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/unable-to-find-valid-certification-path/featured.png" />
+    </item>
+    
+    <item>
+      <title>为什么我的 Jenkins Controller 越来越慢？可能犯了这些错误...</title>
+      <link>http://localhost:1313/posts/jenkins-pipeline-best-practices/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-pipeline-best-practices/</guid>
+      <description>本文介绍了 Jenkins pipeline 的一些最佳实践，旨在帮助开发者和运维人员优化 Jenkins 的性能和可维护性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-pipeline-best-practices/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何在 Jenkins 多分支流水线中实现 [skip ci]</title>
+      <link>http://localhost:1313/posts/jenkins-skip-ci/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-skip-ci/</guid>
+      <description>本文介绍如何在 Jenkins 多分支流水线中实现 [skip ci] 功能，根据提交信息跳过构建。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-skip-ci/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何启用、配置和禁用 Jenkins LDAP</title>
+      <link>http://localhost:1313/posts/jenkins-ldap-configuration/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-ldap-configuration/</guid>
+      <description>本文介绍如何在 Jenkins 中启用和配置 LDAP 身份验证，以及在需要时临时禁用它的方法。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-ldap-configuration/featured.png" />
+    </item>
+    
+    <item>
+      <title>在 Jenkins 上用了这么久的 Groovy，是时候认识一下它了</title>
+      <link>http://localhost:1313/posts/groovy/</link>
+      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/groovy/</guid>
+      <description>Groovy 是一种强大的动态语言，适用于 Java 平台，本文介绍了 Groovy 的特性、与 Java 的区别以及在 Jenkins 中的应用场景。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/groovy/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins 作业超时后让构建失败的方法（已解决）</title>
+      <link>http://localhost:1313/posts/jenkins-timeout/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-timeout/</guid>
+      <description>本文介绍如何在 Jenkins 流水线中正确处理超时场景，通过 &lt;code&gt;try&lt;/code&gt; 和 &lt;code&gt;catch&lt;/code&gt; 结合 &lt;code&gt;error&lt;/code&gt; 确保超时后作业会失败。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-timeout/featured.png" />
+    </item>
+    
+    <item>
+      <title>解决在 AIX 上 Git Clone 失败的两个问题</title>
+      <link>http://localhost:1313/posts/git-clone-failed-on-aix/</link>
+      <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-clone-failed-on-aix/</guid>
+      <description>本文记录了在 AIX 上使用 Jenkins 进行 Git Clone 时遇到的两个问题及其解决方法，包括依赖库加载失败和 SSH 认证失败。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-clone-failed-on-aix/featured.png" />
+    </item>
+    
+    <item>
+      <title>解决 ESlint HTML 报告在 Jenkins 作业中无法正常显示的问题</title>
+      <link>http://localhost:1313/posts/jenkins-eslint/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-eslint/</guid>
+      <description>本文记录了 ESlint HTML 报告在 Jenkins 中因内容安全策略（CSP）限制而无法正确显示的问题，并介绍了如何通过修改 Jenkins 配置使报告正常加载。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-eslint/featured.png" />
+    </item>
+    
+    <item>
+      <title>在 Jenkins 中为不同分支设置不同的默认参数</title>
+      <link>http://localhost:1313/posts/jenkins-dynamic-default-parameters/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-dynamic-default-parameters/</guid>
+      <description>本文介绍如何在 Jenkins 多分支流水线中，根据构建分支动态设置不同的默认参数，从而实现分支差异化配置。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-dynamic-default-parameters/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins 升级后 Windows Agent 无法启动的解决方法</title>
+      <link>http://localhost:1313/posts/jenkins-windows-agent-cannot-start/</link>
+      <pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-windows-agent-cannot-start/</guid>
+      <description>本文介绍 Jenkins 升级后 Windows Agent 无法启动的问题，以及通过更新 Windows Slaves 插件和修改配置文件来解决的步骤。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-windows-agent-cannot-start/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins 中 `result` 与 `currentResult` 的区别</title>
+      <link>http://localhost:1313/posts/jenkinsresult-vs-currentresult/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkinsresult-vs-currentresult/</guid>
+      <description>本文解释了 Jenkins Pipeline 中 &lt;code&gt;result&lt;/code&gt; 与 &lt;code&gt;currentResult&lt;/code&gt; 的区别，并通过 Declarative Pipeline 与 Scripted Pipeline 示例展示它们在不同阶段的表现。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkinsresult-vs-currentresult/featured.png" />
+    </item>
+    
+    <item>
+      <title>备份 Jenkins 的方法</title>
+      <link>http://localhost:1313/posts/jenkins-backup/</link>
+      <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-backup/</guid>
+      <description>介绍如何使用 ThinBackup 插件或 Shell 脚本备份 Jenkins，确保 Jenkins 配置和构建数据安全存储。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-backup/featured.png" />
+    </item>
+    
+    <item>
+      <title>通过 generic-webhook-trigger 插件实时获取 Bitbucket Repository Events</title>
+      <link>http://localhost:1313/posts/bitbucket-pull-request-event/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/bitbucket-pull-request-event/</guid>
+      <description>本文介绍如何使用 Jenkins 的 generic-webhook-trigger 插件来实时获取 Bitbucket 仓库的事件信息，如 Pull Request ID 等。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/bitbucket-pull-request-event/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins 执行 Shell 如果返回值不为0，作业(Job)停止并失败怎么办？</title>
+      <link>http://localhost:1313/posts/jenkins-tips-3/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-tips-3/</guid>
+      <description>如何在 Jenkins Pipeline 中处理 Shell 返回值不为0的情况，以确保作业(Job)在执行成功后仍然显示为成功状态。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-tips-3/featured.png" />
+    </item>
+    
+    <item>
+      <title>解决 “.NET Framework 2.0 or later is required on this computer to run a Jenkins agent as a Windows service” 问题</title>
+      <link>http://localhost:1313/posts/jenkins-windows-agent-connect-problem/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-windows-agent-connect-problem/</guid>
+      <description>当 Jenkins Windows Agent 因缺少 .NET Framework 无法连接时，通过安装 .NET Framework 3.5 并设置 Jenkins Agent 服务来解决问题。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-windows-agent-connect-problem/featured.png" />
+    </item>
+    
+    <item>
+      <title>每个 Jenkins 用户都应该知道这三个最佳实践</title>
+      <link>http://localhost:1313/posts/jenkins-best-practice/</link>
+      <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-best-practice/</guid>
+      <description>本文介绍了 Jenkins 的三个最佳实践：配置即代码、Jenkins 共享库和多分支流水线，帮助用户提升 Jenkins 的使用效率和质量。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-best-practice/featured.png" />
+    </item>
+    
+    <item>
+      <title>将 Jenkins Shell 返回的字符串处理为字符数组</title>
+      <link>http://localhost:1313/posts/jenkins-tips-2/</link>
+      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-tips-2/</guid>
+      <description>如何在 Jenkins Pipeline 中将 Shell 返回的字符串处理为字符数组，以便在后续步骤中进行处理和使用。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-tips-2/featured.png" />
+    </item>
+    
+    <item>
+      <title>忽略 Jenkins Shell 步骤中的故障</title>
+      <link>http://localhost:1313/posts/jenkins-tips-1/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-tips-1/</guid>
+      <description>如何在 Jenkins 中使用 &lt;code&gt;set +e&lt;/code&gt; 和 &lt;code&gt;set -e&lt;/code&gt; 来控制 Shell 脚本的执行行为，以便在出现错误时不终止整个构建流程。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-tips-1/featured.png" />
+    </item>
+    
+    <item>
+      <title>这也能用Jenkins？快速实现一个定期批量登录远程虚拟机并支持添加新的主机名称的Job</title>
+      <link>http://localhost:1313/posts/vm-status-check-via-jenkins/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/vm-status-check-via-jenkins/</guid>
+      <description>本文介绍了如何使用 Jenkins 实现定期批量登录远程虚拟机，并支持用户添加新的主机名称，提供了完整的实现代码和步骤。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/vm-status-check-via-jenkins/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何确保在提交 Jenkins Pipeline 前没有语法错误</title>
+      <link>http://localhost:1313/posts/jenkins-pipeline-linter-connector/</link>
+      <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-pipeline-linter-connector/</guid>
+      <description>本文介绍了两种方法来确保在提交 Jenkins Pipeline 前没有语法错误：使用 REST API 进行语法校验和使用 VSCode 插件进行语法检查。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-pipeline-linter-connector/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何将 Bitbucket 仓库同步到 GitHub</title>
+      <link>http://localhost:1313/posts/sync-from-bitbucket-to-github/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/sync-from-bitbucket-to-github/</guid>
+      <description>介绍如何通过 Jenkins 将 Bitbucket 仓库的 master 分支同步到 GitHub。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/sync-from-bitbucket-to-github/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins 与 Bitbucket Webhooks 的配置和使用</title>
+      <link>http://localhost:1313/posts/bitbucket-webhooks/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/bitbucket-webhooks/</guid>
+      <description>本文介绍如何在 Jenkins 中配置 Bitbucket Webhooks，以便在创建 Pull Request 时自动触发 Jenkins 构建。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/bitbucket-webhooks/featured.png" />
+    </item>
+    
+    <item>
+      <title>一款免费的 C/C&#43;&#43; 静态代码分析工具 Cppcheck 与 Jenkins 集成</title>
+      <link>http://localhost:1313/posts/cppcheck/</link>
+      <pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/cppcheck/</guid>
+      <description>本文介绍了 Cppcheck 的安装、使用以及与 Jenkins 的集成方法，旨在提升 C/C++ 代码质量和静态分析能力。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/cppcheck/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins Warnings Next Generation 插件</title>
+      <link>http://localhost:1313/posts/jenkins-warnings-next-generation-plugin/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-warnings-next-generation-plugin/</guid>
+      <description>本文介绍了 Jenkins Warnings Next Generation 插件的功能和配置方法，包括如何收集编译器警告和静态分析工具报告的问题，并可视化结果。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-warnings-next-generation-plugin/featured.png" />
+    </item>
+    
+    <item>
+      <title>Black Duck 与 Jenkins 集成</title>
+      <link>http://localhost:1313/posts/blackduck-interate-with-jenkins/</link>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/blackduck-interate-with-jenkins/</guid>
+      <description>本文介绍如何将 Black Duck 与 Jenkins 集成，实现对代码仓库的自动化安全扫描和漏洞检测。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/blackduck-interate-with-jenkins/featured.png" />
+    </item>
+    
+    <item>
+      <title>北京48小时：记一次参加 DevOps 训练营</title>
+      <link>http://localhost:1313/posts/48h-in-beijing/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/48h-in-beijing/</guid>
+      <description>记录我在北京参加 JFrog DevOps 训练营的经历，分享培训内容和个人感受，以及对未来工作的思考。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/48h-in-beijing/featured.png" />
+    </item>
+    
+    <item>
+      <title>定制一个 Docker 版 Jenkins 镜像</title>
+      <link>http://localhost:1313/posts/install-docker-jenkins/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/install-docker-jenkins/</guid>
+      <description>如何定制一个 Docker 版 Jenkins 镜像，并将其备份到 Artifactory，便于在需要时快速恢复 Jenkins 环境。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/install-docker-jenkins/featured.png" />
+    </item>
+    
+    <item>
+      <title>Artifactory 与 Jenkins 集成</title>
+      <link>http://localhost:1313/posts/artifactory-integrate-with-jenkins/</link>
+      <pubDate>Sun, 17 Nov 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/artifactory-integrate-with-jenkins/</guid>
+      <description>本文介绍如何将 JFrog Artifactory 与 Jenkins 集成，实现持续集成和制品管理。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/artifactory-integrate-with-jenkins/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins Console Output 显示彩色</title>
+      <link>http://localhost:1313/posts/jenkins-output-display-color/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-output-display-color/</guid>
+      <description>本文介绍了如何在 Jenkins 的 Console Output 中使用颜色来突出显示重要日志信息，提升可读性和易用性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-output-display-color/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins privilege management</title>
+      <link>http://localhost:1313/posts/jenkins-privilege-management/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-privilege-management/</guid>
+      <description>本文介绍了如何在 Jenkins 中进行权限管理，包括如何设置 Job 的访问权限和执行权限，以确保安全和高效的 CI/CD 流程。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-privilege-management/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何设置 NFS 共享以及在不同的平台 Windows/Linux/Unix 进行挂载</title>
+      <link>http://localhost:1313/posts/nfs/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/nfs/</guid>
+      <description>本文介绍了如何设置 NFS 共享以及在不同平台（Windows/Linux/Unix）上进行挂载的步骤和命令。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/nfs/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何通过 Jenkins 进行资源的锁定和释放</title>
+      <link>http://localhost:1313/posts/jenkins-lock-resource/</link>
+      <pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-lock-resource/</guid>
+      <description>本文介绍了如何使用 Jenkins 的 Lockable Resources 插件来管理和锁定资源，确保在多任务环境中资源的独占性和安全性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-lock-resource/featured.png" />
+    </item>
+    
+    <item>
+      <title>在大型企业里维护多分支流水线</title>
+      <link>http://localhost:1313/posts/jenkins-multi-branch-pipeline/</link>
+      <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-multi-branch-pipeline/</guid>
+      <description>如果没有适当的解决方案，在大型企业可能难以创建和维护多分支流水线。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-multi-branch-pipeline/featured.png" />
+    </item>
+    
+    <item>
+      <title>通过 Jenkins 来提交修改的代码 git push by Jenkins</title>
+      <link>http://localhost:1313/posts/git-push-by-jenkins/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-push-by-jenkins/</guid>
+      <description>如何通过 Jenkins Pipeline 脚本来提交修改的代码到 Git 仓库，包括克隆仓库、修改代码和推送更改等步骤。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-push-by-jenkins/featured.png" />
+    </item>
+    
+    <item>
+      <title>Execute sudo without password</title>
+      <link>http://localhost:1313/posts/execute-sudo-without-password/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/execute-sudo-without-password/</guid>
+      <description>本文介绍了如何在 Jenkins Pipeline 中执行 sudo 命令而无需输入密码，提供了具体的实现方法和示例代码。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/execute-sudo-without-password/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkinsfile example - 实现交互、clone 多个仓库以及 git push</title>
+      <link>http://localhost:1313/posts/jenkinsfile-example/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkinsfile-example/</guid>
+      <description>这个 Jenkinsfile 示例展示了如何在 Jenkins Pipeline 中实现交互式输入、克隆多个 Git 仓库，并在构建完成后将代码推送到远程仓库。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkinsfile-example/featured.png" />
+    </item>
+    
+    <item>
+      <title>GitSCM clone code don&#39;t display branch</title>
+      <link>http://localhost:1313/posts/gitscm-clone-code-don-t-display-branch/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/gitscm-clone-code-don-t-display-branch/</guid>
+      <description>如何在 Jenkins 中使用 GitSCM插件克隆代码时，确保正确显示分支信息，避免出现 HEAD detached 状态的问题。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/gitscm-clone-code-don-t-display-branch/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins Linux Agent 配置</title>
+      <link>http://localhost:1313/posts/jenkins-linux-agent/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-linux-agent/</guid>
+      <description>本文提供了 Jenkins Linux Agent 的逐步配置指南，包括 Java 运行时的准备、节点创建以及常见问题的排查方法。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-linux-agent/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins Windows Agent 配置</title>
+      <link>http://localhost:1313/posts/jenkins-windows-agent/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-windows-agent/</guid>
+      <description>本文提供 Jenkins Windows Agent 的详细配置步骤，包括 Java 运行时准备、节点创建以及常见问题的排查方法。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-windows-agent/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkinsfile 配置</title>
+      <link>http://localhost:1313/posts/jenkinsfile-configure/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkinsfile-configure/</guid>
+      <description>本文介绍了如何使用 Jenkinsfile 配置 Jenkins Pipeline，包括构建、测试和发布阶段的示例，以及如何处理邮件通知。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkinsfile-configure/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gcov on DevOps Engineer</title>
+    <link>http://localhost:1313/en/tags/gcov/</link>
+    <description>Recent content in Gcov on DevOps Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>xianpeng.shen@gmail.com (Xianpeng Shen)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (Xianpeng Shen)</webMaster>
+    <copyright>© 2017 - 2025 Xianpeng Shen</copyright>
+    <lastBuildDate>Tue, 27 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/gcov/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to fix &#34;hidden symbol `__gcov_init&#39; in ../libgcov.a(_gcov.o) is referenced by DSO&#34;</title>
+      <link>http://localhost:1313/en/posts/how-to-fix-gcov-hidden-symbol/</link>
+      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/how-to-fix-gcov-hidden-symbol/</guid>
+      <description>This article explains how to resolve the &amp;ldquo;hidden symbol `__gcov_init&amp;rsquo; in ../libgcov.a(_gcov.o) is referenced by DSO&amp;rdquo; error when building a project with Gcov, including how to ensure symbols are not hidden.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/how-to-fix-gcov-hidden-symbol/featured.png" />
+    </item>
+    
+    <item>
+      <title>Code coverage testing of C/C&#43;&#43; projects using Gcov and LCOV</title>
+      <link>http://localhost:1313/en/posts/gcov-example/</link>
+      <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/gcov-example/</guid>
+      <description>This article shares how to use Gcov and LCOV to metrics code coverage for C/C++ projects. It explains the steps to compile, run tests, and generate coverage reports, including example commands and expected outputs.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/gcov-example/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

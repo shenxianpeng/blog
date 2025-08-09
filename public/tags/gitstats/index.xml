@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitStats on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/gitstats/</link>
+    <description>Recent content in GitStats on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Wed, 05 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/gitstats/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>🚀 gitstats 升级来袭：支持 JSON 输出、多平台兼容、代码重构！</title>
+      <link>http://localhost:1313/posts/gitstats-update/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/gitstats-update/</guid>
+      <description>gitstats 经过两个月的持续改进，现已支持 JSON 输出、代码重构、argparse 替换 getopt，并全面兼容 Windows 和 macOS。欢迎使用和 Star 支持！</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/gitstats-update/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NFS on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/nfs/</link>
+    <description>Recent content in NFS on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Tue, 10 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/nfs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>如何设置 NFS 共享以及在不同的平台 Windows/Linux/Unix 进行挂载</title>
+      <link>http://localhost:1313/posts/nfs/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/nfs/</guid>
+      <description>本文介绍了如何设置 NFS 共享以及在不同平台（Windows/Linux/Unix）上进行挂载的步骤和命令。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/nfs/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

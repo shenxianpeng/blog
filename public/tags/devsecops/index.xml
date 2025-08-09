@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevSecOps on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/devsecops/</link>
+    <description>Recent content in DevSecOps on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Thu, 13 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/devsecops/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>你的软件究竟从哪里来？</title>
+      <link>http://localhost:1313/posts/where-does-your-software-come-from/</link>
+      <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/where-does-your-software-come-from/</guid>
+      <description>本文介绍了软件制品的来源证明，强调了在软件开发生命周期中保护代码转换为制品的流程的重要性，并介绍了 SLSA 项目和 Sigstore 的作用。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/where-does-your-software-come-from/featured.png" />
+    </item>
+    
+    <item>
+      <title>代码签名（Code Signing） - GaraSign</title>
+      <link>http://localhost:1313/posts/garasign/</link>
+      <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/garasign/</guid>
+      <description>本文介绍了 GaraSign 代码签名工具的安装、使用和验证方法，帮助开发者实现安全的代码签名。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/garasign/featured.png" />
+    </item>
+    
+    <item>
+      <title>代码签名（Code Signing）</title>
+      <link>http://localhost:1313/posts/code-signing/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/code-signing/</guid>
+      <description>本文介绍代码签名的概念、重要性以及两种常见的代码签名工具，强调代码签名在软件供应链安全中的作用。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/code-signing/featured.png" />
+    </item>
+    
+    <item>
+      <title>2024年如何保持竞争力：DevOps工程师的关键技能</title>
+      <link>http://localhost:1313/posts/devops-skills-2024/</link>
+      <pubDate>Mon, 08 Apr 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/devops-skills-2024/</guid>
+      <description>本文介绍了在2024年DevOps工程师需要掌握的关键技能和能力，以应对裁员潮和人工智能的挑战，保持竞争力。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/devops-skills-2024/featured.png" />
+    </item>
+    
+    <item>
+      <title>2023 年最值得关注的 DevOps 趋势</title>
+      <link>http://localhost:1313/posts/devops-trends-2023/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/devops-trends-2023/</guid>
+      <description>本文介绍了2023年DevOps领域的主要趋势，包括云原生技术的持续采用、加强安全性和合规性、开发与运营团队协作、自动化和人工智能的发展等。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/devops-trends-2023/featured.png" />
+    </item>
+    
+    <item>
+      <title>2022 年最值得关注的 DevOps 趋势和问答</title>
+      <link>http://localhost:1313/posts/devops-trends-2022/</link>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/devops-trends-2022/</guid>
+      <description>本文介绍了2022年DevOps领域的主要趋势，包括无服务器计算、微服务架构、Kubernetes的普及以及DevSecOps的兴起，并回答了一些关于DevOps行业的问题。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/devops-trends-2022/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

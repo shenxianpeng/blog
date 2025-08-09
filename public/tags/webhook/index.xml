@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webhook on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/webhook/</link>
+    <description>Recent content in Webhook on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Fri, 07 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/webhook/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>通过 generic-webhook-trigger 插件实时获取 Bitbucket Repository Events</title>
+      <link>http://localhost:1313/posts/bitbucket-pull-request-event/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/bitbucket-pull-request-event/</guid>
+      <description>本文介绍如何使用 Jenkins 的 generic-webhook-trigger 插件来实时获取 Bitbucket 仓库的事件信息，如 Pull Request ID 等。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/bitbucket-pull-request-event/featured.png" />
+    </item>
+    
+    <item>
+      <title>Jenkins 与 Bitbucket Webhooks 的配置和使用</title>
+      <link>http://localhost:1313/posts/bitbucket-webhooks/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/bitbucket-webhooks/</guid>
+      <description>本文介绍如何在 Jenkins 中配置 Bitbucket Webhooks，以便在创建 Pull Request 时自动触发 Jenkins 构建。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/bitbucket-webhooks/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

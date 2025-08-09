@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on DevOps Engineer</title>
+    <link>http://localhost:1313/en/tags/git/</link>
+    <description>Recent content in Git on DevOps Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>xianpeng.shen@gmail.com (Xianpeng Shen)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (Xianpeng Shen)</webMaster>
+    <copyright>© 2017 - 2025 Xianpeng Shen</copyright>
+    <lastBuildDate>Wed, 18 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Conventional Branch Specification Released!</title>
+      <link>http://localhost:1313/en/posts/conventional-branch/</link>
+      <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/conventional-branch/</guid>
+      <description>This article introduces the Conventional Branch specification, which provides a structured naming convention for Git branches to enhance readability and collaboration.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/conventional-branch/featured.png" />
+    </item>
+    
+    <item>
+      <title>How to create GPG keys and add to GitHub</title>
+      <link>http://localhost:1313/en/posts/git-create-gpg-keys/</link>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/git-create-gpg-keys/</guid>
+      <description>This article explains how to create GPG keys, export the public key, and add it to GitHub for signing commits.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-create-gpg-keys/featured.png" />
+    </item>
+    
+    <item>
+      <title>Branch Naming Convention</title>
+      <link>http://localhost:1313/en/posts/git-branching-strategy/</link>
+      <pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/git-branching-strategy/</guid>
+      <description>This article introduces the conventional branch naming specification, including the purpose of branch names, key points, and basic rules for naming branches in Git. It also provides examples of branch prefixes and their meanings.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-branching-strategy/featured.png" />
+    </item>
+    
+    <item>
+      <title>These settings in Bitbucket/GitHub recommends enable</title>
+      <link>http://localhost:1313/en/posts/git-repository-settings/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/git-repository-settings/</guid>
+      <description>Provides a list of recommended settings for Bitbucket and GitHub repositories, including enabling force push rejection, branch protection, tag management, merge checks, and commit message standards.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-repository-settings/featured.png" />
+    </item>
+    
+    <item>
+      <title>git sparse-checkout enable and disable</title>
+      <link>http://localhost:1313/en/posts/git-sparse-checkout/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/git-sparse-checkout/</guid>
+      <description>This article explains how to enable and disable git sparse-checkout, including examples of how to configure sparse-checkout for specific directories and how to reset it.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-sparse-checkout/featured.png" />
+    </item>
+    
+    <item>
+      <title>Git Commit Squash</title>
+      <link>http://localhost:1313/en/posts/git-commit-squash/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/git-commit-squash/</guid>
+      <description>How to squash multiple Git commits into a single commit, both locally and remotely, using interactive rebase and merge strategies in Bitbucket.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-commit-squash/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

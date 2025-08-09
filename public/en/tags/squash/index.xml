@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Squash on DevOps Engineer</title>
+    <link>http://localhost:1313/en/tags/squash/</link>
+    <description>Recent content in Squash on DevOps Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>xianpeng.shen@gmail.com (Xianpeng Shen)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (Xianpeng Shen)</webMaster>
+    <copyright>© 2017 - 2025 Xianpeng Shen</copyright>
+    <lastBuildDate>Tue, 20 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/squash/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Git Commit Squash</title>
+      <link>http://localhost:1313/en/posts/git-commit-squash/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/git-commit-squash/</guid>
+      <description>How to squash multiple Git commits into a single commit, both locally and remotely, using interactive rebase and merge strategies in Bitbucket.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-commit-squash/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

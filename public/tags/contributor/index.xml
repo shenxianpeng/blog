@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contributor on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/contributor/</link>
+    <description>Recent content in Contributor on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sun, 21 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/contributor/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>《分享》通过 Jenkins-X 社区最终进入到 Jenkins 基础设施团队成为 SRE 的经历</title>
+      <link>http://localhost:1313/posts/jenkins-contributors/</link>
+      <pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-contributors/</guid>
+      <description>本文介绍了 Hervé Le Meur 如何通过 Jenkins-X 社区的贡献，最终成为 Jenkins 基础设施团队的一名 SRE，并分享了他的经历和对 Jenkins 的看法。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-contributors/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

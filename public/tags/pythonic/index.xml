@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pythonic on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/pythonic/</link>
+    <description>Recent content in Pythonic on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/pythonic/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>你的 Python 代码够不够 Pythonic？</title>
+      <link>http://localhost:1313/posts/pythonic/</link>
+      <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/pythonic/</guid>
+      <description>本文介绍了 Pythonic 的概念，并通过示例展示如何编写更简洁、优美的 Python 代码，帮助开发者提升代码质量和可读性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/pythonic/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

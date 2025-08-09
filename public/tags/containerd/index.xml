@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Containerd on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/containerd/</link>
+    <description>Recent content in Containerd on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/containerd/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>关于 Docker，containerd，CRI，CRI-O，OCI，runc 的解释以及它们是如何工作在一起的</title>
+      <link>http://localhost:1313/posts/container-ecosystem/</link>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/container-ecosystem/</guid>
+      <description>本文介绍了 Docker、containerd、CRI、CRI-O、OCI 和 runc 等容器生态系统中的关键组件和标准，解释它们之间的关系以及如何协同工作。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/container-ecosystem/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

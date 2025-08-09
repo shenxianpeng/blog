@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Squash on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/squash/</link>
+    <description>Recent content in Squash on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Tue, 20 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/squash/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Git 提交合并（Squash）</title>
+      <link>http://localhost:1313/posts/git-commit-squash/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/git-commit-squash/</guid>
+      <description>介绍如何将多个 Git 提交合并为一个提交，包括本地和已推送到远程的情况，分别使用交互式 rebase 和在 Bitbucket 中的合并策略。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/git-commit-squash/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

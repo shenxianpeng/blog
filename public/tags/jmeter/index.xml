@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JMeter on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/jmeter/</link>
+    <description>Recent content in JMeter on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/jmeter/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>使用 JMeter 进行性能测试</title>
+      <link>http://localhost:1313/posts/jmeter-performance-testing/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jmeter-performance-testing/</guid>
+      <description>介绍如何使用 JMeter 进行性能测试，包括录制脚本、在 GUI 和非 GUI 模式下运行测试，以及在 Jenkins 中实现自动化测试。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jmeter-performance-testing/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

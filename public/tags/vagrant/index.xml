@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vagrant on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/vagrant/</link>
+    <description>Recent content in Vagrant on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Mon, 14 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Vagrant 和 Docker 的区别，该如何选？</title>
+      <link>http://localhost:1313/posts/vagrant-vs-docker/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/vagrant-vs-docker/</guid>
+      <description>本文介绍了 Vagrant 和 Docker 的区别，分析了它们各自的使用场景和优势，帮助读者选择合适的工具来管理虚拟机或容器。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/vagrant-vs-docker/featured.png" />
+    </item>
+    
+    <item>
+      <title>什么是 Vagrant? Vagrant 和 VirtualBox 的区别</title>
+      <link>http://localhost:1313/posts/vagrant/</link>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/vagrant/</guid>
+      <description>本文介绍了 Vagrant 的概念、发展历史以及如何使用 Vagrant 创建和管理虚拟机，强调了 Vagrant 相比传统虚拟机的优势。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/vagrant/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

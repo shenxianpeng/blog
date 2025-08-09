@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fork on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/fork/</link>
+    <description>Recent content in Fork on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Fri, 09 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/fork/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>如果你是项目成员，是 Fork 原始仓库还是直接原始仓库中修改代码？</title>
+      <link>http://localhost:1313/posts/fork-or-unfork/</link>
+      <pubDate>Fri, 09 Jun 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/fork-or-unfork/</guid>
+      <description>本文讨论了在开源项目中，作为项目成员是 Fork 原始仓库还是直接在原始仓库中修改代码的利弊，帮助开发者做出更合适的选择。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/fork-or-unfork/featured.png" />
+    </item>
+    
+    <item>
+      <title>靠谱：在不删除和重建 GitHub 仓库的情况下与父(Fork)仓库分离(Unfork)</title>
+      <link>http://localhost:1313/posts/unfork-github-repo/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/unfork-github-repo/</guid>
+      <description>本文介绍了如何通过 GitHub Support 实现与父仓库的分离，避免删除和重建仓库带来的数据丢失问题，帮助开发者更好地管理 Fork 的仓库。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/unfork-github-repo/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

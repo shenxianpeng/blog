@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SLSA on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/slsa/</link>
+    <description>Recent content in SLSA on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Thu, 13 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/slsa/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>你的软件究竟从哪里来？</title>
+      <link>http://localhost:1313/posts/where-does-your-software-come-from/</link>
+      <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/where-does-your-software-come-from/</guid>
+      <description>本文介绍了软件制品的来源证明，强调了在软件开发生命周期中保护代码转换为制品的流程的重要性，并介绍了 SLSA 项目和 Sigstore 的作用。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/where-does-your-software-come-from/featured.png" />
+    </item>
+    
+    <item>
+      <title>代码签名（Code Signing） - GaraSign</title>
+      <link>http://localhost:1313/posts/garasign/</link>
+      <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/garasign/</guid>
+      <description>本文介绍了 GaraSign 代码签名工具的安装、使用和验证方法，帮助开发者实现安全的代码签名。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/garasign/featured.png" />
+    </item>
+    
+    <item>
+      <title>代码签名（Code Signing）</title>
+      <link>http://localhost:1313/posts/code-signing/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/code-signing/</guid>
+      <description>本文介绍代码签名的概念、重要性以及两种常见的代码签名工具，强调代码签名在软件供应链安全中的作用。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/code-signing/featured.png" />
+    </item>
+    
+    <item>
+      <title>如何在 GitHub 与非 GitHub 项目中采用软件供应链安全</title>
+      <link>http://localhost:1313/posts/supply-chain-security/</link>
+      <pubDate>Sat, 02 Dec 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/supply-chain-security/</guid>
+      <description>本文介绍如何使用 SLSA 与 Witness 在 GitHub 与非 GitHub 项目中实现软件供应链安全，以提升软件开发与部署流程的安全性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/supply-chain-security/featured.png" />
+    </item>
+    
+    <item>
+      <title>Witness 和 SLSA 💃</title>
+      <link>http://localhost:1313/posts/witness-and-slsa/</link>
+      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/witness-and-slsa/</guid>
+      <description>本文介绍了 Witness 的概念、工作原理以及如何使用 Witness 来生成和验证软件工件的来源，强调了其在提高软件供应链安全性方面的重要性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/witness-and-slsa/featured.png" />
+    </item>
+    
+    <item>
+      <title>Python 和 SLSA 💃</title>
+      <link>http://localhost:1313/posts/python-and-slsa/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/python-and-slsa/</guid>
+      <description>本文介绍了如何在 Python 生态系统中使用 SLSA 框架来生成和验证 Python 工件的来源，从而提升软件供应链的安全性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/python-and-slsa/featured.png" />
+    </item>
+    
+    <item>
+      <title>详解SBOM：定义、关系、区别、最佳实践和生成工具</title>
+      <link>http://localhost:1313/posts/sbom/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/sbom/</guid>
+      <description>本文介绍了SBOM的定义、与SLSA和Black Duck的关系和区别、最佳实践以及可用的生成工具，帮助读者更好地理解和应用SBOM。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/sbom/featured.png" />
+    </item>
+    
+    <item>
+      <title>SLSA 框架与软件供应链安全防护</title>
+      <link>http://localhost:1313/posts/slsa/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/slsa/</guid>
+      <description>本文介绍了 SLSA 框架的概念、目的、等级划分以及如何在软件供应链中应用 SLSA 来提升安全性，帮助读者理解 SLSA 在软件开发和部署中的重要性。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/slsa/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

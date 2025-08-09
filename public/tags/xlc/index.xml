@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XLC on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/xlc/</link>
+    <description>Recent content in XLC on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sun, 08 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/xlc/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>从 XLC 10.1 升级到 IBM Open XL C/C&#43;&#43; for AIX 17.1.0 的问题与解决方案</title>
+      <link>http://localhost:1313/posts/upgrade-xlc-10-to-xlc-17.1/</link>
+      <pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/upgrade-xlc-10-to-xlc-17.1/</guid>
+      <description>本文记录了从 IBM XLC 10.1 升级到 XLC 17.1（IBM Open XL C/C++ for AIX 17.1.0）过程中遇到的问题及解决方法，共涵盖 12 个错误的修复方案。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/upgrade-xlc-10-to-xlc-17.1/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on DevOps Engineer</title>
+    <link>http://localhost:1313/en/tags/c/</link>
+    <description>Recent content in C on DevOps Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>xianpeng.shen@gmail.com (Xianpeng Shen)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (Xianpeng Shen)</webMaster>
+    <copyright>© 2017 - 2025 Xianpeng Shen</copyright>
+    <lastBuildDate>Tue, 21 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Code Coverage tools of C/C&#43;&#43;</title>
+      <link>http://localhost:1313/en/posts/code-coverage-tools/</link>
+      <pubDate>Tue, 21 May 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (Xianpeng Shen)</author>
+      <guid>http://localhost:1313/en/posts/code-coverage-tools/</guid>
+      <description>Code Coverage is a measurement of how many lines, statements, or blocks of your code are tested using your suite of automated tests. It’s an essential metric to understand the quality of your QA efforts.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/code-coverage-tools/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

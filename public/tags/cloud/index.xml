@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/cloud/</link>
+    <description>Recent content in Cloud on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sat, 25 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>如何使用 Jenkins Docker Cloud</title>
+      <link>http://localhost:1313/posts/jenkins-docker-cloud/</link>
+      <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/jenkins-docker-cloud/</guid>
+      <description>本文介绍如何使用 Jenkins Docker Cloud 来构建和部署应用，包括配置 Docker 主机以及创建自定义 Docker 镜像。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/jenkins-docker-cloud/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

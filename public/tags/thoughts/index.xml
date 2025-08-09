@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thoughts on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/thoughts/</link>
+    <description>Recent content in Thoughts on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>出国一年，我看清了：不是所有人都适合来欧洲</title>
+      <link>http://localhost:1313/misc/run-or-not/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/run-or-not/</guid>
+      <description>哪些人适合来欧洲发展，哪些人可能会感到不适？从程序员和孩子爸爸的双重视角，聊聊出国生活的真实体验。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/run-or-not/featured.png" />
+    </item>
+    
+    <item>
+      <title>2024 年终总结</title>
+      <link>http://localhost:1313/misc/2024-summary/</link>
+      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/2024-summary/</guid>
+      <description>&lt;p&gt;时间过得很快，2024 年即将过去。如果不记录下在这一年里发生的事情，过不了多久就很难回想起这一年都发生了什么。按照惯例，这篇年终总结如期而至。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/2024-summary/featured.png" />
+    </item>
+    
+    <item>
+      <title>我的女儿</title>
+      <link>http://localhost:1313/misc/my-daughter/</link>
+      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/my-daughter/</guid>
+      <description>女儿已经两岁七个月了，我还没有单独写过一篇关于她的文章。记录下我和女儿的点滴生活。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/my-daughter/featured.png" />
+    </item>
+    
+    <item>
+      <title>选择往往比努力更重要</title>
+      <link>http://localhost:1313/misc/power-of-choice/</link>
+      <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/power-of-choice/</guid>
+      <description>偶尔深夜躺下时，我常常在想，我是怎么就走到这了？这都是源于毕业后的一系列选择吧！</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/power-of-choice/featured.png" />
+    </item>
+    
+    <item>
+      <title>2023 年终总结</title>
+      <link>http://localhost:1313/misc/2023-summary/</link>
+      <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/2023-summary/</guid>
+      <description>&lt;p&gt;时间过得很快，2023 年转瞬即逝。如果不记录下自己在这一年里发生的事情，过不了多久就很难回想起来这一年都发生过什么。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/2023-summary/featured.png" />
+    </item>
+    
+    <item>
+      <title>2022 年终总结</title>
+      <link>http://localhost:1313/misc/2022-summary/</link>
+      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/2022-summary/</guid>
+      <description>&lt;p&gt;时间过得好快，又过完了一年。&lt;/p&gt;
+&lt;p&gt;今年想写一些总结回顾一下过去的一年发生在自己身上的重要事件。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/2022-summary/featured.png" />
+    </item>
+    
+    <item>
+      <title>从QA到DEV到DEVOPS，码字五年有哪些收获</title>
+      <link>http://localhost:1313/misc/from-qa-to-dev-to-devops/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/from-qa-to-dev-to-devops/</guid>
+      <description>从软件测试到开发再到DevOps，码字五年有哪些收获？分享我的职业发展和写作经验。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/from-qa-to-dev-to-devops/featured.png" />
+    </item>
+    
+    <item>
+      <title>2020 年终总结</title>
+      <link>http://localhost:1313/misc/2020-summary/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/2020-summary/</guid>
+      <description>&lt;p&gt;时间飞快，马上就迎来了 2021 年，又到了总结自己这一年来的所有的经历和收获的时候了。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/2020-summary/featured.png" />
+    </item>
+    
+    <item>
+      <title>2019 年终总结</title>
+      <link>http://localhost:1313/misc/2019-summary/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/2019-summary/</guid>
+      <description>&lt;p&gt;时间过得飞快，转眼已经是 2020 年的第三天了，回顾 2019 年，我给自己的年终关键词是：尽力。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/2019-summary/featured.png" />
+    </item>
+    
+    <item>
+      <title>从测试转开发</title>
+      <link>http://localhost:1313/misc/from-qa-to-dev/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/misc/from-qa-to-dev/</guid>
+      <description>从测试转开发的五个月，工作、学习、生活的感悟和总结。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/misc/from-qa-to-dev/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

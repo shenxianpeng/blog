@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coverity on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/coverity/</link>
+    <description>Recent content in Coverity on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/coverity/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Polaris - 静态代码分析</title>
+      <link>http://localhost:1313/posts/what-is-polaris/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/what-is-polaris/</guid>
+      <description>这篇文章介绍了 Polaris 的基本概念、支持的编程语言、SaaS 平台的使用方法，以及如何配置和运行 Polaris 进行静态代码分析。它还提供了示例 YAML 配置文件和分析结果的查看方式。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/what-is-polaris/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

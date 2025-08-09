@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OSS on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/oss/</link>
+    <description>Recent content in OSS on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Thu, 22 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/oss/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2023 年开源状况和人工智能的崛起（GitHub）</title>
+      <link>http://localhost:1313/posts/open-source-state/</link>
+      <pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/open-source-state/</guid>
+      <description>本文介绍了 GitHub 发布的 2023 年开源状况和人工智能的崛起报告，分析了开发者社区的增长、生成式 AI 的应用以及云原生技术的发展趋势。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/open-source-state/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

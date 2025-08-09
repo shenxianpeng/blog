@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FTP on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/ftp/</link>
+    <description>Recent content in FTP on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>通过参数化上传文件到 FTP 服务器</title>
+      <link>http://localhost:1313/posts/upload-to-ftp-parameterization-by-bat/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/upload-to-ftp-parameterization-by-bat/</guid>
+      <description>本文介绍了如何使用 Windows Batch 脚本通过参数化的方式上传文件到 FTP 服务器，避免在脚本中硬编码 FTP 凭据。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/upload-to-ftp-parameterization-by-bat/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

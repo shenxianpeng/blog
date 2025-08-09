@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on DevOps 攻城狮</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on DevOps 攻城狮</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xianpeng.shen@gmail.com (沈显鹏)</managingEditor>
+    <webMaster>xianpeng.shen@gmail.com (沈显鹏)</webMaster>
+    <copyright>© 2017 - 2025 沈显鹏</copyright>
+    <lastBuildDate>Fri, 16 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>限制他人登录你的重要 Linux 服务器</title>
+      <link>http://localhost:1313/posts/restrict-connect-server/</link>
+      <pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/restrict-connect-server/</guid>
+      <description>本文介绍如何通过修改 &lt;code&gt;/etc/security/access.conf&lt;/code&gt; 文件，限制只有特定用户可以登录关键的 Linux 服务器。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/restrict-connect-server/featured.png" />
+    </item>
+    
+    <item>
+      <title>用 VirtualBox 配置一台 Linux 虚拟机</title>
+      <link>http://localhost:1313/posts/setup-linux-in-virtualbox/</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/setup-linux-in-virtualbox/</guid>
+      <description>本文介绍了如何在 VirtualBox 中配置一台 Linux 虚拟机，包括下载、安装和配置步骤，帮助用户快速搭建 Linux 环境。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/setup-linux-in-virtualbox/featured.png" />
+    </item>
+    
+    <item>
+      <title>最有用的 Linux 命令行技巧</title>
+      <link>http://localhost:1313/posts/linux-tips/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      <author>xianpeng.shen@gmail.com (沈显鹏)</author>
+      <guid>http://localhost:1313/posts/linux-tips/</guid>
+      <description>本文介绍了一些最有用的 Linux 命令行技巧，以提高开发和运维的效率。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/linux-tips/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
