@@ -4,8 +4,6 @@ summary: 本文介绍了如何在 Nightwatch.js 中处理颜色比较，包括�
 date: 2017-10-25
 tags:
 - Nightwatch
-- Automation
-- Automation
 ---
 
 在做 Nightwatch 自动化测试中，出现需要比较颜色的时候如何来做？

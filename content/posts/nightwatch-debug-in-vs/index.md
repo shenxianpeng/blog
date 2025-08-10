@@ -4,8 +4,6 @@ summary: 本文介绍如何配置 VS Code 来调试 Nightwatch 测试代码，�
 date: 2018-02-01
 tags:
 - Nightwatch
-- Javascript
-- Automation
 author: shenxianpeng
 ---
 
