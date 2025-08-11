@@ -172,4 +172,4 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   # userId = ""
 
 [advertisement]
-  # adsense = ""
+  adsense = "ca-pub-3986315287795783"
