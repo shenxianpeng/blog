@@ -20,9 +20,10 @@ copyright = "版权所有© 2017-2025 沈显鹏。保留所有权利。"
   headline = "DevOps 工程师 | Python 爱好者 | 开源贡献者"
   links = [
     { email = "mailto:xianpeng.shen@gmail.com" },
-    { rss = "shenxianpeng.github.io/index.xml" },
+    { rss = "index.xml" },
     { github = "https://github.com/shenxianpeng" },
     { linkedin = "https://www.linkedin.com/in/xianpeng-shen/" },
     { medium = "https://medium.com/@xianpeng.shen/"  },
-    { link = "https://shenxianpeng.github.io/" },
+    { dev = "https://dev.to/shenxianpeng"  },
+    { youtube = "https://www.youtube.com/@shenxianpeng" },
   ]

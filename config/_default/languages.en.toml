@@ -20,9 +20,10 @@ imageQuality = 96
 headline = "DevOps Engineer | Python Enthusiast | Open Source Maintainer"
 links = [
   { email = "mailto:xianpeng.shen@gmail.com" },
-  { rss = "https://shenxianpeng.github.io/index.xml" },
+  { rss = "index.xml" },
   { github = "https://github.com/shenxianpeng" },
   { linkedin = "https://www.linkedin.com/in/xianpeng-shen/" },
   { medium = "https://medium.com/@xianpeng.shen/"  },
-  { link = "https://shenxianpeng.github.io/" },
+  { dev = "https://dev.to/shenxianpeng"  },
+  { youtube = "https://www.youtube.com/@shenxianpeng" },
 ]
