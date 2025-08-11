@@ -1,21 +1,24 @@
 ---
-title: "Xianpeng Shen"
+title: "Xianpeng Shen's Resume"
 author: shenxianpeng
 showAuthor: true
----
 
-**DevOps Engineer**  
-📧 [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)  
-🌐 [shenxianpeng.github.io](https://shenxianpeng.github.io)  
-🔗 [LinkedIn](https://www.linkedin.com/in/xianpeng-shen) | [GitHub](https://github.com/shenxianpeng)
-
-![](sxp.jpg)
-
-## Languages
-- **Chinese** — Native
-- **English** — Professional Working Proficiency
-- **Lithuanian** — A1 (Beginner)
-
+showDate : false
+showDateOnlyInArticle : false
+showDateUpdated : false
+showHeadingAnchors : false
+showPagination : false
+showReadingTime : false
+showTableOfContents : true
+showTaxonomies : false 
+showWordCount : false
+showSummary : false
+sharingLinks : false
+showEdit: false
+showViews: false
+showLikes: false
+showAuthor: true
+layoutBackgroundHeaderSpace: false
 ---
 
 ## About
@@ -88,6 +91,11 @@ Responsible for MultiValue product CI/CD, infrastructure management, and DevOps 
 - **[atlassian-api-py](https://github.com/shenxianpeng/atlassian-api-py/)**  Python library for easy CI integration with Jira and Bitbucket REST APIs.
 
 ---
+
+## Languages
+- **Chinese** — Native
+- **English** — Professional Working Proficiency
+- **Lithuanian** — A1 (Beginner)
 
 ## Skills
 - **DevOps**: ★★★★★ 95%

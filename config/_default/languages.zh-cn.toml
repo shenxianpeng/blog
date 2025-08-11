@@ -10,7 +10,7 @@ rtl = false
 dateFormat = "2006-01-02"
 logo = "img/logo.png"
 description = "DevOps 工程师 | Python 爱好者 | 开源贡献者"
-copyright = "版权所有© 2017-2025 沈显鹏。保留所有权利。"
+copyright = "© 2017–2025 沈显鹏 版权所有"
 
 [params.author]
   name = "沈显鹏"

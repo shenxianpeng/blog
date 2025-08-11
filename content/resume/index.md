@@ -1,24 +1,27 @@
 ---
-title: "沈显鹏"
+title: "沈显鹏的简历"
 author: shenxianpeng
 showAuthor: true
+
+showDate : false
+showDateOnlyInArticle : false
+showDateUpdated : false
+showHeadingAnchors : false
+showPagination : false
+showReadingTime : false
+showTableOfContents : true
+showTaxonomies : false 
+showWordCount : false
+showSummary : false
+sharingLinks : false
+showEdit: false
+showViews: false
+showLikes: false
+showAuthor: true
+layoutBackgroundBlur: false
 ---
 
-**DevOps工程师**  
-📧 [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)
-🌐 [shenxianpeng.github.io](https://shenxianpeng.github.io)  
-🔗 [LinkedIn](https://www.linkedin.com/in/xianpeng-shen) | [GitHub](https://github.com/shenxianpeng)
-
-![](sxp.jpg)
-
-## 语言
-- **中文**：母语
-- **英语**：工作流利
-- **立陶宛语**：初级
-
----
-
-## 个人总结
+## 关于
 - DevOps/Build/Release 领域的 Tech Lead。
 - 从零建立起团队的 DevOps，并在整个团队以及整个部门分享最佳实践。
 - 从事过自动化测试、软件开发工作，从 2018 年开始担任 DevOps/Build/Release 工程师。
@@ -90,6 +93,11 @@ showAuthor: true
 - **[atlassian-api-py](https://github.com/shenxianpeng/atlassian-api-py/)**  Python 实现的 Atlassian API 库，便于集成 Jira 与 Bitbucket 的自动化流程。
 
 ---
+
+## 语言
+- **中文**：母语
+- **英语**：工作流利
+- **立陶宛语**：初级
 
 ## 技能
 - **DevOps**：★★★★★ (95%)
