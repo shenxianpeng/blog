@@ -21,20 +21,20 @@ showAuthor: true
 layoutBackgroundHeaderSpace: false
 ---
 
-你好！我是沈显鹏，一名热爱 DevOps、Python 和开源的 DevOps 工程师，专注于创建高效、可靠和优雅的解决方案。
+你好！我是沈显鹏，一名热爱 DevOps、Python 和开源的 DevOps 工程师，专注于打造高效、可靠和优雅的解决方案。
 
-我撰写 [文章](/posts)，开发免费 [软件](/portfolio)，并为开源项目做出贡献。
-
----
-
-我与家人一起生活在立陶宛的维尔纽斯。我喜欢探索世界，学习新技术，并与他人分享我的知识。
-
-我会说中文、英语和一点立陶宛语。
+我撰写 [文章](/posts)，开发免费 [软件](/portfolio)，并积极参与 [开源项目](https://github.com/pulls?q=is%3Apr+author%3Ashenxianpeng+archived%3Afalse+is%3Amerged+user%3Apypa+user%3Ajenkinsci+user%3Acpp-linter+user%3Acommit-check+user%3Aconventional-branch+user%3Adevops-maturity)。
 
 ---
 
-无论你是想邀请我参加活动，还是希望我作为播客嘉宾，或是想与我分享你对我内容的看法，我都非常乐意听取你的意见。与我联系的最佳方式是通过 [电子邮件](mailto:xianpeng.shen@gmail.com)。
+目前我与家人居住在立陶宛维尔纽斯，喜欢探索世界、学习新技术，并通过博客和开源项目记录与分享所学所见。
+
+我会中文、英语，也略懂一些立陶宛语。
 
 ---
 
-我也欢迎对 [我的项目](/portfolio) 进行贡献，所以如果你发现有趣或有用的内容，欢迎参与！
+如果你想邀请我参加活动、约稿、合作，或只是交流对内容的看法，欢迎通过 [电子邮件](mailto:xianpeng.shen@gmail.com)。
+
+---
+
+同时，[我的项目](/portfolio) 欢迎任何形式的贡献——如果你觉得它们有趣或有用，期待你的参与！
