@@ -56,19 +56,13 @@ CLI example:
 
 ![CLI Version](demo.gif)
 
-Web example:
+CLI video:
 
-Home – Start Assessment
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RZJtcynyC08?si=Zw_Yc2YMa_R6SfCi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-![Home](home.png)
+Web video:
 
-Results – Clear and Intuitive
-
-![Results](result.png)
-
-Track Assessment History
-
-![History](list.png)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BGpz0iP61c4?si=XXJJT5Gq5adHdF8D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Five Highlights
 
@@ -79,6 +73,8 @@ The DevOps Maturity project has five key highlights:
 3. **Visualized Results**: Intuitive interfaces to quickly understand your team's status.
 4. **Continuous Improvement**: Badge level incentives encourage ongoing DevOps practice improvement.
 5. **Customizable Extension**: Users can customize assessment items and metrics as needed, e.g., by editing [`criteria.yaml`](https://github.com/devops-maturity/devops-maturity/blob/main/src/config/criteria.yaml), without changing a single line of code to generate a unique assessment scheme.
+
+DevOps Maturity Enterprise Edition is also in development, with more enterprise features and support coming soon!
 
 ## Join Us
 
