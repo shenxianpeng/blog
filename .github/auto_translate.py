@@ -66,19 +66,18 @@ def main():
     if not missing:
         print('No missing files detected.')
         return
-    branch_name = BRANCH_PREFIX + 'add-missing-' + str(os.getpid())
+    # Only process one post per run
+    sub, lang = missing[0]
+    branch_name = BRANCH_PREFIX + f'add-missing-{sub.name}-{lang}-{os.getpid()}'
     create_branch(branch_name)
-    new_files = []
-    for sub, lang in missing:
-        src = sub / ('index.en.md' if lang == 'zh' else 'index.md')
-        target = sub / ('index.md' if lang == 'zh' else 'index.en.md')
-        print(f'Translating {src} -> {target}')
-        translated = translate_with_gemini(src, lang)
-        with open(target, 'w', encoding='utf-8') as f:
-            f.write(translated)
-        new_files.append(str(target))
-    commit_and_push(branch_name, new_files)
-    create_pr(branch_name, new_files)
+    src = sub / ('index.en.md' if lang == 'zh' else 'index.md')
+    target = sub / ('index.md' if lang == 'zh' else 'index.en.md')
+    print(f'Translating {src} -> {target}')
+    translated = translate_with_gemini(src, lang)
+    with open(target, 'w', encoding='utf-8') as f:
+        f.write(translated)
+    commit_and_push(branch_name, [str(target)])
+    create_pr(branch_name, [str(target)])
 
 if __name__ == '__main__':
     main()
