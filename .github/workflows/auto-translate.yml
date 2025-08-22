@@ -1,4 +1,4 @@
-name: Auto Translate Missing Blog Posts
+name: Auto Translate
 
 on:
   push:
