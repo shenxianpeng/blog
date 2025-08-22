@@ -1,7 +1,4 @@
 import os
-import sys
-import yaml
-import glob
 import subprocess
 from pathlib import Path
 from github import Github
