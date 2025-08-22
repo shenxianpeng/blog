@@ -11,19 +11,19 @@ build:
 .PHONY: default d dev b build
 
 # Install dependencies for translation
-setup:
+install-deps:
 	pip3 install -r requirements.txt
 
-# Auto translate Chinese posts to English (requires OpenAI API key)
+# Auto translate Chinese posts to English (requires Gemini API key)
 translate:
-	bin/auto-translate.py --all
+	.github/auto_translate.py
 
-# Translate the latest post only (requires OpenAI API key)
+# Translate the latest post only (requires Gemini API key)
 translate-latest:
-	bin/auto-translate.py --latest
+	.github/auto_translate.py
 
 # Translate specific post (usage: make translate-post POST=content/posts/my-post/)
 translate-post:
-	bin/auto-translate.py $(POST)
+	.github/auto_translate.py
 
-.PHONY: default dev build setup translate translate-latest translate-post
+.PHONY: default dev build install-deps translate translate-latest translate-post
