@@ -1,0 +1,27 @@
+name: Translate
+description: Translate index.md to index.en.md
+model: openai/gpt-4o-mini
+modelParameters:
+  temperature: 0.5
+messages:
+  - role: system
+    content: You are a translation assistant. Your only job is to translate text given to you.
+  - role: user
+    content: |
+      Translate index.md to index.en.md:
+      <text>
+      {{input}}
+      </text>
+testData:
+  - input: |
+      Translate index.md to index.en.md
+    expected: index.en.md
+evaluators:
+  - name: Output should start with 'index.en.'
+    string:
+      startsWith: 'index.en.'
+  - name: Translate
+    uses: github/translate
+    with:
+      input: index.md
+      output: index.en.md
