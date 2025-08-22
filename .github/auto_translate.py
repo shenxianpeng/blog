@@ -37,8 +37,17 @@ Keep all formatting, code blocks, and technical terms. Only return the translate
 
 {content}
 """
-    response = model.generate_content(prompt)
-    return response.text.strip()
+    try:
+        response = model.generate_content(prompt)
+        return response.text.strip()
+    except Exception as e:
+        if hasattr(e, 'message') and 'quota' in str(e.message).lower():
+            print('Gemini API quota exceeded. Skipping translation for this run.')
+        elif 'quota' in str(e).lower():
+            print('Gemini API quota exceeded. Skipping translation for this run.')
+        else:
+            print(f'Error during translation: {e}')
+        return None
 
 def create_branch(branch_name):
     subprocess.run(['git', 'checkout', BASE_BRANCH], check=True)
@@ -74,6 +83,9 @@ def main():
     target = sub / ('index.md' if lang == 'zh' else 'index.en.md')
     print(f'Translating {src} -> {target}')
     translated = translate_with_gemini(src, lang)
+    if not translated:
+        print('Translation failed or quota exceeded. Exiting without commit or PR.')
+        return
     with open(target, 'w', encoding='utf-8') as f:
         f.write(translated)
     commit_and_push(branch_name, [str(target)])
