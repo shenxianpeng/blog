@@ -1,5 +1,5 @@
 ---
-title: Developing on Windows Just Got Awesome: WSL + VS Code + Docker Desktop - Worth a Try
+title: Developing on Windows Just Got Awesome using WSL + VS Code + Docker Desktop - Worth a Try
 summary: This article introduces how to develop on Windows using WSL, VS Code, and Docker Desktop. It provides detailed installation and configuration steps, as well as the advantages and experience of using these tools.
 tags:
   - WSL

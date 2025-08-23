@@ -68,8 +68,15 @@ def create_pr(branch_name, files):
         head=branch_name,
         base=BASE_BRANCH
     )
+    # Assign PR to repo owner
     pr.add_to_assignees(repo.owner.login)
     pr.add_to_labels('translate')
+    # Request review from repo owner and GitHub Copilot
+    reviewers = [repo.owner.login, 'github-copilot[bot]']
+    try:
+        pr.create_review_request(reviewers=reviewers)
+    except Exception as e:
+        print(f'Failed to request reviewers: {e}')
     print(f'Created PR: {pr.html_url}')
 
 def main():
