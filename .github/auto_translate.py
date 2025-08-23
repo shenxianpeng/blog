@@ -17,9 +17,10 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 def find_missing_files():
     missing = []
     for folder in ['content/posts', 'content/misc']:
-        for sub in Path(folder).glob('*/'):
-            if not sub.is_dir():
-                continue
+        subs = [sub for sub in Path(folder).glob('*/') if sub.is_dir()]
+        # Sort subfolders by modification time, latest first
+        subs.sort(key=lambda x: x.stat().st_mtime, reverse=True)
+        for sub in subs:
             zh = sub / 'index.md'
             en = sub / 'index.en.md'
             if zh.exists() and not en.exists():
@@ -68,6 +69,7 @@ def create_pr(branch_name, files):
         base=BASE_BRANCH
     )
     pr.add_to_assignees(repo.owner.login)
+    pr.add_to_labels('translate')
     print(f'Created PR: {pr.html_url}')
 
 def main():
