@@ -9,7 +9,7 @@ GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 REPO = os.getenv('GITHUB_REPOSITORY', 'shenxianpeng/blog')
 BRANCH_PREFIX = 'auto-translate/'
-BASE_BRANCH = os.getenv('GITHUB_REF_NAME', 'main')
+BASE_BRANCH = 'main'
 
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
@@ -68,11 +68,9 @@ def create_pr(branch_name, files):
         head=branch_name,
         base=BASE_BRANCH
     )
-    # Assign PR to repo owner
-    pr.add_to_assignees(repo.owner.login)
     pr.add_to_labels('translate')
     # Request review from repo owner and GitHub Copilot
-    reviewers = [repo.owner.login, 'github-copilot[bot]']
+    reviewers = [repo.owner.login, 'Copilot']
     try:
         pr.create_review_request(reviewers=reviewers)
     except Exception as e:
