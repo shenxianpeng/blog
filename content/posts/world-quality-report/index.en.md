@@ -155,5 +155,3 @@ Changes I learned from reading the entire WQR report:
 
 
 ---
-
-> Follow the WeChat Official Account "DevOps攻城狮" and reply "WQR" to download the complete "2021-22 World Quality Report (WQR)".
