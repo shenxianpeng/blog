@@ -69,7 +69,7 @@ def create_pr(branch_name, files):
         base=BASE_BRANCH
     )
     pr.add_to_assignees(repo.owner.login)
-    pr.add_to_labels(['translate'])
+    pr.add_to_labels('translate')
     print(f'Created PR: {pr.html_url}')
 
 def main():
