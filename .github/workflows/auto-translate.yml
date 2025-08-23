@@ -1,10 +1,10 @@
 name: Auto Translate
 
 on:
-  push:
-    paths:
-      - 'content/posts/**'
-      - 'content/misc/**'
+  # push:
+  #   paths:
+  #     - 'content/posts/**'
+  #     - 'content/misc/**'
   schedule:
     - cron: '0 2 * * *'
   workflow_dispatch:
@@ -31,5 +31,5 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          python3 .github/auto_translate.py
+          make translate
           make build
