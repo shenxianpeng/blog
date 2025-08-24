@@ -67,6 +67,4 @@ Vagrant 更适合用来做开发、测试，解决环境一致性的问题；Doc
 
 ---
 
-欢迎扫码关注公众号「DevOps攻城狮」- 专注于DevOps领域知识分享。
-
-![ ](https://github.com/shenxianpeng/shenxianpeng.github.io/blob/master/about/index/qrcode.jpg?raw=true)
+欢迎关注微信公众号「DevOps攻城狮」- 专注于DevOps领域知识分享。
