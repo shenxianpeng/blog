@@ -10,7 +10,7 @@ date: 2025-08-22
 author: shenxianpeng
 ---
 
-Many friends have asked me: why spend so much free time on open source? Especially after having a child, why continue to sacrifice rest time?
+Some friends have asked me: why spend so much free time on open source? Especially after having a child, why continue to sacrifice rest time?
 
 Honestly, I've been on this open-source path for four years, and I've barely earned a dime. But the rewards it has brought me are far more lasting than money.
 Today, I want to share three points: these aren't just for open-source contributors; every developer, and even every worker, can learn from them.
