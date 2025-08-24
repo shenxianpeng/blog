@@ -5,6 +5,7 @@ tags:
   - SLSA
   - DevSecOps
 author: shenxianpeng
+translate: false   # 不需要翻译
 date: 2024-06-13
 ---
 
