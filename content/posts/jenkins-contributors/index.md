@@ -1,5 +1,5 @@
 ---
-title: 《分享》通过 Jenkins-X 社区最终进入到 Jenkins 基础设施团队成为 SRE 的经历
+title: 通过 Jenkins-X 社区最终进入到 Jenkins 基础设施团队成为 SRE 的经历
 summary: 本文介绍了 Hervé Le Meur 如何通过 Jenkins-X 社区的贡献，最终成为 Jenkins 基础设施团队的一名 SRE，并分享了他的经历和对 Jenkins 的看法。
 tags:
   - Jenkins
