@@ -158,7 +158,7 @@ After the first successful build of this branch through Jenkins, it will first b
 
 To better manage the directories under the repository, it is recommended that the team agree on branch naming conventions in advance so that all builds of the same type of branch will appear under the same directory.
 
-For branch naming conventions, see this article: [Programmer's Self-Cultivation: Git Commit Message and Branch Creation Specification](https://shenxianpeng.github.io/2020/09/commit-messages-specification/)
+For branch naming conventions, see this article: [Programmer's Self-Cultivation: Git Commit Message and Branch Creation Specification](../conventional-branch/)
 
 If you also want to put Pull Request Builds on Artifactory, it is recommended to set it up as follows:
 
@@ -195,6 +195,6 @@ In software delivery, quality trustworthiness and security trustworthiness are t
 
 ## Previous Related Articles
 
-* [Introduction to JFrog Artifactory](https://shenxianpeng.github.io/2019/11/Artifactory-install-and-upgrade/)
-* [Artifactory and Jenkins Integration](https://shenxianpeng.github.io/2019/11/Artifactory-integrate-with-Jenkins/)
-* [Solving the Problem of Jenkins Artifactory Plugin Failing to Upload Artifacts to HTTPS Artifactory Only on AIX](https://shenxianpeng.github.io/2020/06/Java-net-SocketException-on-AIX/)
+* [Introduction to JFrog Artifactory](../artifactory-install-and-upgrade/in)
+* [Artifactory and Jenkins Integration](../artifactory-integrate-with-jenkins/)
+* [Solving the Problem of Jenkins Artifactory Plugin Failing to Upload Artifacts to HTTPS Artifactory Only on AIX](../java-net-socketexception-on-aix/)
