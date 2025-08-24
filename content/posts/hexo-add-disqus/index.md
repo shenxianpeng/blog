@@ -5,6 +5,7 @@ date: 2019-07-07
 tags:
 - Hexo
 - Disqus
+categories:
 - Hexo
 author: shenxianpeng
 ---
