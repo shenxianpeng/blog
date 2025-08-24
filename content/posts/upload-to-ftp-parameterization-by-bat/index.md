@@ -6,7 +6,7 @@ tags:
 - Automation
 - Shell
 - FTP
-- Automation
+translate: false
 author: shenxianpeng
 ---
 
