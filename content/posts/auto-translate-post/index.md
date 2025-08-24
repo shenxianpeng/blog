@@ -44,8 +44,8 @@ on:
   push:
     paths:
       # 当我更新这个目录下的 Markdown 文件时触发翻译
-      - 'content/posts/*.md'
-      - 'content/misc/*.md'
+      - 'content/posts/**/*.md'
+      - 'content/misc/**/*.md'
   schedule:
     # 这里之所以加这个定时是为了防止漏翻译的文章
     # 每天触发是防止 Gemini API 的免费额度用完
