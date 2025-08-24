@@ -93,10 +93,8 @@ Vagrant 相比于传统使用虚拟机的优势：提供易于配置、可重现
 
 它之所以可以这么方便是站在了这些巨人（VirtualBox、VMware、AWS、OpenStack 或其他提供商）的肩膀上，然后通过 Shell 脚本、Ansbile、Chef、Puppet 等工具实现自动在虚拟机上安装和配置软件。
 
-下一篇将介绍 Vagrant 和 Docker 之间的[区别](https://shenxianpeng.github.io/2022/01/vagrant-vs-docker/)。
+下一篇将介绍 [Vagrant 和 Docker 之间的区别](../vagrant-vs-docker/)。
 
 ---
 
-欢迎扫码关注公众号「DevOps攻城狮」- 专注于DevOps领域知识分享。
-
-![ ](https://github.com/shenxianpeng/shenxianpeng.github.io/blob/master/about/index/qrcode.jpg?raw=true)
+欢迎关注微信公众号「DevOps攻城狮」- 专注于DevOps领域知识分享。
