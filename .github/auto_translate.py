@@ -70,7 +70,7 @@ def create_pr(branch_name, files):
     )
     pr.add_to_labels('translate')
     # Request review from repo owner and GitHub Copilot
-    reviewers = [repo.owner.login, 'Copilot']
+    reviewers = [repo.owner.login]
     try:
         pr.create_review_request(reviewers=reviewers)
     except Exception as e:
