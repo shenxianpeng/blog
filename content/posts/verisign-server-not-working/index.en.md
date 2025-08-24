@@ -10,7 +10,7 @@ author: shenxianpeng
 
 Many programmers may have encountered issues with the Verisign Timestamp server, http://timestamp.verisign.com/scripts/timstamp.dll, becoming unavailable when performing code signing, especially at the start of the new year.  The following error may have appeared:
 
-![Code Sign 失败了](failed.png)
+![Code Sign failed](failed.png)
 
 
 The reason is that the default timestamp server for code signing is no longer accessible.
@@ -23,7 +23,7 @@ A response on Stack Overflow [post](https://stackoverflow.com/questions/65541786
 
 This was a user's response; I didn't find an official response online, so I decided to send an email to formally confirm.  I received a reply shortly after:
 
-![Verisign 的回复](reply.png)
+![Verisign reply](reply.png)
 
 Similar to the previous reply:  Years ago, Verisign's authentication and certificate business was sold to Symantec and has now transitioned to Digicert. You will need to work with your current provider for support or an updated timestamp URL. Please visit http://www.digicert.com for more information.
 
