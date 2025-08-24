@@ -54,7 +54,7 @@ More importantly, it keeps me in a state of continuous learning, preventing me f
 
 On April 26, 2021, I took my first step into open source with [**cpp-linter-action**](https://github.com/cpp-linter/cpp-linter-action).  Then one day someone proactively offered to contribute in an Issue, and that moment ignited my open-source journey.
 
-![开始了开源](start.png)
+![start to open soruce](start.png)
 
 After that, I maintained several projects with Brendan (2bndy5), and I learned a lot from him. I really hope to meet him in person in the US someday.
 
