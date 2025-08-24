@@ -1,0 +1,33 @@
+name: Share Blog Post to Social Media
+
+on:
+  push:
+    paths:
+      - 'content/posts/**/index.md'
+      - 'content/posts/**/index.en.md'
+      - 'content/misc/**/index.md'
+      - 'content/misc/**/index.en.md'
+  workflow_dispatch:
+
+jobs:
+  share-to-social:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Share to Dev.to, Medium, X
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          MEDIUM_INTEGRATION_TOKEN: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: |
+          python3 .github/share_to_social.py
