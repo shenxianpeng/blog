@@ -1,5 +1,5 @@
 ---
-title: Resolving Jenkins Artifactory Plugin Artifact Upload Failure: "unable to find valid certification path to requested target"
+title: Resolving Jenkins Artifactory Plugin Artifact Upload Failure "unable to find valid certification path to requested target"
 summary: |
   This article describes how to resolve SSL certificate validation issues when uploading artifacts from a Jenkins agent to Artifactory, including generating a security certificate file and importing it into Java's cacerts.
 tags:
