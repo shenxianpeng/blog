@@ -1,5 +1,5 @@
 ---
-title: Four Years of Open Source: 3 Unexpected Rewards
+title: Four Years of Open Source —— 3 Unexpected Rewards
 summary: |
   Some say open source is useless, yielding neither profit nor time efficiency.  However, after four years of dedication, I've discovered three unexpected rewards: increased visibility for my work, access to better people and projects, and a long-term valuable investment. These benefits are applicable to every developer.
 tags:
