@@ -4,6 +4,7 @@ summary: 本文介绍了如何使用 Jenkins 实现定期批量登录远程虚�
 tags:
   - Shell
   - Jenkins
+translate: false
 date: 2020-06-13
 author: shenxianpeng
 ---
