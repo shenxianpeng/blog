@@ -1,5 +1,5 @@
 ---
-title: Vagrant vs. Docker: Which One Should You Choose?
+title: Vagrant vs. Docker —— Which One Should You Choose?
 summary: This article compares Vagrant and Docker, analyzing their respective use cases and advantages to help readers choose the right tool for managing virtual machines or containers.
 tags:
   - Docker
@@ -9,7 +9,7 @@ date: 2022-02-14
 author: shenxianpeng
 ---
 
-For an introduction to Vagrant, please refer to the previous article: [What is Vagrant? The Difference Between Vagrant and VirtualBox](https://shenxianpeng.github.io/2022/01/vagrant/)
+For an introduction to Vagrant, please refer to the previous article: [What is Vagrant? The Difference Between Vagrant and VirtualBox](../vagrant/)
 
 ## What is Vagrant
 
