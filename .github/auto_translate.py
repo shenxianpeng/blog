@@ -23,9 +23,24 @@ def find_missing_files():
         for sub in subs:
             zh = sub / 'index.md'
             en = sub / 'index.en.md'
-            if zh.exists() and not en.exists():
+            # Helper to check if translate: false is present
+            def should_translate(path):
+                if not path.exists():
+                    return True
+                try:
+                    with open(path, 'r', encoding='utf-8') as f:
+                        for line in f:
+                            if line.strip().lower().startswith('translate:'):
+                                if 'false' in line.lower():
+                                    return False
+                                else:
+                                    return True
+                except Exception:
+                    return True
+                return True
+            if zh.exists() and not en.exists() and should_translate(zh):
                 missing.append((sub, 'en'))
-            elif en.exists() and not zh.exists():
+            elif en.exists() and not zh.exists() and should_translate(en):
                 missing.append((sub, 'zh'))
     return missing
 
