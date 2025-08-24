@@ -93,7 +93,7 @@ Today, Python and Go are two of the most popular and convenient programming lang
 
   My direction was to write a CLI tool. Although Go's built-in `Flag` package can be used to write CLI commands, after looking at many CLI projects developed using Go, I noticed that most of them didn't use the built-in `Flag` package, but mostly used [spf13/cobra](https://github.com/spf13/cobra) or [urfave/cli](https://github.com/urfave/cli).
 
-  * This is a list of projects using cobra [here](https://github.com/spf13/cobra/blob/master/projects_using_cobra.md), including well-known projects like Kubernetes, Hugo, Docker, and the Github CLI.
+  * This is a list of projects using cobra [here](https://github.com/spf13/cobra/blob/master/projects_using_cobra.md), including well-known projects like Kubernetes, Hugo, Docker, and the GitHub CLI.
   * As for urfave/cli, I saw Jfrog CLI using it, but I didn't see a list of other well-known projects using urfave/cli like cobra.
 
   For beginners like me, the most important thing is to start immediately, so you don't need to spend too much time choosing a framework.  Cobra has so many excellent projects backing it up, just use it. The most important thing is to start coding as soon as possible. In the coding process, choose top-tier projects that also use this framework as a reference. This can help us write better code by reading other people's code.  Don't just Ctrl + C and Ctrl + V.
@@ -104,9 +104,3 @@ Today, Python and Go are two of the most popular and convenient programming lang
   * github.com/AlecAivazis/survey/v2 - Build interactive command lines in the terminal.
   * github.com/enescakir/emoji - Emoji library, supports emoji output in the terminal.
   * github.com/mgutz/ansi - Create ANSI color strings.
-
----
-
-Welcome to follow the WeChat official account "DevOps攻城狮" - Focusing on DevOps knowledge sharing.
-
-![ ](https://github.com/shenxianpeng/shenxianpeng.github.io/blob/master/about/index/qrcode.jpg?raw=true)
