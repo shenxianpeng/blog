@@ -2,6 +2,8 @@ name: Auto Translate
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'content/posts/**/*.md'
       - 'content/misc/**/*.md'
