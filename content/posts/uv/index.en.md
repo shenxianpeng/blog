@@ -122,7 +122,3 @@ Then you should try `uv`. It's a faster and more modern package manager toolset.
 Starting with your next project, why not start with `uv init`?
 
 Project address: [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)
-
----
-
-Please indicate the author and source when reprinting this article. Please do not use it for any commercial purposes. Welcome to follow the WeChat official account "DevOps攻城狮"
