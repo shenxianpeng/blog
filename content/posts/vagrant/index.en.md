@@ -91,10 +91,4 @@ The advantages of Vagrant over traditional virtual machine usage: it provides ea
 
 It is able to be so convenient because it stands on the shoulders of giants (VirtualBox, VMware, AWS, OpenStack, or other providers), and then uses tools such as Shell scripts, Ansible, Chef, and Puppet to automatically install and configure software on the virtual machine.
 
-The next article will introduce the [differences](https://shenxianpeng.github.io/2022/01/vagrant-vs-docker/) between Vagrant and Docker.
-
----
-
-Welcome to scan the QR code to follow the WeChat public account "DevOps攻城狮" - focusing on DevOps knowledge sharing.
-
-![ ](https://github.com/shenxianpeng/shenxianpeng.github.io/blob/master/about/index/qrcode.jpg?raw=true)
+The next article will introduce the [differences between Vagrant and Docker](../vagrant-vs-docker/).
