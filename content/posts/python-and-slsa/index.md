@@ -5,6 +5,7 @@ tags:
   - SLSA
   - Python
 author: shenxianpeng
+translate: false
 date: 2023-11-15
 ---
 
