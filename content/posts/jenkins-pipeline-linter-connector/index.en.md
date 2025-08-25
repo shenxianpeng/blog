@@ -1,6 +1,6 @@
 ---
 title: How to Ensure No Syntax Errors Before Submitting a Jenkins Pipeline
-summary: This article introduces two methods to ensure there are no syntax errors before submitting a Jenkins Pipeline: using the REST API for syntax validation and using the VSCode plugin for syntax checking.
+summary: This article introduces two methods to ensure there are no syntax errors before submitting a Jenkins Pipeline using the REST API for syntax validation and using the VSCode plugin for syntax checking.
 tags:
   - Jenkins
 date: 2020-05-23
