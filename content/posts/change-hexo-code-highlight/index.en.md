@@ -4,7 +4,6 @@ summary: Hexo's default theme uses black code highlighting. Want a different sty
 date: 2017-11-20
 tags:
 - Hexo
-- Hexo
 ---
 
 Hexo's default theme uses black code highlighting. Want a different style?  Here's how to do it:
