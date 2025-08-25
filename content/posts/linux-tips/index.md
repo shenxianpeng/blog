@@ -4,6 +4,7 @@ summary: 本文介绍了一些最有用的 Linux 命令行技巧，以提高开�
 tags:
   - Linux
 date: 2020-02-05
+translate: false
 author: shenxianpeng
 ---
 
