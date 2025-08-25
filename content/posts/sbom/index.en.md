@@ -1,5 +1,5 @@
 ---
-title: Understanding SBOM: Definition, Relationships, Differences, Best Practices, and Generation Tools
+title: Understanding SBOM - Definition, Relationships, Differences, Best Practices, and Generation Tools
 summary: This article introduces the definition of SBOM, its relationship and differences with SLSA and Black Duck, best practices, and available generation tools, helping readers better understand and apply SBOM.
 tags:
  - SBOM
