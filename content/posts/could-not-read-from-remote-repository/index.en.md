@@ -3,7 +3,7 @@ title: Resolving the "Could not read from remote repository" Issue
 summary: |
   Resolving the "Could not read from remote repository" error encountered when cloning code using Git, analyzing the causes, and providing solutions.
 tags:
-  - - Git
+  - Git
   - Troubleshooting
 date: 2019-09-01
 author: shenxianpeng
