@@ -1,5 +1,5 @@
 ---
-title: Beyond Coding: The Importance of Writing for Programmers
+title: Beyond Coding - The Importance of Writing for Programmers
 summary: This article explores the importance of writing skills for programmers, highlighting the role of communication and expression in career advancement, and sharing personal experiences and insights on writing.
 tags:
   - Others
