@@ -9,7 +9,7 @@ author: shenxianpeng
 date: 2025-02-05
 ---
 
-大家好！自从上次发文[宣布开始维护 **gitstats**](https://shenxianpeng.github.io/2024/11/gitstats/) 以来，我一直在不断地改进这个项目，下面是这两个月的主要更新内容：
+大家好！自从上次发文[宣布开始维护 **gitstats**](../gitstats/) 以来，我一直在不断地改进这个项目，下面是这两个月的主要更新内容：
 
 ## ✨ 新增功能与改进
 
