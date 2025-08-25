@@ -13,15 +13,15 @@ Google's SLSA framework (Supply-chain Levels for Software Artifacts) provides re
 
 ## Table of Contents
 
-1. [What is SLSA](#什么是SLSA)
-2. [Problems in the Software Supply Chain](#软件供应链中的问题)
-2.1 [What are Supply Chain Attacks?](#供应链攻击包括哪些)
-2.2 [Real-world Examples](#真实世界的例子)
-3. [SLSA Levels](#SLSA等级)
-3.1 [Detailed Explanation](#详细解释)
-3.2 [Limitations](#限制)
-4. [SLSA Implementation](#SLSA落地)
-5. [Other Tools](#其他工具)
+1. [What is SLSA](#what-is-slsa)
+2. [Problems in the Software Supply Chain](#problems-in-the-software-supply-chain)
+2.1 [What are Supply Chain Attacks?](#what-are-supply-chain-attacks)
+2.2 [Real-world Examples](#real-world-examples)
+3. [SLSA Levels](#slsa-levels)
+3.1 [Detailed Explanation](#detailed-explanation)
+3.2 [Limitations](#limitations)
+4. [SLSA Implementation](#slsa-implementation)
+5. [Other Tools](#other-tools)
 
 ## What is SLSA
 
