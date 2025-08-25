@@ -5,6 +5,7 @@ tags:
   - Linux
   - VirtualBox
 date: 2020-02-08
+translate: false
 author: shenxianpeng
 ---
 
