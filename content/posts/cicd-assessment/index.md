@@ -5,6 +5,7 @@ tags:
   - CI
   - CD
   - Badge
+translate: false
 date: 2021-12-07
 author: shenxianpeng
 ---
