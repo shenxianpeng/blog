@@ -4,6 +4,7 @@ summary: 本文介绍了首席DevOps工程师的职责、核心技能和对公�
 tags:
   - DevOps
 date: 2024-09-26
+translate: false
 author: shenxianpeng
 ---
 
