@@ -66,7 +66,7 @@ Other signing tools include Microsoft's [SignTool.exe](https://learn.microsoft.c
 Through code signing, developers can increase the security and trustworthiness of software, while helping users avoid malicious software and tampering risks.
 In today's digital environment, code signing is an important part of ensuring software integrity and security, improving software supply chain security.
 
-For more information on software supply chain security, see this [series of articles](https://shenxianpeng.github.io/tags/slsa/).
+For more information on software supply chain security, see this [series of articles](../../tags/slsa/).
 
 ---
 
