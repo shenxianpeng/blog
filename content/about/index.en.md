@@ -37,19 +37,19 @@ I currently live in Vilnius, Lithuania. I speak:
 {{< /timelineItem >}}
 
 {{< timelineItem icon="envelope" header="Get in Touch" badge="Let's Connect" subheader="Collaboration · Writing · Exchange" >}}
-Feel free to reach out via email: xianpeng.shen@gmail.com.
+Feel free to reach out via email: xianpeng.shen@gmail.com
 {{< /timelineItem >}}
 
 {{< timelineItem icon="code" header="My Projects" badge="Open Source" subheader="Contributions Welcome" >}}
 
-All forms of contributions are welcome—if you find them interesting or useful, I'd love to have your participation!
+All forms of contributions are welcome—if you find them interesting or useful, I'd love to have your participation! Check out the ‘Portfolio’ for details.
 
-{{< github repo="cpp-linter/cpp-linter-action" showThumbnail=false >}}
+<!-- {{< github repo="cpp-linter/cpp-linter-action" showThumbnail=false >}}
 {{< github repo="cpp-linter/cpp-linter-hooks" showThumbnail=false >}}
 {{< github repo="commit-check/commit-check" showThumbnail=false >}}
 {{< github repo="commit-check/commit-check-action" showThumbnail=false >}}
 {{< github repo="shenxianpeng/gitstats" showThumbnail=false >}}
-{{< github repo="jenkinsci/explain-error-plugin" showThumbnail=false >}}
+{{< github repo="jenkinsci/explain-error-plugin" showThumbnail=false >}} -->
 
 {{< /timelineItem >}}
 
