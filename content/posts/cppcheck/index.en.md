@@ -101,7 +101,7 @@ pipeline{
   }
 
   parameters {
-    string(name: 'Branch', defaultValue: 'develop', summary: 'Which branch do you want to do cppcheck?')
+    string(name: 'Branch', defaultValue: 'develop', description: 'Which branch do you want to do cppcheck?')
   }
 
   options {
