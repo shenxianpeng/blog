@@ -147,7 +147,3 @@ It is worth noting that changing the durability of the pipeline might result in 
 * https://www.cloudbees.com/blog/top-10-best-practices-jenkins-pipeline-plugin
 * https://github.com/jenkinsci/pipeline-examples/blob/master/docs/BEST_PRACTICES.md
 * https://devopscook.com/jenkinsfile-best-practices/
-
----
-
-Please indicate the author and source when reprinting articles from this site, and do not use them for any commercial purposes.  Welcome to follow the WeChat public account "DevOps攻城狮"
