@@ -4,6 +4,7 @@ summary: 本文列出了市场上最流行的 14 种 CI/CD 工具，包括 Jenki
 tags:
   - CICD
 date: 2020-03-29
+translate: false
 author:
 ---
 
