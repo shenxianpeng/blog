@@ -21,20 +21,36 @@ showAuthor: true
 layoutBackgroundHeaderSpace: false
 ---
 
-Hi there! I'm Xianpeng Shen, a DevOps engineer with a passion for DevOps, Python, and open source, dedicated to building efficient, reliable, and elegant solutions.
+{{< timeline >}}
 
-I write [articles](/en/posts), develop free [software](/en/portfolio), and nd actively contribute to [open source projects](https://github.com/pulls?q=is%3Apr+author%3Ashenxianpeng+archived%3Afalse+is%3Amerged+user%3Apypa+user%3Ajenkinsci+user%3Acpp-linter+user%3Acommit-check+user%3Aconventional-branch+user%3Adevops-maturity).
+{{< timelineItem icon="tag" header="Hi! I'm Xianpeng Shen" badge="Welcome" subheader="Welcome to my personal site">}}
+I write blog posts, develop free software, and actively contribute to open source projects.
+{{< /timelineItem >}}
 
----
+{{< timelineItem icon="globe" header="My Life" badge="Vilnius, Lithuania" subheader="Explore · Learn · Share" >}}
+I currently live in Vilnius, Lithuania. I speak:
+<ul>
+  <li>Chinese</li>
+  <li>English</li>
+  <li>A bit of Lithuanian</li>
+</ul>
+{{< /timelineItem >}}
 
-I live in Vilnius, Lithuania, with my family. I enjoy exploring the world, learning new technologies, and sharing my experiences through blogging and open source.
+{{< timelineItem icon="envelope" header="Get in Touch" badge="Let's Connect" subheader="Collaboration · Writing · Exchange" >}}
+Feel free to reach out via email: xianpeng.shen@gmail.com.
+{{< /timelineItem >}}
 
-I speak Chinese, English, and a bit of Lithuanian.
+{{< timelineItem icon="code" header="My Projects" badge="Open Source" subheader="Contributions Welcome" >}}
 
----
+All forms of contributions are welcome—if you find them interesting or useful, I'd love to have your participation!
 
-If you’d like to invite me to speak at an event, join your podcast, or simply share your thoughts, the best way to reach me is via [email](mailto:xianpeng.shen@gmail.com).
+{{< github repo="cpp-linter/cpp-linter-action" showThumbnail=false >}}
+{{< github repo="cpp-linter/cpp-linter-hooks" showThumbnail=false >}}
+{{< github repo="commit-check/commit-check" showThumbnail=false >}}
+{{< github repo="commit-check/commit-check-action" showThumbnail=false >}}
+{{< github repo="shenxianpeng/gitstats" showThumbnail=false >}}
+{{< github repo="jenkinsci/explain-error-plugin" showThumbnail=false >}}
 
----
+{{< /timelineItem >}}
 
-[My projects](/en/portfolio) also welcome contributions — if you find them interesting or useful, I’d be happy to have you involved!
+{{< /timeline >}}

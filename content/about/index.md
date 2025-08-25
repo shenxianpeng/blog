@@ -21,20 +21,36 @@ showAuthor: true
 layoutBackgroundHeaderSpace: false
 ---
 
-你好！我是沈显鹏，一名热爱 DevOps、Python 和开源的 DevOps 工程师，专注于打造高效、可靠和优雅的解决方案。
+{{< timeline >}}
 
-我撰写 [文章](/posts)，开发免费 [软件](/portfolio)，并积极参与 [开源项目](https://github.com/pulls?q=is%3Apr+author%3Ashenxianpeng+archived%3Afalse+is%3Amerged+user%3Apypa+user%3Ajenkinsci+user%3Acpp-linter+user%3Acommit-check+user%3Aconventional-branch+user%3Adevops-maturity)。
+{{< timelineItem icon="tag" header="你好！我是沈显鹏" badge="Welcome" subheader="欢迎来到我的个人网站">}}
+我撰写文章，开发免费软件，并积极参与开源项目。
+{{< /timelineItem >}}
 
----
+{{< timelineItem icon="globe" header="我的生活" badge="Vilnius, Lithuania" subheader="探索 · 学习 · 分享" >}}
+我目前生活在立陶宛维尔纽斯，我会
+<ul>
+  <li>中文</li>
+  <li>英语</li>
+  <li>略懂立陶宛语</li>
+</ul>
+{{< /timelineItem >}}
 
-目前我与家人居住在立陶宛维尔纽斯，喜欢探索世界、学习新技术，并通过博客和开源项目记录与分享所学所见。
+{{< timelineItem icon="envelope" header="联系我" badge="Let's Connect" subheader="合作 · 邀稿 · 交流" >}}
+欢迎通过电子邮件 xianpeng.shen@gmail.com 联系我。
+{{< /timelineItem >}}
 
-我会中文、英语，也略懂一些立陶宛语。
+{{< timelineItem icon="code" header="我的项目" badge="Open Source" subheader="欢迎贡献" >}}
 
----
+欢迎任何形式的贡献——如果你觉得它们有趣或有用，期待你的参与！
 
-如果你想邀请我参加活动、约稿、合作，或只是交流对内容的看法，欢迎通过 [电子邮件](mailto:xianpeng.shen@gmail.com)。
+{{< github repo="cpp-linter/cpp-linter-action" showThumbnail=false >}}
+{{< github repo="cpp-linter/cpp-linter-hooks" showThumbnail=false >}}
+{{< github repo="commit-check/commit-check" showThumbnail=false >}}
+{{< github repo="commit-check/commit-check-action" showThumbnail=false >}}
+{{< github repo="shenxianpeng/gitstats" showThumbnail=false >}}
+{{< github repo="jenkinsci/explain-error-plugin" showThumbnail=false >}}
 
----
+{{< /timelineItem >}}
 
-同时，[我的项目](/portfolio) 欢迎任何形式的贡献——如果你觉得它们有趣或有用，期待你的参与！
+{{< /timeline >}}
