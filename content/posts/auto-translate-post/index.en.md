@@ -1,5 +1,5 @@
 ---
-title: Blog Bilingual Publishing Made Easy—GitHub Actions + Gemini API in Practice
+title: Blog Bilingual Publishing Made Easy — GitHub Actions + Gemini API in Practice
 summary: Discovered my blog has more English than Chinese readers?  So I used GitHub Actions + Gemini API to automatically translate articles into English, saving time and effort.
 tags:
   - GitHub Actions
