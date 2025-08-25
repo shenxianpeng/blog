@@ -6,6 +6,7 @@ tags:
   - GitHub
   - Bitbucket
   - Jenkins
+translate: false
 date: 2020-05-05
 author: shenxianpeng
 ---
