@@ -9,7 +9,7 @@ isoCode = "zh-cn"
 rtl = false
 dateFormat = "2006-01-02"
 logo = "img/logo.png"
-description = "DevOps 工程师 | Python 爱好者 | 开源贡献者"
+description = "沈显鹏的个人网站，分享关于 DevOps，CI/CD，Build 以及开源。"
 copyright = "© 2017–2025 沈显鹏 版权所有"
 
 [params.author]
@@ -17,7 +17,7 @@ copyright = "© 2017–2025 沈显鹏 版权所有"
   email = "xianpeng.shen@gmail.com"
   image = "img/sxp.jpg"
   imageQuality = 96
-  headline = "DevOps 工程师 | Python 爱好者 | 开源贡献者"
+  headline = "DevOps & Build 工程师 | Python 爱好者 | 开源贡献者"
   links = [
     { email = "mailto:xianpeng.shen@gmail.com" },
     { rss = "index.xml" },
