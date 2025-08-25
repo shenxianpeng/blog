@@ -1,5 +1,5 @@
 ---
-title: Publishing a Python Project on GitHub—Things to Note
+title: Publishing a Python Project on GitHub — Things to Note
 summary: This article introduces the important aspects to consider when publishing a Python project on GitHub, including project structure, dependency management, and version control.
 tags:
   - Python
