@@ -255,7 +255,3 @@ CI or git hooks?
 The cpp-linter organization is an open-source project I created and maintained by [Brendan Doherty](https://github.com/2bndy5) and me as the primary contributors. We are developers who pursue code quality and strive to build the best software.  I've spent a lot of my free time on it, but I've also learned a lot. I'll share some interesting implementation methods later.
 
 Currently, cpp-linter provides the best C/C++ Linter Action and clang-tools on GitHub.  We welcome your use, and you can provide feedback on any suggestions or problems through Issues.
-
----
-
-Please indicate the author and source when reprinting this article, and do not use it for any commercial purposes.  Welcome to follow the WeChat public account "DevOps攻城狮".
