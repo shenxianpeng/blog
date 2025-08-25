@@ -6,6 +6,7 @@ tags:
   - Jenkins
   - Java
 date: 2022-03-06
+translate: false
 author: shenxianpeng
 ---
 
