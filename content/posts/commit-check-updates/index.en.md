@@ -1,6 +1,6 @@
 ---
 title: Commit Check Update—Two New Features to Enhance Code Quality Assurance
-summary: This article introduces two new features of Commit Check: `pr-comments` and `base-merge`, aiming to improve Pull Request inspection capabilities and code quality assurance.
+summary: This article introduces two new features of Commit Check `pr-comments` and `base-merge`, aiming to improve Pull Request inspection capabilities and code quality assurance.
 tags:
   - commit-check
   - DevOps
@@ -175,8 +175,3 @@ For more usage details, see the [README](https://github.com/commit-check/commit-
 ---
 
 If you have any questions or suggestions, please raise them in [GitHub Issues](https://github.com/commit-check/commit-check/issues).
-
-
----
-
-Please indicate the author and source when reprinting this article. Please do not use it for any commercial purposes. Welcome to follow the WeChat official account "DevOps攻城狮".
