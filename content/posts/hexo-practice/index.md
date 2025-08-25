@@ -7,6 +7,7 @@ tags:
 - Blog
 categories:
 - Hexo
+translate: false
 ---
 
 ## Hexo 配置 rss 订阅功能
