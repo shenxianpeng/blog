@@ -115,7 +115,7 @@ pipeline{
       browser: [$class: 'BitbucketWeb', repoUrl: 'https://git.yourcompany.com/projects/repos/cppcheck-example/browse'],
       doGenerateSubmoduleConfigurations: false, extensions: [
       [$class: 'LocalBranch', localBranch: '**'], [$class: 'CheckoutOption', timeout: 30], [$class: 'CloneOption', depth: 1, noTags: false, reference: '', shallow: true,   timeout: 30]], submoduleCfg: [],
-      userRemoteConfigs: [[credentialsId: 'd1cbab74-823d-41aa-abb7', url: 'https://git.yourcompany.com/scm/cppcheck-example.git']]])
+      userRemoteConfigs: [[credentialsId: 'CREDENTIALS_ID', url: 'https://git.yourcompany.com/scm/cppcheck-example.git']]])
     }
   }
   stage("Cppcheck"){
