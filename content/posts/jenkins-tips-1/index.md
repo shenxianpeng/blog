@@ -4,6 +4,7 @@ summary: 如何在 Jenkins 中使用 `set +e` 和 `set -e` 来控制 Shell 脚�
 tags:
   - Jenkins
 date: 2020-06-21
+translate: false
 author: shenxianpeng
 ---
 
