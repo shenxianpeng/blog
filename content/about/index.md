@@ -42,14 +42,14 @@ layoutBackgroundHeaderSpace: false
 
 {{< timelineItem icon="code" header="我的项目" badge="Open Source" subheader="欢迎贡献" >}}
 
-欢迎任何形式的贡献——如果你觉得它们有趣或有用，期待你的参与！
+欢迎任何形式的贡献——如果你觉得它们有趣或有用，期待你的参与！详情见「作品」。
 
-{{< github repo="cpp-linter/cpp-linter-action" showThumbnail=false >}}
+<!-- {{< github repo="cpp-linter/cpp-linter-action" showThumbnail=false >}}
 {{< github repo="cpp-linter/cpp-linter-hooks" showThumbnail=false >}}
 {{< github repo="commit-check/commit-check" showThumbnail=false >}}
 {{< github repo="commit-check/commit-check-action" showThumbnail=false >}}
 {{< github repo="shenxianpeng/gitstats" showThumbnail=false >}}
-{{< github repo="jenkinsci/explain-error-plugin" showThumbnail=false >}}
+{{< github repo="jenkinsci/explain-error-plugin" showThumbnail=false >}} -->
 
 {{< /timelineItem >}}
 
