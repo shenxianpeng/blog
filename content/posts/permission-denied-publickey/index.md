@@ -4,7 +4,7 @@ summary: 本文介绍了如何在配置多个 SSH Git Key 时解决 "Permission 
 date: 2018-05-06
 tags:
 - Git
-- Git
+translate: false
 author: shenxianpeng
 ---
 
