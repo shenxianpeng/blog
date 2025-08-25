@@ -18,8 +18,6 @@ def find_missing_files():
     missing = []
     for folder in ['content/posts', 'content/misc']:
         subs = [sub for sub in Path(folder).glob('*/') if sub.is_dir()]
-        # Sort subfolders by modification time, latest first
-        subs.sort(key=lambda x: x.stat().st_mtime, reverse=True)
         for sub in subs:
             zh = sub / 'index.md'
             en = sub / 'index.en.md'
@@ -102,6 +100,7 @@ def main():
     if not missing:
         print('No missing files detected.')
         return
+    print(missing)
     # Only process one post per run
     sub, lang = missing[0]
     branch_name = BRANCH_PREFIX + f'add-missing-{sub.name}-{lang}-{os.getpid()}'
