@@ -1,5 +1,5 @@
 ---
-title: Markdown—Not So Great Anymore? Why More and More Python Projects Use RST?
+title: Markdown — Not So Great Anymore? Why More and More Python Projects Use RST?
 summary: |
   Markdown and reStructuredText (RST) are two commonly used markup languages. This article compares their advantages and disadvantages and shares usage suggestions in different scenarios.
 tags:
