@@ -1,5 +1,5 @@
 ---
-title: pip—pipx Differences
+title: pip vs pipx Differences
 summary: This article introduces the differences between pip and pipx, helping developers choose the right tool to manage Python packages and command-line tools.
 tags:
   - Python
@@ -87,7 +87,3 @@ In the Python ecosystem, both **pip** and **pipx** are software tools used for p
 - If you need to install Python CLI tools, such as `pytest` or `pre-commit`, it is recommended to use **pipx** to ensure independence and stability.
 
 In short: **pip is a general-purpose tool, pipx is a dedicated solution for CLI tools**.
-
----
-
-Please indicate the author and source when reprinting this article. Please do not use it for any commercial purposes. Welcome to follow the WeChat public account "DevOps攻城狮"
