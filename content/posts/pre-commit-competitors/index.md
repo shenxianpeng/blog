@@ -5,6 +5,7 @@ tags:
   - Python
   - pre-commit
 date: 2025-08-13
+translate: false
 author: shenxianpeng
 ---
 
