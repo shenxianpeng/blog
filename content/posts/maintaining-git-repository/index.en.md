@@ -1,6 +1,6 @@
 ---
 title: How to Slim Down Your Git Repository
-summary: How to remove unnecessary files and history from a Git repository to reduce its size, providing two methods: using BFG Repo Cleaner or `git filter-branch`.
+summary: How to remove unnecessary files and history from a Git repository to reduce its size, providing two methods using BFG Repo Cleaner or `git filter-branch`.
 tags:
   - Git
 date: 2020-03-21
