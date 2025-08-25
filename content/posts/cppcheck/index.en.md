@@ -85,7 +85,7 @@ The official ticket also records this issue [JENKINS-42613](https://issues.jenki
 
 Finally, I found that [Warnings Next Generation](https://plugins.jenkins.io/warnings-ng/) plugin will replace the entire Jenkins static analysis suite, including plugins like Android Lint, CheckStyle, Dry, FindBugs, PMD, Warnings, Static Analysis Utilities, Static Analysis Collector. Finally, the Warnings Next Generation plugin solved the problem of report display.
 
-Here, you can generate the code for reading the report through Pipeline Syntax: `recordIssues(tools: [codeAnalysis(pattern: 'cppcheck.xml')])`
+Here, you can generate the code for reading the report through Pipeline Syntax: `recordIssues(tools: [cppCheck(pattern: 'cppcheck.xml')])`
 
 For more information on using the Warnings Next Generation plugin, please refer to the [documentation](https://github.com/jenkinsci/warnings-ng-plugin/blob/master/doc/Documentation.md).
 
