@@ -6,6 +6,7 @@ tags:
   - Jenkins
   - Docker
 date: 2019-12-01
+translate: false
 author: shenxianpeng
 ---
 
