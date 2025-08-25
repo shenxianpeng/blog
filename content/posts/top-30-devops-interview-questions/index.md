@@ -4,6 +4,7 @@ summary: 本文列出了 DevOps 领域的 30 多个常见面试问题，涵盖 D
 tags:
   - Interview
   - DevOps
+translate: false
 date: 2020-03-29
 author:
 ---
