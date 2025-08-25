@@ -49,7 +49,12 @@ def translate_with_gemini(src_path, target_lang):
         content = f.read()
     prompt = f"""
 Translate the following markdown blog post to {'Chinese' if target_lang == 'zh' else 'English'}.
-Keep all formatting, code blocks, and technical terms. Only return the translated markdown. Do not have a colon in the translated title.
+Keep all formatting, code blocks, and technical terms.
+
+⚠️ Important:
+- Do not change YAML front matter keys (e.g., title, summary, tags).
+- In the `title:` field, replace any colons (`:`) with an em dash (`—`) or remove them, so the result is always valid for Hugo.
+- Only return the translated markdown.
 
 {content}
 """
