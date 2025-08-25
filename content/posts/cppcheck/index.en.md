@@ -47,7 +47,7 @@ cd build
 cmake ..
 cmake --build .
 # link
-sudo ln -s /opt/cppcheck-1.90/cppcheck /usr/bin/cppcheck
+sudo ln -s /opt/cppcheck/cppcheck-1.90/build/bin/cppcheck /usr/bin/cppcheck
 # Check if the installation was successful
 which cppcheck
 /usr/bin/cppcheck
