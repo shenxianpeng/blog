@@ -37,7 +37,7 @@ If you can't install it with a single command on Linux, you can also build cppch
 ```bash
 cd opt && mkdir cppcheck && cd cppcheck
 # Download the code
-wget https://github.com/danmar/archive/1.90.tar.gz
+wget https://github.com/danmar/cppcheck/archive/1.90.tar.gz
 # Extract
 tar -xvf 1.90.tar.gz
 # Make build
