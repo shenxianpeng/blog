@@ -4,6 +4,7 @@ summary: 了解国外 IT 公司对 DevOps 工程师的技能要求，帮助你�
 tags:
   - DevOps
 date: 2021-01-03
+translate: false
 author: shenxianpeng
 ---
 
