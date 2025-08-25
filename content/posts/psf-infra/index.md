@@ -4,6 +4,7 @@ summary: 本文介绍了 Python 软件基金会 (PFS) 的基础设施，包括�
 tags:
   - Python
   - Infrastructure
+translate: false
 author: shenxianpeng
 date: 2024-05-28
 ---
