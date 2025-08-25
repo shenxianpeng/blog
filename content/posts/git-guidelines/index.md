@@ -4,6 +4,7 @@ summary: 本文介绍了在使用 Git 提交代码之前需要进行的一些常
 tags:
   - Git
 date: 2021-05-14
+translate: false
 author: shenxianpeng
 ---
 
