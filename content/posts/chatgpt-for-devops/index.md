@@ -5,6 +5,7 @@ tags:
   - DevOps
   - ChatGPT
 author: shenxianpeng
+translate: false
 date: 2023-02-26
 ---
 
