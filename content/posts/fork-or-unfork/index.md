@@ -3,7 +3,7 @@ title: 如果你是项目成员，是 Fork 原始仓库还是直接原始仓库�
 summary: 本文讨论了在开源项目中，作为项目成员是 Fork 原始仓库还是直接在原始仓库中修改代码的利弊，帮助开发者做出更合适的选择。
 tags:
   - Fork
-translate: fase
+translate: false
 author: shenxianpeng
 date: 2023-06-09
 ---

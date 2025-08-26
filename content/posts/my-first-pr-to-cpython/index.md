@@ -4,7 +4,7 @@ summary: |
   在 CPython 的 Issue 区找到一个合适的 PR，修改代码、测试、提交 Pull Request，第二天醒来发现已经被 Merge 到主分支了！这是一个很好的学习过程，也是对开源社区的贡献。
 tags:
   - CPython
-translate: fase
+translate: false
 author: shenxianpeng
 date: 2025-02-27
 ---

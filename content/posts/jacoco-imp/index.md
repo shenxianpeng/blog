@@ -6,7 +6,7 @@ tags:
   - Gradle
   - Coverage
 date: 2021-04-06
-translate: fase
+translate: false
 author: shenxianpeng
 ---
 

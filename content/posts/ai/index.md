@@ -4,7 +4,7 @@ summary: |
   AI 的出现让很多人感到“虚”，但它不会取代我们的职位，而是改变我们的做事方式。本文分享了对 AI 的体会和每天一小步的坚持。
 tags:
   - AI
-translate: fase
+translate: false
 author: shenxianpeng
 date: 2025-05-26
 ---

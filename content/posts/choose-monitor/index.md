@@ -4,7 +4,7 @@ summary: 本文分享了个人在选择显示器时的经验和建议，包括�
 tags:
   - Monitor
 date: 2021-12-21
-translate: fase
+translate: false
 author: shenxianpeng
 ---
 

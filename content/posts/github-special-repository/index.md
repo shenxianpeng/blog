@@ -4,7 +4,7 @@ summary: 本文介绍了如何使用 GitHub Actions 自动将发布的博客文�
 tags:
   - Actions
   - GitHub
-translate: fase
+translate: false
 date: 2021-11-09
 author: shenxianpeng
 ---

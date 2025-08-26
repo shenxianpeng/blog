@@ -3,7 +3,7 @@ title: AIX 上安装工具以及一些使用总结
 summary: 记录在使用 AIX 时所遇到的问题和解决办法，以备以后遇到同样问题不要再因为这些再浪费时间，希望也能帮助到你。
 tags:
   - AIX
-translate: fase
+translate: false
 date: 2020-01-09
 author: shenxianpeng
 ---

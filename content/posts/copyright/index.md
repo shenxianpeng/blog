@@ -5,7 +5,7 @@ summary: |
 tags:
   - Python
   - Copyright
-translate: fase
+translate: false
 author: shenxianpeng
 date: 2025-01-20
 ---
