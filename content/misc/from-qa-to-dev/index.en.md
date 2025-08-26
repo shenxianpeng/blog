@@ -1,7 +1,7 @@
 ---
 title: From Tester to Developer
 date: 2018-12-26
-summary: Reflections and summaries of my five months transitioning from testing to development: work, learning, and life.
+summary: Reflections and summaries of my five months transitioning from testing to development - work, learning, and life.
 tags:
   - Thoughts
   - Summary
