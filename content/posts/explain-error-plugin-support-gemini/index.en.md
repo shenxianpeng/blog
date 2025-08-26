@@ -1,6 +1,6 @@
 ---
 title: Jenkins Explain Error Plugin Now Supports Google Gemini! 🤖
-summary: This article introduces a new feature of the Jenkins Explain Error Plugin: support for Google Gemini model for error analysis. It provides configuration methods and an example video.
+summary: This article introduces a new feature of the Jenkins Explain Error Plugin that supports for Google Gemini model for error analysis. It provides configuration methods and an example video.
 tags:
   - Jenkins
   - AI
