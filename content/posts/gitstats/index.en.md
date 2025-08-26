@@ -1,5 +1,5 @@
 ---
-title: Reviving GitStats—Breathing New Life into Git History Analysis
+title: Reviving GitStats — Breathing New Life into Git History Analysis
 summary: This post details the revival of the GitStats project, including its migration to Python 3, the creation of a modern CI/CD pipeline, publication to PyPI and Docker, and future improvement plans.
 tags:
   - Git
