@@ -1,5 +1,5 @@
 ---
-title: Regarding Extremely Slow and Occasional Upload Failures to Artifactory—A Case Study
+title: Regarding Extremely Slow and Occasional Upload Failures to Artifactory — A Case Study
 summary: Encountered slow upload speeds and occasional failures when uploading artifacts to JFrog Artifactory. This post shares the troubleshooting process and lessons learned.
 tags:
   - Artifactory
