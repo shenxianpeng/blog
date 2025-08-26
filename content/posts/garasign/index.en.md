@@ -1,5 +1,5 @@
 ---
-title: Code Signing—GaraSign
+title: Code Signing — GaraSign
 summary: This article introduces the installation, usage, and verification methods of the GaraSign code signing tool, helping developers achieve secure code signing.
 tags:
   - DevSecOps
