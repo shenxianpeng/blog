@@ -1,5 +1,5 @@
 ---
-title: asdf-clang-tools—A New Way to Install Clang Tools Using asdf
+title: asdf-clang-tools — A New Way to Install Clang Tools Using asdf
 summary: |
   asdf-clang-tools is an asdf plugin for installing and managing Clang Tools, such as clang-format, clang-tidy, clang-query, and clang-apply-replacements.
 tags:
