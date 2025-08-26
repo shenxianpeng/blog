@@ -101,21 +101,21 @@ def main():
         print('No missing files detected.')
         return
     print(missing)
-    # Only process one post per run
-    sub, lang = missing[0]
-    branch_name = BRANCH_PREFIX + f'add-missing-{sub.name}-{lang}-{os.getpid()}'
-    create_branch(branch_name)
-    src = sub / ('index.en.md' if lang == 'zh' else 'index.md')
-    target = sub / ('index.md' if lang == 'zh' else 'index.en.md')
-    print(f'Translating {src} -> {target}')
-    translated = translate_with_gemini(src, lang)
-    if not translated:
-        print('Translation failed or quota exceeded. Exiting without commit or PR.')
-        return
-    with open(target, 'w', encoding='utf-8') as f:
-        f.write(translated)
-    commit_and_push(branch_name, [str(target)])
-    create_pr(branch_name, [str(target)])
+    # Process up to 5 posts per run
+    for sub, lang in missing[:5]:
+        branch_name = BRANCH_PREFIX + f'add-missing-{sub.name}-{lang}-{os.getpid()}'
+        create_branch(branch_name)
+        src = sub / ('index.en.md' if lang == 'zh' else 'index.md')
+        target = sub / ('index.md' if lang == 'zh' else 'index.en.md')
+        print(f'Translating {src} -> {target}')
+        translated = translate_with_gemini(src, lang)
+        if not translated:
+            print('Translation failed or quota exceeded. Exiting without commit or PR.')
+            return
+        with open(target, 'w', encoding='utf-8') as f:
+            f.write(translated)
+        commit_and_push(branch_name, [str(target)])
+        create_pr(branch_name, [str(target)])
 
 if __name__ == '__main__':
     main()
