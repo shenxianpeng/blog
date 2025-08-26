@@ -1,5 +1,5 @@
 ---
-title: A Year Abroad—Not Everyone Is Cut Out for Europe
+title: A Year Abroad — Not Everyone Is Cut Out for Europe
 summary: Who is suited to developing their career in Europe, and who might find it challenging? A programmer and father shares his experiences of life abroad.
 tags:
   - Thoughts
