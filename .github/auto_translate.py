@@ -114,8 +114,12 @@ def main():
         return
     with open(target, 'w', encoding='utf-8') as f:
         f.write(translated)
-    commit_and_push(branch_name, [str(target)])
-    create_pr(branch_name, [str(target)])
+    # Only commit and create PR if running in CI (GitHub Actions)
+    if os.getenv('GITHUB_ACTIONS', 'false').lower() == 'true':
+        commit_and_push(branch_name, [str(target)])
+        create_pr(branch_name, [str(target)])
+    else:
+        print('Running locally: skipping commit and PR creation.')
 
 if __name__ == '__main__':
     main()
