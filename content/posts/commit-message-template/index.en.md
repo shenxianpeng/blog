@@ -1,5 +1,5 @@
 ---
-title: Enhancing Code Traceability—Automatically Including PR Descriptions in Git Commits
+title: Enhancing Code Traceability — Automatically Including PR Descriptions in Git Commits
 summary: |
   Leverage Bitbucket's Commit Message Templates feature to automatically write PR descriptions into Git commit messages, ensuring crucial information isn't lost with tool changes.
 tags:
