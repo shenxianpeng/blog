@@ -4,6 +4,7 @@ summary: 介绍功能测试的基本流程、用例设计、项目控制、上�
 date: 2018-08-07
 tags:
   - FunctionTest
+translate: fase
 author: shenxianpeng
 ---
 

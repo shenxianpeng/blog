@@ -1,5 +1,5 @@
 ---
-title: Docker Buildx Bake：加速构建和管理多平台镜像的利器
+title: Docker Buildx Bake 加速构建和管理多平台镜像的利器
 summary: 本文介绍 Docker Buildx Bake 的概念、优势、使用场景以及如何使用该功能来加速构建和管理多平台镜像。
 tags:
  - Docker

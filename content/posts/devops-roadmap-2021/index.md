@@ -4,6 +4,7 @@ summary: 本文介绍了成为DevOps工程师所需的技能和工具，涵盖�
 tags:
   - DevOps
 date: 2021-01-21
+translate: fase
 author: shenxianpeng
 ---
 

@@ -161,10 +161,7 @@ openssl dgst -verify cli.pem.pub.key -signature CLI_AIX_1.1.0.zip.sig CLI_LINUXX
 Verification Failure
 ```
 
----
-
 以上就是关于 GaraSign 的实现分享，如有任何问题或是建议咱们评论区见。
-
 
 ---
 

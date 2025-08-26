@@ -5,6 +5,7 @@ tags:
   - Nix
   - NixOS
 draft: true
+translate: fase
 date: 2024-11-26
 author: shenxianpeng
 ---

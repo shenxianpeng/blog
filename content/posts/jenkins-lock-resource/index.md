@@ -5,7 +5,7 @@ date: 2019-08-10
 tags:
 - Jenkins
 - Pipeline
-- Jenkins
+translate: false
 author: shenxianpeng
 ---
 

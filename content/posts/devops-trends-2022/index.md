@@ -5,6 +5,7 @@ tags:
   - DevOps
   - Kubernetes
   - DevSecOps
+translate: fase
 author: shenxianpeng
 date: 2022-02-24
 ---

@@ -4,6 +4,7 @@ summary: 本文介绍了 Git 的常见管理操作，包括分支管理、提交
 date: 2019-07-07
 tags:
   - Git
+translate: fase
 author: shenxianpeng
 
 ---

@@ -6,6 +6,7 @@ date: 2019-07-07
 tags:
   - Jenkins
   - Pipeline
+translate: fase
 author: shenxianpeng
 ---
 

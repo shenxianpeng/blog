@@ -4,6 +4,7 @@ summary: 本文介绍了 2021 年 DevOps 领域的主要趋势，包括微服务
 tags:
   - DevOps
 date: 2021-01-21
+translate: fase
 author: shenxianpeng
 ---
 

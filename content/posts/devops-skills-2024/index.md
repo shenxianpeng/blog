@@ -4,6 +4,7 @@ summary: 本文介绍了在2024年DevOps工程师需要掌握的关键技能和�
 tags:
   - DevOps
   - DevSecOps
+translate: fase
 author: shenxianpeng
 date: 2024-04-08
 ---

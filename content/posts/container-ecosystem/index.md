@@ -6,7 +6,6 @@ tags:
   - containerd
   - CRI
   - CRI-O
-  - OCI
   - runc
 author: shenxianpeng
 date: 2022-03-29
