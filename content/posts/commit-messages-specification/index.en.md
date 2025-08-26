@@ -1,5 +1,5 @@
 ---
-title: Programmer's Self-Cultivation—Git Commit Message and Branch Creation Conventions
+title: Programmer's Self-Cultivation — Git Commit Message and Branch Creation Conventions
 summary: This article introduces how to formulate and implement Git commit message and branch creation conventions to improve code quality and team collaboration efficiency.
 tags:
   - Git
