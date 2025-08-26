@@ -5,6 +5,7 @@ tags:
   - JaCoCo
   - Coverage
   - DevOps
+translate: false
 date: 2020-11-17
 author: shenxianpeng
 ---
