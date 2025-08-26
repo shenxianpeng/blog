@@ -1,5 +1,5 @@
 ---
-title: Docker—containerd—CRI—CRI-O—OCI—runc Explained and How They Work Together
+title: Docker, containerd, CRI, CRI-O, OCI, runc Explained and How They Work Together
 summary: This article introduces the key components and standards in the container ecosystem, such as Docker, containerd, CRI, CRI-O, OCI, and runc, explaining their relationships and how they work together.
 tags:
   - Docker
@@ -22,8 +22,6 @@ The container ecosystem is composed of many exciting technologies, a large amoun
 Fortunately, these companies occasionally find common ground, cooperating to agree on standards that improve the ecosystem's interoperability across different platforms and operating systems, reducing reliance on any single company or project.
 
 This diagram shows how Docker, Kubernetes, CRI, OCI, containerd, and runc fit together in this ecosystem.
-
-
 
 ![container ecosystem](container-ecosystem.png)
 
@@ -135,7 +133,3 @@ Now you understand the intriguing and slightly complex world of containers.  Nex
 ## References
 
 > [The differences between Docker, containerd, CRI-O and runc](https://www.tutorialworks.com/difference-docker-containerd-runc-crio-oci/)
-
----
-
-Please indicate the author and source when reprinting this article.  Do not use for any commercial purposes.  Follow the official account "DevOps攻城狮".
