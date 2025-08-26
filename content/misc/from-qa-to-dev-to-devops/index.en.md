@@ -1,5 +1,5 @@
 ---
-title: From QA to DEV to DEVOPS—Five Years of Coding and Writing
+title: From QA to DEV to DEVOPS — Five Years of Coding and Writing
 summary: What have I gained from five years of coding, transitioning from software testing to development to DevOps? Sharing my career development and writing experience.
 tags:
   - Thoughts
