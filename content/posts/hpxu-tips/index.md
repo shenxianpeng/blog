@@ -4,7 +4,7 @@ summary: 本文介绍了在 HP-UX 系统上安装 Java 8、gzip 和 gunzip 的�
 tags:
   - HP-UX
 date: 2020-02-05
-translate: fase
+translate: false
 author: shenxianpeng
 ---
 

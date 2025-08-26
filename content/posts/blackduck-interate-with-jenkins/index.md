@@ -5,7 +5,7 @@ tags:
   - BlackDuck
   - Jenkins
 date: 2019-12-08
-translate: fase
+translate: false
 author: shenxianpeng
 ---
 

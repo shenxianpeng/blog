@@ -6,7 +6,7 @@ tags:
 - Jenkins
 - Git
 - Pipeline
-translate: fase
+translate: false
 author: shenxianpeng
 ---
 

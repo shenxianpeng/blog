@@ -5,7 +5,7 @@ tags:
   - Troubleshooting
   - Artifactory
   - JFrog
-translate: fase
+translate: false
 date: 2020-06-03
 author: shenxianpeng
 ---

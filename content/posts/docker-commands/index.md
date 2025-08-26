@@ -5,7 +5,7 @@ summary: |
 tags:
   - Docker
   - DevOps
-translate: fase
+translate: false
 date: 2019-12-02
 author: shenxianpeng
 ---

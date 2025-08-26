@@ -7,7 +7,7 @@ tags:
 - Disqus
 categories:
 - Hexo
-translate: fase
+translate: false
 author: shenxianpeng
 ---
 
