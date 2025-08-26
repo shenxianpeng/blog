@@ -5,6 +5,7 @@ summary: |
 tags:
   - Python
   - Copyright
+translate: fase
 author: shenxianpeng
 date: 2025-01-20
 ---

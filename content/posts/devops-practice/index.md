@@ -4,7 +4,7 @@ summary: 本文介绍了 DevOps 实践的核心概念、目标和实施方法，
 date: 2018-04-14
 tags:
 - DevOps
-- DevOps
+translate: fase
 author: shenxianpeng
 ---
 

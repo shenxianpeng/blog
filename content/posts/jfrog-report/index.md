@@ -3,6 +3,7 @@ title: 🧊2025软件供应链现状报告：开源时代，我们究竟在和�
 summary: |
     JFrog发布的《2025软件供应链现状报告》揭示了软件供应链的变化和风险，尤其是AI模型的安全问题。本文分享了报告中的关键发现和对DevOps从业者的启示。
 tags: [JFrog, DevOps]
+translate: fase
 author: shenxianpeng
 date: 2025-06-28
 ---

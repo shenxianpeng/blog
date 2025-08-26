@@ -6,6 +6,7 @@ tags:
   - GitHub
   - Git
   - OSS
+translate: fase
 author: shenxianpeng
 date: 2024-02-22
 ---

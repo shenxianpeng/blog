@@ -4,6 +4,7 @@ summary: 本文总结了 Git 的常用命令和技巧，帮助开发者快速查
 tags:
   - Git
 date: 2021-10-23
+translate: fase
 author: shenxianpeng
 ---
 

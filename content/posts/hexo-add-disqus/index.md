@@ -7,6 +7,7 @@ tags:
 - Disqus
 categories:
 - Hexo
+translate: fase
 author: shenxianpeng
 ---
 

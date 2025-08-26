@@ -4,6 +4,7 @@ summary: 本文介绍了如何使用 Jenkins 定期自动生成 Git 仓库的多
 tags:
   - Stats
   - Git
+translate: fase
 date: 2020-01-21
 author: shenxianpeng
 ---

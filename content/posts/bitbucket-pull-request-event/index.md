@@ -21,8 +21,6 @@ author: shenxianpeng
 
 如何通过创建一个普通的 Jenkins Job 就能实时获取 Bitbucket 仓库以及 Pull Request 事件呢？通过以下功能和插件可以实现。
 
-
-
 1. 配置 Bitucket 的 Webhook
 2. 通过 Jenkins generic-webhook-trigger 插件接收 Webhook 的 Event 事件
 
