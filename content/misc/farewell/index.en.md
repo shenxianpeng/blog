@@ -1,5 +1,5 @@
 ---
-title: Farewell Rocket China—A Decade's Journey and a New Beginning
+title: Farewell Rocket China — A Decade's Journey and a New Beginning
 summary: June 28, 2024, marks my last day at Rocket's China branch.  Looking back on a decade's journey and forward to a new chapter.
 tags:
   - Work
