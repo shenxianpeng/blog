@@ -3,7 +3,6 @@ title: 解决 Code Sign 默认时间戳服务器 http://timestamp.verisign.com/s
 summary: 本文介绍了如何解决 Verisign 时间戳服务器不可用的问题，提供了替代的时间戳服务器地址，帮助开发者顺利完成代码签名。
 tags:
   - CodeSign
-  - Timestamp
 date: 2021-01-06
 author: shenxianpeng
 ---

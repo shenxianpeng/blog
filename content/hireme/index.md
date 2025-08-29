@@ -23,11 +23,11 @@ layoutBackgroundBlur: false
 
 ## 个人简介
 
-- **DevOps/Build/Release 技术负责人**，从零搭建团队 DevOps 体系，并在部门内推广最佳实践。
+- **DevOps/Build/Release 工程师**，从零搭建团队 DevOps 体系，并在部门内推广最佳实践。
 - 自 2018 年起专注 DevOps，熟悉 Windows、Linux、AIX、Solaris、HP-UX 等操作系统及完整软件生命周期。
 - 擅长 **Scan → Try → Scale** 方法，将行业最佳实践引入并规模化落地。
 - 熟练使用 Python / Shell / Groovy，用于构建 DevOps 工具与自动化解决方案。
-- **开源作者**：创建并维护 [cpp-linter](https://github.com/cpp-linter)、[commit-check](https://github.com/commit-check)、[conventional-branch](https://github.com/conventional-branch)、[devops-maturity](https://github.com/devops-maturity) 等项目，其中 [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) 已被微软、Apache、NASA 等使用。
+- **开源作者**：创建并维护 [cpp-linter](https://github.com/cpp-linter)、[commit-check](https://github.com/commit-check)、[conventional-branch](https://github.com/conventional-branch)、[devops-maturity](https://github.com/devops-maturity) 等组织，其中 [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) 等项目已被微软、Apache、NASA 等很多优秀项目使用。
 - **技术分享者**：在 [博客](https://shenxianpeng.github.io) 与公众号 “**DevOps攻城狮**” 发布数百篇原创文章，影响广泛开发者群体。
 
 ---

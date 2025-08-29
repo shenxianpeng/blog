@@ -5,9 +5,6 @@ summary: |
 date: 2019-05-21
 tags:
 - Coverage
-- C
-- DevOps
-- Coverage
 author: shenxianpeng
 ---
 

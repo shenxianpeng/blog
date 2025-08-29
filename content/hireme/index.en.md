@@ -23,12 +23,12 @@ layoutBackgroundHeaderSpace: false
 
 ## About Me
 
-- **Tech Lead** in DevOps/Build/Release, built the DevOps practice from scratch and drove best practices adoption across teams and departments.
+- DevOps/Build/Release Engineer, built the DevOps practice from scratch and drove best practices adoption across teams and departments.
 - Specialized in DevOps since 2018, experienced with Windows, Linux, AIX, Solaris, HP-UX, and the full software development lifecycle.
 - Strong in the **Scan → Try → Scale** approach to adopt and scale industry best practices.
 - Proficient in **Python / Shell / Groovy** for developing DevOps tools and automation solutions.
 - **Open Source Creator**: Founded and maintain [cpp-linter](https://github.com/cpp-linter), [commit-check](https://github.com/commit-check), [conventional-branch](https://github.com/conventional-branch), and [devops-maturity](https://github.com/devops-maturity). [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) is used by Microsoft, Apache, NASA, and other notable projects.
-- **Tech Writer**: Published hundreds of original articles on my [blog](https://shenxianpeng.github.io) and WeChat public account “**DevOps攻城狮**”, reaching and inspiring a broad developer audience.
+- **Tech Writer**: Published hundreds of original articles on my [blog](https://shenxianpeng.github.io) and WeChat public account **DevOps Engineer**, reaching and inspiring a broad developer audience.
 
 ---
 
