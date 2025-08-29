@@ -3,7 +3,6 @@ title: 通过 Jenkins-X 社区最终进入到 Jenkins 基础设施团队成为 S
 summary: 本文介绍了 Hervé Le Meur 如何通过 Jenkins-X 社区的贡献，最终成为 Jenkins 基础设施团队的一名 SRE，并分享了他的经历和对 Jenkins 的看法。
 tags:
   - Jenkins
-  - Contributor
 translate: false
 author: shenxianpeng
 date: 2024-04-21

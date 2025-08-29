@@ -2,8 +2,7 @@
 title: 组织内如何评估 CI/CD 成熟度
 summary: 本文介绍了如何使用 Jenkins 的 generic-webhook-trigger 插件来实时获取 Bitbucket 仓库的事件信息，如 Pull Request ID 等。
 tags:
-  - CI
-  - CD
+  - CI/CD
   - Badge
 translate: false
 date: 2021-12-07

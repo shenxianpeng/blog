@@ -2,7 +2,7 @@
 title: 2021 年务必知道的最好用的 14 款 CI/CD 工具
 summary: 本文列出了市场上最流行的 14 种 CI/CD 工具，包括 Jenkins、CircleCI、TeamCity 等，并介绍了它们的主要特性和使用场景。
 tags:
-  - CICD
+  - CI/CD
 date: 2020-03-29
 translate: false
 author:

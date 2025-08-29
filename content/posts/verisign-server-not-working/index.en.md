@@ -3,7 +3,6 @@ title: Resolving the Unavailable Code Sign Default Timestamp Server http://times
 summary: This article describes how to resolve issues with the unavailable Verisign timestamp server, providing alternative timestamp server addresses to help developers successfully complete code signing.
 tags:
   - CodeSign
-  - Timestamp
 date: 2021-01-06
 author: shenxianpeng
 ---
