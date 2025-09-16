@@ -3,6 +3,7 @@ title: Conventional Branch 规范一周年：从 0 到全球开发者的选择
 summary: 12K+ 访问量、多语言翻译、全球开发者采用，Conventional Branch 规范的一周年之路
 tags:
   - Git
+  - Conventional Branch
 date: 2025-09-16
 author: shenxianpeng
 ---
