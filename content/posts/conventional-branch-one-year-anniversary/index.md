@@ -7,7 +7,7 @@ date: 2025-09-16
 author: shenxianpeng
 ---
 
-去年这个时候，我发布了 [Conventional Branch 规范](../conventional-branch)。
+去年的今天，我正式发布了 [Conventional Branch 规范](../conventional-branch)。
 
 这一年来，社区反响热烈，越来越多的团队开始采用这套规范来管理他们的 Git 分支。
 
@@ -27,11 +27,12 @@ author: shenxianpeng
 
 ![By Source](by-source.png)
 
-如今，Conventional Branch 规范已相当完善，经常与 Conventional Commits（约定式提交） 一起出现在许多开源项目的 Contribution Guide 中，帮助开发者更好地管理分支与提交。
+如今，Conventional Branch 规范已相当完善，经常与 Conventional Commits（约定式提交） 一起出现在许多开源项目的 Contribution Guide 中，指导开发者更好地管理分支与提交。
 
 接下来，我希望它能在更多项目中得到采用，并继续完善多语言支持，让更多开发者从中受益。
 
-👉 如果你也觉得这套规范有价值，欢迎点赞、转发，让更多人知道这套规范
+如果你也觉得这套规范有价值，欢迎点赞、转发，让更多人知道这套规范。
+
 也欢迎在项目中尝试使用，或提出改进建议，一起让 Git 分支管理变得更简单、更高效。
 
 ---
