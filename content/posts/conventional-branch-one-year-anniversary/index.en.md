@@ -1,5 +1,5 @@
 ---
-title: Conventional Branch Specification—One-Year Anniversary: From Zero to Global Developer Adoption
+title: Conventional Branch Specification One-Year Anniversary — From Zero to Global Developer Adoption
 summary: 12K+ visits, multilingual translations, and global developer adoption—the journey of the Conventional Branch specification's first year
 tags:
   - Git
@@ -35,7 +35,3 @@ Going forward, I hope it will be adopted in more projects and that we can contin
 If you also find this specification valuable, please like and share it so more people can learn about it.
 
 Feel free to try it in your projects or suggest improvements; let's work together to make Git branch management simpler and more efficient.
-
----
-
-Please indicate the author and source when reprinting this article, and do not use it for any commercial purposes.  Follow the WeChat official account "DevOps攻城狮"
