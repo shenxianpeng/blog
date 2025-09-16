@@ -26,7 +26,7 @@ pageRef = "misc"
 weight = 5
 
 [[main]]
-name = "雇佣我"
+name = "聘用我"
 pageRef = "hireme"
 weight = 6
 
