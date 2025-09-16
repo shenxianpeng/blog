@@ -2,6 +2,7 @@
 title: 约定式分支规范中文版正式发布！
 summary: 本文介绍了约定式分支规范的中文版，旨在通过结构化的命名约定提高 Git 分支的可读性和可操作性。
 tags:
+  - Conventional Branch
   - Git
 date: 2024-09-24
 author: shenxianpeng

@@ -3,6 +3,7 @@ title: Conventional Branch Specification Released!
 summary: This article introduces the Conventional Branch specification, which provides a structured naming convention for Git branches to enhance readability and collaboration.
 tags:
   - Git
+  - Conventional Branch
 date: 2024-09-18
 author: shenxianpeng
 ---
