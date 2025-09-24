@@ -15,8 +15,6 @@ date: 2025-09-24
 * CI 跑一遍 pipeline，所有依赖都能在线获取；
 * 用 AI 工具跑个自动化构建，分分钟拉几十次仓库，不眨眼。
 
-我们早就习惯了这一切“理所当然”。
-
 可当有人说：**这些东西统统都不是免费的。**
 
 就在昨天，OpenSSF 联合多个开源基础设施，像 Maven Central、PyPI、crates.io、NuGet、Packagist、Open VSX 等的负责人发布了一份声明，标题很直白：
