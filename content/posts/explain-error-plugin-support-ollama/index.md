@@ -1,6 +1,6 @@
 ---
-title: Jenkins Explain Error 插件支持 Ollama 模型啦！🚀
-summary: 本文介绍了 Jenkins Explain Error Plugin 的新功能，支持 Ollama 模型进行错误分析，并提供了配置方法和示例视频。
+title: Jenkins Explain Error 插件现已支持 Ollama！🤖
+summary: 本文介绍了 Jenkins Explain Error Plugin 的新功能，即支持 Ollama 本地模型，帮助用户更高效地分析和解决构建错误。
 tags:
   - Jenkins
   - AI
@@ -12,7 +12,7 @@ date: 2025-10-01
 
 这几天，有朋友问：**能不能支持本地模型，比如 Ollama？**
 
-答案是：安排上！✔️
+答案是：安排上！
 
 今天，我很高兴地宣布：Explain Error Plugin 已经支持 Ollama 模型！ 🎉
 
@@ -54,12 +54,14 @@ date: 2025-10-01
 
 如果你在使用过程中有任何想法或问题，欢迎：
 
-* 在 [GitHub](https://github.com/jenkinsci/explain-error-plugin) 提交 issue
+* 在 GitHub 提交 issue
 * 在评论区留言交流
 
-👉 如果觉得这个插件对你有帮助，请点个 **Star** ⭐️！
+如果觉得这个[插件](https://plugins.jenkins.io/explain-error/)对你有帮助，请点个 **Star** ⭐️！
 
 这不仅能帮更多 Jenkins 用户发现它，也能激励我继续优化和扩展功能。
+
+如果觉得这篇文章有帮助，欢迎分享给身边使用 Jenkins 的朋友们。
 
 ---
 
