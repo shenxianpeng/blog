@@ -2,7 +2,7 @@
 title: Commit Check 更新：新增两个实用功能提升代码质量保障
 summary: 本文介绍了 Commit Check 的两个新功能：pr-comments 和 base-merge，旨在提升 Pull Request 的检查能力和代码质量保障。
 tags:
-  - commit-check
+  - Commit-Check
   - DevOps
 draft: true
 date: 2024-11-23
