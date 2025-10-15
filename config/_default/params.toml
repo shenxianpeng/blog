@@ -22,7 +22,7 @@ disableImageOptimizationMD = true
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-defaultBackgroundImage = "/img/background.svg"
+defaultBackgroundImage = "/img/no-exist-img.jpg"
 defaultFeaturedImage = "/img/background.svg"
 defaultSocialImage = "/img/blowfish_banner.png"
 
