@@ -1,5 +1,5 @@
 ---
-title: The C/C++ Tool Used by Microsoft and NASA Finally Has an Official Website!
+title: The Cpp Linter Used by Microsoft and NASA Finally Has an Official Website!
 summary: |
   The official website for cpp-linter related projects and tools is now live at [https://cpp-linter.github.io/](https://cpp-linter.github.io/). Everyone is welcome to visit and use it.
 tags:
