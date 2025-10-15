@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Jenkins Explain Error Plugin Now Supports Ollama! 🤖
 summary: This article introduces the new feature of Jenkins Explain Error Plugin, which is the support for Ollama local models, helping users more efficiently analyze and resolve build errors.
@@ -67,4 +66,3 @@ If you find this article helpful, feel free to share it with your friends who us
 ---
 
 When reprinting articles from this site, please credit the author and source, and do not use for any commercial purposes. Welcome to follow the official WeChat account "DevOps Engineer".
-```
