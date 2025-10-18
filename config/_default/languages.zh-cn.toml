@@ -8,7 +8,6 @@ displayName = "简体中文"
 isoCode = "zh-cn"
 rtl = false
 dateFormat = "2006-01-02"
-logo = "img/logo.png"
 description = "沈显鹏的个人网站，分享关于 DevOps，CI/CD，Build 以及开源。"
 copyright = "Copyright © 2017–2025 Xianpeng Shen. All rights reserved."
 
