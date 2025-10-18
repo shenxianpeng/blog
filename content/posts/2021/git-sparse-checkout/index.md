@@ -5,7 +5,8 @@ summary: |
 tags:
   - Git
 date: 2021-01-11
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 本文是我在自己环境中测试可行的笔记，并未在更多场景中验证。

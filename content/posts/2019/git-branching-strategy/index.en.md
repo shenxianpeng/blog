@@ -5,7 +5,8 @@ summary: |
 tags:
   - Git
 date: 2021-05-13
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## Why need branching naming convention

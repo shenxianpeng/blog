@@ -4,7 +4,8 @@ summary: This article introduces the concept and importance of code signing, alo
 tags:
   - DevSecOps
   - SLSA
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2024-04-29
 ---
 

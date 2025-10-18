@@ -7,7 +7,8 @@ tags:
   - Docker
 date: 2019-12-01
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 对于如何备份 Jenkins 除了用 Jenkins 插件来定期备份之外，如果把 Jenkins 安装到 Docker 里，定期备份一个 Docker Image 最后传到 Artifactory 中，也是一个不错的方案。

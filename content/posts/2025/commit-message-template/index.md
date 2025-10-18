@@ -5,7 +5,8 @@ summary: |
 tags:
   - Git
   - Bitbucket
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-06-12
 ---
 

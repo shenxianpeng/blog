@@ -7,7 +7,8 @@ tags:
   - Coverage
 date: 2021-04-06
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 本文适用的是 Gradle 来构建和适用 JaCoCo。

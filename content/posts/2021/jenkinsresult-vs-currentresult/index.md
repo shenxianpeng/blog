@@ -5,7 +5,8 @@ summary: |
 tags:
   - Jenkins
 date: 2021-01-14
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 > 这是一篇记录 `result` 与 `currentResult` 区别的笔记。

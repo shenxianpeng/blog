@@ -4,7 +4,8 @@ summary: 本文介绍了谷歌的代码审查法则，并分享了如何在团�
 tags:
   - CodeReview
 date: 2021-03-20
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 背景

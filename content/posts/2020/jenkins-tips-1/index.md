@@ -5,7 +5,8 @@ tags:
   - Jenkins
 date: 2020-06-21
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 > 《Jenkins Tips 1》 —— 每期用简短的图文描述一个 Jenkins 小技巧。

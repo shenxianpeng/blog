@@ -5,7 +5,8 @@ tags:
   - Coverage
   - DevOps
 date: 2021-07-14
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 This article briefly introduces: What is code coverage? Why measure code coverage? Code coverage metrics, working principles, mainstream code coverage tools, and why not to overestimate code coverage metrics.

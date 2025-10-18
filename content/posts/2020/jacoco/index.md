@@ -7,7 +7,8 @@ tags:
   - DevOps
 translate: false
 date: 2020-11-17
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 想要对 Java 项目进行代码覆盖率的测试，很容易就找到 JaCoCo 这个开源代码覆盖率分析工具是众多工具中最后欢迎的哪一个。

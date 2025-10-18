@@ -7,7 +7,8 @@ tags:
   - Jenkins
   - Pipeline
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 这个pipeline里包含了如下几个技术：

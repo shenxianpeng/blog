@@ -6,7 +6,8 @@ tags:
   - Clang
   - XLC
 date: 2023-10-08
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 In this article, I would like to document the problems encountered when upgrading from IBM XLC 10.1 to XLC 17.1 (IBM Open XL C/C++ for AIX 17.1.0) and how to fix the following 12 errors.

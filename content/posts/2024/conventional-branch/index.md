@@ -5,7 +5,8 @@ tags:
   - Conventional Branch
   - Git
 date: 2024-09-24
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 上周正式发布《约定式分支规范》后，受到了广泛关注，不少人询问何时推出中文版。

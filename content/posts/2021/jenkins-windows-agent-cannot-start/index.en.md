@@ -5,7 +5,8 @@ summary: |
 tags:
   - Jenkins
 date: 2021-02-11
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Today, when I tried to upgrade my team's Jenkins server from Jenkins 2.235.1 to Jenkins 2.263.3, I met a problem that can not launch the Windows agent.

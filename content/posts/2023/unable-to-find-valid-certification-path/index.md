@@ -7,7 +7,8 @@ tags:
   - Java
   - Jenkins
 date: 2023-09-11
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 最近遇到了通过 Jenkins agent 无法上传 artifacts 到 Artifactory 的情况，具体错误如下：

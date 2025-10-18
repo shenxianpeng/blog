@@ -4,7 +4,8 @@ summary: 开源基础设施并非免费，自来水般的 pip/npm 安装背后�
 tags:
   - OpenSource
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-09-24
 ---
 

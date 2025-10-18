@@ -4,7 +4,8 @@ summary: This article introduces the concept, advantages, use cases, and how to 
 tags:
  - Docker
 date: 2023-07-17
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 With the increasing popularity and application scenarios of containerization technology, building and managing multi-platform images has become increasingly important. [Docker Buildx](https://github.com/docker/buildx) is an extension of the official Docker CLI that provides Docker users with more powerful and flexible build capabilities.  These include:

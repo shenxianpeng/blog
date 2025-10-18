@@ -4,7 +4,8 @@ summary: This article introduces the new feature of Jenkins Explain Error Plugin
 tags:
   - Jenkins
   - AI
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-10-01
 ---
 

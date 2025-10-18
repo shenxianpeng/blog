@@ -5,7 +5,8 @@ tags:
   - Git
   - Conventional Branch
 date: 2024-09-18
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## Summary

@@ -6,7 +6,8 @@ tags:
   - LCOV
   - Coverage
 date: 2021-08-17
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 本篇分享如何使用 Gcov 和 LCOV 对 C/C++ 项目进行代码覆盖率的度量。

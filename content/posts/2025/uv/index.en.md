@@ -5,7 +5,8 @@ summary: |
 tags:
   - uv
   - pip
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-05-05
 ---
 

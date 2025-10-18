@@ -4,7 +4,8 @@ summary: 介绍在 Windows Server 2022 上执行 Ansible playbook 时出现 Powe
 tags:
   - Ansible
 date: 2024-11-18
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 最近在配置一台新的 Windows Server 2022 时，我遇到了一个问题：之前运行正常的 Ansible playbook 无法执行了。

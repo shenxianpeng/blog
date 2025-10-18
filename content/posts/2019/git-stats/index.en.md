@@ -5,7 +5,8 @@ tags:
   - Stats
   - Git
 date: 2019-12-17
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 If you are a member of a research and development efficiency team or are engaged in CI/CD or DevOps, in addition to providing infrastructure, metrics and data are also a very important aspect. For example, you need to analyze the code submission status of a certain Git repository:

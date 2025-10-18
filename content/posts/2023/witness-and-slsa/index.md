@@ -4,7 +4,8 @@ summary: 本文介绍了 Witness 的概念、工作原理以及如何使用 Witn
 tags:
   - SLSA
   - Witness
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-11-30
 ---
 

@@ -5,7 +5,8 @@ summary: |
 tags:
   - Nutanix
   - VMware
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-03-12
 ---
 

@@ -5,7 +5,8 @@ tags:
   - Pythonic
   - Python
 date: 2021-03-28
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Python, needless to say, is one of the easiest dynamic programming languages to learn.  Its cross-platform compatibility, readability, ease of writing, and rich packages make it one of the most commonly used languages among DevOps/testing/development engineers.

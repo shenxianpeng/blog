@@ -4,7 +4,8 @@ summary: 本文探讨了程序员写作的重要性，强调了写作和表达�
 tags:
   - Others
 date: 2020-05-30
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 在程序员圈子里比较流行这样一句话“会写程序的干不过会写 PPT 的”，还记得 2019 年新东方年会的一首《放飞自我》里有这样一句歌词戳中了绝大大多数程序员的内心

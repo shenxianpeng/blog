@@ -3,7 +3,8 @@ title: Why is my Jenkins Controller getting slower—Possible mistakes you might
 summary: This article introduces some best practices for Jenkins pipelines, aiming to help developers and operations personnel optimize Jenkins' performance and maintainability.
 tags:
   - Jenkins
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-02-06
 ---
 

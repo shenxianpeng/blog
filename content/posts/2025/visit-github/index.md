@@ -4,7 +4,8 @@ summary: |
   GitHub 的访问问题让很多程序员感到困扰，尤其是在国内。本文分享了个人的体验和对网络问题的思考。
 tags:
   - GitHub
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-04-13
 ---
 

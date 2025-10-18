@@ -6,7 +6,8 @@ tags:
   - Jenkins
   - Webhook
 date: 2020-08-07
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 背景

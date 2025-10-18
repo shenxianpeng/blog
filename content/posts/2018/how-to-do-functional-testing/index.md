@@ -5,7 +5,8 @@ date: 2018-08-07
 tags:
   - FunctionTest
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 当你第一次开始接触测试这个行业的时候，首先听说的应该都是功能测试。

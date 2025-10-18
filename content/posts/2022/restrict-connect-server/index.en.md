@@ -4,7 +4,8 @@ summary: |
   This article explains how to restrict access to a critical Linux machine by modifying the `/etc/security/access.conf` file, allowing only specific users to log in.
 tags:
   - Linux
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2022-09-16
 ---
 

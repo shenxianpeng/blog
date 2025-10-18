@@ -6,7 +6,8 @@ tags:
   - Docker
 date: 2019-12-01
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## Docker 可分为三个版本

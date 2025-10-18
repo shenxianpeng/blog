@@ -5,7 +5,8 @@ tags:
   - Coverage
   - DevOps
 date: 2021-07-14
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 本篇简要介绍：什么是代码覆盖率？为什么要做代码覆盖率？代码覆盖率的指标、工作原理，主流的代码覆盖率工具以及不要高估代码覆盖率指标。

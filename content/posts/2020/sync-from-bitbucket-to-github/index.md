@@ -8,7 +8,8 @@ tags:
   - Jenkins
 translate: false
 date: 2020-05-05
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 背景

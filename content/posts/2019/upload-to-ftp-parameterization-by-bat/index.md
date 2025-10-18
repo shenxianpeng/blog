@@ -7,7 +7,8 @@ tags:
 - Shell
 - FTP
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 实现 CI/CD 过程中，常常需要将构建好的 build 上传到一个公共的服务器，供测试、开发来获取最新的 build。如何上传 build 成果物到 FTP server，又不想把 FTP server登录的用户名和密码存在脚本里，想做这样的参数化如何实现呢？

@@ -4,7 +4,8 @@ summary: This article describes how to resolve issues with the unavailable Veris
 tags:
   - CodeSign
 date: 2021-01-06
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Many programmers may have encountered issues with the Verisign Timestamp server, http://timestamp.verisign.com/scripts/timstamp.dll, becoming unavailable when performing code signing, especially at the start of the new year.  The following error may have appeared:

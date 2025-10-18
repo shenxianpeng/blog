@@ -6,7 +6,8 @@ tags:
   - OpenSSH
   - Windows
 date: 2021-01-12
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Recently our Bamboo server has an error when connecting to the Windows build system.

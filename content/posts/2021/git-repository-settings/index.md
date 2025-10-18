@@ -6,7 +6,8 @@ tags:
   - Bitbucket
   - Git
 date: 2021-01-12
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 我管理团队的 Git 仓库已经超过两年，日常主要使用 Bitbucket，这里以 Bitbucket 为例，介绍一些推荐开启的设置。

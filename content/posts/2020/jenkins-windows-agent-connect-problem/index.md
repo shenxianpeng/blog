@@ -6,7 +6,8 @@ tags:
   - Troubleshooting
   - Jenkins
 date: 2020-07-16
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 在将 Jenkins 从 `2.176.3` 升级到 `2.235.1` 后，我的 Windows Agent 无法与 Master 成功连接，并提示：

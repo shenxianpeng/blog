@@ -5,7 +5,8 @@ tags:
   - DevOps
 date: 2021-01-21
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 DevOps 实际上是什么意思？🤔

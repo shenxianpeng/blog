@@ -4,7 +4,8 @@ summary: This article explores the importance of writing skills for programmers,
 tags:
   - Others
 date: 2020-05-30
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 A popular saying in the programmer community is, "Programmers who can code can't beat those who can make PPTs."  I remember a lyric from the song "Let Yourself Go" at New Oriental's 2019 annual meeting that resonated with most programmers:

@@ -4,7 +4,8 @@ summary: 本文介绍 Docker Buildx Bake 的概念、优势、使用场景以及
 tags:
  - Docker
 date: 2023-07-17
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 随着容器化技术的普及和应用场景的增多，构建和管理多平台镜像变得越来越重要。[Docker Buildx](https://github.com/docker/buildx) 是 Docker 官方对于 Docker CLI 的一个扩展，为 Docker 用户提供了更强大和灵活的构建功能。包括：

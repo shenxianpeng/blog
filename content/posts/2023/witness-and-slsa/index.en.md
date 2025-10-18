@@ -4,7 +4,8 @@ summary: This article introduces the concept and working mechanism of Witness, a
 tags:
   - SLSA
   - Witness
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-11-30
 ---
 

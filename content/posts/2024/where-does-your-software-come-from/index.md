@@ -4,7 +4,8 @@ summary: 本文介绍了软件制品的来源证明，强调了在软件开发�
 tags:
   - SLSA
   - DevSecOps
-author: shenxianpeng
+authors:
+  - shenxianpeng
 translate: false   # 不需要翻译
 date: 2024-06-13
 ---

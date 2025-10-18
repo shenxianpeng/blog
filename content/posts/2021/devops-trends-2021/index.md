@@ -5,7 +5,8 @@ tags:
   - DevOps
 date: 2021-01-21
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 DevOps 已经走了很长一段路，毫无疑问，它将在今年继续发光。由于许多公司都在寻求有关数字化转型的最佳实践，因此重要的是要了解领导者认为行业发展的方向。从这个意义上讲，以下文章是 DevOps 领导者对 DevOps 趋势的回应的集合，需要在 2021 年关注。

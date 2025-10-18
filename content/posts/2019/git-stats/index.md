@@ -5,7 +5,8 @@ tags:
   - Stats
   - Git
 date: 2019-12-17
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 如果你是研发效能组的一员或者在从事 CI/CD 或 DevOps，除了提供基础设施，指标和数据是也是一个很重要的一环，比如需要分析下某个 Git 仓库代码提交情况：

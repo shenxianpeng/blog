@@ -5,7 +5,8 @@ summary: |
 date: 2019-05-21
 tags:
 - Coverage
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 什么是代码覆盖率

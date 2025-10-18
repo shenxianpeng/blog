@@ -4,7 +4,8 @@ summary: This article introduces the differences between pip and pipx, helping d
 tags:
   - Python
 date: 2024-11-26
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ### **pip vs pipx Differences**

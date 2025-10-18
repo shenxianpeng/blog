@@ -6,7 +6,8 @@ tags:
   - AIX
   - Jenkins
 date: 2021-06-20
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 前言

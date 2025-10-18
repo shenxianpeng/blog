@@ -7,7 +7,8 @@ tags:
   - Git
   - OSS
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2024-02-22
 ---
 

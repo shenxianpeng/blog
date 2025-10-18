@@ -6,7 +6,8 @@ tags:
   - JFrog
   - Artifactory
 date: 2021-05-04
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 问题背景

@@ -5,7 +5,8 @@ summary: |
 date: 2019-05-21
 tags:
 - Coverage
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Code Coverage is a measurement of how many lines, statements, or blocks of your code are tested using your suite of automated tests. It’s an essential metric to understand the quality of your QA efforts.

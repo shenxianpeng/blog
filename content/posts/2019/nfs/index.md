@@ -6,7 +6,8 @@ tags:
   - Shell
   - Jenkins
 date: 2019-09-10
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 例如我有一个共享仓库的代码所在用的空间非常大（超过 20 G），在每个产品构建时候都需要用到这个仓库的代码（从里面 copy 第三方库），如果每个人都要 git clone 这个第三方仓库，一是网络开销非常大，二是 git clone 时间长，而且占用大量的物理空间。

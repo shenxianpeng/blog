@@ -6,7 +6,8 @@ tags:
   - Python
   - Copyright
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-01-20
 ---
 

@@ -5,7 +5,8 @@ summary: |
 tags:
   - Jenkins
 date: 2021-06-24
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 在一些情况下，即使设置了超时，Jenkins 作业依然不会因为超时自动失败，比如某些进程没有正常结束。

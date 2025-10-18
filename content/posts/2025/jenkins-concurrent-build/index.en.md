@@ -5,7 +5,8 @@ summary: |
 tags:
   - Jenkins
   - DevOps
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-06-04
 ---
 

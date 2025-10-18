@@ -6,7 +6,8 @@ tags:
   - Git
   - Troubleshooting
 date: 2019-09-01
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Recently, while running a Jenkins Job, I encountered this error during a git clone operation:

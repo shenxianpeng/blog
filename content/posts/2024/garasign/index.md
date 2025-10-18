@@ -4,7 +4,8 @@ summary: 本文介绍了 GaraSign 代码签名工具的安装、使用和验证�
 tags:
   - DevSecOps
   - SLSA
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2024-06-10
 ---
 

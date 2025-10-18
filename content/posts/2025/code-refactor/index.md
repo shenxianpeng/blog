@@ -5,7 +5,8 @@ summary: |
 tags:
   - CI/CD
   - DevOps
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-06-02
 ---
 

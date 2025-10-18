@@ -6,7 +6,8 @@ tags:
   - Gcov
   - LCOV
 date: 2021-07-11
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 This article shares how to use Gcov and LCOV to metrics code coverage for C/C++ projects.

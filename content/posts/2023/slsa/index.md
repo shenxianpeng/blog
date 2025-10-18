@@ -3,7 +3,8 @@ title: SLSA 框架与软件供应链安全防护
 summary: 本文介绍了 SLSA 框架的概念、目的、等级划分以及如何在软件供应链中应用 SLSA 来提升安全性，帮助读者理解 SLSA 在软件开发和部署中的重要性。
 tags:
   - SLSA
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-03-23
 ---
 

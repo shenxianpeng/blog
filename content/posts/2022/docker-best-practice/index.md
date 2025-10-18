@@ -5,7 +5,8 @@ tags:
   - Dokerfile
   - Docker
 date: 2022-01-12
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 本篇分享在编写 Dockerfiles 和使用 Docker 时应遵循的一些最佳实践。篇幅较长，建议先收藏慢慢看，保证看完会很有收获。

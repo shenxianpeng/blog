@@ -6,7 +6,8 @@ tags:
   - Git
 translate: false
 date: 2020-01-21
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 上一篇（GitStats - Git 历史统计信息工具），我已经给老板提供了他想看的所有仓库的 Git 提交历史分析报告了，并且把报告都部署到了一台虚拟机的 tomcat 上了，老板可以通过网址访问直接查看每个仓库的分析报告了，看看谁的贡献大，谁活跃，谁偷懒了，谁周末写代码了（这里不鼓励 996）。

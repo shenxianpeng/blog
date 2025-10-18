@@ -6,7 +6,8 @@ tags:
   - Bitbucket
   - Git
 date: 2021-01-12
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 As I have management our team's git repositories for more than two years, and as my daily work using Bitbucket, so I'll take it as an example.

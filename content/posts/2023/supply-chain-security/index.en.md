@@ -4,7 +4,8 @@ summary: This article introduces how to implement software supply chain security
 tags:
   - SLSA
   - Witness
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-12-02
 ---
 

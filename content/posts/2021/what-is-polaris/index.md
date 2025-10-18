@@ -8,7 +8,8 @@ tags:
   - Coverity
   - Security
 date: 2021-10-24
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 > 这可能是中文网里介绍Polaris最详细的文章了

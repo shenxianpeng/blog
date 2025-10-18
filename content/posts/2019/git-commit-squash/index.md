@@ -6,7 +6,8 @@ tags:
   - Squash
   - Git
 date: 2019-08-20
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 本地提交尚未推送到远程

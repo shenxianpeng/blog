@@ -5,7 +5,8 @@ tags:
   - Pythonic
   - Python
 date: 2021-03-28
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Python 不必多说，它是众多编程语言中最容易学习的动态类型语言。它的跨平台、易读、易写、丰富的 Packages 等众多特性，也是众多DevOps/测试/开发工程师是最常用的语言之一。

@@ -6,7 +6,8 @@ tags:
   - Troubleshooting
   - Jenkins
 date: 2020-07-16
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 When I upgrade Jenkins 2.176.3 to Jenkins 2.235.1, my Windows agent can not connect with master successfully and outcome this warning message ".NET Framework 2.0 or later is required on this computer to run a Jenkins agent as a Windows service".

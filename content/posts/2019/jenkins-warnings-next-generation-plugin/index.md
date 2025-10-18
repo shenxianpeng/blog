@@ -5,7 +5,8 @@ tags:
   - Jenkins
 date: 2019-12-28
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## Jenkins Warnings Next Generation 插件

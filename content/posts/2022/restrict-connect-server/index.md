@@ -4,7 +4,8 @@ summary: |
   本文介绍如何通过修改 `/etc/security/access.conf` 文件，限制只有特定用户可以登录关键的 Linux 服务器。
 tags:
   - Linux
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2022-09-16
 ---
 

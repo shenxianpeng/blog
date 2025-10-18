@@ -6,7 +6,8 @@ tags:
   - OpenSSH
   - Windows
 date: 2021-01-12
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 最近我们的 Bamboo 服务器在连接 Windows 构建机时出现错误：

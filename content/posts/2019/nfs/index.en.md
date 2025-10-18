@@ -6,7 +6,8 @@ tags:
   - Shell
   - Jenkins
 date: 2019-09-10
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 For example, I have a shared repository for code that's very large (over 20G).  Each product build requires this repository's code (copying third-party libraries from it). If everyone needs to `git clone` this third-party repository, the network overhead is very large, `git clone` takes a long time, and it occupies a lot of physical space.

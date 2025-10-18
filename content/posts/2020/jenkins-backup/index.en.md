@@ -7,7 +7,8 @@ tags:
   - Jenkins
   - Backup
 date: 2020-11-24
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 I believe most of you have used the Jenkins configuration as code principle, so you build/test/release process will be described in code.

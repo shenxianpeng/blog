@@ -5,7 +5,8 @@ tags:
   - Artifactory
   - JFrog
 date: 2020-10-04 20:43:46
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 我在使用 Artifactory 做持续集成已经有一段时间了，对企业级 Artifactory 也有了一些经验和总结，希望能通过本篇的分享帮助刚接触这个工具的人了解什么是Artifactory，它能做什么，为什么要选择它，以及在使用过程中应该注意什么。

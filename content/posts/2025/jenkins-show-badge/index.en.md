@@ -4,7 +4,8 @@ summary: |
   How to temporarily fix it via the Script Console, and how to make it permanent by modifying Jenkins startup parameters. This method is suitable for internal Jenkins environments and has been tested on modern Jenkins installations.
 tags:
   - Jenkins
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-06-23
 ---
 

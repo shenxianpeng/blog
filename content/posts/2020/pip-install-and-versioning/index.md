@@ -5,7 +5,8 @@ summary: |
 tags:
   - Python
 date: 2020-08-30
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 背景

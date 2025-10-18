@@ -6,7 +6,8 @@ tags:
   - AIX
   - ulimit
 date: 2021-06-17
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 最近使用 AIX 7.1 从 Bitbucket 下载代码的时候遇到了这个错误：

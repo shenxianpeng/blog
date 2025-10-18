@@ -4,7 +4,8 @@ summary: 如何评估并提升团队的 DevOps 实践水平？我正式发布了
 tags:
 - DevOps
 date: 2025-08-17
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 对，我又开源了一个项目 —— **DevOps Maturity（成熟度）**。

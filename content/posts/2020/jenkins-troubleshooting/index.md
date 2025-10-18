@@ -5,7 +5,8 @@ tags:
   - Pipeline
   - Troubleshooting
 date: 2020-04-20
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 这是我第二次在使用 Jenkins 声明式流水线的时候遇到了这个问题，第一次遇到这个问题的时候是在一个 Pipeline 里大概写到 600 多行时候遇到如下错误

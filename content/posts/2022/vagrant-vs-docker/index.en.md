@@ -6,7 +6,8 @@ tags:
   - VirtualBox
   - Vagrant
 date: 2022-02-14
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 For an introduction to Vagrant, please refer to the previous article: [What is Vagrant? The Difference Between Vagrant and VirtualBox](../vagrant/)

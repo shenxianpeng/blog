@@ -4,7 +4,8 @@ summary: 本文介绍了如何制定和实施 Git 提交信息和分支创建规
 tags:
   - Git
 date: 2020-09-24
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 为什么要制定规范

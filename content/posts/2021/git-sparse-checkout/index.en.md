@@ -5,7 +5,8 @@ summary: |
 tags:
   - Git
 date: 2021-01-11
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 This post just a note to myself and it works on my environment. it has not been widely tested.

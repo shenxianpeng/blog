@@ -6,7 +6,8 @@ tags:
   - Sphinx
   - ReadTheDocs
   - RST
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-04-12
 ---
 

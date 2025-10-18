@@ -5,7 +5,8 @@ date: 2018-04-14
 tags:
 - DevOps
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 我想大多数的团队都面临这样的问题：

@@ -4,7 +4,8 @@ summary: 本文将分享针对需要对 GitHub Release Notes 的内容按照标�
 tags:
   - GitHub
   - DevOps
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-12-27
 ---
 

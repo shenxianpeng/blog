@@ -6,7 +6,8 @@ tags:
   - Bitbucket
   - Shell
 date: 2021-07-25
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 使用场景

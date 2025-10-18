@@ -6,7 +6,8 @@ tags:
   - Jenkins
   - DevOps
 date: 2020-07-03
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 I am Xianpeng, a build engineer. Today, I am going to share with you three Jenkins Practice.

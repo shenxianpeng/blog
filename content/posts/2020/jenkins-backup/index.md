@@ -7,7 +7,8 @@ tags:
   - Jenkins
   - Backup
 date: 2020-11-24
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 大多数人可能已经在使用 **Jenkins Configuration as Code** 的理念，把构建/测试/发布流程写成代码。  

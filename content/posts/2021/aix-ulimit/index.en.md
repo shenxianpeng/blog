@@ -6,7 +6,8 @@ tags:
   - AIX
   - ulimit
 date: 2021-06-17
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Recently, when downloading code from Bitbucket using AIX 7.1, I encountered this error:

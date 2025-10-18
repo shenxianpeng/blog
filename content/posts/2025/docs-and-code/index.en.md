@@ -6,7 +6,8 @@ tags:
   - Wiki
   - Confluence
   - Documentation
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-05-14
 ---
 

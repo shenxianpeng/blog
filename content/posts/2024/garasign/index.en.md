@@ -4,7 +4,8 @@ summary: This article introduces the installation, usage, and verification metho
 tags:
   - DevSecOps
   - SLSA
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2024-06-10
 ---
 

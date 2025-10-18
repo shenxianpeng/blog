@@ -4,7 +4,8 @@ summary: |
   本文介绍如何通过配置 DNS 并确保修改持久化，来解决 WSL 中的 "Temporary failure in name resolution" 问题。
 tags:
   - WSL
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2022-09-27
 ---
 

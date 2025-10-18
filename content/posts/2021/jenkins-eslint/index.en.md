@@ -7,7 +7,8 @@ tags:
   - Jenkins
   - Troubleshooting
 date: 2021-06-07
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 > I'm just documenting to myself that it was solved by following.

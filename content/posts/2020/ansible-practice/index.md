@@ -5,7 +5,8 @@ tags:
   - Ansible
 date: 2020-10-28
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 最近在思考如何将团队里的所有的虚拟机都很好的管理并监控起来，但是由于我们的虚拟机的操作系统繁多，包括 Windows, Linux, AIX, HP-UX, Solaris SPARC 和 Solaris x86. 到底选择哪种方式来管理比较好呢？这需要结合具体场景来考虑。
