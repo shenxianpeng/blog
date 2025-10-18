@@ -10,20 +10,21 @@ rtl = false
 dateFormat = "2006-01-02"
 logo = "img/logo.png"
 description = "沈显鹏的个人网站，分享关于 DevOps，CI/CD，Build 以及开源。"
-copyright = "© 2017–2025 沈显鹏 版权所有"
+copyright = "Copyright © 2017–2025 Xianpeng Shen. All rights reserved."
 
 [params.author]
-  name = "沈显鹏"
-  email = "xianpeng.shen@gmail.com"
-  image = "img/sxp.jpg"
-  imageQuality = 96
-  headline = "DevOps & Build 工程师 | Python 爱好者 | 开源贡献者"
-  links = [
-    { email = "mailto:xianpeng.shen@gmail.com" },
-    { rss = "index.xml" },
-    { github = "https://github.com/shenxianpeng" },
-    { linkedin = "https://www.linkedin.com/in/xianpeng-shen/" },
-    { medium = "https://medium.com/@xianpeng.shen/"  },
-    { dev = "https://dev.to/shenxianpeng"  },
-    { youtube = "https://www.youtube.com/@shenxianpeng" },
-  ]
+name = "沈显鹏"
+email = "xianpeng.shen@gmail.com"
+image = "img/sxp.jpg"
+imageQuality = 96
+headline = "DevOps & Build 工程师 | Python 爱好者 | 开源贡献者"
+bio = "DevOps & Build 工程师 | Python 爱好者 | 开源贡献者"
+links = [
+  { email = "mailto:xianpeng.shen@gmail.com" },
+  { rss = "index.xml" },
+  { github = "https://github.com/shenxianpeng" },
+  { linkedin = "https://www.linkedin.com/in/xianpeng-shen/" },
+  { medium = "https://medium.com/@xianpeng.shen/"  },
+  { dev = "https://dev.to/shenxianpeng"  },
+  { youtube = "https://www.youtube.com/@shenxianpeng" },
+]

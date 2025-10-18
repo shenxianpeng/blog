@@ -43,7 +43,7 @@ weight = 8
 [[main]]
   identifier = "twitter"
   pre = "x-twitter"
-  url = "https://x.com/shenxianpeng"
+  url = "https://x.com/xianpengshen"
   weight = 200
 
 [[main]]
