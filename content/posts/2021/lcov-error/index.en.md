@@ -6,7 +6,8 @@ tags:
   - lcov
   - perl
 date: 2021-09-07
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 When execute command: `lcov --capture --directory . --no-external --output-file coverage.info` to generate code coverage report, I encountered the following error:

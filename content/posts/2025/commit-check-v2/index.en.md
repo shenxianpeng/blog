@@ -4,7 +4,8 @@ summary: After a month of intermittent development and testing, I have finally c
 tags:
   - Commit-Check
   - DevOps
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-10-13
 ---
 

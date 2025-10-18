@@ -5,7 +5,8 @@ tags:
   - Artifactory
   - JFrog
 date: 2019-11-10
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## What is Artifactory

@@ -5,7 +5,8 @@ summary: |
 tags:
   - CPython
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-02-27
 ---
 

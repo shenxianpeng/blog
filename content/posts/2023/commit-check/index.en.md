@@ -3,7 +3,8 @@ title: Programmer's Self-Cultivation — Git Commit Message and Branch Creation 
 summary: This article introduces how to use the Commit Check tool to verify whether Git commit messages, branch names, committer usernames, and committer email addresses conform to specifications.
 tags:
   - Git
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-05-09
 ---
 

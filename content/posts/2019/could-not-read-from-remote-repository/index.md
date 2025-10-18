@@ -6,7 +6,8 @@ tags:
   - - Git
   - Troubleshooting
 date: 2019-09-01
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 最近我在运行 Jenkins Job 时候突然发现 git clone 代码的时候突然报了这个错误：

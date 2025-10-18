@@ -5,7 +5,8 @@ tags:
   - Linux
 date: 2020-02-05
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## ls 命令

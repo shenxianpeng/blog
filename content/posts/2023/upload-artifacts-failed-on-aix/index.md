@@ -5,7 +5,8 @@ summary: |
 tags:
   - Artifactory
   - Troubleshooting
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-08-29
 ---
 

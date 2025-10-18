@@ -6,7 +6,8 @@ tags:
   - GitHub
 translate: false
 date: 2021-11-09
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 最近实现了一个很有意思的 Workflow，就是通过 GitHub Actions 自动将每次最新发布的文章自动同步到我的 GitHub 首页。

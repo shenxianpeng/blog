@@ -5,7 +5,8 @@ summary: |
 tags:
   - AI
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-05-26
 ---
 

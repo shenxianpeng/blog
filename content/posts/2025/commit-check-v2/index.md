@@ -4,7 +4,8 @@ summary: 经过了断断续续一个月的开发和测试，我终于完成了�
 tags:
   - Commit-Check
   - DevOps
-author: shenxianpeng
+authors: 
+  - shenxianpeng
 date: 2025-10-13
 ---
 

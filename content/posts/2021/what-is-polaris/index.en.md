@@ -8,7 +8,8 @@ tags:
   - Coverity
   - Security
 date: 2021-10-24
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 > This might be the most detailed article about Polaris available in Chinese.

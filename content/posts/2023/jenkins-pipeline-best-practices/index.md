@@ -3,7 +3,8 @@ title: 为什么我的 Jenkins Controller 越来越慢？可能犯了这些错�
 summary: 本文介绍了 Jenkins pipeline 的一些最佳实践，旨在帮助开发者和运维人员优化 Jenkins 的性能和可维护性。
 tags:
   - Jenkins
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-02-06
 ---
 

@@ -4,7 +4,8 @@ summary: 本文介绍如何使用 SLSA 与 Witness 在 GitHub 与非 GitHub 项�
 tags:
   - SLSA
   - Witness
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-12-02
 ---
 

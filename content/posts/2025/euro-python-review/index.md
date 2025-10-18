@@ -5,7 +5,8 @@ summary: |
 tags:
   - EuroPython
   - Reviewer
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-02-14
 ---
 

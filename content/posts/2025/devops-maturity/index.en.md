@@ -4,7 +4,8 @@ summary: How to assess and improve your team's DevOps maturity. Official release
 tags:
 - DevOps
 date: 2025-08-17
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 In daily work, we often talk about the buzzword **DevOps**.

@@ -4,7 +4,8 @@ summary: This article introduces how to formulate and implement Git commit messa
 tags:
   - Git
 date: 2020-09-24
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## Why Establish Conventions

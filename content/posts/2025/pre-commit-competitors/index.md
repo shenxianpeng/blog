@@ -6,7 +6,8 @@ tags:
   - pre-commit
 date: 2025-08-13
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 昨天在网上冲浪，突然看到了一个仓库叫 `prek`，一看介绍是 —— ⚡ Better `pre-commit`, re-engineered in Rust。这就引起了我的兴趣，毕竟 `pre-commit` 作为非常广泛的预提交的工具，如果能改进，尤其是性能方面的改进，肯定是好事。

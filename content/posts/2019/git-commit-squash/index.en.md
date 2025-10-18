@@ -6,7 +6,8 @@ tags:
   - Squash
   - Git
 date: 2019-08-20
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## If your commits on local not pushed to remote

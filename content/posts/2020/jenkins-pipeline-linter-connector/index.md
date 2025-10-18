@@ -4,7 +4,8 @@ summary: 本文介绍了两种方法来确保在提交 Jenkins Pipeline 前没�
 tags:
   - Jenkins
 date: 2020-05-23
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 我在做 Jenkins 声明式流水线开发时常会遇到的问题是：修改后的 Pipeline 看起来没有问题，当提交到代码仓库后进行 Jenkins 构建时发现原来有语法错误，然后再去修改、提交、构建，结果可能还有有其他没有注意到的语法问题。

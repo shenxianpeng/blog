@@ -6,7 +6,8 @@ date: 2019-05-12
 tags:
   - Jenkins
   - Jenkins
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 准备 Java 运行时

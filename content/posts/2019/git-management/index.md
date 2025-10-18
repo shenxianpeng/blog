@@ -5,8 +5,8 @@ date: 2019-07-07
 tags:
   - Git
 translate: false
-author: shenxianpeng
-
+authors:
+  - shenxianpeng
 ---
 
 ## 查找是否有遗漏提交

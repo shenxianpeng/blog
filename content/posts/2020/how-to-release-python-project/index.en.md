@@ -6,7 +6,8 @@ tags:
   - PyPI
   - Release
 date: 2020-09-13
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 This article introduces the important aspects to consider when publishing a Python project on GitHub for individuals or enterprises.

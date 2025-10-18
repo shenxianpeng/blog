@@ -3,7 +3,8 @@ title: The SLSA Framework and Software Supply Chain Security Protection
 summary: This article introduces the concept, purpose, and levels of the SLSA framework, and how to apply SLSA in the software supply chain to improve security. It helps readers understand the importance of SLSA in software development and deployment.
 tags:
   - SLSA
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-03-23
 ---
 

@@ -5,7 +5,8 @@ tags:
   - Jenkins
   - Cppcheck
 date: 2020-02-16
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Due to historical reasons, our current product's code repository has many warnings that cannot be resolved immediately. Only by continuously enriching automated test cases to ensure the final quality control can we proceed with the orderly repair of warnings. Before that, how to effectively prevent the introduction of more warnings is what we should be doing now.

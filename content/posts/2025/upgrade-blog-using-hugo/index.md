@@ -6,7 +6,8 @@ tags:
   - Hugo
   - Blowfish
 date: 2025-08-10
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 八年前，我使用了 Hexo + landscape 主题搭建了我的博客，从 2017 年一直记录到了今天的技术文章和少量的生活点滴，共计 236 篇。

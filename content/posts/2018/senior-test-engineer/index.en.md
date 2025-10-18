@@ -5,7 +5,8 @@ date: 2018-05-06
 tags:
 - Work
 - Others
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 What kind of technical skills and experience define a senior engineer? Let me share my perspective on senior engineers.

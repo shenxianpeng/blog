@@ -5,7 +5,8 @@ summary: |
 tags:
   - Jenkins
 date: 2021-06-24
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 I've run into some situations when the build fails, perhaps because some processes don't finish, and even setting a timeout doesn't make the Jenkins job fail.

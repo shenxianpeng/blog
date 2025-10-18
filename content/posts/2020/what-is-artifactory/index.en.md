@@ -5,7 +5,8 @@ tags:
   - Artifactory
   - JFrog
 date: 2020-10-04 20:43:46
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 I have been using Artifactory for continuous integration for some time now, and I have gained some experience and insights into enterprise-level Artifactory. I hope this sharing will help those who are just getting started with this tool to understand what Artifactory is, what it can do, why you should choose it, and what to pay attention to during its use.

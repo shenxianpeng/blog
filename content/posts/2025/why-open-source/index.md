@@ -7,7 +7,8 @@ tags:
   - Career Development
   - Technical Growth
 date: 2025-08-22
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 有人问过我：为什么要在业余时间坚持做开源？尤其是有了孩子之后，还愿意投入其中？

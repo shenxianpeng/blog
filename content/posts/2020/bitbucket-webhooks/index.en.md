@@ -6,7 +6,8 @@ tags:
   - Bitbucket
   - Webhook
 date: 2020-04-24
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## Background

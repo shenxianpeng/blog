@@ -5,7 +5,8 @@ summary: |
 tags:
   - GitStats
   - Git
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-02-05
 ---
 

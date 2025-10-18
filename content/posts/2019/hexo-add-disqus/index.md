@@ -8,7 +8,8 @@ tags:
 categories:
 - Hexo
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 在你的 Hexo 网站添加 Disqus

@@ -5,7 +5,8 @@ tags:
   - Git
 date: 2021-05-14
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 在使用 Git 提交代码之前，建议做以下这些设置。

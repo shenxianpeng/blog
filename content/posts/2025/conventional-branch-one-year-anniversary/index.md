@@ -5,7 +5,8 @@ tags:
   - Git
   - Conventional Branch
 date: 2025-09-16
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 去年的今天，我正式发布了 [Conventional Branch 规范](../conventional-branch)。

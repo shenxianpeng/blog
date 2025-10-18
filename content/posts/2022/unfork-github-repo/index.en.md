@@ -5,7 +5,8 @@ tags:
   - Git
   - GitHub
   - Fork
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2022-03-09
 ---
 

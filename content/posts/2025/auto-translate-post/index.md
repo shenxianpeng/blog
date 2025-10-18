@@ -4,7 +4,8 @@ summary: 发现我的博客英文读者比中文还多？于是我用 GitHub Act
 tags:
   - GitHub Actions
   - Gemini API
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-08-24
 ---
 

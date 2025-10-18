@@ -4,7 +4,8 @@ summary: This article introduces the concept and history of Vagrant, and how to 
 tags:
   - VirtualBox
   - Vagrant
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2022-02-11
 ---
 

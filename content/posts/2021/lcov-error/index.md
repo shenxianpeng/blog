@@ -6,7 +6,8 @@ tags:
   - lcov
   - perl
 date: 2021-09-07
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 在执行以下命令生成代码覆盖率报告时：

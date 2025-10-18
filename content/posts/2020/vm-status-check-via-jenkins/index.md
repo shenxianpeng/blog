@@ -6,7 +6,8 @@ tags:
   - Jenkins
 translate: false
 date: 2020-06-13
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 背景

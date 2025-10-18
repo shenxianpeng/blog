@@ -4,7 +4,8 @@ summary: |
   The official website for cpp-linter related projects and tools is now live at [https://cpp-linter.github.io/](https://cpp-linter.github.io/). Everyone is welcome to visit and use it.
 tags:
   - cpp-linter
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-09-30
 ---
 

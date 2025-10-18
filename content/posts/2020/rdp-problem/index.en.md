@@ -5,7 +5,8 @@ summary: |
 tags:
   - Windows
 date: 2020-08-10
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## Problem

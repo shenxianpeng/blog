@@ -6,7 +6,8 @@ tags:
   - VirtualBox
   - Vagrant
 date: 2022-02-14
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 关于 Vagrant 的介绍，可以参看前一篇文章：[什么是 Vagrant? Vagrant 和 VirtualBox 的区别](../vagrant/)

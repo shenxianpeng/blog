@@ -4,7 +4,8 @@ summary: Explaining a recent issue with Ansible playbook execution on Windows Se
 tags:
   - Ansible
 date: 2024-11-18
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Recently, while setting up a new Windows Server 2022, I encountered an issue where my Ansible playbook, which previously worked without problems, failed to execute.

@@ -6,7 +6,8 @@ tags:
   - Clang
   - XLC
 date: 2023-10-08
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 本文记录了从 **IBM XLC 10.1** 升级到 **XLC 17.1（IBM Open XL C/C++ for AIX 17.1.0）** 过程中遇到的 12 个问题及修复方法。  

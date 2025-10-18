@@ -6,7 +6,8 @@ tags:
   - SonarQube
   - Gradle
 date: 2021-09-18
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 在你搭建好 SonarQube 实例后，需要将其与项目集成。

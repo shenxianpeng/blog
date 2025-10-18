@@ -5,7 +5,8 @@ tags:
   - Artifactory
   - Troubleshooting
 date: 2021-06-16
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 最近在我使用 Artifactory Enterprise 遇到了上传制品非常缓慢的问题，在经过与 IT，Artifactory 管理员一起合作终于解决这个问题，在此分享一下这个问题的解决过程。

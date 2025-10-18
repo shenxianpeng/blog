@@ -6,7 +6,8 @@ tags:
   - PyPI
   - Release
 date: 2020-09-13
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 本篇介绍个人或企业在 GitHub 上发布一个 Python 项目需要了解和注意哪些内容

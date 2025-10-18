@@ -6,7 +6,8 @@ tags:
   - clang-tidy
   - clang
   - cpp-linter
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2022-08-23
 ---
 

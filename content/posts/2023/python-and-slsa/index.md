@@ -4,7 +4,8 @@ summary: 本文介绍了如何在 Python 生态系统中使用 SLSA 框架来生
 tags:
   - SLSA
   - Python
-author: shenxianpeng
+authors:
+  - shenxianpeng
 translate: false
 date: 2023-11-15
 ---

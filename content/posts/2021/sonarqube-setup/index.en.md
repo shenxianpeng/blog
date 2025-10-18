@@ -7,7 +7,8 @@ tags:
   - LDAP
   - PostgreSQL
 date: 2021-08-05
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## Backgroud

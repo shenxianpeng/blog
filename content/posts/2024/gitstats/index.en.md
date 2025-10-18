@@ -4,7 +4,8 @@ summary: This post details the revival of the GitStats project, including its mi
 tags:
   - Git
 date: 2024-11-28
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Recently, in the evenings (usually after my child has gone to sleep), I've been working on something: reviving the long-dormant GitStats project.

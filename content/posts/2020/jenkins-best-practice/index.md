@@ -5,7 +5,8 @@ tags:
   - Jenkins
   - DevOps
 date: 2020-07-06
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ​在使用 Jenkins 实施了企业级的 CI/CD 工作，有如下三个最重要的实践和总结。

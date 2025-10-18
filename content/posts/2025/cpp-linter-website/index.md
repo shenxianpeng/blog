@@ -4,7 +4,8 @@ summary: |
   cpp-linter 相关的项目和工具官网上线了，地址是 [https://cpp-linter.github.io/](https://cpp-linter.github.io/)，欢迎大家访问和使用。
 tags:
   - cpp-linter
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-09-30
 ---
 

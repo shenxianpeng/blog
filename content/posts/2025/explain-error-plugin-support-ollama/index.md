@@ -4,7 +4,8 @@ summary: 本文介绍了 Jenkins Explain Error Plugin 的新功能，即支持 O
 tags:
   - Jenkins
   - AI
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-10-01
 ---
 

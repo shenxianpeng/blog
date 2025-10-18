@@ -6,7 +6,8 @@ tags:
   - DevOps
 draft: true
 date: 2024-11-23
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Recently, users have requested two features: support for adding comments in Pull Requests and checking if a Pull Request has been rebased.

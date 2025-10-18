@@ -5,7 +5,8 @@ tags:
   - Artifactory
   - Troubleshooting
 date: 2021-06-16
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Recently, I encountered extremely slow artifact upload speeds when using Artifactory Enterprise. After collaborating with IT and the Artifactory administrator, the issue was finally resolved. I'm sharing the troubleshooting process here.

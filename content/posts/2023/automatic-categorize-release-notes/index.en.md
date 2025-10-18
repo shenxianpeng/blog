@@ -4,7 +4,8 @@ summary: This article shares two methods for automatically categorizing the cont
 tags:
   - GitHub
   - DevOps
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-12-27
 ---
 

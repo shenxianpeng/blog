@@ -4,7 +4,8 @@ summary: |
   This article explains how to resolve the "Temporary failure in name resolution" issue in WSL by configuring DNS settings and ensuring persistent changes.
 tags:
   - WSL
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2022-09-27
 ---
 

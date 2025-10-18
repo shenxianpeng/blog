@@ -6,7 +6,8 @@ tags:
   - SonarQube
   - Gradle
 date: 2021-09-18
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 After you have set up the SonarQube instance, you will need to integrate SonarQube with project.

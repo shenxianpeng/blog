@@ -6,7 +6,8 @@ tags:
   - Jenkins
 date: 2019-12-08
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 最近做了 Black Duck 与 Jenkins 的集成，目标是给测试和开发提供定制化、定时的对各个开发代码仓库的进行源码扫描。

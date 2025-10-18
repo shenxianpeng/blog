@@ -4,7 +4,8 @@ summary: 本文介绍代码签名的概念、重要性以及两种常见的代�
 tags:
   - DevSecOps
   - SLSA
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2024-04-29
 ---
 

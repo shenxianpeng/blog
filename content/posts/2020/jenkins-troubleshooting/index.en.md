@@ -5,7 +5,8 @@ tags:
   - Pipeline
   - Troubleshooting
 date: 2020-04-20
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 This is the second time I've encountered this problem while using Jenkins declarative pipelines. The first time I encountered this problem was in a Pipeline with about 600 lines of code, and I encountered the following error:

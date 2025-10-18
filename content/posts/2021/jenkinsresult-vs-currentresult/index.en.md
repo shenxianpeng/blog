@@ -5,7 +5,8 @@ summary: |
 tags:
   - Jenkins
 date: 2021-01-14
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 > This is just a note to myself about the difference between Jenkins `result` and `currentResult`.

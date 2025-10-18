@@ -5,7 +5,8 @@ tags:
   - DevOps
 date: 2024-09-26
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 想象一下，你是一名 DevOps 工程师，不论初级、中级还是高级，老板总有一天拍拍你的肩膀说：“加油干，兄弟，未来你就是我们的首席 DevOps 工程师了！”你可能会心想：“啥是首席 DevOps？这是个什么新饼？”

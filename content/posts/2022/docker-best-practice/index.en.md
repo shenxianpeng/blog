@@ -5,7 +5,8 @@ tags:
   - Dokerfile
   - Docker
 date: 2022-01-12
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 This article shares some best practices to follow when writing Dockerfiles and using Docker. It's a long read, so consider bookmarking it to read later—you're guaranteed to learn a lot!

@@ -6,7 +6,8 @@ tags:
   - Jenkins
 date: 2019-11-17
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 上一篇 [初识 JFrog Artifactory](https://shenxianpeng.github.io/2019/11/artifactory-install-and-upgrade/)，介绍了什么是 Artifactory，以及如何安装、启动和升级。
 

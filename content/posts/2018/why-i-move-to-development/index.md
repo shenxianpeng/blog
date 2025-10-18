@@ -5,7 +5,8 @@ date: 2018-07-21
 tags:
 - Work
 - Others
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 最近几个月以来一直没有更新公众号文章，是因为五月开始，因为项目原因我有机会转为开发，我非常珍惜这一机会，所以一直在努力学习开发相关的技能。

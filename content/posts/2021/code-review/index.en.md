@@ -4,7 +4,8 @@ summary: This article introduces Google's code review principles and shares prac
 tags:
   - CodeReview
 date: 2021-03-20
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## Background

@@ -5,7 +5,8 @@ summary: |
 tags:
   - clang-tools
   - asdf
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-05-29
 ---
 

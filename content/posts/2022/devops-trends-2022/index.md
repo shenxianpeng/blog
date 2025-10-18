@@ -6,7 +6,8 @@ tags:
   - Kubernetes
   - DevSecOps
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2022-02-24
 ---
 

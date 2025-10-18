@@ -4,7 +4,8 @@ summary: How to handle non-zero return codes from Shell commands in a Jenkins Pi
 tags:
   - Jenkins
 date: 2020-07-22
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 > Jenkins Tip 3—Each installment describes a Jenkins tip using brief text and images.

@@ -5,7 +5,8 @@ summary: |
 tags:
   - Jenkins
   - AI
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-07-29
 ---
 

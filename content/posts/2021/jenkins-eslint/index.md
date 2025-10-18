@@ -7,7 +7,8 @@ tags:
   - Jenkins
   - Troubleshooting
 date: 2021-06-07
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 在将 ESlint 报告集成到 Jenkins 时，我遇到了一个问题：

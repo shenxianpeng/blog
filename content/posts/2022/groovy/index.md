@@ -7,7 +7,8 @@ tags:
   - Java
 date: 2022-03-06
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 在使用 Jenkins 和 Groovy 越久，我就这样的疑问：

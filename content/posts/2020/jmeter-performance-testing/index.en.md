@@ -5,7 +5,8 @@ summary: |
 tags:
   - JMeter
 date: 2020-05-09
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## Record JMeter Scripts

@@ -4,7 +4,8 @@ summary: |
   如果你的 Shields.io 徽章（例如构建状态或文档状态）在 Jenkins 仪表盘中无法显示，很可能是因为 Jenkins 的严格内容安全策略（CSP）限制所致。本文将演示如何通过 Script Console 临时修复，以及如何通过修改 Jenkins 启动参数永久解决。该方法适用于内部 Jenkins 环境，并已在现代 Jenkins 安装中测试验证。
 tags:
   - Jenkins
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-06-23
 ---
 

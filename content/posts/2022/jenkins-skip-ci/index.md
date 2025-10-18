@@ -5,7 +5,8 @@ summary: |
 tags:
   - CI
   - Jenkins
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2022-10-09
 ---
 

@@ -5,7 +5,8 @@ date: 2018-07-21
 tags:
 - Work
 - Others
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 I haven't updated my public account articles in the past few months because, starting in May, I had the opportunity to switch to development due to project needs. I cherish this opportunity and have been working hard to learn development-related skills.

@@ -5,7 +5,8 @@ tags:
   - DevOps
 date: 2024-10-27
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 很多人可能会好奇，作为一名 DevOps 工程师，每天究竟忙些什么呢？今天就来简单聊聊，作为 DevOps/Build/Release 工程师，我的日常工作节奏是怎样的。

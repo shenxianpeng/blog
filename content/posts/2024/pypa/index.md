@@ -5,7 +5,8 @@ tags:
   - Python
 date: 2024-09-05
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 PyPA（Python Packaging Authority）是管理和维护 Python 包相关工具的一个社区组织。PyPA 管理的知名项目包括 pip、packaging、setuptools、wheel、twine、build 等等。了解这些项目的关于有助于我们更好的了解 Python 的生态系统。

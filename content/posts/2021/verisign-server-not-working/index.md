@@ -4,7 +4,8 @@ summary: 本文介绍了如何解决 Verisign 时间戳服务器不可用的问�
 tags:
   - CodeSign
 date: 2021-01-06
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 相信许多程序员在新年开始在做 code sign (数字签名)的时候可能遇到 Verisign Timestamp 服务器不好用了 http://timestamp.verisign.com/scripts/timstamp.dll 的情况。出现了如下错误：

@@ -8,7 +8,8 @@ tags:
 - Shell
 - OS
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 在使用 Jenkins pipeline 的时候，在 Linux 需要用 root 来执行，我想通过 Jenkins pipeline 的语法来解决，但是只找到这种方式：[SSH Pipeline Steps](https://jenkins.io/doc/pipeline/steps/ssh-steps/)

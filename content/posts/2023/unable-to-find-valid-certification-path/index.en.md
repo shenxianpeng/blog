@@ -7,7 +7,8 @@ tags:
   - Java
   - Jenkins
 date: 2023-09-11
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Recently, I encountered an issue where artifacts could not be uploaded from a Jenkins agent to Artifactory. The specific error is as follows:

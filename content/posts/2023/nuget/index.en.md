@@ -3,7 +3,8 @@ title: Creating a NuGet Organization — Pitfalls Encountered
 summary: This article documents the problems and solutions encountered when creating a NuGet Organization, especially regarding the use of corporate email addresses.
 tags:
   - NuGet
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2023-08-25
 ---
 

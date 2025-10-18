@@ -6,7 +6,8 @@ tags:
 - Jenkins
 - Pipeline
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 业务场景

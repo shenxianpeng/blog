@@ -5,7 +5,8 @@ summary: |
 tags:
   - Jenkins
 date: 2021-03-24
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## 问题背景

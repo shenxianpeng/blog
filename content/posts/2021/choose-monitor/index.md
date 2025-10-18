@@ -5,7 +5,8 @@ tags:
   - Monitor
 date: 2021-12-21
 translate: false
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 工作十几年用过了不少显示器，从最初的 17寸，到后来的 23寸、27寸、32寸、再到现在的 34 寸，根据我自己的使用体验，来个主观推荐：

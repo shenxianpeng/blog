@@ -4,7 +4,8 @@ summary: This article introduces two methods to ensure there are no syntax error
 tags:
   - Jenkins
 date: 2020-05-23
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 A common problem I encounter when developing Jenkins Declarative Pipelines is this: the modified Pipeline looks fine, but when it's submitted to the code repository and a Jenkins build is performed, a syntax error is discovered.  Then I have to modify, submit, and build again, potentially finding other unnoticed syntax issues.

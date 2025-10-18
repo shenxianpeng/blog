@@ -6,7 +6,8 @@ tags:
   - Hugo
   - Blowfish
 date: 2025-08-10
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Eight years ago, I built my blog using Hexo + the landscape theme. From 2017 until today, it has hosted 236 posts, including technical articles and a small number of personal notes.

@@ -5,7 +5,8 @@ tags:
   - Jenkins
   - Cppcheck
 date: 2020-02-16
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 由于历史遗留原因，我们当前产品的代码仓库里遗留很多 Warning，这些 Warning 不是一时半会可以解决掉的。只有通过不断的丰富自动化测试用例，来保障最后的质量关卡，才敢有条不紊的进行 Warining 的修复，在次之前，如何有效杜绝继续引入更多的 Warining 是当下应该做的。

@@ -7,7 +7,8 @@ tags:
   - JFrog
 translate: false
 date: 2020-06-03
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 > 本文对于同样在 AIX 遇到这个问题的人会非常有帮助。另外，不要被标题无聊到，解决问题的过程值得参考。

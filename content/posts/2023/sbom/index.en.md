@@ -5,7 +5,8 @@ tags:
  - SBOM
  - SLSA
 date: 2023-06-10
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## What is SBOM

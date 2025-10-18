@@ -4,7 +4,8 @@ summary: |
   Many programmers, especially those in China, are frustrated by access issues with GitHub. This article shares my personal experiences and reflections on network problems.
 tags:
   - GitHub
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-04-13
 ---
 

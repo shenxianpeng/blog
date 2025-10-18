@@ -4,7 +4,8 @@ summary: 本文介绍了 Jenkins Explain Error Plugin 的新功能，支持 Goog
 tags:
   - Jenkins
   - AI
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-08-03
 ---
 

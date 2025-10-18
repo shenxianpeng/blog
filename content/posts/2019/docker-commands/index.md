@@ -7,7 +7,8 @@ tags:
   - DevOps
 translate: false
 date: 2019-12-02
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 > Docker 常用命令小纸条

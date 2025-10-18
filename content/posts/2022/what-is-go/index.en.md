@@ -4,7 +4,8 @@ summary: This article introduces the basic concepts, advantages, and ranking of 
 tags:
   - Go
 date: 2022-01-18
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 Go is an open-source programming language that makes it easy to build simple, reliable, and efficient software.

@@ -5,7 +5,8 @@ summary: |
 tags:
   - Markdown
   - RST
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-04-11
 ---
 

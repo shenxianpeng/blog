@@ -4,7 +4,8 @@ summary: Discovered my blog has more English than Chinese readers?  So I used Gi
 tags:
   - GitHub Actions
   - Gemini API
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2025-08-24
 ---
 

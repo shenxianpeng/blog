@@ -7,7 +7,8 @@ tags:
 - SquishCoco
 - Coverage
 - DevOps
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 ## Preparation

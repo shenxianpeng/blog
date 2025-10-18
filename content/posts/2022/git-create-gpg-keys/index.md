@@ -5,7 +5,8 @@ summary: |
 tags:
   - Git
   - GPG
-author: shenxianpeng
+authors:
+  - shenxianpeng
 date: 2022-07-28
 ---
 

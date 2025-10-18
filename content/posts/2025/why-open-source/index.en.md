@@ -7,7 +7,8 @@ tags:
   - Career Development
   - Technical Growth
 date: 2025-08-22
-author: shenxianpeng
+authors:
+  - shenxianpeng
 ---
 
 I've been asked: Why dedicate your free time to open source, especially after having children?
