@@ -10,7 +10,7 @@ rtl = false
 dateFormat = "2006-01-02"
 logo = "img/logo.png"
 description = "Xianpeng Shen's Blog Site, about DevOps, CI/CD and Open Source"
-copyright = "© 2017–2025 Xianpeng Shen. All rights reserved."
+copyright = "Copyright © 2017–2025 Xianpeng Shen. All rights reserved."
 
 [params.author]
 name = "Xianpeng Shen"
@@ -18,6 +18,7 @@ email = "xianpeng.shen@gmail.com"
 image = "img/sxp.jpg"
 imageQuality = 96
 headline = "DevOps & Build Engineer | Python Enthusiast | Open Source Maintainer"
+bio = "DevOps & Build Engineer | Python Enthusiast | Open Source Maintainer"
 links = [
   { email = "mailto:xianpeng.shen@gmail.com" },
   { rss = "index.xml" },
