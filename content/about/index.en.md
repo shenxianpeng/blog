@@ -42,7 +42,7 @@ Feel free to reach out via email: xianpeng.shen@gmail.com
 
 {{< timelineItem icon="code" header="My Projects" badge="Open Source" subheader="Contributions Welcome" >}}
 
-All forms of contributions are welcome—if you find them interesting or useful, I'd love to have your participation! Check out the ‘Portfolio’ for details.
+All forms of contributions are welcome—if you find them interesting or useful, I'd love to have your participation! Check out the <a href="../portfolio/">‘Portfolio’</a> for details.
 
 <!-- {{< github repo="cpp-linter/cpp-linter-action" showThumbnail=false >}}
 {{< github repo="cpp-linter/cpp-linter-hooks" showThumbnail=false >}}
