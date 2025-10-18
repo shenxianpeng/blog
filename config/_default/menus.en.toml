@@ -36,6 +36,11 @@ pageRef = "portfolio"
 weight = 7
 
 [[main]]
+name = "Archive"
+pageRef = "archive"
+weight = 8
+
+[[main]]
   identifier = "twitter"
   pre = "x-twitter"
   url = "https://x.com/shenxianpeng"
