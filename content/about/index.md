@@ -42,7 +42,7 @@ layoutBackgroundHeaderSpace: false
 
 {{< timelineItem icon="code" header="我的项目" badge="Open Source" subheader="欢迎贡献" >}}
 
-欢迎任何形式的贡献——如果你觉得它们有趣或有用，期待你的参与！详情见「作品」。
+欢迎任何形式的贡献——如果你觉得它们有趣或有用，期待你的参与！详情见「<a href="../portfolio/">作品</a>」。
 
 <!-- {{< github repo="cpp-linter/cpp-linter-action" showThumbnail=false >}}
 {{< github repo="cpp-linter/cpp-linter-hooks" showThumbnail=false >}}
