@@ -5,7 +5,7 @@ tags:
   - AI
   - GitHub
   - Git
-  - OSS
+  - Open Source
 translate: false
 authors:
   - shenxianpeng
