@@ -2,7 +2,7 @@
 title: 白嫖了这么多年，开源基础设施要开始收费了？
 summary: 开源基础设施并非免费，自来水般的 pip/npm 安装背后是高昂的带宽、存储和运维成本。声明呼吁开发者与企业共同分担，优化工具、支持赞助，才能让我们习以为常的“免费”体验真正可持续。
 tags:
-  - OpenSource
+  - Open Source
 translate: false
 authors:
   - shenxianpeng
