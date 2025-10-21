@@ -1,0 +1,23 @@
+name: Trigger Profile Update
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Wait website to be updated
+      run: sleep 180  # wait for website to be up-to-date
+    - name: Trigger workflow
+      uses: convictional/trigger-workflow-and-wait@f69fa9eedd3c62a599220f4d5745230e237904be # v1.6.5
+      with:
+        owner: shenxianpeng
+        repo: shenxianpeng
+        workflow_file_name: blog-post.yml
+        ref: master
+        trigger_workflow: true
+        github_token: ${{ secrets.PERSONAL_TOKEN }}
