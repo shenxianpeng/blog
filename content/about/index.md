@@ -24,33 +24,21 @@ layoutBackgroundHeaderSpace: false
 {{< timeline >}}
 
 {{< timelineItem icon="tag" header="你好！我是沈显鹏" badge="Welcome" subheader="欢迎来到我的个人网站">}}
-我撰写文章，开发免费软件，并积极参与开源项目。
+我撰写文章，开发免费软件，参与开源项目。
 {{< /timelineItem >}}
 
-{{< timelineItem icon="globe" header="我的生活" badge="Vilnius, Lithuania" subheader="探索 · 学习 · 分享" >}}
-我目前生活在立陶宛维尔纽斯，我会
-<ul>
-  <li>中文</li>
-  <li>英语</li>
-  <li>略懂立陶宛语</li>
-</ul>
+{{< timelineItem icon="globe" header="目前在立陶宛维尔纽斯" badge="Vilnius, Lithuania" subheader="探索 · 学习 · 分享" >}}
+日常使用语言：中文 · 英语 · 立陶宛语（入门）
+{{< /timelineItem >}}
+
+{{< timelineItem icon="code" header="开源项目" badge="Open Source" subheader="欢迎贡献" >}}
+
+我维护多个开源组织和仓库，被全球开发者和团队广泛使用。欢迎任何形式的贡献或反馈。<a href="../portfolio/">查看作品</a>。
+
 {{< /timelineItem >}}
 
 {{< timelineItem icon="envelope" header="联系我" badge="Let's Connect" subheader="合作 · 邀稿 · 交流" >}}
-欢迎通过电子邮件 xianpeng.shen@gmail.com 联系我。
-{{< /timelineItem >}}
-
-{{< timelineItem icon="code" header="我的项目" badge="Open Source" subheader="欢迎贡献" >}}
-
-欢迎任何形式的贡献——如果你觉得它们有趣或有用，期待你的参与！详情见「<a href="../portfolio/">作品</a>」。
-
-<!-- {{< github repo="cpp-linter/cpp-linter-action" showThumbnail=false >}}
-{{< github repo="cpp-linter/cpp-linter-hooks" showThumbnail=false >}}
-{{< github repo="commit-check/commit-check" showThumbnail=false >}}
-{{< github repo="commit-check/commit-check-action" showThumbnail=false >}}
-{{< github repo="shenxianpeng/gitstats" showThumbnail=false >}}
-{{< github repo="jenkinsci/explain-error-plugin" showThumbnail=false >}} -->
-
+xianpeng.shen@gmail.com
 {{< /timelineItem >}}
 
 {{< /timeline >}}

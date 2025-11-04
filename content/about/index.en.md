@@ -24,33 +24,22 @@ layoutBackgroundHeaderSpace: false
 {{< timeline >}}
 
 {{< timelineItem icon="tag" header="Hi! I'm Xianpeng Shen" badge="Welcome" subheader="Welcome to my personal site">}}
-I write blog posts, develop free software, and actively contribute to open source projects.
+I write blog posts, develop open source software, and contribute to open source projects.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="globe" header="My Life" badge="Vilnius, Lithuania" subheader="Explore · Learn · Share" >}}
-I currently live in Vilnius, Lithuania. I speak:
-<ul>
-  <li>Chinese</li>
-  <li>English</li>
-  <li>A bit of Lithuanian</li>
-</ul>
+{{< timelineItem icon="globe" header="Based in Vilnius, Lithuania" badge="Vilnius, Lithuania" subheader="Explore · Learn · Share" >}}
+Languages I use daily: Chinese · English · Lithuanian (beginner)
 {{< /timelineItem >}}
 
-{{< timelineItem icon="envelope" header="Get in Touch" badge="Let's Connect" subheader="Collaboration · Writing · Exchange" >}}
-Feel free to reach out via email: xianpeng.shen@gmail.com
+{{< timelineItem icon="code" header="Open Source" badge="Open Source" subheader="Contributions Welcome" >}}
+
+I maintain several open-source organizations and tools and they are widely used by developers and teams around the world.
+All kinds of contributions and feedback are welcome. <a href="../portfolio/">View Projects</a>.
+
 {{< /timelineItem >}}
 
-{{< timelineItem icon="code" header="My Projects" badge="Open Source" subheader="Contributions Welcome" >}}
-
-All forms of contributions are welcome—if you find them interesting or useful, I'd love to have your participation! Check out the <a href="../portfolio/">‘Portfolio’</a> for details.
-
-<!-- {{< github repo="cpp-linter/cpp-linter-action" showThumbnail=false >}}
-{{< github repo="cpp-linter/cpp-linter-hooks" showThumbnail=false >}}
-{{< github repo="commit-check/commit-check" showThumbnail=false >}}
-{{< github repo="commit-check/commit-check-action" showThumbnail=false >}}
-{{< github repo="shenxianpeng/gitstats" showThumbnail=false >}}
-{{< github repo="jenkinsci/explain-error-plugin" showThumbnail=false >}} -->
-
+{{< timelineItem icon="envelope" header="Get in Touch" badge="Let's Connect" subheader="Collaboration · Writing · Discussion" >}}
+xianpeng.shen@gmail.com
 {{< /timelineItem >}}
 
 {{< /timeline >}}
