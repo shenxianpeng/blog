@@ -2,7 +2,7 @@ default: dev
 
 d:dev
 dev:
-	hugo serve
+	hugo serve --buildFuture
 
 b:build
 build:
