@@ -2,7 +2,7 @@
 title: 复活 GitStats：让 Git 历史分析焕发新活力
 summary: 介绍 GitStats 项目的复活过程，包括迁移到 Python 3、创建现代化流水线、发布到 PyPI 和 Docker，以及未来的改进计划。
 tags:
-  - Git
+  - gitstats
 date: 2024-11-28
 authors:
   - shenxianpeng

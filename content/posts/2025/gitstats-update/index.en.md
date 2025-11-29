@@ -3,8 +3,7 @@ title: 🚀 gitstats Upgrade Arrives—JSON Output, Cross-Platform Compatibility
 summary: |
   After two months of continuous improvement, gitstats now supports JSON output, code refactoring, argparse replacing getopt, and full compatibility with Windows and macOS. Welcome to use and Star support!
 tags:
-  - GitStats
-  - Git
+  - gitstats
 authors:
   - shenxianpeng
 date: 2025-02-05
