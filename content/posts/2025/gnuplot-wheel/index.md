@@ -1,5 +1,5 @@
 ---
-title: 🚀 我又开源了一个新项目：gnuplot-wheel —— 让安装 gnuplot 简单到只要一条 pip 命令
+title: 我又开源了一个新项目：gnuplot-wheel —— 让安装 gnuplot 简单到只要一条 pip 命令
 summary: |
    最近我开源了一个新项目 `gnuplot-wheel`，它能让你通过一条 `pip install gnuplot-wheel` 命令就安装好 gnuplot，无需系统级安装。本文分享了这个项目的背景和动机。
 tags:
