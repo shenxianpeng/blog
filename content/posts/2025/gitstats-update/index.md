@@ -3,14 +3,13 @@ title: 🚀 gitstats 升级来袭：支持 JSON 输出、多平台兼容、代�
 summary: |
   gitstats 经过两个月的持续改进，现已支持 JSON 输出、代码重构、argparse 替换 getopt，并全面兼容 Windows 和 macOS。欢迎使用和 Star 支持！
 tags:
-  - GitStats
-  - Git
+  - gitstats
 authors:
   - shenxianpeng
 date: 2025-02-05
 ---
 
-大家好！自从上次发文[宣布开始维护 **gitstats**](../gitstats/) 以来，我一直在不断地改进这个项目，下面是这两个月的主要更新内容：
+大家好！自从上次发文[宣布开始维护 **gitstats**](../../2024/gitstats/) 以来，我一直在不断地改进这个项目，下面是这两个月的主要更新内容：
 
 ## ✨ 新增功能与改进
 
