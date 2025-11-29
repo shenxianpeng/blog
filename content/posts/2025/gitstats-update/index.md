@@ -1,5 +1,5 @@
 ---
-title: 🚀 gitstats 升级来袭：支持 JSON 输出、多平台兼容、代码重构！
+title: gitstats 升级来袭：支持 JSON 输出、多平台兼容、代码重构！
 summary: |
   gitstats 经过两个月的持续改进，现已支持 JSON 输出、代码重构、argparse 替换 getopt，并全面兼容 Windows 和 macOS。欢迎使用和 Star 支持！
 tags:
