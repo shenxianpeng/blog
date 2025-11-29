@@ -1,7 +1,7 @@
 # Xianpeng Shen's Blog
 
-[![Website: Blog](https://img.shields.io/badge/Website-shenxianpeng.github.io-3586CC?style=flat)](https://shenxianpeng.github.io/)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F&color=3586CC)
+[![Website: Blog](https://img.shields.io/badge/Website-shenxianpeng.github.io-3586CC?style=flat&logo=blogger&logoColor=white)](https://shenxianpeng.github.io/)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fshenxianpeng.github.io%2F&color=3586CC&logo=Statuspage&logoColor=white)
 
 Welcome to Xianpeng Shen’s blog, where I share insights on DevOps, CI/CD, and Open Source.
 
