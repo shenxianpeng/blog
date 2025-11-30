@@ -29,8 +29,10 @@ def share_to_devto(title, content):
             'tags': ['blog', 'python'],
         }
     }
-    r = requests.post(url, json=data, headers=headers)
-    print('Dev.to:', r.status_code, r.text)
+    if r.status_code >= 200 and r.status_code < 300:
+        print(f'Dev.to: Success ({r.status_code})')
+    else:
+        print(f'Dev.to: Failed ({r.status_code}) - {r.reason}')
 
 # --- Medium ---
 def share_to_medium(title, content):
@@ -47,8 +49,14 @@ def share_to_medium(title, content):
         'publishStatus': 'public',
         'tags': ['blog', 'python'],
     }
-    r = requests.post(url, json=data, headers=headers)
-    print('Medium:', r.status_code, r.text)
+    if r.status_code == 201:
+        print('Medium: Success (201 Created)')
+    else:
+        print(f'Medium: Failed ({r.status_code})')
+        # Optionally, print a sanitized error message
+        error_msg = r.json().get('message') if r.headers.get('Content-Type', '').startswith('application/json') else None
+        if error_msg:
+            print(f'Medium: Error message: {error_msg}')
 
 # --- X (Twitter) ---
 def share_to_x(title, url):
@@ -61,8 +69,10 @@ def share_to_x(title, url):
         'text': f'New blog post: {title} {url}'
     }
     r = requests.post(api_url, json=data, headers=headers)
-    print('X:', r.status_code, r.text)
-
+    if r.status_code == 201:
+        logging.info(f'X: Tweet posted successfully (status code: {r.status_code})')
+    else:
+        logging.warning(f'X: Failed to post tweet (status code: {r.status_code})')
 # --- Main ---
 def main():
     post = get_latest_post()
@@ -71,8 +81,9 @@ def main():
         return
     with open(post, 'r', encoding='utf-8') as f:
         content = f.read()
-    # Simple title extraction (first non-empty line)
-    title = next((line.strip('# ').strip() for line in content.splitlines() if line.strip()), 'Blog Post')
+    # Robust title extraction: first markdown heading
+    match = next((re.match(r'^\s*#+\s+(.*)', line) for line in content.splitlines() if line.strip()), None)
+    title = match.group(1).strip() if match else 'Blog Post'
     # Share to Dev.to
     if DEVTO_API_KEY:
         share_to_devto(title, content)
