@@ -1,115 +1,154 @@
 ---
-title: 我又开源了一个新项目：gnuplot-wheel —— 让安装 gnuplot 简单到只要一条 pip 命令
+title: 为了让大家少敲两行命令，我把 gnuplot 封成了一个开箱即用的 Python 包
 summary: |
-   最近我开源了一个新项目 `gnuplot-wheel`，它能让你通过一条 `pip install gnuplot-wheel` 命令就安装好 gnuplot，无需系统级安装。本文分享了这个项目的背景和动机。
+  作为一个开源项目维护者，我深知“安装依赖”的痛苦。为了让用户少敲两行命令，我花时间把 gnuplot 封装成了一个开箱即用的 Python 包——gnuplot-wheel。本文分享了这个小轮子的诞生故事和实用价值。
 tags:
   - gitstats
   - gnuplot
 authors:
   - shenxianpeng
-date: 2025-11-29
+date: 2025-12-01
 ---
 
-最近，我开源了一个全新的小项目 **gnuplot-wheel**。
+写代码写久了，人多少都会变得有点“偏执”。
 
-* GitHub 地址：[https://github.com/shenxianpeng/gnuplot-wheel](https://github.com/shenxianpeng/gnuplot-wheel)
-* PyPI 地址：[https://pypi.org/project/gnuplot-wheel/](https://pypi.org/project/gnuplot-wheel/)
+一种是对 **秩序** 的偏执——命名要统一、缩进要整齐、格式化必须干净利落。
 
-这个项目的目标很简单：
+另一种，是对 **简单** 的偏执——越自动化越好、越开箱即用越好、越无感越好。
 
-**让开发者在 Python 项目中，一条 `pip install gnuplot-wheel` 就能自动获得 gnuplot。**
+尤其是当你兴致勃勃地想试一个新开源项目、敲下安装命令回车的那一刻，你期待看到的是：
 
-无需再去用 `apt`、`brew`、`choco` 安装系统级 gnuplot，也无需管理员权限。
-只靠 `pip` 就能把它装进你的 Python 环境里。
+* 一行行绿色的进度条
+* 一眼就能看懂的 “Successfully installed”
 
-今天这篇文章，就跟大家简单聊聊我做这个项目的原因和背景。
+而不是：
+
+* 满屏的红色报错
+* 冷冰冰的一句 “请先安装 XXX 系统依赖”
+
+那种感觉，就像你饥肠辘辘打开外卖盒，结果——
+
+> **店家忘了给你筷子。**
+> 饭就在那儿，香味都飘出来了，但你就是吃不到嘴里。
+
+这种挫败感，是所有开发者心中共同的痛。
+
+最近，我在维护自己的开源项目时，也被这根“筷子”折腾得够呛。
+为了彻底解决它，我干脆……造了一个新的“轮子”。
+
+今天就来聊聊它背后的故事。
 
 ---
 
-## gnuplot 是什么？
+## **起因：gitstats 与它唯一“不够顺滑”的地方**
 
-如果你做过科研绘图、数据分析、脚本式可视化，那么你多半见过 gnuplot。
+我一直在维护一个工具叫 [**gitstats**](https://github.com/shenxianpeng/gitstats)，主要用来生成 Git 仓库的统计报表：
 
-它不是那种“网红工具”，但却是许多工具链背后的稳定支柱。特点包括：
+* 提交活跃度
+* 贡献者排行
+* 项目增长趋势
+* 图表可视化展示
 
-* 跨平台（Linux / macOS / Windows）
-* 命令行生成图表
-* 支持脚本自动化
-* 能生成专业级图表
-* 被大量工具当成后端绘图引擎
+它开源、简单、好用——除了一个点：
+**它依赖 gnuplot。**
 
-属于那种“你可能没用过，但你肯定间接依赖过”的老牌开源项目。
+[gnuplot](http://www.gnuplot.info/) 是一个非常成熟的绘图工具，在科研与数据分析领域非常常见。
 
-## 为什么我要做这个 wheel？
+问题在于：它必须在系统层面手动安装。
 
-事情的起点来自我维护的一款开源工具 —— [**gitstats**](../../2024/gitstats/) 。
-它能生成 Git 仓库的统计报告，而其中绘图部分需要依赖 gnuplot。
+Linux 需要 `apt install`；
+macOS 需要 `brew install`；
+Windows……你懂的，更麻烦。
 
-这也意味着用户在安装 gitstats 前，需要额外执行：
+这就像流程里唯一的一粒沙子，让整个体验不够丝滑。
 
-```bash
-sudo apt install gnuplot     # Ubuntu
-brew install gnuplot         # macOS
-choco install gnuplot        # Windows
-```
+我开始思考：
+**能不能把 gnuplot 做成一个 Python 包，用一条 `pip install` 就能装好？**
 
-虽然这不算什么大问题，但我一直觉得：
+* 不需要管理员权限
+* 不污染系统环境
+* 不管你是 Linux / Windows / macOS 都能自动匹配
+* 只要有 Python，就能跑
 
-> 有没有可能做到真正的“开箱即用”？
-> 能不能直接通过一个 Python wheel，把 gnuplot 也顺便装好？
+这样，开发者就能像安装普通 Python 包一样，把 gnuplot 一并带上。
 
-这样 gitstats 的安装体验会好得多，尤其现在用户量越来越大，让用户少折腾一点，就是开发者的幸福。
+---
 
-## 最终结论：可以做到！
+## **于是，gnuplot-wheel 诞生了**
 
-经过一段时间的研究、编译和打包，我成功把 gnuplot 做成了可跨平台安装的 Python wheel。
+经过一番调研与折腾，我终于把 **gnuplot 的二进制文件打包成了 Python 的 wheel 文件。**
 
-于是，gnuplot-wheel 就这么诞生了。
-
-你现在只需要：
+从此以后，你只需要敲下：
 
 ```bash
 pip install gnuplot-wheel
 ```
 
-即可自动获得完整的 gnuplot 运行环境 ——
-无需系统安装、无需管理员权限、无需任何提前准备。
+* gnuplot 的二进制文件会自动安装到虚拟环境
+* 不需要系统级依赖
+* 不会和已安装的 gnuplot 冲突
+* 不需要管理员权限
 
-这也是我做这个项目最期待实现的效果：
-像安装一个普通 Python 包一样安装 gnuplot。
+安装完成后，你就能直接执行 `gnuplot` 命令了——
+**无需额外安装任何东西。**
 
-## 现在已正式发布到 PyPI
+当我第一次在干净环境里看到它顺滑运行时，心里只有一个念头：
 
-PyPI 地址：
-👉 [https://pypi.org/project/gnuplot-wheel/](https://pypi.org/project/gnuplot-wheel/)
+> **啊，这就是技术的浪漫——把复杂留给自己，把简单留给用户。**
 
-目前支持多个平台，满足主流开发环境。
+---
 
-## 如果你在用 gnuplot，我建议你试一下
+## **谁会用到这个小轮子？**
 
-尤其是你如果：
+其实这个轮子不复杂，但非常实用。
 
-* 做科研绘图或数据可视化
-* 写自动化脚本
-* 维护依赖 gnuplot 的工具
-* 或者也在使用 gitstats
+### **如果你做科研或数据可视化**
 
-试一下它，应该能直接提升你的开发体验：
-   
+你可以在 Python 程序里直接调用 gnuplot，无需折腾系统依赖。
+
+### **如果你做 DevOps 或自动化**
+
+你可以让脚本自动渲染曲线图、趋势图，而不必在每台机器上手装 gnuplot。
+
+### **如果你在开发依赖 gnuplot 的工具（比如我）**
+
+你可以直接把 `gnuplot-wheel` 加进依赖，让用户上手零成本。
+
+目前，`gnuplot-wheel` 已支持主流平台，并发布在 **PyPI**。
+
+---
+
+## **这个“小轮子”，也反哺了 gitstats**
+
+我已经把它集成进 gitstats。
+
+现在，最新版本的 gitstats 再也不需要用户手动安装 gnuplot。
+
+只要：
+
 ```bash
-pip install gnuplot-wheel
+pip install gitstats
 ```
 
-它能让环境更干净、更可控，也更易于迁移。
+它就会自动把依赖一并准备好，用户无需关心背后发生了什么。
 
-## 最后
+这就是开源社区最迷人的地方：
 
-这个项目最初只是为了解决我在维护 gitstats 时遇到的一个“小痛点”。
-但发布后我发现，它可能也能帮到更多需要 gnuplot 的开发者。
+> **我为了解决自己的小痛点造了个“痒痒挠”，结果发现它也能帮别人止痒。**
 
-如果你有需求或建议，欢迎来 GitHub 提 Issue 或 PR，一起让它变得更好。
+---
 
-希望这个项目能给你的开发带来一点点便利。🌟
+## **想试试吗？**
+
+如果你的项目、工作流或脚本里需要用到 gnuplot，不妨试试它。
+它不会改变世界，但能让你的开发过程——**顺滑那么一点点。**
+
+项目链接：
+
+* GitHub：[https://github.com/shenxianpeng/gnuplot-wheel](https://github.com/shenxianpeng/gnuplot-wheel)
+* PyPI：[https://pypi.org/project/gnuplot-wheel/](https://pypi.org/project/gnuplot-wheel/)
+
+欢迎看看、使用、提 Issue，甚至来一起贡献。
 
 ---
 
