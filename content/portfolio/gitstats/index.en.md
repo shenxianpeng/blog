@@ -1,6 +1,6 @@
 ---
 title: "gitstats"
-weight: 6
+weight: 7
 externalUrl: "https://gitstats.readthedocs.io/"
 summary: "A tool that generates statistics reports for Git repositories."
 showDate: false
