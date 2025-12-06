@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Tired of Jenkinsfile Errors Only After Committing—Try This Pre-check Tool!
 summary: A magical local Jenkinsfile checker, uses API validation, perfectly supports pre-commit.
@@ -114,4 +113,3 @@ If you have any questions or suggestions, feel free to open an Issue or PR.
 
 **GitHub Portal:**
 [https://github.com/shenxianpeng/jenkinsfilelint](https://github.com/shenxianpeng/jenkinsfilelint)
-```
