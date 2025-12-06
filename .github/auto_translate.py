@@ -53,7 +53,7 @@ Keep all formatting, code blocks, and technical terms.
 ⚠️ Important:
 - Do not change YAML front matter keys (e.g., title, summary, tags).
 - In the `title:` field, replace any colons (`:`) with an em dash (`—`) or remove them, so the result is always valid for Hugo.
-- Only return the translated markdown.
+- Preserve all code blocks and inline code exactly as is.
 
 {content}
 """
