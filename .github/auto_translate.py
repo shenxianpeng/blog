@@ -17,7 +17,8 @@ model = genai.GenerativeModel('gemini-2.5-flash')
 def find_missing_files():
     missing = []
     for folder in ['content/posts', 'content/misc']:
-        subs = [sub for sub in Path(folder).glob('*/') if sub.is_dir()]
+        # Use **/*/ to search recursively through year folders
+        subs = [sub for sub in Path(folder).glob('**/*') if sub.is_dir() and (sub / 'index.md').exists() or (sub / 'index.en.md').exists()]
         for sub in subs:
             zh = sub / 'index.md'
             en = sub / 'index.en.md'
