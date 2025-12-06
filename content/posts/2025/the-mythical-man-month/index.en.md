@@ -1,4 +1,3 @@
-```markdown
 ---
 title: The Truth About Software Development—Adding Two People Won't Make a Project Three Times Faster
 summary: In software development, Brooks's Law states that "adding manpower to a late software project makes it later." This post uses the analogies of roasted chicken and pregnant women to deeply explore the reasons behind this phenomenon and offers practical solutions.
@@ -25,4 +24,3 @@ Sometimes, the right choice isn't to blindly hire, but to hire the *right* peopl
 
 ---
 **Goal:** To deeply discuss Brooks's Law, use the analogies of roasted chicken and pregnant women to enhance resonance, provide technical-level insights, and encourage readers to share and comment.
-```
