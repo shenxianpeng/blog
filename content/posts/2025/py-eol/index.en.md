@@ -1,4 +1,3 @@
-```markdown
 ---
 title: py-eol — You Might Be Using 'Expired Python' Without Realizing It
 summary: |
@@ -109,8 +108,3 @@ If you have colleagues or friends who write Python,
 forwarding this article or sharing py-eol might help them. For me, it's also a motivation to continue improving it.
 
 py-eol project address: https://github.com/shenxianpeng/py-eol
-
----
-
-Please credit the author and source when reprinting articles from this site. Do not use for any commercial purposes. Welcome to follow the official account 「DevOps攻城狮」
-```
