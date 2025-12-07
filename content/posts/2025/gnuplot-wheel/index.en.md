@@ -1,4 +1,3 @@
-```markdown
 ---
 title: To Save Everyone Two Lines of Commands—I Packaged Gnuplot into an Out-of-the-Box Python Package
 summary: |
@@ -150,8 +149,6 @@ Project links:
 *   PyPI: [https://pypi.org/project/gnuplot-wheel/](https://pypi.org/project/gnuplot-wheel/)
 
 Feel free to check it out, use it, open an Issue, or even contribute together.
-
----
 
 Please credit the author and source when reprinting articles from this site. Do not use for any commercial purposes. Welcome to follow the official account "DevOps攻城狮"
 ```
