@@ -1,4 +1,3 @@
-```yaml
 title: Understand DevOps in One Article—This is How Packer, Terraform, Docker, and K8s Divide Their Work!
 summary: In the world of DevOps, with so many tools, many people get confused about their responsibilities. Using a car industry analogy, this article helps you understand the positioning and collaboration of Packer, Terraform, Ansible, Docker, and Kubernetes all at once.
 tags:
@@ -165,4 +164,3 @@ Each DevOps tool has its own positioning; there's no question of "which is more 
 If this article helped you clarify the relationships between these tools, feel free to share it with your teammates so everyone can avoid some pitfalls.
 
 If you'd like me to write more similar everyday explanations of DevOps in the future, please let me know.
-```
