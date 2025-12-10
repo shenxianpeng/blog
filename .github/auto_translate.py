@@ -47,12 +47,11 @@ def translate_with_gemini(src_path, target_lang):
     with open(src_path, 'r', encoding='utf-8') as f:
         content = f.read()
     prompt = f"""
-Translate the following markdown blog post to {'Chinese' if target_lang == 'zh' else 'English'}.
+Translate the following blog post to {'Chinese' if target_lang == 'zh' else 'English'}.
 Keep all formatting, code blocks, and technical terms.
 
-⚠️ Important:
-- Do not change YAML front matter keys (e.g., title, summary, tags).
-- In the `title:` field, replace any colons (`:`) with an em dash (`—`) or remove them, so the result is always valid for Hugo.
+- Do not change any format of the original (e.g., title, summary, tags).
+- In the `title:` field, replace any colons (`:`) with an em dash (`—`) or remove them if present, so the result is always valid for Hugo.
 - Preserve all code blocks and inline code exactly as is.
 
 {content}
