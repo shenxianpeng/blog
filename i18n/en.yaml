@@ -40,6 +40,8 @@ error:
   404_title: "Page Not Found :confused:"
   404_error: "Error 404"
   404_description: "It seems that the page you've requested does not exist."
+  404_suggestion: "💡Suggestion: Try using the search feature to find what you're looking for!"
+  404_search_button: "Go to Search"
 
 footer:
   dark_appearance: "Switch to dark appearance"
