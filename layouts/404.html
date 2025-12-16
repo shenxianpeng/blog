@@ -9,15 +9,7 @@
   </div>
   {{ if .Site.Params.enableSearch }}
   <div class="mt-8">
-    <button 
-      id="open-search-from-404"
-      class="inline-flex flex-row flex-nowrap items-center gap-3 px-6 py-3.5 text-base font-semibold text-white bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg whitespace-nowrap"
-      onclick="document.getElementById('search-button') ? document.getElementById('search-button').click() : (document.getElementById('search-button-mobile') ? document.getElementById('search-button-mobile').click() : window.location.href='{{ "" | relLangURL }}')">
-      <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-      </svg>
-      <span class="flex-shrink-0">{{ i18n "error.404_search_button" }}</span>
-    </button>
+    <button id="open-search-from-404" class="inline-flex flex-row flex-nowrap items-center gap-2.5 px-5 py-3 text-base font-semibold text-white bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg whitespace-nowrap" onclick="document.getElementById('search-button') ? document.getElementById('search-button').click() : (document.getElementById('search-button-mobile') ? document.getElementById('search-button-mobile').click() : window.location.href='{{ "" | relLangURL }}')"><svg class="w-5 h-5 flex-shrink-0 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg><span class="inline-block">{{ i18n "error.404_search_button" }}</span></button>
   </div>
   {{ end }}
 {{ end }}
