@@ -1,4 +1,3 @@
-```
 ---
 title: GitHub AI Terminology Explained—Copilot, Agents, Models to MCP, Who is Who?
 summary: This article provides a detailed explanation of GitHub's AI-related concepts and their hierarchical relationships through fact-based explanations and analogies, helping readers clarify the meaning and function of terms like Models, Agents, Spaces, and Spark.
@@ -262,8 +261,3 @@ GitHub AI is evolving rapidly, and concepts are developing. By understanding the
 [8]: https://github.com/anthropics/skills "GitHub - anthropics/skills: Public repository for Skills"
 [9]: https://docs.github.com/zh/copilot/how-tos/agents/copilot-coding-agent/extending-copilot-coding-agent-with-mcp "使用模型上下文协议 (MCP) 扩展 Copilot 编码助手 - GitHub 文档"
 [10]: https://playbooks.com/mcp/parassolanki-github "GitHub MCP server for AI agents"
-
----
-
-Please cite the author and source when reprinting articles from this site. Do not use for any commercial purposes. Welcome to follow the official account「DevOps攻城狮」
-```
