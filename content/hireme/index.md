@@ -1,7 +1,6 @@
 ---
 title: "沈显鹏的简历"
 author: shenxianpeng
-showAuthor: true
 
 showDate : false
 showDateOnlyInArticle : false
