@@ -88,7 +88,7 @@ author: shenxianpeng
 
 最后，不时的来回顾自己 2021 年的 flag，时不时的看看自己是否偏离了最初的方向。2021 我来了！
 
-> ## 过去的年终总结
->
-> [2019 年终总结](https://shenxianpeng.github.io/2019/12/2019-summary/)
-> [2018 从测试到开发的五个月](https://shenxianpeng.github.io/2018/12/from-qa-to-dev/)
+## 过去的年终总结
+
+* [2019 年终总结](2019-summary/)
+* [2018 从测试转开发](from-qa-to-dev/)

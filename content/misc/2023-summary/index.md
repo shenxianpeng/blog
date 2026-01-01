@@ -64,10 +64,10 @@ date: 2023-12-31
 
 ## 过去的年终总结
 
-> [2022 年终总结](https://shenxianpeng.github.io/2022/12/2022-summary/)
-> [2020 年终总结](https://shenxianpeng.github.io/2020/12/2020-summary/)
-> [2019 年终总结](https://shenxianpeng.github.io/2019/12/2019-summary/)
-> [2018 从测试转开发](https://shenxianpeng.github.io/2018/12/from-qa-to-dev/)
+* [2022 年终总结](2022-summary/)
+* [2020 年终总结](2020-summary/)
+* [2019 年终总结](2019-summary/)
+* [2018 从测试转开发](from-qa-to-dev/)
 
 ---
 
