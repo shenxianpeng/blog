@@ -79,12 +79,11 @@ date: 2024-12-28
 
 ## 过去的年终总结
 
-> [2023 年终总结](https://shenxianpeng.github.io/2023/12/2023-summary/)
-> [2022 年终总结](https://shenxianpeng.github.io/2022/12/2022-summary/)
-> [2020 年终总结](https://shenxianpeng.github.io/2020/12/2020-summary/)
-> [2019 年终总结](https://shenxianpeng.github.io/2019/12/2019-summary/)
-> [2018 从测试转开发](https://shenxianpeng.github.io/2018/12/from-qa-to-dev/)
-
+* [2023 年终总结](2023-summary/)
+* [2022 年终总结](2022-summary/)
+* [2020 年终总结](2020-summary/)
+* [2019 年终总结](2019-summary/)
+* [2018 从测试转开发](from-qa-to-dev/)
 ---
 
 转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「DevOps攻城狮」
