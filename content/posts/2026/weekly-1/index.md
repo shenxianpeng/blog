@@ -1,5 +1,6 @@
 ---
-title: 攻城狮周刊（第 01 期）：AI 工程化与 DevOps 韧性：2026 年技术发展双主线
+title: 攻城狮周刊（第 1 期）：AI 工程化与 DevOps 韧性：2026 年技术发展双主线
+summary: 这里记录每周值得分享的 DevOps 与 AI 技术内容，周五发布。本杂志开源，欢迎投稿。
 tags: 
   - Weekly
 translate: false
@@ -10,11 +11,13 @@ date: 2026-01-01
 
 这里记录每周值得分享的 DevOps 与 AI 技术内容，周五发布。
 
-本杂志[开源](https://github.com/shenxianpeng/blog)，欢迎[投稿](https://github.com/shenxianpeng/blog/issues)。合作请[邮件联系](mailto:xianpeng.shen@gmail.com)（xianpeng.shen@gmail.com）。
+本杂志[开源](https://github.com/shenxianpeng/weekly)，欢迎[投稿](https://github.com/shenxianpeng/weekly/issues)。合作请[邮件联系](mailto:xianpeng.shen@gmail.com)（xianpeng.shen@gmail.com）。
 
 ## 本周封面
 
 ![](featured.png)
+
+看龙家昇与他的精灵们，如何把怪异化作可爱，更亲揭 Labubu 九颗尖牙的设计巧思！
 
 ## AI 工程化与 DevOps 韧性
 
