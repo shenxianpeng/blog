@@ -27,11 +27,11 @@ date: 2025-12-31
 
 4. 加入 PyPA 或 Python GitHub Organization
 
-  今年创建了新开源项目 [Explain Error Plugin](https://plugins.jenkins.io/explain-error/)，因此加入了 Jenkins GitHub Organization。加入 PyPA 和 Python GitHub Organization 的目标暂时没实现，但希望未来有机会加入。
+    今年创建了新开源项目 [Explain Error Plugin](https://plugins.jenkins.io/explain-error/)，因此加入了 Jenkins GitHub Organization。加入 PyPA 和 Python GitHub Organization 的目标暂时没实现，但希望未来有机会加入。
 
 5. 别长胖，保持运动
 
-  今年没怎么长胖，但运动量也不大。2026 希望能做得更好一些。
+    今年没怎么长胖，但运动量也不大。2026 希望能做得更好一些。
 
 总结来说，虽然没有全部完成，但也算是不错的成绩了。
 
