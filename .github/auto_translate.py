@@ -77,12 +77,41 @@ def commit_and_push(branch_name, files):
     subprocess.run(['git', 'commit', '-m', f'Auto-translate missing blog post(s)'], check=True)
     subprocess.run(['git', 'push', 'origin', branch_name], check=True)
 
-def create_pr(branch_name, files):
+def check_existing_pr(repo, post_name, lang):
+    """Check if there's already an open PR for this post translation"""
+    try:
+        # Get all open PRs with 'translate' label
+        pulls = repo.get_pulls(state='open', base=BASE_BRANCH)
+        for pr in pulls:
+            # Check if PR title or branch name contains the post name
+            if post_name in pr.head.ref and f'-{lang}-' in pr.head.ref:
+                print(f'Found existing PR for {post_name} ({lang}): {pr.html_url}')
+                return True
+        return False
+    except Exception as e:
+        print(f'Error checking existing PRs: {e}')
+        return False
+
+def branch_exists_remotely(branch_name):
+    """Check if branch already exists on remote"""
+    try:
+        result = subprocess.run(
+            ['git', 'ls-remote', '--heads', 'origin', branch_name],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        return bool(result.stdout.strip())
+    except Exception as e:
+        print(f'Error checking remote branch: {e}')
+        return False
+
+def create_pr(branch_name, files, post_name):
     g = Github(GITHUB_TOKEN)
     repo = g.get_repo(REPO)
     pr = repo.create_pull(
-        title='Auto-translate missing blog post(s)',
-        body='This PR was created automatically to add missing Chinese/English blog post versions.',
+        title=f'Auto-translate: {post_name}',
+        body=f'This PR was created automatically to add missing translation for **{post_name}**.\n\nTranslated files:\n' + '\n'.join(f'- `{f}`' for f in files),
         head=branch_name,
         base=BASE_BRANCH
     )
@@ -100,26 +129,57 @@ def main():
     if not missing:
         print('No missing files detected.')
         return
-    print(missing)
-    # Only process one post per run
-    sub, lang = missing[0]
-    branch_name = BRANCH_PREFIX + f'add-missing-{sub.name}-{lang}-{os.getpid()}'
-    create_branch(branch_name)
-    src = sub / ('index.en.md' if lang == 'zh' else 'index.md')
-    target = sub / ('index.md' if lang == 'zh' else 'index.en.md')
-    print(f'Translating {src} -> {target}')
-    translated = translate_with_gemini(src, lang)
-    if not translated:
-        print('Translation failed or quota exceeded. Exiting without commit or PR.')
-        return
-    with open(target, 'w', encoding='utf-8') as f:
-        f.write(translated)
-    # Only commit and create PR if running in CI (GitHub Actions)
+    print(f'Found {len(missing)} missing translation(s)')
+    
+    # Initialize GitHub client if running in CI
+    g = None
+    repo = None
     if os.getenv('GITHUB_ACTIONS', 'false').lower() == 'true':
-        commit_and_push(branch_name, [str(target)])
-        create_pr(branch_name, [str(target)])
-    else:
-        print('Running locally: skipping commit and PR creation.')
+        g = Github(GITHUB_TOKEN)
+        repo = g.get_repo(REPO)
+    
+    # Only process one post per run, but check for existing PRs first
+    for sub, lang in missing:
+        post_name = sub.name
+        
+        # Check if PR already exists for this post
+        if repo and check_existing_pr(repo, post_name, lang):
+            print(f'Skipping {post_name} ({lang}) - PR already exists')
+            continue
+        
+        # Create branch name without PID to avoid duplicates
+        branch_name = BRANCH_PREFIX + f'add-missing-{post_name}-{lang}'
+        
+        # Check if branch already exists remotely
+        if branch_exists_remotely(branch_name):
+            print(f'Skipping {post_name} ({lang}) - branch {branch_name} already exists')
+            continue
+        
+        # Found a post that needs translation and has no existing PR
+        print(f'Processing: {post_name} ({lang})')
+        create_branch(branch_name)
+        src = sub / ('index.en.md' if lang == 'zh' else 'index.md')
+        target = sub / ('index.md' if lang == 'zh' else 'index.en.md')
+        print(f'Translating {src} -> {target}')
+        translated = translate_with_gemini(src, lang)
+        if not translated:
+            print('Translation failed or quota exceeded. Exiting without commit or PR.')
+            # Clean up branch
+            subprocess.run(['git', 'checkout', BASE_BRANCH], check=False)
+            subprocess.run(['git', 'branch', '-D', branch_name], check=False)
+            return
+        with open(target, 'w', encoding='utf-8') as f:
+            f.write(translated)
+        # Only commit and create PR if running in CI (GitHub Actions)
+        if os.getenv('GITHUB_ACTIONS', 'false').lower() == 'true':
+            commit_and_push(branch_name, [str(target)])
+            create_pr(branch_name, [str(target)], post_name)
+        else:
+            print('Running locally: skipping commit and PR creation.')
+        # Only process one post per run
+        return
+    
+    print('All missing translations either have existing PRs or branches.')
 
 if __name__ == '__main__':
     main()
