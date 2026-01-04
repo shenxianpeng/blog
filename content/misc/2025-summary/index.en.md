@@ -1,4 +1,3 @@
-```
 title: 2025 Year-End Summary
 tags:
   - Thoughts
@@ -84,4 +83,3 @@ I also wish you good health, smooth work, and a happy life in the new year!
 ---
 
 Please attribute the author and source when reprinting articles from this site. Do not use for any commercial purposes. Welcome to follow the official account「DevOps攻城狮」
-```
