@@ -1,4 +1,3 @@
-```
 title: Developers Are Getting Tired, So Backstage Emerged
 summary: |
   Over the past two years, I've discussed a common sentiment with many DevOps and platform engineers: as systems become increasingly cloud-native, developers are becoming "less focused on development."
@@ -227,4 +226,3 @@ But if you truly want to:
 > **Let developers spend their time writing code, not searching for information**
 
 Then whether you use Backstage or not, you will eventually walk this path.
-```
