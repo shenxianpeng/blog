@@ -1,4 +1,3 @@
-```yaml
 title: Backstage (Developer Portal)—What It Is, What It Solves, and What It Doesn't Solve
 summary: What is Backstage? Why has it become so important in the platform engineering domain? Sharing some insights and judgments on Backstage.
 tags:
@@ -243,4 +242,3 @@ But if what you truly want to do is:
 > **Let developers spend their time coding, rather than searching for information**
 
 Then whether you use `Backstage` or not, you will eventually walk this path.
-```
