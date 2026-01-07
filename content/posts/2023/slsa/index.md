@@ -4,6 +4,8 @@ summary: 本文介绍了 SLSA 框架的概念、目的、等级划分以及如�
 tags:
   - SLSA
 authors:
+aliases:
+  - /2023/03/slsa/
   - shenxianpeng
 date: 2023-03-23
 ---

@@ -5,6 +5,8 @@ tags:
   - SLSA
   - DevSecOps
 authors:
+aliases:
+  - /2024/06/where-does-your-software-come-from/
   - shenxianpeng
 translate: false   # 不需要翻译
 date: 2024-06-13

@@ -4,6 +4,8 @@ summary: 本文介绍了如何制定和实施 Git 提交信息和分支创建规
 tags:
   - Git
 date: 2020-09-24
+aliases:
+  - /2020/09/commit-messages-specification/
 authors:
   - shenxianpeng
 ---

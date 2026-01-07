@@ -4,6 +4,8 @@ summary: 本文介绍了 pip 和 pipx 的区别，帮助开发者选择合适的
 tags:
   - Python
 date: 2024-11-26
+aliases:
+  - /2024/11/pip-vs-pipx/
 authors:
   - shenxianpeng
 ---

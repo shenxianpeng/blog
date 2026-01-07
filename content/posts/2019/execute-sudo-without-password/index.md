@@ -2,6 +2,8 @@
 title: 在 Jenkins pipeline 中执行 sudo 的时候不需要输入密码
 summary: 本文介绍了如何在 Jenkins Pipeline 中执行 sudo 命令而无需输入密码，提供了具体的实现方法和示例代码。
 date: 2019-07-16
+aliases:
+  - /2019/07/execute-sudo-without-password/
 tags:
 - Jenkins
 - Pipeline

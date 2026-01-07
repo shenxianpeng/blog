@@ -4,6 +4,8 @@ summary: 本文记录了在使用 Solaris 时遇到的问题和解决办法，�
 tags:
   - Solaris
 date: 2020-01-07
+aliases:
+  - /2020/01/solaris-tips/
 translate: false
 authors:
   - shenxianpeng

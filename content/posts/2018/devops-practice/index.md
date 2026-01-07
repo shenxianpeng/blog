@@ -2,6 +2,8 @@
 title: DevOps 实践
 summary: 本文介绍了 DevOps 实践的核心概念、目标和实施方法，强调了持续集成、持续交付和自动化的重要性。
 date: 2018-04-14
+aliases:
+  - /2018/04/devops-practice/
 tags:
 - DevOps
 translate: false

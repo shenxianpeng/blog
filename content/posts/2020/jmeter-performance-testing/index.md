@@ -5,6 +5,8 @@ summary: |
 tags:
   - JMeter
 date: 2020-05-09
+aliases:
+  - /2020/05/jmeter-performance-testing/
 authors:
   - shenxianpeng
 ---

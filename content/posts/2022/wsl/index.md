@@ -7,6 +7,8 @@ tags:
   - VSCode
   - Windows
 authors:
+aliases:
+  - /2022/04/wsl/
   - shenxianpeng
 date: 2022-04-19
 ---

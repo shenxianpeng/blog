@@ -6,6 +6,8 @@ tags:
   - GitHub
   - Fork
 authors:
+aliases:
+  - /2022/03/unfork-github-repo/
   - shenxianpeng
 date: 2022-03-09
 ---

@@ -5,6 +5,8 @@ summary: |
 tags:
   - Jenkins
 date: 2021-02-11
+aliases:
+  - /2021/02/jenkins-windows-agent-cannot-start/
 authors:
   - shenxianpeng
 ---

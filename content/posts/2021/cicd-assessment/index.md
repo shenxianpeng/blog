@@ -6,6 +6,8 @@ tags:
   - Badge
 translate: false
 date: 2021-12-07
+aliases:
+  - /2021/12/cicd-assessment/
 authors:
   - shenxianpeng
 ---

@@ -2,6 +2,8 @@
 title: 如何通过 Jenkins 进行资源的锁定和释放
 summary: 本文介绍了如何使用 Jenkins 的 Lockable Resources 插件来管理和锁定资源，确保在多任务环境中资源的独占性和安全性。
 date: 2019-08-10
+aliases:
+  - /2019/08/jenkins-lock-resource/
 tags:
 - Jenkins
 - Pipeline

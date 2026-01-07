@@ -2,6 +2,8 @@
 title: 度过工作中挫折心结
 summary: 工作中遇到挫折时，如何调整心态，专注于工作本身，而不是过度纠结于人际关系。
 date: 2017-11-23
+aliases:
+  - /2017/11/weather-setbacks-at-work/
 tags:
   - Work
 author: shenxianpeng

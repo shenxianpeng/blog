@@ -5,6 +5,8 @@ tags:
   - VirtualBox
   - Vagrant
 authors:
+aliases:
+  - /2022/01/vagrant/
   - shenxianpeng
 date: 2022-02-11
 ---

@@ -6,6 +6,8 @@ tags:
   - Jenkins
   - Java
 date: 2022-03-06
+aliases:
+  - /2022/03/groovy/
 translate: false
 authors:
   - shenxianpeng

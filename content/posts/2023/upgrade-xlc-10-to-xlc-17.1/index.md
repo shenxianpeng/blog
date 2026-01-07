@@ -6,6 +6,8 @@ tags:
   - Clang
   - XLC
 date: 2023-10-08
+aliases:
+  - /2023/10/upgrade-xlc-10-to-xlc-17.1/
 authors:
   - shenxianpeng
 ---

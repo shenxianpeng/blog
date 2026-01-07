@@ -6,6 +6,8 @@ tags:
   - AIX
   - ulimit
 date: 2021-06-17
+aliases:
+  - /2021/06/aix-ulimit/
 authors:
   - shenxianpeng
 ---

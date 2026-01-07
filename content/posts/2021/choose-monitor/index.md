@@ -4,6 +4,8 @@ summary: 本文分享了个人在选择显示器时的经验和建议，包括�
 tags:
   - Monitor
 date: 2021-12-21
+aliases:
+  - /2021/12/choose-monitor/
 translate: false
 authors:
   - shenxianpeng

@@ -2,6 +2,8 @@
 title: 'Error: Permission denied (publickey)'
 summary: 本文介绍了如何在配置多个 SSH Git Key 时解决 "Permission denied (publickey)" 错误，确保 GitHub 和 Bitbucket 的 SSH 连接正常工作。
 date: 2018-05-06
+aliases:
+  - /2018/05/permission-denied-publickey/
 tags:
 - Git
 translate: false

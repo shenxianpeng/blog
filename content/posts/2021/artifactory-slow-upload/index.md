@@ -5,6 +5,8 @@ tags:
   - Artifactory
   - Troubleshooting
 date: 2021-06-16
+aliases:
+  - /2021/06/artifactory-slow-upload/
 authors:
   - shenxianpeng
 ---

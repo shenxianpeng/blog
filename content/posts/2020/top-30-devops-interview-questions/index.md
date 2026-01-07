@@ -6,6 +6,8 @@ tags:
   - DevOps
 translate: false
 date: 2020-03-29
+aliases:
+  - /2020/04/top-30-devops-interview-questions/
 author:
 ---
 

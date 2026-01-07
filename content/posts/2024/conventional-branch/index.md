@@ -5,6 +5,8 @@ tags:
   - Conventional Branch
   - Git
 date: 2024-09-24
+aliases:
+  - /2024/09/conventional-branch/
 authors:
   - shenxianpeng
 ---

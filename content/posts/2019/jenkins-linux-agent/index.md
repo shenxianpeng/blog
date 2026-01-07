@@ -3,6 +3,8 @@ title: Jenkins Linux Agent 配置
 summary: |
   本文提供了 Jenkins Linux Agent 的逐步配置指南，包括 Java 运行时的准备、节点创建以及常见问题的排查方法。
 date: 2019-05-12
+aliases:
+  - /2019/05/jenkins-linux-agent/
 tags:
   - Jenkins
   - Jenkins

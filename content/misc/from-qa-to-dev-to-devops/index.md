@@ -4,6 +4,8 @@ summary: 从软件测试到开发再到DevOps，码字五年有哪些收获？�
 tags:
   - Thoughts
 date: 2022-02-21
+aliases:
+  - /2022/02/from-qa-to-dev-to-devops/
 author: shenxianpeng
 ---
 

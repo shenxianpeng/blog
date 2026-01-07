@@ -7,6 +7,8 @@ tags:
   - clang
   - cpp-linter
 authors:
+aliases:
+  - /2022/08/cpp-linter/
   - shenxianpeng
 date: 2022-08-23
 ---

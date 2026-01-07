@@ -5,6 +5,8 @@ tags:
   - Apache
   - Infrastructure
 authors:
+aliases:
+  - /2024/01/apache-services-and-tools/
   - shenxianpeng
 translate: false
 date: 2024-01-21

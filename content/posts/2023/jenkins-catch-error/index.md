@@ -4,6 +4,8 @@ summary: 介绍如何在 Jenkins Pipeline 中使用 `catchError` 捕获特定错
 tags:
   - Jenkins
 authors:
+aliases:
+  - /2023/12/jenkins-catch-error/
   - shenxianpeng
 date: 2023-12-15
 ---

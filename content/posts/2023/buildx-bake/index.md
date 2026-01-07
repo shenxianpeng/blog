@@ -4,6 +4,8 @@ summary: 本文介绍 Docker Buildx Bake 的概念、优势、使用场景以及
 tags:
  - Docker
 date: 2023-07-17
+aliases:
+  - /2023/07/buildx-bake/
 authors:
   - shenxianpeng
 ---

@@ -5,6 +5,8 @@ tags:
   - AIX
 translate: false
 date: 2020-01-09
+aliases:
+  - /2020/01/aix-tips/
 authors:
   - shenxianpeng
 ---

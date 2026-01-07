@@ -2,6 +2,8 @@
 title: 修改 Hexo 主题代码高亮
 summary: Hexo 默认主题代码高亮是黑色的，如果想换个风格？本文介绍如何修改 Hexo 主题代码高亮样式。
 date: 2017-11-20
+aliases:
+  - /2017/11/change-hexo-code-highlight/
 tags:
 - Hexo
 - Hexo

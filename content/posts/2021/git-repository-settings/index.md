@@ -6,6 +6,8 @@ tags:
   - Bitbucket
   - Git
 date: 2021-01-12
+aliases:
+  - /2021/01/git-repository-settings/
 authors:
   - shenxianpeng
 ---

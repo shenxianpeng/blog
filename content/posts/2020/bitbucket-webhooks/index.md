@@ -6,6 +6,8 @@ tags:
   - Webhook
   - Jenkins
 date: 2020-04-28
+aliases:
+  - /2020/04/bitbucket-webhooks/
 authors:
   - shenxianpeng
 ---

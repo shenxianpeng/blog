@@ -7,6 +7,8 @@ tags:
   - DevSecOps
 translate: false
 authors:
+aliases:
+  - /2023/09/devops-trends-2023/
   - shenxianpeng
 date: 2023-09-01
 ---

@@ -6,6 +6,8 @@ tags:
   - Jenkins
   - Webhook
 date: 2020-08-07
+aliases:
+  - /2020/08/bitbucket-pull-request-event/
 authors:
   - shenxianpeng
 ---

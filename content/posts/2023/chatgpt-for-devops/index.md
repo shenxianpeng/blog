@@ -5,6 +5,8 @@ tags:
   - DevOps
   - ChatGPT
 authors:
+aliases:
+  - /2023/02/chatgpt-for-devops/
   - shenxianpeng
 translate: false
 date: 2023-02-26

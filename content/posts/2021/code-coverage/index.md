@@ -5,6 +5,8 @@ tags:
   - Coverage
   - DevOps
 date: 2021-07-14
+aliases:
+  - /2021/07/code-coverage/
 authors:
   - shenxianpeng
 ---

@@ -4,6 +4,8 @@ summary: 如何在 Jenkins Pipeline 中处理 Shell 返回值不为0的情况，
 tags:
   - Jenkins
 date: 2020-07-22
+aliases:
+  - /2020/07/jenkins-tips-3/
 authors:
   - shenxianpeng
 ---

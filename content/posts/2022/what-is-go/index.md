@@ -4,6 +4,8 @@ summary: 本文介绍了 Go 语言的基本概念、优势、排名以及初学�
 tags:
   - Go
 date: 2022-01-18
+aliases:
+  - /2022/01/what-is-go/
 authors:
   - shenxianpeng
 ---

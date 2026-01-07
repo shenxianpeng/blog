@@ -4,6 +4,8 @@ summary: 女儿已经两岁七个月了，我还没有单独写过一篇关于�
 tags:
   - Thoughts
 date: 2024-12-28
+aliases:
+  - /2024/12/my-daughter/
 author: shenxianpeng
 ---
 

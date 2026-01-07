@@ -5,6 +5,8 @@ tags:
   - Jenkins
   - Cppcheck
 date: 2020-02-16
+aliases:
+  - /2020/02/cppcheck/
 authors:
   - shenxianpeng
 ---

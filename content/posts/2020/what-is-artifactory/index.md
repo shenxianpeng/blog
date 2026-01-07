@@ -5,6 +5,8 @@ tags:
   - Artifactory
   - JFrog
 date: 2020-10-04 20:43:46
+aliases:
+  - /2020/10/what-is-artifactory/
 authors:
   - shenxianpeng
 ---

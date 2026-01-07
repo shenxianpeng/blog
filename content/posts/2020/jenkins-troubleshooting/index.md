@@ -5,6 +5,8 @@ tags:
   - Pipeline
   - Troubleshooting
 date: 2020-04-20
+aliases:
+  - /2020/04/jenkins-troubleshooting/
 authors:
   - shenxianpeng
 ---

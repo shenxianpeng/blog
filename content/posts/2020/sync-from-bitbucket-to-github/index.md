@@ -8,6 +8,8 @@ tags:
   - Jenkins
 translate: false
 date: 2020-05-05
+aliases:
+  - /2020/05/sync-from-bitbucket-to-github/
 authors:
   - shenxianpeng
 ---

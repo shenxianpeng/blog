@@ -6,6 +6,8 @@ tags:
   - EuroPython
   - Reviewer
 authors:
+aliases:
+  - /2025/02/euro-python-review/
   - shenxianpeng
 date: 2025-02-14
 ---

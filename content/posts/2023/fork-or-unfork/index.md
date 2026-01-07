@@ -5,6 +5,8 @@ tags:
   - Fork
 translate: false
 authors:
+aliases:
+  - /2023/06/fork-or-unfork/
   - shenxianpeng
 date: 2023-06-09
 ---

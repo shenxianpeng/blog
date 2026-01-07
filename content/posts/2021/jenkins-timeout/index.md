@@ -5,6 +5,8 @@ summary: |
 tags:
   - Jenkins
 date: 2021-06-24
+aliases:
+  - /2021/06/jenkins-timeout/
 authors:
   - shenxianpeng
 ---

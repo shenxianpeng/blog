@@ -4,6 +4,8 @@ summary: 本文介绍了 PyPA（Python Packaging Authority）下的知名项目�
 tags:
   - Python
 date: 2024-09-05
+aliases:
+  - /2024/09/pypa/
 translate: false
 authors:
   - shenxianpeng

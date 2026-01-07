@@ -5,6 +5,9 @@ summary: |
 tags:
   - Jenkins
 date: 2021-03-24
+aliases:
+  - /2021/03/jenkins-dynamic-default-parameters
+  - /2021/03/jenkins-dynamic-default-parameters/
 authors:
   - shenxianpeng
 ---

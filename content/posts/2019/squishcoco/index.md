@@ -3,6 +3,8 @@ title: 代码覆盖率工具 Squish Coco 使用示例
 summary: |
   介绍代码覆盖率工具 Squish Coco，并展示在 Visual Studio C++ 项目中如何安装、配置、执行和查看覆盖率结果。
 date: 2019-05-21
+aliases:
+  - /2019/05/squishcoco/
 tags:
 - SquishCoco
 - Coverage

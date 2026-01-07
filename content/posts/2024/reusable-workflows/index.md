@@ -5,6 +5,8 @@ tags:
   - GitHub
   - Jenkins
 authors:
+aliases:
+  - /2024/03/reusable-workflows/
   - shenxianpeng
 date: 2024-03-25
 ---

@@ -6,6 +6,8 @@ tags:
   - Squash
   - Git
 date: 2019-08-20
+aliases:
+  - /2019/08/git-commit-squash/
 authors:
   - shenxianpeng
 ---

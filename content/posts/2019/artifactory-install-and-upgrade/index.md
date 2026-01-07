@@ -5,6 +5,8 @@ tags:
   - Artifactory
   - JFrog
 date: 2019-11-10
+aliases:
+  - /2019/11/artifactory-install-and-upgrade/
 authors:
   - shenxianpeng
 ---

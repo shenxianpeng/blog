@@ -7,6 +7,8 @@ tags:
   - Jenkins
   - Backup
 date: 2020-11-24
+aliases:
+  - /2020/11/jenkins-backup/
 authors:
   - shenxianpeng
 ---

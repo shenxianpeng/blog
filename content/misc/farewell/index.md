@@ -5,6 +5,8 @@ tags:
   - Work
   - Life
 date: 2024-06-28
+aliases:
+  - /2024/06/farewell/
 author: shenxianpeng
 ---
 

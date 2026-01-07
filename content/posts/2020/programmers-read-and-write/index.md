@@ -4,6 +4,8 @@ summary: 本文探讨了程序员写作的重要性，强调了写作和表达�
 tags:
   - Others
 date: 2020-05-30
+aliases:
+  - /2020/05/programmers-read-and-write/
 authors:
   - shenxianpeng
 ---

@@ -5,6 +5,8 @@ tags:
   - BlackDuck
   - Jenkins
 date: 2019-12-08
+aliases:
+  - /2019/12/blackduck-interate-with-jenkins/
 translate: false
 authors:
   - shenxianpeng

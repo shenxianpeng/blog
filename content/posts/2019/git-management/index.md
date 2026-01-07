@@ -2,6 +2,8 @@
 title: Git 管理
 summary: 本文介绍了 Git 的常见管理操作，包括分支管理、提交规范、代码审查等，帮助开发者更好地使用 Git 进行版本控制。
 date: 2019-07-07
+aliases:
+  - /2019/07/git-management/
 tags:
   - Git
 translate: false

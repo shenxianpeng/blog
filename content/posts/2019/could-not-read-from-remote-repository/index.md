@@ -6,6 +6,8 @@ tags:
   - - Git
   - Troubleshooting
 date: 2019-09-01
+aliases:
+  - /2019/09/could-not-read-from-remote-repository/
 authors:
   - shenxianpeng
 ---

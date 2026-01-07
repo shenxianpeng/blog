@@ -5,6 +5,8 @@ tags:
  - SBOM
  - SLSA
 date: 2023-06-10
+aliases:
+  - /2023/06/sbom/
 authors:
   - shenxianpeng
 ---

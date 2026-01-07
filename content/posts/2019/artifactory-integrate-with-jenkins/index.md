@@ -5,6 +5,8 @@ tags:
   - Artifactory
   - Jenkins
 date: 2019-11-17
+aliases:
+  - /2019/11/artifactory-integrate-with-jenkins/
 translate: false
 authors:
   - shenxianpeng

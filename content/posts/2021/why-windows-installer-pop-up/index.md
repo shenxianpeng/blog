@@ -5,6 +5,8 @@ summary: |
 tags:
   - Windows
 date: 2021-04-22
+aliases:
+  - /2021/04/why-windows-installer-pop-up/
 authors:
   - shenxianpeng
 ---

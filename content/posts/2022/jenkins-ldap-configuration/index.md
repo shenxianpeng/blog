@@ -6,6 +6,8 @@ tags:
   - LDAP
   - Jenkins
 authors:
+aliases:
+  - /2022/03/jenkins-ldap-configuration/
   - shenxianpeng
 date: 2022-03-15
 ---

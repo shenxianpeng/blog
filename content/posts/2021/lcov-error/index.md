@@ -6,6 +6,8 @@ tags:
   - lcov
   - perl
 date: 2021-09-07
+aliases:
+  - /2021/09/lcov-error/
 authors:
   - shenxianpeng
 ---

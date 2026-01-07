@@ -5,6 +5,8 @@ summary: |
 tags:
   - Windows
 date: 2020-08-10
+aliases:
+  - /2020/08/rdp-problem/
 authors:
   - shenxianpeng
 ---

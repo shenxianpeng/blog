@@ -8,6 +8,8 @@ tags:
   - CRI-O
   - runc
 authors:
+aliases:
+  - /2022/03/container-ecosystem/
   - shenxianpeng
 date: 2022-03-29
 ---

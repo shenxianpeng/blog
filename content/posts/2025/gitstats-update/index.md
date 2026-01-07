@@ -5,6 +5,8 @@ summary: |
 tags:
   - gitstats
 authors:
+aliases:
+  - /2025/02/gitstats-update/
   - shenxianpeng
 date: 2025-02-05
 ---

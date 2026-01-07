@@ -7,6 +7,8 @@ tags:
   - Copyright
 translate: false
 authors:
+aliases:
+  - /2025/01/copyright/
   - shenxianpeng
 date: 2025-01-20
 ---

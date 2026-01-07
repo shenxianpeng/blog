@@ -6,6 +6,8 @@ tags:
   - Infrastructure
 translate: false
 authors:
+aliases:
+  - /2024/05/psf-infra/
   - shenxianpeng
 date: 2024-05-28
 ---

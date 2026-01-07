@@ -4,6 +4,8 @@ summary: 如何从 Git 仓库中删除不需要的文件和历史记录，以减
 tags:
   - Git
 date: 2020-03-21
+aliases:
+  - /2020/03/maintaining-git-repository/
 author:
 ---
 

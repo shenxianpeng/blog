@@ -5,6 +5,8 @@ tags:
   - Pythonic
   - Python
 date: 2021-03-28
+aliases:
+  - /2021/03/pythonic/
 authors:
   - shenxianpeng
 ---

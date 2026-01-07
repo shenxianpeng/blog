@@ -5,6 +5,8 @@ tags:
   - DevSecOps
   - SLSA
 authors:
+aliases:
+  - /2024/04/code-signing/
   - shenxianpeng
 date: 2024-04-29
 ---

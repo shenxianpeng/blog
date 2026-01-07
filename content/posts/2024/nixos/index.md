@@ -7,6 +7,8 @@ tags:
 draft: true
 translate: false
 date: 2024-11-26
+aliases:
+  - /2024/11/nixos/
 authors:
   - shenxianpeng
 ---

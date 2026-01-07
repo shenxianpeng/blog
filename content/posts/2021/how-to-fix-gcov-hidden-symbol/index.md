@@ -7,6 +7,8 @@ tags:
   - Coverage
   - DevOps
 date: 2021-07-27
+aliases:
+  - /2021/07/how-to-fix-gcov-hidden-symbol/
 authors:
   - shenxianpeng
 ---

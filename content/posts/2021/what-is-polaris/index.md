@@ -8,6 +8,8 @@ tags:
   - Coverity
   - Security
 date: 2021-10-24
+aliases:
+  - /2021/10/what-is-polaris/
 authors:
   - shenxianpeng
 ---

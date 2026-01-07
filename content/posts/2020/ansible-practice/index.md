@@ -4,6 +4,8 @@ summary: 通过 Ansible 实践，探索如何高效管理和监控多种操作�
 tags:
   - Ansible
 date: 2020-10-28
+aliases:
+  - /2020/10/ansible-practice/
 translate: false
 authors:
   - shenxianpeng

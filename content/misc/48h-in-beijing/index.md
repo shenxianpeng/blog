@@ -6,6 +6,8 @@ tags:
   - DevOps
   - Jenkins
 date: 2019-12-01
+aliases:
+  - /2019/12/48h-in-beijing/
 author: shenxianpeng
 ---
 

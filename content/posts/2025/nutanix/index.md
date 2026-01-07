@@ -6,6 +6,8 @@ tags:
   - Nutanix
   - VMware
 authors:
+aliases:
+  - /2025/03/nutanix/
   - shenxianpeng
 date: 2025-03-12
 ---

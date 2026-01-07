@@ -2,6 +2,8 @@
 title: 通过参数化上传文件到 FTP 服务器
 summary: 本文介绍了如何使用 Windows Batch 脚本通过参数化的方式上传文件到 FTP 服务器，避免在脚本中硬编码 FTP 凭据。
 date: 2019-05-13
+aliases:
+  - /2019/05/upload-to-ftp-parameterization-by-bat/
 tags:
 - Automation
 - Shell

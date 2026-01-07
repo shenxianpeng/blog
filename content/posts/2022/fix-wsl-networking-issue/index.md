@@ -5,6 +5,8 @@ summary: |
 tags:
   - WSL
 authors:
+aliases:
+  - /2022/09/fix-wsl-networking-issue/
   - shenxianpeng
 date: 2022-09-27
 ---

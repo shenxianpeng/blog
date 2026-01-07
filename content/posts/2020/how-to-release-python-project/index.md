@@ -6,6 +6,8 @@ tags:
   - PyPI
   - Release
 date: 2020-09-13
+aliases:
+  - /2020/09/how-to-release-python-project/
 authors:
   - shenxianpeng
 ---

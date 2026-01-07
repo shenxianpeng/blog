@@ -5,6 +5,8 @@ tags:
   - Stats
   - Git
 date: 2019-12-17
+aliases:
+  - /2019/12/git-stats/
 authors:
   - shenxianpeng
 ---
