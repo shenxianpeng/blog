@@ -53,6 +53,9 @@ Keep all formatting, code blocks, and technical terms.
 - Do not change any format of the original (e.g., title, summary, tags).
 - In the `title:` field, replace any colons (`:`) with an em dash (`—`) or remove them if present, so the result is always valid for Hugo.
 - Preserve all code blocks and inline code exactly as is.
+- The output MUST start with `---` (three hyphens) for the YAML front matter, NOT with ```yaml or any code fence marker.
+- The output MUST NOT be wrapped in markdown code fences (```) - return only the raw translated markdown content.
+- Return the translated content directly without any formatting markers like ```yaml or ``` at the beginning or end.
 
 {content}
 """
