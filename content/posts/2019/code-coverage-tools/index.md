@@ -3,6 +3,8 @@ title: C/C++ 代码覆盖率工具
 summary: |
   代码覆盖率衡量自动化测试覆盖的代码行、语句或代码块的比例，是评估 QA 质量的重要指标。本文列出了常见的 C/C++ 代码覆盖率工具及其特性。
 date: 2019-05-21
+aliases:
+  - /2019/05/code-coverage-tools/
 tags:
 - Coverage
 authors:

@@ -8,6 +8,8 @@ tags:
   - Open Source
 translate: false
 authors:
+aliases:
+  - /2024/02/open-source-state/
   - shenxianpeng
 date: 2024-02-22
 ---

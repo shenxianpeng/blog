@@ -4,6 +4,8 @@ summary: 本文介绍了作为 DevOps 工程师的日常工作节奏，从早上
 tags:
   - DevOps
 date: 2024-10-27
+aliases:
+  - /2024/10/devops-everyday/
 translate: false
 authors:
   - shenxianpeng

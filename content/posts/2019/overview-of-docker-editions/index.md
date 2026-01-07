@@ -5,6 +5,8 @@ summary: |
 tags:
   - Docker
 date: 2019-12-01
+aliases:
+  - /2019/12/overview-of-docker-editions/
 translate: false
 authors:
   - shenxianpeng

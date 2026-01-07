@@ -5,6 +5,8 @@ author: Aytunc BEKEN
 translator: shenxianpeng
 original: https://dzone.com/articles/maintaining-multi-branch-pipelines-in-large-scale
 date: 2019-08-06
+aliases:
+  - /2019/08/jenkins-multi-branch-pipeline/
 tags:
   - Jenkins
   - Pipeline

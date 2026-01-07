@@ -6,6 +6,8 @@ tags:
   - VirtualBox
   - Vagrant
 date: 2022-02-14
+aliases:
+  - /2022/01/vagrant-vs-docker/
 authors:
   - shenxianpeng
 ---

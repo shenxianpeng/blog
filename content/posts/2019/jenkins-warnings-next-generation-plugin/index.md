@@ -4,6 +4,8 @@ summary: 本文介绍了 Jenkins Warnings Next Generation 插件的功能和配�
 tags:
   - Jenkins
 date: 2019-12-28
+aliases:
+  - /2019/12/jenkins-warnings-next-generation-plugin/
 translate: false
 authors:
   - shenxianpeng

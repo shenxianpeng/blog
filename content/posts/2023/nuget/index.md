@@ -4,6 +4,8 @@ summary: 本文记录了在创建 NuGet Organization 时遇到的问题和解决
 tags:
   - NuGet
 authors:
+aliases:
+  - /2023/08/nuget/
   - shenxianpeng
 date: 2023-08-25
 ---

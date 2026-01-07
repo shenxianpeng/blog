@@ -2,6 +2,8 @@
 title: GitSCM clone code don't display branch
 summary: 如何在 Jenkins 中使用 GitSCM插件克隆代码时，确保正确显示分支信息，避免出现 HEAD detached 状态的问题。
 date: 2019-05-14
+aliases:
+  - /2019/05/gitscm-clone-code-don-t-display-branch/
 tags:
 - Jenkins
 - Pipeline

@@ -7,6 +7,8 @@ tags:
   - Java
   - Jenkins
 date: 2023-09-11
+aliases:
+  - /2023/09/unable-to-find-valid-certification-path/
 authors:
   - shenxianpeng
 ---

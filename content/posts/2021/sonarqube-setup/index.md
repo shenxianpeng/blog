@@ -7,6 +7,8 @@ tags:
   - LDAP
   - PostgreSQL
 date: 2021-08-05
+aliases:
+  - /2021/08/sonarqube-setup/
 authors:
   - shenxianpeng
 ---

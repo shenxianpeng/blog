@@ -4,6 +4,8 @@ summary: 本文介绍了两种方法来确保在提交 Jenkins Pipeline 前没�
 tags:
   - Jenkins
 date: 2020-05-23
+aliases:
+  - /2020/05/jenkins-pipeline-linter-connector/
 authors:
   - shenxianpeng
 ---

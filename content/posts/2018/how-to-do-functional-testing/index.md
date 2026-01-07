@@ -2,6 +2,8 @@
 title: 如何做好功能测试
 summary: 介绍功能测试的基本流程、用例设计、项目控制、上线回归等方面的建议，帮助测试人员提升功能测试的质量和效率。
 date: 2018-08-07
+aliases:
+  - /2018/08/how-to-do-functional-testing/
 tags:
   - FunctionTest
 translate: false

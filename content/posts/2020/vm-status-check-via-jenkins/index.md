@@ -6,6 +6,8 @@ tags:
   - Jenkins
 translate: false
 date: 2020-06-13
+aliases:
+  - /2020/06/vm-status-check-via-jenkins/
 authors:
   - shenxianpeng
 ---

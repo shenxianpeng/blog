@@ -5,6 +5,8 @@ tags:
   - DevSecOps
   - SLSA
 authors:
+aliases:
+  - /2024/06/garasign/
   - shenxianpeng
 date: 2024-06-10
 ---

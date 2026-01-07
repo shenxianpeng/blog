@@ -5,6 +5,8 @@ tags:
   - Thoughts
   - Summary
 date: 2024-09-27
+aliases:
+  - /2024/09/power-of-choice/
 author: shenxianpeng
 ---
 

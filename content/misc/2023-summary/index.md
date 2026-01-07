@@ -5,6 +5,8 @@ tags:
   - Summary
 author: shenxianpeng
 date: 2023-12-31
+aliases:
+  - /2023/12/2023-summary/
 ---
 
 时间过得很快，2023 年转瞬即逝。如果不记录下自己在这一年里发生的事情，过不了多久就很难回想起来这一年都发生过什么。

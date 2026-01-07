@@ -7,6 +7,8 @@ tags:
   - DevOps
 translate: false
 date: 2019-12-02
+aliases:
+  - /2019/12/docker-commands/
 authors:
   - shenxianpeng
 ---

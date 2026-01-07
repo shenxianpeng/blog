@@ -6,6 +6,8 @@ tags:
   - Gradle
   - Coverage
 date: 2021-04-06
+aliases:
+  - /2021/04/jacoco-imp/
 translate: false
 authors:
   - shenxianpeng

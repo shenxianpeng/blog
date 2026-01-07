@@ -5,6 +5,8 @@ tags:
   - SLSA
   - Witness
 authors:
+aliases:
+  - /2023/12/supply-chain-security/
   - shenxianpeng
 date: 2023-12-02
 ---

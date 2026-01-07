@@ -5,6 +5,8 @@ tags:
   - Jenkins
   - DevOps
 date: 2024-10-24
+aliases:
+  - /2024/10/jenkins-upgrade/
 authors:
   - shenxianpeng
 ---

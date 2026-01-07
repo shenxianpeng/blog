@@ -4,6 +4,8 @@ summary: 本文介绍了如何解决 Verisign 时间戳服务器不可用的问�
 tags:
   - CodeSign
 date: 2021-01-06
+aliases:
+  - /2021/01/verisign-server-not-working/
 authors:
   - shenxianpeng
 ---

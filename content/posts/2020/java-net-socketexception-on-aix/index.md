@@ -7,6 +7,8 @@ tags:
   - JFrog
 translate: false
 date: 2020-06-03
+aliases:
+  - /2020/06/java-net-socketexception-on-aix/
 authors:
   - shenxianpeng
 ---

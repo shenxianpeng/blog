@@ -6,6 +6,8 @@ tags:
   - SonarQube
   - Gradle
 date: 2021-09-18
+aliases:
+  - /2021/09/sonarqube-integration/
 authors:
   - shenxianpeng
 ---

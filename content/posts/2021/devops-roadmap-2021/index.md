@@ -4,6 +4,8 @@ summary: 本文介绍了成为DevOps工程师所需的技能和工具，涵盖�
 tags:
   - DevOps
 date: 2021-01-21
+aliases:
+  - /2021/01/devops-roadmap-2021/
 translate: false
 authors:
   - shenxianpeng

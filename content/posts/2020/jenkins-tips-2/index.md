@@ -4,6 +4,8 @@ summary: 如何在 Jenkins Pipeline 中将 Shell 返回的字符串处理为字�
 tags:
   - Jenkins
 date: 2020-06-22
+aliases:
+  - /2020/06/jenkins-tips-2/
 translate: false 
 authors:
   - shenxianpeng

@@ -4,6 +4,8 @@ tags:
   - Thoughts
   - Summary
 date: 2020-12-31
+aliases:
+  - /2020/12/2020-summary/
 author: shenxianpeng
 ---
 

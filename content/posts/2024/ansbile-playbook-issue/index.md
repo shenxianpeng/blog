@@ -4,6 +4,8 @@ summary: 介绍在 Windows Server 2022 上执行 Ansible playbook 时出现 Powe
 tags:
   - Ansible
 date: 2024-11-18
+aliases:
+  - /2024/11/ansbile-playbook-issue/
 authors:
   - shenxianpeng
 ---

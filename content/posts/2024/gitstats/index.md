@@ -4,6 +4,8 @@ summary: 介绍 GitStats 项目的复活过程，包括迁移到 Python 3、创�
 tags:
   - gitstats
 date: 2024-11-28
+aliases:
+  - /2024/11/gitstats/
 authors:
   - shenxianpeng
 ---

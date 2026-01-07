@@ -5,6 +5,8 @@ tags:
   - Jenkins
   - DevOps
 date: 2020-07-06
+aliases:
+  - /2020/07/jenkins-best-practice/
 authors:
   - shenxianpeng
 ---

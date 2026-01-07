@@ -2,6 +2,8 @@
 title: Jenkinsfile 配置
 summary: 本文介绍了如何使用 Jenkinsfile 配置 Jenkins Pipeline，包括构建、测试和发布阶段的示例，以及如何处理邮件通知。
 date: 2018-04-14
+aliases:
+  - /2018/04/jenkinsfile-configure/
 tags:
 - Jenkins
 - Pipeline

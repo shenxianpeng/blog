@@ -5,6 +5,8 @@ tags:
   - Summary
 author: shenxianpeng
 date: 2022-12-28
+aliases:
+  - /2022/12/2022-summary/
 ---
 
 时间过得好快，又过完了一年。

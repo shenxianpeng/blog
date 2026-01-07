@@ -4,6 +4,8 @@ summary: 本文介绍如何使用 Commit Check 工具来验证 Git 提交信息�
 tags:
   - Git
 authors:
+aliases:
+  - /2023/05/commit-check/
   - shenxianpeng
 date: 2023-05-09
 ---

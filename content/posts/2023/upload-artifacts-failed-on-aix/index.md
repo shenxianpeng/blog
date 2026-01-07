@@ -6,6 +6,8 @@ tags:
   - Artifactory
   - Troubleshooting
 authors:
+aliases:
+  - /2023/08/upload-artifacts-failed-on-aix/
   - shenxianpeng
 date: 2023-08-29
 ---

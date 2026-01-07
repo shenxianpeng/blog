@@ -5,6 +5,8 @@ tags:
   - GitHub
   - DevOps
 authors:
+aliases:
+  - /2023/12/automatic-categorize-release-notes/
   - shenxianpeng
 date: 2023-12-27
 ---

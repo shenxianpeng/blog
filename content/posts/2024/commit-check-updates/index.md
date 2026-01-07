@@ -6,6 +6,8 @@ tags:
   - DevOps
 draft: true
 date: 2024-11-23
+aliases:
+  - /2024/11/commit-check-updates/
 authors:
   - shenxianpeng
 ---

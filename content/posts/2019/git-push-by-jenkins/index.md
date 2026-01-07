@@ -2,6 +2,8 @@
 title: 通过 Jenkins 来提交修改的代码 git push by Jenkins
 summary: 如何通过 Jenkins Pipeline 脚本来提交修改的代码到 Git 仓库，包括克隆仓库、修改代码和推送更改等步骤。
 date: 2019-07-22
+aliases:
+  - /2019/07/git-push-by-jenkins/
 tags:
 - Jenkins
 - Git

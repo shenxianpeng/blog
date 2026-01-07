@@ -5,6 +5,8 @@ tags:
   - SLSA
   - Python
 authors:
+aliases:
+  - /2023/11/python-and-slsa/
   - shenxianpeng
 translate: false
 date: 2023-11-15

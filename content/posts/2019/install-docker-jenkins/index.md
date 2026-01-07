@@ -6,6 +6,8 @@ tags:
   - Jenkins
   - Docker
 date: 2019-12-01
+aliases:
+  - /2019/12/install-docker-jenkins/
 translate: false
 authors:
   - shenxianpeng

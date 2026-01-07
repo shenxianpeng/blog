@@ -5,6 +5,8 @@ summary: |
 tags:
   - Linux
 authors:
+aliases:
+  - /2022/09/restrict-connect-server/
   - shenxianpeng
 date: 2022-09-16
 ---

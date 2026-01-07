@@ -5,6 +5,8 @@ tags:
   - Jenkins
 translate: false
 authors:
+aliases:
+  - /2024/04/jenkins-contributors/
   - shenxianpeng
 date: 2024-04-21
 ---

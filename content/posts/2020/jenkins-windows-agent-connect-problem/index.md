@@ -6,6 +6,8 @@ tags:
   - Troubleshooting
   - Jenkins
 date: 2020-07-16
+aliases:
+  - /2020/07/jenkins-windows-agent-connect-problem/
 authors:
   - shenxianpeng
 ---

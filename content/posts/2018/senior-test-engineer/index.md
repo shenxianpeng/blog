@@ -2,6 +2,8 @@
 title: 我眼中的高级测试工程师
 summary: 本文介绍了高级测试工程师所需的技能和经验，包括测试理论、业务能力、工具使用、代码能力等方面，帮助读者了解如何成为一名优秀的高级测试工程师。
 date: 2018-05-06
+aliases:
+  - /2018/05/senior-test-engineer/
 tags:
 - Work
 - Others

@@ -6,6 +6,8 @@ tags:
   - Git
 translate: false
 date: 2020-01-21
+aliases:
+  - /2020/01/git-stats-jenkins/
 authors:
   - shenxianpeng
 ---

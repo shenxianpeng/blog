@@ -6,6 +6,8 @@ tags:
   - LCOV
   - Coverage
 date: 2021-08-17
+aliases:
+  - /2021/07/gcov-example/
 authors:
   - shenxianpeng
 ---

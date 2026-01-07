@@ -1,6 +1,8 @@
 ---
 title: 从测试转开发
 date: 2018-12-26
+aliases:
+  - /2018/12/from-qa-to-dev/
 summary: 从测试转开发的五个月，工作、学习、生活的感悟和总结。
 tags:
   - Thoughts

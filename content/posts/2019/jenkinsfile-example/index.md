@@ -3,6 +3,8 @@ title: Jenkinsfile example - 实现交互、clone 多个仓库以及 git push
 summary: |
   这个 Jenkinsfile 示例展示了如何在 Jenkins Pipeline 中实现交互式输入、克隆多个 Git 仓库，并在构建完成后将代码推送到远程仓库。
 date: 2019-07-07
+aliases:
+  - /2019/07/jenkinsfile-example/
 tags:
   - Jenkins
   - Pipeline

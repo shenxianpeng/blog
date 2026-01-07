@@ -5,6 +5,8 @@ tags:
   - Dokerfile
   - Docker
 date: 2022-01-12
+aliases:
+  - /2022/01/docker-best-practice/
 authors:
   - shenxianpeng
 ---

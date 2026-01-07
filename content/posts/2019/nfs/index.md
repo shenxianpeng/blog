@@ -6,6 +6,8 @@ tags:
   - Shell
   - Jenkins
 date: 2019-09-10
+aliases:
+  - /2019/09/nfs/
 authors:
   - shenxianpeng
 ---

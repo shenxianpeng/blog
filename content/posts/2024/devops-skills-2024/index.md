@@ -6,6 +6,8 @@ tags:
   - DevSecOps
 translate: false
 authors:
+aliases:
+  - /2024/04/devops-skills-2024/
   - shenxianpeng
 date: 2024-04-08
 ---

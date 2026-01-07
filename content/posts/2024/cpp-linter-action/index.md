@@ -7,6 +7,8 @@ tags:
   - clang
   - cpp-linter
 authors:
+aliases:
+  - /2024/02/cpp-linter-action/
   - shenxianpeng
 date: 2024-02-17
 ---

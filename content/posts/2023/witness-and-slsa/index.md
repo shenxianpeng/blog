@@ -5,6 +5,8 @@ tags:
   - SLSA
   - Witness
 authors:
+aliases:
+  - /2023/11/witness-and-slsa/
   - shenxianpeng
 date: 2023-11-30
 ---

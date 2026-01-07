@@ -3,6 +3,8 @@ title: Git 分支策略
 summary: |
   介绍大型项目的 Git 分支策略，包括 master、develop、release 和 hotfix 分支的作用和使用方法，帮助团队更好地管理代码和版本发布。
 date: 2019-07-28
+aliases:
+  - /2019/07/git-branching-strategy/
 tags: 
   - Git
   - DevOps

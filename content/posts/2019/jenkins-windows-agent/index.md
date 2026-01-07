@@ -3,6 +3,8 @@ title: Jenkins Windows Agent 配置
 summary: |
   本文提供 Jenkins Windows Agent 的详细配置步骤，包括 Java 运行时准备、节点创建以及常见问题的排查方法。
 date: 2019-05-12
+aliases:
+  - /2019/05/jenkins-windows-agent/
 tags:
   - Jenkins
   - Jenkins
