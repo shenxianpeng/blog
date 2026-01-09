@@ -24,7 +24,7 @@ layoutBackgroundHeaderSpace: false
 {{< timeline >}}
 
 {{< timelineItem icon="tag" header="Hi! I'm Xianpeng Shen" badge="Welcome" subheader="Welcome to my personal site">}}
-I write blog posts, develop open source software, and contribute to open source projects.
+I write <a href="../posts/">blog posts</a>, develop <a href="../portfolio/">open source software</a>, and contribute to open source projects.
 {{< /timelineItem >}}
 
 {{< timelineItem icon="globe" header="Based in Vilnius, Lithuania" badge="Vilnius, Lithuania" subheader="Explore · Learn · Share" >}}
