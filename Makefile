@@ -18,4 +18,11 @@ install-deps:
 translate:
 	python3 .github/auto_translate.py
 
-.PHONY: default dev build install-deps translate
+
+checkpoint:
+	@git add -A
+	@git commit -m "checkpoint at $$(date '+%Y-%m-%dT%H:%M:%S%z')"
+	@git push
+	@echo Checkpoint created and pushed to remote
+
+.PHONY: default dev build install-deps translate checkpoint
