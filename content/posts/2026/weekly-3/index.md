@@ -2,7 +2,7 @@
 title: 攻城狮周刊（第 3 期）：AI 与平台工程的深度融合，重塑开发者未来
 summary: 这里记录每周值得分享的 DevOps 与 AI 技术内容，周五发布。本杂志开源，欢迎投稿。
 tags: 
-  - Thoughts
+  - Weekly
 translate: false
 authors: 
   - shenxianpeng
