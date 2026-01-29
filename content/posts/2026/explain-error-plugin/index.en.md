@@ -38,13 +38,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'make build'  // 模拟构建过程
+                sh 'make build'  // Simulate build process
             }
         }
     }
     post {
         failure {
-            // 指定语言为中文
+            // Specify language as Chinese
             explainError(language: '中文')
         }
     }
@@ -86,12 +86,12 @@ pipeline {
     post {
         failure {
             script {
-                // 获取解释内容
+                // Get explanation content
                 def explanation = explainError(language: '中文')
                 echo "AI 解释结果：${explanation}"
 
-                // 你可以在这里做更多自动化处理
-                // 例如发送到 Slack 或邮件
+                // Further processing with the explanation
+                // For example, sending to Slack or email
             }
         }
     }
@@ -104,10 +104,10 @@ This way, you not only see the AI explanation in the sidebar but can also integr
 
 ## Summary
 
-| Feature                 | Description                                                                  |
-| ----------------------- | ---------------------------------------------------------------------------- |
+| Feature                 | Description                            |
+| ----------------------- | -------------------------------------- |
 | 🌐 Multilingual Support | Allows AI explanations to be returned in a specified language (Chinese, Japanese, etc.) via the `language:` parameter. |
-| 🔁 Return Value Support | Explanation content can be returned as a Pipeline step value for automated processing.         |
+| 🔁 Return Value Support | Explanation content can be returned as a Pipeline step value for automated processing. |
 
 These two enhancements make the Explain Error Plugin **more flexible, internationalized, and suitable for more complex CI/CD workflows**. If you want error explanations to better align with your team's language or automate integration with notification systems, this update will greatly improve your experience! ([GitHub][1])
 
