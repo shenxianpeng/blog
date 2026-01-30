@@ -15,17 +15,19 @@ date: 2026-01-30
 
 ## 本周封面
 
-![](featured.jpg)
+![](featured.png)
 
-GitHub Copilot CLI 的 ASCII 动画 banner，展示了 AI 如何深入到开发者的终端工作流程中。（[via](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)）
+开发者正在将 Mac Mini 作为永远在线的 AI 助手服务器。（[via Unsplash](https://unsplash.com/photos/mac-mini)）
 
-## AI Agent 时代来临
+## 从 ClawdBot 到 OpenClaw：AI 助手回归本地的狂热
 
-本周最引人注目的趋势是 AI Agent 的全面爆发。从 AWS DevOps Agent 到 GitHub Copilot SDK，再到各种 Model Context Protocol (MCP) 服务器的发布，我们看到 AI 正在从简单的代码补全工具进化为能够自主执行复杂任务的智能助手。
+本周技术圈最火爆的现象莫过于 ClawdBot（现已更名为 OpenClaw）引发的"抢购 Mac Mini"热潮。这个开源项目让我们看到了 AI 应用的另一种可能性——不是追求更大的模型、更强的云服务，而是把 AI 助手"养"在自己的电脑里。
 
-AWS 发布的 DevOps Agent 能够自主进行根因分析和故障排除，将原本需要数小时的问题定位工作缩短到分钟级别。GitHub 则通过 Copilot SDK 让开发者能够将 AI Agent 集成到任何应用中。这些进展标志着软件工程正在进入一个新时代——工程师将从纯粹的代码生产者转变为 AI 的协调者和验证者。
+OpenClaw 的核心创新在于将 AI 助手整合进日常的即时通讯工具（WhatsApp、Telegram、iMessage），并赋予其主动性和执行能力。它不再是一个"你不问，它不答"的被动工具，而是一个能够 24 小时待命、主动提醒、执行任务的数字管家。这种从"对话"到"代理"的转变，正是 Agent 时代的真正到来。
 
-对于 DevOps 工程师而言，这意味着我们需要重新思考工作流程的设计，学会如何有效地与 AI Agent 协作，同时保持对关键决策的控制权。
+但这个项目也暴露出了严重的安全隐患。研究人员发现大量公开暴露的 OpenClaw 服务器因配置不当而泄露 API 密钥和私密对话。这提醒我们：**便利性往往是安全性的天敌**。当我们把家门钥匙交给 AI 管家时，必须先确保它自己会锁门。
+
+这个现象背后，是工程师们对数据主权和本地控制的执念。在这个万物皆云的时代，竟然有一群人选择把小盒子搬回家。这不是倒退，而是在云和端之间寻找新的平衡点——既享受 AI 的便利，又保持对数据的掌控。也许过不了多久，在家里放一台"数字大脑"会像当年买路由器一样普遍。
 
 ## 行业动态
 
