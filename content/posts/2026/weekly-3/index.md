@@ -1,218 +1,217 @@
 ---
-title: 攻城狮周刊（第 3 期）：从自动化到智能化，DevOps 的范式转变
+title: 攻城狮周刊（第 3 期）：AI Agent 时代来临
 summary: 这里记录每周值得分享的 DevOps 与 AI 技术内容，周五发布。本杂志开源，欢迎投稿。
 tags: 
   - Weekly
 translate: false
 authors: 
   - shenxianpeng
-date: 2026-01-17
+date: 2026-01-30
 ---
 
-这里记录每周值得分享的 DevOps 与 AI 技术内容，周五发布。
+这里记录每周值得分享的 DevOps 与 AI 技术内容,周五发布。
 
 本杂志[开源](https://github.com/shenxianpeng/weekly)，欢迎[投稿](https://github.com/shenxianpeng/weekly/issues)。合作请[邮件联系](mailto:xianpeng.shen@gmail.com)（xianpeng.shen@gmail.com）。
 
 ## 本周封面
 
-![封面图](featured.png)
+![](featured.jpg)
 
-Kubernetes 生态系统在 2026 年持续演进，从容器编排平台转变为智能化基础设施控制平面。
+GitHub Copilot CLI 的 ASCII 动画 banner，展示了 AI 如何深入到开发者的终端工作流程中。（[via](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)）
 
-## 从自动化到智能化
+## AI Agent 时代来临
 
-传统 DevOps 追求的是"自动化一切"——从代码构建、测试到部署的每个环节都通过脚本和流水线实现自动化。然而，进入 2026 年，我们正在见证一个更深层次的转变：从"自动化"到"智能化"。
+本周最引人注目的趋势是 AI Agent 的全面爆发。从 AWS DevOps Agent 到 GitHub Copilot SDK，再到各种 Model Context Protocol (MCP) 服务器的发布，我们看到 AI 正在从简单的代码补全工具进化为能够自主执行复杂任务的智能助手。
 
-自动化是预定义规则的执行，无论环境如何变化，它都按照既定脚本运行。而智能化则具备上下文理解能力，能够根据系统状态、历史数据和业务目标，自主做出决策。这不仅仅是在原有工具上叠加 AI 功能那么简单，而是重新思考整个 DevOps 工作流的设计哲学。
+AWS 发布的 DevOps Agent 能够自主进行根因分析和故障排除，将原本需要数小时的问题定位工作缩短到分钟级别。GitHub 则通过 Copilot SDK 让开发者能够将 AI Agent 集成到任何应用中。这些进展标志着软件工程正在进入一个新时代——工程师将从纯粹的代码生产者转变为 AI 的协调者和验证者。
 
-例如，传统 CI/CD 流水线会对每次提交执行相同的测试集，而智能化的流水线能够分析代码变更的范围和性质，只运行相关的测试，甚至预测哪些测试最可能失败。传统监控系统在指标超过阈值时触发告警，而智能化系统能够识别异常模式、预测故障并自动采取补救措施。
-
-这种转变对 DevOps 工程师提出了新的要求：不再是"写出完美的自动化脚本"，而是"设计出能够自我优化的系统"；不再是"定义所有可能的规则"，而是"让系统学会在不确定性中做决策"。
+对于 DevOps 工程师而言，这意味着我们需要重新思考工作流程的设计，学会如何有效地与 AI Agent 协作，同时保持对关键决策的控制权。
 
 ## 行业动态
 
-1、**Kubernetes 1.33 Beta 版本强化 AI/ML 工作负载支持**
+1、**AWS DevOps Agent 正式发布**
 
-![Kubernetes AI/ML](k8s-ai.png)
+![](news-1.png)
 
-Kubernetes 1.33 Beta 版本在 1 月中旬发布，重点增强了对 AI/ML 工作负载的原生支持。新版本引入了动态资源分配（DRA）API 的 GA 版本，允许更灵活的 GPU 和其他加速器资源调度。此外，新增的"训练任务检查点"功能让长时间运行的 ML 训练任务可以自动保存状态并在节点故障后恢复，大幅降低了昂贵计算资源的浪费。
+AWS 在 re:Invent 2025 上宣布的 DevOps Agent 终于正式发布生产环境最佳实践指南。这个 AI Agent 能够自主进行根因分析和事故响应，通过关联多个服务的遥测数据、审查部署历史和理解复杂的应用依赖关系来快速定位问题。AWS 团队分享了从原型到产品的开发经验，特别强调了如何确保 Agent 生成有用的发现和观察结果。
 
-对于运行 AI 工作负载的团队来说，这意味着可以更高效地利用 GPU 资源，减少因节点故障导致的训练中断。
+这标志着 DevOps 领域进入了自动化运维的新阶段。传统的人工分析方式效率低下且容易出错，而 AI Agent 能够在压力之下快速恢复服务，对于提升系统可靠性具有重要意义。
 
-2、**GitHub Actions 引入"智能工作流"功能**
+2、**Kubernetes 宣布 Ingress NGINX 将于 2026 年 3 月退役**
 
-![GitHub Actions AI](github-actions-ai.png)
+![](news-2.png)
 
-GitHub 在 1 月宣布 Actions 新增"智能工作流"（Intelligent Workflows）功能，这是一个基于机器学习的 CI/CD 优化工具。它会分析项目的历史构建数据、代码变更模式和测试结果，自动调整工作流执行策略。例如，对于只修改文档的 PR，系统会自动跳过耗时的集成测试；对于高风险代码区域的变更，会自动增加额外的安全扫描步骤。
+Kubernetes Steering 和 Security Response 委员会发布声明，宣布作为云原生环境中约一半基础设施核心组件的 Ingress NGINX 将于 2026 年 3 月退役。这一决定是在多年公开警告该项目缺乏维护者之后做出的。官方推荐用户迁移到 Gateway API，这是 Kubernetes 下一代流量管理方案。
 
-初步数据显示，启用此功能的项目平均 CI 执行时间减少了 35%，同时测试覆盖的有效性提升了 20%。
+这对依赖 Ingress NGINX 的团队来说是一个重要的提醒：开源项目的可持续性不能被视为理所当然。Gateway API 提供了更灵活和强大的功能，迁移虽然需要投入精力，但长期来看是值得的。
 
-3、**AWS 推出 DevOps Copilot for Amazon Q**
+3、**Amazon 据报道洽谈向 OpenAI 投资 500 亿美元**
 
-![AWS DevOps Copilot](aws-copilot.png)
+![](news-3.jpg)
 
-AWS 在 re:Invent 后续发布了 DevOps Copilot，这是一个集成在 Amazon Q 中的 AI 助手，专门为 DevOps 工程师设计。它能够理解自然语言指令，自动执行常见的运维任务，如分析 CloudWatch 日志、优化 EC2 实例配置、建议 Lambda 函数性能改进等。
+据多家媒体报道，Amazon 正在与 OpenAI 就一笔高达 500 亿美元的投资进行谈判。这将是 AI 领域有史以来最大规模的投资之一，也反映出科技巨头在 AI 竞赛中的激进态度。此前，微软已经向 OpenAI 投资超过 130 亿美元。
 
-更重要的是，它具备"学习"能力，会记住团队的偏好和最佳实践，逐渐成为团队的"定制化助手"。
+Amazon 的这一举动可能会改变 AI 市场的竞争格局。对于开发者来说，这意味着我们将看到更多基于 OpenAI 技术的 AWS 服务集成，以及更强大的 AI 能力。
 
-4、**OpenTelemetry 1.5 发布，原生支持 AI 应用跟踪**
+4、**Microsoft 持续采购 Nvidia 和 AMD AI 芯片**
 
-![OpenTelemetry AI](otel-ai.png)
+![](news-4.jpg)
 
-OpenTelemetry 1.5 版本在 1 月发布，新增对 AI 应用的原生支持。现在可以直接跟踪 LLM API 调用、嵌入生成和向量数据库查询，自动收集 token 使用量、推理延迟和成本数据。这对于运行 AI 应用的团队来说是重大利好，可以像监控传统 API 一样监控 AI 组件。
+尽管 Microsoft 推出了自己的 AI 芯片，CEO Satya Nadella 表示公司不会停止从 Nvidia 和 AMD 采购 AI 芯片。这反映出 AI 基础设施建设对算力的巨大需求，单一供应商难以满足快速增长的计算需求。Microsoft 采取多供应商策略，既保证了供应安全，也推动了芯片市场的竞争。
 
-配合新的"AI Observability Dashboard"，工程师可以清晰看到每个 LLM 调用的完整链路、成本分布和性能瓶颈。
+这对 AI 工程师来说是个好消息，意味着我们将有更多硬件选择，也能推动 AI 训练和推理成本的下降。
+
+5、**SonicWall 防火墙遭黑客攻击导致金融科技公司数据泄露**
+
+![](news-5.jpg)
+
+金融科技公司 Marquis 将其数据泄露归咎于防火墙供应商 SonicWall 遭受的黑客攻击。这起事件再次提醒我们，供应链安全是现代企业面临的重要挑战。即使自身安全措施得当，第三方服务商的漏洞也可能成为攻击者的入口。
+
+对于 DevOps 团队，这意味着需要建立更完善的供应商安全评估机制，实施零信任架构，并制定完善的事故响应预案。
 
 ## 深度阅读
 
-1、[**Platform Engineering 的下一步：从"铺路"到"导航"**](https://thenewstack.io/platform-engineering-next-evolution/)（英文）
+1、[从像素到字符：GitHub Copilot CLI 动画 ASCII Banner 背后的工程实践](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)（英文）
 
-![Platform Engineering Next](platform-next.png)
+![](blog-1.png)
 
-The New Stack 这篇文章深入探讨了平台工程的演进方向。作者认为，第一代平台工程专注于"铺设黄金之路"（Golden Path），提供标准化的模板和工具；而第二代平台工程需要具备"导航"能力，根据开发者的具体场景和目标，动态推荐最佳实践路径。
+GitHub 工程团队详细介绍了如何为 Copilot CLI 构建一个可访问、多终端兼容的 ASCII 动画。文章深入讲解了自定义工具链的开发、ANSI 颜色角色的使用，以及高级终端工程技术。这不仅是一个技术实现案例，更展示了对用户体验细节的极致追求。
 
-文章引用了 Spotify 和 Netflix 的案例，展示了他们如何利用 AI 让平台"理解"开发者意图，而不仅仅是执行命令。例如，当开发者说"我需要一个高可用的 API 服务"时，平台能够自动推断出需要负载均衡、健康检查、自动扩缩容等配置，而不是让开发者手动填写 50 个表单字段。
+文章特别值得关注的是如何在不同终端环境下保证动画的一致性和可访问性，这对于开发跨平台 CLI 工具的工程师很有参考价值。
 
-2、[**CI/CD 的未来：从流水线到意图驱动工作流**](https://devops.com/intent-driven-cicd/)（英文）
+2、[从 AI Agent 原型到产品：构建 AWS DevOps Agent 的经验教训](https://aws.amazon.com/blogs/devops/from-ai-agent-prototype-to-product-lessons-from-building-aws-devops-agent/)（英文）
 
-![Intent Driven CI/CD](intent-cicd.png)
+![](blog-2.png)
 
-DevOps.com 的这篇长文分析了 CI/CD 的演进趋势。传统流水线是"指令式"的（Imperative）——你需要明确定义每一步做什么；而未来的 CI/CD 将是"声明式"甚至"意图式"的（Intent-driven）——你只需要描述期望的结果，系统会自动规划实现路径。
+AWS DevOps Agent 团队成员 Efe Karakus 分享了从原型到产品的完整开发历程。文章重点介绍了如何确保 AI Agent 在事故响应场景下生成有用的发现和观察结果，包括如何设计 Agent 的能力边界、如何处理不确定性，以及如何与现有的运维工具集成。
 
-文章提供了大量代码示例，展示如何用"意图"替代"步骤"。例如，不再写"运行单元测试，然后运行集成测试，然后部署到 staging"，而是写"确保代码质量达到生产标准"，系统会根据代码变更性质决定需要运行哪些测试。
+这篇文章对于正在构建 AI Agent 的团队非常有价值，特别是在如何从概念验证走向生产环境方面提供了实用的指导。
 
-作者认为，这种转变的关键是建立"信任模型"——如何让团队相信 AI 做出的决策是正确的？文章建议采用"可解释 AI"和"渐进式自动化"策略。
+3、[Anders Hejlsberg 的 7 条经验：C# 和 TypeScript 架构师的智慧](https://github.blog/developer-skills/programming-languages-and-frameworks/7-learnings-from-anders-hejlsberg-the-architect-behind-c-and-typescript/)（英文）
 
-3、[**Kubernetes 安全的新范式：从防御到免疫**](https://kubernetes.io/blog/2026/01/security-immune-system/)（英文）
+![](blog-3.png)
 
-![Kubernetes Security](k8s-security.png)
+作为 C# 和 TypeScript 的架构师，Anders Hejlsberg 分享了他在语言设计和软件工程方面的核心经验，包括快速反馈循环的重要性、如何扩展软件、开源可见性的价值，以及如何构建持久的工具。
 
-Kubernetes 官方博客这篇文章提出了一个新的安全理念："免疫系统"模型。传统安全策略是"防御式"的——在已知威胁周围建立防护墙；而免疫系统模型是"自适应"的——能够识别和响应未知威胁。
+文章中最有价值的洞见是关于语言设计的权衡：如何在添加新特性和保持语言简洁之间取得平衡，以及如何通过开源社区的反馈来改进语言。
 
-文章介绍了几个新兴技术，如 eBPF 基础的运行时监控、基于机器学习的异常检测、以及自动化的威胁响应。例如，当系统检测到某个 Pod 出现异常网络行为时，不仅会触发告警，还会自动隔离该 Pod、收集取证数据，并启动备用实例，整个过程无需人工介入。
+4、[使用 Datadog MCP 服务器和 AWS DevOps Agent 加速自主事故解决](https://aws.amazon.com/blogs/devops/accelerate-autonomous-incident-resolutions-using-the-datadog-mcp-server-and-aws-devops-agent-in-preview/)（英文）
 
-对于安全团队来说，这意味着从"事后分析"转向"主动防御"，从"人工响应"转向"自动化免疫"。
+![](blog-4.png)
+
+AWS 与 Datadog 合作推出的 MCP 服务器集成，展示了如何将 AI Agent 与可观测性平台结合。值班工程师以往需要花费数小时在多个工具之间手动调查故障，现在 AI Agent 可以自动关联日志、指标和追踪数据，大幅缩短故障恢复时间。
+
+这篇文章展示了 Model Context Protocol 的实际应用价值，为 AI Agent 与企业工具集成提供了标准化的方案。
+
+5、[AI 驱动的开发生命周期（AI-DLC）开源自适应工作流](https://aws.amazon.com/blogs/devops/open-sourcing-adaptive-workflows-for-ai-driven-development-life-cycle-ai-dlc/)（英文）
+
+![](blog-5.png)
+
+AWS 开源了 AI-DLC 自适应工作流，这是一套将 AI 整合到软件开发全生命周期的方法论。通过强调 AI 主导的工作流和以人为中心的决策制定，AI-DLC 承诺同时提升开发速度和质量。文章分享了与不同行业工程团队合作的经验，说明了如何有效地将 AI 集成到工程工作流中。
+
+这个开源项目为希望采用 AI 辅助开发的团队提供了具体的实施框架和最佳实践。
 
 ## 效率工具
 
-1、[**Devbox - 可复制的开发环境管理工具**](https://github.com/jetpack-io/devbox)
+1、**[GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/power-agentic-workflows-in-your-terminal-with-github-copilot-cli/)**
 
-![Devbox](devbox.png)
+![](tool-1.png)
 
-Devbox 是一个轻量级工具，让你用配置文件定义开发环境，类似 Docker，但更简单。它基于 Nix 包管理器，确保团队每个成员的开发环境完全一致。不需要写 Dockerfile，只需一个 `devbox.json` 文件即可定义所需的工具和依赖。
+GitHub Copilot CLI 让你可以直接在终端中与 Copilot 交互，支持 agentic 工作流。通过斜杠命令，你可以运行测试、修复代码、获取支持，而无需离开终端。这大幅提升了命令行工作的效率，特别适合习惯在终端环境下工作的开发者。
 
-⭐ Star 数: 7,234
+CLI 支持自然语言查询，可以帮助你快速找到和执行复杂的命令，还能根据上下文提供智能建议。对于需要频繁在终端操作的 DevOps 工程师来说，这是一个必备工具。
 
-2、[**k9s - 终端版 Kubernetes 管理工具**](https://github.com/derailed/k9s)
+2、**[GitHub Copilot SDK](https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/)**
 
-![k9s](k9s.png)
+![](tool-2.png)
 
-k9s 提供了一个交互式的终端 UI 来管理 Kubernetes 集群，比 kubectl 更直观。支持实时查看 Pod 日志、资源监控、快捷键操作，极大提升 K8s 日常运维效率。对于经常与 Kubernetes 打交道的工程师来说是必备工具。
+现已进入技术预览阶段的 GitHub Copilot SDK，可以让你将 AI Agent 集成到任何应用中。SDK 提供了规划、调用工具、编辑文件和运行命令的可编程层。这意味着你可以在自己的应用中嵌入类似 Copilot 的智能能力，而无需从头构建。
 
-⭐ Star 数: 25,678
+SDK 的发布降低了 AI Agent 的开发门槛，让更多应用能够具备智能辅助能力。对于产品开发者来说，这是一个将 AI 能力快速集成到产品中的绝佳机会。
 
-3、[**Infracost - 基础设施成本预测工具**](https://github.com/infracost/infracost)
+3、**[Mermaid ASCII](https://mermaid-ascii.art/)**
 
-![Infracost](infracost.png)
+![](tool-3.png)
 
-Infracost 可以在 Pull Request 中自动显示 Terraform/Pulumi 代码变更对云成本的影响。支持 AWS、Azure、GCP 等主流云平台，帮助团队在代码审查阶段就控制成本。特别适合需要严格管理云支出的团队。
+Mermaid ASCII 让你可以在终端中渲染 Mermaid 图表。这个工具对于需要在命令行环境下查看架构图、流程图的场景非常有用。支持多种图表类型，包括流程图、序列图、类图等。
 
-⭐ Star 数: 10,234
+对于喜欢在终端工作的工程师，或者需要在 SSH 连接的远程服务器上查看文档的场景，这个工具能够大幅提升效率。
+
+4、**[AWS Infrastructure as Code MCP Server](https://aws.amazon.com/blogs/devops/introducing-the-aws-infrastructure-as-code-mcp-server-ai-powered-cdk-and-cloudformation-assistance/)**
+
+![](tool-4.png)
+
+AWS 发布的 IaC MCP Server 为 AI 助手提供了与 AWS 基础设施开发工作流集成的能力。基于 Model Context Protocol 构建，这个服务器支持 AI 助手进行文档搜索、验证和故障排除。
+
+这个工具特别适合正在使用 CDK 或 CloudFormation 的团队，可以大幅减少查找文档和调试基础设施代码的时间。
+
+5、**[EmulatorJS](https://github.com/EmulatorJS/EmulatorJS)**
+
+![](tool-5.png)
+
+EmulatorJS 是一个基于 JavaScript 的多系统模拟器，支持在浏览器中运行多种经典游戏平台。虽然不是典型的 DevOps 工具，但展示了 WebAssembly 技术的强大能力，对于理解浏览器性能优化和 WebAssembly 应用很有参考价值。
 
 ## AI 相关
 
-1、[**OpenDevin - 开源 AI 软件工程师**](https://github.com/OpenDevin/OpenDevin)
+1、[Project Genie：实时生成交互式世界](https://labs.google/)
 
-![OpenDevin](opendevin.png)
+![](ai-1.png)
 
-OpenDevin 是 Devin AI 的开源替代品，是一个能够自主完成软件开发任务的 AI 代理。给它一个需求，它会规划任务、编写代码、运行测试，甚至提交 PR。虽然还不够成熟，但展示了 AI 代理在软件工程领域的巨大潜力。
+Google 发布的 Project Genie 能够实时生成可交互的 3D 世界。用户可以在生成的环境中自由探索和互动，AI 会根据用户的行为动态生成新的场景内容。这项技术展示了生成式 AI 在游戏和虚拟环境领域的应用潜力。
 
-项目最近更新了对多语言的支持，以及更强的上下文理解能力。
+虽然目前主要面向游戏和创意应用，但这种实时生成和交互技术未来可能应用于模拟训练、虚拟协作等企业场景。
 
-⭐ Star 数: 28,456
+⭐ 相关链接：https://blog.google/technology/google-labs/project-genie/
 
-2、[**Continue - 开源的 AI 代码助手**](https://github.com/continuedev/continue)
+2、[Prism：OpenAI 的新项目](https://openai.com/index/introducing-prism/)
 
-![Continue](continue.png)
+![](ai-2.png)
 
-Continue 是一个开源的 VS Code/JetBrains 插件，提供类似 GitHub Copilot 的功能，但支持自定义 LLM 后端。你可以使用 Claude、Llama、或本地模型，完全掌控数据流向。对于对数据隐私有要求的团队来说是理想选择。
+OpenAI 推出的 Prism 项目聚焦于提升 AI 系统的可解释性和透明度。该项目旨在帮助用户更好地理解 AI 的决策过程，增强对 AI 系统的信任。
 
-最新版本支持"代理模式"，可以自主完成复杂的重构任务。
+对于在生产环境中部署 AI 的企业来说，可解释性一直是一个关键挑战。Prism 的发布为解决这个问题提供了新的思路。
 
-⭐ Star 数: 15,234
+⭐ 相关链接：https://openai.com/index/introducing-prism/
 
-3、[**LiteLLM - 统一的 LLM API 接口**](https://github.com/BerriAI/litellm)
+3、[Unrolling the Codex Agent Loop](https://openai.com/index/unrolling-the-codex-agent-loop/)
 
-![LiteLLM](litellm.png)
+![](ai-3.png)
 
-LiteLLM 提供了一个统一的接口来调用不同的 LLM API（OpenAI、Anthropic、Cohere 等），避免了供应商锁定。它还提供了负载均衡、回退、成本跟踪等企业级功能，让你可以轻松切换或组合使用多个 LLM 提供商。
+OpenAI 工程团队详细解析了 Codex Agent 的工作循环机制。文章深入探讨了 Agent 如何理解代码上下文、规划执行步骤、生成代码并验证结果。这对于理解 AI 编程助手的内部工作原理非常有帮助。
 
-对于构建生产级 AI 应用的团队来说，这是避免单点依赖的最佳实践。
+文章特别有价值的部分是关于如何处理长上下文和多步骤推理，这些技术对于构建复杂的 AI Agent 系统很有启发。
 
-⭐ Star 数: 8,945
+⭐ 相关链接：https://openai.com/index/unrolling-the-codex-agent-loop/
 
 ## 学习资源
 
-1、[**System Design Primer - 系统设计学习资源**](https://github.com/donnemartin/system-design-primer)
+1、[Cluster API v1.12 发布：引入原地更新和链式升级](https://kubernetes.io/blog/2026/01/27/cluster-api-v1-12-release/)
 
-![System Design](system-design.png)
+Cluster API v1.12 带来了两个重要新特性：原地更新（In-place Updates）和链式升级（Chained Upgrades）。这些功能让 Kubernetes 集群的生命周期管理更加灵活和高效。原地更新允许在不重建节点的情况下更新配置，而链式升级支持多个版本的连续升级。
 
-这个仓库持续更新，是学习大规模系统设计的最佳资源之一。涵盖从基础概念到高级架构模式，包括可扩展性、一致性、可用性等核心主题。特别适合准备系统设计面试或提升架构能力。
+这是 Kubernetes 平台工程师必读的更新，新特性能够显著减少集群维护的停机时间和复杂度。
 
-最近新增了关于 AI 系统设计的章节，包括如何设计 LLM 推理服务、向量数据库架构等。
+2、[使用 kind 实验 Gateway API](https://kubernetes.io/blog/2026/01/28/experimenting-gateway-api-with-kind/)
 
-⭐ Star 数: 245,678
+这篇教程详细介绍了如何使用 kind（Kubernetes in Docker）搭建本地环境来学习和测试 Gateway API。考虑到 Ingress NGINX 即将退役，学习 Gateway API 变得更加紧迫。文章提供了完整的设置步骤和示例，帮助开发者快速上手。
 
-2、[**DevOps Roadmap 2026**](https://roadmap.sh/devops)
-
-![DevOps Roadmap](devops-roadmap.png)
-
-Roadmap.sh 更新了 2026 年版的 DevOps 学习路线图，新增了 AI/ML 运维、平台工程、FinOps 等新兴领域。这是一个交互式路线图，可以跟踪学习进度，查看每个技能点的详细学习资源。
-
-对于想要系统学习 DevOps 或规划职业发展的工程师来说，这是很好的参考。
-
-3、[**Kubernetes 安全最佳实践 2026**](https://kubernetes.io/docs/concepts/security/security-best-practices/)
-
-![K8s Security Best Practices](k8s-sec.png)
-
-Kubernetes 官方文档更新了安全最佳实践指南，涵盖从集群配置到应用部署的各个层面。特别关注供应链安全、运行时保护和合规性要求。提供了大量实用的配置示例和工具推荐。
-
-## 精彩摘要
-
-1、"自动化是让机器执行你的指令，智能化是让机器理解你的意图。前者节省时间，后者创造价值。"
-—— Werner Vogels，Amazon CTO
-
-这句话精准地概括了当前 DevOps 工具演进的本质。
-
-2、"平台工程的终极目标不是构建一个功能完备的平台，而是让开发者忘记平台的存在。最好的平台是隐形的。"
-—— Kelsey Hightower，Google Cloud 开发者倡导者
-
-提醒我们不要陷入"工具越多越好"的误区，用户体验才是核心。
-
-3、"未来的 SRE 不是写更多的自动化脚本，而是训练系统自己学会应对故障。"
-—— Charity Majors，Honeycomb.io CEO
-
-从"自动化运维"到"自主运维"的转变正在发生。
+对于准备从 Ingress 迁移到 Gateway API 的团队，这是一个很好的起点。
 
 ## 行业观点
 
-1、"Kubernetes 正在从容器编排平台演变为智能基础设施控制平面。未来的 K8s 不仅能调度容器，还能理解应用意图、预测资源需求、自动优化成本。"
-—— Brendan Burns，Kubernetes 联合创始人
+1、"AI 的影响可能与预期不同。虽然很多人担心 AI 会取代工程师，但实际上 AI 更可能改变工程师的工作方式——从纯粹的代码编写者转变为 AI 的协调者和验证者。"
+—— [AI's Impact on Engineering Jobs May Be Different Than Expected](https://semiengineering.com/)
 
-这个观点揭示了 Kubernetes 生态的下一个十年方向：从"执行层"向"智能层"演进。
+现有数据显示，AI 在简化重复性任务方面表现出色，但在需要创造性思维和复杂决策的场景下仍需要人类主导。工程师的价值将更多体现在系统设计、问题定义和质量把控上。
 
-2、"AI 不会取代 DevOps 工程师，但会用 AI 的 DevOps 工程师会取代不会用的。关键是学会如何与 AI 协作，而不是抗拒它。"
-—— Kelsey Hightower
+2、"开源项目的可持续性不能被视为理所当然。Ingress NGINX 的退役提醒我们，即使是关键基础设施也可能因为缺乏维护者而面临生命周期终结。"
+—— [Ingress NGINX Statement](https://kubernetes.io/blog/2026/01/29/ingress-nginx-statement/)
 
-技能迭代的速度前所未有，持续学习不再是选项，而是必需。
+这个案例凸显了企业在选择开源项目时需要评估项目的健康度和社区活跃度。投入资源参与开源项目维护，而不仅仅是使用，对于保障技术栈的长期稳定性至关重要。
 
-3、"供应链安全已经从'最佳实践'变成了'基本要求'。2026 年如果你的 CI/CD 还没有集成 SLSA 和 SBOM，你已经落后了。"
-—— Dan Lorenc，Chainguard 创始人
+3、"Model Context Protocol 正在成为 AI Agent 与企业工具集成的事实标准。它为 AI 系统访问外部数据和工具提供了一个统一的接口。"
+—— AWS DevOps Blog
 
-软件供应链安全从边缘话题变成了核心关注点，这是整个行业的共识。
+MCP 的标准化降低了 AI Agent 集成的复杂度，让不同的 AI 系统能够更容易地与各种企业工具协作。这对于构建 AI 驱动的工作流至关重要。
 
 （完）
-
----
-
-转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「DevOps攻城狮」
