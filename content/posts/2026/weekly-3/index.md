@@ -1,5 +1,5 @@
 ---
-title: 攻城狮周刊（第 3 期）：AI Agent 时代来临
+title: 攻城狮周刊（第 3 期）：OpenClaw 狂热背后，AI 助手回归本地
 summary: 这里记录每周值得分享的 DevOps 与 AI 技术内容，周五发布。本杂志开源，欢迎投稿。
 tags: 
   - Weekly
@@ -9,7 +9,7 @@ authors:
 date: 2026-01-30
 ---
 
-这里记录每周值得分享的 DevOps 与 AI 技术内容,周五发布。
+这里记录每周值得分享的 DevOps 与 AI 技术内容，周五发布。
 
 本杂志[开源](https://github.com/shenxianpeng/weekly)，欢迎[投稿](https://github.com/shenxianpeng/weekly/issues)。合作请[邮件联系](mailto:xianpeng.shen@gmail.com)（xianpeng.shen@gmail.com）。
 
