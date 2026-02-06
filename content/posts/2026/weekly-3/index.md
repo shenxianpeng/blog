@@ -15,7 +15,7 @@ date: 2026-01-30
 
 ## 本周封面
 
-![](featured.png)
+![封面图](featured.png)
 
 开发者正在将 Mac Mini 作为永远在线的 AI 助手服务器。（[via Unsplash](https://unsplash.com/photos/mac-mini)）
 
