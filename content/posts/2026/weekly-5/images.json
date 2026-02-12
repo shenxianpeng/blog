@@ -1,0 +1,102 @@
+{
+  "featured": {
+    "url": "https://techcrunch.com/2026/02/12/spotify-says-its-best-developers-havent-written-a-line-of-code-since-december-thanks-to-ai/",
+    "title": "AI编程改变软件开发",
+    "type": "article"
+  },
+  "news": [
+    {
+      "url": "https://techcrunch.com/2026/02/12/anthropic-raises-another-30-billion-in-series-g-with-a-new-value-of-380-billion/",
+      "title": "Anthropic 完成 300 亿美元 G 轮融资",
+      "type": "article"
+    },
+    {
+      "url": "https://techcrunch.com/2026/02/12/spotify-says-its-best-developers-havent-written-a-line-of-code-since-december-thanks-to-ai/",
+      "title": "Spotify AI 编程",
+      "type": "article"
+    },
+    {
+      "url": "https://techcrunch.com/2026/02/10/former-github-ceo-raises-record-60m-dev-tool-seed-round-at-300m-valuation/",
+      "title": "Entire 6000万美元种子轮",
+      "type": "article"
+    },
+    {
+      "url": "https://github.blog/news-insights/company-news/pick-your-agent-use-claude-and-codex-on-agent-hq/",
+      "title": "GitHub Agent HQ",
+      "type": "article"
+    },
+    {
+      "url": "https://techcrunch.com/2026/02/11/microsoft-says-hackers-are-exploiting-critical-zero-day-bugs-to-target-windows-and-office-users/",
+      "title": "Microsoft 零日漏洞",
+      "type": "article"
+    },
+    {
+      "url": "https://techcrunch.com/2026/02/11/google-releases-the-first-beta-of-android-17-adopts-a-continous-developer-release-plan/",
+      "title": "Android 17 Beta",
+      "type": "article"
+    }
+  ],
+  "blog": [
+    {
+      "url": "https://www.infoq.com/news/2026/02/openai-runs-chatgpt-postgres/",
+      "title": "OpenAI PostgreSQL 扩展",
+      "type": "article"
+    },
+    {
+      "url": "https://www.infoq.com/news/2026/02/whatsapp-rust-media-malware/",
+      "title": "WhatsApp Rust 媒体解析器",
+      "type": "article"
+    },
+    {
+      "url": "https://techcrunch.com/2026/02/09/the-first-signs-of-burnout-are-coming-from-the-people-who-embrace-ai-the-most/",
+      "title": "AI 倦怠研究",
+      "type": "article"
+    }
+  ],
+  "opensource": [
+    {
+      "url": "https://github.com/google/langextract",
+      "title": "google/langextract",
+      "type": "github"
+    },
+    {
+      "url": "https://github.com/thedotmack/claude-mem",
+      "title": "thedotmack/claude-mem",
+      "type": "github"
+    },
+    {
+      "url": "https://github.com/linshenkx/prompt-optimizer",
+      "title": "linshenkx/prompt-optimizer",
+      "type": "github"
+    },
+    {
+      "url": "https://github.com/KeygraphHQ/shannon",
+      "title": "KeygraphHQ/shannon",
+      "type": "github"
+    },
+    {
+      "url": "https://github.com/tobi/qmd",
+      "title": "tobi/qmd",
+      "type": "github"
+    }
+  ],
+  "ai": [
+    {
+      "url": "https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/",
+      "title": "GitHub Copilot SDK",
+      "type": "article"
+    },
+    {
+      "url": "https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/",
+      "title": "开源永恒九月",
+      "type": "article"
+    }
+  ],
+  "resource": [
+    {
+      "url": "https://github.blog/ai-and-ml/generative-ai/continuous-ai-in-practice-what-developers-can-automate-today-with-agentic-ci/",
+      "title": "Continuous AI in Practice",
+      "type": "article"
+    }
+  ]
+}
