@@ -10,7 +10,11 @@ authors:
 date: 2026-02-17
 ---
 
-之前在公众号分享过 [AIOps 的基本概念](../aiops/index.md)和部分落地场景，主要是围绕运维监控、异常检测和自动化响应等方向。最近接触到 Agentic DevOps 这个概念，以及 GitHub Next 提出的 Continuous AI 相关实践，觉得值得整理出来和大家交流。
+Agentic DevOps 是微软在 2025 年的 Azure Build 大会上提出来的。最近，因为 GitHub 发布了 [GitHub Agentic Workflow](https://github.github.com/gh-aw/) 和 [Continuous AI](https://githubnext.com/projects/continuous-ai) 这个概念，让 Agentic DevOps 再次浮现到眼前。
+
+![](azure-build.webp)
+
+之前在公众号分享过 [AIOps 的基本概念](../aiops/index.md)和部分落地场景，主要是围绕运维监控、异常检测和自动化响应等方向。结合 Agentic DevOps 这个概念，以及 GitHub Next 提出的 Continuous AI 相关实践，觉得值得整理出来和大家交流。
 
 这些内容目前大多仍处于早期探索阶段。我自己也只是基于公开文档和示例做过一些简单尝试，还没有进行大规模生产环境验证。
 
