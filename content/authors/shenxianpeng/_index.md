@@ -4,7 +4,7 @@ title: "沈显鹏"
 
 ### 你好👋, 我是 Xianpeng
 
-**DevOps & Build 工程师** | **Python 爱好者** | **开源项目维护者**
+**Engineer. Builder. Maintainer. | From Code to Infra**
 
 欢迎关注我的微信公众号👇
 
