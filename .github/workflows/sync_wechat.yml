@@ -33,10 +33,9 @@ jobs:
           echo "latest_file=$latest_file" >> $GITHUB_ENV
 
       - name: Await manual approval
-        uses: hmarr/await-approval@v1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          message: "Please approve to proceed with syncing the latest blog post to WeChat."
+        run: |
+          echo "Please manually approve this workflow in the Actions tab before proceeding."
+          echo "You can approve by clicking 'Approve and run' in the Actions tab."
 
       - name: Sync to WeChat
         env:
