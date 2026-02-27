@@ -1,0 +1,65 @@
+name: Sync Latest Blog to WeChat
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync-to-wechat:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Find latest blog post
+        id: find_latest_post
+        run: |
+          # Find the latest modified file in content/posts
+          latest_file=$(find content/posts -type f -name '*.md' -printf '%T@ %p\n' | sort -n | tail -1 | cut -d' ' -f2-)
+          echo "Latest file: $latest_file"
+          echo "::set-output name=latest_file::$latest_file"
+
+      - name: Sync to WeChat
+        env:
+          WECHAT_APP_ID: ${{ secrets.WECHAT_APP_ID }}
+          WECHAT_APP_SECRET: ${{ secrets.WECHAT_APP_SECRET }}
+        run: |
+          latest_file=${{ steps.find_latest_post.outputs.latest_file }}
+          if [ -z "$latest_file" ]; then
+            echo "No latest file found. Exiting."
+            exit 1
+          fi
+
+          # Extract title and content from the markdown file
+          title=$(grep '^title:' "$latest_file" | sed 's/^title: //')
+          content=$(cat "$latest_file")
+
+          # Send the content to WeChat API
+          response=$(curl -X POST "https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=YOUR_ACCESS_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"touser\": \"OPENID\",
+              \"msgtype\": \"text\",
+              \"text\": {
+                \"content\": \"$content\"
+              }
+            }")
+
+          echo "Response: $response"
+
+          if [[ "$response" != *"ok"* ]]; then
+            echo "Failed to sync to WeChat."
+            exit 1
+          fi
+
+          echo "Successfully synced to WeChat."
