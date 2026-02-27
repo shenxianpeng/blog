@@ -29,6 +29,10 @@ jobs:
         run: |
           # Find the latest modified file in content/posts
           latest_file=$(find content/posts -type f -name '*.md' -printf '%T@ %p\n' | sort -n | tail -1 | cut -d' ' -f2-)
+          if [ -z "$latest_file" ]; then
+            echo "No latest file found. Exiting."
+            exit 1
+          fi
           echo "Latest file: $latest_file"
           echo "latest_file=$latest_file" >> $GITHUB_ENV
 
