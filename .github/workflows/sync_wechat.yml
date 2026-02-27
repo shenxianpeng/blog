@@ -21,13 +21,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
       - name: Find latest blog post
         id: find_latest_post
         run: |
           # Find the latest modified file in content/posts
           latest_file=$(find content/posts -type f -name '*.md' -printf '%T@ %p\n' | sort -n | tail -1 | cut -d' ' -f2-)
           echo "Latest file: $latest_file"
-          echo "::set-output name=latest_file::$latest_file"
+          echo "latest_file=$latest_file" >> $GITHUB_ENV
+
+      - name: Await manual approval
+        uses: hmarr/await-approval@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          message: "Please approve to proceed with syncing the latest blog post to WeChat."
 
       - name: Sync to WeChat
         env:
@@ -44,8 +53,19 @@ jobs:
           title=$(grep '^title:' "$latest_file" | sed 's/^title: //')
           content=$(cat "$latest_file")
 
+          # Fetch the latest access_token
+          access_token=$(curl -G "https://api.weixin.qq.com/cgi-bin/token" \
+            --data-urlencode "grant_type=client_credential" \
+            --data-urlencode "appid=$WECHAT_APP_ID" \
+            --data-urlencode "secret=$WECHAT_APP_SECRET" | jq -r '.access_token')
+
+          if [ -z "$access_token" ] || [ "$access_token" == "null" ]; then
+            echo "Failed to fetch access_token. Exiting."
+            exit 1
+          fi
+
           # Send the content to WeChat API
-          response=$(curl -X POST "https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=YOUR_ACCESS_TOKEN" \
+          response=$(curl -X POST "https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=$access_token" \
             -H "Content-Type: application/json" \
             -d "{
               \"touser\": \"OPENID\",
