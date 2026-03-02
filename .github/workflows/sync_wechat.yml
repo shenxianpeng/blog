@@ -1,7 +1,14 @@
-name: Sync Latest Blog to WeChat
+name: Sync Blog Post to WeChat
 
 on:
   workflow_dispatch:
+    inputs:
+      post_path:
+        description: |
+          Path to the blog post to sync, e.g. content/posts/2026/weekly-5/index.md
+          Leave empty to automatically use the latest Chinese post.
+        required: false
+        default: ''
 
 jobs:
   sync-to-wechat:
@@ -9,98 +16,57 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install requests markdown PyYAML
 
-      - name: Install jq
-        run: sudo apt-get install -y jq
-
-      - name: Find latest blog post by date
-        id: find_latest_post
+      - name: Resolve blog post path
+        id: find_post
         run: |
-          # Find the latest blog post by parsing the date in the content
-          latest_file=""
-          latest_date=""
+          post_path="${{ github.event.inputs.post_path }}"
 
-          for file in $(find content/posts -type f -name '*.md'); do
-            post_date=$(grep -m 1 '^date:' "$file" | sed 's/^date: //')
-            if [ -n "$post_date" ]; then
-              if [ -z "$latest_date" ] || [ "$post_date" \> "$latest_date" ]; then
-                latest_date="$post_date"
-                latest_file="$file"
-              fi
+          if [ -n "$post_path" ]; then
+            if [ ! -f "$post_path" ]; then
+              echo "Specified file not found: $post_path"
+              exit 1
             fi
-          done
+            echo "Using specified post: $post_path"
+          else
+            # Find the latest Chinese post (index.md, skip index.en.md)
+            latest_file=""
+            latest_date=""
+            while IFS= read -r -d '' file; do
+              post_date=$(grep -m 1 '^date:' "$file" | sed 's/^date:[[:space:]]*//')
+              if [ -n "$post_date" ]; then
+                if [ -z "$latest_date" ] || [[ "$post_date" > "$latest_date" ]]; then
+                  latest_date="$post_date"
+                  latest_file="$file"
+                fi
+              fi
+            done < <(find content/posts -type f -name 'index.md' -print0)
 
-          if [ -z "$latest_file" ]; then
-            echo "No latest file found. Exiting."
-            exit 1
+            if [ -z "$latest_file" ]; then
+              echo "No post found. Exiting."
+              exit 1
+            fi
+
+            post_path="$latest_file"
+            echo "Latest post: $post_path (date: $latest_date)"
           fi
 
-          echo "Latest file: $latest_file"
-          echo "latest_file=$latest_file" >> $GITHUB_ENV
-
-      - name: Await manual approval
-        run: |
-          echo "Please manually approve this workflow in the Actions tab before proceeding."
-          echo "You can approve by clicking 'Approve and run' in the Actions tab."
+          echo "post_path=$post_path" >> "$GITHUB_OUTPUT"
 
       - name: Sync to WeChat as Draft
         env:
           WECHAT_APP_ID: ${{ secrets.WECHAT_APP_ID }}
           WECHAT_APP_SECRET: ${{ secrets.WECHAT_APP_SECRET }}
-        run: |
-          latest_file=${{ steps.find_latest_post.outputs.latest_file }}
-          if [ -z "$latest_file" ]; then
-            echo "No latest file found. Exiting."
-            exit 1
-          fi
-
-          # Extract title and content from the markdown file
-          title=$(grep '^title:' "$latest_file" | sed 's/^title: //')
-          content=$(cat "$latest_file")
-
-          # Fetch the latest access_token
-          access_token=$(curl -G "https://api.weixin.qq.com/cgi-bin/token" \
-            --data-urlencode "grant_type=client_credential" \
-            --data-urlencode "appid=$WECHAT_APP_ID" \
-            --data-urlencode "secret=$WECHAT_APP_SECRET" | jq -r '.access_token')
-
-          if [ -z "$access_token" ] || [ "$access_token" == "null" ]; then
-            echo "Failed to fetch access_token. Exiting."
-            exit 1
-          fi
-
-          # Send the content to WeChat API as a draft
-          response=$(curl -X POST "https://api.weixin.qq.com/cgi-bin/draft/add?access_token=$access_token" \
-            -H "Content-Type: application/json" \
-            -d "{
-              \"articles\": [
-                {
-                  \"title\": \"$title\",
-                  \"content\": \"$content\",
-                  \"author\": \"shenxianpeng\",
-                  \"digest\": \"Draft content\",
-                  \"need_open_comment\": 1,
-                  \"only_fans_can_comment\": 0
-                }
-              ]
-            }")
-
-          echo "Response: $response"
-
-          if [[ "$response" != *"ok"* ]]; then
-            echo "Failed to sync to WeChat."
-            exit 1
-          fi
-
-          echo "Successfully synced to WeChat as a draft."
+          POST_PATH: ${{ steps.find_post.outputs.post_path }}
+        run: python .github/scripts/sync_to_wechat.py
