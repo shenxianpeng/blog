@@ -13,6 +13,8 @@ date: 2026-03-05
 
 昨晚我给自己维护的一个开源项目 [GitStats](https://github.com/shenxianpeng/gitstats) 做了一次重大的升级——UI 全面现代化，图表引擎彻底替换。
 
+![Release Notes](release-notes.png)
+
 说实话，动手之前我没想到效果会有这么大的飞跃——改完之后对比一看，旧版本的界面真的有点"上古感"。
 
 ## GitStats 是什么？
@@ -54,8 +56,8 @@ gitstats . report
 
 改动集中在几个方向：
 
-**整体视觉语言的现代化**
-卡片式布局、圆角、微妙的阴影、更合理的字体层级……这些细节叠加起来，让整个报告看起来像是一个"产品"，而不是一个"脚本输出"。
+**Terminal 风格的视觉语言**
+灵感来自终端界面和 OpenCode 的设计风格：**零圆角（sharp corners）**、标题和导航栏使用**等宽字体**、**重边框布局**——整体给人一种干净、硬朗的工程感觉。
 
 **响应式适配**
 现在在手机上也能正常查看了。以前在移动端打开基本是灾难。
@@ -81,6 +83,7 @@ gitstats . report
 新版本：
 
 {{< gallery >}}
+  <img src="new-home.png" class="grid-w30" />
   <img src="new-1.png" class="grid-w30" />
   <img src="new-2.png" class="grid-w30" />
   <img src="new-3.png" class="grid-w30" />
