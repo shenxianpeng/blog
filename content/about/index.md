@@ -44,6 +44,7 @@ layoutBackgroundHeaderSpace: false
 <ul>
   <li>🌟 <a href="https://github.com/sponsors/shenxianpeng" target="_blank" rel="noopener">GitHub Sponsors</a></li>
   <li>💙 <a href="https://thanks.dev/u/gh/shenxianpeng" target="_blank" rel="noopener">Thanks.dev</a></li>
+  <li>☕ <a href="https://buymeacoffee.com/shenxianpeng" target="_blank" rel="noopener">Buy Me a Coffee</a></li>
 </ul>
 
 {{< /timelineItem >}}
