@@ -37,14 +37,14 @@ layoutBackgroundHeaderSpace: false
 
 {{< /timelineItem >}}
 
-{{< timelineItem icon="heart" header="支持我" badge="Donate" subheader="感谢你的支持" >}}
+{{< timelineItem icon="heart" header="支持我" badge="Donate" subheader="帮助保持这个博客无广告！" >}}
 
-这个博客没有任何广告，目的是为了给大家提供更好的阅读体验。如果我的文章对你有帮助，欢迎通过以下方式支持我：
+这个博客一直没有广告，我希望大家能有一个干净、专注的阅读体验。写作需要投入大量时间和精力，如果我的内容对你有帮助，欢迎请我喝杯咖啡或赞助我的工作：
 
 <ul>
-  <li>🌟 <a href="https://github.com/sponsors/shenxianpeng" target="_blank" rel="noopener">GitHub Sponsors</a></li>
-  <li>💙 <a href="https://thanks.dev/u/gh/shenxianpeng" target="_blank" rel="noopener">Thanks.dev</a></li>
-  <li>☕ <a href="https://buymeacoffee.com/shenxianpeng" target="_blank" rel="noopener">Buy Me a Coffee</a></li>
+  <li>🌟 <a href="https://github.com/sponsors/shenxianpeng" target="_blank" rel="noopener">GitHub Sponsors</a> 上赞助我</li>
+  <li>💙 通过 <a href="https://thanks.dev/u/gh/shenxianpeng" target="_blank" rel="noopener">Thanks.dev</a> 支持</li>
+  <li>☕ 请我喝杯咖啡：<a href="https://buymeacoffee.com/shenxianpeng" target="_blank" rel="noopener">Buy Me a Coffee</a></li>
 </ul>
 
 {{< /timelineItem >}}

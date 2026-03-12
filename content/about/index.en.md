@@ -38,13 +38,13 @@ All kinds of contributions and feedback are welcome. <a href="../portfolio/">Vie
 
 {{< /timelineItem >}}
 
-{{< timelineItem icon="heart" header="Support Me" badge="Donate" subheader="Thank you for your support" >}}
+{{< timelineItem icon="heart" header="Support Me" badge="Donate" subheader="Help keep this blog ad-free!" >}}
 
-This blog has no ads — I keep it that way to give you a better reading experience. If my articles have been helpful to you, you're welcome to support me through the following:
+This blog has always been ad-free — I want reading here to be a clean, distraction-free experience. Writing takes time, and your support means a lot. If you've found something useful here, consider buying me a coffee or sponsoring my work:
 
 <ul>
-  <li>🌟 <a href="https://github.com/sponsors/shenxianpeng" target="_blank" rel="noopener">GitHub Sponsors</a></li>
-  <li>💙 <a href="https://thanks.dev/u/gh/shenxianpeng" target="_blank" rel="noopener">Thanks.dev</a></li>
+  <li>🌟 <a href="https://github.com/sponsors/shenxianpeng" target="_blank" rel="noopener">Sponsor me on GitHub Sponsors</a></li>
+  <li>💙 <a href="https://thanks.dev/u/gh/shenxianpeng" target="_blank" rel="noopener">Support via Thanks.dev</a></li>
   <li>☕ <a href="https://buymeacoffee.com/shenxianpeng" target="_blank" rel="noopener">Buy Me a Coffee</a></li>
 </ul>
 
