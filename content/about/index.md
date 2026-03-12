@@ -37,6 +37,17 @@ layoutBackgroundHeaderSpace: false
 
 {{< /timelineItem >}}
 
+{{< timelineItem icon="heart" header="支持我" badge="Donate" subheader="感谢你的支持" >}}
+
+这个博客没有任何广告，目的是为了给大家提供更好的阅读体验。如果我的文章对你有帮助，欢迎通过以下方式支持我：
+
+<ul>
+  <li>🌟 <a href="https://github.com/sponsors/shenxianpeng" target="_blank" rel="noopener">GitHub Sponsors</a></li>
+  <li>💙 <a href="https://thanks.dev/u/gh/shenxianpeng" target="_blank" rel="noopener">Thanks.dev</a></li>
+</ul>
+
+{{< /timelineItem >}}
+
 {{< timelineItem icon="envelope" header="联系我" badge="Let's Connect" subheader="合作 · 邀稿 · 交流" >}}
 xianpeng.shen@gmail.com
 {{< /timelineItem >}}
