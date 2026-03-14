@@ -6,11 +6,8 @@ tags:
   - Job
 authors:
   - shenxianpeng
-draft: true
-date: 2026-03-11
+date: 2026-03-13
 ---
-
-# 找工作难？你可能还在用十年前的方式竞争
 
 有读者给沈工发私信，说现在找工作很难，想让我帮看看简历。
 
