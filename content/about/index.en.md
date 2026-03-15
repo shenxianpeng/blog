@@ -38,6 +38,18 @@ All kinds of contributions and feedback are welcome. <a href="../portfolio/">Vie
 
 {{< /timelineItem >}}
 
+{{< timelineItem icon="heart" header="Support Me" badge="Donate" subheader="Help keep this blog ad-free!" >}}
+
+This blog has always been ad-free — I want reading here to be a clean, distraction-free experience. Writing takes time, and your support means a lot. If you've found something useful here, consider buying me a coffee or sponsoring my work:
+
+<ul>
+  <li>🌟 <a href="https://github.com/sponsors/shenxianpeng" target="_blank" rel="noopener">Sponsor me on GitHub Sponsors</a></li>
+  <li>💙 <a href="https://thanks.dev/u/gh/shenxianpeng" target="_blank" rel="noopener">Support via Thanks.dev</a></li>
+  <li>☕ <a href="https://buymeacoffee.com/shenxianpeng" target="_blank" rel="noopener">Buy Me a Coffee</a></li>
+</ul>
+
+{{< /timelineItem >}}
+
 {{< timelineItem icon="envelope" header="Get in Touch" badge="Let's Connect" subheader="Collaboration · Writing · Discussion" >}}
 xianpeng.shen@gmail.com
 {{< /timelineItem >}}
