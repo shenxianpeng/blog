@@ -6,6 +6,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2023-05-09
+series: ["Commit Check"]
+series_order: 1
 ---
 
 Git commit message and Git branch naming conventions are a very important part of team collaboration. They can make the codebase more standardized, easier to maintain, and easier to understand.

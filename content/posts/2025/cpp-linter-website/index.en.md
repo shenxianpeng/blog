@@ -7,6 +7,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-09-30
+series: ["cpp-linter"]
+series_order: 4
 ---
 
 As cpp-linter enters its 4th year of maintenance, we have also created quite a few related projects and tools. However, up until now, we've only provided a simple introduction on the GitHub organization's homepage.

@@ -8,6 +8,8 @@ aliases:
   - /2024/11/gitstats/
 authors:
   - shenxianpeng
+series: ["GitStats"]
+series_order: 2
 ---
 
 最近的晚上的时间（一般要等到孩子睡了）我正在做一件事：复活已经沉寂多年的 GitStats 项目。

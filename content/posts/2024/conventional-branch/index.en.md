@@ -7,6 +7,8 @@ tags:
 date: 2024-09-18
 authors:
   - shenxianpeng
+series: ["Conventional Branch"]
+series_order: 1
 ---
 
 ## Summary

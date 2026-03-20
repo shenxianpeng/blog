@@ -8,6 +8,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2026-02-13
+series: ["Explain Error Plugin"]
+series_order: 4
 ---
 
 最近 Explain Error Plugin 又迎来了两个重要的功能更新，这两个功能都是基于用户的实际使用反馈而开发的，能够让插件在企业环境中更加灵活和强大。

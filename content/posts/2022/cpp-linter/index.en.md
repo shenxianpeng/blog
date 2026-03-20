@@ -9,6 +9,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2022-08-23
+series: ["cpp-linter"]
+series_order: 1
 ---
 
 This article shares practical experience with C/C++ code formatting and static analysis.

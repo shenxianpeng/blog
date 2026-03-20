@@ -7,6 +7,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2026-03-05
+series: ["GitStats"]
+series_order: 4
 ---
 
 <!-- Alternative Title: Paired Redesign with Claude: I Brainstorm, It Codes CSS, Exceeding Expectations After Several Iterations -->

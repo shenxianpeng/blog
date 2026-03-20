@@ -8,6 +8,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2026-02-13
+series: ["Explain Error Plugin"]
+series_order: 4
 ---
 
 The Explain Error Plugin has recently received two more significant feature updates. Both of these features were developed based on actual user feedback, making the plugin more flexible and powerful in enterprise environments.

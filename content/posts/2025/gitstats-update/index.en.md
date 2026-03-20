@@ -7,6 +7,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-02-05
+series: ["GitStats"]
+series_order: 3
 ---
 
 Hello everyone! Since my last post [announcing the start of maintaining **gitstats**](../gitstats/), I've been continuously improving this project. Here are the major updates over the past two months:

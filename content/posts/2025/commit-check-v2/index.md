@@ -7,6 +7,8 @@ tags:
 authors: 
   - shenxianpeng
 date: 2025-10-13
+series: ["Commit Check"]
+series_order: 3
 ---
 
 每次 Code Review，总有同事的 commit message 五花八门？

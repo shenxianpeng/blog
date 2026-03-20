@@ -9,6 +9,8 @@ aliases:
   - /2024/09/conventional-branch/
 authors:
   - shenxianpeng
+series: ["Conventional Branch"]
+series_order: 1
 ---
 
 上周正式发布《约定式分支规范》后，受到了广泛关注，不少人询问何时推出中文版。

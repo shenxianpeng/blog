@@ -7,6 +7,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-10-13
+series: ["Commit Check"]
+series_order: 3
 ---
 
 During every Code Review, do your colleagues' commit messages always vary widely?

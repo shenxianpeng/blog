@@ -8,6 +8,8 @@ aliases:
   - /2023/05/commit-check/
   - shenxianpeng
 date: 2023-05-09
+series: ["Commit Check"]
+series_order: 1
 ---
 
 Git 提交信息和 Git 分支命名规范是团队协作中非常重要的一部分，它们能够使代码库更加规范、易于维护和理解。

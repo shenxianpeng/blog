@@ -8,6 +8,8 @@ draft: true
 date: 2024-11-23
 authors:
   - shenxianpeng
+series: ["Commit Check"]
+series_order: 2
 ---
 
 Recently, users have requested two features: support for adding comments in Pull Requests and checking if a Pull Request has been rebased.

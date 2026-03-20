@@ -10,6 +10,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-04-15
+series: ["cpp-linter"]
+series_order: 3
 ---
 
 上周，我创建并维护的开源项目 [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) 迎来了一个小小的里程碑：

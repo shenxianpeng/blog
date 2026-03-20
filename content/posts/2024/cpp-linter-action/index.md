@@ -11,6 +11,8 @@ aliases:
   - /2024/02/cpp-linter-action/
   - shenxianpeng
 date: 2024-02-17
+series: ["cpp-linter"]
+series_order: 2
 ---
 
 作为 [cpp-linter](https://github.com/cpp-linter) 的创建者和贡献者，我很高兴地宣布 —— cpp-linter-action 从 v2.9.0 版本开始支持 Pull Request Review 功能了 👏

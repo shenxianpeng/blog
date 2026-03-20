@@ -8,6 +8,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-07-29
+series: ["Explain Error Plugin"]
+series_order: 1
 ---
 
 正如标题所说，我最近上线了我的第一个 Jenkins 插件！🎉

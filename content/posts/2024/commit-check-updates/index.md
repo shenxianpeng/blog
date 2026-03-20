@@ -10,6 +10,8 @@ aliases:
   - /2024/11/commit-check-updates/
 authors:
   - shenxianpeng
+series: ["Commit Check"]
+series_order: 2
 ---
 
 最近有用户提出两个需求：一是支持在 Pull Request 中增加评论，二是检查 Pull Request 是否已经 rebase。

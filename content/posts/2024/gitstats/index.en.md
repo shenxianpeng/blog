@@ -6,6 +6,8 @@ tags:
 date: 2024-11-28
 authors:
   - shenxianpeng
+series: ["GitStats"]
+series_order: 2
 ---
 
 Recently, in the evenings (usually after my child has gone to sleep), I've been working on something: reviving the long-dormant GitStats project.
