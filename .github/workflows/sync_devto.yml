@@ -1,0 +1,80 @@
+name: Sync Blog Post to dev.to
+
+on:
+  workflow_dispatch:
+    inputs:
+      post_path:
+        description: |
+          Path to the English blog post to sync, e.g. content/posts/2026/hadolint-pre-commit/index.en.md
+          Leave empty to automatically use the latest English post.
+        required: false
+        default: ''
+      published:
+        description: 'Publish immediately on dev.to (false = draft)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+jobs:
+  sync-to-devto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests PyYAML
+
+      - name: Resolve blog post path
+        id: find_post
+        run: |
+          post_path="${{ github.event.inputs.post_path }}"
+
+          if [ -n "$post_path" ]; then
+            if [ ! -f "$post_path" ]; then
+              echo "Specified file not found: $post_path"
+              exit 1
+            fi
+            echo "Using specified post: $post_path"
+          else
+            # Find the latest English post (index.en.md)
+            latest_file=""
+            latest_date=""
+            while IFS= read -r -d '' file; do
+              post_date=$(grep -m 1 '^date:' "$file" | sed 's/^date:[[:space:]]*//')
+              if [ -n "$post_date" ]; then
+                if [ -z "$latest_date" ] || [[ "$post_date" > "$latest_date" ]]; then
+                  latest_date="$post_date"
+                  latest_file="$file"
+                fi
+              fi
+            done < <(find content/posts -type f -name 'index.en.md' -print0)
+
+            if [ -z "$latest_file" ]; then
+              echo "No English post found. Exiting."
+              exit 1
+            fi
+
+            post_path="$latest_file"
+            echo "Latest English post: $post_path (date: $latest_date)"
+          fi
+
+          echo "post_path=$post_path" >> "$GITHUB_OUTPUT"
+
+      - name: Sync to dev.to
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          POST_PATH: ${{ steps.find_post.outputs.post_path }}
+          PUBLISHED: ${{ github.event.inputs.published || 'false' }}
+        run: python .github/scripts/sync_to_devto.py
