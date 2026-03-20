@@ -25,6 +25,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 | [![Package][badge-name-atlassian-api-py]][gh-atlassian-api-py] | [![PyPI][badge-version-atlassian-api-py]][atlassian-api-py] | [![Downloads][badge-downloads-atlassian-api-py]][atlassian-api-py] | [![Commit][badge-commit-atlassian-api-py]][gh-atlassian-api-py] |
 | [![Package][badge-name-badgepy]][gh-badgepy] | [![PyPI][badge-version-badgepy]][badgepy] | [![Downloads][badge-downloads-badgepy]][badgepy] | [![Commit][badge-commit-badgepy]][gh-badgepy] |
 | [![Package][badge-name-jenkinsfilelint]][gh-jenkinsfilelint] | [![PyPI][badge-version-jenkinsfilelint]][jenkinsfilelint] | [![Downloads][badge-downloads-jenkinsfilelint]][gh-jenkinsfilelint] | [![Commit][badge-commit-jenkinsfilelint]][gh-jenkinsfilelint] |
+| [![Package][badge-name-hadolint-py]][gh-hadolint-py] | [![PyPI][badge-version-hadolint-py]][hadolint-py] | [![Downloads][badge-downloads-hadolint-py]][hadolint-py] | [![Commit][badge-commit-hadolint-py]][gh-hadolint-py] |
 | [![Package][badge-name-py-eol]][gh-py-eol] | [![PyPI][badge-version-py-eol]][py-eol] | [![Downloads][badge-downloads-py-eol]][py-eol] | [![Commit][badge-commit-py-eol]][gh-py-eol] |
 | [![Package][badge-name-used-by]][gh-used-by] | [![PyPI][badge-version-used-by]][used-by] | [![Downloads][badge-downloads-used-by]][used-by] | [![Commit][badge-commit-used-by]][gh-used-by] |
 
@@ -42,6 +43,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [py-eol]: https://pypi.org/project/py-eol/
 [badgepy]: https://pypi.org/project/badgepy/
 [used-by]: https://pypi.org/project/used-by/
+[hadolint-py]: https://pypi.org/project/hadolint-py/
 
 <!-- GitHub Repository Links -->
 [gh-commit-check]: https://github.com/commit-check/commit-check
@@ -55,6 +57,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [gh-py-eol]: https://github.com/shenxianpeng/py-eol
 [gh-badgepy]: https://github.com/shenxianpeng/badgepy
 [gh-used-by]: https://github.com/shenxianpeng/used-by
+[gh-hadolint-py]: https://github.com/shenxianpeng/hadolint-pre-commit
 
 <!-- Badge Images - Version -->
 [badge-version-commit-check]: https://img.shields.io/pypi/v/commit-check?style=flat-square
@@ -68,6 +71,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-version-py-eol]: https://img.shields.io/pypi/v/py-eol?style=flat-square
 [badge-version-badgepy]: https://img.shields.io/pypi/v/badgepy?style=flat-square
 [badge-version-used-by]: https://img.shields.io/pypi/v/used-by?style=flat-square
+[badge-version-hadolint-py]: https://img.shields.io/pypi/v/hadolint-py?style=flat-square
 
 <!-- Badge Images - Downloads -->
 [badge-downloads-commit-check]: https://img.shields.io/pypi/dm/commit-check?style=flat-square
@@ -81,6 +85,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-downloads-py-eol]: https://img.shields.io/pypi/dm/py-eol?style=flat-square
 [badge-downloads-badgepy]: https://img.shields.io/pypi/dm/badgepy?style=flat-square
 [badge-downloads-used-by]: https://img.shields.io/pypi/dm/used-by?style=flat-square
+[badge-downloads-hadolint-py]: https://img.shields.io/pypi/dm/hadolint-py?style=flat-square
 
 <!-- Badge Images - Last Commit -->
 [badge-commit-commit-check]: https://img.shields.io/github/last-commit/commit-check/commit-check?style=flat-square
@@ -94,6 +99,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-commit-py-eol]: https://img.shields.io/github/last-commit/shenxianpeng/py-eol?style=flat-square
 [badge-commit-badgepy]: https://img.shields.io/github/last-commit/shenxianpeng/badgepy?style=flat-square
 [badge-commit-used-by]: https://img.shields.io/github/last-commit/shenxianpeng/used-by?style=flat-square
+[badge-commit-hadolint-py]: https://img.shields.io/github/last-commit/shenxianpeng/hadolint-pre-commit?style=flat-square
 
 <!-- Badge Images - Package Names -->
 [badge-name-commit-check]: https://img.shields.io/badge/commit--check-blue?style=flat-square&logo=github
@@ -107,3 +113,4 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-name-py-eol]: https://img.shields.io/badge/py--eol-blue?style=flat-square&logo=github
 [badge-name-badgepy]: https://img.shields.io/badge/badgepy-blue?style=flat-square&logo=github
 [badge-name-used-by]: https://img.shields.io/badge/used--by-blue?style=flat-square&logo=github
+[badge-name-hadolint-py]: https://img.shields.io/badge/hadolint--py-blue?style=flat-square&logo=github
