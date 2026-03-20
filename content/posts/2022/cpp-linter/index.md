@@ -11,6 +11,8 @@ aliases:
   - /2022/08/cpp-linter/
   - shenxianpeng
 date: 2022-08-23
+series: ["cpp-linter"]
+series_order: 1
 ---
 
 本篇是关于 C/C++ 代码格式化和静态分析检查的实践分享。

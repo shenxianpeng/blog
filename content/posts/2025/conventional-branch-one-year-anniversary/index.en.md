@@ -7,6 +7,8 @@ tags:
 date: 2025-09-16
 authors:
   - shenxianpeng
+series: ["Conventional Branch"]
+series_order: 2
 ---
 
 One year ago today, I officially released the [Conventional Branch specification](../conventional-branch).

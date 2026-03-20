@@ -7,6 +7,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-10-01
+series: ["Explain Error Plugin"]
+series_order: 3
 ---
 
 I previously released the [Jenkins Explain Error Plugin](https://plugins.jenkins.io/explain-error/), which allows Jenkins users to analyze and resolve build errors faster with the help of AI.

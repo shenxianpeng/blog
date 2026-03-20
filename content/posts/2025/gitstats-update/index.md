@@ -9,6 +9,8 @@ aliases:
   - /2025/02/gitstats-update/
   - shenxianpeng
 date: 2025-02-05
+series: ["GitStats"]
+series_order: 3
 ---
 
 大家好！自从上次发文[宣布开始维护 **gitstats**](../../2024/gitstats/) 以来，我一直在不断地改进这个项目，下面是这两个月的主要更新内容：

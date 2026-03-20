@@ -7,6 +7,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2026-03-05
+series: ["GitStats"]
+series_order: 4
 ---
 
 <!-- 备选标题： 和 Claude 结对改版：我出想法，它写 CSS，几轮之后超出预期 -->

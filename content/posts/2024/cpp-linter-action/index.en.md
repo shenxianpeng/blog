@@ -9,6 +9,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2024-02-17
+series: ["cpp-linter"]
+series_order: 2
 ---
 
 As the creator and contributor of [cpp-linter](https://github.com/cpp-linter), I am pleased to announce that cpp-linter-action now supports Pull Request Review functionality starting from version v2.9.0 👏

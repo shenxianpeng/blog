@@ -7,6 +7,8 @@ tags:
 date: 2025-09-16
 authors:
   - shenxianpeng
+series: ["Conventional Branch"]
+series_order: 2
 ---
 
 去年的今天，我正式发布了 [Conventional Branch 规范](../conventional-branch)。
