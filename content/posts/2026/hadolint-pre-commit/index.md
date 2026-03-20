@@ -1,5 +1,5 @@
 ---
-title: 别再手动下载 Binary 了！我把 Hadolint 塞进了 PyPI，彻底解决 pre-commit 痛点
+title: 困扰社区三年的问题：我把 Hadolint 塞进 PyPI，终结手动安装的历史
 summary: |
   Hadolint 的 pre-commit 集成长期缺少自动安装方案，困扰社区三年。本文介绍如何通过将 Hadolint 二进制封装成 Python Wheel 包并发布到 PyPI，让 pre-commit 像安装任何 Python 工具一样一键集成 Hadolint，彻底消除手动下载与环境配置的负担。
 tags:
