@@ -11,3 +11,5 @@ node_modules/
 themes/blowfish/
 CLAUDE.md
 resources/
+
+**/*/__pycache__/
