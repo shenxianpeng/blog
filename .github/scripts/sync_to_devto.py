@@ -1,28 +1,36 @@
-"""Sync an English blog post (Markdown) to dev.to."""
+"""Sync an English blog post (Markdown) to dev.to.
+
+Supports upsert: if an article with the same canonical_url already exists,
+it will be updated (PUT) rather than created again (POST).
+"""
 
 import os
-import re
 import sys
 
 import requests
-import yaml
 
-BASE_URL = "https://shenxianpeng.github.io"
+from blog_utils import build_canonical_url, parse_front_matter
+
 DEVTO_API = "https://dev.to/api"
 
 
-def parse_front_matter(content):
-    match = re.match(r"^---\n(.*?)\n---\n", content, re.DOTALL)
-    if match:
-        return yaml.safe_load(match.group(1)), content[match.end():]
-    return {}, content
+def find_existing_article(api_key, canonical_url):
+    """Return the dev.to article ID if an article with this canonical_url exists."""
+    try:
+        resp = requests.get(
+            f"{DEVTO_API}/articles/me/all",
+            headers={"api-key": api_key},
+            params={"per_page": 1000},
+        )
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        print(f"Warning: could not query existing articles: {e}")
+        return None
 
-
-def build_canonical_url(post_path):
-    # content/posts/2026/hadolint-pre-commit/index.en.md
-    # -> https://shenxianpeng.github.io/posts/2026/hadolint-pre-commit/
-    parts = post_path.replace("content/", "").replace("/index.en.md", "")
-    return f"{BASE_URL}/{parts}/"
+    for article in resp.json():
+        if article.get("canonical_url") == canonical_url:
+            return article["id"]
+    return None
 
 
 def sync_to_devto(post_path, api_key, published):
@@ -45,19 +53,32 @@ def sync_to_devto(post_path, api_key, published):
         }
     }
 
-    resp = requests.post(
-        f"{DEVTO_API}/articles",
-        headers={"api-key": api_key, "Content-Type": "application/json"},
-        json=payload,
-    )
+    headers = {"api-key": api_key, "Content-Type": "application/json"}
+    existing_id = find_existing_article(api_key, canonical_url)
 
-    if resp.status_code not in (200, 201):
-        print(f"Failed to sync to dev.to (HTTP {resp.status_code}): {resp.text}")
+    try:
+        if existing_id:
+            resp = requests.put(
+                f"{DEVTO_API}/articles/{existing_id}",
+                headers=headers,
+                json=payload,
+            )
+            action = "updated"
+        else:
+            resp = requests.post(
+                f"{DEVTO_API}/articles",
+                headers=headers,
+                json=payload,
+            )
+            action = "created"
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        print(f"Failed to sync to dev.to: {e}")
         sys.exit(1)
 
     data = resp.json()
     status = "published" if published else "draft"
-    print(f"Successfully synced '{title}' to dev.to as {status}.")
+    print(f"Successfully {action} '{title}' on dev.to as {status}.")
     print(f"dev.to URL: {data.get('url')}")
 
 
