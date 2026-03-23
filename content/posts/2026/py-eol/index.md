@@ -10,7 +10,7 @@ authors:
 date: 2026-03-23
 translate: false
 series: ["我的开源工具"]
-series_order: 1
+series_order: 2
 ---
 
 # 你的项目还在跑 Python 3.9 吗？我写了个工具来盯着这件事

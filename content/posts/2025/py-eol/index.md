@@ -7,6 +7,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-12-04
+series: ["我的开源工具"]
+series_order: 1
 ---
 
 近年来，Python 版本更新挺频繁的 —— 新版本不断发布，而旧版本也会陆续停止维护（EOL: End-Of-Life）。
