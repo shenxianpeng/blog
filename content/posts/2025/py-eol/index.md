@@ -7,7 +7,7 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-12-04
-series: ["我的开源工具"]
+series: ["我的开源项目"]
 series_order: 1
 ---
 

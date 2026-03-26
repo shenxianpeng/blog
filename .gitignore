@@ -13,3 +13,4 @@ CLAUDE.md
 resources/
 
 **/*/__pycache__/
+.gstack/

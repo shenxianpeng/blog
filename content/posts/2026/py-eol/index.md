@@ -9,7 +9,7 @@ authors:
   - shenxianpeng
 date: 2026-03-23
 translate: false
-series: ["我的开源工具"]
+series: ["我的开源项目"]
 series_order: 2
 ---
 
