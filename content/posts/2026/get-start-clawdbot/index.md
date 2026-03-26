@@ -6,6 +6,7 @@ tags:
   - ClawdBot
 authors:
   - shenxianpeng
+translate: false
 date: 2026-01-27
 ---
 
