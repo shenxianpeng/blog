@@ -1,8 +1,8 @@
 import os
 import subprocess
 from pathlib import Path
-from github import Github
-import google.generativeai as genai
+from github import Auth, Github
+from google import genai
 
 # Config
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
@@ -11,8 +11,7 @@ REPO = os.getenv('GITHUB_REPOSITORY', 'shenxianpeng/blog')
 BRANCH_PREFIX = 'auto-translate/'
 BASE_BRANCH = 'main'
 
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-2.5-flash')
+client = genai.Client(api_key=GEMINI_API_KEY)
 
 def find_missing_files():
     missing = []
@@ -60,7 +59,7 @@ Keep all formatting, code blocks, and technical terms.
 {content}
 """
     try:
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(model='gemini-2.5-flash', contents=prompt)
         return response.text.strip()
     except Exception as e:
         if hasattr(e, 'message') and 'quota' in str(e.message).lower():
@@ -110,7 +109,7 @@ def branch_exists_remotely(branch_name):
         return False
 
 def create_pr(branch_name, files, post_name):
-    g = Github(GITHUB_TOKEN)
+    g = Github(auth=Auth.Token(GITHUB_TOKEN))
     repo = g.get_repo(REPO)
     pr = repo.create_pull(
         title=f'Auto-translate: {post_name}',
@@ -138,7 +137,7 @@ def main():
     g = None
     repo = None
     if os.getenv('GITHUB_ACTIONS', 'false').lower() == 'true':
-        g = Github(GITHUB_TOKEN)
+        g = Github(auth=Auth.Token(GITHUB_TOKEN))
         repo = g.get_repo(REPO)
     
     # Only process one post per run, but check for existing PRs first
