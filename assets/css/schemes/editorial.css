@@ -1,0 +1,44 @@
+/* Editorial — Terracotta + Warm Ivory design scheme
+ * Accent: #C84B2F (RGB 200,75,47)
+ * Background: #F8F4EF (warm ivory)
+ * All values must be bare RGB triplets — Blowfish consumes as rgb(var(...))
+ */
+
+:root {
+  /* Neutral scale — warm grays complementing the ivory background */
+  --color-neutral: 248, 244, 239;
+  --color-neutral-50: 248, 244, 239;
+  --color-neutral-100: 240, 237, 232;
+  --color-neutral-200: 232, 228, 220;
+  --color-neutral-300: 210, 204, 196;
+  --color-neutral-400: 185, 177, 168;
+  --color-neutral-500: 155, 145, 140;
+  --color-neutral-600: 120, 112, 106;
+  --color-neutral-700: 90, 82, 78;
+  --color-neutral-800: 55, 48, 44;
+  --color-neutral-900: 24, 24, 26;
+
+  /* Primary scale — terracotta orange (#C84B2F at 500) */
+  --color-primary-50: 253, 242, 238;
+  --color-primary-100: 250, 222, 213;
+  --color-primary-200: 242, 180, 162;
+  --color-primary-300: 232, 140, 112;
+  --color-primary-400: 218, 100, 72;
+  --color-primary-500: 200, 75, 47;
+  --color-primary-600: 168, 58, 32;
+  --color-primary-700: 138, 44, 20;
+  --color-primary-800: 100, 30, 12;
+  --color-primary-900: 64, 18, 6;
+
+  /* Secondary scale — warm brown, harmonises with primary */
+  --color-secondary-50: 250, 246, 240;
+  --color-secondary-100: 242, 235, 220;
+  --color-secondary-200: 220, 208, 188;
+  --color-secondary-300: 196, 180, 156;
+  --color-secondary-400: 168, 148, 120;
+  --color-secondary-500: 138, 118, 92;
+  --color-secondary-600: 108, 90, 66;
+  --color-secondary-700: 80, 64, 44;
+  --color-secondary-800: 52, 40, 26;
+  --color-secondary-900: 28, 20, 12;
+}
