@@ -10,7 +10,6 @@ tags:
 authors:
   - shenxianpeng
 date: 2026-03-26
-translate: false
 series: ["我的开源项目"]
 series_order: 3
 ---
