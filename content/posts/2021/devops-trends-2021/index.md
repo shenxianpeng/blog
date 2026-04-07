@@ -5,6 +5,8 @@ tags:
   - DevOps
 date: 2021-01-21
 translate: false
+aliases:
+  - /2021/01/devops-trends-in-2021/
 authors:
   - shenxianpeng
 ---

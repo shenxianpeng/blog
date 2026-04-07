@@ -5,6 +5,8 @@ summary: |
 tags:
   - Jenkins
 date: 2021-01-14
+aliases:
+  - /2021/01/result-vs-currentresult/
 authors:
   - shenxianpeng
 ---

@@ -7,6 +7,8 @@ tags:
 date: 2020-04-20
 aliases:
   - /2020/04/jenkins-troubleshooting/
+  - /2019/08/jenkins-troubleshooting/
+  - /2023/04/jenkins-troubleshooting/
 authors:
   - shenxianpeng
 ---

@@ -5,6 +5,8 @@ tags:
   - Linux
 date: 2020-02-05
 translate: false
+aliases:
+  - /2020/02/linux-tips/
 authors:
   - shenxianpeng
 ---
