@@ -1,7 +1,8 @@
 ---
 title: "沈显鹏的简历"
 author: shenxianpeng
-
+aliases:
+  - /resume-cn
 showDate : false
 showDateOnlyInArticle : false
 showDateUpdated : false

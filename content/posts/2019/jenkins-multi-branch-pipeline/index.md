@@ -7,6 +7,7 @@ original: https://dzone.com/articles/maintaining-multi-branch-pipelines-in-large
 date: 2019-08-06
 aliases:
   - /2019/08/jenkins-multi-branch-pipeline/
+  - /2019/06/multi-branch-pipeline/
 tags:
   - Jenkins
   - Pipeline

@@ -6,6 +6,8 @@ tags:
   - Bitbucket
   - Shell
 date: 2021-07-25
+aliases:
+  - /2021/07/update-bitbucket-build-status/
 authors:
   - shenxianpeng
 ---

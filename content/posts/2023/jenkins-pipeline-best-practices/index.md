@@ -6,6 +6,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2023-02-06
+aliases:
+  - /2023/02/pipeline-best-practices/
 ---
 
 就像标题所说的，为什么我的 Jenkins Controller 越来越慢，可能是因为没有遵循 Jenkins pipeline 编写的一些最佳实践。

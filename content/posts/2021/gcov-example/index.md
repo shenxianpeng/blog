@@ -8,6 +8,7 @@ tags:
 date: 2021-08-17
 aliases:
   - /2021/07/gcov-example/
+  - /2021/08/gcov-example-cn/
 authors:
   - shenxianpeng
 ---
