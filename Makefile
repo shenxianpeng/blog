@@ -20,6 +20,7 @@ translate:
 checkpoint:
 	@git add -A
 	@git commit -m "checkpoint at $$(date '+%Y-%m-%dT%H:%M:%S%z')"
+	@git pull --rebase
 	@git push
 	@echo Checkpoint created and pushed to remote
 
