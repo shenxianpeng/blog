@@ -26,6 +26,7 @@ build:
 | [![Package][badge-name-atlassian-api-py]][gh-atlassian-api-py] | [![PyPI][badge-version-atlassian-api-py]][atlassian-api-py] | [![Downloads][badge-downloads-atlassian-api-py]][atlassian-api-py] | [![Commit][badge-commit-atlassian-api-py]][gh-atlassian-api-py] |
 | [![Package][badge-name-badgepy]][gh-badgepy] | [![PyPI][badge-version-badgepy]][badgepy] | [![Downloads][badge-downloads-badgepy]][badgepy] | [![Commit][badge-commit-badgepy]][gh-badgepy] |
 | [![Package][badge-name-jenkinsfilelint]][gh-jenkinsfilelint] | [![PyPI][badge-version-jenkinsfilelint]][jenkinsfilelint] | [![Downloads][badge-downloads-jenkinsfilelint]][jenkinsfilelint] | [![Commit][badge-commit-jenkinsfilelint]][gh-jenkinsfilelint] |
+| [![Package][badge-name-mkdocs-ng]][gh-mkdocs-ng] | [![PyPI][badge-version-mkdocs-ng]][mkdocs-ng] | [![Downloads][badge-downloads-mkdocs-ng]][mkdocs-ng] | [![Commit][badge-commit-mkdocs-ng]][gh-mkdocs-ng] |
 | [![Package][badge-name-hadolint-py]][gh-hadolint-py] | [![PyPI][badge-version-hadolint-py]][hadolint-py] | [![Downloads][badge-downloads-hadolint-py]][hadolint-py] | [![Commit][badge-commit-hadolint-py]][gh-hadolint-py] |
 | [![Package][badge-name-py-eol]][gh-py-eol] | [![PyPI][badge-version-py-eol]][py-eol] | [![Downloads][badge-downloads-py-eol]][py-eol] | [![Commit][badge-commit-py-eol]][gh-py-eol] |
 | [![Package][badge-name-used-by]][gh-used-by] | [![PyPI][badge-version-used-by]][used-by] | [![Downloads][badge-downloads-used-by]][used-by] | [![Commit][badge-commit-used-by]][gh-used-by] |
@@ -41,6 +42,7 @@ build:
 [clang-tools]: https://pypi.org/project/clang-tools/
 [atlassian-api-py]: https://pypi.org/project/atlassian-api-py/
 [jenkinsfilelint]: https://pypi.org/project/jenkinsfilelint/
+[mkdocs-ng]: https://pypi.org/project/mkdocs-ng/
 [gitstats]: https://pypi.org/project/gitstats/
 [gnuplot-wheel]: https://pypi.org/project/gnuplot-wheel/
 [py-eol]: https://pypi.org/project/py-eol/
@@ -57,6 +59,7 @@ build:
 [gh-clang-tools]: https://github.com/cpp-linter/clang-tools
 [gh-atlassian-api-py]: https://github.com/shenxianpeng/atlassian-api-py
 [gh-jenkinsfilelint]: https://github.com/shenxianpeng/jenkinsfilelint
+[gh-mkdocs-ng]: https://github.com/mkdocs-ng/mkdocs
 [gh-gitstats]: https://github.com/shenxianpeng/gitstats
 [gh-gnuplot-wheel]: https://github.com/shenxianpeng/gnuplot-wheel
 [gh-py-eol]: https://github.com/shenxianpeng/py-eol
@@ -73,6 +76,7 @@ build:
 [badge-version-clang-tools]: https://img.shields.io/pypi/v/clang-tools?style=flat-square
 [badge-version-atlassian-api-py]: https://img.shields.io/pypi/v/atlassian-api-py?style=flat-square
 [badge-version-jenkinsfilelint]: https://img.shields.io/pypi/v/jenkinsfilelint?style=flat-square
+[badge-version-mkdocs-ng]: https://img.shields.io/pypi/v/mkdocs-ng?style=flat-square
 [badge-version-gitstats]: https://img.shields.io/pypi/v/gitstats?style=flat-square
 [badge-version-gnuplot-wheel]: https://img.shields.io/pypi/v/gnuplot-wheel?style=flat-square
 [badge-version-py-eol]: https://img.shields.io/pypi/v/py-eol?style=flat-square
@@ -89,6 +93,7 @@ build:
 [badge-downloads-clang-tools]: https://img.shields.io/pypi/dm/clang-tools?style=flat-square
 [badge-downloads-atlassian-api-py]: https://img.shields.io/pypi/dm/atlassian-api-py?style=flat-square
 [badge-downloads-jenkinsfilelint]: https://img.shields.io/pypi/dm/jenkinsfilelint?style=flat-square
+[badge-downloads-mkdocs-ng]: https://img.shields.io/pypi/dm/mkdocs-ng?style=flat-square
 [badge-downloads-gitstats]: https://img.shields.io/pypi/dm/gitstats?style=flat-square
 [badge-downloads-gnuplot-wheel]: https://img.shields.io/pypi/dm/gnuplot-wheel?style=flat-square
 [badge-downloads-py-eol]: https://img.shields.io/pypi/dm/py-eol?style=flat-square
@@ -105,6 +110,7 @@ build:
 [badge-commit-clang-tools]: https://img.shields.io/github/last-commit/cpp-linter/clang-tools?style=flat-square
 [badge-commit-atlassian-api-py]: https://img.shields.io/github/last-commit/shenxianpeng/atlassian-api-py?style=flat-square
 [badge-commit-jenkinsfilelint]: https://img.shields.io/github/last-commit/shenxianpeng/jenkinsfilelint?style=flat-square
+[badge-commit-mkdocs-ng]: https://img.shields.io/github/last-commit/mkdocs-ng/mkdocs?style=flat-square
 [badge-commit-gitstats]: https://img.shields.io/github/last-commit/shenxianpeng/gitstats?style=flat-square
 [badge-commit-gnuplot-wheel]: https://img.shields.io/github/last-commit/shenxianpeng/gnuplot-wheel?style=flat-square
 [badge-commit-py-eol]: https://img.shields.io/github/last-commit/shenxianpeng/py-eol?style=flat-square
@@ -121,6 +127,7 @@ build:
 [badge-name-clang-tools]: https://img.shields.io/badge/clang--tools-blue?style=flat-square&logo=github
 [badge-name-atlassian-api-py]: https://img.shields.io/badge/atlassian--api--py-blue?style=flat-square&logo=github
 [badge-name-jenkinsfilelint]: https://img.shields.io/badge/jenkinsfilelint-blue?style=flat-square&logo=github
+[badge-name-mkdocs-ng]: https://img.shields.io/badge/mkdocs--ng-blue?style=flat-square&logo=github
 [badge-name-gitstats]: https://img.shields.io/badge/gitstats-blue?style=flat-square&logo=github
 [badge-name-gnuplot-wheel]: https://img.shields.io/badge/gnuplot--wheel-blue?style=flat-square&logo=github
 [badge-name-py-eol]: https://img.shields.io/badge/py--eol-blue?style=flat-square&logo=github
