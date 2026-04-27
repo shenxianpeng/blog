@@ -1,5 +1,5 @@
 # Requirements for blog auto-translation script
-PyYAML>=6.0
 requests>=2.33.1
+PyYAML>=6.0.3
 google-genai
 PyGithub
