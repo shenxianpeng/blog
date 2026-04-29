@@ -22,19 +22,23 @@ layoutBackgroundHeaderSpace: false
 
 ## About Me
 
-- DevOps/Build/Release Engineer, built the DevOps practice from scratch and drove best practices adoption across teams and departments.
-- Specialized in DevOps since 2018, experienced with Windows, Linux, AIX, Solaris, HP-UX, and the full software development lifecycle.
-- Strong in the **Scan → Try → Scale** approach to adopt and scale industry best practices.
-- Proficient in **Python / Shell / Groovy** for developing DevOps tools and automation solutions.
-- **Open Source Creator**: Founded and maintain [cpp-linter](https://github.com/cpp-linter), [commit-check](https://github.com/commit-check), [conventional-branch](https://github.com/conventional-branch), and [devops-maturity](https://github.com/devops-maturity). [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) is used by Microsoft, Apache, NASA, and other notable projects.
-- **Tech Writer**: Published hundreds of original articles on my [blog](https://shenxianpeng.github.io) and WeChat public account **沈显鹏**, reaching and inspiring a broad developer audience.
+- **DevOps / Build / Release / AI Engineering practitioner** focused on software delivery, developer experience, and engineering automation.
+- Specialized in DevOps since 2018, with hands-on experience across Windows, Linux, AIX, Solaris, HP-UX, and the full software development lifecycle.
+- Exploring **Agentic DevOps** and AI-assisted developer tooling in enterprise environments, connecting AI agents, CI/CD, code understanding, and task execution into practical engineering workflows.
+- Strong in the **Scan → Try → Scale** approach: evaluate promising practices, validate them in real teams, then scale what works.
+- Proficient in **Python / Shell / Groovy** for building DevOps tools, automation systems, and AI-assisted engineering solutions.
+- **Open Source Creator and Maintainer**: Founded and maintain [cpp-linter](https://github.com/cpp-linter), [commit-check](https://github.com/commit-check), [conventional-branch](https://github.com/conventional-branch), and [devops-maturity](https://github.com/devops-maturity), and contribute to the Jenkins and MkDocs ecosystems.
+- **Technical Writer**: Published hundreds of original articles on my [blog](https://shenxianpeng.github.io) and WeChat public account **沈显鹏**, sharing practical experience in DevOps, AI, CI/CD, and open source.
 
 ---
 
 ## Work Experience
 
 **Senior DevOps Engineer** | Rocket Software, Lithuania | _Jul 2024 – Present_
-- Driving advanced DevOps + AI initiatives and scaling delivery best practices across teams.
+- Develop enterprise **Agentic Applications** that explore GitHub Copilot / @Copilot-like task execution experiences, where AI agents can understand context, invoke tools, and assist with engineering tasks inside controlled workflows.
+- Integrate the **GitHub Copilot SDK** and Skill invocation capabilities on the backend, connecting code understanding, task orchestration, tool execution, and feedback loops for developers.
+- Drive DevOps + AI practices across CI/CD, build failure analysis, code maintenance, documentation workflows, and developer productivity.
+- Continue scaling delivery practices by combining mature DevOps patterns with AI-assisted tooling in day-to-day engineering workflows.
 
 **DevOps Engineer** | Rocket Software, Dalian | _2015 – Jun 2024_
 - Led CI/CD transformation from manual/Bamboo builds to **Jenkins with shared libraries**.
@@ -57,24 +61,27 @@ layoutBackgroundHeaderSpace: false
 
 - **[cpp-linter](https://github.com/cpp-linter)** — A suite of C/C++ code quality tools integrating clang-format and clang-tidy, available as a GitHub Action and pre-commit hook. Adopted by hundreds of notable projects including Microsoft, Apache, and NASA. [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) is among the most recognized C/C++ linting solutions on GitHub.
 
-- **[commit-check](https://github.com/commit-check)** — A flexible Git commit convention checker that validates commit messages, branch names, and author info. Supports GitHub Actions, pre-commit, and CLI usage, helping teams enforce consistent Git workflows.
+- **[commit-check](https://github.com/commit-check)** — A flexible Git convention checker that validates commit messages, branch names, and author information. Supports GitHub Actions, pre-commit, and CLI usage, helping teams keep Git workflows consistent.
 
-- **[conventional-branch](https://github.com/conventional-branch)** — A specification and toolset for standardizing Git branch naming conventions, including validators and GitHub Actions. Adopted by open source projects and engineering teams worldwide.
+- **[conventional-branch](https://github.com/conventional-branch)** — A specification and toolset for standardizing Git branch naming conventions, including validators and GitHub Actions for open source projects and engineering teams.
 
-- **[devops-maturity](https://github.com/devops-maturity)** — A framework for assessing and communicating DevOps maturity through a badge system and structured specs, helping teams measure progress and drive continuous improvement.
+- **[devops-maturity](https://github.com/devops-maturity)** — A framework for assessing and communicating DevOps maturity through structured specs and badge systems, helping teams measure progress and drive continuous improvement.
 
-- **[explain-error-plugin](https://github.com/jenkinsci/explain-error-plugin)** — An official Jenkins plugin that uses AI (OpenAI, Gemini, and more) to automatically explain build failures in plain language, reducing debugging time. Available on the Jenkins plugin marketplace.
+- **[explain-error-plugin](https://github.com/jenkinsci/explain-error-plugin)** — An official Jenkins plugin that uses AI to explain build failures and now supports AI Auto-Fix for creating repair PRs, usage statistics and quota controls, and multiple providers including OpenAI, Gemini, Azure OpenAI, DeepSeek, Qwen, Ollama, and AWS Bedrock.
 
-- **[gitstats](https://github.com/shenxianpeng/gitstats)** — A Git repository analytics tool that visualizes contribution patterns, commit frequency, and contributor activity — useful for team health reviews and open source community management.
+- **[MkDocs NG](https://github.com/mkdocs-ng)** — Maintains `mkdocs-ng` and `mkdocs-ng-material` to keep the MkDocs and Material for MkDocs ecosystem usable, with bug fixes, dependency upgrades, Python compatibility work, and a migration path that preserves the original CLI, configuration file, and plugin interfaces.
+
+- **[gitstats](https://github.com/shenxianpeng/gitstats)** — A Git repository analytics tool that visualizes contribution patterns, commit frequency, contributor activity, and code trends. Version 2.0 moved the chart engine to Chart.js and added responsive UI, dark/light mode, and AI-generated repository insights.
 
 ---
 
 ## Skills
 
-- DevOps, CI/CD ★★★★★
-- Jenkins, Docker, Ansible ★★★★☆
-- Python, Shell ★★★★☆
-- Go, Groovy ★★★☆☆
+- DevOps / CI/CD / Build & Release ★★★★★
+- AI-assisted tooling / Agentic DevOps / LLM applications ★★★★☆
+- Jenkins / Docker / Ansible / GitHub Actions ★★★★☆
+- Python / Shell / Groovy ★★★★☆
+- Go / GitHub Copilot SDK / Open Source Maintenance ★★★☆☆
 
 ---
 
