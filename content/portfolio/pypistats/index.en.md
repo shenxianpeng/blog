@@ -30,6 +30,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 | [![Package][badge-name-py-eol]][gh-py-eol] | [![PyPI][badge-version-py-eol]][py-eol] | [![Downloads][badge-downloads-py-eol]][py-eol] | [![Commit][badge-commit-py-eol]][gh-py-eol] |
 | [![Package][badge-name-used-by]][gh-used-by] | [![PyPI][badge-version-used-by]][used-by] | [![Downloads][badge-downloads-used-by]][used-by] | [![Commit][badge-commit-used-by]][gh-used-by] |
 | [![Package][badge-name-pipguard]][gh-pipguard] | [![PyPI][badge-version-pipguard]][pipguard] | [![Downloads][badge-downloads-pipguard]][pipguard] | [![Commit][badge-commit-pipguard]][gh-pipguard] |
+| [![Package][badge-name-repokeeper]][gh-repokeeper] | [![PyPI][badge-version-repokeeper]][repokeeper] | [![Downloads][badge-downloads-repokeeper]][repokeeper] | [![Commit][badge-commit-repokeeper]][gh-repokeeper] |
 | [![Package][badge-name-devops-maturity]][gh-devops-maturity] | [![PyPI][badge-version-devops-maturity]][devops-maturity] | [![Downloads][badge-downloads-devops-maturity]][devops-maturity] | [![Commit][badge-commit-devops-maturity]][gh-devops-maturity] |
 
 ---
@@ -49,6 +50,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [used-by]: https://pypi.org/project/used-by/
 [hadolint-py]: https://pypi.org/project/hadolint-py/
 [pipguard]: https://pypi.org/project/pipguard/
+[repokeeper]: https://pypi.org/project/repokeeper/
 [devops-maturity]: https://pypi.org/project/devops-maturity/
 
 <!-- GitHub Repository Links -->
@@ -66,6 +68,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [gh-used-by]: https://github.com/shenxianpeng/used-by
 [gh-hadolint-py]: https://github.com/shenxianpeng/hadolint-pre-commit
 [gh-pipguard]: https://github.com/shenxianpeng/pipguard
+[gh-repokeeper]: https://github.com/shenxianpeng/repokeeper
 [gh-devops-maturity]: https://github.com/devops-maturity/devops-maturity
 
 <!-- Badge Images - Version -->
@@ -83,6 +86,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-version-used-by]: https://img.shields.io/pypi/v/used-by?style=flat-square
 [badge-version-hadolint-py]: https://img.shields.io/pypi/v/hadolint-py?style=flat-square
 [badge-version-pipguard]: https://img.shields.io/pypi/v/pipguard?style=flat-square
+[badge-version-repokeeper]: https://img.shields.io/pypi/v/repokeeper?style=flat-square
 [badge-version-devops-maturity]: https://img.shields.io/pypi/v/devops-maturity?style=flat-square
 
 <!-- Badge Images - Downloads -->
@@ -100,6 +104,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-downloads-used-by]: https://img.shields.io/pypi/dm/used-by?style=flat-square
 [badge-downloads-hadolint-py]: https://img.shields.io/pypi/dm/hadolint-py?style=flat-square
 [badge-downloads-pipguard]: https://img.shields.io/pypi/dm/pipguard?style=flat-square
+[badge-downloads-repokeeper]: https://img.shields.io/pypi/dm/repokeeper?style=flat-square
 [badge-downloads-devops-maturity]: https://img.shields.io/pypi/dm/devops-maturity?style=flat-square
 
 <!-- Badge Images - Last Commit -->
@@ -117,6 +122,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-commit-used-by]: https://img.shields.io/github/last-commit/shenxianpeng/used-by?style=flat-square
 [badge-commit-hadolint-py]: https://img.shields.io/github/last-commit/shenxianpeng/hadolint-pre-commit?style=flat-square
 [badge-commit-pipguard]: https://img.shields.io/github/last-commit/shenxianpeng/pipguard?style=flat-square
+[badge-commit-repokeeper]: https://img.shields.io/github/last-commit/shenxianpeng/repokeeper?style=flat-square
 [badge-commit-devops-maturity]: https://img.shields.io/github/last-commit/devops-maturity/devops-maturity?style=flat-square
 
 <!-- Badge Images - Package Names -->
@@ -134,4 +140,5 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-name-used-by]: https://img.shields.io/badge/used--by-blue?style=flat-square&logo=github
 [badge-name-hadolint-py]: https://img.shields.io/badge/hadolint--py-blue?style=flat-square&logo=github
 [badge-name-pipguard]: https://img.shields.io/badge/pipguard-blue?style=flat-square&logo=github
+[badge-name-repokeeper]: https://img.shields.io/badge/repokeeper-blue?style=flat-square&logo=github
 [badge-name-devops-maturity]: https://img.shields.io/badge/devops--maturity-blue?style=flat-square&logo=github
