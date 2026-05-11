@@ -45,6 +45,6 @@ Without being immodest:
 
 Finally, I welcome your feedback and suggestions, and you're welcome to contact me via [Issue](https://github.com/cpp-linter/cpp-linter-action/issues) or [Discussions](https://github.com/orgs/cpp-linter/discussions)!
 
-If you find this project helpful, please leave a message on the WeChat official account "DevOps攻城狮" or give the project a star on GitHub to show your support!
+If you find this project helpful, please leave a message on the WeChat official account "沈显鹏" or give the project a star on GitHub to show your support!
 
 —— Written on 2025-04-15 12:49 AM

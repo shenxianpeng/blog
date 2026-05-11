@@ -89,4 +89,4 @@ hidden symbol `__gcov_init' in libgcov.a(_gcov.o) is referenced by DSO
 
 ---
 
-转载本文请注明作者与出处，禁止用于商业用途。欢迎关注公众号「DevOps攻城狮」。
+转载本文请注明作者与出处，禁止用于商业用途。欢迎关注公众号「沈显鹏」。
