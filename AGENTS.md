@@ -32,7 +32,7 @@ Key design decisions to remember:
 - **Opening style:** Posts typically open with "大家好，我是沈工" or a brief, engaging hook that draws the reader in.
 - **Closing style:** End with a personal sign-off (e.g., "老司机们，我们下期见～") and the standard footer:
   ```
-  转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「DevOps攻城狮」
+  转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「沈显鹏」
   ```
 
 ### Language Rules

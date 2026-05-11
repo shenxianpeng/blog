@@ -141,4 +141,4 @@ GitHub 地址：[https://github.com/jenkinsci/explain-error-plugin](https://gith
 
 ---
 
-转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「DevOps攻城狮」
+转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「沈显鹏」

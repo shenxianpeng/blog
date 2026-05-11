@@ -8,6 +8,6 @@ title: "沈显鹏"
 
 欢迎关注我的微信公众号👇
 
-![DevOps攻城狮](/img/qrcode.jpg)
+![沈显鹏](/img/qrcode.jpg)
 
 ---

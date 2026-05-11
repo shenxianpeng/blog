@@ -166,4 +166,4 @@ This concludes the GaraSign implementation sharing.  For any questions or sugges
 
 ---
 
-Please indicate the author and source when reprinting this article, and do not use it for any commercial purposes.  Welcome to follow the WeChat official account "DevOps攻城狮".
+Please indicate the author and source when reprinting this article, and do not use it for any commercial purposes.  Welcome to follow the WeChat official account "沈显鹏".

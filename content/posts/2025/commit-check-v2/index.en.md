@@ -116,4 +116,4 @@ It helps you and your team easily adopt [Conventional Commits](https://www.conve
 
 ---
 
-When reprinting articles from this site, please credit the author and source, and do not use them for any commercial purposes. Feel free to follow the official account "DevOps攻城狮".
+When reprinting articles from this site, please credit the author and source, and do not use them for any commercial purposes. Feel free to follow the official account "沈显鹏".

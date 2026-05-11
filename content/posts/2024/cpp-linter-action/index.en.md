@@ -100,4 +100,4 @@ Finally, welcome to use any project under the cpp-linter organization and provid
 
 ---
 
-Please indicate the author and source when reprinting this article and do not use it for any commercial purposes.  Follow the "DevOps攻城狮" WeChat official account.
+Please indicate the author and source when reprinting this article and do not use it for any commercial purposes.  Follow the "沈显鹏" WeChat official account.

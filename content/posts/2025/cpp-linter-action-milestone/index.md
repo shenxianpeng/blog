@@ -45,10 +45,10 @@ series_order: 3
 
 最后，欢迎大家提出意见或建议，也欢迎通过 [Issue](https://github.com/cpp-linter/cpp-linter-action/issues) 或 [Discussions](https://github.com/orgs/cpp-linter/discussions) 与我交流！
 
-如果你觉得这个项目对你有帮助，也欢迎在公众号「DevOps攻城狮」留言或者去 GitHub 点个 Star，支持下这个项目～
+如果你觉得这个项目对你有帮助，也欢迎在公众号「沈显鹏」留言或者去 GitHub 点个 Star，支持下这个项目～
 
 —— 写于 2025-04-15 12:49 AM
 
 ---
 
-转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「DevOps攻城狮」
+转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「沈显鹏」
