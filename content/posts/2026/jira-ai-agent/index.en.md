@@ -1,5 +1,5 @@
 ---
-title: Building an AI Agent Inside Jira: A Jira Copilot Implementation Guide
+title: Building an AI Agent Inside Jira —— A Jira Copilot Implementation Guide
 summary: |
   Many people have asked how to build a GitHub Copilot-like AI Agent inside Jira. This post shares my hands-on experience building one — covering account setup, Jira Automation triggers, webhook integration, and a Skills-based capability system. The core philosophy: leverage existing infrastructure to get it running fast and cheap.
 tags:
