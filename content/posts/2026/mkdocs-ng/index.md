@@ -9,6 +9,8 @@ authors:
   - shenxianpeng
 translate: false
 date: 2026-04-29
+series: ["MkDocs NG"]
+series_order: 1
 ---
 
 上周，我在 GitHub 上创建了一个新的组织，叫 [MkDocs NG][mkdocs-ng-org]。
