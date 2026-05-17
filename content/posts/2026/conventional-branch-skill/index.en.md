@@ -12,7 +12,6 @@ authors:
 date: 2026-05-17
 ---
 
-
 Conventional Branch now has an official Skill.
 
 This all started with an [Issue](https://github.com/conventional-branch/conventional-branch/issues/119) opened by [@ruzickap] on GitHub:
