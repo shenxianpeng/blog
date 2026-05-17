@@ -12,7 +12,6 @@ authors:
 date: 2026-05-17
 ---
 
-Hello everyone, I'm Shen Gong.
 
 Conventional Branch now has an official Skill.
 
