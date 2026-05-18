@@ -9,7 +9,7 @@ isoCode = "zh-cn"
 rtl = false
 dateFormat = "2006-01-02"
 description = "沈显鹏的个人网站，分享关于 AI, DevOps，CI/CD，Build 以及开源。"
-copyright = "Copyright © 2017–2025 Xianpeng Shen. All rights reserved."
+copyright = "Copyright © 2017–2026 Xianpeng Shen. All rights reserved."
 
 [params.author]
 name = "沈显鹏"
