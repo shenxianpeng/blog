@@ -1,5 +1,5 @@
 ---
-title: cpp-linter-hooks：C/C++ 项目最完整的 pre-commit 方案
+title: "cpp-linter-hooks：C/C++ 项目最完整的 pre-commit 方案"
 summary: |
   pre-commit 生态里 C/C++ 的工具一直比较薄弱。cpp-linter-hooks 是目前唯一同时支持 clang-format 和 clang-tidy 的 pre-commit hook，还内置了编译数据库自动检测、版本锁定、自动修复等实用功能。本文介绍它的用法和设计思路。
 tags:
