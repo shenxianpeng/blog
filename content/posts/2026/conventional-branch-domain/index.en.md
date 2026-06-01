@@ -10,7 +10,6 @@ authors:
 date: 2026-05-31
 ---
 
-Hi everyone, I'm Shen.
 
 Conventional Branch finally has its own independent domain.
 
