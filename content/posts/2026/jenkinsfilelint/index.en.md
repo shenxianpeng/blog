@@ -12,8 +12,6 @@ authors:
 date: 2026-06-09
 ---
 
-Hello everyone, I'm Shen Gong.
-
 Recently, a personal project I maintain, [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint), officially moved from my GitHub account to the [jenkinsci](https://github.com/jenkinsci) official organization.
 
 The entire process took about two weeks, and some of the issues encountered along the way were quite interesting. Today, I'm writing this article to talk about the process.
