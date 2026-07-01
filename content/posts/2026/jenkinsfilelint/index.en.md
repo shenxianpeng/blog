@@ -64,7 +64,7 @@ But then dduportal proposed a suggestion I hadn't anticipated at all:
 
 He asked if I would like to move the project directly under the official Jenkins organization.
 
-My first thought upon seeing this reply was: when can we transfer? 😂
+My first thought upon seeing this reply was: when can we transfer : )
 
 This would give it more exposure than being under my personal account, and I would still be maintaining it, so why not?
 
