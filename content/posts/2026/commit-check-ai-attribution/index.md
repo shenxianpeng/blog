@@ -1,8 +1,7 @@
 ---
-title: Commit Check 新功能：AI 归属治理与近期亮点功能回顾
+title: 你的仓库里，哪些代码是 AI 写的？现在有工具能管住了
 summary: |
-  Commit Check 在最新版本中引入了 AI 归属治理功能——通过配置 ai_attribution = "forbid"，可以拒绝包含已知 AI 工具签名的提交。
-  这篇博客也一并回顾了从 v2.5.0 到 v2.10.0 之间的多个重要更新，包括分支规范增强、强制推送保护、输出控制等。
+  Claude Code 等 AI 工具默认会往提交里塞签名，很多人根本没注意到。Commit Check v2.11.0 引入 AI 归属治理，一行配置即可在 CI 层面拒绝带 AI 签名的提交。本文也聊聊这个功能的边界，以及这半年 Commit Check 解决的其他几个痛点。
 tags:
   - Commit-Check
   - DevOps
@@ -16,182 +15,108 @@ series_order: 4
 
 大家好，我是沈工。
 
-距离上次写 Commit Check 的更新已经过去大半年了。这段时间 Commit Check 发布了不少版本，今天趁着一个我觉得特别重要的新功能刚刚合入，写篇博客聊聊。
-
-## 先说最重要的：AI 归属治理
-
-刚刚发布的 v2.11.0 发布的核心功能——**AI 归属治理（AI Attribution Governance）**。
-
-这个功能解决什么问题呢？
-
-随着 Claude Code、GitHub Copilot、Cursor、Windsurf、Devin 等 AI 编程工具的普及，开源社区面临一个新问题：**如何知道一个提交是否由 AI 辅助生成？**
-
-Python 社区在 [discuss.python.org](https://discuss.python.org/t/should-claude-codes-usage-be-described-in-the-code-docs-somewhere/107969) 上专门讨论过这个问题，Linux Kernel 标准化了 `Assisted-by:` 格式，VS Code 也有相关的 [issue](https://github.com/microsoft/vscode/issues/313962) 讨论是否用 `Assisted-by` 替代 `Co-authored-by` 来标注 AI 贡献者。
-
-但问题是，目前我还没有看到有工具能在 CI 层面自动执行这种策略。
-
-Commit Check 本身就是做 commit 检查的，很适合来做这个事情。
-
-### 配置方式
-
-非常简单，只需一行配置:
-
-```toml
-[commit]
-ai_attribution = "forbid"  # "ignore" 为默认值，表示不检查
-```
-
-设置为 `forbid` 后，Commit Check 会检查提交消息中是否包含已知 AI 工具的特征签名。如果检测到，提交将被拒绝。
-
-> **注意**：此功能仅在提交消息中检测 AI 工具签名，不会影响其他类型的提交检查。
-
-### 当前支持识别的 AI 工具
-
-目前内置的签名库可以识别以下工具：
-
-| 工具 | 匹配模式 |
-|------|----------|
-| Claude Code | `Co-authored-by: Claude`、`Assisted-by: Claude:<model>`、`🤖 Generated with Claude`、`Claude-Session:`、`Claude-Workflow:` |
-| GitHub Copilot | `Co-authored-by: Copilot` |
-| OpenAI Codex | `Co-authored-by: Codex` |
-| Gemini | `Co-authored-by: Gemini` |
-| Cursor | `Co-authored-by: Cursor` |
-| Devin | `Co-authored-by: Devin` |
-| Aider | `Co-authored-by: Aider`、`Co-authored-by: ... (aider)` |
-| Windsurf | `Co-authored-by: Windsurf` |
-| Tabby | `Co-authored-by: Tabby` |
-| 通用 AI | `Assisted-by: <tool>:<model>` (Kernel 风格)、模型名称 (`claude-sonnet-4`、`gpt-4-turbo`) |
-
-### 误报防护
-
-实际使用中，有的外国人的名字就叫 Claude 或 Devin，如果不做区分就会出现误报。
-
-Commit Check 的方案是：针对 Claude、Devin、Copilot 等模式，**锚定到已知的 noreply 邮箱地址**，不会误匹配正常的人类 co-author。例如 `Co-authored-by: Jane Doe <jane@example.com>` 永远不会被标记。
-
-### 多种集成方式
-
-和所有 Commit Check 功能一样，AI 归属治理支持：
+先请你做个小实验：打开团队的仓库，跑一下这条命令——
 
 ```bash
-# CLI 方式
-commit-check --ai-attribution=forbid
+git log --grep="Co-authored-by: Claude"
+```
 
-# 环境变量
-export CCHK_AI_ATTRIBUTION=forbid
+如果你们团队有人在用 Claude Code，结果可能会让你有点惊讶。
 
-# TOML 配置
+因为 Claude Code 默认就会往提交里塞 `Co-authored-by: Claude` 这样的签名，Copilot、Cursor、Devin 这些工具也各有各的标记方式。提交历史里已经不知不觉混进了一堆 AI 签名。
+
+有的团队无所谓，有的团队明确不希望这些出现在提交历史里——尤其是对代码来源有合规要求的企业，以及不想被 AI 提交淹没的开源项目。
+
+这个问题社区其实已经吵起来了。Python 社区在 [discuss.python.org](https://discuss.python.org/t/should-claude-codes-usage-be-described-in-the-code-docs-somewhere/107969) 上专门讨论过，Linux Kernel 干脆标准化了 `Assisted-by:` 格式，VS Code 也有 [issue](https://github.com/microsoft/vscode/issues/313962) 在讨论要不要用它替代 `Co-authored-by`。
+
+大家都在讨论"该怎么标注"，但我发现一个空白：**没有工具能在 CI 层面把这个策略真正执行起来。** 讨论归讨论，落不了地。
+
+Commit Check 本来就是干 commit 检查这行的，这事它不做谁做？于是就有了刚发布的 v2.11.0——AI 归属治理（AI Attribution Governance）。
+
+## 一行配置的事
+
+```toml
 [commit]
 ai_attribution = "forbid"
-
-# Python API
-from commit_check.api import validate_message
-result = validate_message(message, ai_attribution="forbid")
 ```
 
-详细的 PR 见 [commit-check/commit-check#456](https://github.com/commit-check/commit-check/pull/456)，欢迎 review 和反馈。
+加上这行，凡是提交消息里带有已知 AI 工具签名的提交，直接拒绝。默认值是 `ignore`，不影响老用户。
 
----
+目前内置的签名库覆盖了 Claude Code、Copilot、Codex、Gemini、Cursor、Devin、Aider、Windsurf 等主流工具，也认 Kernel 风格的 `Assisted-by: <tool>:<model>`，甚至提交消息里直接出现 `claude-sonnet-4`、`gpt-4-turbo` 这种模型名也能识别。
 
-## 这段时间发布的亮点回顾
+## 但有个坑：真有人就叫 Claude
 
-自 v2.5.0 以来，Commit Check 着实还发布了不少实用的功能，这里一并回顾一下。
+做这个功能时我最担心的是误报。Claude、Devin 这些都是正常的英文人名，总不能同事就叫 Devin，一提交就被拒吧。
 
-### v2.9.0 — AI Agent 分支前缀默认支持
+所以对这类模式，Commit Check 不是单纯匹配名字，而是**锚定到 AI 工具已知的 noreply 邮箱**。`Co-authored-by: Jane Doe <jane@example.com>` 这种真人 co-author 永远不会被误伤。
 
-[Conventional Branch](https://www.conventionalbranch.org) v1.1.0 规范中新增了 AI agent 相关的分支前缀：`ai/`、`claude/`、`codex/`、`copilot/`、`cursor/`。
+想试的话，CLI、环境变量、TOML 配置、Python API 都支持，用法和其他检查项完全一致。详细实现见 [commit-check/commit-check#456](https://github.com/commit-check/commit-check/pull/456)，欢迎来拍砖。
 
-在 v2.9.0 中，这些前缀已加入默认分支类型，无需额外配置即可使用。
+## 先泼盆冷水：这个功能防不了刻意作弊
 
-如果你用 Claude Code 或 Copilot 创建分支，分支名如 `claude/fix-bug-123` 现在默认就能通过检查。
+必须说清楚一点：`ai_attribution = "forbid"` 检查的是提交消息里的签名，**它管得住默认行为，管不住存心绕过的人**。
 
-### v2.8.0 — 自定义正则与 Python 3.9 告别
+比如开发者完全可以跟 AI 说一句"提交的时候不要加任何 AI 相关的签名"，或者让 AI 只改代码、自己手动提交——这样提交消息里干干净净，Commit Check 自然什么也查不出来。代码是不是 AI 写的，光看 commit message 是永远无法百分百判断的。
 
-v2.8.0 有两个重要变化：
+那这个功能还有什么意义？
 
-一是把用户呼声很高的自定义正则功能加了回来，通过 `message_pattern` 配置选项支持：
+它和 commit message 规范、分支命名规范是同一类东西——**这些检查从来防不住存心捣乱的人（`--no-verify` 一加全绕过了），防的是"没人说清楚规则"和"顺手就那么提了"**。
 
-```toml
-[commit]
-message_pattern = "^(feat|fix|docs|chore|test)\\(.*\\):.*$"
-```
+实际场景里，绝大多数 AI 签名不是开发者主动加的，而是工具的默认行为。团队如果没有明确策略，提交历史就会不知不觉被污染。有了 CI 层面的强制检查，至少做到两件事：
 
-二是正式放弃了对 Python 3.9 的支持，让项目可以使用更新的 Python 特性。
+* 一是**把团队的策略显式化**——"我们不接受 AI 签名"这句话从口头约定变成了一条会拒绝提交的规则；
+* 二是**拦住所有无心之失**。至于刻意隐瞒的那部分，那是工程文化和 code review 的事，不是一个 lint 工具该许诺的。
 
-### v2.7.0 — 强制推送保护
+工具的边界说清楚，用起来才不会失望。
 
-这是一个很多团队呼声很高的功能。
+## 顺便聊聊这半年加的其他东西
 
-Commit Check 现在可以通过 `pre-push` hook 检测强制推送 (`git push --force` / `git push -f`)，并在检测到时阻止推送。
+距离上次写 Commit Check 已经大半年了，这期间发的几个功能，我按"解决什么问题"给大家过一遍，看看有没有戳中你的。
 
-原理是通过 `git merge-base --is-ancestor` 检查远程提交是否是本地提交的祖先。新分支推送和快进推送都会正常通过，只有真正的强制推送才会被拦截。
-
-```toml
-[push]
-allow_force_push = false  # 默认 true，设为 false 后阻止强制推送
-```
-
-这个功能作为 `pre-commit` 的 `pre-push` hook 使用：
+**同事一个 force push，把你的提交推没了。** 这可能是 Git 协作里最气人的事故之一。现在 Commit Check 提供了 `check-no-force-push` 这个 pre-push hook，原理是用 `git merge-base --is-ancestor` 判断远程提交是不是本地提交的祖先——新分支和快进推送正常放行，只拦真正的强制推送。装上之后，手快的同事想 `push -f` 也推不出去。
 
 ```yaml
 repos:
   - repo: https://github.com/commit-check/commit-check
-    rev: v2.7.0
+    rev: v2.11.0
     hooks:
       - id: check-no-force-push
         stages: [pre-push]
 ```
 
-### v2.6.0 — 输出控制
+**用 Claude Code 建的分支过不了分支名检查。** Conventional Branch v1.1.0 新增了 AI agent 分支前缀，Commit Check 也跟进了：`claude/fix-bug-123`、`copilot/xxx` 这类分支名现在默认就能通过，不用改配置。
 
-很多用户反馈，CI 日志中的提交检查 banner 太长。v2.6.0 新增了两个 CLI 标志：
-
-- `--no-banner`：去掉 ASCII 艺术 banner，保留详细错误信息
-- `--compact`：每个失败检查只输出一行 `[FAIL]`，同时隐含 `--no-banner`
-
-在 CI 日志或 pre-commit 输出中非常实用。
-
-### v2.5.0 — 多个实用更新
-
-这是 v2 系列中最重要的一个功能版本，包含三个重要更新：
-
-**Co-author 绕过支持**
-
-当 commit 的 co-author 匹配 `ignore_authors` 列表时，该提交可以跳过所有检查。特别适用于 AI 辅助开发工作流：
+**dependabot 的提交老是被规则卡住。** 配一下 `ignore_authors`，把 `dependabot[bot]`、`renovate[bot]` 这些机器人加进去，它们的提交就跳过检查。AI 辅助工作流里同样好用。
 
 ```toml
 [commit]
-ignore_authors = ["dependabot[bot]", "renovate[bot]", "coderabbitai[bot]", "copilot[bot]"]
+ignore_authors = ["dependabot[bot]", "renovate[bot]", "coderabbitai[bot]"]
 ```
 
-**组织级配置继承（inherit_from）**
-
-团队现在可以共享一个中心化的基础配置：
+**几十个仓库，每个都要拷一份配置。** 现在支持 `inherit_from`，组织里放一份中心配置，每个仓库一行引用，需要的地方再局部覆盖。想在团队里统一提交规范的，这个功能就是为你准备的。
 
 ```toml
-# 每个仓库只需引用组织配置
 inherit_from = "github:my-org/.github:cchk.toml"
 
 [commit]
 subject_max_length = 72  # 局部覆盖
 ```
 
-支持 GitHub raw 文件、本地路径、HTTPS URL 多种来源。
+**嫌 CI 日志里那个 ASCII banner 太占地方。** 加 `--compact`，每个失败检查只输出一行 `[FAIL]`。这是用户反馈最多的小需求之一，改完之后 CI 日志清爽多了。
 
-**Git Config 作者验证修复**
+另外还有自定义正则 `message_pattern` 的回归（呼声很高）、作者信息检查改为优先读 `git config`（之前配错 user.name 居然能混过去）等等，就不一一展开了，感兴趣的可以去 Release Notes 里翻。
 
-之前只检查最新提交的作者信息，现在则优先检查 `git config user.name` 和 `git config user.email`——也就是**下一次提交**会使用的身份。解决了开发者配置了错误的 user.name 但仍然能通过检查的问题。
+## 写在最后
 
----
+Commit Check 是 2022 年开始写的，最初真的就只是个"检查 commit message 的工具"。
 
-## 结语
+现在回头看，它管的事已经越来越多：提交消息、分支命名、作者身份、签名、合并基线、强制推送，再到现在的 AI 归属——基本覆盖了代码提交这个环节的全流程合规检查。使用方式上，CLI、pre-commit hook、Python API、GitHub Action 也都齐了，想怎么接入都行。
 
-Commit Check 自 2022 年诞生至今，我最大的感受是——它已经不仅仅是一个"检查 commit message 的工具"了。
+这些检查背后其实是同一个原则：**policy as code**。规则本身就是代码，放在仓库里，和代码一起被版本化、被审查、被讨论。团队的提交规范不再是口头约定，而是一条条可以被执行的规则。
 
-它已经从最初的提交消息、分支命名、作者信息和签名验证等基础检查，扩展到后来的合并基线检查、强制推送保护，再到现在的 AI 归属治理，逐渐成为一个覆盖代码提交全流程的合规检查框架。
+说实话这些不是一次性规划出来的，是四年来用户的反馈和使用场景的变化，推着 Commit Check 一点点演进到今天。
 
-这也是我最初没有想到的——用户的反馈和社区的需求，推动着它一步步走到今天。
-
-如果你还没有用过 Commit Check，可以通过 pip 安装：
+如果你的团队也在为提交规范、或者"AI 提交要不要管"的问题头疼，可以试试：
 
 ```bash
 pip install commit-check
@@ -201,7 +126,7 @@ pip install commit-check
 
 📄 更多详情：https://commit-check.github.io/commit-check/
 
-最后，也欢迎大家在 GitHub 上 Star、提交 Issue 或贡献代码。
+觉得有用的话，欢迎 Star，也欢迎提 Issue 告诉我你的团队还有什么想治理的痛点。
 
 ---
 
