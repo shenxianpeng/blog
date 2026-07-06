@@ -24,11 +24,11 @@ series_order: 4
 
 这个功能解决什么问题呢？
 
-随着 Claude Code、GitHub Copilot、Cursor、Windsurf、Devin 等 AI 编程工具的普及，开源社区面临一个新问题：**如何知道一个提交是由人类还是 AI 写的？**
+随着 Claude Code、GitHub Copilot、Cursor、Windsurf、Devin 等 AI 编程工具的普及，开源社区面临一个新问题：**如何知道一个提交是否由 AI 辅助生成？**
 
 Python 社区在 [discuss.python.org](https://discuss.python.org/t/should-claude-codes-usage-be-described-in-the-code-docs-somewhere/107969) 上专门讨论过这个问题，Linux Kernel 标准化了 `Assisted-by:` 格式，VS Code 也有相关的 [issue](https://github.com/microsoft/vscode/issues/313962) 讨论是否用 `Assisted-by` 替代 `Co-authored-by` 来标注 AI 贡献者。
 
-但问题是，目前似乎没有一款工具能在 CI 层面自动执行这种策略。
+但问题是，目前我还没有看到有工具能在 CI 层面自动执行这种策略。
 
 Commit Check 本身就是做 commit 检查的，很适合来做这个事情。
 
@@ -45,7 +45,7 @@ ai_attribution = "forbid"  # "ignore" 为默认值，表示不检查
 
 > **注意**：此功能仅在提交消息中检测 AI 工具签名，不会影响其他类型的提交检查。
 
-### 支持检测的 AI 工具
+### 当前支持识别的 AI 工具
 
 目前内置的签名库可以识别以下工具：
 
@@ -66,7 +66,7 @@ ai_attribution = "forbid"  # "ignore" 为默认值，表示不检查
 
 实际使用中，有的外国人的名字就叫 Claude 或 Devin，如果不做区分就会出现误报。
 
-Commit Check 的方案是：针对 Claude、Devin、Copilot 等模式，**锚定到已知的 noreply 邮箱地址**，不会匹配到人类的 co-author。普通用户如 `Co-authored-by: Jane Doe <jane@example.com>` 永远不会被标记。
+Commit Check 的方案是：针对 Claude、Devin、Copilot 等模式，**锚定到已知的 noreply 邮箱地址**，不会误匹配正常的人类 co-author。例如 `Co-authored-by: Jane Doe <jane@example.com>` 永远不会被标记。
 
 ### 多种集成方式
 
@@ -100,7 +100,7 @@ result = validate_message(message, ai_attribution="forbid")
 
 [Conventional Branch](https://www.conventionalbranch.org) v1.1.0 规范中新增了 AI agent 相关的分支前缀：`ai/`、`claude/`、`codex/`、`copilot/`、`cursor/`。
 
-在 v2.9.0 中，这些前缀被直接加入到默认分支类型中，开箱即用，无需额外配置。
+在 v2.9.0 中，这些前缀已加入默认分支类型，无需额外配置即可使用。
 
 如果你用 Claude Code 或 Copilot 创建分支，分支名如 `claude/fix-bug-123` 现在默认就能通过检查。
 
@@ -123,7 +123,7 @@ message_pattern = "^(feat|fix|docs|chore|test)\\(.*\\):.*$"
 
 Commit Check 现在可以通过 `pre-push` hook 检测强制推送 (`git push --force` / `git push -f`)，并在检测到时阻止推送。
 
-原理是通过 `git merge-base --is-ancestor` 检查远程提交是否是本地提交的祖先。新分支推送、快进推送正常通过，只有真正的强制推送才会被拦截。
+原理是通过 `git merge-base --is-ancestor` 检查远程提交是否是本地提交的祖先。新分支推送和快进推送都会正常通过，只有真正的强制推送才会被拦截。
 
 ```toml
 [push]
@@ -143,7 +143,7 @@ repos:
 
 ### v2.6.0 — 输出控制
 
-很多用户在 CI 日志中觉得提交检查的 banner 太长了。v2.6.0 新增了两个 CLI 标志：
+很多用户反馈，CI 日志中的提交检查 banner 太长。v2.6.0 新增了两个 CLI 标志：
 
 - `--no-banner`：去掉 ASCII 艺术 banner，保留详细错误信息
 - `--compact`：每个失败检查只输出一行 `[FAIL]`，同时隐含 `--no-banner`
@@ -156,7 +156,7 @@ repos:
 
 **Co-author 绕过支持**
 
-当 commit 的 co-author 匹配 `ignore_authors` 列表时，该提交可以跳过所有检查。特别适合 AI 辅助工作流：
+当 commit 的 co-author 匹配 `ignore_authors` 列表时，该提交可以跳过所有检查。特别适用于 AI 辅助开发工作流：
 
 ```toml
 [commit]
@@ -179,15 +179,15 @@ subject_max_length = 72  # 局部覆盖
 
 **Git Config 作者验证修复**
 
-之前只检查最新提交的作者信息，现在优先检查 `git config user.name / user.email`——也就是**下一次提交**会使用的身份。解决了开发者配置了错误的 user.name 但仍然能通过检查的问题。
+之前只检查最新提交的作者信息，现在则优先检查 `git config user.name` 和 `git config user.email`——也就是**下一次提交**会使用的身份。解决了开发者配置了错误的 user.name 但仍然能通过检查的问题。
 
 ---
 
 ## 结语
 
-Commit Check 自 2022 年诞生至今，我最大的感受是 —— 它已经不仅仅是一个"检查 commit message 的工具"了。
+Commit Check 自 2022 年诞生至今，我最大的感受是——它已经不仅仅是一个"检查 commit message 的工具"了。
 
-它已经从原来的基本检查包括提交消息、分支命名、作者信息、签名验证，到后面的合并基线检查、强制推送保护，再到现在的 AI 归属治理，已逐渐成为一个覆盖代码提交全流程的合规检查框架。
+它已经从最初的提交消息、分支命名、作者信息和签名验证等基础检查，扩展到后来的合并基线检查、强制推送保护，再到现在的 AI 归属治理，逐渐成为一个覆盖代码提交全流程的合规检查框架。
 
 这也是我最初没有想到的——用户的反馈和社区的需求，推动着它一步步走到今天。
 
@@ -201,7 +201,7 @@ pip install commit-check
 
 📄 更多详情：https://commit-check.github.io/commit-check/
 
-最后欢迎大家在 GitHub 上 Star、提出问题和贡献代码。
+最后，也欢迎大家在 GitHub 上 Star、提交 Issue 或贡献代码。
 
 ---
 
