@@ -13,7 +13,7 @@ series: ["Commit Check"]
 series_order: 4
 ---
 
-Hello everyone, I'm Shen Xianpeng.
+Hi, I'm Xianpeng.
 
 First, I'd like you to do a small experiment: open your team's repository and run this command—
 
