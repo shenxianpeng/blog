@@ -127,7 +127,3 @@ pip install commit-check
 📄 More details: https://commit-check.github.io/commit-check/
 
 If you find it useful, please Star it, and feel free to open an Issue to tell me what other pain points your team would like to govern.
-
----
-
-Please credit the author and source when reprinting articles from this site. Do not use for any commercial purposes. Welcome to follow the official account '沈显鹏' (Shen Xianpeng).
