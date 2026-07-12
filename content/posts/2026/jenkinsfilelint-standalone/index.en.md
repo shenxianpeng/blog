@@ -13,8 +13,6 @@ authors:
 date: 2026-07-12
 ---
 
-Hello everyone, I'm Shen Gong.
-
 I previously wrote an article about [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint)—one detailing its journey from my personal project into the official Jenkins organization. Today, let's talk about the newly released **v1.5.0** version.
 
 The biggest change in this version is the addition of a **standalone mode**.
@@ -131,7 +129,3 @@ This community-feedback-driven development experience has been quite good—some
 If your team uses Jenkins, you might want to try Jenkinsfilelint. It can help you catch Jenkinsfile syntax errors before committing. If you have any questions, feel free to open an issue on GitHub.
 
 Project Address: [github.com/jenkinsci/jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint)
-
----
-
-Please attribute the author and source when reprinting articles from this site. Do not use for any commercial purposes. Welcome to follow the WeChat official account "Shen Xianpeng".
