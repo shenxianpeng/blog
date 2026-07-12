@@ -1,0 +1,26 @@
+content/posts/2026/jenkinsfilelint-standalone/index.md
+  s_737efcf3ef2748::t_ebde8c396b1f52 1-17,19,21,27-33,35,37,39,42-81,83-128,130,132-137
+  h_95e33fbd4ab2d9 18,22-24,26,34,36,38,40-41,82,129,131
+  s_737efcf3ef2748::t_3cb3cc2d5eed2c 20,25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "79075f4b816df265e93aaebf1f3a9899e17323da",
+  "prompts": {},
+  "humans": {
+    "h_95e33fbd4ab2d9": {
+      "author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_737efcf3ef2748": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f5689-742f-7ff1-9ebe-e00f991da628",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
