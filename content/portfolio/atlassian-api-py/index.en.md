@@ -1,7 +1,7 @@
 ---
 title: "atlassian-api-py"
 weight: 9
-externalUrl: "https://github.com/shenxianpeng/atlassian-api-py"
+externalUrl: "https://github.com/open-delivery-spec"
 summary: "Python wrapper for Atlassian REST APIs with support for Jira, Bitbucket, and Confluence."
 showDate: false
 showReadingTime: false
