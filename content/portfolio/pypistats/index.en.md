@@ -21,6 +21,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 | [![Package][badge-name-cpp-linter]][gh-cpp-linter] | [![PyPI][badge-version-cpp-linter]][cpp-linter] | [![Downloads][badge-downloads-cpp-linter]][cpp-linter] | [![Commit][badge-commit-cpp-linter]][gh-cpp-linter] |
 | [![Package][badge-name-cpp-linter-hooks]][gh-cpp-linter-hooks] | [![PyPI][badge-version-cpp-linter-hooks]][cpp-linter-hooks] | [![Downloads][badge-downloads-cpp-linter-hooks]][cpp-linter-hooks] | [![Commit][badge-commit-cpp-linter-hooks]][gh-cpp-linter-hooks] |
 | [![Package][badge-name-gitstats]][gh-gitstats] | [![PyPI][badge-version-gitstats]][gitstats] | [![Downloads][badge-downloads-gitstats]][gitstats] | [![Commit][badge-commit-gitstats]][gh-gitstats] |
+| [![Package][badge-name-gitoxide]][gh-gitoxide] | [![PyPI][badge-version-gitoxide]][gitoxide] | [![Downloads][badge-downloads-gitoxide]][gitoxide] | [![Commit][badge-commit-gitoxide]][gh-gitoxide] |
 | [![Package][badge-name-gnuplot-wheel]][gh-gnuplot-wheel] | [![PyPI][badge-version-gnuplot-wheel]][gnuplot-wheel] | [![Downloads][badge-downloads-gnuplot-wheel]][gnuplot-wheel] | [![Commit][badge-commit-gnuplot-wheel]][gh-gnuplot-wheel] |
 | [![Package][badge-name-atlassian-api-py]][gh-atlassian-api-py] | [![PyPI][badge-version-atlassian-api-py]][atlassian-api-py] | [![Downloads][badge-downloads-atlassian-api-py]][atlassian-api-py] | [![Commit][badge-commit-atlassian-api-py]][gh-atlassian-api-py] |
 | [![Package][badge-name-badgepy]][gh-badgepy] | [![PyPI][badge-version-badgepy]][badgepy] | [![Downloads][badge-downloads-badgepy]][badgepy] | [![Commit][badge-commit-badgepy]][gh-badgepy] |
@@ -44,6 +45,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [jenkinsfilelint]: https://pypi.org/project/jenkinsfilelint/
 [mkdocs-ng]: https://pypi.org/project/mkdocs-ng/
 [gitstats]: https://pypi.org/project/gitstats/
+[gitoxide]: https://pypi.org/project/gitoxide/
 [gnuplot-wheel]: https://pypi.org/project/gnuplot-wheel/
 [py-eol]: https://pypi.org/project/py-eol/
 [badgepy]: https://pypi.org/project/badgepy/
@@ -62,6 +64,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [gh-jenkinsfilelint]: https://github.com/shenxianpeng/jenkinsfilelint
 [gh-mkdocs-ng]: https://github.com/mkdocs-ng/mkdocs
 [gh-gitstats]: https://github.com/shenxianpeng/gitstats
+[gh-gitoxide]: https://github.com/shenxianpeng/gitoxide
 [gh-gnuplot-wheel]: https://github.com/shenxianpeng/gnuplot-wheel
 [gh-py-eol]: https://github.com/shenxianpeng/py-eol
 [gh-badgepy]: https://github.com/shenxianpeng/badgepy
@@ -80,6 +83,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-version-jenkinsfilelint]: https://img.shields.io/pypi/v/jenkinsfilelint?style=flat-square
 [badge-version-mkdocs-ng]: https://img.shields.io/pypi/v/mkdocs-ng?style=flat-square
 [badge-version-gitstats]: https://img.shields.io/pypi/v/gitstats?style=flat-square
+[badge-version-gitoxide]: https://img.shields.io/pypi/v/gitoxide?style=flat-square
 [badge-version-gnuplot-wheel]: https://img.shields.io/pypi/v/gnuplot-wheel?style=flat-square
 [badge-version-py-eol]: https://img.shields.io/pypi/v/py-eol?style=flat-square
 [badge-version-badgepy]: https://img.shields.io/pypi/v/badgepy?style=flat-square
@@ -98,6 +102,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-downloads-jenkinsfilelint]: https://img.shields.io/pypi/dm/jenkinsfilelint?style=flat-square
 [badge-downloads-mkdocs-ng]: https://img.shields.io/pypi/dm/mkdocs-ng?style=flat-square
 [badge-downloads-gitstats]: https://img.shields.io/pypi/dm/gitstats?style=flat-square
+[badge-downloads-gitoxide]: https://img.shields.io/pypi/dm/gitoxide?style=flat-square
 [badge-downloads-gnuplot-wheel]: https://img.shields.io/pypi/dm/gnuplot-wheel?style=flat-square
 [badge-downloads-py-eol]: https://img.shields.io/pypi/dm/py-eol?style=flat-square
 [badge-downloads-badgepy]: https://img.shields.io/pypi/dm/badgepy?style=flat-square
@@ -116,6 +121,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-commit-jenkinsfilelint]: https://img.shields.io/github/last-commit/shenxianpeng/jenkinsfilelint?style=flat-square
 [badge-commit-mkdocs-ng]: https://img.shields.io/github/last-commit/mkdocs-ng/mkdocs?style=flat-square
 [badge-commit-gitstats]: https://img.shields.io/github/last-commit/shenxianpeng/gitstats?style=flat-square
+[badge-commit-gitoxide]: https://img.shields.io/github/last-commit/shenxianpeng/gitoxide?style=flat-square
 [badge-commit-gnuplot-wheel]: https://img.shields.io/github/last-commit/shenxianpeng/gnuplot-wheel?style=flat-square
 [badge-commit-py-eol]: https://img.shields.io/github/last-commit/shenxianpeng/py-eol?style=flat-square
 [badge-commit-badgepy]: https://img.shields.io/github/last-commit/shenxianpeng/badgepy?style=flat-square
@@ -134,6 +140,7 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-name-jenkinsfilelint]: https://img.shields.io/badge/jenkinsfilelint-blue?style=flat-square&logo=github
 [badge-name-mkdocs-ng]: https://img.shields.io/badge/mkdocs--ng-blue?style=flat-square&logo=github
 [badge-name-gitstats]: https://img.shields.io/badge/gitstats-blue?style=flat-square&logo=github
+[badge-name-gitoxide]: https://img.shields.io/badge/gitoxide-blue?style=flat-square&logo=github
 [badge-name-gnuplot-wheel]: https://img.shields.io/badge/gnuplot--wheel-blue?style=flat-square&logo=github
 [badge-name-py-eol]: https://img.shields.io/badge/py--eol-blue?style=flat-square&logo=github
 [badge-name-badgepy]: https://img.shields.io/badge/badgepy-blue?style=flat-square&logo=github
