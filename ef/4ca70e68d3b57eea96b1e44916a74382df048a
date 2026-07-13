@@ -1,0 +1,21 @@
+content/portfolio/atlassian-api-py/index.md
+  s_fce5d815841c56::t_2549b98dcf5058 2
+content/portfolio/atlassian-api-py/index.en.md
+  s_fce5d815841c56::t_a5a439cc878399 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "ef4ca70e68d3b57eea96b1e44916a74382df048a",
+  "prompts": {},
+  "sessions": {
+    "s_fce5d815841c56": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f5d88-208a-7dac-83a4-47a03594e510",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
