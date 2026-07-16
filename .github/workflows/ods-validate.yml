@@ -7,7 +7,7 @@ name: ODS Validate
 
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   validate:
