@@ -1,0 +1,16 @@
+content/posts/2026/conventional-branch-v1-1-0/index.md
+  h_95e33fbd4ab2d9 1-109
+content/posts/2026/open-delivery-spec/index.md
+  h_95e33fbd4ab2d9 1-144
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "d6cf11cd6b2b37f43ef6d6284304df33e0dd7dde",
+  "prompts": {},
+  "humans": {
+    "h_95e33fbd4ab2d9": {
+      "author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
