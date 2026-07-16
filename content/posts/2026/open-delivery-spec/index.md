@@ -9,7 +9,7 @@ tags:
  - Open Source
 authors:
  - shenxianpeng
-date: 2026-07-16
+date: 2026-07-17
 ---
 
 过去几个月，我在业余时间启动了一个新的开源项目——[Open Delivery Spec](https://github.com/open-delivery-spec)（简称 ODS）。这篇文章想诚实地介绍它：为什么做、怎么做、目前能做到什么，以及它做不到什么。
