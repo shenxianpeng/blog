@@ -1,0 +1,14 @@
+content/posts/2026/conventional-branch-v1-1-0/index.md
+  h_95e33fbd4ab2d9 4,19,21,23,27,29,31,33-40,43,45,47,49,51,55,57,59,64,66,68,72,79,81,83,85,89,91,93,95,97,99,101,103,105,109
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "c516bf6c6aec81ba8e4cf40f590ea5b528bccb48",
+  "prompts": {},
+  "humans": {
+    "h_95e33fbd4ab2d9": {
+      "author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
