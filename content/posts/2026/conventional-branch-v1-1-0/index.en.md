@@ -14,8 +14,6 @@ series: ["Conventional Branch"]
 series_order: 3
 ---
 
-Hello everyone, I'm Engineer Shen.
-
 As more and more AI Coding Agents begin to automatically create Git branches, a new question arises: **What specification should these branches follow?**
 
 Conventional Branch has remained at version 1.0.0 since its release, but the newly released 1.1.0 primarily extends around the AI Coding Agent scenario to adapt to new development methods.
@@ -101,9 +99,3 @@ In the future, collaboration partners will no longer be just developers, but als
 If you are not yet familiar with Conventional Branch, please visit https://conventionalbranch.org.
 
 If you believe it can improve your team's Git branch management, feel free to try it out and share it with more developers.
-
-Thank you for your continued attention to Conventional Branch, see you in the next article.
-
----
-
-Please credit the author and source when reprinting articles from this site. Do not use for any commercial purposes. Welcome to follow the WeChat official account '沈显鹏' (Shen Xianpeng).
