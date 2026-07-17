@@ -80,6 +80,8 @@ jobs:
 
 Outputs include PR comments, Job summary, HTML reports, and quality badges. When `semgrep: true` is supported, Semgrep will automatically run, and results will be merged.
 
+![validate action output](validate-action.png)
+
 ## Policies Are Fully Defined By You (OPA Rego)
 
 This is ODS's most steadfast design principle: completely handing over the decision-making power of 'what to block' to the team.
