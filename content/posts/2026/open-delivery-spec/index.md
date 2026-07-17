@@ -80,6 +80,8 @@ jobs:
 
 输出包括 PR 评论、Job summary、HTML 报告和质量徽章。支持 `semgrep: true` 时还会自动运行 Semgrep 并合并结果。
 
+![validate action output](validate-action.png)
+
 ## 策略完全由你定义（OPA Rego）
 
 这是 ODS 最坚持的设计：把“什么该拦”的决定权彻底交给团队。
