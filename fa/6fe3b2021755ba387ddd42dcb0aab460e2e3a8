@@ -1,0 +1,14 @@
+content/posts/2026/goodbye-copilot/index.md
+  h_95e33fbd4ab2d9 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "fa6fe3b2021755ba387ddd42dcb0aab460e2e3a8",
+  "prompts": {},
+  "humans": {
+    "h_95e33fbd4ab2d9": {
+      "author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
