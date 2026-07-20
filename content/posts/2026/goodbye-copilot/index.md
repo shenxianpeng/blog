@@ -1,5 +1,5 @@
 ---
-title: 从吹到黑：我对 GitHub Copilot 的态度转变
+title: 从吹到黑：我为什么不再推荐 GitHub Copilot？
 summary: |
   最近我对 GitHub Copilot 的态度发生了一次比较大的变化：从原来的"吹"变成了现在的"黑"。在对比了 Claude Code 之后，我发现 Copilot 在跨仓库支持、高级工程师意识等方面存在明显不足，已经让我不愿意再和它讨论问题了。
 tags:
