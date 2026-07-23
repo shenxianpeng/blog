@@ -11,15 +11,13 @@ authors:
 date: 2026-05-10
 ---
 
-Hello everyone, I'm Shen Gong.
-
 After May Day, I've been quiet for over a week—not because I had nothing to write, but because I was coding so intensely that I had no time for articles.
 
 The project that kept me going is [RepoKeeper](https://github.com/shenxianpeng/repokeeper).
 
 It has now iterated to v1.2.0, with over a hundred commits in between. Modules have expanded from the initial three to six, transforming from "usable" to "capable of developing itself."
 
-In this article, I'll talk about what RepoKeeper looks like now, and why it's worth checking out.
+In this article, I'll talk about what RepoKeeper looks like now and why it's worth checking out.
 
 ## Why I Built RepoKeeper
 
@@ -61,7 +59,7 @@ Let's take a closer look:
 | Cost | Subscription required | Free for public repos | Free for public repos | **Free (use your own key)** |
 | Self-hosting | ❌ | ❌ | ✅ | ✅ 5 composite actions |
 
-RepoKeeper does more than all of them. Copilot helps you write code in the editor, CodeRabbit comments on code in PRs. These are all important—but they don't handle how an Issue becomes a PR, why CI keeps failing daily, or what questions the community raises in Discussions.
+RepoKeeper does more than all of them. Copilot helps you write code in the editor, and CodeRabbit comments on code in PRs. These are all important—but they don't handle how an Issue becomes a PR, why CI keeps failing daily, or what questions the community raises in Discussions.
 
 These are precisely the things open-source maintainers spend the most time on every day, and they are also RepoKeeper's focus.
 
@@ -218,9 +216,9 @@ Minimum onboarding requires just two steps.
 
 ```bash
 pip install repokeeper
-repokeeper init --all-workflows   # 所有 5 个模块
-# 或者
-repokeeper init --minimal         # 只要 Agent 模块
+repokeeper init --all-workflows   # All 5 models
+# Or
+repokeeper init --minimal         # Just Agent model
 ```
 
 **2. Check before pushing:**
@@ -264,7 +262,3 @@ If you also maintain open-source projects, especially if you're starting to feel
 If you encounter issues, open one on GitHub, or simply let RepoKeeper fix it itself.
 
 See you next time, experienced developers!
-
----
-
-Please attribute the author and source when reprinting articles from this site. Do not use for any commercial purposes. Welcome to follow the official account 'DevOps Engineer'.
