@@ -114,7 +114,7 @@ Firstly, the author himself is very influential.
 
 antirez is the creator of Redis, so projects he works on naturally attract a lot of developer attention.
 
-Secondly, unlike ollma, ds4 focuses solely on the DeepSeek V4 Flash model.
+Secondly, unlike Ollma, ds4 focuses solely on the DeepSeek V4 Flash model.
 
 This indicates that DeepSeek V4 Flash is no longer just an ordinary "cheap model." It has reached a point where influential system-level developers are willing to build dedicated inference engines around it.
 
@@ -152,7 +152,7 @@ For example:
 
 1.  **Backend can be customized**
 
-    Currently, it can connect to Pi, and later it can also connect to OpenCode, or other Agent backends.
+    Currently, it can connect to Pi, and later it can also connect to OpenCode or other Agent backends.
 
 2.  **Models can be chosen by yourself**
 
