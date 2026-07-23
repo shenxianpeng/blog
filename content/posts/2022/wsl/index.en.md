@@ -118,4 +118,4 @@ After that, you can use the command-line `apt-get` command in VS Code to install
 
 ---
 
-Please indicate the author and source when reprinting this article. Please do not use it for any commercial purposes. Welcome to follow the WeChat official account "DevOps攻城狮"
+Please indicate the author and source when reprinting this article. Please do not use it for any commercial purposes. Welcome to follow the WeChat official account "沈显鹏"

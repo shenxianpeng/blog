@@ -187,4 +187,4 @@ This concludes the introduction to Commit Check. For more information, please re
 
 ---
 
-Please indicate the author and source when reprinting this article.  Do not use it for any commercial purposes. Welcome to follow the WeChat public account "DevOps攻城狮".
+Please indicate the author and source when reprinting this article.  Do not use it for any commercial purposes. Welcome to follow the WeChat public account "沈显鹏".

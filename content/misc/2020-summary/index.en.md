@@ -48,7 +48,7 @@ Also, I want to improve my technical skills through consistent reading and pract
 
 ### Sharing
 
-In 2020, I updated 41 articles on my [blog](https://shenxianpeng.github.io/) and 26 articles on my WeChat official account "DevOps攻城狮".
+In 2020, I updated 41 articles on my [blog](https://shenxianpeng.github.io/) and 26 articles on my WeChat official account "沈显鹏".
 
 This quantity and quality are really incomparable to some other technical WeChat official accounts, but for me: a developer who doesn't make a living from writing and only writes original articles, as long as I can output continuously, I'm quite satisfied with this number.
 
