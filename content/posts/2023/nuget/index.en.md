@@ -29,4 +29,4 @@ This document records the problem I encountered while registering with NuGet. I 
 
 ---
 
-Please indicate the author and source when reprinting this article. Do not use it for any commercial purposes.  Welcome to follow the WeChat public account "DevOps攻城狮"
+Please indicate the author and source when reprinting this article. Do not use it for any commercial purposes.  Welcome to follow the WeChat public account "沈显鹏"
