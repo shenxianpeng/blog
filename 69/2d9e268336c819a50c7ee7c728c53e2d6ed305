@@ -1,0 +1,14 @@
+content/posts/2026/claude-for-open-source/index.md
+  h_95e33fbd4ab2d9 101-106,108,110,112,114,116
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "692d9e268336c819a50c7ee7c728c53e2d6ed305",
+  "prompts": {},
+  "humans": {
+    "h_95e33fbd4ab2d9": {
+      "author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
