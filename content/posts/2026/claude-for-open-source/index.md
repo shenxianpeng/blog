@@ -98,16 +98,19 @@ date: 2026-07-28
 
 如果你平时也从事 CI/CD、代码质量、DevOps 工作流相关工作，下面这些项目或许能帮到你：
 
-* **cpp-linter**：C/C++ 代码格式化和静态检查工具，提供 GitHub Action、Python 包以及 Jenkins Plugin。
-* **commit-check**：自动检查 Git 提交信息、分支命名、提交用户名和邮箱、force push 等各种提交规范。
-* **conventional-branch**：关于 Git 分支命名规范的工具，帮助团队统一分支管理方式。
-* **devops-maturity**：DevOps 成熟度评估工具，帮助组织和团队评估 DevOps 实践成熟度。
-* **open-delivery-spec**：开源交付规范，提供 CLI 工具和 GitHub Action，帮助团队在 AI 驱动开发时代实现更高效、更安全的软件交付。
+* [cpp-linter](https://github.com/cpp-linter/cpp-linter)：C/C++ 代码格式化和静态检查工具，提供 GitHub Action、Python 包以及 Jenkins Plugin。
+* [commit-check](https://github.com/commit-check/commit-check)：自动检查 Git 提交信息、分支命名、提交用户名和邮箱、force push 等各种提交规范。
+* [conventional-branch](https://github.com/conventional-branch/conventional-branch)：关于 Git 分支命名规范的工具，帮助团队统一分支管理方式。
+* [devops-maturity](https://github.com/devops-maturity/devops-maturity)：DevOps 成熟度评估工具，帮助组织和团队评估 DevOps 实践成熟度。
+* [open-delivery-spec](https://github.com/open-delivery-spec/open-delivery-spec)：开源交付规范，提供 CLI 工具和 GitHub Action，帮助团队在 AI 驱动开发时代实现更高效、更安全的软件交付。
+* [gitstats](https://github.com/shenxianpeng/gitstats)：生成 Git 仓库统计报告，帮助团队了解代码贡献、提交历史以及项目演进情况。
 
-除此之外，我平时也会参与其他开源社区贡献，目前也是 **PyPA（Python Packaging Authority）** 的志愿者，为 Python 官方生态贡献过代码。
+除了维护自己的项目，我也持续参与一些开源社区贡献。
 
-另外，我还是 Jenkins 社区的 Committer，创建并维护 **explain-error-plugin** 插件和 **jenkinsfilelint** 项目。
+目前我是 PyPA（Python Packaging Authority） 的志愿者，参与 Python 官方生态相关工作；同时也是 Jenkins 社区的 Committer，创建并维护了 [explain-error-plugin](https://github.com/jenkinsci/explain-error-plugin) 和 [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint) 等项目。
 
-如果这些项目刚好能帮助到你，欢迎去 GitHub 上看看，点个 Star，或者分享给身边有需要的朋友。
+这些项目并不一定适合所有人，但如果你刚好在解决类似的问题，欢迎去 GitHub 看看。
 
-对于开源维护者来说，一个 Star、一条 Issue、一份 PR，甚至一句「这个项目帮到我了」，都是一种认可和鼓励。
+如果它们曾经帮到你，欢迎点一个 Star，或者分享给身边可能需要的人。
+
+对于开源维护者来说，一个 Star、一条 Issue、一份 PR，甚至一句「这个项目帮到我了」，都是继续坚持下去的动力。
