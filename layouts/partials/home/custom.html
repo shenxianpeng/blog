@@ -1,24 +1,129 @@
-{{ $jsHome := resources.Get "js/home.js" | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
-<div id="background">
-  {{ partial "home/background.html" . }}
+{{/*
+  Homepage — light mode is editorial (magazine grid, serif display type),
+  dark mode is terminal (mono labels, carded projects). Both share this markup;
+  the switch rides on Blowfish's own `html.dark` class, so no JS is involved.
+
+  Copy tweaks live in i18n/*.yaml under `home:`; the project grid lives in
+  data/projects.yaml.
+*/}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+#sxp-home {
+  --sxp-text: #1c1c1a;
+  --sxp-muted: #555;
+  --sxp-subtle: #999;
+  --sxp-border: #e3e3df;
+  --sxp-accent: oklch(0.45 0.1 150);
+  --sxp-card-bg: #fbfbf9;
+  --sxp-serif: 'Noto Serif SC', serif;
+  --sxp-mono: 'JetBrains Mono', monospace;
+  color: var(--sxp-text);
+  max-width: 1024px;
+  margin: 0 auto;
+}
+html.dark #sxp-home {
+  --sxp-text: oklch(0.92 0.005 240);
+  --sxp-muted: oklch(0.7 0.01 240);
+  --sxp-subtle: oklch(0.55 0.01 240);
+  --sxp-border: oklch(0.28 0.01 240);
+  --sxp-accent: oklch(0.8 0.15 200);
+  --sxp-card-bg: oklch(0.22 0.01 240);
+}
+#sxp-home a { text-decoration: none; }
+#sxp-home .sxp-hero { display: flex; gap: 48px; align-items: center; padding: 56px 0 48px; }
+#sxp-home .sxp-hero img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+html.dark #sxp-home .sxp-hero img { border-radius: 16px; }
+#sxp-home .sxp-hero-text { display: flex; flex-direction: column; gap: 16px; }
+#sxp-home .sxp-whoami { display: none; font-family: var(--sxp-mono); font-size: 14px; color: var(--sxp-accent); }
+html.dark #sxp-home .sxp-whoami { display: block; }
+#sxp-home h1.sxp-title { margin: 0; font-family: var(--sxp-serif); font-weight: 900; font-size: 40px; line-height: 1.3; text-wrap: pretty; }
+html.dark #sxp-home h1.sxp-title { font-family: inherit; font-weight: 700; font-size: 34px; }
+#sxp-home .sxp-intro { margin: 0; font-size: 16px; line-height: 1.8; color: var(--sxp-muted); max-width: 620px; }
+#sxp-home .sxp-section-label { font-family: var(--sxp-mono); font-size: 12px; letter-spacing: 2px; color: var(--sxp-subtle); }
+#sxp-home .sxp-section-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; }
+#sxp-home .sxp-section-head a { font-size: 13px; color: var(--sxp-accent); }
+#sxp-home .sxp-projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--sxp-border); border: 1px solid var(--sxp-border); }
+html.dark #sxp-home .sxp-projects { gap: 16px; background: transparent; border: none; }
+#sxp-home .sxp-project { background: var(--sxp-card-bg); padding: 22px 24px; display: flex; flex-direction: column; gap: 8px; transition: background 200ms ease-out; }
+html.dark #sxp-home .sxp-project { border: 1px solid var(--sxp-border); border-radius: 10px; }
+#sxp-home .sxp-project:hover { background: color-mix(in oklab, var(--sxp-card-bg), var(--sxp-accent) 6%); }
+#sxp-home .sxp-project-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+#sxp-home .sxp-project-name { font-weight: 700; font-size: 15px; color: var(--sxp-text); }
+html.dark #sxp-home .sxp-project-name { font-family: var(--sxp-mono); }
+#sxp-home .sxp-badge { font-family: var(--sxp-mono); font-size: 11px; color: var(--sxp-accent); border: 1px solid color-mix(in oklab, var(--sxp-accent), transparent 60%); border-radius: 100px; padding: 2px 9px; white-space: nowrap; }
+html.dark #sxp-home .sxp-badge { border: none; padding: 0; }
+#sxp-home .sxp-project-desc { font-size: 13px; color: var(--sxp-muted); line-height: 1.65; }
+#sxp-home .sxp-posts { display: flex; flex-direction: column; margin-top: 56px; }
+#sxp-home .sxp-post { display: grid; grid-template-columns: 104px 1fr auto; gap: 28px; align-items: baseline; padding: 20px 0; border-top: 1px solid var(--sxp-border); }
+html.dark #sxp-home .sxp-post { border-top: none; border-bottom: 1px solid var(--sxp-border); }
+#sxp-home .sxp-post-date { font-family: var(--sxp-mono); font-size: 13px; color: var(--sxp-subtle); }
+#sxp-home .sxp-post-title { font-family: var(--sxp-serif); font-weight: 700; font-size: 18px; line-height: 1.5; color: var(--sxp-text); transition: color 200ms ease-out; }
+html.dark #sxp-home .sxp-post-title { font-family: inherit; font-weight: 500; font-size: 17px; }
+#sxp-home .sxp-post:hover .sxp-post-title { color: var(--sxp-accent); }
+#sxp-home .sxp-post-meta { font-size: 13px; color: var(--sxp-accent); white-space: nowrap; }
+html.dark #sxp-home .sxp-post-meta { font-family: var(--sxp-mono); font-size: 12px; }
+#sxp-home .sxp-more { margin-top: 26px; font-size: 14px; color: var(--sxp-accent); font-weight: 500; }
+html.dark #sxp-home .sxp-more { font-family: var(--sxp-mono); font-size: 13px; }
+@media (max-width: 767px) {
+  #sxp-home .sxp-hero { flex-direction: column; align-items: flex-start; gap: 24px; padding: 32px 0; }
+  #sxp-home h1.sxp-title { font-size: 30px; }
+  #sxp-home .sxp-projects { grid-template-columns: 1fr; }
+  #sxp-home .sxp-post { grid-template-columns: 1fr; gap: 6px; }
+}
+</style>
+
+{{ $lang := .Site.Language.Lang }}
+<div id="sxp-home">
+  <div class="sxp-hero">
+    {{ with .Site.Params.Author.image }}
+      {{ $img := resources.Get . }}
+      {{ if $img }}
+        <img src="{{ ($img.Fill "300x300").RelPermalink }}" alt="{{ $.Site.Params.Author.name }}" width="150" height="150">
+      {{ else }}
+        <img src="{{ . | relURL }}" alt="{{ $.Site.Params.Author.name }}" width="150" height="150">
+      {{ end }}
+    {{ end }}
+    <div class="sxp-hero-text">
+      <div class="sxp-whoami">{{ i18n "home.whoami" }}</div>
+      <h1 class="sxp-title">{{ i18n "home.title" | safeHTML }}</h1>
+      <p class="sxp-intro">{{ i18n "home.intro" }}</p>
+    </div>
+  </div>
+
+  <div class="sxp-section-head">
+    <span class="sxp-section-label">{{ i18n "home.open_source" }}</span>
+    <a href="{{ "portfolio/" | relLangURL }}">{{ i18n "home.all_projects" }} &rarr;</a>
+  </div>
+  <div class="sxp-projects">
+    {{ range .Site.Data.projects }}
+      <a class="sxp-project" href="{{ .url }}" target="_blank" rel="noopener">
+        <div class="sxp-project-top">
+          <span class="sxp-project-name">{{ .name }}</span>
+          {{ with .badge }}<span class="sxp-badge">{{ . }}</span>{{ end }}
+        </div>
+        <span class="sxp-project-desc">{{ or (index .desc $lang) (index .desc "zh-cn") }}</span>
+      </a>
+    {{ end }}
+  </div>
+
+  <div class="sxp-posts">
+    <div class="sxp-section-head">
+      <span class="sxp-section-label">{{ i18n "home.recent_posts" }}</span>
+    </div>
+    {{ $pages := where .Site.RegularPages "Section" "in" (slice "posts" "misc") }}
+    {{ range first 8 $pages }}
+      <a class="sxp-post" href="{{ .RelPermalink }}">
+        <span class="sxp-post-date">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</span>
+        <span class="sxp-post-title">{{ .Title }}</span>
+        <span class="sxp-post-meta">
+          {{- with .Params.tags }}{{ index . 0 }} &middot; {{ end -}}
+          {{- i18n "article.reading_time" (dict "Count" .ReadingTime) -}}
+        </span>
+      </a>
+    {{ end }}
+    <a class="sxp-more" href="{{ "posts/" | relLangURL }}">{{ i18n "home.all_posts" }} &rarr;</a>
+  </div>
 </div>
-<div id="hero" style="display:none">
-  {{ partial "home/hero.html" . }}
-</div>
-<div id="profile" style="display:none">
-  {{ partial "home/profile.html" . }}
-</div>
-<div id="card" style="display:none">
-  {{ partial "home/card.html" . }}
-</div>
-<div id="page" style="display:none">
-  {{ partial "home/page.html" . }}
-</div>
-<section>
-  {{ partial "recent-articles-demo.html" . }}
-</section>
-<script
-  defer
-  type="text/javascript"
-  src="{{ $jsHome.RelPermalink }}"
-  integrity="{{ $jsHome.Data.Integrity }}"></script>

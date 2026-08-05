@@ -1,0 +1,42 @@
+# Open source projects shown on the homepage.
+# Add / remove / reorder entries here — the homepage grid renders them in order.
+# `badge` is optional; `desc` needs one entry per site language.
+
+- name: Commit Check
+  url: https://github.com/commit-check/commit-check
+  desc:
+    zh-cn: 提交信息与 AI 归属治理的 CI 检查工具
+    en: CI checks for commit messages and AI attribution governance
+
+- name: Conventional Branch
+  url: https://conventionalbranch.org
+  badge: ★ 100+
+  desc:
+    zh-cn: 分支命名规范 · conventionalbranch.org
+    en: A branch naming convention · conventionalbranch.org
+
+- name: cpp-linter
+  url: https://github.com/cpp-linter/cpp-linter
+  desc:
+    zh-cn: C/C++ 代码检查的 GitHub Action
+    en: A GitHub Action for linting C/C++ code
+
+- name: cpp-linter-hooks
+  url: https://github.com/cpp-linter/cpp-linter-hooks
+  desc:
+    zh-cn: clang-format + clang-tidy 的 pre-commit 方案
+    en: clang-format + clang-tidy as pre-commit hooks
+
+- name: Jenkinsfile Lint
+  url: https://github.com/jenkinsci/jenkinsfilelint
+  badge: jenkinsci
+  desc:
+    zh-cn: Pipeline 语法校验，支持 Standalone 模式
+    en: Pipeline syntax validation, with a standalone mode
+
+- name: Explain Error Plugin
+  url: https://github.com/jenkinsci/explain-error-plugin
+  badge: jenkinsci
+  desc:
+    zh-cn: 用 AI 解释 Jenkins 构建错误的插件
+    en: A plugin that explains Jenkins build errors with AI

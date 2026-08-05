@@ -105,10 +105,40 @@ Every DevOps/CI/CD blog defaults to "documentation aesthetics" — cold white ba
 ## Layout
 
 - **Approach:** Grid-disciplined for article content, editorial-first on the homepage
-- **Homepage:** Large typographic hero (name fills the viewport), then curated article list
+- **Homepage:** Runs its own self-contained scale (see "Homepage" below) — portrait + statement hero, open-source grid, then a dated article list
 - **Article pages:** Single centered column, max-width 680px, generous vertical spacing
 - **Grid:** 12-column at desktop (≥1024px), 4-column at tablet (≥768px), 1-column at mobile
 - **Article left-border accent:** Code blocks and blockquotes use a 3px left border in `--accent`
+
+### Homepage
+
+The homepage is a **deliberate exception** to the tokens above. It is the only
+page where light and dark mode are two different designs rather than one design
+recolored:
+
+- **Light = magazine editorial.** Noto Serif SC 900 for the hero statement and
+  serif 700 for post titles; the six project cards sit in a hairline 3-column
+  grid (1px gaps showing `--sxp-border` through), which reads as a printed
+  contents page.
+- **Dark = terminal.** A `$ whoami` prompt appears, the portrait squares off to
+  a 16px radius, serif drops out in favour of the UI sans, project cards
+  separate into rounded bordered tiles, and metadata switches to JetBrains Mono.
+
+The switch rides entirely on Blowfish's `html.dark` class — no JavaScript.
+Tokens are namespaced `--sxp-*` and scoped to `#sxp-home`, so nothing here
+leaks into article pages, which still follow the global system above.
+
+| Token | Light | Dark |
+|---|---|---|
+| `--sxp-text` | `#1c1c1a` | `oklch(0.92 0.005 240)` |
+| `--sxp-muted` | `#555` | `oklch(0.7 0.01 240)` |
+| `--sxp-subtle` | `#999` | `oklch(0.55 0.01 240)` |
+| `--sxp-border` | `#e3e3df` | `oklch(0.28 0.01 240)` |
+| `--sxp-accent` | `oklch(0.45 0.1 150)` (deep green) | `oklch(0.8 0.15 200)` (cyan) |
+| `--sxp-card-bg` | `#fbfbf9` | `oklch(0.22 0.01 240)` |
+
+**Content sources:** copy lives in `i18n/*.yaml` under `home:`; the project grid
+lives in `data/projects.yaml`. Neither is hardcoded in the template.
 
 ## Motion
 
@@ -139,3 +169,5 @@ These are intentional departures from category norms. They're what give this blo
 | 2026-03-26 | Fraunces for headings | Variable optical-size serif with character; warmer than geometric alternatives (Syne) |
 | 2026-03-26 | Terracotta accent #C84B2F | Earthy, warm, unusual in the space — not the default blue/purple/teal |
 | 2026-03-26 | Rejected: vertical reading progress axis | Interesting UX concept but requires non-trivial Hugo customization; not worth the complexity at this stage |
+| 2026-08-05 | Homepage redesigned as a mode-split layout | Replaced the leftover Blowfish demo layout-switcher. Light mode = magazine editorial, dark mode = terminal — two designs, one markup, switched by `html.dark`. See the "Homepage" section under Layout |
+| 2026-08-05 | Homepage uses its own type + color scale | Noto Serif SC / JetBrains Mono and green-to-cyan accents, not the global Instrument Serif / Fraunces / terracotta. Scoped to `#sxp-home` with `--sxp-*` tokens so article pages are untouched. **Do not "fix" the homepage to match the global tokens** — the divergence is the design |
