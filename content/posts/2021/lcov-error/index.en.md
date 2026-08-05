@@ -3,7 +3,7 @@ title: Run lcov failed "Can't locate JSON/PP.pm in @INC ..."
 summary: |
   This article explains how to resolve the "Can't locate JSON/PP.pm in @INC ..." error when running lcov, including installing missing Perl modules.
 tags:
-  - lcov
+  - Coverage
   - perl
 date: 2021-09-07
 authors:

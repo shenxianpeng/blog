@@ -3,7 +3,7 @@ title: A Free C/C++ Static Code Analysis Tool—Cppcheck—Integrated with Jenki
 summary: This article introduces the installation, usage, and integration of Cppcheck with Jenkins to improve C/C++ code quality and static analysis capabilities.
 tags:
   - Jenkins
-  - Cppcheck
+  - Static Analysis
 date: 2020-02-16
 authors:
   - shenxianpeng

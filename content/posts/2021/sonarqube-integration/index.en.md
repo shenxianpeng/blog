@@ -3,7 +3,7 @@ title: How does SonarQube Community Edition integrate with the project
 summary: |
   This article explains how to integrate SonarQube Community Edition with Maven, Gradle, and other projects, including the necessary configurations and Jenkins pipeline setup.
 tags:
-  - SonarQube
+  - Static Analysis
   - Gradle
 date: 2021-09-18
 authors:

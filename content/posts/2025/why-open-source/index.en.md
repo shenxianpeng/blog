@@ -4,8 +4,7 @@ summary: |
   Some say open source is useless, yielding neither profit nor time savings.  But through four years of dedication, I've discovered three unexpected rewards: increased visibility for my work, connections with exceptional people and projects, and the accumulation of long-term value.  These rewards are applicable to every developer.
 tags:
   - Open Source
-  - Career Development
-  - Technical Growth
+  - Work
 date: 2025-08-22
 authors:
   - shenxianpeng

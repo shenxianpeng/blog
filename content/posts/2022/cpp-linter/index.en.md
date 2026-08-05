@@ -2,8 +2,6 @@
 title: C/C++ Code Formatting and Static Analysis—A One-Stop Workflow with Cpp Linter
 summary: This article introduces tools and workflows for C/C++ code formatting and static analysis, focusing on the use and integration of clang-tools.
 tags:
-  - clang-format
-  - clang-tidy
   - clang
   - cpp-linter
 authors:

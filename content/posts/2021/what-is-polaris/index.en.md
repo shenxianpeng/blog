@@ -3,9 +3,7 @@ title: Polaris - Static Code Analysis
 summary: |
   This article introduces the basic concepts of Polaris, the supported programming languages, how to use the SaaS platform, and how to configure and run Polaris for static code analysis. It also provides example YAML configuration files and how to view the analysis results.
 tags:
-  - Polaris
-  - Static
-  - Coverity
+  - Static Analysis
   - Security
 date: 2021-10-24
 authors:

@@ -3,7 +3,7 @@ title: 从 XLC 10.1 升级到 IBM Open XL C/C++ for AIX 17.1.0 的问题与解�
 summary: 本文记录了从 IBM XLC 10.1 升级到 XLC 17.1（IBM Open XL C/C++ for AIX 17.1.0）过程中遇到的问题及解决方法，共涵盖 12 个错误的修复方案。
 tags:
   - AIX
-  - Clang
+  - clang
   - XLC
 date: 2023-10-08
 aliases:

@@ -5,8 +5,7 @@ date: 2017-11-20
 aliases:
   - /2017/11/change-hexo-code-highlight/
 tags:
-- Hexo
-- Hexo
+  - Blog
 ---
 
 Hexo 默认主题代码高亮是黑色的，如果想换个风格？具体操作如下：

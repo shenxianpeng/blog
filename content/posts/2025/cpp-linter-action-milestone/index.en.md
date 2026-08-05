@@ -3,8 +3,6 @@ title: Microsoft and NASA Use It? My 4-Year-Old Side Project Hit 100 Stars
 summary: |
   cpp-linter-action is a GitHub Action that provides C/C++ code formatting and static analysis capabilities. It uses clang-format and clang-tidy, supporting various configurations and custom rules.  Since its creation in 2021, the project has been used by several well-known organizations and open-source projects.
 tags:
-  - clang-format
-  - clang-tidy
   - clang
   - cpp-linter
 authors:

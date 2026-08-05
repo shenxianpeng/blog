@@ -3,8 +3,8 @@ title: 我又开始为爱发电了：正式维护 MkDocs 和 Material for MkDocs
 summary: |
   MkDocs 快两年没更新了，Material for MkDocs 也进了维护模式。作为重度用户，我 fork 了这两个项目，发布了 mkdocs-ng 和 mkdocs-ng-material，更新一下包名就能继续用。
 tags:
-  - OpenSource
-  - MkDocs
+  - Open Source
+  - Documentation
 authors:
   - shenxianpeng
 translate: false

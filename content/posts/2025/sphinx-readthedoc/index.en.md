@@ -3,9 +3,7 @@ title: Setting up Sphinx + ReadTheDocs from Scratch - Rapidly Deploying Automate
 summary: |
   In open-source projects or team collaborations, Sphinx + ReadTheDocs provides an easy-to-maintain, automatically deployable documentation system. This article documents the configuration process and considerations.
 tags:
-  - Sphinx
-  - ReadTheDocs
-  - RST
+  - Documentation
 authors:
   - shenxianpeng
 date: 2025-04-12

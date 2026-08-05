@@ -5,7 +5,7 @@ summary: |
 
 tags:
   - pipguard
-  - python
+  - Python
   - pip
 authors:
   - shenxianpeng

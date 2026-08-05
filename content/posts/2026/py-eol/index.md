@@ -4,7 +4,7 @@ summary: |
     py-eol 是一个专门用来检查 Python 版本是否快到期的工具。它可以扫描项目文件，精确到行号，告诉你哪些地方还在用 EOL 的版本。还可以接入 CI，让检查自动跑，不让过期版本偷偷混进来。
 tags:
   - py-eol
-  - python
+  - Python
 authors:
   - shenxianpeng
 date: 2026-03-23

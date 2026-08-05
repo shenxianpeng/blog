@@ -3,8 +3,8 @@ title: mkdocs-ng 维护进展：v1.7.x 修复总结与下一步计划
 summary: |
   从接手 mkdocs-ng 维护以来发了四个版本，修了十几个 Bug，去掉了 mergedeep 依赖。接下来 v1.8.0 会是一个功能版本，计划去掉旧 Python 版本支持、移除内置主题的 CDN 依赖、提供稳定的 Python API。
 tags:
-  - OpenSource
-  - MkDocs
+  - Open Source
+  - Documentation
 authors:
   - shenxianpeng
 date: 2026-05-14

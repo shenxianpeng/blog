@@ -4,8 +4,7 @@ summary: |
   Discusses the use of Jenkins Multibranch Pipeline to manage multiple branches in a project, enabling parallel builds for pull requests and efficient code review processes.
 date: 2019-06-25
 tags:
-- Jenkins
-- Jenkins
+  - Jenkins
 ---
 
 ## Problems

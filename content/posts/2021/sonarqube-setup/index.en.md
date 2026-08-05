@@ -3,7 +3,7 @@ title: SonarQube installation and troubleshootings
 summary: |
   This article documents the steps to install SonarQube, configure LDAP, and set up PostgreSQL as the database. It also includes troubleshooting tips for common issues encountered during setup.
 tags:
-  - SonarQube
+  - Static Analysis
   - LDAP
   - PostgreSQL
 date: 2021-08-05

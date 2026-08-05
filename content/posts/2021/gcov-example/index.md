@@ -2,8 +2,6 @@
 title: 使用 Gcov 和 LCOV 做 C/C++ 项目的代码覆盖率
 summary: 本文介绍了如何使用 Gcov 和 LCOV 对 C/C++ 项目进行代码覆盖率的度量，包括编译、运行和生成报告的步骤。
 tags:
-  - Gcov
-  - LCOV
   - Coverage
 date: 2021-08-17
 aliases:
