@@ -1,9 +1,13 @@
 # Open source projects shown on the homepage.
 # Add / remove / reorder entries here — the homepage grid renders them in order.
 # `badge` is optional; `desc` needs one entry per site language.
+#
+# Badge numbers are hand-maintained and will drift — keep them rounded ("140+",
+# not "145") so they stay true for a while instead of going stale in a week.
 
 - name: Commit Check
   url: https://github.com/commit-check/commit-check
+  badge: used by 150+
   desc:
     zh-cn: 提交信息与 AI 归属治理的 CI 检查工具
     en: CI checks for commit messages and AI attribution governance
@@ -15,8 +19,9 @@
     zh-cn: 分支命名规范 · conventionalbranch.org
     en: A branch naming convention · conventionalbranch.org
 
-- name: cpp-linter
-  url: https://github.com/cpp-linter/cpp-linter
+- name: cpp-linter-action
+  url: https://github.com/cpp-linter/cpp-linter-action
+  badge: ★ 140+
   desc:
     zh-cn: C/C++ 代码检查的 GitHub Action
     en: A GitHub Action for linting C/C++ code

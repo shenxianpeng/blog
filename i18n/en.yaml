@@ -81,8 +81,7 @@ recent:
 
 home:
   whoami: "$ whoami"
-  title: "I write about AI, DevOps<br>and open source — and maintain it."
-  intro: "I'm Xianpeng Shen. I maintain Commit Check, Conventional Branch, cpp-linter and a handful of other open source projects, two of which now live under the official Jenkins organization. This is where I write down what I learn — and break — in CI/CD, build systems and AI engineering."
+  intro: "I work on CI/CD, build systems and AI engineering, and maintain a handful of open source projects. This is where I write down what I learn — and break."
   open_source: "OPEN SOURCE"
   all_projects: "All projects"
   recent_posts: "RECENT POSTS"

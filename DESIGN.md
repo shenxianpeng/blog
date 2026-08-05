@@ -116,10 +116,12 @@ The homepage is a **deliberate exception** to the tokens above. It is the only
 page where light and dark mode are two different designs rather than one design
 recolored:
 
-- **Light = magazine editorial.** Noto Serif SC 900 for the hero statement and
-  serif 700 for post titles; the six project cards sit in a hairline 3-column
-  grid (1px gaps showing `--sxp-border` through), which reads as a printed
-  contents page.
+- **Light = magazine editorial.** Serif 900 for the hero statement and serif 700
+  for post titles; the project cards sit in a hairline 3-column grid (1px gaps
+  showing `--sxp-border` through), which reads as a printed contents page. The
+  grid pads its last row with `.sxp-filler` cells — without them the container
+  colour drawing the hairlines shows through empty cells as a solid block
+  whenever the project count isn't a multiple of three.
 - **Dark = terminal.** A `$ whoami` prompt appears, the portrait squares off to
   a 16px radius, serif drops out in favour of the UI sans, project cards
   separate into rounded bordered tiles, and metadata switches to JetBrains Mono.
@@ -137,8 +139,14 @@ leaks into article pages, which still follow the global system above.
 | `--sxp-accent` | `oklch(0.45 0.1 150)` (deep green) | `oklch(0.8 0.15 200)` (cyan) |
 | `--sxp-card-bg` | `#fbfbf9` | `oklch(0.22 0.01 240)` |
 
-**Content sources:** copy lives in `i18n/*.yaml` under `home:`; the project grid
-lives in `data/projects.yaml`. Neither is hardcoded in the template.
+**Type:** system stacks, no webfont request. Latin resolves to Georgia and CJK
+falls through to the installed serif (Noto Serif SC / Songti SC / SimSun), since
+font fallback happens per glyph. Mono is `ui-monospace` ahead of JetBrains Mono.
+
+**Content sources:** the hero statement is `params.author.headline` — the same
+string the rest of the site uses, not a homepage-only copy. Supporting copy
+lives in `i18n/*.yaml` under `home:`; the project grid lives in
+`data/projects.yaml`. Nothing here is hardcoded in the template.
 
 ## Motion
 
@@ -170,4 +178,6 @@ These are intentional departures from category norms. They're what give this blo
 | 2026-03-26 | Terracotta accent #C84B2F | Earthy, warm, unusual in the space — not the default blue/purple/teal |
 | 2026-03-26 | Rejected: vertical reading progress axis | Interesting UX concept but requires non-trivial Hugo customization; not worth the complexity at this stage |
 | 2026-08-05 | Homepage redesigned as a mode-split layout | Replaced the leftover Blowfish demo layout-switcher. Light mode = magazine editorial, dark mode = terminal — two designs, one markup, switched by `html.dark`. See the "Homepage" section under Layout |
+| 2026-08-05 | Homepage type is a system stack, not Google Fonts | The first draft pulled Noto Serif SC + JetBrains Mono from `fonts.googleapis.com` — a render-blocking request to a host that is unreachable from mainland China, on a site whose primary audience reads Chinese. System stacks cost some cross-platform consistency and buy a first paint that never waits on a blocked CDN |
+| 2026-08-05 | Hero statement reads `params.author.headline` | It was briefly hardcoded in `i18n`, which left the configured "Engineer. Builder. Maintainer." unused on the homepage while article pages still showed it — two self-descriptions drifting apart. The tagline also outperformed the longer sentence it replaced |
 | 2026-08-05 | Homepage uses its own type + color scale | Noto Serif SC / JetBrains Mono and green-to-cyan accents, not the global Instrument Serif / Fraunces / terracotta. Scoped to `#sxp-home` with `--sxp-*` tokens so article pages are untouched. **Do not "fix" the homepage to match the global tokens** — the divergence is the design |

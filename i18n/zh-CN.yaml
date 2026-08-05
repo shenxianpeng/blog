@@ -68,9 +68,8 @@ recent:
 
 home:
   whoami: "$ whoami"
-  title: "写 AI、DevOps 与开源，<br>也维护它们。"
-  intro: "我是沈显鹏，维护 Commit Check、Conventional Branch、cpp-linter 等多个开源项目，其中两个已加入 Jenkins 官方组织。这里记录我在 CI/CD、构建系统和 AI 工程实践中的思考与踩坑。"
+  intro: "我在 CI/CD、构建系统和 AI 工程里写代码，也维护自己的开源项目。这里记录我踩过的坑。"
   open_source: "OPEN SOURCE"
-  all_projects: "全部作品"
+  all_projects: "全部项目"
   recent_posts: "最近的文章"
   all_posts: "查看全部文章"

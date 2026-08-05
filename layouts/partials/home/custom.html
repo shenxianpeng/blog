@@ -3,13 +3,14 @@
   dark mode is terminal (mono labels, carded projects). Both share this markup;
   the switch rides on Blowfish's own `html.dark` class, so no JS is involved.
 
-  Copy tweaks live in i18n/*.yaml under `home:`; the project grid lives in
-  data/projects.yaml.
-*/}}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  The hero statement is the configured author headline; the rest of the copy
+  lives in i18n/*.yaml under `home:`, and the project grid in data/projects.yaml.
 
+  Fonts are a system stack on purpose — no webfont request, so nothing here is
+  render-blocking and mainland readers get the intended typography. Latin
+  resolves to Georgia and CJK falls through to the installed serif, since
+  fallback happens per glyph.
+*/}}
 <style>
 #sxp-home {
   --sxp-text: #1c1c1a;
@@ -18,8 +19,8 @@
   --sxp-border: #e3e3df;
   --sxp-accent: oklch(0.45 0.1 150);
   --sxp-card-bg: #fbfbf9;
-  --sxp-serif: 'Noto Serif SC', serif;
-  --sxp-mono: 'JetBrains Mono', monospace;
+  --sxp-serif: Georgia, 'Times New Roman', 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', SimSun, serif;
+  --sxp-mono: ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, monospace;
   color: var(--sxp-text);
   max-width: 1024px;
   margin: 0 auto;
@@ -50,6 +51,11 @@ html.dark #sxp-home .sxp-projects { gap: 16px; background: transparent; border: 
 #sxp-home .sxp-project { background: var(--sxp-card-bg); padding: 22px 24px; display: flex; flex-direction: column; gap: 8px; transition: background 200ms ease-out; }
 html.dark #sxp-home .sxp-project { border: 1px solid var(--sxp-border); border-radius: 10px; }
 #sxp-home .sxp-project:hover { background: color-mix(in oklab, var(--sxp-card-bg), var(--sxp-accent) 6%); }
+/* Pads the last row to a full 3 cells. Without it, the container colour that
+   draws the hairlines shows through the empty cells as a solid block. Only the
+   light 3-column grid needs it — dark mode and mobile have no gap background. */
+#sxp-home .sxp-filler { background: var(--sxp-card-bg); }
+html.dark #sxp-home .sxp-filler { display: none; }
 #sxp-home .sxp-project-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 #sxp-home .sxp-project-name { font-weight: 700; font-size: 15px; color: var(--sxp-text); }
 html.dark #sxp-home .sxp-project-name { font-family: var(--sxp-mono); }
@@ -71,6 +77,7 @@ html.dark #sxp-home .sxp-more { font-family: var(--sxp-mono); font-size: 13px; }
   #sxp-home .sxp-hero { flex-direction: column; align-items: flex-start; gap: 24px; padding: 32px 0; }
   #sxp-home h1.sxp-title { font-size: 30px; }
   #sxp-home .sxp-projects { grid-template-columns: 1fr; }
+  #sxp-home .sxp-filler { display: none; }
   #sxp-home .sxp-post { grid-template-columns: 1fr; gap: 6px; }
 }
 </style>
@@ -88,7 +95,7 @@ html.dark #sxp-home .sxp-more { font-family: var(--sxp-mono); font-size: 13px; }
     {{ end }}
     <div class="sxp-hero-text">
       <div class="sxp-whoami">{{ i18n "home.whoami" }}</div>
-      <h1 class="sxp-title">{{ i18n "home.title" | safeHTML }}</h1>
+      <h1 class="sxp-title">{{ .Site.Params.Author.headline | default .Site.Title }}</h1>
       <p class="sxp-intro">{{ i18n "home.intro" }}</p>
     </div>
   </div>
@@ -104,9 +111,11 @@ html.dark #sxp-home .sxp-more { font-family: var(--sxp-mono); font-size: 13px; }
           <span class="sxp-project-name">{{ .name }}</span>
           {{ with .badge }}<span class="sxp-badge">{{ . }}</span>{{ end }}
         </div>
-        <span class="sxp-project-desc">{{ or (index .desc $lang) (index .desc "zh-cn") }}</span>
+        <span class="sxp-project-desc">{{ with .desc }}{{ or (index . $lang) (index . "zh-cn") }}{{ end }}</span>
       </a>
     {{ end }}
+    {{ $pad := mod (sub 3 (mod (len .Site.Data.projects) 3)) 3 }}
+    {{ range seq $pad }}<span class="sxp-filler" aria-hidden="true"></span>{{ end }}
   </div>
 
   <div class="sxp-posts">
