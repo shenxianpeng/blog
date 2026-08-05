@@ -3,10 +3,7 @@ title: 关于 Docker，containerd，CRI，CRI-O，OCI，runc 的解释以及它�
 summary: 本文介绍了 Docker、containerd、CRI、CRI-O、OCI 和 runc 等容器生态系统中的关键组件和标准，解释它们之间的关系以及如何协同工作。
 tags:
   - Docker
-  - containerd
-  - CRI
-  - CRI-O
-  - runc
+  - Kubernetes
 authors:
 aliases:
   - /2022/03/container-ecosystem/

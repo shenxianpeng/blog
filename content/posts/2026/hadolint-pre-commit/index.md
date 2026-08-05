@@ -4,7 +4,7 @@ summary: |
   Hadolint 的 pre-commit 集成长期缺少自动安装方案，困扰社区三年。本文介绍如何通过将 Hadolint 二进制封装成 Python Wheel 包并发布到 PyPI，让 pre-commit 像安装任何 Python 工具一样一键集成 Hadolint，彻底消除手动下载与环境配置的负担。
 tags:
   - Hadolint
-  - Pre-Commit
+  - pre-commit
 authors:
   - shenxianpeng
 date: 2026-03-20

@@ -3,7 +3,7 @@ title: Modifying Hexo Theme Code Highlighting
 summary: Hexo's default theme uses black code highlighting. Want a different style? This article explains how to modify Hexo theme code highlighting styles.
 date: 2017-11-20
 tags:
-- Hexo
+  - Blog
 ---
 
 Hexo's default theme uses black code highlighting. Want a different style?  Here's how to do it:

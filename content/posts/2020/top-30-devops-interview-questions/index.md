@@ -2,7 +2,7 @@
 title: DevOps Top 30+ 面试问题
 summary: 本文列出了 DevOps 领域的 30 多个常见面试问题，涵盖 DevOps 基础知识、CI/CD、DevOps 工具和实践等方面，帮助求职者准备 DevOps 面试。
 tags:
-  - Interview
+  - Work
   - DevOps
 translate: false
 date: 2020-03-29

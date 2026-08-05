@@ -3,10 +3,7 @@ title: Docker, containerd, CRI, CRI-O, OCI, runc Explained and How They Work Tog
 summary: This article introduces the key components and standards in the container ecosystem, such as Docker, containerd, CRI, CRI-O, OCI, and runc, explaining their relationships and how they work together.
 tags:
   - Docker
-  - containerd
-  - CRI
-  - CRI-O
-  - runc
+  - Kubernetes
 authors:
   - shenxianpeng
 date: 2022-03-29

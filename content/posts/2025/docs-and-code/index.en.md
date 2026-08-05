@@ -3,9 +3,8 @@ title: Still Using Wiki/Confluence? You Might Be Producing Garbage
 summary: |
   In enterprises, documentation tools like Wiki and Confluence, if lacking unified management and review mechanisms, can lead to information chaos and knowledge sedimentation failure. This article explores how to avoid this situation and draws on the successful experiences of open-source communities.
 tags:
-  - Wiki
-  - Confluence
   - Documentation
+  - Confluence
 authors:
   - shenxianpeng
 date: 2025-05-14

@@ -3,7 +3,7 @@ title: asdf-clang-tools：使用 asdf 安装 Clang 工具的新选择
 summary: |
   asdf-clang-tools 是一个 asdf 插件，用于安装和管理 Clang Tools 相关工具（如 clang-format、clang-tidy、clang-query 和 clang-apply-replacements 等）。
 tags:
-  - clang-tools
+  - clang
   - asdf
 authors:
   - shenxianpeng

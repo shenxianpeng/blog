@@ -3,9 +3,7 @@ title: Polaris - 静态代码分析
 summary: |
   这篇文章介绍了 Polaris 的基本概念、支持的编程语言、SaaS 平台的使用方法，以及如何配置和运行 Polaris 进行静态代码分析。它还提供了示例 YAML 配置文件和分析结果的查看方式。
 tags:
-  - Polaris
-  - Static
-  - Coverity
+  - Static Analysis
   - Security
 date: 2021-10-24
 aliases:

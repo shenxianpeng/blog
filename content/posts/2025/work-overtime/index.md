@@ -4,7 +4,6 @@ summary: |
   在欧洲工作一年多，我只加过一次班，这让我深刻体会到东西方工作文化的差异。
 tags:
   - Work
-  - Overtime
 translate: false
 authors:
   - shenxianpeng

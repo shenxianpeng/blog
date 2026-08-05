@@ -4,7 +4,7 @@ summary: |
   Markdown and reStructuredText (RST) are two commonly used markup languages. This article compares their advantages and disadvantages and shares usage suggestions in different scenarios.
 tags:
   - Markdown
-  - RST
+  - Documentation
 authors:
   - shenxianpeng
 date: 2025-04-11

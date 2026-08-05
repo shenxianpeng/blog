@@ -3,7 +3,7 @@ title: SonarQube 安装与常见问题排查
 summary: |
   本文记录了 SonarQube 的安装步骤，包括 LDAP 配置与 PostgreSQL 数据库设置，并附带一些常见问题的排查方法。
 tags:
-  - SonarQube
+  - Static Analysis
   - LDAP
   - PostgreSQL
 date: 2021-08-05

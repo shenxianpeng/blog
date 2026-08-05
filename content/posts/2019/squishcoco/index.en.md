@@ -4,9 +4,8 @@ summary: |
   introduction to Squish Coco, a code coverage tool, with examples of how to set it up and use it in Visual Studio for C++ projects.
 date: 2019-05-21
 tags:
-- SquishCoco
-- Coverage
-- DevOps
+  - Coverage
+  - DevOps
 authors:
   - shenxianpeng
 ---

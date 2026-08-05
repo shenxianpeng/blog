@@ -2,9 +2,8 @@
 title: JaCoCo 代码覆盖率实践分享
 summary: 本文介绍了 JaCoCo 的使用方法，包括 Gradle 配置、执行测试生成报告、报告参数说明以及如何忽略指定的包或类影响测试覆盖率结果。
 tags:
-  - JaCoCo
-  - Gradle
   - Coverage
+  - Gradle
 date: 2021-04-06
 aliases:
   - /2021/04/jacoco-imp/

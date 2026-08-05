@@ -3,7 +3,7 @@ title: Job Search—Why the "Nuclear Weapon" Strategy Might Be the Winning Formu
 summary: |
     Today's job market values practical skills and the ability to create value more than ever before, rather than just academic qualifications. This post shares the story of a high school dropout who successfully joined OpenAI through self-study and actively creating opportunities, and why directly showcasing your "nuclear weapon" achievements might be the most effective strategy for job searching.
 tags:
-  - Job
+  - Work
 authors:
   - shenxianpeng
 date: 2026-03-11

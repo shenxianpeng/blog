@@ -3,8 +3,7 @@ title: Hexo 的配置和使用
 summary: 本文介绍如何在 Hexo 博客中配置 RSS 订阅功能，包括安装插件和使用。
 date: 2017-10-25
 tags:
-- Hexo
-- Blog
+  - Blog
 categories:
 - Hexo
 translate: false

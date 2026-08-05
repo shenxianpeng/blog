@@ -2,8 +2,6 @@
 title: cpp-linter-action—Latest Version Now Supports Pull Request Review Functionality 👏
 summary: This article introduces the new feature of cpp-linter-action Pull Request Review, allowing developers to directly submit code modification suggestions on GitHub, improving code quality and collaboration efficiency.
 tags:
-  - clang-format
-  - clang-tidy
   - clang
   - cpp-linter
 authors:

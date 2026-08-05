@@ -3,7 +3,7 @@ title: 运行 lcov 报错 "Can't locate JSON/PP.pm in @INC ..."
 summary: |
   本文介绍在运行 lcov 生成代码覆盖率报告时遇到 "Can't locate JSON/PP.pm in @INC ..." 等 Perl 模块缺失错误的解决方法，包括安装缺失的 Perl 模块。
 tags:
-  - lcov
+  - Coverage
   - perl
 date: 2021-09-07
 aliases:

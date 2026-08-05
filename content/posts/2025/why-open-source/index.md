@@ -4,8 +4,7 @@ summary: |
   有人说开源没用，既赚不到钱，又浪费时间。但我在四年的坚持中，发现了 3 个意想不到的收获：让工作被真正看到、接触更优秀的人和项目、以及一份长期的价值积累。这些收获，其实每个开发者都能借鉴。
 tags:
   - Open Source
-  - Career Development
-  - Technical Growth
+  - Work
 date: 2025-08-22
 authors:
   - shenxianpeng

@@ -2,7 +2,6 @@
 title: 你一定要了解这 17 条 Docker 最佳实践！
 summary: 本文分享了在编写 Dockerfiles 和使用 Docker 时应遵循的一些最佳实践，包括多阶段构建、镜像优化、安全性等方面的建议。
 tags:
-  - Dokerfile
   - Docker
 date: 2022-01-12
 aliases:

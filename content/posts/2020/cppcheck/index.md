@@ -3,7 +3,7 @@ title: 一款免费的 C/C++ 静态代码分析工具 Cppcheck 与 Jenkins 集�
 summary: 本文介绍了 Cppcheck 的安装、使用以及与 Jenkins 的集成方法，旨在提升 C/C++ 代码质量和静态分析能力。
 tags:
   - Jenkins
-  - Cppcheck
+  - Static Analysis
 date: 2020-02-16
 aliases:
   - /2020/02/cppcheck/

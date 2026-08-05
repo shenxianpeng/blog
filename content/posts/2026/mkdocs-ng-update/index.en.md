@@ -3,8 +3,8 @@ title: mkdocs-ng Maintenance Progress — v1.7.x Fix Summary and Next Steps
 summary: |
   Since taking over mkdocs-ng maintenance, four versions have been released, over a dozen bugs fixed, and the mergedeep dependency removed. The upcoming v1.8.0 will be a feature release, planning to drop support for older Python versions, remove CDN dependencies from built-in themes, and provide a stable Python API.
 tags:
-  - OpenSource
-  - MkDocs
+  - Open Source
+  - Documentation
 authors:
   - shenxianpeng
 date: 2026-05-14

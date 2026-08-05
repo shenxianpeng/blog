@@ -3,8 +3,7 @@ title: Code coverage testing of C/C++ projects using Gcov and LCOV
 summary: |
   This article shares how to use Gcov and LCOV to metrics code coverage for C/C++ projects. It explains the steps to compile, run tests, and generate coverage reports, including example commands and expected outputs.
 tags:
-  - Gcov
-  - LCOV
+  - Coverage
 date: 2021-07-11
 authors:
   - shenxianpeng
