@@ -45,6 +45,20 @@ def _seed(text):
     return int(hashlib.sha256(text.encode("utf-8")).hexdigest()[:16], 16)
 
 
+def cover_key(post_dir):
+    """The string a post's composition is seeded from.
+
+    Deliberately the path, not the bare slug: slugs repeat across years
+    (posts/2025/jenkinsfilelint and posts/2026/jenkinsfilelint), and seeding on
+    the slug alone hands both the same cover.
+    """
+    return os.path.relpath(post_dir, "content").replace(os.sep, "/")
+
+
+def choose_motif(key):
+    return MOTIFS[(_seed(key) >> 8) % len(MOTIFS)]
+
+
 def _motif_pipeline(p, rnd, c1, c2, bg):
     """Nodes advancing through lanes, with branches — a build pipeline."""
     lanes = rnd.randint(3, 4)
@@ -163,7 +177,7 @@ def build_svg(slug, tag=""):
         p.append(f'<line x1="0" y1="{y}" x2="{W}" y2="{y}"/>')
     p.append("</g>")
 
-    MOTIFS[(shape_seed >> 8) % len(MOTIFS)](p, rnd, c1, c2, bg)
+    choose_motif(slug)(p, rnd, c1, c2, bg)
     p.append("</svg>")
     return "\n".join(p)
 
@@ -250,10 +264,7 @@ def main():
         dest = os.path.join(d, "featured.jpg")
         if os.path.exists(dest) and not args.force:
             continue
-        # Seed on the path, not the bare slug: the same slug is reused across
-        # years (posts/2025/jenkinsfilelint and posts/2026/jenkinsfilelint), and
-        # seeding on the slug alone would hand them the same cover.
-        render(build_svg(os.path.relpath(d, "content"), primary_tag(d)), dest)
+        render(build_svg(cover_key(d), primary_tag(d)), dest)
         made += 1
         print(f"  {dest}  ({os.path.getsize(dest) // 1024} KB)")
     print(f"\n{made} cover(s) written")
