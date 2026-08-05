@@ -46,9 +46,9 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showScrollToTop = true
 
 [homepage]
-  layout = "custom" # valid options: page, profile, hero, card, background, custom
+  layout = "background" # valid options: page, profile, hero, card, background, custom
   # homepageImage = "/img/logo.png" # used in: hero, and card
-  showRecent = false
+  showRecent = true
   showRecentItems = 12
   showMoreLink = true
   showMoreLinkDest = "posts"
@@ -64,7 +64,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showDateOnlyInArticle = false
   showDateUpdated = true
   showAuthor = true
-  # showAuthorBottom = false
+  showAuthorBottom = true
   showHero = false
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background
@@ -83,9 +83,9 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showRelatedContent = true
   relatedContentLimit = 6
   showTaxonomies = true
-  showAuthorsBadges = true
+  showAuthorsBadges = false
   showWordCount = true
-  sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email", "line"]
+  sharingLinks = [ "twitter", "linkedin", "telegram", "email" ]
   showZenMode = true
   showComments = true
 

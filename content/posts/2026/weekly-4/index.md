@@ -15,7 +15,7 @@ date: 2026-02-05
 
 ## 本周封面
 
-![封面图](featured.webp)
+![封面图](featured.jpg)
 
 GitHub 在 2026 年 2 月 4 日宣布，Copilot Pro+ 和 Enterprise 订阅用户可以在平台上使用 Anthropic Claude 和 OpenAI Codex，打破单一 AI 模型限制。
 
