@@ -3,7 +3,7 @@ title: 解决 Could not read from remote repository 问题
 summary: |
   解决在使用 Git 克隆代码时遇到的 "Could not read from remote repository" 错误，分析原因并提供解决方案。
 tags:
-  - - Git
+  - Git
   - Troubleshooting
 date: 2019-09-01
 aliases:

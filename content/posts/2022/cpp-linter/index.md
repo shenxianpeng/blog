@@ -2,8 +2,6 @@
 title: C/C++ 代码格式化和静态分析检查的一站式工作流 Cpp Linter
 summary: 本文介绍了 C/C++ 代码格式化和静态分析检查的工具和工作流，重点介绍了 clang-tools 的使用和集成方式。
 tags:
-  - clang-format
-  - clang-tidy
   - clang
   - cpp-linter
 authors:

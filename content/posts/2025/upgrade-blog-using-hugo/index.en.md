@@ -3,8 +3,6 @@ title: Eight Years Later, I Finally Revamped My Blog
 summary: This article records the process of revamping my blog after eight years, from migrating from Hexo to Hugo, to the functional and design improvements of the new blog.
 tags:
   - Blog
-  - Hugo
-  - Blowfish
 date: 2025-08-10
 authors:
   - shenxianpeng

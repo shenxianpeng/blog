@@ -2,7 +2,6 @@
 title: JaCoCo 实现原理 (JaCoCo Implementation Design)
 summary: 介绍 JaCoCo 的实现设计，包括覆盖率分析机制、Java 版本要求、字节码操纵、内存使用等方面的内容。
 tags:
-  - JaCoCo
   - Coverage
   - DevOps
 translate: false

@@ -2,7 +2,6 @@
 title: You Must Know These 17 Docker Best Practices!
 summary: This article shares some best practices to follow when writing Dockerfiles and using Docker, including suggestions on multi-stage builds, image optimization, and security.
 tags:
-  - Dokerfile
   - Docker
 date: 2022-01-12
 authors:

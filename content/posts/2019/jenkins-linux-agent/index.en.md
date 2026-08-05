@@ -4,8 +4,7 @@ summary: |
   Provides a step-by-step guide on how to configure a Jenkins Linux agent, including setting up the Java runtime, creating the node, and troubleshooting common issues.
 date: 2019-05-12
 tags:
-- Jenkins
-- Jenkins
+  - Jenkins
 authors:
   - shenxianpeng
 ---

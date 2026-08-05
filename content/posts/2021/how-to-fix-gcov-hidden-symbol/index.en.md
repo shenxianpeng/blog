@@ -3,7 +3,6 @@ title: How to fix "hidden symbol `__gcov_init' in ../libgcov.a(_gcov.o) is refer
 summary: |
   This article explains how to resolve the "hidden symbol `__gcov_init' in ../libgcov.a(_gcov.o) is referenced by DSO" error when building a project with Gcov, including how to ensure symbols are not hidden.
 tags:
-  - Gcov
   - Coverage
   - DevOps
 date: 2021-07-27

@@ -4,7 +4,7 @@ summary: |
   Markdown 和 reStructuredText（RST）是两种常用的标记语言。本文对比了它们的优缺点，并分享了在不同场景下的使用建议。
 tags:
   - Markdown
-  - RST
+  - Documentation
 authors:
   - shenxianpeng
 date: 2025-04-11

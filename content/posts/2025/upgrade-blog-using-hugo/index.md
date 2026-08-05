@@ -3,8 +3,6 @@ title: 八年之后，我终于翻新了我的博客
 summary: 本文记录了我在八年后对博客进行翻新的过程，从 Hexo 到 Hugo 的迁移，以及新博客的功能和设计改进。
 tags:
   - Blog
-  - Hugo
-  - Blowfish
 date: 2025-08-10
 authors:
   - shenxianpeng

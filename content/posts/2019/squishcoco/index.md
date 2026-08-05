@@ -6,9 +6,8 @@ date: 2019-05-21
 aliases:
   - /2019/05/squishcoco/
 tags:
-- SquishCoco
-- Coverage
-- DevOps
+  - Coverage
+  - DevOps
 authors:
   - shenxianpeng
 ---

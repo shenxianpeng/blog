@@ -7,7 +7,6 @@ aliases:
   - /2019/05/jenkins-windows-agent/
 tags:
   - Jenkins
-  - Jenkins
 authors:
   - shenxianpeng
 ---

@@ -3,7 +3,7 @@ title: SonarQube Community Edition 如何集成到项目中
 summary: |
   本文介绍如何将 SonarQube Community Edition 集成到 Maven、Gradle 及其他类型项目中，包括必要的配置和 Jenkins 流水线示例。
 tags:
-  - SonarQube
+  - Static Analysis
   - Gradle
 date: 2021-09-18
 aliases:

@@ -3,7 +3,6 @@ title: 修复 "hidden symbol `__gcov_init' in ../libgcov.a(_gcov.o) is reference
 summary: |
   本文介绍在使用 Gcov 编译项目进行代码覆盖率统计时，出现 "hidden symbol `__gcov_init'..." 等错误的原因及解决方法，包括如何在构建时确保符号不被隐藏。
 tags:
-  - Gcov
   - Coverage
   - DevOps
 date: 2021-07-27

@@ -3,7 +3,7 @@ title: GitStats 2.0—New UI and Chart Engine, Revitalizing Your Git Repository 
 summary: |
     I recently undertook a major UI redesign for the open-source project GitStats, adding dark/light mode toggle, responsive adaptation, and a modernized visual design, making the reports look like a real product.
 tags:
-  - GitStats
+  - gitstats
 authors:
   - shenxianpeng
 date: 2026-03-05

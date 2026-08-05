@@ -3,7 +3,7 @@ title: GitStats 2.0：全新 UI 和图表引擎，让你的 Git 仓库历史数�
 summary: |
     最近我对开源项目 GitStats 的 UI 进行了大幅改版，新增了深色/浅色模式切换、响应式适配和现代化视觉设计，让报告看起来像一个真正的产品。
 tags:
-  - GitStats
+  - gitstats
 authors:
   - shenxianpeng
 date: 2026-03-05

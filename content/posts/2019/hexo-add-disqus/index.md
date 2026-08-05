@@ -3,8 +3,7 @@ title: Hexo 添加 Disqus 留言功能
 summary: 在 Hexo 博客中集成 Disqus 评论系统，允许读者留言和互动。
 date: 2019-07-07
 tags:
-- Hexo
-- Disqus
+  - Blog
 categories:
 - Hexo
 translate: false
