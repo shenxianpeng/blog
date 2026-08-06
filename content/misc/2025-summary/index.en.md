@@ -1,3 +1,4 @@
+---
 title: 2025 Year-End Summary
 tags:
   - Thoughts
