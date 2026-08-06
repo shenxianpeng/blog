@@ -249,17 +249,25 @@ COVERS = {
 }
 
 
+def build_svg(slug):
+    fn = COVERS.get(slug)
+    if fn is None:
+        raise KeyError(f"no cover design for {slug!r} — add one to COVERS")
+    p = scaffold()
+    fn(p)
+    p.append("</svg>")
+    return "\n".join(p)
+
+
 def main():
     targets = sys.argv[1:] or sorted(COVERS)
     for slug in targets:
-        fn = COVERS.get(slug)
-        if fn is None:
-            sys.exit(f"no cover design for {slug!r} — add one to COVERS")
-        p = scaffold()
-        fn(p)
-        p.append("</svg>")
+        try:
+            svg = build_svg(slug)
+        except KeyError as e:
+            sys.exit(str(e))
         dest = os.path.join("content/portfolio", slug, "featured.jpg")
-        render("\n".join(p), dest)
+        render(svg, dest)
         print(f"  {dest}  ({os.path.getsize(dest) // 1024} KB)")
 
 
