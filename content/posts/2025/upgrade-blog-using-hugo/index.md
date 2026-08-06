@@ -27,9 +27,9 @@ authors:
 
 ### 主页对比
 
-![现在主页效果](new-home-page.png)
+![现在主页效果](new-home-page.jpg)
 
-![现在主页效果（英文）](new-home-page-en.png)
+![现在主页效果（英文）](new-home-page-en.jpg)
 
 之前的主页（没有做本地化处理）
 
@@ -43,9 +43,9 @@ authors:
 
 ### 新增页面
 
-![新增的杂项页面](new-misc-page.png)
+![新增的杂项页面](new-misc-page.jpg)
 
-![新增的作品集页面](new-portfolio-page.png)
+![新增的作品集页面](new-portfolio-page.jpg)
 
 ## 升级注意事项
 

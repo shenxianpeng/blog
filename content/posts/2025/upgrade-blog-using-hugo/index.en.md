@@ -27,9 +27,9 @@ Even with so many tools and resources at my disposal, it still took me three nig
 
 ### Home Page Comparison
 
-![New Home Page](new-home-page.png)
+![New Home Page](new-home-page.jpg)
 
-![New Home Page (English)](new-home-page-en.png)
+![New Home Page (English)](new-home-page-en.jpg)
 
 Previous home page (no localization applied)
 
@@ -43,9 +43,9 @@ Previous home page (no localization applied)
 
 ### New Pages
 
-![New Misc Page](new-misc-page.png)
+![New Misc Page](new-misc-page.jpg)
 
-![New Portfolio Page](new-portfolio-page.png)
+![New Portfolio Page](new-portfolio-page.jpg)
 
 ## Upgrade Notes
 

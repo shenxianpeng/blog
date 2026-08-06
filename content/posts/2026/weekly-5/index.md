@@ -169,7 +169,7 @@ GitHub 于 1 月 22 日发布了 Copilot SDK 技术预览，允许开发者将 C
 
 2、[**开源社区的"永恒九月"：AI 生成贡献引发维护者挑战**](https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/)
 
-![Eternal September](ai-2.png)
+![Eternal September](ai-2.jpg)
 
 GitHub 2 月 12 日发表博文，将当前开源社区面临的 AI 生成贡献浪潮比喻为"永恒九月"——当贡献门槛下降时，维护者面临着前所未有的分类和质量筛选压力。GitHub 宣布将推出新的信任信号、分类方法和社区驱动的解决方案来帮助维护者应对这一挑战。
 

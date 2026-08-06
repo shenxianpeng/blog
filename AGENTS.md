@@ -289,9 +289,14 @@ If you supply a cover by hand instead:
   `![描述](screenshot.png)`
 - **Screenshots:** PNG is fine when text must stay crisp, but resize to **at most
   1600px wide** and keep each file **under 500 KB**.
-- **Photos and illustrations:** JPEG quality 85.
+- **Photos and illustrations:** JPEG quality 85. AI image generators emit PNG by
+  default — that is the wrong container for photographic content and costs
+  5–10x the bytes. Save as JPEG.
 - Never commit an image straight from a phone, a screen-capture tool, or an image
   generator without resizing first. Those routinely run 3–5 MB each.
+- To normalize images already in a post, run
+  `python3 .github/scripts/shrink_article_images.py <post-dir>` — it downscales,
+  optimizes in place, and only rewrites a file when that saves at least 10%.
 - Every image needs alt text.
 
 ## Bilingual Content Management
