@@ -22,66 +22,74 @@ layoutBackgroundHeaderSpace: false
 
 ## About Me
 
-- **DevOps / Build / Release / AI Engineering practitioner** focused on software delivery, developer experience, and engineering automation.
-- Specialized in DevOps since 2018, with hands-on experience across Windows, Linux, AIX, Solaris, HP-UX, and the full software development lifecycle.
-- Exploring **Agentic DevOps** and AI-assisted developer tooling in enterprise environments, connecting AI agents, CI/CD, code understanding, and task execution into practical engineering workflows.
-- Strong in the **Scan → Try → Scale** approach: evaluate promising practices, validate them in real teams, then scale what works.
-- Proficient in **Python / Shell / Groovy** for building DevOps tools, automation systems, and AI-assisted engineering solutions.
-- **Open Source Creator and Maintainer**: Founded and maintain [cpp-linter](https://github.com/cpp-linter), [commit-check](https://github.com/commit-check), [conventional-branch](https://github.com/conventional-branch), and [devops-maturity](https://github.com/devops-maturity), and contribute to the Jenkins and MkDocs ecosystems.
-- **Technical Writer**: Published hundreds of original articles on my [blog](https://shenxianpeng.github.io) and WeChat public account **沈显鹏**, sharing practical experience in DevOps, AI, CI/CD, and open source.
+DevOps / AI engineer based in Vilnius, Lithuania. Sixteen years in software engineering, from QA and test automation to DevOps, with build, release, and delivery automation at Rocket Software since 2015. My current focus is enterprise **agentic applications**: AI that takes on real engineering tasks under controlled workflows.
+
+Outside work I maintain a number of open source organizations and projects, and my tools run daily in the CI of hundreds of projects — including **Microsoft, Apache, NASA, Samsung, Bloomberg, and Qualcomm**.
+
+**Highlights**
+
+- [cpp-linter](https://github.com/cpp-linter), my C/C++ quality tooling, is used by hundreds of notable projects including Microsoft, Apache, NASA, Samsung, Bloomberg, Qualcomm, and Jupyter
+- Author of an **official Jenkins plugin** ([Explain Error](https://github.com/jenkinsci/explain-error-plugin)); member of the Jenkins GitHub organization
+- Selected for the **Anthropic Open Source Developer Program** (2026)
+- **EuroPython 2025** proposal reviewer
+- 250+ original technical articles ([blog](https://shenxianpeng.github.io/en/) + WeChat)
 
 ---
 
 ## Work Experience
 
 **Senior DevOps Engineer** | Rocket Software, Lithuania | _Jul 2024 – Present_
-- Develop enterprise **Agentic Applications** that explore GitHub Copilot / @Copilot-like task execution experiences, where AI agents can understand context, invoke tools, and assist with engineering tasks inside controlled workflows.
-- Integrate the **GitHub Copilot SDK** and Skill invocation capabilities on the backend, connecting code understanding, task orchestration, tool execution, and feedback loops for developers.
-- Drive DevOps + AI practices across CI/CD, build failure analysis, code maintenance, documentation workflows, and developer productivity.
-- Continue scaling delivery practices by combining mature DevOps patterns with AI-assisted tooling in day-to-day engineering workflows.
+
+- Build enterprise **agentic applications**: AI agents on the **GitHub Copilot SDK** that take on engineering tasks, connecting code understanding, task orchestration, tool invocation, and feedback.
+- Bring AI into everyday engineering steps such as code review and build-failure analysis.
+- Own the team's CI/CD and delivery infrastructure.
 
 **DevOps Engineer** | Rocket Software, Dalian | _2015 – Jun 2024_
-- Led CI/CD transformation from manual/Bamboo builds to **Jenkins with shared libraries**.
-- Built **IaC with Ansible** for provisioning Jenkins and development environments.
-- **Dockerized** MVAS products using buildx, health checks, and Kubernetes deployments.
-- Proposed and scaled **DevOps maturity badge** and **conventional commits**.
+
+- Led CI/CD transformation across multiple product lines: from manual and Bamboo builds to **Jenkins with shared libraries**, all build logic as code.
+- Built infrastructure as code with **Ansible** for provisioning Jenkins and development environments.
+- Containerized enterprise products: multi-arch builds with buildx, health checks, **Kubernetes** deployments.
+- Designed the **DevOps maturity badge** system and scaled it to department level; drove **Conventional Commits** adoption across teams.
 - Automated VM management with Jira + Python, adopted company-wide.
-- Enabled **code coverage** reporting for multiple product lines.
-- Won multiple Rocket Build Awards and added solutions to product roadmap.
+- Introduced **code coverage** reporting for multiple product lines.
+- Multiple **Rocket Build Awards**; several solutions adopted into product roadmaps.
 
-**Software Engineer in Test** | JD.COM, Beijing | _2012 – 2014_
-- Developed automated test scripts and maintained CI pipelines.
+**Software Engineer in Test** | JD.COM, Beijing | _2012 – 2014_ — automated testing and CI pipelines.
 
-**QA Engineer** | SIMCOM (Shanghai) & Neusoft (Beijing) | _2009 – 2011_
-- Designed and executed test cases; led small QA teams and shared best practices.
+**QA Engineer** | SIMCOM (Shanghai) & Neusoft (Beijing) | _2009 – 2011_ — test design and execution; led small QA teams.
 
 ---
 
 ## Open Source Projects
 
-- **[cpp-linter](https://github.com/cpp-linter)** — A suite of C/C++ code quality tools integrating clang-format and clang-tidy, available as a GitHub Action and pre-commit hook. Adopted by hundreds of notable projects including Microsoft, Apache, and NASA. [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) is among the most recognized C/C++ linting solutions on GitHub.
+**[cpp-linter](https://github.com/cpp-linter)** — C/C++ code quality automation: clang-format and clang-tidy delivered as a GitHub Action and pre-commit hook. Runs in the daily CI of hundreds of projects, including Microsoft, Apache, NASA, Samsung, Bloomberg, Qualcomm, and Jupyter.
 
-- **[commit-check](https://github.com/commit-check)** — A flexible Git convention checker that validates commit messages, branch names, and author information. Supports GitHub Actions, pre-commit, and CLI usage, helping teams keep Git workflows consistent.
+**[commit-check](https://github.com/commit-check)** — a policy engine for Git commit metadata: one versioned TOML policy validating commit messages, branch names, author identity, signoff trailers, and **AI attribution**, shared across local hooks, CI, and GitHub Actions.
 
-- **[conventional-branch](https://github.com/conventional-branch)** — A specification and toolset for standardizing Git branch naming conventions, including validators and GitHub Actions for open source projects and engineering teams.
+**[conventional-branch](https://github.com/conventional-branch)** — a branch naming specification and toolset; since 1.1.0 it natively supports **AI Coding Agent** branch prefixes.
 
-- **[devops-maturity](https://github.com/devops-maturity)** — A framework for assessing and communicating DevOps maturity through structured specs and badge systems, helping teams measure progress and drive continuous improvement.
+**[Explain Error](https://github.com/jenkinsci/explain-error-plugin)** — an official Jenkins plugin that uses AI to explain build failures, with **AI Auto-Fix** (automatic repair PRs), usage statistics and quota controls, and providers including OpenAI, Gemini, Azure OpenAI, DeepSeek, Qwen, Ollama, and AWS Bedrock.
 
-- **[explain-error-plugin](https://github.com/jenkinsci/explain-error-plugin)** — An official Jenkins plugin that uses AI to explain build failures and now supports AI Auto-Fix for creating repair PRs, usage statistics and quota controls, and multiple providers including OpenAI, Gemini, Azure OpenAI, DeepSeek, Qwen, Ollama, and AWS Bedrock.
+**[Open Delivery Spec](https://github.com/open-delivery-spec)** — an open specification and toolset for detecting, analyzing, and governing AI-generated code: AI-code detection, quality scoring, and policy gates that run as a CI quality gate (every PR on this blog's repository goes through it).
 
-- **[MkDocs NG](https://github.com/mkdocs-ng)** — Maintains `mkdocs-ng` and `mkdocs-ng-material` to keep the MkDocs and Material for MkDocs ecosystem usable, with bug fixes, dependency upgrades, Python compatibility work, and a migration path that preserves the original CLI, configuration file, and plugin interfaces.
-
-- **[gitstats](https://github.com/shenxianpeng/gitstats)** — A Git repository analytics tool that visualizes contribution patterns, commit frequency, contributor activity, and code trends. Version 2.0 moved the chart engine to Chart.js and added responsive UI, dark/light mode, and AI-generated repository insights.
+**More**: [devops-maturity](https://github.com/devops-maturity) (DevOps maturity assessment and badges), [MkDocs NG](https://github.com/mkdocs-ng) (community maintenance of the MkDocs ecosystem), [gitstats](https://github.com/shenxianpeng/gitstats) (Git repository analytics), [jenkinsfilelint](https://github.com/shenxianpeng/jenkinsfilelint) (Jenkinsfile validation without a Jenkins server).
 
 ---
 
 ## Skills
 
-- DevOps / CI/CD / Build & Release ★★★★★
-- AI-assisted tooling / Agentic DevOps / LLM applications ★★★★☆
-- Jenkins / Docker / Ansible / GitHub Actions ★★★★☆
-- Python / Shell / Groovy ★★★★☆
-- Go / GitHub Copilot SDK / Open Source Maintenance ★★★☆☆
+- **Engineering practice**: CI/CD, build & release, containers (Docker), infrastructure as code (Ansible), code quality & coverage, software supply chain security (SLSA / SBOM)
+- **AI engineering**: agentic application development, AI code review, GitHub Copilot SDK, LLM integration (OpenAI / Gemini / Bedrock / Ollama and others)
+- **Languages**: Python, Shell, Groovy, Go
+- **Platforms**: Jenkins, GitHub Actions, Linux, Windows, and enterprise environments including AIX
+
+---
+
+## Community
+
+- **EuroPython 2025** proposal reviewer; attended **PyCon Lithuania 2025** and published three days of conference notes
+- Maintainer in the **Jenkins** and **MkDocs** ecosystems
+- Anthropic Open Source Developer Program
 
 ---
 
@@ -102,3 +110,4 @@ layoutBackgroundHeaderSpace: false
 ## Contact
 
 - Email: [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)
+- GitHub: [@shenxianpeng](https://github.com/shenxianpeng)
