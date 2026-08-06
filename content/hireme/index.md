@@ -24,9 +24,9 @@ layoutBackgroundHeaderSpace: false
 
 ## 个人简介
 
-DevOps / AI 工程师，现居立陶宛维尔纽斯。十六年软件工程经验，从 QA、测试开发一路做到 DevOps，2015 年起在 Rocket Software 负责构建、发布与交付自动化。目前的工作重心是 **Digital Colleague（数字同事）** 与 **AI Code Review**：让 AI 以受控的方式承担真实的工程任务。
+DevOps / AI 工程师，现居立陶宛维尔纽斯。十六年软件工程经验，从 QA、测试开发一路做到 DevOps，2015 年起在 Rocket Software 负责构建、发布与交付自动化。目前专注企业级 **Agentic 应用**开发，让 AI 以受控的方式承担真实的工程任务。
 
-业余维护 6 个开源组织，写的工具每天跑在 **Microsoft、Apache、NASA、Samsung、Bloomberg、Qualcomm** 等数百个项目的 CI 里。
+业余维护多个开源组织和项目，写的工具每天跑在 **Microsoft、Apache、NASA、Samsung、Bloomberg、Qualcomm** 等数百个项目的 CI 里。
 
 **核心亮点**
 
@@ -42,8 +42,8 @@ DevOps / AI 工程师，现居立陶宛维尔纽斯。十六年软件工程经�
 
 **高级 DevOps 工程师** | Rocket Software，立陶宛 | _2024.07 – 至今_
 
-- 开发企业级 **Digital Colleague**：基于 **GitHub Copilot SDK** 构建承担工程任务的 AI agent，连接代码理解、任务编排、工具调用与结果反馈。
-- 建设 **AI Code Review**：将 AI 代码审查接入团队的 PR 工作流。
+- 开发企业级 **Agentic 应用**：基于 **GitHub Copilot SDK** 构建承担工程任务的 AI agent，连接代码理解、任务编排、工具调用与结果反馈。
+- 将 AI 引入代码审查、构建失败分析等日常工程环节。
 - 同时负责团队 CI/CD 与交付基础设施的持续建设。
 
 **DevOps 工程师** | Rocket Software，大连 | _2015 – 2024.06_
@@ -80,8 +80,8 @@ DevOps / AI 工程师，现居立陶宛维尔纽斯。十六年软件工程经�
 
 ## 技能
 
-- **工程实践**：CI/CD、构建与发布、容器化（Docker / Kubernetes）、基础设施即代码（Ansible）、代码质量与覆盖率、软件供应链安全（SLSA / SBOM）
-- **AI 工程**：Digital Colleague / Agentic 应用开发、AI Code Review、GitHub Copilot SDK、LLM 集成（OpenAI / Gemini / Bedrock / Ollama 等）
+- **工程实践**：CI/CD、构建与发布、容器化（Docker）、基础设施即代码（Ansible）、代码质量与覆盖率、软件供应链安全（SLSA / SBOM）
+- **AI 工程**：Agentic 应用开发、AI 代码审查、GitHub Copilot SDK、LLM 集成（OpenAI / Gemini / Bedrock / Ollama 等）
 - **语言**：Python、Shell、Groovy、Go
 - **平台**：Jenkins、GitHub Actions、Linux、Windows、AIX 等企业级环境
 
@@ -91,7 +91,7 @@ DevOps / AI 工程师，现居立陶宛维尔纽斯。十六年软件工程经�
 
 - **EuroPython 2025** 议题评审；**PyCon Lithuania 2025** 参会并发布三篇大会记录
 - **Jenkins、MkDocs** 生态维护者
-- Anthropic Open Source Developer Program 入选者；GitHub Arctic Code Vault Contributor
+- Anthropic Open Source Developer Program 入选者
 
 ---
 

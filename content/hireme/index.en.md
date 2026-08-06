@@ -22,9 +22,9 @@ layoutBackgroundHeaderSpace: false
 
 ## About Me
 
-DevOps / AI engineer based in Vilnius, Lithuania. Sixteen years in software engineering, from QA and test automation to DevOps, with build, release, and delivery automation at Rocket Software since 2015. My current focus is **Digital Colleague** and **AI Code Review**: AI that takes on real engineering tasks under controlled workflows.
+DevOps / AI engineer based in Vilnius, Lithuania. Sixteen years in software engineering, from QA and test automation to DevOps, with build, release, and delivery automation at Rocket Software since 2015. My current focus is enterprise **agentic applications**: AI that takes on real engineering tasks under controlled workflows.
 
-Outside work I maintain six GitHub organizations, and my tools run daily in the CI of hundreds of projects — including **Microsoft, Apache, NASA, Samsung, Bloomberg, and Qualcomm**.
+Outside work I maintain a number of open source organizations and projects, and my tools run daily in the CI of hundreds of projects — including **Microsoft, Apache, NASA, Samsung, Bloomberg, and Qualcomm**.
 
 **Highlights**
 
@@ -40,8 +40,8 @@ Outside work I maintain six GitHub organizations, and my tools run daily in the 
 
 **Senior DevOps Engineer** | Rocket Software, Lithuania | _Jul 2024 – Present_
 
-- Build an enterprise **Digital Colleague**: AI agents on the **GitHub Copilot SDK** that take on engineering tasks, connecting code understanding, task orchestration, tool invocation, and feedback.
-- Build **AI Code Review**: AI-based review integrated into the team's PR workflow.
+- Build enterprise **agentic applications**: AI agents on the **GitHub Copilot SDK** that take on engineering tasks, connecting code understanding, task orchestration, tool invocation, and feedback.
+- Bring AI into everyday engineering steps such as code review and build-failure analysis.
 - Own the team's CI/CD and delivery infrastructure.
 
 **DevOps Engineer** | Rocket Software, Dalian | _2015 – Jun 2024_
@@ -78,8 +78,8 @@ Outside work I maintain six GitHub organizations, and my tools run daily in the 
 
 ## Skills
 
-- **Engineering practice**: CI/CD, build & release, containers (Docker / Kubernetes), infrastructure as code (Ansible), code quality & coverage, software supply chain security (SLSA / SBOM)
-- **AI engineering**: Digital Colleague / agentic application development, AI Code Review, GitHub Copilot SDK, LLM integration (OpenAI / Gemini / Bedrock / Ollama and others)
+- **Engineering practice**: CI/CD, build & release, containers (Docker), infrastructure as code (Ansible), code quality & coverage, software supply chain security (SLSA / SBOM)
+- **AI engineering**: agentic application development, AI code review, GitHub Copilot SDK, LLM integration (OpenAI / Gemini / Bedrock / Ollama and others)
 - **Languages**: Python, Shell, Groovy, Go
 - **Platforms**: Jenkins, GitHub Actions, Linux, Windows, and enterprise environments including AIX
 
@@ -89,7 +89,7 @@ Outside work I maintain six GitHub organizations, and my tools run daily in the 
 
 - **EuroPython 2025** proposal reviewer; attended **PyCon Lithuania 2025** and published three days of conference notes
 - Maintainer in the **Jenkins** and **MkDocs** ecosystems
-- Anthropic Open Source Developer Program; GitHub Arctic Code Vault Contributor
+- Anthropic Open Source Developer Program
 
 ---
 
