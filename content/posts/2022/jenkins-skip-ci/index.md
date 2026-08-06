@@ -3,7 +3,7 @@ title: 如何在 Jenkins 多分支流水线中实现 [skip ci]
 summary: |
   本文介绍如何在 Jenkins 多分支流水线中实现 [skip ci] 功能，根据提交信息跳过构建。
 tags:
-  - CI
+  - CI-CD
   - Jenkins
 authors:
 aliases:

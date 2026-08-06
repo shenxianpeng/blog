@@ -4,7 +4,7 @@ summary: |
   C/C++ tooling in the pre-commit ecosystem has long been limited. cpp-linter-hooks is currently the only pre-commit hook that supports both clang-format and clang-tidy, with built-in compilation database auto-detection, version pinning, and auto-fix capabilities.
 tags:
   - pre-commit
-  - C/C++
+  - C++
   - Open Source
 authors:
   - shenxianpeng

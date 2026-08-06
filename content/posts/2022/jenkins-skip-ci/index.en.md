@@ -3,7 +3,7 @@ title: How to implement [skip ci] for Jenkins multi-branch pipeline
 summary: |
   This article explains how to implement [skip ci] functionality in Jenkins multi-branch pipelines, allowing you to skip builds based on commit messages.
 tags:
-  - CI
+  - CI-CD
   - Jenkins
 authors:
   - shenxianpeng
