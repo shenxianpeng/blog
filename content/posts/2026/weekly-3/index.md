@@ -91,7 +91,7 @@ AWS DevOps Agent 团队成员 Efe Karakus 分享了从原型到产品的完整�
 
 3、[Anders Hejlsberg 的 7 条经验：C# 和 TypeScript 架构师的智慧](https://github.blog/developer-skills/programming-languages-and-frameworks/7-learnings-from-anders-hejlsberg-the-architect-behind-c-and-typescript/)（英文）
 
-![](blog-3.png)
+![](blog-3.jpg)
 
 作为 C# 和 TypeScript 的架构师，Anders Hejlsberg 分享了他在语言设计和软件工程方面的核心经验，包括快速反馈循环的重要性、如何扩展软件、开源可见性的价值，以及如何构建持久的工具。
 
@@ -167,7 +167,7 @@ Google 发布的 Project Genie 能够实时生成可交互的 3D 世界。用户
 
 2、[Prism：OpenAI 的新项目](https://openai.com/index/introducing-prism/)
 
-![](ai-2.png)
+![](ai-2.jpg)
 
 OpenAI 推出的 Prism 项目聚焦于提升 AI 系统的可解释性和透明度。该项目旨在帮助用户更好地理解 AI 的决策过程，增强对 AI 系统的信任。
 
@@ -177,7 +177,7 @@ OpenAI 推出的 Prism 项目聚焦于提升 AI 系统的可解释性和透明�
 
 3、[Unrolling the Codex Agent Loop](https://openai.com/index/unrolling-the-codex-agent-loop/)
 
-![](ai-3.png)
+![](ai-3.jpg)
 
 OpenAI 工程团队详细解析了 Codex Agent 的工作循环机制。文章深入探讨了 Agent 如何理解代码上下文、规划执行步骤、生成代码并验证结果。这对于理解 AI 编程助手的内部工作原理非常有帮助。
 

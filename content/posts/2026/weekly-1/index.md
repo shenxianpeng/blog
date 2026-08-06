@@ -65,7 +65,7 @@ Stack Overflow 于 2025 年 12 月 29 日发布了开发者调查结果，显示
 
 1、[2025 年 DevOps 年度回顾：五大基础设施转变及其对 2026 年的意义](https://medium.com/@inboryn/2025-devops-year-in-review-the-5-biggest-infrastructure-shifts-and-what-they-mean-for-2026-ffb7a6735139)（英文）
 
-![](devops-review.png)
+![](devops-review.jpg)
 
 这篇文章回顾了 2025 年 DevOps 领域的五大基础设施转变，包括 AI 模型进入生产、云安全重塑、平台工程成为必需、eBPF 的普及以及厂商锁定的回归。文章深入分析了这些转变对 2026 年的影响，强调了 LLM 成本优化、云安全作为差异化因素以及平台工程的重要性。
 
@@ -103,13 +103,13 @@ Stack Overflow 于 2025 年 12 月 29 日发布了开发者调查结果，显示
 
 1、[A2UI：Google 的代理驱动界面开放项目](https://github.com/google/a2ui)
 
-![](a2ui_gallery_examples.png)
+![](a2ui_gallery_examples.jpg)
 
 Google 于 2025 年 12 月 15 日公开了 A2UI 项目，这是一个用于代理驱动界面的开放项目。A2UI 旨在解决可互操作、跨平台、生成式或基于模板的代理 UI 响应的特定挑战，允许代理生成最适合当前对话的界面，并发送到前端应用程序。
 
 2、[Moondream：小巧而强大的视觉语言模型](https://moondream.ai/)
 
-![](moondream.png)
+![](moondream.jpg)
 
 Moondream 是一个开源的视觉语言模型，体积小巧（1GB），性能卓越，无需 GPU 即可在笔记本电脑到边缘设备上运行。它允许开发者使用自然语言提示来标注图像、检测物体、跟踪视线、阅读文档等。该项目在 GitHub 上拥有数千颗星。
 

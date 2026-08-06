@@ -59,7 +59,7 @@ Pragmatic Engineer 创始人 Gergely Orosz 的开年长文，探讨 AI 编码工
 
 2、[**2026年开发者工作流的25款AI编码工具**](https://devin-rosario.medium.com/25-ai-coding-tools-for-dev-workflows-in-2026-28ffc7384306)
 
-![25 Tools](25-tools.png)
+![25 Tools](25-tools.jpg)
 
 Devin Rosario 在 Medium 上详细介绍了 25 款 AI 编码工具。文章指出，软件开发已从"AI 辅助"进入"AI 编排"时代，高级工程师现在管理自主代理来处理复杂重构和安全补丁。
 
@@ -99,13 +99,13 @@ XDA Developers 推荐的 6 个超轻量级 Docker 容器，通过自动化日常
 
 2、**[4 个 Docker 容器通过 Chrome 扩展增强功能](https://www.xda-developers.com/docker-containers-with-chrome-extensions/)**
 
-![](docker-chrome-extensions.png)
+![](docker-chrome-extensions.jpg)
 
 XDA Developers 介绍了 4 个自托管 Docker 容器，通过浏览器扩展实现更好的工作流集成。这些工具的优势是数据完全自主可控，避免隐私风险和订阅费用，同时保持与云服务相当的体验。
 
 3、**[Valkey 发布官方 Kubernetes Helm Chart](https://valkey.io/blog/valkey-released-helm-chart/)**
 
-![Valkey](valkey.png)
+![Valkey](valkey.jpg)
 
 Valkey（Redis 的开源分支）发布官方 Kubernetes Helm Chart。这是继 Bitnami 宣布政策变更后，社区维护的官方版本。支持 Standalone、Replicated、Sentinel 等部署模式，提供 ACL 和 TLS 加密、Prometheus metrics 集成、持久化存储配置。
 
@@ -138,7 +138,7 @@ Real Python 的系统性指南，教你制定个人化 Python 学习计划。基
 Tech.co 整理的 2026 年 1 月最佳免费 AI 培训课程清单，涵盖从生成式 AI 基础到提示工程、机器学习和大型语言模型（LLMs）实际应用。包括杜克大学的"GenAI 基础 – LLMs 如何工作"和 Udemy 的"AI 基础：从基础到生成式 AI"等课程。
 
 3、[2026 年工程师应学习的顶级 AI 技能](https://www.morson.com/blog/top-ai-skills-engineers-should-learn-2026)
-![Top AI Skills 2026](ai-skills.png)
+![Top AI Skills 2026](ai-skills.jpg)
 
 Morson Jobs 列出了 2026 年工程师最应学习的 AI 技能，包括 Python 熟练度、LLM 微调、MLOps、机器学习、深度学习和数据分析。强调提示工程、数据和自然语言处理（NLP）工程、云 AI 平台、计算机视觉以及 AI 伦理等关键领域。AI 正在重新定义"优秀"的工程实践，工程师需要学会智能地应用 AI 提高决策质量和减少重复工作。
 
