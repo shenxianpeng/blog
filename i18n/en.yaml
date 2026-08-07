@@ -78,3 +78,7 @@ shortcode:
 
 recent:
   show_more: "Show More"
+
+archive_total:
+  one: "{{ .Count }} post"
+  other: "{{ .Count }} posts"

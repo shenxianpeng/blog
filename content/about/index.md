@@ -8,6 +8,7 @@ showDateOnlyInArticle : false
 showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
+showRelatedContent : false
 showReadingTime : false
 showTableOfContents : true
 showTaxonomies : false 

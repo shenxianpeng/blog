@@ -65,3 +65,6 @@ shortcode:
 
 recent:
   show_more: "显示更多"
+
+archive_total:
+  other: "共 {{ .Count }} 篇"
