@@ -1,0 +1,26 @@
+content/posts/2026/claude-for-open-source/index.md
+  s_63257b6502481a::t_af2af42ea36bb5 65-72
+  s_63257b6502481a::t_0223976947719f 46-62,64
+  h_95e33fbd4ab2d9 41,45,63,75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "d555ef8f299d58597725e29925986437d5bb0d9f",
+  "prompts": {},
+  "humans": {
+    "h_95e33fbd4ab2d9": {
+      "author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_63257b6502481a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019faa3d-8b4f-72c6-a545-8f6a6c946d9c",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
