@@ -13,36 +13,31 @@
         </p>
       {{ end }}
     </header>
+    {{ $posts := where .Site.RegularPages "Section" "in" (slice "posts" "misc") }}
+    {{/* Drop pages Hugo dated to year 1 because their front matter is malformed */}}
+    {{ $posts = where $posts "Date.Year" "gt" 1000 }}
+    <p class="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+      {{ i18n "archive_total" (len $posts) }}
+    </p>
     <section class="max-w-full mt-6 prose dark:prose-invert">
       {{ .Content }}
     </section>
 
     {{/* Auto-generate archive list by year */}}
     <section class="mt-12">
-      {{/* Get all posts from posts and misc sections */}}
-      {{ $posts := where .Site.RegularPages "Section" "in" (slice "posts" "misc") }}
-      {{/* Filter out pages without valid dates (year > 1000) */}}
-      {{ $posts = where $posts "Date.Year" "gt" 1000 }}
-      
-      <h2 class="text-2xl font-bold mb-6 text-neutral-900 dark:text-neutral">
-        Archive
-        <span class="ml-3 text-lg text-neutral-500 dark:text-neutral-400 font-normal">
-          ({{ len $posts }})
-        </span>
-      </h2>
-      
-      {{/* Group posts by year */}}
+      {{/* Group posts by year. The year is the first heading under the page
+           title: an "Archive" heading here would only repeat that title. */}}
       {{ range $posts.GroupByDate "2006" "desc" }}
         <div class="mb-10" id="{{ .Key }}">
-          <h3 class="text-xl font-semibold mb-6 flex items-baseline">
+          <h2 class="text-xl font-semibold mb-6 flex items-baseline">
             <a href="#{{ .Key }}" class="text-primary-600 dark:text-primary-400 hover:underline">
               {{ .Key }}
             </a>
             <span class="ml-2 text-base text-neutral-500 dark:text-neutral-400">
               ({{ len .Pages }})
             </span>
-          </h3>
-          
+          </h2>
+
           {{/* List all articles for this year */}}
           <ul class="space-y-3 ml-4">
             {{ range .Pages.ByDate.Reverse }}
