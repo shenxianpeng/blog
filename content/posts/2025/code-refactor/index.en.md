@@ -3,7 +3,7 @@ title: CI/CD—Not a One-Time Project, but a Continuously Evolving System
 summary: |
   In DevOps, CI/CD pipelines require continuous maintenance and refactoring. This article explores why CI/CD is not a one-time construction project, but a system that requires long-term investment and continuous evolution.
 tags:
-  - CI/CD
+  - CI-CD
   - DevOps
 authors:
   - shenxianpeng
