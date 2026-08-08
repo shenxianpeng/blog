@@ -9,6 +9,7 @@ tags:
  - Open Source
 authors:
  - shenxianpeng
+series: ["Open Delivery Spec"]
 date: 2026-07-17
 ---
 
