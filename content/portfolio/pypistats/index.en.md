@@ -94,23 +94,23 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-version-devops-maturity]: https://img.shields.io/pypi/v/devops-maturity?style=flat-square
 
 <!-- Badge Images - Downloads -->
-[badge-downloads-commit-check]: https://img.shields.io/pypi/dm/commit-check?style=flat-square
-[badge-downloads-cpp-linter]: https://img.shields.io/pypi/dm/cpp-linter?style=flat-square
-[badge-downloads-cpp-linter-hooks]: https://img.shields.io/pypi/dm/cpp-linter-hooks?style=flat-square
-[badge-downloads-clang-tools]: https://img.shields.io/pypi/dm/clang-tools?style=flat-square
-[badge-downloads-atlassian-api-py]: https://img.shields.io/pypi/dm/atlassian-api-py?style=flat-square
-[badge-downloads-jenkinsfilelint]: https://img.shields.io/pypi/dm/jenkinsfilelint?style=flat-square
-[badge-downloads-mkdocs-ng]: https://img.shields.io/pypi/dm/mkdocs-ng?style=flat-square
-[badge-downloads-gitstats]: https://img.shields.io/pypi/dm/gitstats?style=flat-square
-[badge-downloads-gitoxide]: https://img.shields.io/pypi/dm/gitoxide?style=flat-square
-[badge-downloads-gnuplot-wheel]: https://img.shields.io/pypi/dm/gnuplot-wheel?style=flat-square
-[badge-downloads-py-eol]: https://img.shields.io/pypi/dm/py-eol?style=flat-square
-[badge-downloads-badgepy]: https://img.shields.io/pypi/dm/badgepy?style=flat-square
-[badge-downloads-used-by]: https://img.shields.io/pypi/dm/used-by?style=flat-square
-[badge-downloads-hadolint-py]: https://img.shields.io/pypi/dm/hadolint-py?style=flat-square
-[badge-downloads-pipguard]: https://img.shields.io/pypi/dm/pipguard?style=flat-square
-[badge-downloads-repokeeper]: https://img.shields.io/pypi/dm/repokeeper?style=flat-square
-[badge-downloads-devops-maturity]: https://img.shields.io/pypi/dm/devops-maturity?style=flat-square
+[badge-downloads-commit-check]: https://static.pepy.tech/badge/commit-check/month
+[badge-downloads-cpp-linter]: https://static.pepy.tech/badge/cpp-linter/month
+[badge-downloads-cpp-linter-hooks]: https://static.pepy.tech/badge/cpp-linter-hooks/month
+[badge-downloads-clang-tools]: https://static.pepy.tech/badge/clang-tools/month
+[badge-downloads-atlassian-api-py]: https://static.pepy.tech/badge/atlassian-api-py/month
+[badge-downloads-jenkinsfilelint]: https://static.pepy.tech/badge/jenkinsfilelint/month
+[badge-downloads-mkdocs-ng]: https://static.pepy.tech/badge/mkdocs-ng/month
+[badge-downloads-gitstats]: https://static.pepy.tech/badge/gitstats/month
+[badge-downloads-gitoxide]: https://static.pepy.tech/badge/gitoxide/month
+[badge-downloads-gnuplot-wheel]: https://static.pepy.tech/badge/gnuplot-wheel/month
+[badge-downloads-py-eol]: https://static.pepy.tech/badge/py-eol/month
+[badge-downloads-badgepy]: https://static.pepy.tech/badge/badgepy/month
+[badge-downloads-used-by]: https://static.pepy.tech/badge/used-by/month
+[badge-downloads-hadolint-py]: https://static.pepy.tech/badge/hadolint-py/month
+[badge-downloads-pipguard]: https://static.pepy.tech/badge/pipguard/month
+[badge-downloads-repokeeper]: https://static.pepy.tech/badge/repokeeper/month
+[badge-downloads-devops-maturity]: https://static.pepy.tech/badge/devops-maturity/month
 
 <!-- Badge Images - Last Commit -->
 [badge-commit-commit-check]: https://img.shields.io/github/last-commit/commit-check/commit-check?style=flat-square
