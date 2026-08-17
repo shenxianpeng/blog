@@ -1,0 +1,26 @@
+content/portfolio/pypistats/index.en.md
+  s_f75dc98b34ac92::t_e9e44316feffa3 97-113
+content/portfolio/pypistats/index.md
+  s_f75dc98b34ac92::t_920a33f6910a28 98-114
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "db48332fa54e3bf12cea213bc859f240a5bfc3af",
+  "prompts": {},
+  "humans": {
+    "h_95e33fbd4ab2d9": {
+      "author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_f75dc98b34ac92": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3bb07ff-1c72-44e8-aedb-a4cbbf1025e2",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
