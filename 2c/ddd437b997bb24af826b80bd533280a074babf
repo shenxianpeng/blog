@@ -1,0 +1,36 @@
+content/posts/2026/keelhaven-0-8-0/index.md
+  s_eea8c3b5ebed35::t_78d2157a5d7829 201
+  s_eea8c3b5ebed35::t_f18b416f1608b1 160
+  s_eea8c3b5ebed35::t_4bacb2301ed6cd 156
+  s_eea8c3b5ebed35::t_bc89d54afd3b7c 1-19,21-39,41,43-97,99-103,105-107,109-119,121-133,135,137-155,157-159,161-178,180-184,186,188-196,198-200,202-206,208,210,212,214-234
+  s_eea8c3b5ebed35::t_da09e583c3dfeb 108
+  s_eea8c3b5ebed35::t_bae7969d56ddc3 209,211
+  s_eea8c3b5ebed35::t_16716bfe8c1d94 40
+  s_eea8c3b5ebed35::t_d29867ce0c4de0 98
+  s_eea8c3b5ebed35::t_efc2d1957ed308 120
+  s_eea8c3b5ebed35::t_0b6dbd1db480fe 179
+  s_eea8c3b5ebed35::t_54036b0634cdd1 207
+  s_eea8c3b5ebed35::t_2fb4e7febfcaf9 20
+  s_eea8c3b5ebed35::t_2afce303df15fc 185,187
+  s_eea8c3b5ebed35::t_c958f71ecf1b51 42
+  s_eea8c3b5ebed35::t_574714431e26f0 197
+  s_eea8c3b5ebed35::t_b0d604f80a1c7e 104
+  s_eea8c3b5ebed35::t_3bb33e852907e0 213
+  s_eea8c3b5ebed35::t_5652e7cb3aea01 134,136
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "2cddd437b997bb24af826b80bd533280a074babf",
+  "prompts": {},
+  "sessions": {
+    "s_eea8c3b5ebed35": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "be6c2404-5405-473e-9e17-537f3cbf3b20",
+        "model": "claude-opus-5"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
