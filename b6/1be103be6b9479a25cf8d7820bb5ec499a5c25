@@ -1,0 +1,22 @@
+content/posts/2026/keelhaven-0-8-0/index.md
+  s_e00aa729253cb5::t_fa76b44b56128a 22,80,108,116,162,219,229
+  s_e00aa729253cb5::t_67aade6dd851ad 42,106,138
+  s_e00aa729253cb5::t_f4b658a26a2ba3 20,88,156
+  s_e00aa729253cb5::t_117b6db779c40f 18,185
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "b61be103be6b9479a25cf8d7820bb5ec499a5c25",
+  "prompts": {},
+  "sessions": {
+    "s_e00aa729253cb5": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a087c4-2901-722d-93ce-1750e306865d",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
