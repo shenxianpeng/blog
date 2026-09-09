@@ -18,21 +18,21 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 |:--------|:--------|:----------|:------------|
 | [![Package][badge-name-commit-check]][gh-commit-check] | [![PyPI][badge-version-commit-check]][commit-check] | [![Downloads][badge-downloads-commit-check]][commit-check] | [![Commit][badge-commit-commit-check]][gh-commit-check] |
 | [![Package][badge-name-clang-tools]][gh-clang-tools] | [![PyPI][badge-version-clang-tools]][clang-tools] | [![Downloads][badge-downloads-clang-tools]][clang-tools] | [![Commit][badge-commit-clang-tools]][gh-clang-tools] |
+| [![Package][badge-name-hadolint-py]][gh-hadolint-py] | [![PyPI][badge-version-hadolint-py]][hadolint-py] | [![Downloads][badge-downloads-hadolint-py]][hadolint-py] | [![Commit][badge-commit-hadolint-py]][gh-hadolint-py] |
 | [![Package][badge-name-cpp-linter]][gh-cpp-linter] | [![PyPI][badge-version-cpp-linter]][cpp-linter] | [![Downloads][badge-downloads-cpp-linter]][cpp-linter] | [![Commit][badge-commit-cpp-linter]][gh-cpp-linter] |
-| [![Package][badge-name-cpp-linter-hooks]][gh-cpp-linter-hooks] | [![PyPI][badge-version-cpp-linter-hooks]][cpp-linter-hooks] | [![Downloads][badge-downloads-cpp-linter-hooks]][cpp-linter-hooks] | [![Commit][badge-commit-cpp-linter-hooks]][gh-cpp-linter-hooks] |
-| [![Package][badge-name-gitstats]][gh-gitstats] | [![PyPI][badge-version-gitstats]][gitstats] | [![Downloads][badge-downloads-gitstats]][gitstats] | [![Commit][badge-commit-gitstats]][gh-gitstats] |
-| [![Package][badge-name-gitoxide]][gh-gitoxide] | [![PyPI][badge-version-gitoxide]][gitoxide] | [![Downloads][badge-downloads-gitoxide]][gitoxide] | [![Commit][badge-commit-gitoxide]][gh-gitoxide] |
 | [![Package][badge-name-gnuplot-wheel]][gh-gnuplot-wheel] | [![PyPI][badge-version-gnuplot-wheel]][gnuplot-wheel] | [![Downloads][badge-downloads-gnuplot-wheel]][gnuplot-wheel] | [![Commit][badge-commit-gnuplot-wheel]][gh-gnuplot-wheel] |
 | [![Package][badge-name-atlassian-api-py]][gh-atlassian-api-py] | [![PyPI][badge-version-atlassian-api-py]][atlassian-api-py] | [![Downloads][badge-downloads-atlassian-api-py]][atlassian-api-py] | [![Commit][badge-commit-atlassian-api-py]][gh-atlassian-api-py] |
+| [![Package][badge-name-cpp-linter-hooks]][gh-cpp-linter-hooks] | [![PyPI][badge-version-cpp-linter-hooks]][cpp-linter-hooks] | [![Downloads][badge-downloads-cpp-linter-hooks]][cpp-linter-hooks] | [![Commit][badge-commit-cpp-linter-hooks]][gh-cpp-linter-hooks] |
+| [![Package][badge-name-gitstats]][gh-gitstats] | [![PyPI][badge-version-gitstats]][gitstats] | [![Downloads][badge-downloads-gitstats]][gitstats] | [![Commit][badge-commit-gitstats]][gh-gitstats] |
 | [![Package][badge-name-badgepy]][gh-badgepy] | [![PyPI][badge-version-badgepy]][badgepy] | [![Downloads][badge-downloads-badgepy]][badgepy] | [![Commit][badge-commit-badgepy]][gh-badgepy] |
-| [![Package][badge-name-jenkinsfilelint]][gh-jenkinsfilelint] | [![PyPI][badge-version-jenkinsfilelint]][jenkinsfilelint] | [![Downloads][badge-downloads-jenkinsfilelint]][gh-jenkinsfilelint] | [![Commit][badge-commit-jenkinsfilelint]][gh-jenkinsfilelint] |
 | [![Package][badge-name-mkdocs-ng]][gh-mkdocs-ng] | [![PyPI][badge-version-mkdocs-ng]][mkdocs-ng] | [![Downloads][badge-downloads-mkdocs-ng]][mkdocs-ng] | [![Commit][badge-commit-mkdocs-ng]][gh-mkdocs-ng] |
-| [![Package][badge-name-hadolint-py]][gh-hadolint-py] | [![PyPI][badge-version-hadolint-py]][hadolint-py] | [![Downloads][badge-downloads-hadolint-py]][hadolint-py] | [![Commit][badge-commit-hadolint-py]][gh-hadolint-py] |
+| [![Package][badge-name-gitoxide]][gh-gitoxide] | [![PyPI][badge-version-gitoxide]][gitoxide] | [![Downloads][badge-downloads-gitoxide]][gitoxide] | [![Commit][badge-commit-gitoxide]][gh-gitoxide] |
+| [![Package][badge-name-jenkinsfilelint]][gh-jenkinsfilelint] | [![PyPI][badge-version-jenkinsfilelint]][jenkinsfilelint] | [![Downloads][badge-downloads-jenkinsfilelint]][gh-jenkinsfilelint] | [![Commit][badge-commit-jenkinsfilelint]][gh-jenkinsfilelint] |
+| [![Package][badge-name-repokeeper]][gh-repokeeper] | [![PyPI][badge-version-repokeeper]][repokeeper] | [![Downloads][badge-downloads-repokeeper]][repokeeper] | [![Commit][badge-commit-repokeeper]][gh-repokeeper] |
+| [![Package][badge-name-pipguard]][gh-pipguard] | [![PyPI][badge-version-pipguard]][pipguard] | [![Downloads][badge-downloads-pipguard]][pipguard] | [![Commit][badge-commit-pipguard]][gh-pipguard] |
+| [![Package][badge-name-devops-maturity]][gh-devops-maturity] | [![PyPI][badge-version-devops-maturity]][devops-maturity] | [![Downloads][badge-downloads-devops-maturity]][devops-maturity] | [![Commit][badge-commit-devops-maturity]][gh-devops-maturity] |
 | [![Package][badge-name-py-eol]][gh-py-eol] | [![PyPI][badge-version-py-eol]][py-eol] | [![Downloads][badge-downloads-py-eol]][py-eol] | [![Commit][badge-commit-py-eol]][gh-py-eol] |
 | [![Package][badge-name-used-by]][gh-used-by] | [![PyPI][badge-version-used-by]][used-by] | [![Downloads][badge-downloads-used-by]][used-by] | [![Commit][badge-commit-used-by]][gh-used-by] |
-| [![Package][badge-name-pipguard]][gh-pipguard] | [![PyPI][badge-version-pipguard]][pipguard] | [![Downloads][badge-downloads-pipguard]][pipguard] | [![Commit][badge-commit-pipguard]][gh-pipguard] |
-| [![Package][badge-name-repokeeper]][gh-repokeeper] | [![PyPI][badge-version-repokeeper]][repokeeper] | [![Downloads][badge-downloads-repokeeper]][repokeeper] | [![Commit][badge-commit-repokeeper]][gh-repokeeper] |
-| [![Package][badge-name-devops-maturity]][gh-devops-maturity] | [![PyPI][badge-version-devops-maturity]][devops-maturity] | [![Downloads][badge-downloads-devops-maturity]][devops-maturity] | [![Commit][badge-commit-devops-maturity]][gh-devops-maturity] |
 
 ---
 
