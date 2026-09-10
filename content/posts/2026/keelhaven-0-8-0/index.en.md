@@ -29,7 +29,7 @@ In the newly released 0.8.0, many of these feedbacks have been implemented. I wo
 
 ```bash
 brew install --cask shenxianpeng/tap/keelhaven
-# 或者
+# or
 curl -fsSL https://keelhaven.app/install.sh | bash
 ```
 
