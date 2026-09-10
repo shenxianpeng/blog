@@ -60,7 +60,7 @@ Keelhaven 值得你花十分钟试一下：选好要备份的文件夹、目的�
 官网：https://keelhaven.app  
 源码：https://github.com/shenxianpeng/keelhaven
 
-试用之后，无论觉得好用，还是踩了坑，都欢迎告诉我：可以发邮件到 support@keelhaven.app，或者开一个 [GitHub Issue](https://github.com/shenxianpeng/keelhaven/issues)；在公众号、知乎或 Twitter 上留言也可以。尤其是 X 上如果你发布了相关 Keelhaven 的内容，几乎 @ 我，我也会把相关的评论更新到它的官网上。
+试用之后，无论觉得好用，还是踩了坑，都欢迎告诉我：可以发邮件到 support@keelhaven.app，或者开一个 [GitHub Issue](https://github.com/shenxianpeng/keelhaven/issues)；在公众号、知乎或 Twitter 上留言也可以。尤其是 X 上如果你发布了相关 Keelhaven 的内容，可以 @ 我，我也会把相关的评论更新到它的官网上。
 
 觉得好用的话，欢迎点个 Star，也欢迎转发给身边需要的朋友。
 
