@@ -1,0 +1,51 @@
+config/_default/module.toml
+  s_797e3933ee8a97::t_da66e65c2a8fcc 1-12,15-16
+  s_797e3933ee8a97::t_612808881feef9 13-14
+content/posts/2026/pi-contributing-philosophy/index.md
+  s_797e3933ee8a97::t_87cf22d65cbd0a 14
+config/_default/languages.zh-cn.toml
+  s_797e3933ee8a97::t_da66e65c2a8fcc 3
+content/misc/2025-summary/index.md
+  s_797e3933ee8a97::t_87cf22d65cbd0a 26
+content/posts/2025/any-updates/index.md
+  s_797e3933ee8a97::t_87cf22d65cbd0a 104
+layouts/partials/extend-head-uncached.html
+  s_797e3933ee8a97::t_031fa577cfb467 1-22
+layouts/404.html
+  s_797e3933ee8a97::t_266fa8bcb66194 2-15,24-30
+  s_797e3933ee8a97::t_6f35465dd2b97d 31
+.github/workflows/pages.yaml
+  s_797e3933ee8a97::t_132c3a6106742d 59-63
+layouts/partials/legacy-redirects.html
+  s_797e3933ee8a97::t_9afa9a195df593 1-19,32-33,38-41,46-47,55-56
+  s_797e3933ee8a97::t_5e2adbebc9453b 20-31,34-37,42-45,48-54
+content/posts/2026/goodbye-copilot/index.md
+  s_797e3933ee8a97::t_87cf22d65cbd0a 14
+content/hireme/index.en.md
+  s_797e3933ee8a97::t_87cf22d65cbd0a 35
+config/_default/hugo.toml
+  s_797e3933ee8a97::t_da66e65c2a8fcc 7
+content/posts/2026/mkdocs-ng-1.8/index.md
+  s_797e3933ee8a97::t_87cf22d65cbd0a 17
+AGENTS.md
+  s_797e3933ee8a97::t_26f222540b8858 9-10,12-14,305-333
+  s_797e3933ee8a97::t_d1ef207f871624 334
+layouts/partials/comments.html
+  s_797e3933ee8a97::t_f4293cd6bc92bb 7-18,26-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "3a481834d726e6aed168141a3de82f850bbe7cb4",
+  "prompts": {},
+  "sessions": {
+    "s_797e3933ee8a97": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2b4a1047-5655-4524-a769-e344963d8e3f",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
