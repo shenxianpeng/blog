@@ -1,0 +1,21 @@
+layouts/partials/extend-head-uncached.html
+  s_797e3933ee8a97::t_2864d35f03b8a1 1-49
+AGENTS.md
+  s_797e3933ee8a97::t_f7f712f3df27b7 12-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "81f95dbb642c06a13895c957f814944411b38be6",
+  "prompts": {},
+  "sessions": {
+    "s_797e3933ee8a97": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2b4a1047-5655-4524-a769-e344963d8e3f",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
