@@ -29,12 +29,17 @@
 {{- template "legacy-redirects-walk" (dict "page" $en.Home "into" $enPages) }}
 {{- template "legacy-redirects-walk" (dict "page" $zh.Home "into" $zhPages) }}
 
+{{/*
+  File paths must be the decoded form of the URL ("/series/ai-工具实战/", not its
+  percent-encoding). urls.Parse does that on every Hugo version in use here;
+  urls.PathUnescape is newer than the Hugo that builds the Netlify previews.
+*/}}
 {{- $html := `<!DOCTYPE html><html lang="%s"><head><title>%s</title><link rel="canonical" href="%s"><meta name="robots" content="noindex"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=%s"></head></html>` }}
 
 {{- range $rel, $p := $enPages.Values }}
   {{- if not $p.IsHome }}
     {{- $to := $p.Permalink | htmlEscape }}
-    {{- $file := printf "en%sindex.html" ($rel | urls.PathUnescape) }}
+    {{- $file := printf "en%sindex.html" (urls.Parse $rel).Path }}
     {{- (resources.FromString $file (printf $html "en" $to $to $to)).Publish }}
   {{- end }}
 {{- end }}
@@ -43,7 +48,7 @@
   {{- $old := strings.TrimPrefix "/zh-cn" $rel }}
   {{- if and (not $p.IsHome) (not ($enPages.Get $old)) }}
     {{- $to := $p.Permalink | htmlEscape }}
-    {{- $file := printf "%sindex.html" (strings.TrimPrefix "/" ($old | urls.PathUnescape)) }}
+    {{- $file := printf "%sindex.html" (strings.TrimPrefix "/" (urls.Parse $old).Path) }}
     {{- (resources.FromString $file (printf $html "zh-cn" $to $to $to)).Publish }}
   {{- end }}
 {{- end }}
