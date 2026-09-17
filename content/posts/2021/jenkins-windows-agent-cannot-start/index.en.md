@@ -80,6 +80,6 @@ Also:   java.lang.Throwable: launched here
 
 If it still does not work and has this error message ".NET Framework 2.0 or later is required on this computer to run a Jenkins agent as a Windows service", you need to upgrade your .NET Framework.
 
-> Here is a [link](https://shenxianpeng.github.io/2020/07/jenkins-windows-agent-connect-problem/) for update .NET Framework.
+> Here is a [link](https://shenxianpeng.dev/2020/07/jenkins-windows-agent-connect-problem/) for update .NET Framework.
 
 Hopefully, this could help you to fix connect the issue of the Windows agent. Let me know in case of any questions.

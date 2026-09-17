@@ -14,7 +14,7 @@ Git commit message and Git branch naming conventions are a very important part o
 
 We need to use tools to help implement Git commit message and branch creation conventions. This article will introduce how to use the [Commit Check](https://github.com/commit-check) tool to verify commit messages, branch names, committer usernames, and committer email addresses to ensure they conform to specifications.
 
-For more information on Git commit messages and branch creation conventions, please refer to my previous article, [“Programmer's Self-Cultivation—Git Commit Message and Branch Creation Conventions”](https://shenxianpeng.github.io/2020/09/commit-messages-specification/).  I will not reiterate them here.
+For more information on Git commit messages and branch creation conventions, please refer to my previous article, [“Programmer's Self-Cultivation—Git Commit Message and Branch Creation Conventions”](https://shenxianpeng.dev/2020/09/commit-messages-specification/).  I will not reiterate them here.
 
 
 ## Commit Check Introduction

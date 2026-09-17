@@ -48,7 +48,7 @@ author: shenxianpeng
 
 
 
-2017 年的时候我没想那么多，只是觉得自己也可以写点东西，就在 2017 年 7 月 6 日通过 GitHub Page 建立了自己的[个人博客](https://shenxianpeng.github.io)
+2017 年的时候我没想那么多，只是觉得自己也可以写点东西，就在 2017 年 7 月 6 日通过 GitHub Page 建立了自己的[个人博客](https://shenxianpeng.dev)
 
 ![第一次提交](blog-first-commit.png)
 
@@ -74,8 +74,8 @@ author: shenxianpeng
 
 ## 相关推荐阅读
 
-> * [做了9年测试，我为何转开发？](https://shenxianpeng.github.io/2018/07/why-I-move-to-development/)
-> * [从测试到开发的五个月](https://shenxianpeng.github.io/2018/12/from-qa-to-dev/)
+> * [做了9年测试，我为何转开发？](https://shenxianpeng.dev/2018/07/why-I-move-to-development/)
+> * [从测试到开发的五个月](https://shenxianpeng.dev/2018/12/from-qa-to-dev/)
 
 ---
 

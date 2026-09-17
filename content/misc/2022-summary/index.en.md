@@ -58,9 +58,9 @@ In my spare time, my top priority was still open-source projects, which allowed 
 
 ## Past Year-End Summaries
 
-> [2020 Year-End Summary](https://shenxianpeng.github.io/2020/12/2020-summary/)
-> [2019 Year-End Summary](https://shenxianpeng.github.io/2019/12/2019-summary/)
-> [2018 From QA to Development in Five Months](https://shenxianpeng.github.io/2018/12/from-qa-to-dev/)
+> [2020 Year-End Summary](https://shenxianpeng.dev/2020/12/2020-summary/)
+> [2019 Year-End Summary](https://shenxianpeng.dev/2019/12/2019-summary/)
+> [2018 From QA to Development in Five Months](https://shenxianpeng.dev/2018/12/from-qa-to-dev/)
 
 ---
 

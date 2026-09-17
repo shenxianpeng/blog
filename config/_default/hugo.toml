@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://shenxianpeng.github.io"
+baseURL = "https://shenxianpeng.dev"
 defaultContentLanguage = "zh-cn"
 disableLanguages = [] #to allow translation work requiring shipping to production
 

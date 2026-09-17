@@ -26,23 +26,23 @@ author: shenxianpeng
 
 * 通过 Jenkins Shared Libraries 和 Multi-branch Pipeline 完成了无人值守的自动化构建，为团队和我节省了大量的时间；同时也通过验证 PR 构建和测试，提高签入代码的稳定和质量。
 
-  > 输出文章 [每个 Jenkins 用户都应该知道这三个最佳实践](https://shenxianpeng.github.io/2020/07/jenkins-best-practice-cn/)
+  > 输出文章 [每个 Jenkins 用户都应该知道这三个最佳实践](https://shenxianpeng.dev/2020/07/jenkins-best-practice-cn/)
 
 * 推动团队迁移到企业级的 Artifactory 来下载和存储构建，从而改进 CI/CD 的效率和无人值守的能力。为更好的自动化下载、安装、测试等提供方便。
 
-  > 输出文章 [写给那些想使用 JFrog Artifactory 管理制品的人](https://shenxianpeng.github.io/2020/10/what-is-artifactory/)
+  > 输出文章 [写给那些想使用 JFrog Artifactory 管理制品的人](https://shenxianpeng.dev/2020/10/what-is-artifactory/)
 
 * 使用 Python 来做了很多关于 Jira, BitBucket 的集成，通过自动化提高效率。另外还发布了一个 Python 项目 [UOPY](https://pypi.org/project/uopy/)。
 
-  > 输出文章 [在 GitHub 上发布一个 Python 项目需要注意哪些](https://shenxianpeng.github.io/2020/09/how-to-release-python-project/)
+  > 输出文章 [在 GitHub 上发布一个 Python 项目需要注意哪些](https://shenxianpeng.dev/2020/09/how-to-release-python-project/)
 
 * 落地了 Git 提交信息和分支创建规范，统一了 Git 提交信息和分支创建规范。
 
-  > 输出文章 [程序员自我修养之Git提交信息和分支创建规范](https://shenxianpeng.github.io/2020/09/commit-messages-specification/)
+  > 输出文章 [程序员自我修养之Git提交信息和分支创建规范](https://shenxianpeng.dev/2020/09/commit-messages-specification/)
 
 * 学习和使用了一些新工具，比如 Ansible playbook、ELK、JaCoCo 等并应用到项目中。
 
-  > 输出文章 [初识 Ansible](https://shenxianpeng.github.io/2020/09/getting-to-know-ansible/)，[JaCoCo 实践](https://shenxianpeng.github.io/2020/11/jacoco-imp/)
+  > 输出文章 [初识 Ansible](https://shenxianpeng.dev/2020/09/getting-to-know-ansible/)，[JaCoCo 实践](https://shenxianpeng.dev/2020/11/jacoco-imp/)
 
 作为 DevOps/软件工程师还需要有良好的表达能力，否则你做的东西再好，但无法很清晰的跟同事及领导分享出来也是事倍功半。尤其像我在外企，还需要用英文去做分享。
 
@@ -50,7 +50,7 @@ author: shenxianpeng
 
 ### 分享上
 
-2020 年[博客](https://shenxianpeng.github.io/)上一共更新了 41 篇文章，在公众号『沈显鹏』上面一共更新了 26 篇文章。
+2020 年[博客](https://shenxianpeng.dev/)上一共更新了 41 篇文章，在公众号『沈显鹏』上面一共更新了 26 篇文章。
 
 这个数量和质量跟一些其他的技术公众号真的没法比，但对于我个人：一个不以写作为生、只写原创文章的攻城狮，只要能不间断的输出，达到这个数量我已经比较满意了。
 

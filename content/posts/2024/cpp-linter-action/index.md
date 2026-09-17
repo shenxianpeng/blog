@@ -24,7 +24,7 @@ series_order: 2
 
 ## 什么是 cpp-linter-action
 
-如果你还不了解 [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) 可以查看我[之前的文章](https://shenxianpeng.github.io/2022/08/cpp-linter/)。
+如果你还不了解 [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action) 可以查看我[之前的文章](https://shenxianpeng.dev/2022/08/cpp-linter/)。
 
 简单来说，cpp-linter-action 是 cpp-linter 组织下的一个 [GitHub Action](https://docs.github.com/en/actions/quickstart)，针对 C/C++ 代码做代码格式、诊断和修复典型的编程错误。
 

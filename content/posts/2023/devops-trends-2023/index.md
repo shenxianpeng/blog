@@ -84,7 +84,7 @@ DevOps 的成功取决于开发和运营团队之间的强有力合作，这可�
 
 ## 过往 DevOps 趋势文章
 
-* [2022 年最值得关注的 DevOps 趋势和问答](https://shenxianpeng.github.io/2022/02/devops-trends-2022/)
+* [2022 年最值得关注的 DevOps 趋势和问答](https://shenxianpeng.dev/2022/02/devops-trends-2022/)
 
 ## 参考
 

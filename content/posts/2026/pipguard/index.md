@@ -179,7 +179,7 @@ pip install --require-hashes -r requirements.txt
 传统扫描工具是事后验尸，pipguard 是门口的检查站——包还没落地，危险就被挡在外面了。
 
 项目完全开源，MIT 协议：
-- 文档：https://shenxianpeng.github.io/pipguard/
+- 文档：https://shenxianpeng.dev/pipguard/
 - GitHub：https://github.com/shenxianpeng/pipguard
 
 有问题、有想法、想一起完善风险规则，GitHub Issues 见。

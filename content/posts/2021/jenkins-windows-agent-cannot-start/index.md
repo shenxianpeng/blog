@@ -81,7 +81,7 @@ org.jinterop.dcom.common.JIException: Unknown Failure
 ```
 
 则需要升级本机的 **.NET Framework**。
-可参考：[更新 .NET Framework](https://shenxianpeng.github.io/2020/07/jenkins-windows-agent-connect-problem/)
+可参考：[更新 .NET Framework](https://shenxianpeng.dev/2020/07/jenkins-windows-agent-connect-problem/)
 
 ---
 

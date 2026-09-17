@@ -10,7 +10,7 @@ date: 2025-08-24
 ---
 
 Recently, while reviewing Google Analytics, I discovered an interesting phenomenon:
-My blog (shenxianpeng.github.io) has decent traffic from Google Search, but the primary language of visitors is surprisingly **English**, with Chinese coming in second.
+My blog (shenxianpeng.dev) has decent traffic from Google Search, but the primary language of visitors is surprisingly **English**, with Chinese coming in second.
 
 ![Language](language.png)
 

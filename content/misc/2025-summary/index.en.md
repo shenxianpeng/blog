@@ -23,7 +23,7 @@ Looking back at the flags I set at the beginning of the year, some were achieved
   
 3. Participate in a DevOps or Python conference
 
-    In April, I went to PyCon LT and wrote three conference articles: [Day 1](https://shenxianpeng.github.io/misc/pycon-lt-d1/), [Day 2](https://shenxianpeng.github.io/misc/pycon-lt-d2/), [Day 3](https://shenxianpeng.github.io/misc/pycon-lt-d3/).
+    In April, I went to PyCon LT and wrote three conference articles: [Day 1](https://shenxianpeng.dev/misc/pycon-lt-d1/), [Day 2](https://shenxianpeng.dev/misc/pycon-lt-d2/), [Day 3](https://shenxianpeng.dev/misc/pycon-lt-d3/).
 
 4. Join PyPA or Python GitHub Organization
 

@@ -51,7 +51,7 @@ $ git config --list
 
 ## 3. 编写有规范的提交
 
-我在之前的文章里分享过关于如何设置提交信息规范，请参看[《Git提交信息和分支创建规范》](https://shenxianpeng.github.io/2020/09/commit-messages-specification/)。
+我在之前的文章里分享过关于如何设置提交信息规范，请参看[《Git提交信息和分支创建规范》](https://shenxianpeng.dev/2020/09/commit-messages-specification/)。
 
 ## 4. 提交历史的压缩
 

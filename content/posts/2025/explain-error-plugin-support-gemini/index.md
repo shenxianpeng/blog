@@ -11,7 +11,7 @@ series: ["Explain Error Plugin"]
 series_order: 2
 ---
 
-上周我发布了 [Jenkins Explain Error Plugin](https://shenxianpeng.github.io/2025/07/explain-error-plugin/)，旨在帮助 Jenkins 用户通过内置 AI 来更快地分析和解决 Jenkins 构建中的错误。
+上周我发布了 [Jenkins Explain Error Plugin](https://shenxianpeng.dev/2025/07/explain-error-plugin/)，旨在帮助 Jenkins 用户通过内置 AI 来更快地分析和解决 Jenkins 构建中的错误。
 
 有读者朋友在评论区提到，希望插件支持 Google Gemini 模型进行错误分析，因为他们公司只能使用 Google 的 AI 服务。
 

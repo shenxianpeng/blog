@@ -24,23 +24,23 @@ When writing my work summary at the end of the year, I found that I had indeed d
 
 * Achieved unattended automated builds using Jenkins Shared Libraries and Multi-branch Pipeline, saving a lot of time for the team and myself; also improved the stability and quality of code check-in through validating PR builds and tests.
 
-  > Related article: [Three Best Practices Every Jenkins User Should Know](https://shenxianpeng.github.io/2020/07/jenkins-best-practice-cn/)
+  > Related article: [Three Best Practices Every Jenkins User Should Know](https://shenxianpeng.dev/2020/07/jenkins-best-practice-cn/)
 
 * Promoted the team's migration to enterprise-level Artifactory for downloading and storing builds, thereby improving CI/CD efficiency and unattended capabilities.  This facilitates better automated downloading, installation, and testing.
 
-  > Related article: [For Those Who Want to Use JFrog Artifactory to Manage Artifacts](https://shenxianpeng.github.io/2020/10/what-is-artifactory/)
+  > Related article: [For Those Who Want to Use JFrog Artifactory to Manage Artifacts](https://shenxianpeng.dev/2020/10/what-is-artifactory/)
 
 * Used Python to do a lot of integrations with Jira and BitBucket, improving efficiency through automation.  I also released a Python project [UOPY](https://pypi.org/project/uopy/).
 
-  > Related article: [What to Note When Releasing a Python Project on GitHub](https://shenxianpeng.github.io/2020/09/how-to-release-python-project/)
+  > Related article: [What to Note When Releasing a Python Project on GitHub](https://shenxianpeng.dev/2020/09/how-to-release-python-project/)
 
 * Implemented Git commit message and branch creation specifications, unifying Git commit messages and branch creation standards.
 
-  > Related article: [Programmer Self-Cultivation: Git Commit Message and Branch Creation Specifications](https://shenxianpeng.github.io/2020/09/commit-messages-specification/)
+  > Related article: [Programmer Self-Cultivation: Git Commit Message and Branch Creation Specifications](https://shenxianpeng.dev/2020/09/commit-messages-specification/)
 
 * Learned and used some new tools, such as Ansible playbook, ELK, and JaCoCo, and applied them to projects.
 
-  > Related articles: [Getting to Know Ansible](https://shenxianpeng.github.io/2020/09/getting-to-know-ansible/), [JaCoCo Practice](https://shenxianpeng.github.io/2020/11/jacoco-imp/)
+  > Related articles: [Getting to Know Ansible](https://shenxianpeng.dev/2020/09/getting-to-know-ansible/), [JaCoCo Practice](https://shenxianpeng.dev/2020/11/jacoco-imp/)
 
 As a DevOps/Software Engineer, I also need good communication skills. Otherwise, no matter how good your work is, if you can't clearly share it with your colleagues and leaders, it will be counterproductive.  Especially in a multinational company like mine, I also need to share in English.
 
@@ -48,7 +48,7 @@ Also, I want to improve my technical skills through consistent reading and pract
 
 ### Sharing
 
-In 2020, I updated 41 articles on my [blog](https://shenxianpeng.github.io/) and 26 articles on my WeChat official account "沈显鹏".
+In 2020, I updated 41 articles on my [blog](https://shenxianpeng.dev/) and 26 articles on my WeChat official account "沈显鹏".
 
 This quantity and quality are really incomparable to some other technical WeChat official accounts, but for me: a developer who doesn't make a living from writing and only writes original articles, as long as I can output continuously, I'm quite satisfied with this number.
 
@@ -90,5 +90,5 @@ Finally, I will regularly review my 2021 goals and see if I have deviated from m
 
 > ## Past Year-End Summaries
 >
-> [2019 Year-End Summary](https://shenxianpeng.github.io/2019/12/2019-summary/)
-> [2018: Five Months From Tester to Developer](https://shenxianpeng.github.io/2018/12/from-qa-to-dev/)
+> [2019 Year-End Summary](https://shenxianpeng.dev/2019/12/2019-summary/)
+> [2018: Five Months From Tester to Developer](https://shenxianpeng.dev/2018/12/from-qa-to-dev/)

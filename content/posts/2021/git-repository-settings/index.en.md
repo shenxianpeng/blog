@@ -47,4 +47,4 @@ This is a very powerful feature. it helps to standardize commit messages and cre
 
 More details about this tool you can refer to [this introduction](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/1442119700/Yet+Another+Commit+Checker+YACC+for+Bitbucket)
 
-I have a Chinese article to describe how to use Yet Another Commit Checker implement. if you interest it, you can see the post [here](https://shenxianpeng.github.io/2020/09/commit-messages-specification/)
+I have a Chinese article to describe how to use Yet Another Commit Checker implement. if you interest it, you can see the post [here](https://shenxianpeng.dev/2020/09/commit-messages-specification/)

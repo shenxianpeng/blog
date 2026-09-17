@@ -4,7 +4,7 @@ import re
 
 import yaml
 
-BASE_URL = "https://shenxianpeng.github.io"
+BASE_URL = "https://shenxianpeng.dev"
 
 
 def parse_front_matter(content):
@@ -24,7 +24,7 @@ def build_canonical_url(post_path):
 
     Example:
       content/posts/2026/hadolint-pre-commit/index.en.md
-      -> https://shenxianpeng.github.io/posts/2026/hadolint-pre-commit/
+      -> https://shenxianpeng.dev/posts/2026/hadolint-pre-commit/
     """
     parts = post_path.replace("content/", "").replace("/index.en.md", "")
     return f"{BASE_URL}/{parts}/"

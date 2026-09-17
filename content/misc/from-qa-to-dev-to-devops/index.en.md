@@ -47,7 +47,7 @@ However, from a long-term perspective, consistent writing will definitely bring 
 5. Direct benefits – Direct benefits include platform traffic and advertising revenue, selling columns, and consulting. This requires a high level of skill, not only in self-media operation, but also in strong output capabilities, which requires more effort than others.
 
 
-In 2017, I didn't think too much about it. I just thought I could write something, so on July 6, 2017, I built my [personal blog](https://shenxianpeng.github.io) using GitHub Pages.
+In 2017, I didn't think too much about it. I just thought I could write something, so on July 6, 2017, I built my [personal blog](https://shenxianpeng.dev) using GitHub Pages.
 
 ![First commit](blog-first-commit.png)
 
@@ -73,8 +73,8 @@ The best time was ten years ago, the second best is now.  Daily progress, no eff
 
 ## Related Reading
 
-> * [Why did I switch from testing to development after 9 years?](https://shenxianpeng.github.io/2018/07/why-I-move-to-development/)
-> * [Five Months from Testing to Development](https://shenxianpeng.github.io/2018/12/from-qa-to-dev/)
+> * [Why did I switch from testing to development after 9 years?](https://shenxianpeng.dev/2018/07/why-I-move-to-development/)
+> * [Five Months from Testing to Development](https://shenxianpeng.dev/2018/12/from-qa-to-dev/)
 
 ---
 

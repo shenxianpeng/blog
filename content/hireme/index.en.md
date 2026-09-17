@@ -32,7 +32,7 @@ Outside work I maintain a number of open source organizations and projects, and 
 - Author of an **official Jenkins plugin** ([Explain Error](https://github.com/jenkinsci/explain-error-plugin)); member of the Jenkins GitHub organization
 - Selected for the **Anthropic Open Source Developer Program** (2026)
 - **EuroPython 2025** proposal reviewer
-- 250+ original technical articles ([blog](https://shenxianpeng.github.io/en/) + WeChat)
+- 250+ original technical articles ([blog](https://shenxianpeng.dev/en/) + WeChat)
 
 ---
 

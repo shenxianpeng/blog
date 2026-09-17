@@ -256,7 +256,7 @@ RepoKeeper 现在离我理想中的「开源维护助手」越来越近了。
 如果你也在维护开源项目，尤其是仓库多了之后开始顾不过来，不妨试试 RepoKeeper。
 
 - GitHub：https://github.com/shenxianpeng/repokeeper
-- 文档：https://shenxianpeng.github.io/repokeeper/
+- 文档：https://shenxianpeng.dev/repokeeper/
 - PyPI：https://pypi.org/project/repokeeper/
 
 遇到问题去 GitHub 提 Issue，或者直接让 RepoKeeper 自己修。

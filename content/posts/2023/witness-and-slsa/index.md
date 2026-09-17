@@ -221,7 +221,7 @@ INFO    0: witness-demo-att.json
 
 以上就是使用 witness 针对 Non-GitHub 项目的演示。
 
-如果你的项目代码是放在 GitHub 上的，目前最容易、最流行的方式就是使用 [slsa-github-generator](https://github.com/slsa-framework/slsa-github-generator) 一个由 [SLSA Framework](https://github.com/slsa-framework) 官方提供的工具，然后使用 [slsa-verifier](https://github.com/slsa-framework/slsa-verifier) 来验证 Provenance。具体可以参考我的上一篇文章 [Python 和 SLSA 💃](https://shenxianpeng.github.io/2023/11/python-and-slsa/)
+如果你的项目代码是放在 GitHub 上的，目前最容易、最流行的方式就是使用 [slsa-github-generator](https://github.com/slsa-framework/slsa-github-generator) 一个由 [SLSA Framework](https://github.com/slsa-framework) 官方提供的工具，然后使用 [slsa-verifier](https://github.com/slsa-framework/slsa-verifier) 来验证 Provenance。具体可以参考我的上一篇文章 [Python 和 SLSA 💃](https://shenxianpeng.dev/2023/11/python-and-slsa/)
 
 ---
 

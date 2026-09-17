@@ -91,7 +91,7 @@ New Version:
   <img src="new-6.png" class="grid-w30" />
 {{< /gallery >}}
 
-You can visit [this online preview](https://shenxianpeng.github.io/gitstats/index.html) to see the actual effect, which is a report generated based on GitStats' own repository.
+You can visit [this online preview](https://shenxianpeng.dev/gitstats/index.html) to see the actual effect, which is a report generated based on GitStats' own repository.
 
 ---
 

@@ -219,7 +219,7 @@ INFO    0: witness-demo-att.json
 
 This is a demonstration of using Witness for Non-GitHub projects.
 
-If your project code is on GitHub, the easiest and most popular way is to use [slsa-github-generator](https://github.com/slsa-framework/slsa-github-generator), a tool provided by the [SLSA Framework](https://github.com/slsa-framework), and then use [slsa-verifier](https://github.com/slsa-framework/slsa-verifier) to verify the Provenance.  Refer to my previous article [Python and SLSA 💃](https://shenxianpeng.github.io/2023/11/python-and-slsa/) for details.
+If your project code is on GitHub, the easiest and most popular way is to use [slsa-github-generator](https://github.com/slsa-framework/slsa-github-generator), a tool provided by the [SLSA Framework](https://github.com/slsa-framework), and then use [slsa-verifier](https://github.com/slsa-framework/slsa-verifier) to verify the Provenance.  Refer to my previous article [Python and SLSA 💃](https://shenxianpeng.dev/2023/11/python-and-slsa/) for details.
 
 ---
 

@@ -25,7 +25,7 @@ A few days ago, I discovered a Git history statistics generation tool called Git
 
 This is a tool written in Python.  It has a small codebase but very powerful analytical capabilities. It's one of the few open-source projects I've found that can generate beautiful reports and is easy to use.
 
-The gitstats report is also powerful (https://shenxianpeng.github.io/gitstats/previews/main/index.html).  Those interested can try it out.
+The gitstats report is also powerful (https://shenxianpeng.dev/gitstats/previews/main/index.html).  Those interested can try it out.
 
 ## How to Use
 

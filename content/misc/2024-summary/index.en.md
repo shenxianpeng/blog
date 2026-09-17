@@ -81,11 +81,11 @@ Wishes I'm not confident about achieving are described using "strive to." :)
 
 ## Past Year-End Summaries
 
-> [2023 Year-End Summary](https://shenxianpeng.github.io/2023/12/2023-summary/)
-> [2022 Year-End Summary](https://shenxianpeng.github.io/2022/12/2022-summary/)
-> [2020 Year-End Summary](https://shenxianpeng.github.io/2020/12/2020-summary/)
-> [2019 Year-End Summary](https://shenxianpeng.github.io/2019/12/2019-summary/)
-> [2018 From QA to Dev](https://shenxianpeng.github.io/2018/12/from-qa-to-dev/)
+> [2023 Year-End Summary](https://shenxianpeng.dev/2023/12/2023-summary/)
+> [2022 Year-End Summary](https://shenxianpeng.dev/2022/12/2022-summary/)
+> [2020 Year-End Summary](https://shenxianpeng.dev/2020/12/2020-summary/)
+> [2019 Year-End Summary](https://shenxianpeng.dev/2019/12/2019-summary/)
+> [2018 From QA to Dev](https://shenxianpeng.dev/2018/12/from-qa-to-dev/)
 
 ---
 

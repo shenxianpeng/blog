@@ -117,7 +117,7 @@ You’ll be asked to restart your computer as part of this process.
 
 ### 7. .NET Framework 2.0 or later is required on this computer to run a Jenkins agent as a Windows service
 
-Need to upgrade your .NET Framework. Here is a [link](https://shenxianpeng.github.io/2020/07/jenkins-windows-agent-connect-problem/) for update .NET Framework.
+Need to upgrade your .NET Framework. Here is a [link](https://shenxianpeng.dev/2020/07/jenkins-windows-agent-connect-problem/) for update .NET Framework.
 
 ### 6. more connect jenkins agent problem on windows
 
