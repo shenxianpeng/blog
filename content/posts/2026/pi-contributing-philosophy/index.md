@@ -11,7 +11,7 @@ authors:
 date: 2026-04-26
 ---
 
-周末写了一篇[用 pi + DeepSeek 做 Codex 备用方案](/posts/2026/pi-deepseek/)的文章。
+周末写了一篇[用 pi + DeepSeek 做 Codex 备用方案](/zh-cn/posts/2026/pi-deepseek/)的文章。
 
 写完之后，我又顺手翻了翻 pi 这个项目的其他内容，结果发现，真正有意思的地方不只是工具本身，而是它背后的一套协作方式。
 

@@ -1,0 +1,16 @@
+# Content languages are decided by file name, not by the default language:
+#   index.md / _index.md        -> Chinese (zh-cn)
+#   index.en.md / _index.en.md  -> English (en)
+#
+# English is the default content language, so without this mount Hugo would
+# read every un-suffixed file as English. `lang` makes Chinese the language of
+# un-suffixed files; a `.en.md` suffix still wins. That keeps the naming every
+# sync and translation workflow relies on.
+#
+# Keep this a single mount. Mounting content once per language (with
+# include/exclude filters) puts bundle images in both mounts, and Hugo 0.154.5
+# panics in contentNodeShifter.Delete when such a bundle is a draft.
+[[mounts]]
+  source = "content"
+  target = "content"
+  lang = "zh-cn"

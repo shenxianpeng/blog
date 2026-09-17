@@ -14,7 +14,7 @@ series_order: 3
 
 mkdocs-ng v1.8.0 在 8 月 13 日发布了（UTC 时间是 12 日晚上），这是 fork 以来的第一个功能版本。v1.7.0 到 v1.7.3 的四个版本都在修 bug、打基础，1.8.0 开始兑现之前承诺的功能。
 
-先给新读者交代一下背景：MkDocs 上游从 2024 年 8 月起就没有新版本了，维护基本停滞。我 fork 了它，在 mkdocs-ng 组织下继续维护，包名是 mkdocs-ng，但 CLI 命令、配置文件、插件生态全部不变。为什么做这件事、v1.7.x 修了哪些问题，[前两篇文章](https://shenxianpeng.dev/posts/2026/mkdocs-ng/)（[v1.7.x 总结](https://shenxianpeng.dev/posts/2026/mkdocs-ng-update/)）讲过，这里不重复。
+先给新读者交代一下背景：MkDocs 上游从 2024 年 8 月起就没有新版本了，维护基本停滞。我 fork 了它，在 mkdocs-ng 组织下继续维护，包名是 mkdocs-ng，但 CLI 命令、配置文件、插件生态全部不变。为什么做这件事、v1.7.x 修了哪些问题，[前两篇文章](https://shenxianpeng.dev/zh-cn/posts/2026/mkdocs-ng/)（[v1.7.x 总结](https://shenxianpeng.dev/zh-cn/posts/2026/mkdocs-ng-update/)）讲过，这里不重复。
 
 这篇文章说三件事：接手以来解决了哪些上游遗留问题，1.8.0 的性能提升有多大，以及 1.9.0 打算做什么。
 
