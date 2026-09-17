@@ -49,7 +49,7 @@ authors:
 
 [Yet Another Commit Checker (YACC)](https://mohamicorp.atlassian.net/wiki/spaces/DOC/pages/1442119700/Yet+Another+Commit+Checker+YACC+for+Bitbucket) 是非常强大的插件，可以帮助规范提交信息和分支命名。  
 
-我写过一篇中文文章介绍如何使用它来落地提交规范，有兴趣可以阅读：[提交信息规范实践](https://shenxianpeng.github.io/2020/09/commit-messages-specification/)
+我写过一篇中文文章介绍如何使用它来落地提交规范，有兴趣可以阅读：[提交信息规范实践](https://shenxianpeng.dev/2020/09/commit-messages-specification/)
 
 ---
 

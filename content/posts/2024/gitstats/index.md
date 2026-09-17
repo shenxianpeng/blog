@@ -16,8 +16,8 @@ series_order: 2
 
 此前，我曾写过两篇关于 GitStats 的文章，如果感兴趣，可以查阅了解。
 
-* [Git 历史统计信息生成器 GitStats](https://shenxianpeng.github.io/2019/12/git-stats/)
-* [通过 Jenkins 定期自动给老板提供 Git 仓库的多维度代码分析报告](https://shenxianpeng.github.io/2020/01/git-stats-jenkins/)
+* [Git 历史统计信息生成器 GitStats](https://shenxianpeng.dev/2019/12/git-stats/)
+* [通过 Jenkins 定期自动给老板提供 Git 仓库的多维度代码分析报告](https://shenxianpeng.dev/2020/01/git-stats-jenkins/)
 
 
 ## 什么是 GitStats

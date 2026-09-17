@@ -26,7 +26,7 @@ authors:
 
 市场上有一些工具可以针对黑盒测试来衡量代码覆盖率 Squish Coco，Bullseye 等，它们的原理就是在编译的时候插入 instrumentation，中文叫插桩，在运行测试的时候用来跟踪和记录运行结果。
 
-其中我比较深入的了解过 [Squish Coco](https://shenxianpeng.github.io/2019/05/squishcoco/) 它如何使用，但对于大型项目，引入这类工具都或多或少的需要解决编译上的问题。也正是因为有一些编译问题没有解决，就一直没有购买这款价格不菲的工具 License。
+其中我比较深入的了解过 [Squish Coco](https://shenxianpeng.dev/2019/05/squishcoco/) 它如何使用，但对于大型项目，引入这类工具都或多或少的需要解决编译上的问题。也正是因为有一些编译问题没有解决，就一直没有购买这款价格不菲的工具 License。
 
 当我再次重新调查代码覆盖率的时候，我很惭愧的发现原来正在使用的 GCC 其实有内置的代码覆盖率的工具的，叫 [Gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html)
 
@@ -217,6 +217,6 @@ rm -rf main *.o *.so *.gcno *.gcda *.gcov coverage.info out
 
 ## 相关阅读
 
-* 关于代码覆盖率(About Code Coverage)：https://shenxianpeng.github.io/2021/07/code-coverage/
+* 关于代码覆盖率(About Code Coverage)：https://shenxianpeng.dev/2021/07/code-coverage/
 * 在 Linux 内核中使用 Gcov 的示例：https://01.org/linuxgraphics/gfx-docs/drm/dev-tools/gcov.html
 * 当构建环境与测试环境不同时设置环境变量：https://gcc.gnu.org/onlinedocs/gcc/Cross-profiling.html#Cross-profiling

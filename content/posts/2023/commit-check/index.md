@@ -16,7 +16,7 @@ Git 提交信息和 Git 分支命名规范是团队协作中非常重要的一�
 
 我们需要通过工具来帮助实现Git提交信息和分支创建规范，本篇将介绍如何使用 [Commit Check](https://github.com/commit-check) 这个工具来验证提交信息、分支命名、提交用户名字、提交用户邮箱等是否符合规范。
 
-更多关于Git提交信息和分支创建规范可以参看我之前发布的文章[《程序员自我修养之Git提交信息和分支创建规范》](https://shenxianpeng.github.io/2020/09/commit-messages-specification/)，这里不再赘述。
+更多关于Git提交信息和分支创建规范可以参看我之前发布的文章[《程序员自我修养之Git提交信息和分支创建规范》](https://shenxianpeng.dev/2020/09/commit-messages-specification/)，这里不再赘述。
 
 
 ## Commit Check 简介

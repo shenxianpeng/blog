@@ -32,7 +32,7 @@ comments: true
 
 ```bash
 # 修改默认 url: http://yoursite.com 为：
-url: https://shenxianpeng.github.io
+url: https://shenxianpeng.dev
 ```
 
 复制这段代码到 `blog\themes\landscape\layout\_partial\footer.ejs`

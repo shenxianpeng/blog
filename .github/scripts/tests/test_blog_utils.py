@@ -33,7 +33,7 @@ class TestBuildCanonicalUrl:
     def test_standard_path(self):
         path = "content/posts/2026/hadolint-pre-commit/index.en.md"
         url = build_canonical_url(path)
-        assert url == "https://shenxianpeng.github.io/posts/2026/hadolint-pre-commit/"
+        assert url == "https://shenxianpeng.dev/posts/2026/hadolint-pre-commit/"
 
     def test_trailing_slash(self):
         path = "content/posts/2025/my-post/index.en.md"

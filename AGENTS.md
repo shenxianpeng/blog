@@ -5,7 +5,7 @@ Instructions for AI coding agents working on this repository. This is a personal
 ## Project Overview
 
 - **Framework:** Hugo static site generator with Blowfish theme
-- **Deployment:** GitHub Pages (`shenxianpeng.github.io`)
+- **Deployment:** GitHub Pages (`shenxianpeng.dev`)
 - **Languages:** Bilingual — Chinese (zh-cn, primary) + English (en)
 - **Content:** technical articles, personal essays, annual summaries
 - **Default language:** `zh-cn` (Chinese)
@@ -406,4 +406,4 @@ git pull --rebase && git push
 
 - RepoKeeper: https://github.com/shenxianpeng/repokeeper
 - Blog repo: https://github.com/shenxianpeng/blog
-- Live site: https://shenxianpeng.github.io
+- Live site: https://shenxianpeng.dev

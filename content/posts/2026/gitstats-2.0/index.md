@@ -94,7 +94,7 @@ gitstats . report
   <img src="new-6.png" class="grid-w30" />
 {{< /gallery >}}
 
-你可以访问 [这个在线预览](https://shenxianpeng.github.io/gitstats/index.html) 看实际效果，这是基于 GitStats 自身仓库生成的报告。
+你可以访问 [这个在线预览](https://shenxianpeng.dev/gitstats/index.html) 看实际效果，这是基于 GitStats 自身仓库生成的报告。
 
 ---
 

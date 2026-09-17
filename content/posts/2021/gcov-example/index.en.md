@@ -27,7 +27,7 @@ Can code coverage be measured without unit tests? Yes.
 There are some tools on the market that can measure the code coverage of black-box testing,
 such as Squish Coco, Bullseye, etc. Their principle is to insert instrumentation when build product.
 
-I've done some research on [Squish Coco](https://shenxianpeng.github.io/2019/05/squishcoco/),
+I've done some research on [Squish Coco](https://shenxianpeng.dev/2019/05/squishcoco/),
 because of some unresolved compilation issues that I didn't buy a license for this expensive tool.
 
 When I investigated code coverage again, I found out that GCC has a built-in code coverage tool called

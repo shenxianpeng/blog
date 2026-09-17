@@ -27,7 +27,7 @@ series_order: 1
 
 这是一个用 python 写的，代码量很少，功能却非常强大的分析工具，也是我目前发现为数不多的可以生成漂亮的报告并且使用很方便的开源项目。
 
-gitstats 的报告也很强大 (https://shenxianpeng.github.io/gitstats/previews/main/index.html) 感兴趣的可以试试
+gitstats 的报告也很强大 (https://shenxianpeng.dev/gitstats/previews/main/index.html) 感兴趣的可以试试
 
 ## 如何使用
 

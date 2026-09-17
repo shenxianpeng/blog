@@ -34,7 +34,7 @@ DevOps / AI 工程师，现居立陶宛维尔纽斯。十六年软件工程经�
 - Jenkins **官方插件**（[Explain Error](https://github.com/jenkinsci/explain-error-plugin)）作者，Jenkins GitHub 组织成员
 - **Anthropic Open Source Developer Program** 入选者（2026）
 - **EuroPython 2025** 议题评审
-- 累计发布 250+ 篇原创技术文章（[博客](https://shenxianpeng.github.io) + 公众号「沈显鹏」）
+- 累计发布 250+ 篇原创技术文章（[博客](https://shenxianpeng.dev) + 公众号「沈显鹏」）
 
 ---
 

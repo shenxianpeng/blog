@@ -14,8 +14,8 @@ Recently, in the evenings (usually after my child has gone to sleep), I've been 
 
 Previously, I wrote two articles about GitStats.  If you're interested, you can check them out:
 
-* [Git History Statistics Generator GitStats](https://shenxianpeng.github.io/2019/12/git-stats/)
-* [Automatically Providing Multi-Dimensional Code Analysis Reports to My Boss Regularly via Jenkins](https://shenxianpeng.github.io/2020/01/git-stats-jenkins/)
+* [Git History Statistics Generator GitStats](https://shenxianpeng.dev/2019/12/git-stats/)
+* [Automatically Providing Multi-Dimensional Code Analysis Reports to My Boss Regularly via Jenkins](https://shenxianpeng.dev/2020/01/git-stats-jenkins/)
 
 
 ## What is GitStats

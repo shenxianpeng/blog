@@ -14,7 +14,7 @@ series_order: 3
 
 mkdocs-ng v1.8.0 was released on August 13 (UTC: the evening of the 12th) — the first feature release since the fork. The four versions from v1.7.0 to v1.7.3 were about fixing bugs and laying groundwork; 1.8.0 starts delivering the features promised earlier.
 
-For new readers, some background: upstream MkDocs has not had a new release since August 2024, and maintenance has essentially stalled. I forked it and continue to maintain it under the mkdocs-ng organization. The package name is mkdocs-ng, but the CLI command, configuration file, and plugin ecosystem are all unchanged. Why I did this and what v1.7.x fixed are covered in my [earlier posts](https://shenxianpeng.github.io/posts/2026/mkdocs-ng/) ([v1.7.x summary](https://shenxianpeng.github.io/posts/2026/mkdocs-ng-update/)), so I won't repeat them here.
+For new readers, some background: upstream MkDocs has not had a new release since August 2024, and maintenance has essentially stalled. I forked it and continue to maintain it under the mkdocs-ng organization. The package name is mkdocs-ng, but the CLI command, configuration file, and plugin ecosystem are all unchanged. Why I did this and what v1.7.x fixed are covered in my [earlier posts](https://shenxianpeng.dev/posts/2026/mkdocs-ng/) ([v1.7.x summary](https://shenxianpeng.dev/posts/2026/mkdocs-ng-update/)), so I won't repeat them here.
 
 This post covers three things: which long-standing upstream issues have been fixed, how much faster 1.8.0 builds are, and what 1.9.0 plans to do.
 

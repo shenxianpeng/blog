@@ -256,7 +256,7 @@ It can monitor the community, patrol repositories, write code, review code, labe
 If you also maintain open-source projects, especially if you're starting to feel overwhelmed by the number of repositories, you might want to give RepoKeeper a try.
 
 - GitHub：https://github.com/shenxianpeng/repokeeper
-- 文档：https://shenxianpeng.github.io/repokeeper/
+- 文档：https://shenxianpeng.dev/repokeeper/
 - PyPI：https://pypi.org/project/repokeeper/
 
 If you encounter issues, open one on GitHub, or simply let RepoKeeper fix it itself.

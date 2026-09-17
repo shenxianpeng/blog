@@ -131,7 +131,7 @@ Agent 使用域账号运行时，在组策略中：
 
 ### 7. `.NET Framework 2.0 or later is required`
 
-升级 .NET Framework，参考 [这篇文章](https://shenxianpeng.github.io/2020/07/jenkins-windows-agent-connect-problem/)。
+升级 .NET Framework，参考 [这篇文章](https://shenxianpeng.dev/2020/07/jenkins-windows-agent-connect-problem/)。
 
 ---
 

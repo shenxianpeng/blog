@@ -10,7 +10,7 @@ date: 2025-08-24
 ---
 
 最近翻看 Google Analytics 时，我发现了一个有趣的现象：  
-我的博客（shenxianpeng.github.io）在 Google 搜索里的流量还不错，但访问者的主要语言居然是 **英文**，中文反而排在第二。  
+我的博客（shenxianpeng.dev）在 Google 搜索里的流量还不错，但访问者的主要语言居然是 **英文**，中文反而排在第二。  
 
 ![语言](language.png)
 

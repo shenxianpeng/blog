@@ -11,7 +11,7 @@ translate: false
 authors:
   - shenxianpeng
 ---
-上一篇 [初识 JFrog Artifactory](https://shenxianpeng.github.io/2019/11/artifactory-install-and-upgrade/)，介绍了什么是 Artifactory，以及如何安装、启动和升级。
+上一篇 [初识 JFrog Artifactory](https://shenxianpeng.dev/2019/11/artifactory-install-and-upgrade/)，介绍了什么是 Artifactory，以及如何安装、启动和升级。
 
 本篇介绍 Artifactory 与 Jenkins 的集成，因为没有与 CI 工具集成的 Artifactory 是没有灵魂的。
 

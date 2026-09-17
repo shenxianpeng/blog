@@ -179,7 +179,7 @@ The litellm incident once again proves one thing: **security must be proactive, 
 Traditional scanning tools are like a post-mortem, whereas pipguard is a checkpoint at the entrance—the package hasn't even landed, and the danger is blocked outside.
 
 The project is completely open source, MIT licensed:
-- Docs: https://shenxianpeng.github.io/pipguard/
+- Docs: https://shenxianpeng.dev/pipguard/
 - GitHub: https://github.com/shenxianpeng/pipguard
 
 If you have questions, ideas, or want to help improve the risk rules, see GitHub Issues.

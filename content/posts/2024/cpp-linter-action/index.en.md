@@ -22,7 +22,7 @@ Among them, **Bump cpp-linter from 1.6.5 to 1.7.1 by @dependabot in [#191](https
 
 ## What is cpp-linter-action
 
-If you are unfamiliar with [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action), you can check out my [previous article](https://shenxianpeng.github.io/2022/08/cpp-linter/).
+If you are unfamiliar with [cpp-linter-action](https://github.com/cpp-linter/cpp-linter-action), you can check out my [previous article](https://shenxianpeng.dev/2022/08/cpp-linter/).
 
 In short, cpp-linter-action is a [GitHub Action](https://docs.github.com/en/actions/quickstart) under the cpp-linter organization, designed for C/C++ code to format code, diagnose, and fix typical programming errors.
 

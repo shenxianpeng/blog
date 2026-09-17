@@ -56,7 +56,7 @@ jobs:
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
           # 我的博客 RSS 链接
-          feed_list: "https://shenxianpeng.github.io/atom.xml"
+          feed_list: "https://shenxianpeng.dev/atom.xml"
           # 获取最新 10 篇文章
           max_post_count: 10
 ```
@@ -95,7 +95,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
-          feed_list: "https://shenxianpeng.github.io/atom.xml"
+          feed_list: "https://shenxianpeng.dev/atom.xml"
           max_post_count: 10
 ```
 

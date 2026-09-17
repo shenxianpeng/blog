@@ -23,7 +23,7 @@ date: 2025-12-31
   
 3. 参与 DevOps 或 Python 大会
 
-    四月份去了 PyCon LT，写了三篇大会文章：[第一天](https://shenxianpeng.github.io/misc/pycon-lt-d1/)、[第二天](https://shenxianpeng.github.io/misc/pycon-lt-d2/)、[第三天](https://shenxianpeng.github.io/misc/pycon-lt-d3/)。
+    四月份去了 PyCon LT，写了三篇大会文章：[第一天](https://shenxianpeng.dev/misc/pycon-lt-d1/)、[第二天](https://shenxianpeng.dev/misc/pycon-lt-d2/)、[第三天](https://shenxianpeng.dev/misc/pycon-lt-d3/)。
 
 4. 加入 PyPA 或 Python GitHub Organization
 
