@@ -56,6 +56,11 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo --gc --minify --baseURL "https://shenxianpeng.dev/"
+      - name: Keep the English feed at its old address
+        # The English feed moved from /en/index.xml to /index.xml when English
+        # became the default language. An XML file cannot redirect on GitHub
+        # Pages, so publish a copy for readers still subscribed to the old path.
+        run: cp public/index.xml public/en/index.xml
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

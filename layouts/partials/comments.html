@@ -4,6 +4,18 @@
   https://giscus.app/
 */}}
 
+{{/*
+  Threads are keyed by the page's address as it was before English became the
+  default language (2026-09): "posts/x/" for Chinese, "en/posts/x/" for English.
+  Mapping by pathname would hand the English page at /posts/x/ the thread that
+  belongs to the Chinese post, and start the Chinese page with an empty one.
+*/}}
+{{- $term := strings.TrimPrefix "/" .RelPermalink }}
+{{- if eq .Lang "zh-cn" }}
+  {{- $term = strings.TrimPrefix "zh-cn/" $term }}
+{{- else }}
+  {{- $term = printf "%s/%s" .Lang $term }}
+{{- end }}
 <div id="giscus-comments" class="mt-8">
   <script 
     src="https://giscus.app/client.js"
@@ -11,7 +23,8 @@
     data-repo-id="MDEwOlJlcG9zaXRvcnkxMDkwODc5MTM="
     data-category="Announcements"
     data-category-id="DIC_kwDOBoCMqc4CVG-1"
-    data-mapping="pathname"
+    data-mapping="specific"
+    data-term="{{ $term }}"
     data-strict="0"
     data-reactions-enabled="1"
     data-emit-metadata="0"

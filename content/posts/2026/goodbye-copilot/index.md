@@ -11,7 +11,7 @@ authors:
 date: 2026-07-20
 ---
 
-最近我对 GitHub Copilot 的态度发生了一次比较大的变化：从原来的"吹"变成了现在的"黑"。（[之前夸 Copilot 的文章](/posts/2025/copilot/)）
+最近我对 GitHub Copilot 的态度发生了一次比较大的变化：从原来的"吹"变成了现在的"黑"。（[之前夸 Copilot 的文章](/zh-cn/posts/2025/copilot/)）
 
 这个转变发生在最近几天，因为我的 Claude Code 到期了，我打算重新订阅并回到了好久没用的 GitHub Copilot。必须说明的是，我觉得它不好用仅限于我的工作场景，但或许也代表了很多人的共同痛点。
 

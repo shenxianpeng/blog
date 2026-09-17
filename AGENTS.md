@@ -6,9 +6,12 @@ Instructions for AI coding agents working on this repository. This is a personal
 
 - **Framework:** Hugo static site generator with Blowfish theme
 - **Deployment:** GitHub Pages (`shenxianpeng.dev`)
-- **Languages:** Bilingual — Chinese (zh-cn, primary) + English (en)
+- **Languages:** Bilingual — Chinese (zh-cn, written first) + English (en, the
+  site's default language)
 - **Content:** technical articles, personal essays, annual summaries
-- **Default language:** `zh-cn` (Chinese)
+- **Default language:** `en`. English is served from `/` (`/posts/…`), Chinese from
+  `/zh-cn/` (`/zh-cn/posts/…`). See [URL layout](#url-layout) before touching
+  language config, mounts, or links between posts.
 - **Main sections:** `posts/` (technical articles), `misc/` (personal essays, annual
   summaries), plus `about/`, `portfolio/`, `hireme/`, `archive/`, `tags/`, `authors/`
 - **Deployment:** GitHub Pages via `.github/workflows/pages.yaml`. Netlify runs
@@ -298,6 +301,36 @@ If you supply a cover by hand instead:
   `python3 .github/scripts/shrink_article_images.py <post-dir>` — it downscales,
   optimizes in place, and only rewrites a file when that saves at least 10%.
 - Every image needs alt text.
+
+## URL layout
+
+English became the default content language in 2026-09. Before that Chinese was
+at `/` and English under `/en/`.
+
+- **File names still decide the language.** `index.md` is Chinese, `index.en.md`
+  is English. `config/_default/module.toml` mounts `content/` with
+  `lang = "zh-cn"`, which makes Chinese the language of un-suffixed files even
+  though the default language is English. Do not rename files to
+  `index.zh-cn.md`; the WeChat, dev.to and Medium sync workflows and
+  `make translate` all rely on the current names.
+- **Keep it a single mount.** Mounting `content/` once per language puts bundle
+  images in both mounts, and Hugo 0.154.5 panics
+  (`contentNodeShifter.Delete`) as soon as such a bundle is a draft.
+- **Old URLs redirect.** `layouts/partials/legacy-redirects.html` writes a
+  meta-refresh page for every old address at build time: `/en/<path>/` to
+  `/<path>/`, and `/<path>/` to `/zh-cn/<path>/` for Chinese pages that have no
+  English page at that path. Nothing goes in front matter. A Chinese post's old
+  URL serves its English version once one exists.
+- **Feeds.** English is `/index.xml`, Chinese is `/zh-cn/index.xml`. The Pages
+  workflow copies the English feed to `/en/index.xml`, its old address.
+- **Comments.** Giscus threads are keyed by the pre-2026-09 path
+  (`posts/x/` for Chinese, `en/posts/x/` for English) in
+  `layouts/partials/comments.html`, so the two languages never share a thread.
+- **Linking between posts.** In a Chinese post link to `/zh-cn/posts/…`; in an
+  English post link to `/posts/…`. A Chinese post that links to `/posts/…` sends
+  its reader to the English version.
+- **404.** GitHub Pages serves only the root `404.html` (the English one), so
+  `layouts/404.html` is bilingual and links to both home pages.
 
 ## Bilingual Content Management
 

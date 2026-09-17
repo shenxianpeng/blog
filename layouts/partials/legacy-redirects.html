@@ -1,0 +1,56 @@
+{{/*
+  Redirect pages for the URLs this site used before English became the default
+  content language (2026-09). Until then Chinese lived at "/" and English under
+  "/en/". GitHub Pages has no server-side redirects, so these are the same
+  meta-refresh pages Hugo writes for front matter `aliases`, generated here for
+  every page instead of being listed in some 270 content files.
+
+    /en/<path>/  ->  /<path>/         every English page
+    /<path>/     ->  /zh-cn/<path>/   Chinese pages with no English page at
+                                      that path (posts that were never
+                                      translated, Chinese-only tags)
+
+  A Chinese page that does have an English version needs nothing: its old URL
+  now serves the English version, which links back through the language switcher.
+
+  Called once per build, from the English home page.
+*/}}
+{{- $en := index (where site.Sites "Language.Lang" "en") 0 }}
+{{- $zh := index (where site.Sites "Language.Lang" "zh-cn") 0 }}
+
+{{/*
+  site.Pages leaves out pages built with `list: local` (the portfolio entries),
+  so also walk the tree from the home page. Keys are RelPermalinks.
+*/}}
+{{- $enPages := newScratch }}
+{{- $zhPages := newScratch }}
+{{- range $en.Pages }}{{ $enPages.Set .RelPermalink . }}{{ end }}
+{{- range $zh.Pages }}{{ $zhPages.Set .RelPermalink . }}{{ end }}
+{{- template "legacy-redirects-walk" (dict "page" $en.Home "into" $enPages) }}
+{{- template "legacy-redirects-walk" (dict "page" $zh.Home "into" $zhPages) }}
+
+{{- $html := `<!DOCTYPE html><html lang="%s"><head><title>%s</title><link rel="canonical" href="%s"><meta name="robots" content="noindex"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=%s"></head></html>` }}
+
+{{- range $rel, $p := $enPages.Values }}
+  {{- if not $p.IsHome }}
+    {{- $to := $p.Permalink | htmlEscape }}
+    {{- $file := printf "en%sindex.html" ($rel | urls.PathUnescape) }}
+    {{- (resources.FromString $file (printf $html "en" $to $to $to)).Publish }}
+  {{- end }}
+{{- end }}
+
+{{- range $rel, $p := $zhPages.Values }}
+  {{- $old := strings.TrimPrefix "/zh-cn" $rel }}
+  {{- if and (not $p.IsHome) (not ($enPages.Get $old)) }}
+    {{- $to := $p.Permalink | htmlEscape }}
+    {{- $file := printf "%sindex.html" (strings.TrimPrefix "/" ($old | urls.PathUnescape)) }}
+    {{- (resources.FromString $file (printf $html "zh-cn" $to $to $to)).Publish }}
+  {{- end }}
+{{- end }}
+
+{{- define "legacy-redirects-walk" }}
+  {{- range .page.Pages }}
+    {{- $.into.Set .RelPermalink . }}
+    {{- template "legacy-redirects-walk" (dict "page" . "into" $.into) }}
+  {{- end }}
+{{- end }}
