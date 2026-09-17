@@ -1,0 +1,49 @@
+{{/*
+  Per-page additions to <head>. Blowfish calls this partial with the page as
+  context (extend-head.html is cached and only receives .Site).
+*/}}
+
+{{/*
+  hreflang alternates. The theme does not emit them. English is declared as
+  x-default, so search engines offer it to readers whose language is neither.
+*/}}
+{{- if .IsTranslated }}
+  {{- range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+  {{- end }}
+  {{- range where .AllTranslations "Language.Lang" "en" }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+  {{- end }}
+{{- end }}
+
+{{/*
+  English is the default landing page. Chinese is the default content language,
+  so it owns "/" and every existing Chinese URL; moving it would break the links
+  already published on WeChat and Toutiao. Instead, the Chinese home page sends
+  a visitor on to the English one unless they read Chinese:
+    - they came from another page of this site (the language switcher, the logo
+      on a Chinese post), which also records the choice, or
+    - they chose Chinese on an earlier visit, or
+    - their browser's first language is Chinese.
+  Only "/" does this. Posts and every other page keep their language.
+*/}}
+{{- if and .IsHome (eq .Lang "zh-cn") }}
+  {{- range where .Translations "Language.Lang" "en" }}
+  <script>
+    (function () {
+      try {
+        var KEY = "preferred-lang";
+        var ref = document.referrer;
+        if (ref && new URL(ref).host === location.host) {
+          localStorage.setItem(KEY, "zh-cn");
+          return;
+        }
+        if (localStorage.getItem(KEY) === "zh-cn") return;
+        var first = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+        if (/^zh\b/i.test(first)) return;
+        location.replace({{ .RelPermalink }});
+      } catch (e) {}
+    })();
+  </script>
+  {{- end }}
+{{- end }}

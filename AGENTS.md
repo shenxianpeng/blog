@@ -9,6 +9,11 @@ Instructions for AI coding agents working on this repository. This is a personal
 - **Languages:** Bilingual — Chinese (zh-cn, primary) + English (en)
 - **Content:** technical articles, personal essays, annual summaries
 - **Default language:** `zh-cn` (Chinese)
+- **Landing page:** English. Chinese owns `/` because it is the default content
+  language, but the Chinese home page sends visitors on to `/en/` unless their
+  browser's first language is Chinese or they picked Chinese on this site. Only
+  `/` does this; see `layouts/partials/extend-head-uncached.html`, which also emits
+  the `hreflang` alternates (`x-default` is English).
 - **Main sections:** `posts/` (technical articles), `misc/` (personal essays, annual
   summaries), plus `about/`, `portfolio/`, `hireme/`, `archive/`, `tags/`, `authors/`
 - **Deployment:** GitHub Pages via `.github/workflows/pages.yaml`. Netlify runs
