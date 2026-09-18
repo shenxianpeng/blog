@@ -1,6 +1,6 @@
 ---
 title: "DevOps Maturity"
-weight: 5
+weight: 8
 externalUrl: "https://github.com/devops-maturity"
 summary: "Assess, improve, and showcase your DevOps maturity — across teams and organizations."
 showDate: false

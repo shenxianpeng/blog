@@ -1,6 +1,6 @@
 ---
 title: "约定式分支"
-weight: 4
+weight: 7
 externalUrl: "https://conventionalbranch.org/zh/"
 summary: "一种用于给分支增加人机可读含义的规范。"
 showDate: false
