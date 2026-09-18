@@ -10,8 +10,8 @@ showHeadingAnchors : false
 showPagination : false
 showRelatedContent : false
 showReadingTime : false
-showTableOfContents : true
-showTaxonomies : false 
+showTableOfContents : false
+showTaxonomies : false
 showWordCount : false
 showSummary : false
 sharingLinks : false
@@ -22,37 +22,22 @@ showAuthor: true
 layoutBackgroundHeaderSpace: false
 ---
 
-{{< timeline >}}
+I'm Xianpeng Shen, a DevOps engineer in Vilnius, Lithuania. Sixteen years in software, from QA and test automation to DevOps; at Rocket Software since 2015, where I own build, release, and delivery automation. My current focus is enterprise agentic applications: AI that takes on real engineering tasks inside controlled workflows.
 
-{{< timelineItem icon="tag" header="Hi! I'm Xianpeng Shen" badge="Welcome" subheader="Welcome to my personal site">}}
-I write <a href="../posts/">blog posts</a>, develop <a href="../portfolio/">open source software</a>, and contribute to open source projects.
-{{< /timelineItem >}}
+Outside work I maintain a few open-source projects: [cpp-linter](https://github.com/cpp-linter) (C/C++ linting, in the CI of more than 1000 public repositories), [commit-check](https://github.com/commit-check/commit-check), [Conventional Branch](https://conventionalbranch.org), [Open Delivery Spec](https://github.com/open-delivery-spec), and two Jenkins plugins, [explain-error-plugin](https://github.com/jenkinsci/explain-error-plugin) and [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint). On the same principle I run three products: [keelinfra](https://keelinfra.io) (self-hosted Keycloak for production), [keelapps](https://keelapps.app) (admin tools for Jira and Confluence), and [Keelhaven](https://keelhaven.app) (Mac backup). The full list is on the [Projects](/portfolio/) page.
 
-{{< timelineItem icon="globe" header="Based in Vilnius, Lithuania" badge="Vilnius, Lithuania" subheader="Explore · Learn · Share" >}}
-Languages I use daily: Chinese · English · Lithuanian (beginner)
-{{< /timelineItem >}}
+Community: member of the Jenkins GitHub organization, EuroPython 2025 proposal reviewer, and selected for the Anthropic Open Source Developer Program in 2026. This blog has run since 2017 and holds 250-odd posts; the Chinese versions also go out on the WeChat account 沈显鹏.
 
-{{< timelineItem icon="code" header="Open Source" badge="Open Source" subheader="Contributions Welcome" >}}
+## Support
 
-I maintain several open-source organizations and tools and they are widely used by developers and teams around the world.
-All kinds of contributions and feedback are welcome. <a href="../portfolio/">View Projects</a>.
+This blog has never carried ads. If the writing or the tools have helped you, you can:
 
-{{< /timelineItem >}}
+- sponsor me on [GitHub Sponsors](https://github.com/sponsors/shenxianpeng)
+- support the work via [Thanks.dev](https://thanks.dev/u/gh/shenxianpeng)
+- [buy me a coffee](https://buymeacoffee.com/shenxianpeng)
 
-{{< timelineItem icon="heart" header="Support Me" badge="Donate" subheader="Help keep this blog ad-free!" >}}
+## Contact
 
-This blog has always been ad-free — I want reading here to be a clean, distraction-free experience. Writing takes time, and your support means a lot. If you've found something useful here, consider buying me a coffee or sponsoring my work:
+Collaboration, writing, or just a conversation: [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com). I'm also on [GitHub](https://github.com/shenxianpeng) and [X](https://x.com/xianpengshen).
 
-<ul>
-  <li>🌟 <a href="https://github.com/sponsors/shenxianpeng" target="_blank" rel="noopener">Sponsor me on GitHub Sponsors</a></li>
-  <li>💙 <a href="https://thanks.dev/u/gh/shenxianpeng" target="_blank" rel="noopener">Support via Thanks.dev</a></li>
-  <li>☕ <a href="https://buymeacoffee.com/shenxianpeng" target="_blank" rel="noopener">Buy Me a Coffee</a></li>
-</ul>
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="envelope" header="Get in Touch" badge="Let's Connect" subheader="Collaboration · Writing · Discussion" >}}
-xianpeng.shen@gmail.com
-{{< /timelineItem >}}
-
-{{< /timeline >}}
+For the formal version, see the [full résumé](/resume/).
