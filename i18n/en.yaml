@@ -74,7 +74,7 @@ sharing:
   telegram: "Share via Telegram"
 
 shortcode:
-  recent_articles: "Recent"
+  recent_articles: "Recent posts"
 
 recent:
   show_more: "Show More"

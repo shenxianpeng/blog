@@ -1,14 +1,14 @@
 locale = "zh-cn"
 label = "简体中文"
 weight = 2
-title = "公众号「沈显鹏」"
+title = "沈显鹏"
 
 [params]
 displayName = "简体中文"
 isoCode = "zh-cn"
 rtl = false
 dateFormat = "2006-01-02"
-description = "沈显鹏的个人网站，分享关于 AI, DevOps，CI/CD，Build 以及开源。"
+description = "沈显鹏的个人网站：维护 cpp-linter 等开源工具，给软件交付做护栏；写 AI、DevOps、CI/CD 与开源。"
 copyright = "Copyright © 2017–2026 Xianpeng Shen. All rights reserved."
 
 [params.author]
@@ -19,12 +19,9 @@ imageQuality = 96
 headline = "Engineer. Builder. Maintainer."
 bio = "Engineer. Builder. Maintainer."
 links = [
-  { x-twitter = "https://x.com/xianpengshen" },
   { github = "https://github.com/shenxianpeng" },
+  { x-twitter = "https://x.com/xianpengshen" },
   { linkedin = "https://www.linkedin.com/in/xianpeng-shen/" },
-  { youtube = "https://www.youtube.com/@shenxianpeng" },
-  { dev = "https://dev.to/shenxianpeng"  },
-  { medium = "https://medium.com/@xianpeng.shen/"  },
   { rss = "index.xml" },
   { email = "mailto:xianpeng.shen@gmail.com" },
 ]

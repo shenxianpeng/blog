@@ -8,7 +8,7 @@ displayName = "English"
 isoCode = "en"
 rtl = false
 dateFormat = "2006-01-02"
-description = "Xianpeng Shen's Blog Site, about AI, DevOps, CI/CD and Open Source"
+description = "Xianpeng Shen builds open-source guardrails for software delivery: cpp-linter, commit standards, and CI/CD automation. Writing on AI, DevOps, and open source."
 copyright = "Copyright © 2017–2026 Xianpeng Shen. All rights reserved."
 
 [params.author]
@@ -19,12 +19,9 @@ imageQuality = 96
 headline = "Engineer. Builder. Maintainer."
 bio = "Engineer. Builder. Maintainer."
 links = [
-  { x-twitter = "https://x.com/xianpengshen" },
   { github = "https://github.com/shenxianpeng" },
+  { x-twitter = "https://x.com/xianpengshen" },
   { linkedin = "https://www.linkedin.com/in/xianpeng-shen/" },
-  { youtube = "https://www.youtube.com/@shenxianpeng" },
-  { dev = "https://dev.to/shenxianpeng"  },
-  { medium = "https://medium.com/@xianpeng.shen/"  },
   { rss = "index.xml" },
   { email = "mailto:xianpeng.shen@gmail.com" },
 ]
