@@ -9,7 +9,7 @@
 */}}
 {{- if .IsTranslated }}
   {{- range .AllTranslations }}
-  <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
   {{- end }}
   {{- range where .AllTranslations "Language.Lang" "en" }}
   <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">

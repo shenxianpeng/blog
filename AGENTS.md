@@ -5,6 +5,13 @@ Instructions for AI coding agents working on this repository. This is a personal
 ## Project Overview
 
 - **Framework:** Hugo static site generator with Blowfish theme
+- **Toolchain:** Hugo **extended** 0.162–0.165 (CI pins 0.165.0 in
+  `.github/workflows/pages.yaml`; Netlify previews take theirs from a
+  `HUGO_VERSION` variable in the Netlify UI) and Blowfish **v3.6.0** as a git
+  submodule in `themes/blowfish/`. Blowfish 3 does not build on older Hugo.
+  The one build warning left, `module.mounts.lang` being deprecated, is
+  expected: that mount is what makes `index.md` Chinese (see [URL
+  layout](#url-layout)); moving to `sites.matrix` is a separate job.
 - **Deployment:** GitHub Pages (`shenxianpeng.dev`)
 - **Languages:** Bilingual — Chinese (zh-cn, written first) + English (en, the
   site's default language)

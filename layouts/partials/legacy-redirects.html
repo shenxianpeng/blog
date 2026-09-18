@@ -15,8 +15,8 @@
 
   Called once per build, from the English home page.
 */}}
-{{- $en := index (where site.Sites "Language.Lang" "en") 0 }}
-{{- $zh := index (where site.Sites "Language.Lang" "zh-cn") 0 }}
+{{- $en := index (where hugo.Sites "Language.Lang" "en") 0 }}
+{{- $zh := index (where hugo.Sites "Language.Lang" "zh-cn") 0 }}
 
 {{/*
   site.Pages leaves out pages built with `list: local` (the portfolio entries),

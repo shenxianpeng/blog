@@ -24,7 +24,7 @@
   <div class="prose dark:prose-invert">
     <p class="mt-6 text-lg" lang="zh-cn">这个页面不存在，或者已经搬家。中文内容现在都在 <code>/zh-cn/</code> 下，可以从中文主页重新找。</p>
     <p class="mt-6 text-lg font-medium">
-      {{- range site.Sites }}
+      {{- range hugo.Sites }}
       <a class="mr-6" href="{{ .Home.RelPermalink }}" lang="{{ .Language.Lang }}">{{ if eq .Language.Lang "zh-cn" }}中文主页 →{{ else }}English home →{{ end }}</a>
       {{- end }}
     </p>
