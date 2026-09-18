@@ -4,13 +4,11 @@
 */}}
 
 {{/*
-  hreflang alternates. The theme does not emit them. English is declared as
-  x-default, so search engines offer it to readers whose language is neither.
+  hreflang: Blowfish 3 emits one alternate per translation itself. This adds the
+  x-default it does not: English, so search engines offer it to readers whose
+  language is neither.
 */}}
 {{- if .IsTranslated }}
-  {{- range .AllTranslations }}
-  <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
-  {{- end }}
   {{- range where .AllTranslations "Language.Lang" "en" }}
   <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
   {{- end }}

@@ -12,6 +12,14 @@
         block = [['\[', '\]'], ['$$', '$$']]
         inline = [['\(', '\)']]
 
+  # Blowfish 3 renders every image as a <figure>; without this Goldmark wraps a
+  # standalone image in <p>, which is invalid HTML.
+  [goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false
+    [goldmark.parser.attribute]
+      block = true
+      title = true
+
 [highlight]
   noClasses = false
 
