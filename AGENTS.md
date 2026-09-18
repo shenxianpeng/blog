@@ -342,6 +342,10 @@ at `/` and English under `/en/`.
   `/<path>/`, and `/<path>/` to `/zh-cn/<path>/` for Chinese pages that have no
   English page at that path. Nothing goes in front matter. A Chinese post's old
   URL serves its English version once one exists.
+- **The résumé moved** from `/hireme/` to `/resume/` in 2026-09. `/hireme/`,
+  `/en/hireme/` and `/zh-cn/hireme/` are front-matter `aliases` on the two
+  résumé pages; `/resume-cn` is a static page in `static/resume-cn/`, because
+  Hugo writes a Chinese page's aliases under `/zh-cn/` and cannot reach the root.
 - **Feeds.** English is `/index.xml`, Chinese is `/zh-cn/index.xml`. The Pages
   workflow copies the English feed to `/en/index.xml`, its old address.
 - **Comments.** Giscus threads are keyed by the pre-2026-09 path
