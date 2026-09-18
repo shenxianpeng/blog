@@ -2,6 +2,9 @@
 title: "Xianpeng Shen's Resume"
 author: shenxianpeng
 showAuthor: true
+aliases:
+  - /hireme/
+  - /en/hireme/
 
 showDate : false
 showDateOnlyInArticle : false
