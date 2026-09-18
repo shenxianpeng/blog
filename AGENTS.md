@@ -20,7 +20,11 @@ Instructions for AI coding agents working on this repository. This is a personal
   `/zh-cn/` (`/zh-cn/posts/…`). See [URL layout](#url-layout) before touching
   language config, mounts, or links between posts.
 - **Main sections:** `posts/` (technical articles), `misc/` (personal essays, annual
-  summaries), plus `about/`, `portfolio/`, `hireme/`, `archive/`, `tags/`, `authors/`
+  summaries), plus `about/`, `portfolio/` (labelled Projects in the menu; open
+  source and the three products side by side), `resume/` (the CV, reachable only
+  from About; `/hireme/` and `/resume-cn` redirect to it), `archive/`, `tags/`,
+  `authors/`. The top menu is Posts · Projects · About; Essays (`misc/`), Archive,
+  Tags and RSS live in the footer.
 - **Deployment:** GitHub Pages via `.github/workflows/pages.yaml`. Netlify runs
   deploy previews on pull requests only — it is not the production host.
 
@@ -44,6 +48,14 @@ So:
   real and worth respecting in any new UI.
 - If the user does adopt it, update this section; if they abandon it, delete
   `DESIGN.md` so it stops misleading agents.
+
+The home page uses Blowfish's `landing` layout: the hero (title, `heroCaption`,
+`heroLead`, `heroButtons`) comes from the front matter of `content/_index.en.md`
+and `content/_index.md`, the "What I build" grid below it is the `feature-grid`
+shortcode in the same files, and the theme appends the six most recent posts.
+Keep that page saying the same thing as the GitHub profile README
+(github.com/shenxianpeng): one positioning line, cpp-linter as the flagship,
+keelinfra / keelapps / Keelhaven as the products.
 
 For visual work today, the operative rule is simpler: **match the surrounding
 Blowfish styling.** Prefer a theme config option in `config/_default/params.toml`
@@ -175,7 +187,9 @@ content/
 │   └── slug/
 │       ├── index.md
 │       └── index.en.md
-└── about/
+├── portfolio/          # Projects: one bundle per project, externalUrl + featured.jpg
+├── about/
+└── resume/             # The CV; not in any menu
 ```
 
 ### Naming Conventions

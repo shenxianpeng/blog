@@ -8,8 +8,11 @@ This is a Hugo-based personal blog repository for Xianpeng Shen, covering topics
 - **Content**: Located in `content/` directory
   - `content/posts/` - Blog posts organized by year (e.g., `2024/`, `2025/`)
   - `content/about/` - About page
+  - `content/portfolio/` - Projects (open source and products), one bundle per project
+  - `content/resume/` - CV, linked only from About
   - `content/archive/` - Archive page
-  - `content/misc/` - Miscellaneous content
+  - `content/misc/` - Essays and annual summaries
+  - `content/_index.en.md` / `content/_index.md` - landing page hero and "What I build" grid
 - **Configuration**: Located in `config/_default/`
   - `hugo.toml` - Main Hugo configuration
   - `languages.*.toml` - Language-specific settings
