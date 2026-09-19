@@ -31,10 +31,11 @@ Instructions for AI coding agents working on this repository. This is a personal
 ## Design System
 
 **`DESIGN.md` is an unbuilt proposal, not a description of this site.** None of it
-is implemented: there is no custom CSS in the repository, and `Instrument Serif`,
-`#F8F4EF`, `#C84B2F` and `Fraunces` appear zero times outside that document. The
-live site runs stock Blowfish with the `slate` colour scheme and the theme's
-default fonts.
+is implemented: the only custom CSS is the few lines in `assets/css/custom.css`
+(which Blowfish loads automatically) and `Instrument Serif`, `#F8F4EF`,
+`#C84B2F` and `Fraunces` appear zero times outside that document. The live site
+runs stock Blowfish with the `slate` colour scheme and the theme's default
+fonts.
 
 So:
 

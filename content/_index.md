@@ -33,4 +33,4 @@ Jira 与 Confluence Cloud 的管理工具：权限审计、周期任务、定时
 
 中文文章同步发布在微信公众号「沈显鹏」，扫码关注。
 
-{{< figure src="img/qrcode.jpg" alt="微信公众号「沈显鹏」二维码" class="mx-auto max-w-md" nozoom="true" >}}
+{{< figure src="img/qrcode.jpg" alt="微信公众号「沈显鹏」二维码" class="mx-auto home-qrcode" nozoom="true" >}}
