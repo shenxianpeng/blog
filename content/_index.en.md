@@ -10,7 +10,7 @@ heroButtons:
     style: "outline"
 ---
 
-I'm a DevOps engineer in Vilnius, Lithuania. I maintain [cpp-linter](https://github.com/cpp-linter) and run two small product lines on the same principle: [keelinfra](https://keelinfra.io) (self-hosted Keycloak for production) and [keelapps](https://keelapps.app) (admin tools for Jira and Confluence). If my tools save you time, [sponsoring the work](https://github.com/sponsors/shenxianpeng) keeps them maintained.
+I'm Xianpeng Shen, in Vilnius, Lithuania. I work on how software gets built, tested and shipped: CI/CD, build and release, infrastructure, and the tools around them. I maintain [cpp-linter](https://github.com/cpp-linter), and I build two products: [keelinfra](https://keelinfra.io) (self-hosted Keycloak for production) and [keelapps](https://keelapps.app) (admin tools for Jira and Confluence). If my tools save you time, [sponsoring the work](https://github.com/sponsors/shenxianpeng) keeps them maintained.
 
 ## What I build
 

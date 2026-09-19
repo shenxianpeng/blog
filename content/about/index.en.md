@@ -22,9 +22,9 @@ showAuthor: true
 layoutBackgroundHeaderSpace: false
 ---
 
-I'm Xianpeng Shen, a DevOps engineer in Vilnius, Lithuania.
+I'm Xianpeng Shen, in Vilnius, Lithuania. I work on how software gets built, tested and shipped: CI/CD, build and release, infrastructure, and the tooling around them, plus enough application code to ship my own products.
 
-Sixteen years in software, from QA and test automation to DevOps. At Rocket Software since 2015, owning build, release and delivery automation; these days mostly enterprise agentic applications.
+Sixteen years in software, from QA and test automation to delivery; these days mostly enterprise agentic applications.
 
 Outside work I maintain [cpp-linter](https://github.com/cpp-linter), [commit-check](https://github.com/commit-check/commit-check), [Conventional Branch](https://conventionalbranch.org), [Open Delivery Spec](https://github.com/open-delivery-spec) and two Jenkins plugins, and build three products: [keelinfra](https://keelinfra.io), [keelapps](https://keelapps.app) and [Keelhaven](https://keelhaven.app). The full list is on [Projects](/portfolio/).
 

@@ -10,7 +10,7 @@ heroButtons:
     style: "outline"
 ---
 
-我是沈显鹏，DevOps 工程师，现居立陶宛维尔纽斯。业余维护 [cpp-linter](https://github.com/cpp-linter)，并用同样的思路做两条小产品线：[keelinfra](https://keelinfra.io)（生产可用的自托管 Keycloak）和 [keelapps](https://keelapps.app)（Jira 与 Confluence 的管理工具）。如果这些工具帮你省了时间，欢迎[赞助](https://github.com/sponsors/shenxianpeng)，让它们持续维护下去。
+我是沈显鹏，现居立陶宛维尔纽斯。我做的是软件从构建到上线的这一段：CI/CD、构建与发布、基础设施，以及围绕它们的工具。业余维护 [cpp-linter](https://github.com/cpp-linter)，也做两个产品：[keelinfra](https://keelinfra.io)（生产可用的自托管 Keycloak）和 [keelapps](https://keelapps.app)（Jira 与 Confluence 的管理工具）。如果这些工具帮你省了时间，欢迎[赞助](https://github.com/sponsors/shenxianpeng)，让它们持续维护下去。
 
 ## 我在做什么
 
