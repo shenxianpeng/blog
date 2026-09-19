@@ -14,7 +14,7 @@ heroButtons:
 
 ## 我在做什么
 
-{{< feature-grid columns="4" >}}
+{{< feature-grid columns="2" align="left" >}}
 {{< feature icon="check" title="cpp-linter" url="https://github.com/cpp-linter" label="开源" >}}
 每个 PR 上自动跑 clang-format 和 clang-tidy，提供 GitHub Action、pre-commit hook 和 Python 包三种用法。Apache、Samsung、Qualcomm、Bloomberg、LLNL、Nextcloud 都在用。
 {{< /feature >}}

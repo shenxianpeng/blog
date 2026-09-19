@@ -52,7 +52,9 @@ So:
 The home page uses Blowfish's `landing` layout: the hero (title, `heroCaption`,
 `heroLead`, `heroButtons`) comes from the front matter of `content/_index.en.md`
 and `content/_index.md`, the "What I build" grid below it is the `feature-grid`
-shortcode in the same files, and the theme appends the six most recent posts.
+shortcode in the same files (the site's `layouts/shortcodes/feature-grid.html`
+adds `columns="2"` and `align="left"` to the theme's version, so four cards
+make a readable 2x2 grid), and the theme appends the six most recent posts.
 Keep that page saying the same thing as the GitHub profile README
 (github.com/shenxianpeng): one positioning line, cpp-linter as the flagship,
 keelinfra / keelapps / Keelhaven as the products.

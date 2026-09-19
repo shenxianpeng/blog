@@ -14,7 +14,7 @@ I'm a DevOps engineer in Vilnius, Lithuania. I maintain [cpp-linter](https://git
 
 ## What I build
 
-{{< feature-grid columns="4" >}}
+{{< feature-grid columns="2" align="left" >}}
 {{< feature icon="check" title="cpp-linter" url="https://github.com/cpp-linter" label="Open source" >}}
 clang-format and clang-tidy on every pull request, as a GitHub Action, a pre-commit hook, and a Python package. In the CI of Apache, Samsung, Qualcomm, Bloomberg, LLNL, and Nextcloud.
 {{< /feature >}}
