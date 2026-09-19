@@ -10,7 +10,7 @@ heroButtons:
     style: "outline"
 ---
 
-I'm Xianpeng Shen, in Vilnius, Lithuania. Sixteen years on the build, test and release side of software, from QA to test automation to development to DevOps, on everything from Jenkins farms to containers. [cpp-linter](https://github.com/cpp-linter) and [commit-check](https://github.com/commit-check/commit-check) grew out of that work; [keelinfra](https://keelinfra.io) (self-hosted Keycloak for production) and [keelapps](https://keelapps.app) (admin tools for Jira and Confluence) are the products. If one fits your setup, use it. If it saves you time, [sponsoring](https://github.com/sponsors/shenxianpeng) keeps it maintained.
+Based in Vilnius, Lithuania. I build and maintain tools for how software gets built, tested and shipped: open source like [cpp-linter](https://github.com/cpp-linter) and [commit-check](https://github.com/commit-check/commit-check), and products like [keelinfra](https://keelinfra.io) and [keelapps](https://keelapps.app). If one fits your setup, use it. If it saves you time, [sponsoring](https://github.com/sponsors/shenxianpeng) keeps the open-source side maintained.
 
 ## What I build
 

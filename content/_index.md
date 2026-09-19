@@ -10,7 +10,7 @@ heroButtons:
     style: "outline"
 ---
 
-我是沈显鹏，现居立陶宛维尔纽斯。做软件十六年，从测试、测试开发、开发一路做到 DevOps，从 Jenkins 集群到容器，构建、测试、发布这一段的活都干过。[cpp-linter](https://github.com/cpp-linter) 和 [commit-check](https://github.com/commit-check/commit-check) 就是从这些活里长出来的；[keelinfra](https://keelinfra.io)（生产可用的自托管 Keycloak）和 [keelapps](https://keelapps.app)（Jira 与 Confluence 的管理工具）是我做的产品。哪个对得上你的场景，拿去用。省了你的时间，欢迎[赞助](https://github.com/sponsors/shenxianpeng)，让它持续维护。
+生活在立陶宛维尔纽斯，做软件构建、测试、发布这一段的工具：开源的 [cpp-linter](https://github.com/cpp-linter)、[commit-check](https://github.com/commit-check/commit-check)，也有 [keelinfra](https://keelinfra.io)、[keelapps](https://keelapps.app) 这样的产品。哪个对得上你的场景，拿去用。省了你的时间，欢迎[赞助](https://github.com/sponsors/shenxianpeng)，让开源这部分持续维护。
 
 ## 我在做什么
 
