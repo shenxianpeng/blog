@@ -5,6 +5,13 @@ Instructions for AI coding agents working on this repository. This is a personal
 ## Project Overview
 
 - **Framework:** Hugo static site generator with Blowfish theme
+- **Toolchain:** Hugo **extended** 0.162–0.165 (CI pins 0.165.0 in
+  `.github/workflows/pages.yaml`; Netlify previews take theirs from a
+  `HUGO_VERSION` variable in the Netlify UI) and Blowfish **v3.6.0** as a git
+  submodule in `themes/blowfish/`. Blowfish 3 does not build on older Hugo.
+  The one build warning left, `module.mounts.lang` being deprecated, is
+  expected: that mount is what makes `index.md` Chinese (see [URL
+  layout](#url-layout)); moving to `sites.matrix` is a separate job.
 - **Deployment:** GitHub Pages (`shenxianpeng.dev`)
 - **Languages:** Bilingual — Chinese (zh-cn, written first) + English (en, the
   site's default language)
@@ -13,17 +20,22 @@ Instructions for AI coding agents working on this repository. This is a personal
   `/zh-cn/` (`/zh-cn/posts/…`). See [URL layout](#url-layout) before touching
   language config, mounts, or links between posts.
 - **Main sections:** `posts/` (technical articles), `misc/` (personal essays, annual
-  summaries), plus `about/`, `portfolio/`, `hireme/`, `archive/`, `tags/`, `authors/`
+  summaries), plus `about/`, `portfolio/` (labelled Projects in the menu; open
+  source and the three products side by side), `resume/` (the CV, reachable only
+  from About; `/hireme/` and `/resume-cn` redirect to it), `archive/`, `tags/`,
+  `authors/`. The top menu is Posts · Projects · About; Essays (`misc/`), Archive,
+  Tags and RSS live in the footer.
 - **Deployment:** GitHub Pages via `.github/workflows/pages.yaml`. Netlify runs
   deploy previews on pull requests only — it is not the production host.
 
 ## Design System
 
 **`DESIGN.md` is an unbuilt proposal, not a description of this site.** None of it
-is implemented: there is no custom CSS in the repository, and `Instrument Serif`,
-`#F8F4EF`, `#C84B2F` and `Fraunces` appear zero times outside that document. The
-live site runs stock Blowfish with the `slate` colour scheme and the theme's
-default fonts.
+is implemented: the only custom CSS is the few lines in `assets/css/custom.css`
+(which Blowfish loads automatically) and `Instrument Serif`, `#F8F4EF`,
+`#C84B2F` and `Fraunces` appear zero times outside that document. The live site
+runs stock Blowfish with the `slate` colour scheme and the theme's default
+fonts.
 
 So:
 
@@ -37,6 +49,16 @@ So:
   real and worth respecting in any new UI.
 - If the user does adopt it, update this section; if they abandon it, delete
   `DESIGN.md` so it stops misleading agents.
+
+The home page uses Blowfish's `landing` layout: the hero (title, `heroCaption`,
+`heroLead`, `heroButtons`) comes from the front matter of `content/_index.en.md`
+and `content/_index.md`, the "What I build" grid below it is the `feature-grid`
+shortcode in the same files (the site's `layouts/shortcodes/feature-grid.html`
+adds `columns="2"` and `align="left"` to the theme's version, so four cards
+make a readable 2x2 grid), and the theme appends the six most recent posts.
+Keep that page saying the same thing as the GitHub profile README
+(github.com/shenxianpeng): one positioning line, cpp-linter as the flagship,
+keelinfra / keelapps / Keelhaven as the products.
 
 For visual work today, the operative rule is simpler: **match the surrounding
 Blowfish styling.** Prefer a theme config option in `config/_default/params.toml`
@@ -168,7 +190,9 @@ content/
 │   └── slug/
 │       ├── index.md
 │       └── index.en.md
-└── about/
+├── portfolio/          # Projects: one bundle per project, externalUrl + featured.jpg
+├── about/
+└── resume/             # The CV; not in any menu
 ```
 
 ### Naming Conventions
@@ -321,6 +345,10 @@ at `/` and English under `/en/`.
   `/<path>/`, and `/<path>/` to `/zh-cn/<path>/` for Chinese pages that have no
   English page at that path. Nothing goes in front matter. A Chinese post's old
   URL serves its English version once one exists.
+- **The résumé moved** from `/hireme/` to `/resume/` in 2026-09. `/hireme/`,
+  `/en/hireme/` and `/zh-cn/hireme/` are front-matter `aliases` on the two
+  résumé pages; `/resume-cn` is a static page in `static/resume-cn/`, because
+  Hugo writes a Chinese page's aliases under `/zh-cn/` and cannot reach the root.
 - **Feeds.** English is `/index.xml`, Chinese is `/zh-cn/index.xml`. The Pages
   workflow copies the English feed to `/en/index.xml`, its old address.
 - **Comments.** Giscus threads are keyed by the pre-2026-09 path

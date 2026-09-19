@@ -1,6 +1,6 @@
 ---
 title: "Conventional Branch"
-weight: 4
+weight: 7
 externalUrl: "https://conventionalbranch.org/"
 summary: "A specification for adding human and machine readable meaning to branch."
 showDate: false

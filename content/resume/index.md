@@ -2,7 +2,7 @@
 title: "沈显鹏的简历"
 author: shenxianpeng
 aliases:
-  - /resume-cn
+  - /hireme/
 showDate : false
 showDateOnlyInArticle : false
 showDateUpdated : false

@@ -1,0 +1,4 @@
+# Deploy previews only; production is GitHub Pages (.github/workflows/pages.yaml).
+# Keep HUGO_VERSION in step with that workflow: Blowfish 3 needs Hugo 0.162-0.165.
+[build.environment]
+  HUGO_VERSION = "0.165.0"

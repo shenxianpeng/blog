@@ -1,44 +1,22 @@
 # -- Main Menu --
 # The main menu is displayed in the header at the top of the page.
 # Acceptable parameters are name, pageRef, page, url, title, weight.
-# 
-# The simplest menu configuration is to provide:
-#   name = The name to be displayed for this menu link
-#   pageRef = The identifier of the page or section to link to
-#
-# By default the menu is ordered alphabetically. This can be
-# overridden by providing a weight value. The menu will then be
-# ordered by weight from lowest to highest.
+# Ordered by weight, lowest first.
+
+[[main]]
+name = "文章"
+pageRef = "posts"
+weight = 1
+
+[[main]]
+name = "作品"
+pageRef = "portfolio"
+weight = 2
 
 [[main]]
 name = "关于"
 pageRef = "about"
 weight = 3
-
-[[main]]
-name = "文章"
-pageRef = "posts"
-weight = 4
-
-[[main]]
-name = "码农随笔"
-pageRef = "misc"
-weight = 5
-
-[[main]]
-name = "聘用我"
-pageRef = "hireme"
-weight = 6
-
-[[main]]
-name = "作品"
-pageRef = "portfolio"
-weight = 7
-
-[[main]]
-name = "归档"
-pageRef = "archive"
-weight = 8
 
 [[main]]
   identifier = "twitter"
@@ -52,17 +30,26 @@ weight = 8
   url = "https://github.com/shenxianpeng"
   weight = 400
 
-
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
-# the copyright notice. Configure as per the main menu above.
+# the copyright notice.
 
- [[footer]]
-   name = "标签"
-   pageRef = "tags"
-   weight = 10
+[[footer]]
+  name = "随笔"
+  pageRef = "misc"
+  weight = 10
 
- [[footer]]
-   name = "作者"
-   pageRef = "authors"
-   weight = 20
+[[footer]]
+  name = "归档"
+  pageRef = "archive"
+  weight = 20
+
+[[footer]]
+  name = "标签"
+  pageRef = "tags"
+  weight = 30
+
+[[footer]]
+  name = "RSS"
+  url = "/zh-cn/index.xml"
+  weight = 40

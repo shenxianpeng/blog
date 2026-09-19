@@ -1,0 +1,12 @@
+{{- /*
+  Copy of themes/blowfish/layouts/shortcodes/feature-grid.html (v3.6.0) with two
+  additions the landing page needs: columns="2" (two columns from the sm
+  breakpoint up, so four cards make a 2x2 grid with room for a sentence or two
+  each) and align="left" (left-aligned card text inside the landing layout's
+  centred body).
+*/ -}}
+{{ $columns := .Get "columns" | default "3" }}
+{{ $align := .Get "align" | default "" }}
+<div class="not-prose my-8 grid gap-4 sm:grid-cols-2{{ if eq $align "left" }} text-left{{ end }}{{ if eq $columns "2" }}{{ else if eq $columns "4" }} grid-balance lg:grid-cols-4 grid-balance-4{{ else }} grid-balance lg:grid-cols-3 grid-balance-3{{ end }}">
+  {{ .Inner }}
+</div>

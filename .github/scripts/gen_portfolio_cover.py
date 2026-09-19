@@ -236,6 +236,70 @@ def pypistats(p):
     p.append(f'<circle cx="900" cy="520" r="18" fill="{OK}"/>')
 
 
+def keelinfra(p):
+    """A key (Keycloak) in front of a three-node cluster: identity, self-hosted, HA."""
+    # cluster nodes, faint, behind the key
+    nodes = ((330, 240), (600, 180), (870, 240))
+    for (x1, y1), (x2, y2) in ((nodes[0], nodes[1]), (nodes[1], nodes[2]), (nodes[0], nodes[2])):
+        p.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{INDIGO}" stroke-width="5" opacity="0.3"/>')
+    for x, y in nodes:
+        p.append(f'<rect x="{x - 55}" y="{y - 28}" width="110" height="56" rx="14" fill="{BG}" stroke="{INDIGO}" stroke-width="7" opacity="0.7"/>')
+        p.append(f'<circle cx="{x - 28}" cy="{y}" r="7" fill="{INDIGO}" opacity="0.8"/>')
+    # the key: ring head, shaft, two teeth
+    p.append(f'<circle cx="400" cy="420" r="110" fill="{BG}" stroke="{BLUE}" stroke-width="{SW + 6}"/>')
+    p.append(f'<circle cx="400" cy="420" r="38" fill="none" stroke="{BLUE}" stroke-width="{SW}"/>')
+    p.append(f'<rect x="505" y="396" width="330" height="48" rx="24" fill="{BLUE}"/>')
+    p.append(f'<rect x="700" y="430" width="40" height="70" rx="12" fill="{BLUE}"/>')
+    p.append(f'<rect x="780" y="430" width="40" height="92" rx="12" fill="{BLUE}"/>')
+    # re-tested nightly: it passed
+    _badge(p, 940, 580, 84)
+
+
+def keelapps(p):
+    """An admin list (people, permissions) audited row by row, on a schedule."""
+    _window(p, 300, 170, 520, 440)
+    rows = ((280, 260, OK), (340, 200, OK), (420, 300, WARN), (500, 180, OK))
+    for y, w, status in rows:
+        p.append(f'<circle cx="360" cy="{y}" r="18" fill="{MUTE}" opacity="0.8"/>')
+        p.append(f'<rect x="400" y="{y - 14}" width="{w}" height="28" rx="14" fill="{MUTE}" opacity="0.45"/>')
+        if status is OK:
+            _check(p, 760, y, 16, OK, sw=10)
+        else:
+            p.append(f'<circle cx="760" cy="{y}" r="12" fill="{WARN}"/>')
+    # the schedule: a clock beside the list
+    p.append(f'<circle cx="905" cy="330" r="70" fill="{BG}" stroke="{INDIGO}" stroke-width="{SW}"/>')
+    p.append(f'<line x1="905" y1="330" x2="905" y2="284" stroke="{INDIGO}" stroke-width="10" stroke-linecap="round"/>')
+    p.append(f'<line x1="905" y1="330" x2="940" y2="352" stroke="{INDIGO}" stroke-width="10" stroke-linecap="round"/>')
+    p.append(f'<circle cx="905" cy="330" r="7" fill="{INDIGO}"/>')
+    _badge(p, 880, 560, 84)
+
+
+def keelhaven(p):
+    """Folder, lock, drive: files are encrypted before they reach storage you own."""
+    # folder
+    p.append(f'<rect x="230" y="300" width="130" height="60" rx="16" fill="{BG}" stroke="{BLUE}" stroke-width="{SW}"/>')
+    p.append(f'<rect x="230" y="330" width="300" height="220" rx="22" fill="{BG}" stroke="{BLUE}" stroke-width="{SW}"/>')
+    p.append(f'<line x1="270" y1="400" x2="490" y2="400" stroke="{BLUE}" stroke-width="6" opacity="0.5"/>')
+    p.append(f'<line x1="270" y1="450" x2="430" y2="450" stroke="{BLUE}" stroke-width="6" opacity="0.5"/>')
+    # to the lock
+    p.append(f'<line x1="560" y1="440" x2="640" y2="440" stroke="{MUTE}" stroke-width="10" stroke-linecap="round"/>')
+    p.append(f'<polyline points="615,415 640,440 615,465" fill="none" stroke="{MUTE}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>')
+    # padlock
+    p.append(f'<path d="M700,400 v-45 a50,50 0 0 1 100,0 v45" fill="none" stroke="{OK}" stroke-width="{SW + 2}" stroke-linecap="round"/>')
+    p.append(f'<rect x="672" y="400" width="156" height="110" rx="20" fill="{BG}" stroke="{OK}" stroke-width="{SW + 2}"/>')
+    p.append(f'<circle cx="750" cy="450" r="13" fill="{OK}"/>')
+    # to the drive
+    p.append(f'<line x1="850" y1="440" x2="900" y2="440" stroke="{MUTE}" stroke-width="10" stroke-linecap="round"/>')
+    p.append(f'<polyline points="875,415 900,440 875,465" fill="none" stroke="{MUTE}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>')
+    # storage you own
+    p.append(f'<rect x="925" y="335" width="110" height="210" rx="20" fill="{BG}" stroke="{INDIGO}" stroke-width="{SW}"/>')
+    for y in (385, 425):
+        p.append(f'<circle cx="980" cy="{y}" r="9" fill="{INDIGO}"/>')
+    p.append(f'<line x1="950" y1="500" x2="1010" y2="500" stroke="{INDIGO}" stroke-width="8" stroke-linecap="round" opacity="0.7"/>')
+    p.append(f'<circle cx="1000" cy="270" r="5" fill="{WARN}"/>')
+    p.append(f'<circle cx="1030" cy="295" r="4" fill="{WARN}" opacity="0.7"/>')
+
+
 COVERS = {
     "cpp-linter": cpp_linter,
     "commit-check": commit_check,
@@ -246,6 +310,9 @@ COVERS = {
     "clang-tools-distributions": clang_tools_distributions,
     "atlassian-api-py": open_delivery_spec,  # bundle dir kept for URL stability; page is Open Delivery Spec
     "pypistats": pypistats,
+    "keelinfra": keelinfra,
+    "keelapps": keelapps,
+    "keelhaven": keelhaven,
 }
 
 

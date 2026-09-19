@@ -1,0 +1,9 @@
+/* Blowfish loads this file after its own stylesheet. Keep it to what the theme
+   cannot express through configuration. */
+
+/* The WeChat QR code on the Chinese home page: the theme's compiled Tailwind
+   has no width utility between max-w-md (28rem) and full width, and 28rem
+   makes the card dominate the page. */
+.home-qrcode {
+  max-width: 20rem;
+}
