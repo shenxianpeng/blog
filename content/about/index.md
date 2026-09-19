@@ -24,7 +24,7 @@ layoutBackgroundHeaderSpace: false
 
 我是沈显鹏，在立陶宛维尔纽斯。我做的是软件从构建到上线的这一段：CI/CD、构建与发布、基础设施，以及围绕它们的工具；也写足够多的应用代码，把自己的产品做出来。
 
-做软件十六年，从 QA、测试开发到交付，现在主要做企业级 agentic 应用。
+做软件十六年，从测试、测试开发、开发一路做到 DevOps，发布、CI/CD、交付整条链路都做过；现在主要做企业级 agentic 应用。
 
 业余维护 [cpp-linter](https://github.com/cpp-linter)、[commit-check](https://github.com/commit-check/commit-check)、[Conventional Branch](https://conventionalbranch.org)、[Open Delivery Spec](https://github.com/open-delivery-spec) 和两个 Jenkins 插件，也做了 [keelinfra](https://keelinfra.io)、[keelapps](https://keelapps.app)、[Keelhaven](https://keelhaven.app) 三个产品。完整列表见[作品](/zh-cn/portfolio/)。
 
