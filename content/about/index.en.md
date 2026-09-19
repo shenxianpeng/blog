@@ -22,13 +22,15 @@ showAuthor: true
 layoutBackgroundHeaderSpace: false
 ---
 
-I'm Xianpeng Shen, in Vilnius, Lithuania. I work on how software gets built, tested and shipped: CI/CD, build and release, infrastructure, and the tooling around them, plus enough application code to ship my own products.
+I'm Xianpeng Shen, in Vilnius, Lithuania.
 
-Sixteen years in software, from QA to test automation to development to DevOps: release, CI/CD and delivery, the whole path from commit to production. These days mostly enterprise agentic applications.
+Sixteen years in software, from QA to test automation to development to DevOps. I have led small QA teams, written the automation, run Jenkins pipelines for several product lines, and done the Artifactory, container, Ansible, code coverage and supply-chain security (SLSA, SBOM) work around them, on platforms down to AIX. The 250-odd posts here since 2017 are mostly notes from that work.
 
-Outside work I maintain [cpp-linter](https://github.com/cpp-linter), [commit-check](https://github.com/commit-check/commit-check), [Conventional Branch](https://conventionalbranch.org), [Open Delivery Spec](https://github.com/open-delivery-spec) and two Jenkins plugins, and build three products: [keelinfra](https://keelinfra.io), [keelapps](https://keelapps.app) and [Keelhaven](https://keelhaven.app). The full list is on [Projects](/portfolio/).
+A few open-source tools grew out of it: [cpp-linter](https://github.com/cpp-linter), clang-format and clang-tidy on every pull request, in the CI of more than 1000 public repositories including Apache, Samsung, Qualcomm and Bloomberg; [commit-check](https://github.com/commit-check/commit-check), one policy for commit messages, branch names and AI attribution; [Conventional Branch](https://conventionalbranch.org), a branch naming spec; [Open Delivery Spec](https://github.com/open-delivery-spec), machine-checkable evidence of what was built, tested, reviewed and deployed; and two projects in the jenkinsci organization, [explain-error-plugin](https://github.com/jenkinsci/explain-error-plugin), AI diagnosis of build failures, and [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint), Jenkinsfile validation without a Jenkins server.
 
-Member of the Jenkins GitHub organization, EuroPython 2025 proposal reviewer, selected for the Anthropic Open Source Developer Program in 2026. Writing here since 2017; the Chinese versions also go out on WeChat (沈显鹏).
+Three products: [keelinfra](https://keelinfra.io), self-hosted Keycloak for production; [keelapps](https://keelapps.app), admin tools for Jira and Confluence Cloud; [Keelhaven](https://keelhaven.app), Mac backup to storage you own. All of them are on the [Projects](/portfolio/) page.
+
+Member of the Jenkins GitHub organization, EuroPython 2025 proposal reviewer, selected for the Anthropic Open Source Developer Program in 2026.
 
 ## Support
 
@@ -36,4 +38,4 @@ This blog has never carried ads. If the writing or the tools helped, you can spo
 
 ## Contact
 
-[xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com), or find me on [GitHub](https://github.com/shenxianpeng) and [X](https://x.com/xianpengshen). The full résumé is [here](/resume/).
+A problem with one of the tools, or just want to talk: [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com), or find me on [GitHub](https://github.com/shenxianpeng) and [X](https://x.com/xianpengshen). The full résumé is [here](/resume/).

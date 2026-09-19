@@ -3,14 +3,14 @@ title: "Open-source guardrails for software delivery."
 heroCaption: "Xianpeng Shen · Engineer. Builder. Maintainer."
 heroLead: "Linting, commit standards, and CI/CD automation — maintained in the open, and running in the CI of more than 1000 public repositories."
 heroButtons:
-  - label: "Read the blog"
-    url: "/posts/"
   - label: "See the projects"
     url: "/portfolio/"
+  - label: "Read the blog"
+    url: "/posts/"
     style: "outline"
 ---
 
-I'm Xianpeng Shen, in Vilnius, Lithuania. I work on how software gets built, tested and shipped: CI/CD, build and release, infrastructure, and the tools around them. I maintain [cpp-linter](https://github.com/cpp-linter), and I build two products: [keelinfra](https://keelinfra.io) (self-hosted Keycloak for production) and [keelapps](https://keelapps.app) (admin tools for Jira and Confluence). If my tools save you time, [sponsoring the work](https://github.com/sponsors/shenxianpeng) keeps them maintained.
+I'm Xianpeng Shen, in Vilnius, Lithuania. Sixteen years on the build, test and release side of software, from QA to test automation to development to DevOps, on everything from Jenkins farms to containers. [cpp-linter](https://github.com/cpp-linter) and [commit-check](https://github.com/commit-check/commit-check) grew out of that work; [keelinfra](https://keelinfra.io) (self-hosted Keycloak for production) and [keelapps](https://keelapps.app) (admin tools for Jira and Confluence) are the products. If one fits your setup, use it. If it saves you time, [sponsoring](https://github.com/sponsors/shenxianpeng) keeps it maintained.
 
 ## What I build
 

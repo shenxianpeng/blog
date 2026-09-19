@@ -3,14 +3,14 @@ title: "给软件交付装上开源护栏。"
 heroCaption: "沈显鹏 · Engineer. Builder. Maintainer."
 heroLead: "代码检查、提交规范、CI/CD 自动化——全部开源维护，跑在 1000 多个公开仓库的 CI 里。"
 heroButtons:
-  - label: "读文章"
-    url: "/zh-cn/posts/"
   - label: "看项目"
     url: "/zh-cn/portfolio/"
+  - label: "读文章"
+    url: "/zh-cn/posts/"
     style: "outline"
 ---
 
-我是沈显鹏，现居立陶宛维尔纽斯。我做的是软件从构建到上线的这一段：CI/CD、构建与发布、基础设施，以及围绕它们的工具。业余维护 [cpp-linter](https://github.com/cpp-linter)，也做两个产品：[keelinfra](https://keelinfra.io)（生产可用的自托管 Keycloak）和 [keelapps](https://keelapps.app)（Jira 与 Confluence 的管理工具）。如果这些工具帮你省了时间，欢迎[赞助](https://github.com/sponsors/shenxianpeng)，让它们持续维护下去。
+我是沈显鹏，现居立陶宛维尔纽斯。做软件十六年，从测试、测试开发、开发一路做到 DevOps，从 Jenkins 集群到容器，构建、测试、发布这一段的活都干过。[cpp-linter](https://github.com/cpp-linter) 和 [commit-check](https://github.com/commit-check/commit-check) 就是从这些活里长出来的；[keelinfra](https://keelinfra.io)（生产可用的自托管 Keycloak）和 [keelapps](https://keelapps.app)（Jira 与 Confluence 的管理工具）是我做的产品。哪个对得上你的场景，拿去用。省了你的时间，欢迎[赞助](https://github.com/sponsors/shenxianpeng)，让它持续维护。
 
 ## 我在做什么
 
