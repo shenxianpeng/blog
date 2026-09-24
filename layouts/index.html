@@ -1,0 +1,30 @@
+{{- /*
+  Copy of themes/blowfish/layouts/index.html (v3.6.0), reordered for the
+  site's home page: the landing bands (layouts/partials/home/landing.html),
+  recent writing, the page body when there is one (the WeChat QR code on the
+  Chinese home), then the sponsor band from the `sponsor` front matter.
+*/ -}}
+{{ define "main" }}
+  {{ if .Site.Params.homepage.layoutSwitcher | default false }}
+    {{ partial "home/layout-switcher.html" . }}
+  {{ else }}
+    {{ $partial := print "home/" .Site.Params.homepage.layout ".html" }}
+    {{ if templates.Exists ( printf "partials/%s" $partial ) }}
+      {{ partial $partial . }}
+    {{ else }}
+      {{ partial "home/profile.html" . }}
+    {{ end }}
+  {{ end }}
+  {{ partial "recent-articles/main.html" . }}
+  {{ with .Content }}
+    <section class="home-section home-body prose prose-lg dark:prose-invert">
+      {{ . }}
+    </section>
+  {{ end }}
+  {{ with .Params.sponsor }}
+    <section class="home-band home-sponsor">
+      <h2 class="home-sponsor-text">{{ .text | markdownify }}</h2>
+      <a class="home-btn" href="{{ .url | safeURL }}">{{ .label }}</a>
+    </section>
+  {{ end }}
+{{ end }}

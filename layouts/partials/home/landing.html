@@ -1,0 +1,89 @@
+{{- /*
+  The site's home page, replacing Blowfish's centred landing hero. Three
+  bands, all driven by front matter in content/_index.en.md and
+  content/_index.md:
+    hero      title (or heroTitle), heroLead, heroButtons
+    flagship  full-bleed dark band: label, title, text, links, demo, users
+    products  title, text, items (style: wide | dark | mint; demo optional;
+              wide tiles also take tone: mint and flip: true for demo-left)
+  `demo: <name>` renders layouts/partials/home/demo-<name>.html, an animated
+  CSS mock-up of the product at work, with `demoLabel` as its description.
+  layouts/index.html adds recent writing, the page body and the sponsor band
+  after these. Styles: .home-* in assets/css/custom.css.
+*/ -}}
+{{- $page := . -}}
+<article class="home">
+  <section class="home-hero">
+    <div class="home-hero-text">
+      {{- /* heroTitle: optional display version of the title, for a manual
+             <br> where the browser would split a CJK phrase. */}}
+      <h1 class="home-title">{{ with .Params.heroTitle }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</h1>
+      {{ with .Params.heroLead }}<p class="home-lead">{{ . | markdownify }}</p>{{ end }}
+      {{ with .Params.heroButtons }}
+        <div class="home-actions">
+          {{ range . }}
+            <a class="home-btn{{ if eq .style "outline" }} home-btn-outline{{ end }}" href="{{ .url | relURL }}">{{ .label }}</a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ with .Params.flagship }}
+    <section class="home-band home-flagship">
+      {{ with .label }}<p class="home-flagship-label">{{ . }}</p>{{ end }}
+      <h2 class="home-band-title">{{ .title }}</h2>
+      {{ with .text }}<p class="home-band-text">{{ . }}</p>{{ end }}
+      {{ with .links }}
+        <p class="home-links">
+          {{ range . }}<a href="{{ .url | safeURL }}">{{ .label }} ›</a>{{ end }}
+        </p>
+      {{ end }}
+      {{ with .demo }}{{ partial (printf "home/demo-%s.html" .) $page.Params.flagship }}{{ end }}
+      {{ with .users }}
+        <div class="home-users">
+          {{ with $page.Params.flagship.usersLabel }}<p class="home-users-label">{{ . }}</p>{{ end }}
+          <p class="home-users-list">{{ range $i, $u := . }}<span>{{ $u }}</span>{{ end }}</p>
+        </div>
+      {{ end }}
+    </section>
+  {{ end }}
+
+  {{ with .Params.products }}
+    {{ $more := .moreLabel | default "Learn more" }}
+    <section class="home-section home-products">
+      <div class="home-section-intro">
+        <h2 class="home-band-title">{{ .title }}</h2>
+        {{ with .text }}<p class="home-band-text">{{ . }}</p>{{ end }}
+      </div>
+      {{ $wide := where .items "style" "wide" }}
+      {{ $rest := where .items "style" "ne" "wide" }}
+      {{ range $wide }}
+        {{ $item := . }}
+        <a class="home-tile home-tile-wide{{ with .tone }} home-tile-{{ . }}{{ end }}{{ if .flip }} home-tile-flip{{ end }}" href="{{ .url | safeURL }}">
+          <div class="home-tile-text">
+            {{ with .label }}<span class="home-tile-label">{{ . }}</span>{{ end }}
+            <span class="home-tile-name">{{ .name }}</span>
+            <span class="home-tile-desc">{{ .text }}</span>
+            <span class="home-tile-more">{{ $more }} ›</span>
+          </div>
+          {{ with .demo }}{{ partial (printf "home/demo-%s.html" .) $item }}{{ end }}
+        </a>
+      {{ end }}
+      {{ with $rest }}
+        <div class="home-tiles">
+          {{ range . }}
+            {{ $item := . }}
+            <a class="home-tile home-tile-{{ .style | default "light" }}" href="{{ .url | safeURL }}">
+              {{ with .label }}<span class="home-tile-label">{{ . }}</span>{{ end }}
+              <span class="home-tile-name">{{ .name }}</span>
+              <span class="home-tile-desc">{{ .text }}</span>
+              <span class="home-tile-more">{{ $more }} ›</span>
+              {{ with .demo }}{{ partial (printf "home/demo-%s.html" .) $item }}{{ end }}
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </section>
+  {{ end }}
+</article>

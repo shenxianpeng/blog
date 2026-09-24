@@ -1,0 +1,71 @@
+{{- /*
+  Animated AccessLens for Jira demo (keelapps), pure CSS (.al-demo-* in
+  assets/css/custom.css), one 16s loop: a reverse lookup shows which projects
+  the "contractors" group can reach, then an access review confirms two
+  projects, flags the one anonymous users can browse for remediation, and is
+  signed off. Labels, tabs, badges and colours follow the app's Custom UI
+  (keelapps/accesslens-for-jira/static/explore). The data is illustrative.
+  Context: the product's front matter entry; `demoLabel` is the accessible
+  description.
+*/ -}}
+<div class="home-demo home-demo-al">
+<div class="al-demo" role="img" aria-label="{{ .demoLabel }}">
+<div class="al-demo-win" aria-hidden="true">
+
+<div class="al-demo-head"><strong>AccessLens</strong><span>Who can access what in Jira — nothing leaves your tenant</span></div>
+
+<div class="al-demo-tabs">
+<span>Explore</span><span>Snapshots</span><span>Reviews</span><span>Settings</span>
+<i class="al-demo-bar"></i>
+</div>
+
+<div class="al-demo-body">
+
+<div class="al-demo-explore">
+<div class="al-demo-row">
+<span class="al-demo-field">Lookup <b>By group</b></span>
+<span class="al-demo-field">Group <b>contractors (12)</b></span>
+<span class="al-demo-field al-demo-field-wide">Filter <b class="al-demo-ph">Filter rows…</b></span>
+</div>
+<div class="al-demo-muted al-demo-prov">Based on snapshot taken 21 Sep 2026, 09:00</div>
+<div class="al-demo-sum"><span><strong>contractors</strong> can access <strong>3</strong> project(s) — 1 with manage, 2 with edit</span><span class="al-demo-btn">Export CSV</span></div>
+<div class="al-demo-table al-demo-t1">
+<div class="al-demo-th"><span>Project</span><span>Access</span><span>Granted via</span><span>Risk</span></div>
+<div class="al-demo-tr al-demo-r1"><span><strong>PAY</strong> — Payments</span><span><i class="al-b al-b-browse">browse</i><i class="al-b al-b-edit">edit</i><i class="al-b al-b-manage">manage</i></span><span class="al-demo-muted">Administrators</span><span></span></div>
+<div class="al-demo-tr al-demo-r2"><span><strong>WEB</strong> — Website</span><span><i class="al-b al-b-browse">browse</i><i class="al-b al-b-edit">edit</i></span><span class="al-demo-muted">Developers</span><span></span></div>
+<div class="al-demo-tr al-demo-r3"><span><strong>HR</strong> — People Ops</span><span><i class="al-b al-b-browse">browse</i></span><span class="al-demo-muted">Users</span><span><i class="al-b al-b-high">public-access</i></span></div>
+</div>
+</div>
+
+<div class="al-demo-review">
+<div class="al-demo-rhead">
+<span><strong>Q3 access review</strong> <i class="al-b al-b-open">open</i></span>
+<span class="al-demo-signoff">
+<b class="al-demo-sw al-demo-p3">Sign off (3 pending)</b>
+<b class="al-demo-sw al-demo-p2">Sign off (2 pending)</b>
+<b class="al-demo-sw al-demo-p1">Sign off (1 pending)</b>
+<b class="al-demo-sw al-demo-p0 al-demo-go">Sign off (0 pending)</b>
+<b class="al-demo-sw al-demo-done">Signed off</b>
+</span>
+</div>
+<div class="al-demo-stats">
+<div><span class="al-demo-num">3</span><span class="al-demo-muted">Projects</span></div>
+<div><span class="al-demo-num"><b class="al-demo-sw al-demo-c0">0</b><b class="al-demo-sw al-demo-c1">1</b><b class="al-demo-sw al-demo-c2">2</b></span><span class="al-demo-muted">Confirmed</span></div>
+<div><span class="al-demo-num"><b class="al-demo-sw al-demo-x0">0</b><b class="al-demo-sw al-demo-x1">1</b></span><span class="al-demo-muted">Needs remediation</span></div>
+<div><span class="al-demo-num"><b class="al-demo-sw al-demo-p3">3</b><b class="al-demo-sw al-demo-p2">2</b><b class="al-demo-sw al-demo-p1">1</b><b class="al-demo-sw al-demo-q0">0</b></span><span class="al-demo-muted">Pending</span></div>
+</div>
+<div class="al-demo-table al-demo-t2">
+<div class="al-demo-th"><span>Project</span><span>Access</span><span>Decision</span><span></span></div>
+<div class="al-demo-tr"><span><strong>PAY</strong> — Payments</span><span class="al-demo-muted">6 subject(s) · 2 with manage</span><span class="al-demo-dec"><i class="al-b al-b-pending al-demo-sw al-demo-d1a">pending</i><i class="al-b al-b-confirmed al-demo-sw al-demo-d1b">confirmed</i></span><span class="al-demo-acts"><b class="al-demo-btn al-demo-k1">Confirm</b><b class="al-demo-btn al-demo-btn-danger">Remediate</b></span></div>
+<div class="al-demo-tr"><span><strong>WEB</strong> — Website</span><span class="al-demo-muted">4 subject(s) · 1 with manage</span><span class="al-demo-dec"><i class="al-b al-b-pending al-demo-sw al-demo-d2a">pending</i><i class="al-b al-b-confirmed al-demo-sw al-demo-d2b">confirmed</i></span><span class="al-demo-acts"><b class="al-demo-btn al-demo-k2">Confirm</b><b class="al-demo-btn al-demo-btn-danger">Remediate</b></span></div>
+<div class="al-demo-tr"><span><strong>HR</strong> — People Ops</span><span class="al-demo-muted">5 subject(s) · 1 with manage <i class="al-b al-b-high">1 risk</i></span><span class="al-demo-dec"><i class="al-b al-b-pending al-demo-sw al-demo-d3a">pending</i><i class="al-b al-b-remediate al-demo-sw al-demo-d3b">remediate</i></span><span class="al-demo-acts"><b class="al-demo-btn">Confirm</b><b class="al-demo-btn al-demo-btn-danger al-demo-k3">Remediate</b></span></div>
+</div>
+<div class="al-demo-banner"><strong>Review complete</strong> Signed off by <code>you</code> at 2026-09-24T09:14:03Z. This record is frozen and can no longer be edited.</div>
+</div>
+
+</div>
+
+<svg class="al-demo-cursor" width="17" height="24" viewBox="0 0 17 24"><path d="M1 1 L1 18.5 L5.4 14.6 L8.2 21.4 L11.4 20 L8.6 13.4 L14.5 13.2 Z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg>
+</div>
+</div>
+</div>

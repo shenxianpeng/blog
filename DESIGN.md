@@ -1,141 +1,122 @@
 # Design System — Xianpeng Shen's Blog
 
-## Product Context
+This describes what the site runs. Implementation:
 
-- **What this is:** A personal technical blog covering AI, DevOps, CI/CD, and Open Source — written by an engineer who actually cares about prose, not just shipping code.
-- **Who it's for:** Engineers, DevOps practitioners, and developers who value depth over clickbait.
-- **Space/industry:** Technical blogging / personal brand / developer education
-- **Project type:** Editorial blog (Hugo static site, GitHub Pages)
+| What | Where |
+|---|---|
+| Colours (light and dark) | `assets/css/schemes/evergreen.css`, selected by `colorScheme` in `config/_default/params.toml` |
+| Fonts | loaded in `layouts/partials/extend-head.html`, stacks in `assets/css/custom.css` |
+| Home page | `layouts/partials/home/landing.html`, `layouts/index.html`, `layouts/partials/recent-articles/main.html`, styles `.home-*` in `assets/css/custom.css`, content in the front matter of `content/_index.en.md` and `content/_index.md` |
+| Home demos | `layouts/partials/home/demo-cpp-linter.html`, `demo-keelhaven.html`, `demo-accesslens.html`, `demo-keelinfra.html`; CSS under "Animated demos" in `custom.css` |
 
-## Aesthetic Direction
+## Direction
 
-- **Direction:** Precision Editorial
-- **Decoration level:** Minimal — typography does all the work
-- **Mood:** Technical rigor with the warmth of a writer who genuinely cares about the words. Like a well-typeset technical journal, not another tool documentation site. Quiet confidence — the design doesn't try hard, so readers focus on the writing.
-- **Reference sites:** Josh Comeau (joshwcomeau.com), Lee Robinson (leerob.com), overreacted.io
+A personal site with depth, not a page of text. The tools themselves carry
+it: animated demos that show each one at work, real users and real posts.
+Structure comes from full-bleed bands that change light and dark, large tiles
+with soft shadows, and big jumps in type size — short headlines, quiet
+sublines.
 
-### EUREKA Insight
+Deliberately avoided, because they read as AI-generated:
 
-Every DevOps/CI/CD blog defaults to "documentation aesthetics" — cold white backgrounds, monospace stacks, README-like layout. But this is a blog by a *writer who happens to work in DevOps*, not a documentation maintainer. The opportunity: bring editorial warmth and strong personal identity into a category where nobody has done it.
+- the ivory-and-terracotta palette (`#F8F4EF` / `#C84B2F`), close to
+  Anthropic's brand colours;
+- a big serif headline over a small monospaced uppercase "eyebrow";
+- a row of three stats, numbered list items, one italic accent word;
+- abstract illustrations standing in for the product at work.
 
-## Typography
+## Colour — "Evergreen"
 
-- **Display/Hero:** [Fraunces](https://fonts.google.com/specimen/Fraunces) (variable optical-size serif, weight 800) — Has deliberate quirky character; feels engineered-yet-personal. Unusual in the DevOps space, which makes it memorable.
-- **Body:** [Instrument Serif](https://fonts.google.com/specimen/Instrument+Serif) — **The key differentiator.** Every other DevOps blog uses a grotesque sans-serif. A serif signals: "I write essays, not Stack Overflow answers." Instrument Serif is crisp, editorial, not stuffy.
-- **UI/Labels/Navigation:** [Geist](https://vercel.com/font) — Clean, purposeful, zero personality friction for interface text.
-- **Data/Tables/Metadata:** [Geist Mono](https://vercel.com/font) — Dates, word counts, tags, reading time. Tabular numbers, tight and precise.
-- **Code:** [Geist Mono](https://vercel.com/font) — Consistent with metadata, well-rendered at small sizes.
-- **Loading:** Google Fonts CDN via `<link>` preconnect
-- **Scale:**
-  ```
-  xs:   12px / 0.75rem   — metadata, captions
-  sm:   14px / 0.875rem  — UI labels, navigation
-  base: 17px / 1.0625rem — body text
-  lg:   20px / 1.25rem   — lead paragraphs
-  xl:   24px / 1.5rem    — subheadings (h3)
-  2xl:  32px / 2rem      — section headings (h2)
-  3xl:  48px / 3rem      — article titles (mobile)
-  4xl:  64px / 4rem      — article titles (desktop)
-  hero: 72px / 4.5rem    — homepage name
-  ```
+Cool grey-green paper, green-black ink, one forest-green accent. Green is the
+colour of a passing check, which is what the site's projects are about.
 
-## Color
+Blowfish reads the scheme as RGB triplets on a neutral / primary / secondary
+scale. Light pages use `--color-neutral` as background and `neutral-900` as
+text; dark pages use `neutral-800` and `--color-neutral`.
 
-- **Approach:** Restrained — one accent color, used sparingly and with purpose.
-
-### Light Mode
-
-| Token | Value | Usage |
+| Role | Light | Dark |
 |---|---|---|
-| `--bg` | `#F8F4EF` | Page background — warm ivory, signals "publication" not "tool" |
-| `--surface` | `#F0EDE8` | Cards, code block backgrounds, slightly elevated surfaces |
-| `--surface2` | `#E8E4DC` | Hover states, active elements |
-| `--text` | `#18181A` | Primary text — near-black with warmth, never pure #000 |
-| `--text-muted` | `#6B6460` | Secondary text, dates, descriptions |
-| `--text-subtle` | `#9A918C` | Placeholder text, least-important metadata |
-| `--accent` | `#C84B2F` | Terracotta orange — earthy, warm, tech-adjacent. Used for links, code highlights, left-border accents, tags |
-| `--accent-hover` | `#A83A20` | Accent on hover |
-| `--border` | `#D8D2CA` | Structural borders, dividers |
-| `--code-bg` | `#F0EDE8` | Code block background |
+| Page | `#F2F3EF` (neutral) | `#111914` (neutral-800) |
+| Card, tile | `#FFFFFF` | `#243029` (neutral-700) |
+| Band (sponsor) | `#E7E9E3` (neutral-100) | neutral-700 at 45% |
+| Flagship band | `#0D120F` (neutral-900), both appearances | same, with neutral-700 rules |
+| Rule | `#D3D7CF` (neutral-200) | `#243029` (neutral-700) |
+| Ink | `#0D120F` (neutral-900) | `#F2F3EF` (neutral) |
+| Body text | `#36403A` (neutral-600) | `#B7C1B9` (neutral-300) |
+| Muted text | `#5C665F` (neutral-500) | `#8A968E` (neutral-400) |
+| Accent | `#1D6A4B` (primary-600) | `#4FB88A` (primary-400) |
+| Accent hover | `#14513A` (primary-700) | `#7FD4A8` (primary-300) |
+| Mint tile | `#DDF3E6` (primary-100) | `#0A2A1E` (primary-900) |
 
-### Dark Mode
+Secondary (inline code, some theme accents) is a teal of the same family.
 
-| Token | Value | Usage |
+## Type
+
+| Use | Face | Notes |
 |---|---|---|
-| `--bg` | `#0F1117` | Deep blue-black — not pure black, not navy |
-| `--surface` | `#161B22` | Elevated surfaces |
-| `--surface2` | `#1E2530` | Further-elevated surfaces, hovers |
-| `--text` | `#E8E4DC` | Primary text — warm white, zero eye fatigue |
-| `--text-muted` | `#8A8680` | Secondary text |
-| `--text-subtle` | `#5A5654` | Least-important metadata |
-| `--accent` | `#E8400C` | Deep orange-red — same family as light mode, more vivid |
-| `--accent-hover` | `#FF5520` | Accent on hover |
-| `--border` | `#252B36` | Structural borders |
-| `--code-bg` | `#161B22` | Code block background |
+| Headings, home headlines, UI, buttons | Geist | 700 for headings, tracking −0.025em (articles) to −0.045em (home headlines) |
+| Article body | Newsreader | article body at 19px, line-height 1.7 |
+| Code, dates | Geist Mono | |
+| Chinese | Noto Serif SC in reading text; PingFang SC / Noto Sans SC in headings | line-height 1.85, no italics, no negative tracking |
 
-### Semantic Colors
-
-| Purpose | Light | Dark |
-|---|---|---|
-| Success | `#2E7D4F` | `#3DCD6E` |
-| Warning | `#A0620A` | `#F5A623` |
-| Error | `#B83232` | `#FF5555` |
-| Info | `#1A5E9E` | `#58A6FF` |
-
-## Spacing
-
-- **Base unit:** 8px
-- **Density:** Comfortable
-- **Max content width:** 680px (enforces good reading line length ~65-75 chars)
-- **Max page width:** 1200px
-- **Scale:**
-  ```
-  2xs:  2px   / 0.125rem
-  xs:   4px   / 0.25rem
-  sm:   8px   / 0.5rem
-  md:   16px  / 1rem
-  lg:   24px  / 1.5rem
-  xl:   32px  / 2rem
-  2xl:  48px  / 3rem
-  3xl:  64px  / 4rem
-  4xl:  80px  / 5rem
-  ```
-- **Border radius:** sm: 4px, md: 6px, lg: 10px, xl: 14px, full: 9999px
+All from Google Fonts. Noto Serif SC is served in unicode-range slices, so
+English pages do not download it.
 
 ## Layout
 
-- **Approach:** Grid-disciplined for article content, editorial-first on the homepage
-- **Homepage:** Large typographic hero (name fills the viewport), then curated article list
-- **Article pages:** Single centered column, max-width 680px, generous vertical spacing
-- **Grid:** 12-column at desktop (≥1024px), 4-column at tablet (≥768px), 1-column at mobile
-- **Article left-border accent:** Code blocks and blockquotes use a 3px left border in `--accent`
+From the `lg` breakpoint the body is padded 4rem a side (Blowfish uses 8rem),
+giving 72rem of content. Full-bleed bands (`.home-band`) span the viewport and
+pad their content back to the same 72rem, so everything lines up with the
+header. Article text keeps Blowfish's `max-w-prose` measure.
 
-## Motion
+## Home page
 
-- **Approach:** Intentional — only transitions that aid comprehension, no decorative animations
-- **Easing:** enter: `ease-out` / exit: `ease-in` / move: `ease-in-out`
-- **Duration:**
-  ```
-  micro:  80ms   — button state changes, focus rings
-  short:  200ms  — hover effects, link color transitions
-  medium: 300ms  — page transitions, dark mode toggle
-  ```
-- **Never:** scroll-triggered reveal animations, decorative entrance animations, bouncing anything
+Top to bottom:
 
-## Deliberate Design Risks
+1. **Hero** — centred headline (`title`, or `heroTitle` for a manual line
+   break), `heroLead` and pill buttons. No image.
+2. **Flagship** — dark full-bleed band for cpp-linter: label, short headline,
+   text, links, the animated demo, and the users row.
+3. **Products** — centred headline, then three wide tiles with animated
+   demos, alternating sides: Keelhaven (demo right), keelapps (mint, demo
+   left via `flip: true`), keelinfra (dark, demo right).
+4. **Writing** — recent posts as one list of ruled rows: date, title, tag.
+5. **Page body** — only the Chinese home has one: the WeChat QR code.
+6. **Sponsor** — full-bleed tinted band.
 
-These are intentional departures from category norms. They're what give this blog its own identity.
+## Rules
 
-1. **Serif body font** — Instrument Serif for all article body copy. Every other DevOps/CI/CD blog uses a grotesque sans-serif. This signals "essays worth reading" vs "documentation to skim."
-2. **Warm ivory background** — #F8F4EF instead of pure white. Signals "publication" not "web app." Requires careful contrast calibration, but the payoff is a warmer, more inviting reading experience.
-
-## Decisions Log
-
-| Date | Decision | Rationale |
-|---|---|---|
-| 2026-03-26 | Initial design system created | Created by /design-consultation based on visual research (Josh Comeau, overreacted.io, leerob.com, samwho.dev) + EUREKA insight about editorial differentiation in DevOps blogging space |
-| 2026-03-26 | Instrument Serif for body | Key differentiator — no DevOps blog uses serif body; signals writing quality |
-| 2026-03-26 | Warm ivory #F8F4EF background | "Publication" signal vs "documentation" — deliberate departure from sterile white/gray |
-| 2026-03-26 | Fraunces for headings | Variable optical-size serif with character; warmer than geometric alternatives (Syne) |
-| 2026-03-26 | Terracotta accent #C84B2F | Earthy, warm, unusual in the space — not the default blue/purple/teal |
-| 2026-03-26 | Rejected: vertical reading progress axis | Interesting UX concept but requires non-trivial Hugo customization; not worth the complexity at this stage |
+- Change colours in `evergreen.css`, not in component CSS. Components use
+  `rgb(var(--color-…))`.
+- The theme's compiled Tailwind only contains the utilities the theme uses.
+  New components need plain CSS in `custom.css`, not new Tailwind classes.
+- One accent. No gradient washes on page surfaces (the Keelhaven demo's
+  desktop backdrop is the one gradient), no emoji, no left-border callouts.
+- Show a product by animating what it does (`demo: <name>` in front matter
+  renders `layouts/partials/home/demo-<name>.html`), not with an
+  illustration. Demos are pure CSS loops (12–20s), fixed-pixel layouts scaled
+  with `zoom` on small screens, and fall back to one static frame under
+  `prefers-reduced-motion`. The Keelhaven demo is ported from keelhaven.app;
+  keep the two in step.
+  - **cpp-linter** (20s): four scenes, one per action input, named in the
+    chip row: `thread-comments`, `format-review`, `step-summary`,
+    `auto-fix`. Report wording is cpp-linter's own; the auto-fix commit
+    uses the action's default message and is made as the actor who
+    triggered the run. It does not show the check turning green afterwards:
+    a push made with `GITHUB_TOKEN` does not start a new run.
+  - **AccessLens** (keelapps, 16s): reverse lookup by group, then an access
+    review with Confirm / Remediate and sign-off. Labels, badges and
+    colours follow `keelapps/accesslens-for-jira/static/explore`.
+  - **keelinfra** (18s): `./configure -c examples/ha-3node.yml` and
+    `./install` (the ten plays of `playbooks/install.yml`, recap on three
+    nodes), then the nightly upgrade matrix: each supported path from
+    `upgrade-matrix.yml` goes through install, log in, upgrade and "session
+    survives". Paths and the session echo come from keelinfra/keycloak;
+    update them when `UPGRADES.md` changes.
+  - The cpp-linter, AccessLens and keelinfra CSS is generated: timings live as data in
+    `.github/scripts/gen_demo_css.py`, which rewrites the marked block in
+    `custom.css`. Edit the script and rerun it, never the block;
+    `--check` (and `.github/scripts/tests/test_gen_demo_css.py`) fails when
+    the block is stale. Each partial's header comment says what happens
+    when.
+- Text contrast at least 4.5:1 (3:1 at 24px and up) in both appearances.

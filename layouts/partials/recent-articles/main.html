@@ -1,0 +1,33 @@
+{{- /*
+  Replaces Blowfish's recent-articles block (only the home page calls it):
+  recent posts as one list of ruled rows (date, title, first tag). Heading
+  and subline come from the home page's `writing` front matter. Honours
+  homepage.showRecent, showRecentItems, showMoreLink and showMoreLinkDest
+  from params.toml.
+*/ -}}
+{{ $home := .Site.Params.homepage }}
+{{ if $home.showRecent | default false }}
+  {{ $count := $home.showRecentItems | default 5 }}
+  {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+  {{ $pages = first $count (where $pages "Params.externalUrl" "==" nil) }}
+  <section class="home-section home-writing">
+    <div class="home-section-head">
+      <div>
+        <h2 class="home-band-title">{{ with .Params.writing.title }}{{ . }}{{ else }}{{ i18n "shortcode.recent_articles" }}{{ end }}</h2>
+        {{ with .Params.writing.text }}<p class="home-band-text">{{ . }}</p>{{ end }}
+      </div>
+      {{ if $home.showMoreLink | default false }}
+        <a class="home-more" href="{{ $home.showMoreLinkDest | default "posts" | relLangURL }}">{{ i18n "home.all_posts" }} ›</a>
+      {{ end }}
+    </div>
+    <div class="home-posts">
+      {{ range $pages }}
+        <a class="home-post" href="{{ .RelPermalink }}">
+          <time class="home-meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          <span class="home-post-title">{{ .Title }}</span>
+          <span class="home-meta home-post-tag">{{ with .Params.tags }}{{ index . 0 }}{{ end }}</span>
+        </a>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

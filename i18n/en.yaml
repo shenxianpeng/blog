@@ -82,3 +82,7 @@ recent:
 archive_total:
   one: "{{ .Count }} post"
   other: "{{ .Count }} posts"
+
+# Site home page (layouts/partials/recent-articles/main.html)
+home:
+  all_posts: "All posts"
