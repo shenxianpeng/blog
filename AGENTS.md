@@ -57,8 +57,10 @@ in `content/_index.en.md` and `content/_index.md`: `title` (and optional
 (the dark cpp-linter band), `products`, `writing` and `sponsor`. The Chinese
 page's body holds the WeChat QR section. `demo: <name>` on the flagship or a
 product renders `layouts/partials/home/demo-<name>.html`, a pure-CSS animation
-of the tool at work; cpp-linter and Keelhaven have one (the Keelhaven one is
-ported from keelhaven.app), keelinfra and keelapps are text-only. Keep that page saying the same thing as the GitHub profile README
+of the tool at work: cpp-linter (thread comment, PR review, step summary,
+auto-fix), Keelhaven (ported from keelhaven.app) and keelapps (AccessLens
+permission audit). keelinfra is text-only. Wide product tiles also take
+`tone: mint` and `flip: true`. Keep that page saying the same thing as the GitHub profile README
 (github.com/shenxianpeng): one positioning line, cpp-linter as the flagship,
 keelinfra / keelapps / Keelhaven as the products.
 

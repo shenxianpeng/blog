@@ -4,7 +4,8 @@
   content/_index.md:
     hero      title (or heroTitle), heroLead, heroButtons
     flagship  full-bleed dark band: label, title, text, links, demo, users
-    products  title, text, items (style: wide | dark | mint; demo optional)
+    products  title, text, items (style: wide | dark | mint; demo optional;
+              wide tiles also take tone: mint and flip: true for demo-left)
   `demo: <name>` renders layouts/partials/home/demo-<name>.html, an animated
   CSS mock-up of the product at work, with `demoLabel` as its description.
   layouts/index.html adds recent writing, the page body and the sponsor band
@@ -59,7 +60,7 @@
       {{ $rest := where .items "style" "ne" "wide" }}
       {{ range $wide }}
         {{ $item := . }}
-        <a class="home-tile home-tile-wide" href="{{ .url | safeURL }}">
+        <a class="home-tile home-tile-wide{{ with .tone }} home-tile-{{ . }}{{ end }}{{ if .flip }} home-tile-flip{{ end }}" href="{{ .url | safeURL }}">
           <div class="home-tile-text">
             {{ with .label }}<span class="home-tile-label">{{ . }}</span>{{ end }}
             <span class="home-tile-name">{{ .name }}</span>

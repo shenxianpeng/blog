@@ -1,49 +1,71 @@
 {{- /*
   Animated cpp-linter demo, pure CSS (.cl-demo-* in assets/css/custom.css),
-  one 12s loop: the check fails, cpp-linter posts a clang-format suggestion
-  on the pull request, the cursor clicks "Commit suggestion", the code is
-  reformatted, the check re-runs green and the pull request is ready to
-  merge. The code is the example from the
-  cpp-linter-action README screenshots. Context: the flagship front matter;
-  `demoLabel` is the accessible description.
+  one 20s loop in four scenes, one per cpp-linter-action feature. The chip
+  row above the window names the input that turns each one on:
+    thread-comments  the "Cpp-Linter Report" comment on the Conversation tab
+    format-review    a clang-format suggestion on the Files changed tab
+    step-summary     the same report as the run's job summary (Checks tab)
+    auto-fix         the fix committed back to the branch
+  Report wording is cpp-linter's own (cpp_linter/rest_api/__init__.py); the
+  auto-fix commit message is the action's default, committed as the actor
+  who triggered the run. The workflow is the README example: it fails when
+  checks fail. The code is the example from the action's screenshots.
+  Context: the flagship front matter; `demoLabel` is the accessible
+  description.
 */ -}}
+{{- $gh := `<svg width="12" height="12" viewBox="0 0 16 16" fill="#fff"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>` -}}
+{{- $warn := `<svg width="22" height="22" viewBox="0 0 16 16"><path d="M7.13 1.5a1 1 0 0 1 1.74 0l6.5 11.5A1 1 0 0 1 14.5 14.5h-13a1 1 0 0 1-.87-1.5Z" fill="#f5a623"/><path d="M8 5.5v4" stroke="#1f2328" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="11.8" r=".9" fill="#1f2328"/></svg>` -}}
+{{- $fail := `<svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#cf222e"/><path d="M5.5 5.5l5 5M10.5 5.5l-5 5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>` -}}
 <div class="home-demo home-demo-cl">
 <div class="cl-demo" role="img" aria-label="{{ .demoLabel }}">
+<div class="cl-demo-chips" aria-hidden="true">
+<code class="cl-demo-chip cl-demo-v1">thread-comments</code><code class="cl-demo-chip cl-demo-v2">format-review</code><code class="cl-demo-chip cl-demo-v3">step-summary</code><code class="cl-demo-chip cl-demo-v4">auto-fix</code>
+</div>
 <div class="cl-demo-window" aria-hidden="true">
 
+<div class="cl-demo-pr"><strong>Add Dummy class</strong> <span class="cl-demo-muted">#42</span> <span class="cl-demo-open">Open</span></div>
 <div class="cl-demo-tabs">
-<span>Conversation</span><span>Commits</span><span>Checks</span><span class="cl-demo-tab-on">Files changed <em>1</em></span>
+<span class="cl-demo-tab">Conversation<i class="cl-demo-u cl-demo-u-conv"></i></span><span class="cl-demo-tab">Commits</span><span class="cl-demo-tab">Checks<i class="cl-demo-u cl-demo-u-checks"></i></span><span class="cl-demo-tab">Files changed <em>1</em><i class="cl-demo-u cl-demo-u-files"></i></span>
 </div>
-
-<div class="cl-demo-check">
-<span class="cl-demo-check-icon">
-<svg class="cl-demo-s cl-demo-s-run1" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="#bf8700" stroke-width="2" stroke-dasharray="26 12" class="cl-demo-spin"/></svg>
-<svg class="cl-demo-s cl-demo-s-fail" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#cf222e"/><path d="M5.5 5.5l5 5M10.5 5.5l-5 5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
-<svg class="cl-demo-s cl-demo-s-run2" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="#bf8700" stroke-width="2" stroke-dasharray="26 12" class="cl-demo-spin"/></svg>
-<svg class="cl-demo-s cl-demo-s-pass" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#1a7f37"/><path d="M4.8 8.2l2.1 2.1 4.3-4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-</span>
-<span class="cl-demo-check-name">cpp-linter / cpp-linter <i>(pull_request)</i></span>
-<span class="cl-demo-check-state">
-<span class="cl-demo-s cl-demo-s-run1">In progress…</span>
-<span class="cl-demo-s cl-demo-s-fail">1 file needs formatting</span>
-<span class="cl-demo-s cl-demo-s-run2">In progress…</span>
-<span class="cl-demo-s cl-demo-s-pass">Successful</span>
-</span>
-</div>
-
-<div class="cl-demo-file">
-<div class="cl-demo-filehead">src/demo.hpp</div>
-<div class="cl-demo-hunk"><b>…</b><b>…</b><code>@@ -5,12 +5,10 @@</code></div>
-<div class="cl-demo-line"><b>5</b><b>5</b><code><span class="k">class</span> <span class="t">Dummy</span> {</code></div>
-<div class="cl-demo-line"><b>6</b><b>6</b><code>    <span class="k">char</span>* useless;</code></div>
-<div class="cl-demo-line"><b>7</b><b>7</b><code>    <span class="k">int</span> numb;</code></div>
 
 <div class="cl-demo-stage">
-<div class="cl-demo-before">
+
+<div class="cl-demo-scene cl-demo-s-conv">
+<div class="cl-demo-event"><span class="cl-demo-dot"></span><span>Add Dummy class</span><code>3f9a2c1</code></div>
+<div class="cl-demo-comment cl-demo-in-comment">
+<div class="cl-demo-chead"><span class="cl-demo-avatar">{{ $gh | safeHTML }}</span><strong>github-actions</strong><span class="cl-demo-bot">bot</span><span class="cl-demo-muted">commented</span></div>
+<div class="cl-demo-report">
+<div class="cl-demo-h">Cpp-Linter Report {{ $warn | safeHTML }}</div>
+<p>Some files did not pass the configured checks!</p>
+<p>▸ clang-format reports: <strong>1 file(s) not formatted</strong></p>
+<p>Have any feedback or feature suggestions? <span class="cl-demo-link">Share it here.</span></p>
+</div>
+</div>
+<div class="cl-demo-slot">
+<div class="cl-demo-status cl-demo-in-fail">{{ $fail | safeHTML }}<div><strong>Some checks were not successful</strong><span>cpp-linter / cpp-linter (pull_request) — Failing</span></div></div>
+<div class="cl-demo-push cl-demo-in-push">
+<div class="cl-demo-event"><span class="cl-demo-dot cl-demo-dot-you"></span><span><strong>you</strong> pushed 1 commit</span></div>
+<div class="cl-demo-pushbox">
+<div class="cl-demo-pushhead"><span>style: apply clang-format fixes</span><code>8c1e4d7</code></div>
+<div class="cl-demo-line cl-demo-add"><b>8</b><code>+   <span class="t">Dummy</span>()</code></div>
+<div class="cl-demo-line cl-demo-add"><b>9</b><code>+       : numb(0)</code></div>
+<div class="cl-demo-line cl-demo-add"><b>10</b><code>+       , useless(<span class="s">"\0"</span>)</code></div>
+<div class="cl-demo-line cl-demo-add"><b>11</b><code>+   {</code></div>
+<div class="cl-demo-line cl-demo-add"><b>12</b><code>+   }</code></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="cl-demo-scene cl-demo-s-files">
+<div class="cl-demo-file">
+<div class="cl-demo-filehead">src/demo.hpp</div>
+<div class="cl-demo-line cl-demo-hunk"><b>…</b><b>…</b><code>@@ -5,12 +5,10 @@</code></div>
+<div class="cl-demo-line"><b>6</b><b>6</b><code>    <span class="k">char</span>* useless;</code></div>
+<div class="cl-demo-line"><b>7</b><b>7</b><code>    <span class="k">int</span> numb;</code></div>
 <div class="cl-demo-line cl-demo-add"><b></b><b>8</b><code>+   <span class="t">Dummy</span>() :numb(0), useless(<span class="s">"\0"</span>){}</code></div>
-<div class="cl-demo-review">
-<div class="cl-demo-review-head"><span class="cl-demo-avatar"><svg width="12" height="12" viewBox="0 0 16 16" fill="#fff"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg></span><strong>github-actions</strong><span class="cl-demo-bot">bot</span><span class="cl-demo-muted">just now</span></div>
-<div class="cl-demo-review-title">clang-format suggestions</div>
+<div class="cl-demo-review cl-demo-in-review">
+<div class="cl-demo-chead"><span class="cl-demo-avatar">{{ $gh | safeHTML }}</span><strong>github-actions</strong><span class="cl-demo-bot">bot</span><span class="cl-demo-muted">clang-format suggestions</span></div>
 <div class="cl-demo-suggest">
 <div class="cl-demo-suggest-head">Suggested change</div>
 <div class="cl-demo-line cl-demo-del"><b>8</b><code>-   <span class="t">Dummy</span>() :numb(0), useless(<span class="s">"\0"</span>){}</code></div>
@@ -52,26 +74,36 @@
 <div class="cl-demo-line cl-demo-add"><b>10</b><code>+       , useless(<span class="s">"\0"</span>)</code></div>
 <div class="cl-demo-line cl-demo-add"><b>11</b><code>+   {</code></div>
 <div class="cl-demo-line cl-demo-add"><b>12</b><code>+   }</code></div>
-<div class="cl-demo-actions">
-<span class="cl-demo-btn cl-demo-commit">Commit suggestion<svg class="cl-demo-cursor" width="17" height="24" viewBox="0 0 17 24"><path d="M1 1 L1 18.5 L5.4 14.6 L8.2 21.4 L11.4 20 L8.6 13.4 L14.5 13.2 Z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg></span><span class="cl-demo-btn cl-demo-btn-off">Add suggestion to batch</span>
+<div class="cl-demo-actions"><span class="cl-demo-btn">Commit suggestion</span><span class="cl-demo-btn cl-demo-btn-off">Add suggestion to batch</span></div>
 </div>
 </div>
 </div>
 </div>
 
-<div class="cl-demo-after">
-<div class="cl-demo-line cl-demo-add"><b></b><b>8</b><code>+   <span class="t">Dummy</span>()</code></div>
-<div class="cl-demo-line cl-demo-add"><b></b><b>9</b><code>+       : numb(0)</code></div>
-<div class="cl-demo-line cl-demo-add"><b></b><b>10</b><code>+       , useless(<span class="s">"\0"</span>)</code></div>
-<div class="cl-demo-line cl-demo-add"><b></b><b>11</b><code>+   {</code></div>
-<div class="cl-demo-line cl-demo-add"><b></b><b>12</b><code>+   }</code></div>
-<div class="cl-demo-line"><b>9</b><b>13</b><code>};</code></div>
-<div class="cl-demo-committed"><svg width="14" height="14" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#1a7f37"/><path d="M4.8 8.2l2.1 2.1 4.3-4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Suggestion committed · Apply suggestions from code review</div>
-<div class="cl-demo-merge"><svg width="28" height="28" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7.5" fill="#1a7f37"/><path d="M4.6 8.2l2.2 2.2 4.6-4.7" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><strong>All checks have passed</strong><span>1 successful check</span></div><span class="cl-demo-merge-btn">Merge pull request</span></div>
+<div class="cl-demo-scene cl-demo-s-checks">
+<div class="cl-demo-run">
+<div class="cl-demo-side">
+<span class="cl-demo-side-on">Summary</span>
+<span class="cl-demo-muted cl-demo-side-label">Jobs</span>
+<span class="cl-demo-job">{{ $fail | safeHTML }} cpp-linter</span>
+</div>
+<div class="cl-demo-main">
+<div class="cl-demo-trigger"><span class="cl-demo-muted">Triggered via pull request</span><span><span class="cl-demo-muted">Status</span> <strong>Failure</strong></span></div>
+<div class="cl-demo-summary cl-demo-in-summary">
+<div class="cl-demo-summary-head">cpp-linter summary</div>
+<div class="cl-demo-report">
+<div class="cl-demo-h">Cpp-Linter Report {{ $warn | safeHTML }}</div>
+<p>Some files did not pass the configured checks!</p>
+<p>▾ clang-format reports: <strong>1 file(s) not formatted</strong></p>
+<p class="cl-demo-indent">• src/demo.hpp</p>
+<p class="cl-demo-muted cl-demo-small">Job summary generated at run-time</p>
+</div>
+</div>
 </div>
 </div>
 </div>
 
+</div>
 </div>
 </div>
 </div>

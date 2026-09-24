@@ -40,7 +40,11 @@ products:
       label: "Atlassian Marketplace"
       text: "Permission audits, recurring tasks, scheduled reports and page approvals for Jira and Confluence Cloud."
       url: "https://keelapps.app"
-      style: "mint"
+      demo: "accesslens"
+      demoLabel: "Animated demo of AccessLens for Jira: a reverse lookup shows the three projects the contractors group can reach, then an access review confirms two, flags the project anonymous users can browse for remediation, and is signed off."
+      style: "wide"
+      tone: "mint"
+      flip: true
   moreLabel: "Learn more"
 writing:
   title: "Writing."

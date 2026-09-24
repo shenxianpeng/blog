@@ -7,7 +7,7 @@ This describes what the site runs. Implementation:
 | Colours (light and dark) | `assets/css/schemes/evergreen.css`, selected by `colorScheme` in `config/_default/params.toml` |
 | Fonts | loaded in `layouts/partials/extend-head.html`, stacks in `assets/css/custom.css` |
 | Home page | `layouts/partials/home/landing.html`, `layouts/index.html`, `layouts/partials/recent-articles/main.html`, styles `.home-*` in `assets/css/custom.css`, content in the front matter of `content/_index.en.md` and `content/_index.md` |
-| Home demos | `layouts/partials/home/demo-cpp-linter.html`, `demo-keelhaven.html`; CSS under "Animated demos" in `custom.css` |
+| Home demos | `layouts/partials/home/demo-cpp-linter.html`, `demo-keelhaven.html`, `demo-accesslens.html`; CSS under "Animated demos" in `custom.css` |
 
 ## Direction
 
@@ -77,8 +77,9 @@ Top to bottom:
    break), `heroLead` and pill buttons. No image.
 2. **Flagship** — dark full-bleed band for cpp-linter: label, short headline,
    text, links, the animated demo, and the users row.
-3. **Products** — centred headline, then a wide tile (Keelhaven, with its
-   animated demo) and two tiles (keelinfra dark, keelapps mint).
+3. **Products** — centred headline, then wide tiles with animated demos
+   (Keelhaven, demo right; keelapps in mint, demo left via `flip: true`),
+   then keelinfra as a full-width dark tile.
 4. **Writing** — recent posts as one list of ruled rows: date, title, tag.
 5. **Page body** — only the Chinese home has one: the WeChat QR code.
 6. **Sponsor** — full-bleed tinted band.
@@ -93,8 +94,19 @@ Top to bottom:
   desktop backdrop is the one gradient), no emoji, no left-border callouts.
 - Show a product by animating what it does (`demo: <name>` in front matter
   renders `layouts/partials/home/demo-<name>.html`), not with an
-  illustration. Demos are pure CSS on a 12s loop, fixed-pixel layouts scaled
+  illustration. Demos are pure CSS loops (12–20s), fixed-pixel layouts scaled
   with `zoom` on small screens, and fall back to one static frame under
   `prefers-reduced-motion`. The Keelhaven demo is ported from keelhaven.app;
   keep the two in step.
+  - **cpp-linter** (20s): four scenes, one per action input, named in the
+    chip row: `thread-comments`, `format-review`, `step-summary`,
+    `auto-fix`. Report wording is cpp-linter's own; the auto-fix commit
+    uses the action's default message and is made as the actor who
+    triggered the run. It does not show the check turning green afterwards:
+    a push made with `GITHUB_TOKEN` does not start a new run.
+  - **AccessLens** (keelapps, 16s): reverse lookup by group, then an access
+    review with Confirm / Remediate and sign-off. Labels, badges and
+    colours follow `keelapps/accesslens-for-jira/static/explore`.
+  - Timings are percentage windows in the keyframes; each partial's header
+    comment says what happens when.
 - Text contrast at least 4.5:1 (3:1 at 24px and up) in both appearances.

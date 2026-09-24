@@ -41,7 +41,11 @@ products:
       label: "Atlassian Marketplace"
       text: "Jira 与 Confluence Cloud 的权限审计、周期任务、定时报表和页面审批。"
       url: "https://keelapps.app"
-      style: "mint"
+      demo: "accesslens"
+      demoLabel: "AccessLens for Jira 的演示动画：反向查询 contractors 用户组能访问的三个项目，然后在访问审查里确认两个、把匿名用户可浏览的项目标记为需整改，最后签核。"
+      style: "wide"
+      tone: "mint"
+      flip: true
   moreLabel: "了解更多"
 writing:
   title: "文章"
