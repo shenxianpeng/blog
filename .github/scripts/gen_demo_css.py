@@ -330,7 +330,7 @@ ki = """/* keelinfra: ./configure and ./install, then the nightly upgrade matrix
 .ki-demo-gh { height: 30px; border: 1px solid #30363d; border-radius: 6px 6px 0 0; background: #161b22; color: #8b949e; font-size: 11.5px; font-weight: 600; }
 .ki-demo-gh span:not(:first-child), .ki-demo-cell { justify-self: center; }
 .ki-demo-row { height: 46px; border: 1px solid #30363d; border-top: 0; white-space: nowrap; }
-.ki-demo-row:last-of-type { border-radius: 0 0 6px 6px; }
+.ki-demo-row:nth-last-child(2) { border-radius: 0 0 6px 6px; }
 .ki-demo-cell { position: relative; width: 16px; height: 16px; }
 .ki-demo-cell i { position: absolute; inset: 0; display: flex; opacity: 0; }
 .ki-demo-spin { transform-box: view-box; transform-origin: 8px 8px; animation: ki-demo-spin 1s linear infinite; }
