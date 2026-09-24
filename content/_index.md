@@ -8,11 +8,6 @@ heroButtons:
   - label: "读文章"
     url: "/zh-cn/posts/"
     style: "outline"
-heroPortrait:
-  image: "img/sxp.jpg"
-  alt: "沈显鹏"
-  name: "沈显鹏"
-  role: "Engineer · Builder · Maintainer · 维尔纽斯"
 flagship:
   label: "cpp-linter"
   title: "每个 PR 都自动检查。"
@@ -22,8 +17,8 @@ flagship:
       url: "https://cpp-linter.github.io/"
     - label: "GitHub"
       url: "https://github.com/cpp-linter"
-  image: "img/home/cpp-linter-suggestion.png"
-  imageAlt: "cpp-linter 在 GitHub PR 上给出的 clang-format 修改建议，带 Commit suggestion 按钮"
+  demo: "cpp-linter"
+  demoLabel: "cpp-linter 在 GitHub PR 上的演示动画：检查失败，cpp-linter 给出 clang-format 修改建议，提交建议后检查通过。"
   usersLabel: "这些项目的 CI 在用"
   users: ["Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 products:
@@ -34,8 +29,8 @@ products:
       label: "免费 · 开源 · macOS 14+"
       text: "把 Mac 备份到你自己的存储。基于 restic 的原生菜单栏应用，文件离开 Mac 前就已加密。"
       url: "https://keelhaven.app"
-      image: "img/home/keelhaven.png"
-      imageAlt: "Keelhaven 的菜单栏状态、备份设置和快照列表"
+      demo: "keelhaven"
+      demoLabel: "Keelhaven 菜单栏应用的备份演示动画：名为 Documents 的备份计划备份到外置硬盘，显示进度条，完成后弹出 Backup complete 通知。"
       style: "wide"
     - name: "keelinfra"
       label: "产品"

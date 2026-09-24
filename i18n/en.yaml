@@ -86,5 +86,3 @@ archive_total:
 # Site home page (layouts/partials/recent-articles/main.html)
 home:
   all_posts: "All posts"
-  latest: "Latest"
-  read: "Read"

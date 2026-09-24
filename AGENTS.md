@@ -33,8 +33,8 @@ Instructions for AI coding agents working on this repository. This is a personal
 **`DESIGN.md` describes the site as built** — the "Evergreen" look adopted in
 2026-09: grey-green paper, green-black ink, one forest-green accent; Geist for
 headings and UI, Newsreader for reading, Geist Mono for code and dates, Noto
-Serif SC for Chinese; a home page built from full-bleed bands, real photos and
-real screenshots. A mismatch between the live site and `DESIGN.md` is a bug in
+Serif SC for Chinese; a home page built from full-bleed bands and animated
+product demos. A mismatch between the live site and `DESIGN.md` is a bug in
 one of them; fix whichever is wrong, and keep the two in step.
 
 Where it lives:
@@ -53,12 +53,12 @@ The home page overrides Blowfish's `landing` layout
 (`layouts/partials/home/landing.html`) plus `layouts/index.html` and
 `layouts/partials/recent-articles/main.html`. All of its copy is front matter
 in `content/_index.en.md` and `content/_index.md`: `title` (and optional
-`heroTitle` for a manual line break), `heroLead`, `heroButtons`,
-`heroPortrait`, `flagship` (the dark cpp-linter band), `products`, `writing`
-and `sponsor`. The Chinese page's body holds the WeChat QR section. Images are
-real — `assets/img/sxp.jpg` and screenshots in `assets/img/home/`; keelinfra
-and keelapps have no screenshot yet, and their tiles render text-only until one
-is added. Keep that page saying the same thing as the GitHub profile README
+`heroTitle` for a manual line break), `heroLead`, `heroButtons`, `flagship`
+(the dark cpp-linter band), `products`, `writing` and `sponsor`. The Chinese
+page's body holds the WeChat QR section. `demo: <name>` on the flagship or a
+product renders `layouts/partials/home/demo-<name>.html`, a pure-CSS animation
+of the tool at work; cpp-linter and Keelhaven have one (the Keelhaven one is
+ported from keelhaven.app), keelinfra and keelapps are text-only. Keep that page saying the same thing as the GitHub profile README
 (github.com/shenxianpeng): one positioning line, cpp-linter as the flagship,
 keelinfra / keelapps / Keelhaven as the products.
 

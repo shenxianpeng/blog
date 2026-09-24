@@ -7,15 +7,15 @@ This describes what the site runs. Implementation:
 | Colours (light and dark) | `assets/css/schemes/evergreen.css`, selected by `colorScheme` in `config/_default/params.toml` |
 | Fonts | loaded in `layouts/partials/extend-head.html`, stacks in `assets/css/custom.css` |
 | Home page | `layouts/partials/home/landing.html`, `layouts/index.html`, `layouts/partials/recent-articles/main.html`, styles `.home-*` in `assets/css/custom.css`, content in the front matter of `content/_index.en.md` and `content/_index.md` |
-| Home images | `assets/img/sxp.jpg` (portrait), `assets/img/home/` (product screenshots) |
+| Home demos | `layouts/partials/home/demo-cpp-linter.html`, `demo-keelhaven.html`; CSS under "Animated demos" in `custom.css` |
 
 ## Direction
 
-A personal site with depth, not a page of text. Real things carry it: a
-real photo, real screenshots of the tools at work, real users and real
-posts. Structure comes from full-bleed bands that change light and dark,
-large tiles with soft shadows, and big jumps in type size — short headlines,
-quiet sublines.
+A personal site with depth, not a page of text. The tools themselves carry
+it: animated demos that show each one at work, real users and real posts.
+Structure comes from full-bleed bands that change light and dark, large tiles
+with soft shadows, and big jumps in type size — short headlines, quiet
+sublines.
 
 Deliberately avoided, because they read as AI-generated:
 
@@ -23,7 +23,7 @@ Deliberately avoided, because they read as AI-generated:
   Anthropic's brand colours;
 - a big serif headline over a small monospaced uppercase "eyebrow";
 - a row of three stats, numbered list items, one italic accent word;
-- abstract illustrations standing in for product screenshots.
+- abstract illustrations standing in for the product at work.
 
 ## Colour — "Evergreen"
 
@@ -55,7 +55,7 @@ Secondary (inline code, some theme accents) is a teal of the same family.
 | Use | Face | Notes |
 |---|---|---|
 | Headings, home headlines, UI, buttons | Geist | 700 for headings, tracking −0.025em (articles) to −0.045em (home headlines) |
-| Article body, post summaries on the home page | Newsreader | article body at 19px, line-height 1.7 |
+| Article body | Newsreader | article body at 19px, line-height 1.7 |
 | Code, dates | Geist Mono | |
 | Chinese | Noto Serif SC in reading text; PingFang SC / Noto Sans SC in headings | line-height 1.85, no italics, no negative tracking |
 
@@ -73,16 +73,13 @@ header. Article text keeps Blowfish's `max-w-prose` measure.
 
 Top to bottom:
 
-1. **Hero** — headline (`title`, or `heroTitle` for a manual line break),
-   `heroLead`, pill buttons, and `heroPortrait` with an overlapping name card.
+1. **Hero** — centred headline (`title`, or `heroTitle` for a manual line
+   break), `heroLead` and pill buttons. No image.
 2. **Flagship** — dark full-bleed band for cpp-linter: label, short headline,
-   text, links, a real screenshot with a heavy shadow, and the users row.
-3. **Products** — centred headline, then a wide tile (Keelhaven, with a
-   screenshot) and two tiles (keelinfra dark, keelapps mint). `image` is
-   optional per product; keelinfra and keelapps have none yet — add a real
-   screenshot, never an illustration.
-4. **Writing** — the newest post as a card with its summary, the next five
-   as a list.
+   text, links, the animated demo, and the users row.
+3. **Products** — centred headline, then a wide tile (Keelhaven, with its
+   animated demo) and two tiles (keelinfra dark, keelapps mint).
+4. **Writing** — recent posts as one list of ruled rows: date, title, tag.
 5. **Page body** — only the Chinese home has one: the WeChat QR code.
 6. **Sponsor** — full-bleed tinted band.
 
@@ -92,7 +89,12 @@ Top to bottom:
   `rgb(var(--color-…))`.
 - The theme's compiled Tailwind only contains the utilities the theme uses.
   New components need plain CSS in `custom.css`, not new Tailwind classes.
-- One accent. No gradients, no emoji, no left-border callouts.
-- Images on the home page are real: photos and screenshots of the actual
-  thing.
+- One accent. No gradient washes on page surfaces (the Keelhaven demo's
+  desktop backdrop is the one gradient), no emoji, no left-border callouts.
+- Show a product by animating what it does (`demo: <name>` in front matter
+  renders `layouts/partials/home/demo-<name>.html`), not with an
+  illustration. Demos are pure CSS on a 12s loop, fixed-pixel layouts scaled
+  with `zoom` on small screens, and fall back to one static frame under
+  `prefers-reduced-motion`. The Keelhaven demo is ported from keelhaven.app;
+  keep the two in step.
 - Text contrast at least 4.5:1 (3:1 at 24px and up) in both appearances.

@@ -7,11 +7,6 @@ heroButtons:
   - label: "Read the blog"
     url: "/posts/"
     style: "outline"
-heroPortrait:
-  image: "img/sxp.jpg"
-  alt: "Xianpeng Shen"
-  name: "Xianpeng Shen"
-  role: "Engineer, builder, maintainer · Vilnius"
 flagship:
   label: "cpp-linter"
   title: "Lint every pull request."
@@ -21,8 +16,8 @@ flagship:
       url: "https://cpp-linter.github.io/"
     - label: "GitHub"
       url: "https://github.com/cpp-linter"
-  image: "img/home/cpp-linter-suggestion.png"
-  imageAlt: "A cpp-linter clang-format suggestion on a GitHub pull request, with a Commit suggestion button"
+  demo: "cpp-linter"
+  demoLabel: "Animated demo of cpp-linter on a GitHub pull request: the check fails, cpp-linter posts a clang-format suggestion, the suggestion is committed, and the check passes."
   usersLabel: "In the CI of"
   users: ["Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 products:
@@ -33,8 +28,8 @@ products:
       label: "Free · Open source · macOS 14+"
       text: "Mac backup to storage you own. A native menu bar app over restic; files are encrypted before they leave your Mac."
       url: "https://keelhaven.app"
-      image: "img/home/keelhaven.png"
-      imageAlt: "Keelhaven windows: menu bar status, backup settings and a snapshot list"
+      demo: "keelhaven"
+      demoLabel: "Animated demo of the Keelhaven menu bar app running a backup: a plan named Documents is backed up to an external drive, with a progress bar and then a Backup complete notification."
       style: "wide"
     - name: "keelinfra"
       label: "Product"

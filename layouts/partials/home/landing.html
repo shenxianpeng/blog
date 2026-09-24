@@ -2,9 +2,11 @@
   The site's home page, replacing Blowfish's centred landing hero. Three
   bands, all driven by front matter in content/_index.en.md and
   content/_index.md:
-    hero      title, heroLead, heroButtons, heroPortrait
-    flagship  full-bleed dark band: label, title, text, links, image, users
-    products  title, text, items (style: wide | dark | mint; image optional)
+    hero      title (or heroTitle), heroLead, heroButtons
+    flagship  full-bleed dark band: label, title, text, links, demo, users
+    products  title, text, items (style: wide | dark | mint; demo optional)
+  `demo: <name>` renders layouts/partials/home/demo-<name>.html, an animated
+  CSS mock-up of the product at work, with `demoLabel` as its description.
   layouts/index.html adds recent writing, the page body and the sponsor band
   after these. Styles: .home-* in assets/css/custom.css.
 */ -}}
@@ -24,18 +26,6 @@
         </div>
       {{ end }}
     </div>
-    {{ with .Params.heroPortrait }}
-      {{ with resources.Get .image }}
-        {{ $img := .Fill "880x1080 Center webp q85" }}
-        <figure class="home-portrait">
-          <img src="{{ $img.RelPermalink }}" width="440" height="540" alt="{{ $page.Params.heroPortrait.alt }}" fetchpriority="high">
-          <figcaption class="home-portrait-card">
-            <span class="home-portrait-name">{{ $page.Params.heroPortrait.name }}</span>
-            <span class="home-portrait-role">{{ $page.Params.heroPortrait.role }}</span>
-          </figcaption>
-        </figure>
-      {{ end }}
-    {{ end }}
   </section>
 
   {{ with .Params.flagship }}
@@ -48,11 +38,7 @@
           {{ range . }}<a href="{{ .url | safeURL }}">{{ .label }} ›</a>{{ end }}
         </p>
       {{ end }}
-      {{ with .image }}
-        {{ with resources.Get . }}
-          <img class="home-flagship-shot" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $page.Params.flagship.imageAlt }}" loading="lazy">
-        {{ end }}
-      {{ end }}
+      {{ with .demo }}{{ partial (printf "home/demo-%s.html" .) $page.Params.flagship }}{{ end }}
       {{ with .users }}
         <div class="home-users">
           {{ with $page.Params.flagship.usersLabel }}<p class="home-users-label">{{ . }}</p>{{ end }}
@@ -80,12 +66,7 @@
             <span class="home-tile-desc">{{ .text }}</span>
             <span class="home-tile-more">{{ $more }} ›</span>
           </div>
-          {{ with .image }}
-            {{ with resources.Get . }}
-              {{ $img := .Resize "1600x webp q90" }}
-              <img class="home-tile-shot" src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $item.imageAlt }}" loading="lazy">
-            {{ end }}
-          {{ end }}
+          {{ with .demo }}{{ partial (printf "home/demo-%s.html" .) $item }}{{ end }}
         </a>
       {{ end }}
       {{ with $rest }}
@@ -97,12 +78,7 @@
               <span class="home-tile-name">{{ .name }}</span>
               <span class="home-tile-desc">{{ .text }}</span>
               <span class="home-tile-more">{{ $more }} ›</span>
-              {{ with .image }}
-                {{ with resources.Get . }}
-                  {{ $img := .Resize "1200x webp q90" }}
-                  <img class="home-tile-shot" src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $item.imageAlt }}" loading="lazy">
-                {{ end }}
-              {{ end }}
+              {{ with .demo }}{{ partial (printf "home/demo-%s.html" .) $item }}{{ end }}
             </a>
           {{ end }}
         </div>

@@ -72,5 +72,3 @@ archive_total:
 # Site home page (layouts/partials/recent-articles/main.html)
 home:
   all_posts: "全部文章"
-  latest: "最新"
-  read: "阅读"
