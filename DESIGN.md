@@ -107,6 +107,10 @@ Top to bottom:
   - **AccessLens** (keelapps, 16s): reverse lookup by group, then an access
     review with Confirm / Remediate and sign-off. Labels, badges and
     colours follow `keelapps/accesslens-for-jira/static/explore`.
-  - Timings are percentage windows in the keyframes; each partial's header
-    comment says what happens when.
+  - The cpp-linter and AccessLens CSS is generated: timings live as data in
+    `.github/scripts/gen_demo_css.py`, which rewrites the marked block in
+    `custom.css`. Edit the script and rerun it, never the block;
+    `--check` (and `.github/scripts/tests/test_gen_demo_css.py`) fails when
+    the block is stale. Each partial's header comment says what happens
+    when.
 - Text contrast at least 4.5:1 (3:1 at 24px and up) in both appearances.

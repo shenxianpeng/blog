@@ -60,7 +60,9 @@ product renders `layouts/partials/home/demo-<name>.html`, a pure-CSS animation
 of the tool at work: cpp-linter (thread comment, PR review, step summary,
 auto-fix), Keelhaven (ported from keelhaven.app) and keelapps (AccessLens
 permission audit). keelinfra is text-only. Wide product tiles also take
-`tone: mint` and `flip: true`. Keep that page saying the same thing as the GitHub profile README
+`tone: mint` and `flip: true`. The cpp-linter and AccessLens demo CSS is generated
+by `.github/scripts/gen_demo_css.py` into a marked block of `custom.css`:
+change the timelines in the script and rerun it, do not edit the block. Keep that page saying the same thing as the GitHub profile README
 (github.com/shenxianpeng): one positioning line, cpp-linter as the flagship,
 keelinfra / keelapps / Keelhaven as the products.
 
