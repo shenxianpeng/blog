@@ -1,0 +1,37 @@
+layouts/partials/home/demo-cpp-linter.html
+  s_f31ea6d3a8ce07::t_c1dd5ce070ab2b 1-76
+  s_f31ea6d3a8ce07::t_2eb2841acda360 77
+layouts/partials/recent-articles/main.html
+  s_f31ea6d3a8ce07::t_858b012f5441fc 2-6,23-28
+assets/css/custom.css
+  s_f31ea6d3a8ce07::t_83b04f20b89813 89-90,201,204-205,211,217-221,225-228,231-232,241,360,363,402,416-417,420-426,431-436,439-440,447,492-680,687,691,695,703-706,736-739,748,750-752,754,756,759,764-767,777,779-792,813-814,817-820,823-824,827-828,837-840
+  s_f31ea6d3a8ce07::t_0b9b1920567cf7 841-842
+layouts/partials/home/demo-keelhaven.html
+  s_f31ea6d3a8ce07::t_22a42a8083f108 1-38
+AGENTS.md
+  s_f31ea6d3a8ce07::t_310186dbbde3b1 36-37,56-61
+DESIGN.md
+  s_f31ea6d3a8ce07::t_b5193debadd9cb 10,14-18,26,58,76-77,79-82,92-99
+content/_index.en.md
+  s_f31ea6d3a8ce07::t_c54517545bea6f 19-20,31-32
+content/_index.md
+  s_f31ea6d3a8ce07::t_29e359c38de3dc 20-21,32-33
+layouts/partials/home/landing.html
+  s_f31ea6d3a8ce07::t_6fb82e84e5bf66 5-9,41,69,81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "fe4da503a6ac515396225b419883675299ec0c01",
+  "prompts": {},
+  "sessions": {
+    "s_f31ea6d3a8ce07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "95f5bcd6-2568-4f3b-a2d0-1939ca7b3aa2",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
