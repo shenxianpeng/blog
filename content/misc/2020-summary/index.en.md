@@ -40,7 +40,7 @@ When writing my work summary at the end of the year, I found that I had indeed d
 
 * Learned and used some new tools, such as Ansible playbook, ELK, and JaCoCo, and applied them to projects.
 
-  > Related articles: [Getting to Know Ansible](https://shenxianpeng.dev/2020/09/getting-to-know-ansible/), [JaCoCo Practice](https://shenxianpeng.dev/2020/11/jacoco-imp/)
+  > Related articles: [Getting to Know Ansible](https://shenxianpeng.dev/2020/10/ansible-practice/), [JaCoCo Practice](https://shenxianpeng.dev/2020/11/jacoco-imp/)
 
 As a DevOps/Software Engineer, I also need good communication skills. Otherwise, no matter how good your work is, if you can't clearly share it with your colleagues and leaders, it will be counterproductive.  Especially in a multinational company like mine, I also need to share in English.
 

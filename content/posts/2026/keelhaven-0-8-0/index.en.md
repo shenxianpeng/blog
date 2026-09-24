@@ -12,7 +12,7 @@ date: 2026-09-09
 series: ["My Open Source Projects"]
 series_order: 5
 ---
-On August 31st, I released Keelhaven; on September 3rd, I introduced it in the [previous post](../keelhaven/index.md).
+On August 31st, I released Keelhaven; on September 3rd, I introduced it in the [previous post](../keelhaven/).
 
 ![Keelhaven](overview.png)
 
@@ -53,7 +53,7 @@ Keelhaven is worth ten minutes of your time to try: select the folders you want 
 
 It will back up on schedule in the background, periodically check the repository automatically, and only notify you when there's an issue.
 
-Encryption is done locally, there's no account system; backups use the standard `restic` format, which can be restored at any time or migrated to other tools. It's open source, free, and available on macOS 14 or above. Its specific workings are described in more detail in the [previous post](../keelhaven/index.md).
+Encryption is done locally, there's no account system; backups use the standard `restic` format, which can be restored at any time or migrated to other tools. It's open source, free, and available on macOS 14 or above. Its specific workings are described in more detail in the [previous post](../keelhaven/).
 
 Official website: https://keelhaven.app
 Source code: https://github.com/shenxianpeng/keelhaven

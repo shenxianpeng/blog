@@ -14,7 +14,7 @@ series_order: 2
 
 Hello everyone, I'm Shen Gong.
 
-Last month, I wrote the article [Officially Maintaining MkDocs](mkdocs-ng), announcing that I had forked MkDocs and started publishing packages under mkdocs-ng.
+Last month, I wrote the article [Officially Maintaining MkDocs](../mkdocs-ng/), announcing that I had forked MkDocs and started publishing packages under mkdocs-ng.
 
 At that time, v1.7.0 was released. Since then, four versions have been released, all the way to v1.7.3. This article summarizes the changes in these versions, provides an update to the community, and discusses the plans for v1.8.0.
 

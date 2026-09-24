@@ -11,7 +11,7 @@ series: ["GitStats"]
 series_order: 3
 ---
 
-Hello everyone! Since my last post [announcing the start of maintaining **gitstats**](../gitstats/), I've been continuously improving this project. Here are the major updates over the past two months:
+Hello everyone! Since my last post [announcing the start of maintaining **gitstats**](../../2024/gitstats/), I've been continuously improving this project. Here are the major updates over the past two months:
 
 ## ✨ New Features and Improvements
 

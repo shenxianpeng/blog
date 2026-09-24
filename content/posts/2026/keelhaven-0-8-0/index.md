@@ -13,7 +13,7 @@ series: ["我的开源项目"]
 series_order: 5
 ---
 
-8 月 31 日，我发布了 Keelhaven；9 月 3 日，我在[上一篇](../keelhaven/index.md)里介绍了它。
+8 月 31 日，我发布了 Keelhaven；9 月 3 日，我在[上一篇](../keelhaven/)里介绍了它。
 
 ![Keelhaven](overview.png)
 
@@ -54,7 +54,7 @@ Keelhaven 值得你花十分钟试一下：选好要备份的文件夹、目的�
 
 它会在后台按计划备份，定期自动检查仓库，出了问题才来提醒你。
 
-加密在本机完成，没有账号系统；备份使用标准的 restic 格式，随时可以恢复，也可以迁移到其他工具。开源、免费，macOS 14 以上可用。它具体怎么工作，[上一篇](../keelhaven/index.md)介绍得更详细。
+加密在本机完成，没有账号系统；备份使用标准的 restic 格式，随时可以恢复，也可以迁移到其他工具。开源、免费，macOS 14 以上可用。它具体怎么工作，[上一篇](../keelhaven/)介绍得更详细。
 
 
 官网：https://keelhaven.app  

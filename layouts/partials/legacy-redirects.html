@@ -53,6 +53,42 @@
   {{- end }}
 {{- end }}
 
+{{/*
+  Front matter `aliases` on Chinese pages are the URLs from before the blog
+  moved to Hugo (/2019/05/squishcoco/), and they are what old links and search
+  results still point at. While Chinese was the default language Hugo wrote
+  them at the root; since the switch it writes them under /zh-cn/, where no
+  old link points, and the root URLs returned 404. Write them at the root
+  again, unless an English page or an English alias already has that path.
+*/}}
+{{- $taken := newScratch }}
+{{- range $rel, $p := $enPages.Values }}
+  {{- $taken.Set $rel true }}
+  {{- range $p.Aliases }}{{ $taken.Set (partial "legacy-redirects-alias-path" .) true }}{{ end }}
+{{- end }}
+{{- range $rel, $p := $zhPages.Values }}
+  {{- range $p.Aliases }}
+    {{- /* .Aliases already carries the language prefix: /zh-cn/2019/05/squishcoco */ -}}
+    {{- $old := partial "legacy-redirects-alias-path" (strings.TrimPrefix "/zh-cn" .) }}
+    {{- if not ($taken.Get $old) }}
+      {{- $taken.Set $old true }}
+      {{- $to := $p.Permalink | htmlEscape }}
+      {{- $file := strings.TrimPrefix "/" (urls.Parse $old).Path }}
+      {{- if not (strings.HasSuffix $file ".html") }}{{ $file = printf "%sindex.html" $file }}{{ end }}
+      {{- (resources.FromString $file (printf $html "zh-cn" $to $to $to)).Publish }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- define "partials/legacy-redirects-alias-path" }}
+  {{- /* Hugo reports aliases without their trailing slash ("/2021/03/x") and
+         writes each one to /2021/03/x/index.html; compare them in that form. */ -}}
+  {{- $a := . }}
+  {{- if not (strings.HasPrefix $a "/") }}{{ $a = printf "/%s" $a }}{{ end }}
+  {{- if not (or (strings.HasSuffix $a "/") (strings.HasSuffix $a ".html")) }}{{ $a = printf "%s/" $a }}{{ end }}
+  {{- return $a }}
+{{- end }}
+
 {{- define "legacy-redirects-walk" }}
   {{- range .page.Pages }}
     {{- $.into.Set .RelPermalink . }}

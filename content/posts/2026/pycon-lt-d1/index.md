@@ -32,7 +32,7 @@ date: 2026-04-08
 
 我关注 Jarek 很久了，经常在 PyPA 和 GitHub 的 Issue 里看到他活跃的身影。
 
-另外我之前写过一篇关于 [prek 的文章](2025/pre-commit-competitors)，而他也是大力推广 `prek` 的关键人物之一。（插个题外话：随后我在 X 上转发了 prek 作者 Jo 的一条推文，告诉他 Jarek 在 PyCon LT 上再次提到 `prek`，没想到 Jo 不仅点赞、回复，还回关了我，双倍快乐！）
+另外我之前写过一篇关于 [prek 的文章](../../2025/pre-commit-competitors/)，而他也是大力推广 `prek` 的关键人物之一。（插个题外话：随后我在 X 上转发了 prek 作者 Jo 的一条推文，告诉他 Jarek 在 PyCon LT 上再次提到 `prek`，没想到 Jo 不仅点赞、回复，还回关了我，双倍快乐！）
 
 **交流过程中的几个有趣细节：**
 

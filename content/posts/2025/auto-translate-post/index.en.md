@@ -14,7 +14,7 @@ My blog (shenxianpeng.dev) has decent traffic from Google Search, but the primar
 
 ![Language](language.png)
 
-Come to think of it, it's not surprising—I've written a few good English articles before, such as [Using Gcov and LCOV for C/C++ Code Coverage](../gcov-example), attracting many overseas readers.
+Come to think of it, it's not surprising—I've written a few good English articles before, such as [Using Gcov and LCOV for C/C++ Code Coverage](../../2021/gcov-example/), attracting many overseas readers.
 
 However, the problem is: I mainly write in Chinese, only occasionally in English. If readers want to see a version in another language, I have to manually translate, copy, paste, preview, and submit... The whole process is tedious and time-consuming.
 

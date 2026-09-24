@@ -11,7 +11,7 @@ series: ["Conventional Branch"]
 series_order: 2
 ---
 
-One year ago today, I officially released the [Conventional Branch specification](../conventional-branch).
+One year ago today, I officially released the [Conventional Branch specification](../../2024/conventional-branch/).
 
 Over the past year, the community response has been enthusiastic, with more and more teams adopting this specification to manage their Git branches.
 

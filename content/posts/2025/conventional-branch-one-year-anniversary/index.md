@@ -11,7 +11,7 @@ series: ["Conventional Branch"]
 series_order: 2
 ---
 
-去年的今天，我正式发布了 [Conventional Branch 规范](../conventional-branch)。
+去年的今天，我正式发布了 [Conventional Branch 规范](../../2024/conventional-branch/)。
 
 这一年来，社区反响热烈，越来越多的团队开始采用这套规范来管理他们的 Git 分支。
 
