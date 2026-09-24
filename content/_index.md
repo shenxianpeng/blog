@@ -1,7 +1,6 @@
 ---
 title: "给软件交付装上开源护栏。"
-heroHighlight: "开源护栏"
-heroCaption: "沈显鹏 · Engineer. Builder. Maintainer."
+heroTitle: "给软件交付<br>装上开源护栏。"
 heroLead: "代码检查、提交规范、CI/CD 自动化——全部开源维护，跑在 1000 多个公开仓库的 CI 里。"
 heroButtons:
   - label: "看项目"
@@ -9,35 +8,54 @@ heroButtons:
   - label: "读文章"
     url: "/zh-cn/posts/"
     style: "outline"
-heroStats:
-  - value: "1000+"
-    label: "个公开仓库在 CI 里跑 cpp-linter"
-  - value: "2017"
-    label: "年开始在这里写作，中英文双语"
-  - value: "Apache · Samsung · Qualcomm · Bloomberg"
-    label: "都在用 cpp-linter 做代码检查"
+heroPortrait:
+  image: "img/sxp.jpg"
+  alt: "沈显鹏"
+  name: "沈显鹏"
+  role: "Engineer · Builder · Maintainer · 维尔纽斯"
+flagship:
+  label: "cpp-linter"
+  title: "每个 PR 都自动检查。"
+  text: "在每个 PR 上跑 clang-format 和 clang-tidy，提供 GitHub Action、pre-commit hook 和 Python 包三种用法。修改建议直接出现在代码审查里，点一下就能提交。"
+  links:
+    - label: "文档"
+      url: "https://cpp-linter.github.io/"
+    - label: "GitHub"
+      url: "https://github.com/cpp-linter"
+  image: "img/home/cpp-linter-suggestion.png"
+  imageAlt: "cpp-linter 在 GitHub PR 上给出的 clang-format 修改建议，带 Commit suggestion 按钮"
+  usersLabel: "这些项目的 CI 在用"
+  users: ["Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
+products:
+  title: "掌握在你自己手里的基础设施。"
+  text: "自托管的 Keycloak，跑在你自己租户里的 Atlassian 应用，还有备份到你自己存储的 Mac 备份工具。"
+  items:
+    - name: "Keelhaven"
+      label: "免费 · 开源 · macOS 14+"
+      text: "把 Mac 备份到你自己的存储。基于 restic 的原生菜单栏应用，文件离开 Mac 前就已加密。"
+      url: "https://keelhaven.app"
+      image: "img/home/keelhaven.png"
+      imageAlt: "Keelhaven 的菜单栏状态、备份设置和快照列表"
+      style: "wide"
+    - name: "keelinfra"
+      label: "产品"
+      text: "生产可用的自托管 Keycloak，升级路径每晚在公开 CI 里重新验证一遍。"
+      url: "https://keelinfra.io"
+      style: "dark"
+    - name: "keelapps"
+      label: "Atlassian Marketplace"
+      text: "Jira 与 Confluence Cloud 的权限审计、周期任务、定时报表和页面审批。"
+      url: "https://keelapps.app"
+      style: "mint"
+  moreLabel: "了解更多"
+writing:
+  title: "文章"
+  text: "2017 年开始写，中英文双语。"
 sponsor:
   text: "省了你的时间，欢迎赞助，让开源这部分持续维护。"
   label: "在 GitHub 上赞助"
   url: "https://github.com/sponsors/shenxianpeng"
 ---
-
-生活在立陶宛维尔纽斯，做软件构建、测试、发布这一段的工具：开源的 [cpp-linter](https://github.com/cpp-linter)、[commit-check](https://github.com/commit-check/commit-check)，也有 [keelinfra](https://keelinfra.io)、[keelapps](https://keelapps.app) 这样的产品。哪个对得上你的场景，拿去用。
-
-{{< projects title="我在做什么" more="/zh-cn/portfolio/" moreLabel="全部项目" >}}
-{{< project name="cpp-linter" url="https://github.com/cpp-linter" label="开源" >}}
-每个 PR 上自动跑 clang-format 和 clang-tidy，提供 GitHub Action、pre-commit hook 和 Python 包三种用法。Apache、Samsung、Qualcomm、Bloomberg、LLNL、Nextcloud 都在用。
-{{< /project >}}
-{{< project name="keelinfra" url="https://keelinfra.io" label="产品" >}}
-生产可用的自托管 Keycloak：高可用、备份与时间点恢复、监控、升级路径，每晚在公开 CI 里重新验证一遍。
-{{< /project >}}
-{{< project name="keelapps" url="https://keelapps.app" label="产品" >}}
-Jira 与 Confluence Cloud 的管理工具：权限审计、周期任务、定时报表、页面审批。基于 Atlassian Forge，每个应用都跑在你自己的租户里。
-{{< /project >}}
-{{< project name="Keelhaven" url="https://keelhaven.app" label="免费应用" >}}
-把 Mac 备份到你自己的存储。基于 restic 的原生菜单栏应用，文件离开 Mac 前就已加密。免费、开源。
-{{< /project >}}
-{{< /projects >}}
 
 ## 关注公众号
 

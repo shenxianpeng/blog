@@ -1,7 +1,8 @@
 {{- /*
-  Copy of themes/blowfish/layouts/index.html (v3.6.0) with one addition: the
-  sponsor band from the home page's `sponsor` front matter, after the recent
-  articles.
+  Copy of themes/blowfish/layouts/index.html (v3.6.0), reordered for the
+  site's home page: the landing bands (layouts/partials/home/landing.html),
+  recent writing, the page body when there is one (the WeChat QR code on the
+  Chinese home), then the sponsor band from the `sponsor` front matter.
 */ -}}
 {{ define "main" }}
   {{ if .Site.Params.homepage.layoutSwitcher | default false }}
@@ -14,13 +15,16 @@
       {{ partial "home/profile.html" . }}
     {{ end }}
   {{ end }}
-  <section>
-    {{ partial "recent-articles/main.html" . }}
-  </section>
+  {{ partial "recent-articles/main.html" . }}
+  {{ with .Content }}
+    <section class="home-section home-body prose prose-lg dark:prose-invert">
+      {{ . }}
+    </section>
+  {{ end }}
   {{ with .Params.sponsor }}
-    <section class="home-sponsor">
-      <p class="home-sponsor-text">{{ .text | markdownify }}</p>
-      <a class="home-btn home-btn-accent" href="{{ .url | safeURL }}">{{ .label }}</a>
+    <section class="home-band home-sponsor">
+      <h2 class="home-sponsor-text">{{ .text | markdownify }}</h2>
+      <a class="home-btn" href="{{ .url | safeURL }}">{{ .label }}</a>
     </section>
   {{ end }}
 {{ end }}

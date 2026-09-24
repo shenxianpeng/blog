@@ -1,28 +1,42 @@
 {{- /*
-  Replaces Blowfish's recent-articles block (only the home page calls it) with
-  ruled rows: date, title, first tag. Honours homepage.showRecent,
-  showRecentItems, showMoreLink and showMoreLinkDest from params.toml.
+  Replaces Blowfish's recent-articles block (only the home page calls it).
+  The newest post is a card with its summary; the next few are a list beside
+  it. Heading and subline come from the home page's `writing` front matter.
+  Honours homepage.showRecent, showRecentItems, showMoreLink and
+  showMoreLinkDest from params.toml.
 */ -}}
 {{ $home := .Site.Params.homepage }}
 {{ if $home.showRecent | default false }}
   {{ $count := $home.showRecentItems | default 5 }}
   {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-  {{ $pages = where $pages "Params.externalUrl" "==" nil }}
-  <section class="home-section">
+  {{ $pages = first $count (where $pages "Params.externalUrl" "==" nil) }}
+  <section class="home-section home-writing">
     <div class="home-section-head">
-      <h2 class="home-section-title">{{ i18n "home.recent_writing" }}</h2>
+      <div>
+        <h2 class="home-band-title">{{ with .Params.writing.title }}{{ . }}{{ else }}{{ i18n "shortcode.recent_articles" }}{{ end }}</h2>
+        {{ with .Params.writing.text }}<p class="home-band-text">{{ . }}</p>{{ end }}
+      </div>
       {{ if $home.showMoreLink | default false }}
-        <a class="home-more" href="{{ $home.showMoreLinkDest | default "posts" | relLangURL }}">{{ i18n "home.all_posts" }}{{ partial "home-arrow.html" }}</a>
+        <a class="home-more" href="{{ $home.showMoreLinkDest | default "posts" | relLangURL }}">{{ i18n "home.all_posts" }} ›</a>
       {{ end }}
     </div>
-    <div class="home-posts">
-      {{ range first $count $pages }}
-        <a class="home-post" href="{{ .RelPermalink }}">
-          <time class="home-post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-          <span class="home-post-title">{{ .Title }}</span>
-          <span class="home-post-tag">{{ with .Params.tags }}{{ index . 0 }}{{ end }}</span>
+    <div class="home-writing-grid">
+      {{ with index $pages 0 }}
+        <a class="home-feature" href="{{ .RelPermalink }}">
+          <span class="home-meta">{{ i18n "home.latest" }} · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>{{ with .Params.tags }} · {{ index . 0 }}{{ end }}</span>
+          <span class="home-feature-title">{{ .Title }}</span>
+          <span class="home-feature-summary">{{ .Params.summary | default .Summary | plainify | truncate 240 }}</span>
+          <span class="home-tile-more">{{ i18n "home.read" }} ›</span>
         </a>
       {{ end }}
+      <div class="home-posts">
+        {{ range after 1 $pages }}
+          <a class="home-post" href="{{ .RelPermalink }}">
+            <time class="home-meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+            <span class="home-post-title">{{ .Title }}</span>
+          </a>
+        {{ end }}
+      </div>
     </div>
   </section>
 {{ end }}

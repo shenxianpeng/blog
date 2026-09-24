@@ -1,50 +1,112 @@
 {{- /*
-  Replaces Blowfish's centred landing hero with the site's editorial one:
-  left-aligned caption, title (with the heroHighlight phrase set in the accent
-  colour), lead, buttons, a ruled row of heroStats, then the page content.
-  Front matter: content/_index.en.md and content/_index.md. Styles: .home-* in
-  assets/css/custom.css.
+  The site's home page, replacing Blowfish's centred landing hero. Three
+  bands, all driven by front matter in content/_index.en.md and
+  content/_index.md:
+    hero      title, heroLead, heroButtons, heroPortrait
+    flagship  full-bleed dark band: label, title, text, links, image, users
+    products  title, text, items (style: wide | dark | mint; image optional)
+  layouts/index.html adds recent writing, the page body and the sponsor band
+  after these. Styles: .home-* in assets/css/custom.css.
 */ -}}
+{{- $page := . -}}
 <article class="home">
   <section class="home-hero">
-    {{ with .Params.heroCaption }}
-      <p class="home-caption">{{ . | markdownify }}</p>
-    {{ end }}
-    {{ with .Title }}
-      {{ $title := . | htmlEscape }}
-      {{ with $.Params.heroHighlight }}
-        {{ $hl := . | htmlEscape }}
-        {{ $title = replace $title $hl (printf "<em>%s</em>" $hl) }}
+    <div class="home-hero-text">
+      {{- /* heroTitle: optional display version of the title, for a manual
+             <br> where the browser would split a CJK phrase. */}}
+      <h1 class="home-title">{{ with .Params.heroTitle }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</h1>
+      {{ with .Params.heroLead }}<p class="home-lead">{{ . | markdownify }}</p>{{ end }}
+      {{ with .Params.heroButtons }}
+        <div class="home-actions">
+          {{ range . }}
+            <a class="home-btn{{ if eq .style "outline" }} home-btn-outline{{ end }}" href="{{ .url | relURL }}">{{ .label }}</a>
+          {{ end }}
+        </div>
       {{ end }}
-      <h1 class="home-title">{{ $title | safeHTML }}</h1>
-    {{ end }}
-    {{ with .Params.heroLead }}
-      <p class="home-lead">{{ . | markdownify }}</p>
-    {{ end }}
-    {{ with .Params.heroButtons }}
-      <div class="home-actions">
-        {{ range . }}
-          <a class="home-btn{{ if eq .style "outline" }} home-btn-outline{{ end }}" href="{{ .url | relURL }}">
-            {{- .label -}}
-            {{ if ne .style "outline" }}{{ partial "home-arrow.html" }}{{ end }}
-          </a>
-        {{ end }}
-      </div>
+    </div>
+    {{ with .Params.heroPortrait }}
+      {{ with resources.Get .image }}
+        {{ $img := .Fill "880x1080 Center webp q85" }}
+        <figure class="home-portrait">
+          <img src="{{ $img.RelPermalink }}" width="440" height="540" alt="{{ $page.Params.heroPortrait.alt }}" fetchpriority="high">
+          <figcaption class="home-portrait-card">
+            <span class="home-portrait-name">{{ $page.Params.heroPortrait.name }}</span>
+            <span class="home-portrait-role">{{ $page.Params.heroPortrait.role }}</span>
+          </figcaption>
+        </figure>
+      {{ end }}
     {{ end }}
   </section>
 
-  {{ with .Params.heroStats }}
-    <section class="home-stats" aria-label="{{ i18n "home.at_a_glance" | default "At a glance" }}">
-      {{ range . }}
-        <div class="home-stat">
-          <div class="home-stat-value{{ if gt (len .value) 8 }} home-stat-value-long{{ end }}">{{ .value }}</div>
-          <div class="home-stat-label">{{ .label }}</div>
+  {{ with .Params.flagship }}
+    <section class="home-band home-flagship">
+      {{ with .label }}<p class="home-flagship-label">{{ . }}</p>{{ end }}
+      <h2 class="home-band-title">{{ .title }}</h2>
+      {{ with .text }}<p class="home-band-text">{{ . }}</p>{{ end }}
+      {{ with .links }}
+        <p class="home-links">
+          {{ range . }}<a href="{{ .url | safeURL }}">{{ .label }} ›</a>{{ end }}
+        </p>
+      {{ end }}
+      {{ with .image }}
+        {{ with resources.Get . }}
+          <img class="home-flagship-shot" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $page.Params.flagship.imageAlt }}" loading="lazy">
+        {{ end }}
+      {{ end }}
+      {{ with .users }}
+        <div class="home-users">
+          {{ with $page.Params.flagship.usersLabel }}<p class="home-users-label">{{ . }}</p>{{ end }}
+          <p class="home-users-list">{{ range $i, $u := . }}<span>{{ $u }}</span>{{ end }}</p>
         </div>
       {{ end }}
     </section>
   {{ end }}
 
-  <div class="home-body prose prose-lg dark:prose-invert">
-    {{ .Content }}
-  </div>
+  {{ with .Params.products }}
+    {{ $more := .moreLabel | default "Learn more" }}
+    <section class="home-section home-products">
+      <div class="home-section-intro">
+        <h2 class="home-band-title">{{ .title }}</h2>
+        {{ with .text }}<p class="home-band-text">{{ . }}</p>{{ end }}
+      </div>
+      {{ $wide := where .items "style" "wide" }}
+      {{ $rest := where .items "style" "ne" "wide" }}
+      {{ range $wide }}
+        {{ $item := . }}
+        <a class="home-tile home-tile-wide" href="{{ .url | safeURL }}">
+          <div class="home-tile-text">
+            {{ with .label }}<span class="home-tile-label">{{ . }}</span>{{ end }}
+            <span class="home-tile-name">{{ .name }}</span>
+            <span class="home-tile-desc">{{ .text }}</span>
+            <span class="home-tile-more">{{ $more }} ›</span>
+          </div>
+          {{ with .image }}
+            {{ with resources.Get . }}
+              {{ $img := .Resize "1600x webp q90" }}
+              <img class="home-tile-shot" src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $item.imageAlt }}" loading="lazy">
+            {{ end }}
+          {{ end }}
+        </a>
+      {{ end }}
+      {{ with $rest }}
+        <div class="home-tiles">
+          {{ range . }}
+            {{ $item := . }}
+            <a class="home-tile home-tile-{{ .style | default "light" }}" href="{{ .url | safeURL }}">
+              {{ with .label }}<span class="home-tile-label">{{ . }}</span>{{ end }}
+              <span class="home-tile-name">{{ .name }}</span>
+              <span class="home-tile-desc">{{ .text }}</span>
+              <span class="home-tile-more">{{ $more }} ›</span>
+              {{ with .image }}
+                {{ with resources.Get . }}
+                  {{ $img := .Resize "1200x webp q90" }}
+                  <img class="home-tile-shot" src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $item.imageAlt }}" loading="lazy">
+                {{ end }}
+              {{ end }}
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </section>
+  {{ end }}
 </article>

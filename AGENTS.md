@@ -31,10 +31,11 @@ Instructions for AI coding agents working on this repository. This is a personal
 ## Design System
 
 **`DESIGN.md` describes the site as built** — the "Evergreen" look adopted in
-2026-09: grey-green paper, green-black ink, one forest-green accent; Fraunces
-headings, Newsreader for reading, Geist for UI, Geist Mono for code and dates,
-Noto Serif SC for Chinese. A mismatch between the live site and `DESIGN.md` is
-a bug in one of them; fix whichever is wrong, and keep the two in step.
+2026-09: grey-green paper, green-black ink, one forest-green accent; Geist for
+headings and UI, Newsreader for reading, Geist Mono for code and dates, Noto
+Serif SC for Chinese; a home page built from full-bleed bands, real photos and
+real screenshots. A mismatch between the live site and `DESIGN.md` is a bug in
+one of them; fix whichever is wrong, and keep the two in step.
 
 Where it lives:
 
@@ -45,18 +46,21 @@ Where it lives:
 - **Site components:** plain CSS in `assets/css/custom.css`. The theme ships
   pre-compiled Tailwind containing only the utilities the theme itself uses, so
   a Tailwind class that appears nowhere in `themes/blowfish/` does nothing.
+- **Width:** `custom.css` narrows Blowfish's `lg` body padding to 4rem a side
+  (72rem of content); the home page's full-bleed bands align to that.
 
 The home page overrides Blowfish's `landing` layout
-(`layouts/partials/home/landing.html`). Its content is front matter in
-`content/_index.en.md` and `content/_index.md`: `title` with `heroHighlight`
-(the phrase set in the accent colour), `heroCaption`, `heroLead`,
-`heroButtons`, `heroStats`, and `sponsor` (the band after the recent posts,
-rendered by `layouts/index.html`). "What I build" is the `projects` / `project`
-shortcodes in the body; recent posts are ruled rows from
-`layouts/partials/recent-articles/main.html`, which honours the
-`[homepage]` settings in `params.toml`. Keep that page saying the same thing as
-the GitHub profile README (github.com/shenxianpeng): one positioning line,
-cpp-linter as the flagship, keelinfra / keelapps / Keelhaven as the products.
+(`layouts/partials/home/landing.html`) plus `layouts/index.html` and
+`layouts/partials/recent-articles/main.html`. All of its copy is front matter
+in `content/_index.en.md` and `content/_index.md`: `title` (and optional
+`heroTitle` for a manual line break), `heroLead`, `heroButtons`,
+`heroPortrait`, `flagship` (the dark cpp-linter band), `products`, `writing`
+and `sponsor`. The Chinese page's body holds the WeChat QR section. Images are
+real — `assets/img/sxp.jpg` and screenshots in `assets/img/home/`; keelinfra
+and keelapps have no screenshot yet, and their tiles render text-only until one
+is added. Keep that page saying the same thing as the GitHub profile README
+(github.com/shenxianpeng): one positioning line, cpp-linter as the flagship,
+keelinfra / keelapps / Keelhaven as the products.
 
 For other visual work: prefer a theme config option in
 `config/_default/params.toml` over new CSS, and prefer a `layouts/` override

@@ -6,17 +6,24 @@ This describes what the site runs. Implementation:
 |---|---|
 | Colours (light and dark) | `assets/css/schemes/evergreen.css`, selected by `colorScheme` in `config/_default/params.toml` |
 | Fonts | loaded in `layouts/partials/extend-head.html`, stacks in `assets/css/custom.css` |
-| Home page | `layouts/partials/home/landing.html`, `layouts/index.html`, `layouts/partials/recent-articles/main.html`, `layouts/shortcodes/projects.html` + `project.html`, styles `.home-*` in `assets/css/custom.css` |
+| Home page | `layouts/partials/home/landing.html`, `layouts/index.html`, `layouts/partials/recent-articles/main.html`, styles `.home-*` in `assets/css/custom.css`, content in the front matter of `content/_index.en.md` and `content/_index.md` |
+| Home images | `assets/img/sxp.jpg` (portrait), `assets/img/home/` (product screenshots) |
 
 ## Direction
 
-Editorial and restrained: a technical journal, not a documentation site.
-Typography carries the page; colour is one accent used sparingly. Ruled rows
-instead of cards on the home page.
+A personal site with depth, not a page of text. Real things carry it: a
+real photo, real screenshots of the tools at work, real users and real
+posts. Structure comes from full-bleed bands that change light and dark,
+large tiles with soft shadows, and big jumps in type size — short headlines,
+quiet sublines.
 
-Deliberately avoided: the ivory-and-terracotta palette (`#F8F4EF` /
-`#C84B2F`) this file used to propose. It is close to Anthropic's own brand
-colours and has become the default look of AI-generated pages.
+Deliberately avoided, because they read as AI-generated:
+
+- the ivory-and-terracotta palette (`#F8F4EF` / `#C84B2F`), close to
+  Anthropic's brand colours;
+- a big serif headline over a small monospaced uppercase "eyebrow";
+- a row of three stats, numbered list items, one italic accent word;
+- abstract illustrations standing in for product screenshots.
 
 ## Colour — "Evergreen"
 
@@ -30,13 +37,16 @@ text; dark pages use `neutral-800` and `--color-neutral`.
 | Role | Light | Dark |
 |---|---|---|
 | Page | `#F2F3EF` (neutral) | `#111914` (neutral-800) |
-| Surface (cards, code, bands) | `#E7E9E3` (neutral-100) | `#243029` (neutral-700) |
+| Card, tile | `#FFFFFF` | `#243029` (neutral-700) |
+| Band (sponsor) | `#E7E9E3` (neutral-100) | neutral-700 at 45% |
+| Flagship band | `#0D120F` (neutral-900), both appearances | same, with neutral-700 rules |
 | Rule | `#D3D7CF` (neutral-200) | `#243029` (neutral-700) |
 | Ink | `#0D120F` (neutral-900) | `#F2F3EF` (neutral) |
 | Body text | `#36403A` (neutral-600) | `#B7C1B9` (neutral-300) |
 | Muted text | `#5C665F` (neutral-500) | `#8A968E` (neutral-400) |
 | Accent | `#1D6A4B` (primary-600) | `#4FB88A` (primary-400) |
 | Accent hover | `#14513A` (primary-700) | `#7FD4A8` (primary-300) |
+| Mint tile | `#DDF3E6` (primary-100) | `#0A2A1E` (primary-900) |
 
 Secondary (inline code, some theme accents) is a teal of the same family.
 
@@ -44,23 +54,37 @@ Secondary (inline code, some theme accents) is a teal of the same family.
 
 | Use | Face | Notes |
 |---|---|---|
-| Headings, home hero, project and post titles | Fraunces | weight 600; italic 400 for the accent word in the hero |
-| Article body, home lead and descriptions | Newsreader | article body at 19px, line-height 1.7 |
-| UI, navigation, buttons, labels | Geist | |
-| Code, dates, captions, tags | Geist Mono | |
-| Chinese | Noto Serif SC | falls in behind the Latin faces; line-height 1.85, no italics, positive letter-spacing on headings |
+| Headings, home headlines, UI, buttons | Geist | 700 for headings, tracking −0.025em (articles) to −0.045em (home headlines) |
+| Article body, post summaries on the home page | Newsreader | article body at 19px, line-height 1.7 |
+| Code, dates | Geist Mono | |
+| Chinese | Noto Serif SC in reading text; PingFang SC / Noto Sans SC in headings | line-height 1.85, no italics, no negative tracking |
 
-All five come from Google Fonts. Noto Serif SC is served in unicode-range
-slices, so English pages do not download it.
+All from Google Fonts. Noto Serif SC is served in unicode-range slices, so
+English pages do not download it.
+
+## Layout
+
+From the `lg` breakpoint the body is padded 4rem a side (Blowfish uses 8rem),
+giving 72rem of content. Full-bleed bands (`.home-band`) span the viewport and
+pad their content back to the same 72rem, so everything lines up with the
+header. Article text keeps Blowfish's `max-w-prose` measure.
 
 ## Home page
 
-Top to bottom: mono caption, large Fraunces title with the `heroHighlight`
-phrase in the accent colour, Newsreader lead, two buttons (ink, outline),
-a ruled row of `heroStats`, the intro paragraph, "What I build" as numbered
-ruled rows (`projects` / `project` shortcodes), recent posts as ruled rows
-(date, title, first tag), then a sponsor band from the `sponsor` front matter.
-The Chinese home adds the WeChat QR section between projects and posts.
+Top to bottom:
+
+1. **Hero** — headline (`title`, or `heroTitle` for a manual line break),
+   `heroLead`, pill buttons, and `heroPortrait` with an overlapping name card.
+2. **Flagship** — dark full-bleed band for cpp-linter: label, short headline,
+   text, links, a real screenshot with a heavy shadow, and the users row.
+3. **Products** — centred headline, then a wide tile (Keelhaven, with a
+   screenshot) and two tiles (keelinfra dark, keelapps mint). `image` is
+   optional per product; keelinfra and keelapps have none yet — add a real
+   screenshot, never an illustration.
+4. **Writing** — the newest post as a card with its summary, the next five
+   as a list.
+5. **Page body** — only the Chinese home has one: the WeChat QR code.
+6. **Sponsor** — full-bleed tinted band.
 
 ## Rules
 
@@ -69,4 +93,6 @@ The Chinese home adds the WeChat QR section between projects and posts.
 - The theme's compiled Tailwind only contains the utilities the theme uses.
   New components need plain CSS in `custom.css`, not new Tailwind classes.
 - One accent. No gradients, no emoji, no left-border callouts.
+- Images on the home page are real: photos and screenshots of the actual
+  thing.
 - Text contrast at least 4.5:1 (3:1 at 24px and up) in both appearances.
