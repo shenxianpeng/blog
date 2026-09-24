@@ -1,0 +1,33 @@
+layouts/partials/home/demo-keelinfra.html
+  s_f31ea6d3a8ce07::t_432428634b9843 1-66
+.github/scripts/gen_demo_css.py
+  s_f31ea6d3a8ce07::t_544af63d8374ba 4-5,18-19,297-379,382-386
+.github/scripts/tests/test_gen_demo_css.py
+  s_f31ea6d3a8ce07::t_85de3aae668a1c 68,71
+AGENTS.md
+  s_f31ea6d3a8ce07::t_35a3a0d1392bc3 62-64
+DESIGN.md
+  s_f31ea6d3a8ce07::t_e23c1d73dc69b7 10,80-82,110-116
+assets/css/custom.css
+  s_f31ea6d3a8ce07::t_d3545002f84d0f 805-1001,1008,1094-1095,1147-1150,1206-1209
+content/_index.en.md
+  s_f31ea6d3a8ce07::t_e5c663f54e2182 43-50
+content/_index.md
+  s_f31ea6d3a8ce07::t_9cb9ef3e11a992 44-51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "6059d9dc72b168f7672d049f1ff0b90e56328f44",
+  "prompts": {},
+  "sessions": {
+    "s_f31ea6d3a8ce07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "95f5bcd6-2568-4f3b-a2d0-1939ca7b3aa2",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
