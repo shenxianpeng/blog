@@ -58,7 +58,7 @@ npx skills add conventional-branch/conventional-branch --skill conventional-bran
 
 ## 这个 Skill 里包含了什么
 
-这份 Skill 是按照 [Conventional Branch 规范](https://conventional-branch.github.io) 写的，主要覆盖下面几类规则。
+这份 Skill 是按照 [Conventional Branch 规范](https://conventionalbranch.org/) 写的，主要覆盖下面几类规则。
 
 第一，分支命名格式。
 
@@ -161,7 +161,7 @@ fix-login-bug
 
 如果你还不了解 Conventional Branch，可以从这里开始：
 
-- [规范文档](https://conventional-branch.github.io)
+- [规范文档](https://conventionalbranch.org/)
 - [GitHub 仓库](https://github.com/conventional-branch/conventional-branch)
 - [commit-check 验证工具](https://github.com/commit-check/commit-check)
 

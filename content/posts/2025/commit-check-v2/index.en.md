@@ -98,21 +98,21 @@ TOML's structure is naturally suitable for this "rule-declarative" configuration
 
 Other updates primarily revolve around the migration of configuration files, simplification of CLI and Hooks, and the rebuilding of the validation engine.
 
-Besides code updates, I also rewrote the entire [Commit Check documentation](https://commit-check.github.io/commit-check/) system and the [official website](https://commit-check.github.io).
+Besides code updates, I also rewrote the entire [Commit Check documentation](https://commit-check.com/) system and the [official website](https://commit-check.com/).
 
 Now you can find complete example configurations and FAQs directly on the official website:
 
-[What's New in v2.0.0](https://commit-check.github.io/commit-check/what-is-new.html)
+[What's New in v2.0.0](https://commit-check.com/changelog/#v200)
 
 ## Conclusion
 
 If you haven't used Commit Check yet, I highly recommend you try it now, and feel free to share it with your developer friends.
 
-It helps you and your team easily adopt [Conventional Commits](https://www.conventionalcommits.org) and [Conventional Branch](https://conventional-branch.github.io), and through automated checks, makes code commits more standardized, clean, and traceable.
+It helps you and your team easily adopt [Conventional Commits](https://www.conventionalcommits.org) and [Conventional Branch](https://conventionalbranch.org/), and through automated checks, makes code commits more standardized, clean, and traceable.
 
 📍 Project Address: **github.com/commit-check/commit-check**
 
-📄 More Details: https://commit-check.github.io/commit-check/
+📄 More Details: https://commit-check.com/
 
 ---
 

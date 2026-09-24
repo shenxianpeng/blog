@@ -19,7 +19,7 @@ For example, when searching "Conventional Branch" on Google, the specification p
 
 ![Google Search](google-search.png)
 
-According to Google Analytics data, the specification homepage (**https://conventional-branch.github.io/**) has accumulated over 12K visits in the past year, with widespread adoption beginning earlier this year.
+According to Google Analytics data, the specification homepage (**https://conventionalbranch.org/**) has accumulated over 12K visits in the past year, with widespread adoption beginning earlier this year.
 
 Currently, **the Conventional Branch specification has been translated into multiple languages**, including Chinese and Portuguese.
 

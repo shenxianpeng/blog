@@ -98,22 +98,22 @@ TOML 的结构天然适合这种“规则声明式”的配置方式，可以直
 
 其他的更新基本都是围绕着配置文件的迁移、简化 CLI 和 Hooks 以及重构验证引擎进行的。
 
-除了代码更新，这次我还重写了整个 [Commit Check 文档](https://commit-check.github.io/commit-check/) 体系，以及[官网](https://commit-check.github.io)。
+除了代码更新，这次我还重写了整个 [Commit Check 文档](https://commit-check.com/) 体系，以及[官网](https://commit-check.com/)。
 
 现在你可以在官网直接找到完整的示例配置和常见问题：
 
-[What's New in v2.0.0](https://commit-check.github.io/commit-check/what-is-new.html)
+[What's New in v2.0.0](https://commit-check.com/changelog/#v200)
 
 ## 结语
 
 如果你还没有用过 Commit Check，
 强烈建议你现在就试试，也欢迎转发给身边的开发者朋友。
 
-它能帮你和团队轻松采用 [Conventional Commits](https://www.conventionalcommits.org) 和 [Conventional Branch](https://conventional-branch.github.io) 并通过自动化检查，让代码提交更规范、整洁、可追溯。
+它能帮你和团队轻松采用 [Conventional Commits](https://www.conventionalcommits.org) 和 [Conventional Branch](https://conventionalbranch.org/) 并通过自动化检查，让代码提交更规范、整洁、可追溯。
 
 📍 项目地址：**github.com/commit-check/commit-check**
 
-📄 更多详情：https://commit-check.github.io/commit-check/
+📄 更多详情：https://commit-check.com/
 
 ---
 

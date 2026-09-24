@@ -124,6 +124,6 @@ pip install commit-check
 
 📍 Project address: **github.com/commit-check/commit-check**
 
-📄 More details: https://commit-check.github.io/commit-check/
+📄 More details: https://commit-check.com/
 
 If you find it useful, please Star it, and feel free to open an Issue to tell me what other pain points your team would like to govern.

@@ -19,7 +19,7 @@ series_order: 2
 
 ![Google Search](google-search.png)
 
-根据 Google Analytics 的数据，过去一年里，规范主页（**https://conventional-branch.github.io/**）的累计访问量已超过 12K，而真正的广泛使用始于今年年初。
+根据 Google Analytics 的数据，过去一年里，规范主页（**https://conventionalbranch.org/**）的累计访问量已超过 12K，而真正的广泛使用始于今年年初。
 
 目前，**Conventional Branch 规范已经被翻译成多种语言**，包括中文和葡萄牙语。
 
