@@ -1,0 +1,71 @@
+config/_default/languages.en.toml
+  s_fb9a2b74d1e9dc::t_81f8e7793182ce 25
+config/_default/languages.zh-cn.toml
+  s_fb9a2b74d1e9dc::t_f2e9a6fe53c774 25
+content/misc/2019-summary/index.md
+  s_fb9a2b74d1e9dc::t_1aa98a6b3b46a8 8-9
+content/misc/2020-summary/index.en.md
+  s_fb9a2b74d1e9dc::t_5a5903a989438a 43
+content/misc/2020-summary/index.md
+  s_fb9a2b74d1e9dc::t_523d8e7d603ed6 45
+content/posts/2018/why-i-move-to-development/index.md
+  s_fb9a2b74d1e9dc::t_afcb2e53d836a1 10-11
+content/posts/2019/git-stats/index.en.md
+  s_fb9a2b74d1e9dc::t_c75db82183f035 28
+content/posts/2019/git-stats/index.md
+  s_fb9a2b74d1e9dc::t_9a1e32a2f0620f 30
+content/posts/2020/jenkins-best-practice/index.md
+  s_fb9a2b74d1e9dc::t_b3e851f18d70f9 9
+content/posts/2020/what-is-artifactory/index.en.md
+  s_fb9a2b74d1e9dc::t_843799fd5b1c6e 162,199-200
+content/posts/2020/what-is-artifactory/index.md
+  s_fb9a2b74d1e9dc::t_c2f82d4eadefe1 164,201-202
+content/posts/2021/jacoco-imp/index.md
+  s_fb9a2b74d1e9dc::t_4a6d4731361815 9
+content/posts/2024/garasign/index.en.md
+  s_fb9a2b74d1e9dc::t_b5dc757d946609 12
+content/posts/2024/garasign/index.md
+  s_fb9a2b74d1e9dc::t_e10a0b5c8c1af3 14
+content/posts/2024/psf-infra/index.md
+  s_fb9a2b74d1e9dc::t_ea56cf81f0e5d2 17,66,122
+content/posts/2025/auto-translate-post/index.en.md
+  s_fb9a2b74d1e9dc::t_04195df86662d7 17
+content/posts/2025/auto-translate-post/index.md
+  s_fb9a2b74d1e9dc::t_e23cc866d6c0c1 17
+content/posts/2025/conventional-branch-one-year-anniversary/index.en.md
+  s_fb9a2b74d1e9dc::t_50424505493c0e 14
+content/posts/2025/conventional-branch-one-year-anniversary/index.md
+  s_fb9a2b74d1e9dc::t_c436738c9048e2 14
+content/posts/2025/explain-error-plugin/index.md
+  s_fb9a2b74d1e9dc::t_bca23c3b7682ee 13-14
+content/posts/2025/gitstats-update/index.en.md
+  s_fb9a2b74d1e9dc::t_f739c5239d71bb 14
+content/posts/2026/keelhaven-0-8-0/index.en.md
+  s_fb9a2b74d1e9dc::t_1d68be65356bf6 15,56
+content/posts/2026/keelhaven-0-8-0/index.md
+  s_fb9a2b74d1e9dc::t_9397875f8661c3 16,57
+content/posts/2026/mkdocs-ng-update/index.en.md
+  s_fb9a2b74d1e9dc::t_34a8c57402dc69 17
+content/posts/2026/mkdocs-ng-update/index.md
+  s_fb9a2b74d1e9dc::t_74f196dd5bb34a 17
+content/posts/2026/pycon-lt-d1/index.md
+  s_fb9a2b74d1e9dc::t_a5346f9700e240 35
+layouts/partials/legacy-redirects.html
+  s_fb9a2b74d1e9dc::t_0b17c4199592b4 56-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "60b6aa4e9f98c3fb27b17943572f9b0239f4de3c",
+  "prompts": {},
+  "sessions": {
+    "s_fb9a2b74d1e9dc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c7234209-6abf-43ab-99a6-e68dabc8c7f4",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
