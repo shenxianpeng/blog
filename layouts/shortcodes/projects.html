@@ -1,0 +1,16 @@
+{{- /*
+  The home page's "What I build" list: a section heading with an optional
+  link beside it, then one ruled row per inner {{< project >}}.
+  Styles live in assets/css/custom.css (.home-*).
+*/ -}}
+<section class="not-prose home-section">
+  <div class="home-section-head">
+    {{ with .Get "title" }}<h2 class="home-section-title">{{ . }}</h2>{{ end }}
+    {{ with .Get "more" }}
+      <a class="home-more" href="{{ . | relURL }}">{{ $.Get "moreLabel" | default "More" }}{{ partial "home-arrow.html" }}</a>
+    {{ end }}
+  </div>
+  <div class="home-projects">
+    {{ .Inner }}
+  </div>
+</section>

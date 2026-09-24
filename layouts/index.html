@@ -1,0 +1,26 @@
+{{- /*
+  Copy of themes/blowfish/layouts/index.html (v3.6.0) with one addition: the
+  sponsor band from the home page's `sponsor` front matter, after the recent
+  articles.
+*/ -}}
+{{ define "main" }}
+  {{ if .Site.Params.homepage.layoutSwitcher | default false }}
+    {{ partial "home/layout-switcher.html" . }}
+  {{ else }}
+    {{ $partial := print "home/" .Site.Params.homepage.layout ".html" }}
+    {{ if templates.Exists ( printf "partials/%s" $partial ) }}
+      {{ partial $partial . }}
+    {{ else }}
+      {{ partial "home/profile.html" . }}
+    {{ end }}
+  {{ end }}
+  <section>
+    {{ partial "recent-articles/main.html" . }}
+  </section>
+  {{ with .Params.sponsor }}
+    <section class="home-sponsor">
+      <p class="home-sponsor-text">{{ .text | markdownify }}</p>
+      <a class="home-btn home-btn-accent" href="{{ .url | safeURL }}">{{ .label }}</a>
+    </section>
+  {{ end }}
+{{ end }}

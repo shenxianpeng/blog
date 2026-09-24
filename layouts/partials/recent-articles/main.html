@@ -1,0 +1,28 @@
+{{- /*
+  Replaces Blowfish's recent-articles block (only the home page calls it) with
+  ruled rows: date, title, first tag. Honours homepage.showRecent,
+  showRecentItems, showMoreLink and showMoreLinkDest from params.toml.
+*/ -}}
+{{ $home := .Site.Params.homepage }}
+{{ if $home.showRecent | default false }}
+  {{ $count := $home.showRecentItems | default 5 }}
+  {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+  {{ $pages = where $pages "Params.externalUrl" "==" nil }}
+  <section class="home-section">
+    <div class="home-section-head">
+      <h2 class="home-section-title">{{ i18n "home.recent_writing" }}</h2>
+      {{ if $home.showMoreLink | default false }}
+        <a class="home-more" href="{{ $home.showMoreLinkDest | default "posts" | relLangURL }}">{{ i18n "home.all_posts" }}{{ partial "home-arrow.html" }}</a>
+      {{ end }}
+    </div>
+    <div class="home-posts">
+      {{ range first $count $pages }}
+        <a class="home-post" href="{{ .RelPermalink }}">
+          <time class="home-post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          <span class="home-post-title">{{ .Title }}</span>
+          <span class="home-post-tag">{{ with .Params.tags }}{{ index . 0 }}{{ end }}</span>
+        </a>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

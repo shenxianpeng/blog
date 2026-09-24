@@ -1,0 +1,11 @@
+{{- /* One row inside {{< projects >}}: number, name, label, description. */ -}}
+{{- $url := .Get "url" -}}
+<a class="home-project" href="{{ $url | safeURL }}"{{ if strings.HasPrefix $url "http" }} target="_blank" rel="noopener"{{ end }}>
+  <span class="home-project-num">{{ printf "%02d" (add .Ordinal 1) }}</span>
+  <span class="home-project-name">
+    <span class="home-project-title">{{ .Get "name" }}</span>
+    {{ with .Get "label" }}<span class="home-project-label">{{ . }}</span>{{ end }}
+  </span>
+  <span class="home-project-desc">{{ .Inner | .Page.RenderString }}</span>
+  <svg class="home-project-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+</a>

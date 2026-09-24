@@ -30,40 +30,37 @@ Instructions for AI coding agents working on this repository. This is a personal
 
 ## Design System
 
-**`DESIGN.md` is an unbuilt proposal, not a description of this site.** None of it
-is implemented: the only custom CSS is the few lines in `assets/css/custom.css`
-(which Blowfish loads automatically) and `Instrument Serif`, `#F8F4EF`,
-`#C84B2F` and `Fraunces` appear zero times outside that document. The live site
-runs stock Blowfish with the `slate` colour scheme and the theme's default
-fonts.
+**`DESIGN.md` describes the site as built** — the "Evergreen" look adopted in
+2026-09: grey-green paper, green-black ink, one forest-green accent; Fraunces
+headings, Newsreader for reading, Geist for UI, Geist Mono for code and dates,
+Noto Serif SC for Chinese. A mismatch between the live site and `DESIGN.md` is
+a bug in one of them; fix whichever is wrong, and keep the two in step.
 
-So:
+Where it lives:
 
-- **Do not** treat a mismatch with `DESIGN.md` as a bug, and do not "fix" the site
-  to match it. Everything would look like a violation, because none of it was
-  ever built.
-- **Do not** start implementing `DESIGN.md` as a side effect of another task.
-  Adopting it is a large visual overhaul and needs the user to ask for it
-  explicitly.
-- Read it for intent — the editorial, restrained, typography-first direction is
-  real and worth respecting in any new UI.
-- If the user does adopt it, update this section; if they abandon it, delete
-  `DESIGN.md` so it stops misleading agents.
+- **Colours:** `assets/css/schemes/evergreen.css`, selected by `colorScheme` in
+  `config/_default/params.toml`. Change a colour there, never in component CSS.
+- **Fonts:** Google Fonts `<link>` in `layouts/partials/extend-head.html`,
+  font stacks at the top of `assets/css/custom.css`.
+- **Site components:** plain CSS in `assets/css/custom.css`. The theme ships
+  pre-compiled Tailwind containing only the utilities the theme itself uses, so
+  a Tailwind class that appears nowhere in `themes/blowfish/` does nothing.
 
-The home page uses Blowfish's `landing` layout: the hero (title, `heroCaption`,
-`heroLead`, `heroButtons`) comes from the front matter of `content/_index.en.md`
-and `content/_index.md`, the "What I build" grid below it is the `feature-grid`
-shortcode in the same files (the site's `layouts/shortcodes/feature-grid.html`
-adds `columns="2"` and `align="left"` to the theme's version, so four cards
-make a readable 2x2 grid), and the theme appends the six most recent posts.
-Keep that page saying the same thing as the GitHub profile README
-(github.com/shenxianpeng): one positioning line, cpp-linter as the flagship,
-keelinfra / keelapps / Keelhaven as the products.
+The home page overrides Blowfish's `landing` layout
+(`layouts/partials/home/landing.html`). Its content is front matter in
+`content/_index.en.md` and `content/_index.md`: `title` with `heroHighlight`
+(the phrase set in the accent colour), `heroCaption`, `heroLead`,
+`heroButtons`, `heroStats`, and `sponsor` (the band after the recent posts,
+rendered by `layouts/index.html`). "What I build" is the `projects` / `project`
+shortcodes in the body; recent posts are ruled rows from
+`layouts/partials/recent-articles/main.html`, which honours the
+`[homepage]` settings in `params.toml`. Keep that page saying the same thing as
+the GitHub profile README (github.com/shenxianpeng): one positioning line,
+cpp-linter as the flagship, keelinfra / keelapps / Keelhaven as the products.
 
-For visual work today, the operative rule is simpler: **match the surrounding
-Blowfish styling.** Prefer a theme config option in `config/_default/params.toml`
-over new CSS, and prefer a `layouts/` override over touching
-`themes/blowfish/`.
+For other visual work: prefer a theme config option in
+`config/_default/params.toml` over new CSS, and prefer a `layouts/` override
+over touching `themes/blowfish/`.
 
 ## Writing Style & Tone
 

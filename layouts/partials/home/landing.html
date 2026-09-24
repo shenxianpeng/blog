@@ -1,0 +1,50 @@
+{{- /*
+  Replaces Blowfish's centred landing hero with the site's editorial one:
+  left-aligned caption, title (with the heroHighlight phrase set in the accent
+  colour), lead, buttons, a ruled row of heroStats, then the page content.
+  Front matter: content/_index.en.md and content/_index.md. Styles: .home-* in
+  assets/css/custom.css.
+*/ -}}
+<article class="home">
+  <section class="home-hero">
+    {{ with .Params.heroCaption }}
+      <p class="home-caption">{{ . | markdownify }}</p>
+    {{ end }}
+    {{ with .Title }}
+      {{ $title := . | htmlEscape }}
+      {{ with $.Params.heroHighlight }}
+        {{ $hl := . | htmlEscape }}
+        {{ $title = replace $title $hl (printf "<em>%s</em>" $hl) }}
+      {{ end }}
+      <h1 class="home-title">{{ $title | safeHTML }}</h1>
+    {{ end }}
+    {{ with .Params.heroLead }}
+      <p class="home-lead">{{ . | markdownify }}</p>
+    {{ end }}
+    {{ with .Params.heroButtons }}
+      <div class="home-actions">
+        {{ range . }}
+          <a class="home-btn{{ if eq .style "outline" }} home-btn-outline{{ end }}" href="{{ .url | relURL }}">
+            {{- .label -}}
+            {{ if ne .style "outline" }}{{ partial "home-arrow.html" }}{{ end }}
+          </a>
+        {{ end }}
+      </div>
+    {{ end }}
+  </section>
+
+  {{ with .Params.heroStats }}
+    <section class="home-stats" aria-label="{{ i18n "home.at_a_glance" | default "At a glance" }}">
+      {{ range . }}
+        <div class="home-stat">
+          <div class="home-stat-value{{ if gt (len .value) 8 }} home-stat-value-long{{ end }}">{{ .value }}</div>
+          <div class="home-stat-label">{{ .label }}</div>
+        </div>
+      {{ end }}
+    </section>
+  {{ end }}
+
+  <div class="home-body prose prose-lg dark:prose-invert">
+    {{ .Content }}
+  </div>
+</article>
