@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Generate the CSS for the home page's animated product demos.
 
-The cpp-linter and AccessLens demos (layouts/partials/home/demo-cpp-linter.html
-and demo-accesslens.html) are pure CSS. Each element that appears, swaps or
+The cpp-linter, AccessLens and keelinfra demos
+(layouts/partials/home/demo-{cpp-linter,accesslens,keelinfra}.html) are pure CSS. Each element that appears, swaps or
 moves has its own keyframes, and a scene change touches dozens of them, so the
 timelines live here as plain data -- "visible from 26% to 49% of the loop",
 "cursor at (474, 238) at 42%" -- and this script writes the CSS.
@@ -15,7 +15,8 @@ markers.
     python3 .github/scripts/gen_demo_css.py           # rewrite the block
     python3 .github/scripts/gen_demo_css.py --check   # exit 1 if it is stale
 
-Timings are percentages of each loop (cpp-linter 20s, AccessLens 16s). The
+Timings are percentages of each loop (cpp-linter 20s, AccessLens 16s,
+keelinfra 18s). The
 header comment of each partial says what happens when. Cursor coordinates are
 pixels inside the fixed-size demo window, measured to the pointer's tip.
 """
@@ -293,9 +294,96 @@ cur = [("0%, 18%", "opacity: 0; " + c(430, 400)), ("20%", "opacity: 1; " + c(420
 al_k.append(props("al-demo-cursor", cur))
 
 
+# ---- keelinfra (18s loop) -----------------------------------------------------
+# 0-45 terminal: ./configure typed (2-7) and confirmed (9), ./install typed
+# (11-13), the ten plays of playbooks/install.yml (15-33), the recap (36-39).
+# 47-97 upgrade matrix: each path's four checks turn green column by column,
+# rows staggered; the session assertion's echo appears at 90.
+
+ki = """/* keelinfra: ./configure and ./install, then the nightly upgrade matrix. */
+
+.home-demo-ki { display: flex; justify-content: center; }
+.ki-demo-win { width: 600px; height: 430px; overflow: hidden; border: 1px solid #30363d; border-radius: 10px; background: #0d1117; color: #e6edf3; text-align: left; box-shadow: 0 24px 60px rgb(0 0 0 / 0.5); }
+.ki-demo-bar { position: relative; display: flex; align-items: center; height: 32px; padding: 0 12px; border-bottom: 1px solid #30363d; background: #161b22; }
+.ki-demo-dots { display: flex; gap: 6px; }
+.ki-demo-dots i { width: 10px; height: 10px; border-radius: 50%; background: #30363d; }
+.ki-demo-title { position: absolute; inset: 0; text-align: center; color: #8b949e; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 12px; }
+.ki-demo-title b { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-weight: 500; opacity: 0; }
+.ki-demo-t1 { opacity: 1; animation: ki-demo-t1 18s linear infinite; }
+.ki-demo-t2 { animation: ki-demo-t2 18s linear infinite; }
+.ki-demo-body { position: relative; height: 398px; }
+.ki-demo-term, .ki-demo-matrix { position: absolute; inset: 0; padding: 14px 16px; opacity: 0; }
+.ki-demo-term { font-family: var(--font-code); font-size: 12px; line-height: 17px; animation: ki-demo-term 18s ease infinite; }
+.ki-demo-matrix { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", sans-serif; font-size: 12.5px; animation: ki-demo-matrix 18s ease infinite; }
+.ki-demo-ln { overflow: hidden; white-space: nowrap; }
+.ki-demo-ps { color: #7ee787; }
+.ki-demo-type { display: inline-block; overflow: hidden; vertical-align: bottom; white-space: nowrap; }
+.ki-demo-type1 { width: 36ch; animation: ki-demo-type1 18s infinite; }
+.ki-demo-type2 { width: 9ch; animation: ki-demo-type2 18s infinite; }
+.ki-demo-ok { color: #7ee787; }
+.ki-demo-play { color: #8b949e; }
+.ki-demo-host { display: inline-block; width: 12ch; color: #e3b341; }
+.ki-demo-mhead { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 12px; }
+.ki-demo-mhead strong { font-size: 15px; }
+.ki-demo-mhead span, .ki-demo-row em { color: #8b949e; font-style: normal; }
+.ki-demo-grid { display: grid; grid-template-columns: 170px repeat(4, minmax(0, 1fr)); align-items: center; padding: 0 12px; white-space: nowrap; }
+.ki-demo-gh { height: 30px; border: 1px solid #30363d; border-radius: 6px 6px 0 0; background: #161b22; color: #8b949e; font-size: 11.5px; font-weight: 600; }
+.ki-demo-gh span:not(:first-child), .ki-demo-cell { justify-self: center; }
+.ki-demo-row { height: 46px; border: 1px solid #30363d; border-top: 0; white-space: nowrap; }
+.ki-demo-row:last-of-type { border-radius: 0 0 6px 6px; }
+.ki-demo-cell { position: relative; width: 16px; height: 16px; }
+.ki-demo-cell i { position: absolute; inset: 0; display: flex; opacity: 0; }
+.ki-demo-spin { transform-box: view-box; transform-origin: 8px 8px; animation: ki-demo-spin 1s linear infinite; }
+.ki-demo-echo { margin-top: 14px; color: #7ee787; font-family: var(--font-code); font-size: 12px; opacity: 0; animation: ki-demo-echo 18s ease infinite; }
+"""
+PLAYS = 10
+KI_LINES = {"l1": 9, "l2": 10.5, "recap": 36, "n0": 37, "n1": 38, "n2": 39}
+for key in KI_LINES:
+    ki += f".ki-demo-{key} {{ opacity: 0; animation: ki-demo-{key} 18s linear infinite; }}\n"
+for i in range(PLAYS):
+    ki += f".ki-demo-p{i} {{ opacity: 0; animation: ki-demo-p{i} 18s linear infinite; }}\n"
+
+
+def ki_cell_time(row, col):
+    """When cell (row, col) of the matrix turns green, in percent of the loop."""
+    return round(50 + col * 10 + row * 1.6, 2)
+
+
+KI_ROWS, KI_COLS, KI_RUN = 5, 4, 3.5
+for r in range(KI_ROWS):
+    for col in range(KI_COLS):
+        for st in "prd":
+            ki += f".ki-demo-c{r}{col}{st} {{ animation: ki-demo-c{r}{col}{st} 18s linear infinite; }}\n"
+
+ki_k = [
+    vis("ki-demo-term", [(1, 45)]),
+    vis("ki-demo-matrix", [(47, 97)]),
+    vis("ki-demo-t1", [(0, 46), (98, 100)], 0.3),
+    vis("ki-demo-t2", [(46, 98)], 0.3),
+    vis("ki-demo-echo", [(90, 100)]),
+    props("ki-demo-type1", [("0%, 2%", "width: 0; animation-timing-function: steps(36, end);"), ("7%, 100%", "width: 36ch;")]),
+    props("ki-demo-type2", [("0%, 11%", "width: 0; animation-timing-function: steps(9, end);"), ("13%, 100%", "width: 9ch;")]),
+    props("ki-demo-spin", [("100%", "transform: rotate(360deg);")]),
+]
+for key, t in KI_LINES.items():
+    ki_k.append(vis(f"ki-demo-{key}", [(t, 100)], 0.3))
+for i in range(PLAYS):
+    ki_k.append(vis(f"ki-demo-p{i}", [(15 + i * 2, 100)], 0.3))
+for r in range(KI_ROWS):
+    for col in range(KI_COLS):
+        t = ki_cell_time(r, col)
+        ki_k.append(vis(f"ki-demo-c{r}{col}p", [(0, round(t - KI_RUN, 2))], 0.3))
+        ki_k.append(vis(f"ki-demo-c{r}{col}r", [(round(t - KI_RUN, 2), t)], 0.3))
+        ki_k.append(vis(f"ki-demo-c{r}{col}d", [(t, 100)], 0.3))
+
+
 def build():
     """Return the generated CSS block, without the markers."""
-    return cl + "\n" + "\n".join(cl_k) + "\n\n" + al + "\n" + "\n".join(al_k) + "\n\n"
+    return (
+        cl + "\n" + "\n".join(cl_k) + "\n\n"
+        + al + "\n" + "\n".join(al_k) + "\n\n"
+        + ki + "\n" + "\n".join(ki_k) + "\n\n"
+    )
 
 
 def splice(css, block):

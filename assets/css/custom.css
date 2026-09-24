@@ -802,12 +802,210 @@ samp {
 @keyframes al-demo-k3 { 0%, 57.9% { background: #ffebe6; transform: none; } 58%, 58.8% { background: #ffbdad; transform: scale(0.95); } 59.2%, 100% { background: #ffebe6; transform: none; } }
 @keyframes al-demo-cursor { 0%, 18% { opacity: 0; transform: translate(429px, 399px); } 20% { opacity: 1; transform: translate(419px, 379px); } 30% { opacity: 1; transform: translate(225px, 61px); } 31% { opacity: 1; transform: translate(225px, 61px) scale(0.88); } 32.5% { opacity: 1; transform: translate(225px, 61px); } 42% { opacity: 1; transform: translate(473px, 237px); } 43% { opacity: 1; transform: translate(473px, 237px) scale(0.88); } 44% { opacity: 1; transform: translate(473px, 237px); } 49% { opacity: 1; transform: translate(473px, 277px); } 50% { opacity: 1; transform: translate(473px, 277px) scale(0.88); } 51% { opacity: 1; transform: translate(473px, 277px); } 57% { opacity: 1; transform: translate(537px, 317px); } 58% { opacity: 1; transform: translate(537px, 317px) scale(0.88); } 59% { opacity: 1; transform: translate(537px, 317px); } 67% { opacity: 1; transform: translate(508px, 108px); } 68% { opacity: 1; transform: translate(508px, 108px) scale(0.88); } 69% { opacity: 1; transform: translate(508px, 108px); } 72% { opacity: 1; transform: translate(539px, 169px); } 74%, 100% { opacity: 0; transform: translate(544px, 179px); } }
 
+/* keelinfra: ./configure and ./install, then the nightly upgrade matrix. */
+
+.home-demo-ki { display: flex; justify-content: center; }
+.ki-demo-win { width: 600px; height: 430px; overflow: hidden; border: 1px solid #30363d; border-radius: 10px; background: #0d1117; color: #e6edf3; text-align: left; box-shadow: 0 24px 60px rgb(0 0 0 / 0.5); }
+.ki-demo-bar { position: relative; display: flex; align-items: center; height: 32px; padding: 0 12px; border-bottom: 1px solid #30363d; background: #161b22; }
+.ki-demo-dots { display: flex; gap: 6px; }
+.ki-demo-dots i { width: 10px; height: 10px; border-radius: 50%; background: #30363d; }
+.ki-demo-title { position: absolute; inset: 0; text-align: center; color: #8b949e; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 12px; }
+.ki-demo-title b { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-weight: 500; opacity: 0; }
+.ki-demo-t1 { opacity: 1; animation: ki-demo-t1 18s linear infinite; }
+.ki-demo-t2 { animation: ki-demo-t2 18s linear infinite; }
+.ki-demo-body { position: relative; height: 398px; }
+.ki-demo-term, .ki-demo-matrix { position: absolute; inset: 0; padding: 14px 16px; opacity: 0; }
+.ki-demo-term { font-family: var(--font-code); font-size: 12px; line-height: 17px; animation: ki-demo-term 18s ease infinite; }
+.ki-demo-matrix { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", sans-serif; font-size: 12.5px; animation: ki-demo-matrix 18s ease infinite; }
+.ki-demo-ln { overflow: hidden; white-space: nowrap; }
+.ki-demo-ps { color: #7ee787; }
+.ki-demo-type { display: inline-block; overflow: hidden; vertical-align: bottom; white-space: nowrap; }
+.ki-demo-type1 { width: 36ch; animation: ki-demo-type1 18s infinite; }
+.ki-demo-type2 { width: 9ch; animation: ki-demo-type2 18s infinite; }
+.ki-demo-ok { color: #7ee787; }
+.ki-demo-play { color: #8b949e; }
+.ki-demo-host { display: inline-block; width: 12ch; color: #e3b341; }
+.ki-demo-mhead { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 12px; }
+.ki-demo-mhead strong { font-size: 15px; }
+.ki-demo-mhead span, .ki-demo-row em { color: #8b949e; font-style: normal; }
+.ki-demo-grid { display: grid; grid-template-columns: 170px repeat(4, minmax(0, 1fr)); align-items: center; padding: 0 12px; white-space: nowrap; }
+.ki-demo-gh { height: 30px; border: 1px solid #30363d; border-radius: 6px 6px 0 0; background: #161b22; color: #8b949e; font-size: 11.5px; font-weight: 600; }
+.ki-demo-gh span:not(:first-child), .ki-demo-cell { justify-self: center; }
+.ki-demo-row { height: 46px; border: 1px solid #30363d; border-top: 0; white-space: nowrap; }
+.ki-demo-row:last-of-type { border-radius: 0 0 6px 6px; }
+.ki-demo-cell { position: relative; width: 16px; height: 16px; }
+.ki-demo-cell i { position: absolute; inset: 0; display: flex; opacity: 0; }
+.ki-demo-spin { transform-box: view-box; transform-origin: 8px 8px; animation: ki-demo-spin 1s linear infinite; }
+.ki-demo-echo { margin-top: 14px; color: #7ee787; font-family: var(--font-code); font-size: 12px; opacity: 0; animation: ki-demo-echo 18s ease infinite; }
+.ki-demo-l1 { opacity: 0; animation: ki-demo-l1 18s linear infinite; }
+.ki-demo-l2 { opacity: 0; animation: ki-demo-l2 18s linear infinite; }
+.ki-demo-recap { opacity: 0; animation: ki-demo-recap 18s linear infinite; }
+.ki-demo-n0 { opacity: 0; animation: ki-demo-n0 18s linear infinite; }
+.ki-demo-n1 { opacity: 0; animation: ki-demo-n1 18s linear infinite; }
+.ki-demo-n2 { opacity: 0; animation: ki-demo-n2 18s linear infinite; }
+.ki-demo-p0 { opacity: 0; animation: ki-demo-p0 18s linear infinite; }
+.ki-demo-p1 { opacity: 0; animation: ki-demo-p1 18s linear infinite; }
+.ki-demo-p2 { opacity: 0; animation: ki-demo-p2 18s linear infinite; }
+.ki-demo-p3 { opacity: 0; animation: ki-demo-p3 18s linear infinite; }
+.ki-demo-p4 { opacity: 0; animation: ki-demo-p4 18s linear infinite; }
+.ki-demo-p5 { opacity: 0; animation: ki-demo-p5 18s linear infinite; }
+.ki-demo-p6 { opacity: 0; animation: ki-demo-p6 18s linear infinite; }
+.ki-demo-p7 { opacity: 0; animation: ki-demo-p7 18s linear infinite; }
+.ki-demo-p8 { opacity: 0; animation: ki-demo-p8 18s linear infinite; }
+.ki-demo-p9 { opacity: 0; animation: ki-demo-p9 18s linear infinite; }
+.ki-demo-c00p { animation: ki-demo-c00p 18s linear infinite; }
+.ki-demo-c00r { animation: ki-demo-c00r 18s linear infinite; }
+.ki-demo-c00d { animation: ki-demo-c00d 18s linear infinite; }
+.ki-demo-c01p { animation: ki-demo-c01p 18s linear infinite; }
+.ki-demo-c01r { animation: ki-demo-c01r 18s linear infinite; }
+.ki-demo-c01d { animation: ki-demo-c01d 18s linear infinite; }
+.ki-demo-c02p { animation: ki-demo-c02p 18s linear infinite; }
+.ki-demo-c02r { animation: ki-demo-c02r 18s linear infinite; }
+.ki-demo-c02d { animation: ki-demo-c02d 18s linear infinite; }
+.ki-demo-c03p { animation: ki-demo-c03p 18s linear infinite; }
+.ki-demo-c03r { animation: ki-demo-c03r 18s linear infinite; }
+.ki-demo-c03d { animation: ki-demo-c03d 18s linear infinite; }
+.ki-demo-c10p { animation: ki-demo-c10p 18s linear infinite; }
+.ki-demo-c10r { animation: ki-demo-c10r 18s linear infinite; }
+.ki-demo-c10d { animation: ki-demo-c10d 18s linear infinite; }
+.ki-demo-c11p { animation: ki-demo-c11p 18s linear infinite; }
+.ki-demo-c11r { animation: ki-demo-c11r 18s linear infinite; }
+.ki-demo-c11d { animation: ki-demo-c11d 18s linear infinite; }
+.ki-demo-c12p { animation: ki-demo-c12p 18s linear infinite; }
+.ki-demo-c12r { animation: ki-demo-c12r 18s linear infinite; }
+.ki-demo-c12d { animation: ki-demo-c12d 18s linear infinite; }
+.ki-demo-c13p { animation: ki-demo-c13p 18s linear infinite; }
+.ki-demo-c13r { animation: ki-demo-c13r 18s linear infinite; }
+.ki-demo-c13d { animation: ki-demo-c13d 18s linear infinite; }
+.ki-demo-c20p { animation: ki-demo-c20p 18s linear infinite; }
+.ki-demo-c20r { animation: ki-demo-c20r 18s linear infinite; }
+.ki-demo-c20d { animation: ki-demo-c20d 18s linear infinite; }
+.ki-demo-c21p { animation: ki-demo-c21p 18s linear infinite; }
+.ki-demo-c21r { animation: ki-demo-c21r 18s linear infinite; }
+.ki-demo-c21d { animation: ki-demo-c21d 18s linear infinite; }
+.ki-demo-c22p { animation: ki-demo-c22p 18s linear infinite; }
+.ki-demo-c22r { animation: ki-demo-c22r 18s linear infinite; }
+.ki-demo-c22d { animation: ki-demo-c22d 18s linear infinite; }
+.ki-demo-c23p { animation: ki-demo-c23p 18s linear infinite; }
+.ki-demo-c23r { animation: ki-demo-c23r 18s linear infinite; }
+.ki-demo-c23d { animation: ki-demo-c23d 18s linear infinite; }
+.ki-demo-c30p { animation: ki-demo-c30p 18s linear infinite; }
+.ki-demo-c30r { animation: ki-demo-c30r 18s linear infinite; }
+.ki-demo-c30d { animation: ki-demo-c30d 18s linear infinite; }
+.ki-demo-c31p { animation: ki-demo-c31p 18s linear infinite; }
+.ki-demo-c31r { animation: ki-demo-c31r 18s linear infinite; }
+.ki-demo-c31d { animation: ki-demo-c31d 18s linear infinite; }
+.ki-demo-c32p { animation: ki-demo-c32p 18s linear infinite; }
+.ki-demo-c32r { animation: ki-demo-c32r 18s linear infinite; }
+.ki-demo-c32d { animation: ki-demo-c32d 18s linear infinite; }
+.ki-demo-c33p { animation: ki-demo-c33p 18s linear infinite; }
+.ki-demo-c33r { animation: ki-demo-c33r 18s linear infinite; }
+.ki-demo-c33d { animation: ki-demo-c33d 18s linear infinite; }
+.ki-demo-c40p { animation: ki-demo-c40p 18s linear infinite; }
+.ki-demo-c40r { animation: ki-demo-c40r 18s linear infinite; }
+.ki-demo-c40d { animation: ki-demo-c40d 18s linear infinite; }
+.ki-demo-c41p { animation: ki-demo-c41p 18s linear infinite; }
+.ki-demo-c41r { animation: ki-demo-c41r 18s linear infinite; }
+.ki-demo-c41d { animation: ki-demo-c41d 18s linear infinite; }
+.ki-demo-c42p { animation: ki-demo-c42p 18s linear infinite; }
+.ki-demo-c42r { animation: ki-demo-c42r 18s linear infinite; }
+.ki-demo-c42d { animation: ki-demo-c42d 18s linear infinite; }
+.ki-demo-c43p { animation: ki-demo-c43p 18s linear infinite; }
+.ki-demo-c43r { animation: ki-demo-c43r 18s linear infinite; }
+.ki-demo-c43d { animation: ki-demo-c43d 18s linear infinite; }
+
+@keyframes ki-demo-term { 0% { opacity: 0; } 0.2% { opacity: 0; } 1% { opacity: 1; } 45% { opacity: 1; } 45.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-matrix { 0% { opacity: 0; } 46.2% { opacity: 0; } 47% { opacity: 1; } 97% { opacity: 1; } 97.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-t1 { 0% { opacity: 1; } 46% { opacity: 1; } 46.3% { opacity: 0; } 97.7% { opacity: 0; } 98% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-t2 { 0% { opacity: 0; } 45.7% { opacity: 0; } 46% { opacity: 1; } 98% { opacity: 1; } 98.3% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-echo { 0% { opacity: 0; } 89.2% { opacity: 0; } 90% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-type1 { 0%, 2% { width: 0; animation-timing-function: steps(36, end); } 7%, 100% { width: 36ch; } }
+@keyframes ki-demo-type2 { 0%, 11% { width: 0; animation-timing-function: steps(9, end); } 13%, 100% { width: 9ch; } }
+@keyframes ki-demo-spin { 100% { transform: rotate(360deg); } }
+@keyframes ki-demo-l1 { 0% { opacity: 0; } 8.7% { opacity: 0; } 9% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-l2 { 0% { opacity: 0; } 10.2% { opacity: 0; } 10.5% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-recap { 0% { opacity: 0; } 35.7% { opacity: 0; } 36% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-n0 { 0% { opacity: 0; } 36.7% { opacity: 0; } 37% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-n1 { 0% { opacity: 0; } 37.7% { opacity: 0; } 38% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-n2 { 0% { opacity: 0; } 38.7% { opacity: 0; } 39% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-p0 { 0% { opacity: 0; } 14.7% { opacity: 0; } 15% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-p1 { 0% { opacity: 0; } 16.7% { opacity: 0; } 17% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-p2 { 0% { opacity: 0; } 18.7% { opacity: 0; } 19% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-p3 { 0% { opacity: 0; } 20.7% { opacity: 0; } 21% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-p4 { 0% { opacity: 0; } 22.7% { opacity: 0; } 23% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-p5 { 0% { opacity: 0; } 24.7% { opacity: 0; } 25% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-p6 { 0% { opacity: 0; } 26.7% { opacity: 0; } 27% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-p7 { 0% { opacity: 0; } 28.7% { opacity: 0; } 29% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-p8 { 0% { opacity: 0; } 30.7% { opacity: 0; } 31% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-p9 { 0% { opacity: 0; } 32.7% { opacity: 0; } 33% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c00p { 0% { opacity: 1; } 46.5% { opacity: 1; } 46.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c00r { 0% { opacity: 0; } 46.2% { opacity: 0; } 46.5% { opacity: 1; } 50% { opacity: 1; } 50.3% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c00d { 0% { opacity: 0; } 49.7% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c01p { 0% { opacity: 1; } 56.5% { opacity: 1; } 56.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c01r { 0% { opacity: 0; } 56.2% { opacity: 0; } 56.5% { opacity: 1; } 60% { opacity: 1; } 60.3% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c01d { 0% { opacity: 0; } 59.7% { opacity: 0; } 60% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c02p { 0% { opacity: 1; } 66.5% { opacity: 1; } 66.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c02r { 0% { opacity: 0; } 66.2% { opacity: 0; } 66.5% { opacity: 1; } 70% { opacity: 1; } 70.3% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c02d { 0% { opacity: 0; } 69.7% { opacity: 0; } 70% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c03p { 0% { opacity: 1; } 76.5% { opacity: 1; } 76.8% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c03r { 0% { opacity: 0; } 76.2% { opacity: 0; } 76.5% { opacity: 1; } 80% { opacity: 1; } 80.3% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c03d { 0% { opacity: 0; } 79.7% { opacity: 0; } 80% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c10p { 0% { opacity: 1; } 48.1% { opacity: 1; } 48.4% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c10r { 0% { opacity: 0; } 47.8% { opacity: 0; } 48.1% { opacity: 1; } 51.6% { opacity: 1; } 51.9% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c10d { 0% { opacity: 0; } 51.3% { opacity: 0; } 51.6% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c11p { 0% { opacity: 1; } 58.1% { opacity: 1; } 58.4% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c11r { 0% { opacity: 0; } 57.8% { opacity: 0; } 58.1% { opacity: 1; } 61.6% { opacity: 1; } 61.9% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c11d { 0% { opacity: 0; } 61.3% { opacity: 0; } 61.6% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c12p { 0% { opacity: 1; } 68.1% { opacity: 1; } 68.4% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c12r { 0% { opacity: 0; } 67.8% { opacity: 0; } 68.1% { opacity: 1; } 71.6% { opacity: 1; } 71.9% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c12d { 0% { opacity: 0; } 71.3% { opacity: 0; } 71.6% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c13p { 0% { opacity: 1; } 78.1% { opacity: 1; } 78.4% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c13r { 0% { opacity: 0; } 77.8% { opacity: 0; } 78.1% { opacity: 1; } 81.6% { opacity: 1; } 81.9% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c13d { 0% { opacity: 0; } 81.3% { opacity: 0; } 81.6% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c20p { 0% { opacity: 1; } 49.7% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c20r { 0% { opacity: 0; } 49.4% { opacity: 0; } 49.7% { opacity: 1; } 53.2% { opacity: 1; } 53.5% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c20d { 0% { opacity: 0; } 52.9% { opacity: 0; } 53.2% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c21p { 0% { opacity: 1; } 59.7% { opacity: 1; } 60% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c21r { 0% { opacity: 0; } 59.4% { opacity: 0; } 59.7% { opacity: 1; } 63.2% { opacity: 1; } 63.5% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c21d { 0% { opacity: 0; } 62.9% { opacity: 0; } 63.2% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c22p { 0% { opacity: 1; } 69.7% { opacity: 1; } 70% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c22r { 0% { opacity: 0; } 69.4% { opacity: 0; } 69.7% { opacity: 1; } 73.2% { opacity: 1; } 73.5% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c22d { 0% { opacity: 0; } 72.9% { opacity: 0; } 73.2% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c23p { 0% { opacity: 1; } 79.7% { opacity: 1; } 80% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c23r { 0% { opacity: 0; } 79.4% { opacity: 0; } 79.7% { opacity: 1; } 83.2% { opacity: 1; } 83.5% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c23d { 0% { opacity: 0; } 82.9% { opacity: 0; } 83.2% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c30p { 0% { opacity: 1; } 51.3% { opacity: 1; } 51.6% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c30r { 0% { opacity: 0; } 51% { opacity: 0; } 51.3% { opacity: 1; } 54.8% { opacity: 1; } 55.1% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c30d { 0% { opacity: 0; } 54.5% { opacity: 0; } 54.8% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c31p { 0% { opacity: 1; } 61.3% { opacity: 1; } 61.6% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c31r { 0% { opacity: 0; } 61% { opacity: 0; } 61.3% { opacity: 1; } 64.8% { opacity: 1; } 65.1% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c31d { 0% { opacity: 0; } 64.5% { opacity: 0; } 64.8% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c32p { 0% { opacity: 1; } 71.3% { opacity: 1; } 71.6% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c32r { 0% { opacity: 0; } 71% { opacity: 0; } 71.3% { opacity: 1; } 74.8% { opacity: 1; } 75.1% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c32d { 0% { opacity: 0; } 74.5% { opacity: 0; } 74.8% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c33p { 0% { opacity: 1; } 81.3% { opacity: 1; } 81.6% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c33r { 0% { opacity: 0; } 81% { opacity: 0; } 81.3% { opacity: 1; } 84.8% { opacity: 1; } 85.1% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c33d { 0% { opacity: 0; } 84.5% { opacity: 0; } 84.8% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c40p { 0% { opacity: 1; } 52.9% { opacity: 1; } 53.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c40r { 0% { opacity: 0; } 52.6% { opacity: 0; } 52.9% { opacity: 1; } 56.4% { opacity: 1; } 56.7% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c40d { 0% { opacity: 0; } 56.1% { opacity: 0; } 56.4% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c41p { 0% { opacity: 1; } 62.9% { opacity: 1; } 63.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c41r { 0% { opacity: 0; } 62.6% { opacity: 0; } 62.9% { opacity: 1; } 66.4% { opacity: 1; } 66.7% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c41d { 0% { opacity: 0; } 66.1% { opacity: 0; } 66.4% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c42p { 0% { opacity: 1; } 72.9% { opacity: 1; } 73.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c42r { 0% { opacity: 0; } 72.6% { opacity: 0; } 72.9% { opacity: 1; } 76.4% { opacity: 1; } 76.7% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c42d { 0% { opacity: 0; } 76.1% { opacity: 0; } 76.4% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes ki-demo-c43p { 0% { opacity: 1; } 82.9% { opacity: 1; } 83.2% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c43r { 0% { opacity: 0; } 82.6% { opacity: 0; } 82.9% { opacity: 1; } 86.4% { opacity: 1; } 86.7% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes ki-demo-c43d { 0% { opacity: 0; } 86.1% { opacity: 0; } 86.4% { opacity: 1; } 100% { opacity: 1; } }
+
 /* END generated by .github/scripts/gen_demo_css.py */
 
 /* Static frames for reduced motion (the keyframes override these). */
 .cl-demo-status { opacity: 1; }
 .al-demo-review, .al-demo-banner, .al-demo-d1b, .al-demo-d2b, .al-demo-d3b,
 .al-demo-c2, .al-demo-x1, .al-demo-q0, .al-demo-done { opacity: 1; }
+.ki-demo-matrix, .ki-demo-echo, .ki-demo-cell i:last-child { opacity: 1; }
 
 @media (prefers-reduced-motion: reduce) {
   .home-demo *,
@@ -893,7 +1091,8 @@ samp {
 }
 
 @media (max-width: 1279px) {
-  .al-demo-win {
+  .al-demo-win,
+  .ki-demo-win {
     zoom: 0.85;
   }
 }
@@ -942,6 +1141,10 @@ samp {
   }
 
   .al-demo-win {
+    zoom: 0.5;
+  }
+
+  .ki-demo-win {
     zoom: 0.5;
   }
 
@@ -998,6 +1201,10 @@ samp {
   }
 
   .al-demo-win {
+    zoom: 0.46;
+  }
+
+  .ki-demo-win {
     zoom: 0.46;
   }
 }
