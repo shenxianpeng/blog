@@ -6,6 +6,7 @@ tags:
   - Gradle
 date: 2021-04-06
 aliases:
+  - /2020/11/jacoco-imp/
   - /2021/04/jacoco-imp/
 translate: false
 authors:

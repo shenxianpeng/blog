@@ -42,7 +42,7 @@ author: shenxianpeng
 
 * 学习和使用了一些新工具，比如 Ansible playbook、ELK、JaCoCo 等并应用到项目中。
 
-  > 输出文章 [初识 Ansible](https://shenxianpeng.dev/2020/09/getting-to-know-ansible/)，[JaCoCo 实践](https://shenxianpeng.dev/2020/11/jacoco-imp/)
+  > 输出文章 [初识 Ansible](https://shenxianpeng.dev/2020/10/ansible-practice/)，[JaCoCo 实践](https://shenxianpeng.dev/2020/11/jacoco-imp/)
 
 作为 DevOps/软件工程师还需要有良好的表达能力，否则你做的东西再好，但无法很清晰的跟同事及领导分享出来也是事倍功半。尤其像我在外企，还需要用英文去做分享。
 

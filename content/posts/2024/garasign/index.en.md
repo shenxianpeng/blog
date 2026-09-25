@@ -9,7 +9,7 @@ authors:
 date: 2024-06-10
 ---
 
-In my previous article on [Code Signing](2024/04/code-signing/), I mentioned GaraSign, another code signing tool I use at work.
+In my previous article on [Code Signing](../code-signing/), I mentioned GaraSign, another code signing tool I use at work.
 
 Given the limited Chinese resources on GaraSign, this article will introduce some practical aspects of GaraSign, hoping it will be helpful to you.
 

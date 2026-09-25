@@ -161,7 +161,7 @@ environment {
 
 为了更好的管理仓库下面的目录，建议团队事先约定分支命名规范，这样同一种类型的分支的所有构建都会出现在一个目录下面。
 
-关于命名规范可参见这篇文章[程序员自我修养之Git提交信息和分支创建规范](../conventional-branch/)
+关于命名规范可参见这篇文章[程序员自我修养之Git提交信息和分支创建规范](../commit-messages-specification/)
 
 对于 Pull Request Build 如果也想放到 Artifactory 上面，建议像下面这样设置：
 
@@ -198,6 +198,6 @@ environment {
 
 ## 往期相关文章
 
-* [初识 JFrog Artifactory](../artifactory-install-and-upgrade/)
-* [Artifactory 与 Jenkins 集成](../artifactory-integrate-with-jenkins/)
+* [初识 JFrog Artifactory](../../2019/artifactory-install-and-upgrade/)
+* [Artifactory 与 Jenkins 集成](../../2019/artifactory-integrate-with-jenkins/)
 * [解决 Jenkins Artifactory Plugin 仅在 AIX 上传制品到 https 协议的 Artifactory 失败的问题](../java-net-socketexception-on-aix/)

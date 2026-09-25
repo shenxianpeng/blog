@@ -56,7 +56,7 @@ Now these rules can be directly placed into the Skill, allowing the agent to rea
 
 ## What This Skill Includes
 
-This Skill is written according to the [Conventional Branch specification](https://conventional-branch.github.io) and primarily covers the following types of rules.
+This Skill is written according to the [Conventional Branch specification](https://conventionalbranch.org/) and primarily covers the following types of rules.
 
 First, branch naming format.
 
@@ -159,7 +159,7 @@ Before the agent starts working, it can know: how this repository expects branch
 
 If you are not yet familiar with Conventional Branch, you can start here:
 
--   [Specification Document](https://conventional-branch.github.io)
+-   [Specification Document](https://conventionalbranch.org/)
 -   [GitHub Repository](https://github.com/conventional-branch/conventional-branch)
 -   [`commit-check` Validation Tool](https://github.com/commit-check/commit-check)
 

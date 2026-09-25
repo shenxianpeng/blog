@@ -14,7 +14,7 @@ series_order: 2
 
 大家好，我是沈工。
 
-上个月我写了那篇[正式维护 MkDocs 的文章](mkdocs-ng)，宣布 fork 了 MkDocs 并开始在 mkdocs-ng 下发包。
+上个月我写了那篇[正式维护 MkDocs 的文章](../mkdocs-ng/)，宣布 fork 了 MkDocs 并开始在 mkdocs-ng 下发包。
 
 当时发的是 v1.7.0。到现在已经发了四个版本，一路到了 v1.7.3。这篇文章就是把这几个版本的改动整理一下，同步给社区，顺便聊聊 v1.8.0 的计划。
 

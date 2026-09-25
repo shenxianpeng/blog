@@ -118,7 +118,7 @@ jobs:
 ```bash
 pip install commit-check
 ```
-然后运行 `commit-check --help` 命令就可以查看如何使用了，具体可以参见[文档](https://commit-check.github.io/cli_args.html)
+然后运行 `commit-check --help` 命令就可以查看如何使用了，具体可以参见[文档](https://commit-check.com/configuration/#command-line-arguments)
 
 ### 以 Git Hooks 来运行
 

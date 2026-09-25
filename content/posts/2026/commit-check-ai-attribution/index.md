@@ -124,7 +124,7 @@ pip install commit-check
 
 📍 项目地址：**github.com/commit-check/commit-check**
 
-📄 更多详情：https://commit-check.github.io/commit-check/
+📄 更多详情：https://commit-check.com/
 
 觉得有用的话，欢迎 Star，也欢迎提 Issue 告诉我你的团队还有什么想治理的痛点。
 

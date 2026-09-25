@@ -254,8 +254,6 @@ recordIssues tool: java(pattern: '*.log'), qualityGates: [[threshold: 1, type: '
 
 该插件可以参与你项目的运行状况报告。你可以更改将运行状况更改为 0％ 和 100％ 的问题数。此外，可以选择在创建运行状况报告时应考虑的严重性。
 
-[健康报告配置!](11.png)
-
 以下代码段显示了具有这些选项的示例管道：
 
 ```bash

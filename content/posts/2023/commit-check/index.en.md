@@ -116,7 +116,7 @@ Install via pip:
 ```bash
 pip install commit-check
 ```
-Then run the `commit-check --help` command to see how to use it.  Details can be found in the [documentation](https://commit-check.github.io/cli_args.html).
+Then run the `commit-check --help` command to see how to use it.  Details can be found in the [documentation](https://commit-check.com/configuration/#command-line-arguments).
 
 ### Running with Git Hooks
 

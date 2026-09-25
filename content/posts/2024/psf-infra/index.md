@@ -14,7 +14,7 @@ date: 2024-05-28
 
 Python 软件基金会 (PFS) 或许大家比较熟知，它是开源 Python 编程语言背后的组织，致力于为 Python 和 Python 社区的发展壮大创造条件。
 
-继上次我们看完了 [Apache 的基础设施](2024/01/apache-services-and-tools/)介绍，本篇文章我们一起来看看 Python 软件基金会 (PFS) 的基础设施，看看可以从中学到哪些。
+继上次我们看完了 [Apache 的基础设施](../apache-services-and-tools/)介绍，本篇文章我们一起来看看 Python 软件基金会 (PFS) 的基础设施，看看可以从中学到哪些。
 
 
 ## PSF 基础设施概述
@@ -63,7 +63,7 @@ Heroku 托管了许多 CPython 核心工作流机器人，短暂的或概念验�
 [PagerDuty](https://www.pagerduty.com/) 用于 PSF 的待命轮换基础设施员工在一线，志愿者作为后援。
 
 **OSUOSL**
-俄勒冈州立大学开源实验室举办一个 PSF 的硬件服务器，speed.python.org 用于运行基准测试，此主机是使用 [Chef](www.getchef.com) 和他们的配置管理位于 [PSF-Chef Git](https://github.com/python/psf-chef) 存储库中。
+俄勒冈州立大学开源实验室举办一个 PSF 的硬件服务器，speed.python.org 用于运行基准测试，此主机是使用 [Chef](https://www.chef.io/) 和他们的配置管理位于 [PSF-Chef Git](https://github.com/python/psf-chef) 存储库中。
 
 ### 数据中心
 
@@ -119,7 +119,7 @@ Python 包索引的负载最多 任何 PSF 服务。它的源代码可在 [GitHu
 它的所有基础设施都在 由 [pypi-infra](https://github.com/pypi/infra) 配置的 AWS，它以 Fastly 为首。基础设施是由 Ee Durbin, Donald Stufft, 和 Dustin Ingram 维护的，联系地址是 admin@pypi。
 
 **PyPy properties**
-[PyPy 网站](pypy.org)托管在 DigitalOcean VM 上并进行维护作者：pypy-dev@python。
+[PyPy 网站](https://pypy.org/)托管在 DigitalOcean VM 上并进行维护作者：pypy-dev@python。
 
 > 如需要参看原文。可访问[地址](https://infra.psf.io/overview.html)。
 

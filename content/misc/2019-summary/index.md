@@ -5,6 +5,8 @@ tags:
   - Summary
 date: 2019-12-28
 author: shenxianpeng
+aliases:
+  - /2019/12/2019-summary/
 ---
 
 时间过得飞快，转眼已经是 2020 年的第三天了，回顾 2019 年，我给自己的年终关键词是：尽力。

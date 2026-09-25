@@ -11,7 +11,7 @@ aliases:
 date: 2024-06-10
 ---
 
-上次我在 [代码签名（Code Signing）](2024/04/code-signing/)的文章中时候提到了 GaraSign，这是我在工作中使用到的另一个代码签名工具。
+上次我在 [代码签名（Code Signing）](../code-signing/)的文章中时候提到了 GaraSign，这是我在工作中使用到的另一个代码签名工具。
 
 鉴于关于 GaraSign 的使用并没有多少中文资料，本篇我将介绍关于 GaraSign 的一些实线，希望对你有帮助。
 
