@@ -1,0 +1,95 @@
+content/posts/2022/blackduck-troubleshooting/index.md
+  s_fb9a2b74d1e9dc::t_00855794ab42c4 10
+content/posts/2022/container-ecosystem/index.md
+  s_fb9a2b74d1e9dc::t_3f5243593497e3 9
+content/posts/2022/cpp-linter/index.md
+  s_fb9a2b74d1e9dc::t_6565f43bdfffd3 9
+content/posts/2022/devops-trends-2022/index.md
+  s_fb9a2b74d1e9dc::t_26c9762303763d 11
+content/posts/2022/fix-wsl-networking-issue/index.md
+  s_fb9a2b74d1e9dc::t_3ea1340a046d01 9
+content/posts/2022/jenkins-ldap-configuration/index.md
+  s_fb9a2b74d1e9dc::t_c4d363e7fadadb 10
+content/posts/2022/jenkins-skip-ci/index.md
+  s_fb9a2b74d1e9dc::t_f024d212d179c4 10
+content/posts/2022/restrict-connect-server/index.md
+  s_fb9a2b74d1e9dc::t_cb39f42022aa2b 9
+content/posts/2022/unfork-github-repo/index.md
+  s_fb9a2b74d1e9dc::t_0d6c3f21f13676 10
+content/posts/2022/vacation-weekly-report/index.md
+  s_fb9a2b74d1e9dc::t_86ffab5c62a725 8
+content/posts/2022/vagrant/index.md
+  s_fb9a2b74d1e9dc::t_ce99726c764f2c 9
+content/posts/2022/wsl/index.md
+  s_fb9a2b74d1e9dc::t_1fe9dd505e1bb2 11
+content/posts/2023/automatic-categorize-release-notes/index.md
+  s_fb9a2b74d1e9dc::t_c10fa4099175fe 9
+content/posts/2023/chatgpt-for-devops/index.md
+  s_fb9a2b74d1e9dc::t_dbf2244fc07d19 9
+content/posts/2023/commit-check/index.md
+  s_fb9a2b74d1e9dc::t_8f21f799d2c159 8
+content/posts/2023/devops-trends-2023/index.md
+  s_fb9a2b74d1e9dc::t_3ed401895f1988 11
+content/posts/2023/fork-or-unfork/index.md
+  s_fb9a2b74d1e9dc::t_a8eb0c5713065d 9
+content/posts/2023/jenkins-catch-error/index.md
+  s_fb9a2b74d1e9dc::t_f03cc7c2a4beb6 8
+content/posts/2023/nuget/index.md
+  s_fb9a2b74d1e9dc::t_16b794f75705b5 8
+content/posts/2023/python-and-slsa/index.md
+  s_fb9a2b74d1e9dc::t_8c9986147b82ff 9
+content/posts/2023/slsa/index.md
+  s_fb9a2b74d1e9dc::t_caba982b6c4d24 8
+content/posts/2023/supply-chain-security/index.md
+  s_fb9a2b74d1e9dc::t_f0a3ef986151ac 9
+content/posts/2023/upload-artifacts-failed-on-aix/index.md
+  s_fb9a2b74d1e9dc::t_05f7f285daf861 10
+content/posts/2023/witness-and-slsa/index.md
+  s_fb9a2b74d1e9dc::t_fdb94527121f9e 9
+content/posts/2024/apache-services-and-tools/index.md
+  s_fb9a2b74d1e9dc::t_733dda40d8cf62 9
+content/posts/2024/code-signing/index.md
+  s_fb9a2b74d1e9dc::t_9c1481e218283e 9
+content/posts/2024/cpp-linter-action/index.md
+  s_fb9a2b74d1e9dc::t_635dc3a978bd1b 9
+content/posts/2024/devops-skills-2024/index.md
+  s_fb9a2b74d1e9dc::t_e80d90a1c56394 10
+content/posts/2024/garasign/index.md
+  s_fb9a2b74d1e9dc::t_830c93bcd3cd8d 9
+content/posts/2024/jenkins-contributors/index.md
+  s_fb9a2b74d1e9dc::t_af6cb9726dc0e3 9
+content/posts/2024/open-source-state/index.md
+  s_fb9a2b74d1e9dc::t_fa8b6ec1dd27aa 12
+content/posts/2024/psf-infra/index.md
+  s_fb9a2b74d1e9dc::t_290a6c1445e571 10
+content/posts/2024/reusable-workflows/index.md
+  s_fb9a2b74d1e9dc::t_6192135e6c81de 9
+content/posts/2024/where-does-your-software-come-from/index.md
+  s_fb9a2b74d1e9dc::t_9ef0b0aa4cebcc 9
+content/posts/2025/copyright/index.md
+  s_fb9a2b74d1e9dc::t_f345826ae3b45e 11
+content/posts/2025/euro-python-review/index.md
+  s_fb9a2b74d1e9dc::t_eb043e2588ad56 10
+content/posts/2025/gitstats-update/index.md
+  s_fb9a2b74d1e9dc::t_7e9551420c3695 9
+content/posts/2025/jenkins-docker-cloud/index.md
+  s_fb9a2b74d1e9dc::t_c9d183c4659e89 10
+content/posts/2025/nutanix/index.md
+  s_fb9a2b74d1e9dc::t_62da7688ed0641 10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "54283c248a48968aa6d75843f72a07624783116c",
+  "prompts": {},
+  "sessions": {
+    "s_fb9a2b74d1e9dc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c7234209-6abf-43ab-99a6-e68dabc8c7f4",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
