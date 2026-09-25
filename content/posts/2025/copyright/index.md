@@ -6,9 +6,9 @@ tags:
   - Python
   - Copyright
 translate: false
-authors:
 aliases:
   - /2025/01/copyright/
+authors:
   - shenxianpeng
 date: 2025-01-20
 ---

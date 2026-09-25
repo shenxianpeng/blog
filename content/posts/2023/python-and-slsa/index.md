@@ -4,9 +4,9 @@ summary: 本文介绍了如何在 Python 生态系统中使用 SLSA 框架来生
 tags:
   - SLSA
   - Python
-authors:
 aliases:
   - /2023/11/python-and-slsa/
+authors:
   - shenxianpeng
 translate: false
 date: 2023-11-15

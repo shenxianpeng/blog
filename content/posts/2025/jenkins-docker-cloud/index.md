@@ -5,9 +5,9 @@ summary: |
 tags:
   - Cloud
   - Docker
-authors:
 aliases:
   - /2025/01/jenkins-docker-cloud/
+authors:
   - shenxianpeng
 date: 2025-01-25
 ---

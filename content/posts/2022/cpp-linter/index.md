@@ -4,9 +4,9 @@ summary: 本文介绍了 C/C++ 代码格式化和静态分析检查的工具和�
 tags:
   - clang
   - cpp-linter
-authors:
 aliases:
   - /2022/08/cpp-linter/
+authors:
   - shenxianpeng
 date: 2022-08-23
 series: ["cpp-linter"]

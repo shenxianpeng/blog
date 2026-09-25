@@ -4,9 +4,9 @@ summary: 本文介绍了 Hervé Le Meur 如何通过 Jenkins-X 社区的贡献�
 tags:
   - Jenkins
 translate: false
-authors:
 aliases:
   - /2024/04/jenkins-contributors/
+authors:
   - shenxianpeng
 date: 2024-04-21
 ---

@@ -5,9 +5,9 @@ tags:
   - Python
   - Infrastructure
 translate: false
-authors:
 aliases:
   - /2024/05/psf-infra/
+authors:
   - shenxianpeng
 date: 2024-05-28
 ---

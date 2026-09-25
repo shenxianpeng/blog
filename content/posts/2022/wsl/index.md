@@ -6,9 +6,9 @@ tags:
   - Docker
   - VSCode
   - Windows
-authors:
 aliases:
   - /2022/04/wsl/
+authors:
   - shenxianpeng
 date: 2022-04-19
 ---

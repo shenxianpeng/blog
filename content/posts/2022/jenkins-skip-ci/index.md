@@ -5,9 +5,9 @@ summary: |
 tags:
   - CI-CD
   - Jenkins
-authors:
 aliases:
   - /2022/10/jenkins-skip-ci/
+authors:
   - shenxianpeng
 date: 2022-10-09
 ---

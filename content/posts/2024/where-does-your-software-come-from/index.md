@@ -4,9 +4,9 @@ summary: 本文介绍了软件制品的来源证明，强调了在软件开发�
 tags:
   - SLSA
   - DevSecOps
-authors:
 aliases:
   - /2024/06/where-does-your-software-come-from/
+authors:
   - shenxianpeng
 translate: false   # 不需要翻译
 date: 2024-06-13

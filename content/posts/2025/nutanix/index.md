@@ -5,9 +5,9 @@ summary: |
 tags:
   - Nutanix
   - VMware
-authors:
 aliases:
   - /2025/03/nutanix/
+authors:
   - shenxianpeng
 date: 2025-03-12
 ---

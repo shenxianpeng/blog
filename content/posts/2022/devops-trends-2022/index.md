@@ -6,9 +6,9 @@ tags:
   - Kubernetes
   - DevSecOps
 translate: false
-authors:
 aliases:
   - /2022/02/devops-trends-2022/
+authors:
   - shenxianpeng
 date: 2022-02-24
 ---

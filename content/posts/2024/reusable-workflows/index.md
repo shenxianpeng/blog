@@ -4,9 +4,9 @@ summary: 本文介绍了 GitHub Actions 的可重用工作流（Reusable Workflo
 tags:
   - GitHub
   - Jenkins
-authors:
 aliases:
   - /2024/03/reusable-workflows/
+authors:
   - shenxianpeng
 date: 2024-03-25
 ---

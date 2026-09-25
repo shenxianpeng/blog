@@ -4,9 +4,9 @@ summary: 本文介绍了 Docker、containerd、CRI、CRI-O、OCI 和 runc 等容
 tags:
   - Docker
   - Kubernetes
-authors:
 aliases:
   - /2022/03/container-ecosystem/
+authors:
   - shenxianpeng
 date: 2022-03-29
 ---
