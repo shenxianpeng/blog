@@ -4,9 +4,9 @@ summary: 本文介绍了 Vagrant 的概念、发展历史以及如何使用 Vagr
 tags:
   - VirtualBox
   - Vagrant
-authors:
 aliases:
   - /2022/01/vagrant/
+authors:
   - shenxianpeng
 date: 2022-02-11
 ---

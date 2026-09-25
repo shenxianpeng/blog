@@ -3,9 +3,9 @@ title: 程序员自我修养之Git提交信息和分支创建规范（工具篇�
 summary: 本文介绍如何使用 Commit Check 工具来验证 Git 提交信息、分支命名、提交用户名字、提交用户邮箱等是否符合规范。
 tags:
   - Git
-authors:
 aliases:
   - /2023/05/commit-check/
+authors:
   - shenxianpeng
 date: 2023-05-09
 series: ["Commit Check"]

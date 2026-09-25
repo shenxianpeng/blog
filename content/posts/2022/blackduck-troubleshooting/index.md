@@ -5,9 +5,9 @@ summary: |
 tags:
   - Troubleshooting
   - BlackDuck
-authors:
 aliases:
   - /2022/03/blackduck-troubleshooting/
+authors:
   - shenxianpeng
 date: 2022-03-02
 ---

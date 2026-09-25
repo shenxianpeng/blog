@@ -4,9 +4,9 @@ summary: 本文探讨如何在 DevOps 任务中使用 ChatGPT，包括自动化�
 tags:
   - DevOps
   - ChatGPT
-authors:
 aliases:
   - /2023/02/chatgpt-for-devops/
+authors:
   - shenxianpeng
 translate: false
 date: 2023-02-26

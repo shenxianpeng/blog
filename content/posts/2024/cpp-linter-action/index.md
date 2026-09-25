@@ -4,9 +4,9 @@ summary: 本文介绍了 cpp-linter-action 的新功能：Pull Request Review，
 tags:
   - clang
   - cpp-linter
-authors:
 aliases:
   - /2024/02/cpp-linter-action/
+authors:
   - shenxianpeng
 date: 2024-02-17
 series: ["cpp-linter"]

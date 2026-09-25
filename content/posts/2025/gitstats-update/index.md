@@ -4,9 +4,9 @@ summary: |
   gitstats 经过两个月的持续改进，现已支持 JSON 输出、代码重构、argparse 替换 getopt，并全面兼容 Windows 和 macOS。欢迎使用和 Star 支持！
 tags:
   - gitstats
-authors:
 aliases:
   - /2025/02/gitstats-update/
+authors:
   - shenxianpeng
 date: 2025-02-05
 series: ["GitStats"]

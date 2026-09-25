@@ -4,9 +4,9 @@ summary: 本篇介绍的是大名鼎鼎的开源软件基金会 Apache 所使用
 tags:
   - Apache
   - Infrastructure
-authors:
 aliases:
   - /2024/01/apache-services-and-tools/
+authors:
   - shenxianpeng
 translate: false
 date: 2024-01-21

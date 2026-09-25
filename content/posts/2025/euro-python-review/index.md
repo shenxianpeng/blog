@@ -5,9 +5,9 @@ summary: |
 tags:
   - EuroPython
   - Reviewer
-authors:
 aliases:
   - /2025/02/euro-python-review/
+authors:
   - shenxianpeng
 date: 2025-02-14
 ---

@@ -3,9 +3,9 @@ title: 创建 NuGet Organization 的遇到的坑
 summary: 本文记录了在创建 NuGet Organization 时遇到的问题和解决方法，特别是关于公司邮箱地址的使用。
 tags:
   - NuGet
-authors:
 aliases:
   - /2023/08/nuget/
+authors:
   - shenxianpeng
 date: 2023-08-25
 ---

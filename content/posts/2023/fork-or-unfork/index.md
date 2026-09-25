@@ -4,9 +4,9 @@ summary: 本文讨论了在开源项目中，作为项目成员是 Fork 原始�
 tags:
   - Fork
 translate: false
-authors:
 aliases:
   - /2023/06/fork-or-unfork/
+authors:
   - shenxianpeng
 date: 2023-06-09
 ---

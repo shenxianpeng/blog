@@ -4,9 +4,9 @@ summary: 本文介绍如何使用 SLSA 与 Witness 在 GitHub 与非 GitHub 项�
 tags:
   - SLSA
   - Witness
-authors:
 aliases:
   - /2023/12/supply-chain-security/
+authors:
   - shenxianpeng
 date: 2023-12-02
 ---

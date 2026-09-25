@@ -3,9 +3,9 @@ title: 12 周的陪产假我一刻都没闲着
 summary: 本文记录了我在陪产假期间的学习和工作安排，包括阅读书籍、参与开源项目、体育锻炼等，分享了如何在照顾家庭的同时保持学习和成长。
 tags:
   - Report
-authors:
 aliases:
   - /2022/06/vacation-weekly-report/
+authors:
   - shenxianpeng
 translate: false
 date: 2022-06-13
