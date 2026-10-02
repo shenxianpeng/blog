@@ -1,0 +1,39 @@
+content/posts/2023/commit-check/index.en.md
+  s_9433bfadf9b69b::t_b80832ab1e291f 119
+content/posts/2023/commit-check/index.md
+  s_9433bfadf9b69b::t_6963b0dfac6bc5 121
+content/posts/2024/conventional-branch/index.md
+  s_9433bfadf9b69b::t_a7f70e12619a7e 18
+content/posts/2025/commit-check-v2/index.en.md
+  s_9433bfadf9b69b::t_04f2b7fab9c66c 101,105,111,115
+content/posts/2025/commit-check-v2/index.md
+  s_9433bfadf9b69b::t_de73d157448e03 101,105,112,116
+content/posts/2025/conventional-branch-one-year-anniversary/index.en.md
+  s_9433bfadf9b69b::t_78e41f58b35a2d 22
+content/posts/2025/conventional-branch-one-year-anniversary/index.md
+  s_9433bfadf9b69b::t_17d24728ecfefd 22
+content/posts/2026/commit-check-ai-attribution/index.en.md
+  s_9433bfadf9b69b::t_848ed7b9601dc2 127
+content/posts/2026/commit-check-ai-attribution/index.md
+  s_9433bfadf9b69b::t_c351f48b23d3f6 127
+content/posts/2026/conventional-branch-skill/index.en.md
+  s_9433bfadf9b69b::t_c5e3f590b60684 59,162
+content/posts/2026/conventional-branch-skill/index.md
+  s_9433bfadf9b69b::t_059688bdb34815 61,164
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "02009d4eb43ded0d9e275611b841042c0abbb759",
+  "prompts": {},
+  "sessions": {
+    "s_9433bfadf9b69b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4cfc4c8c-e4c8-40b0-8e4d-1acb19fe3770",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
