@@ -21,7 +21,8 @@ body {
 
 /* Blowfish pads the 80rem body by 8rem a side from lg up, leaving 64rem for
    content; the home page needs more. 4rem a side gives 72rem, which the
-   full-bleed bands below align to. Articles keep their max-w-prose measure. */
+   full-bleed bands below align to. Articles keep their own measure (see
+   .article-content below). */
 @media (min-width: 1024px) {
   body,
   /* the fixed header's inner container repeats the body's classes */
@@ -29,6 +30,18 @@ body {
     padding-left: 4rem;
     padding-right: 4rem;
   }
+}
+
+/* The header is Blowfish's fixed-fill layout (params.toml), a solid bar. The
+   fixed layout's 25% tint, 40px blur and large shadow let whatever scrolled
+   under it show through as a smear: the white cpp-linter demo, the green
+   buttons. A hairline separates the bar from the page instead. */
+header > .fixed {
+  border-bottom: 1px solid rgb(var(--color-neutral-200));
+}
+
+.dark header > .fixed {
+  border-bottom-color: rgb(var(--color-neutral-700));
 }
 
 h1,
@@ -43,6 +56,13 @@ h4 {
 #single_header h1 {
   letter-spacing: -0.035em;
   line-height: 1.08;
+}
+
+/* Even out heading lines, so a title does not end on one stranded word or
+   character (a Chinese title on a phone left 门 alone on its last line). */
+#single_header h1,
+.article-content :is(h2, h3, h4) {
+  text-wrap: balance;
 }
 
 .prose {
@@ -68,6 +88,16 @@ samp {
 
 .article-content :where(pre, code) {
   font-size: 0.85em;
+}
+
+/* The theme's measure is max-w-prose, 65ch, and ch is the width of "0". In
+   Newsreader that is a third wider than an average letter, so the column came
+   out 680px and English ran 79-91 characters a line. 37rem is 592px, roughly
+   70. The series boxes above and below the text take the same width so the
+   edges still line up. Chinese, at about 35 characters a line, keeps the
+   theme's measure. */
+:lang(en) :is(.article-content, details:has(+ .article-content), .article-content ~ details) {
+  max-width: 37rem;
 }
 
 /* CJK has no italics, needs more leading, and no negative tracking. */
@@ -126,6 +156,18 @@ samp {
 :lang(zh) .home-title {
   letter-spacing: 0;
   line-height: 1.2;
+}
+
+/* Chinese home headlines break at spaces and punctuation, not between the
+   characters of a word: "每个 PR / 都自动检查。" rather than "每个 PR 都自动检 /
+   查。". overflow-wrap still breaks a run that cannot fit on a line at all.
+   Only these few short, hand-written headlines: on article titles a long run
+   without spaces forces those emergency breaks, which can start a line with
+   "：" or leave "！" alone on one. */
+:lang(zh) :is(.home-title, .home-band-title) {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
 }
 
 :lang(zh) .home-band-text,
@@ -203,6 +245,8 @@ samp {
 .home-hero {
   padding: 5rem 0 8.5rem;
   text-align: center;
+  /* lets the Chinese title size itself to the column, in cqi */
+  container-type: inline-size;
 }
 
 .home-hero-text {
@@ -213,17 +257,24 @@ samp {
 }
 
 .home-title {
+  --home-title-size: clamp(3.25rem, 7.4vw, 6.75rem);
   margin: 0;
   max-width: 15ch;
-  font-size: clamp(3.25rem, 7.4vw, 6.75rem);
+  font-size: var(--home-title-size);
   line-height: 0.96;
   letter-spacing: -0.05em;
   text-wrap: balance;
   color: rgb(var(--color-neutral-900));
 }
 
+/* heroTitle breaks the Chinese title into two lines by hand, and the longer
+   one is 7 characters. At the 52px minimum it needs 364px, which a phone does
+   not have, so its last character wrapped onto a line of its own. 12.5cqi
+   keeps 7 characters inside the column; on wider screens the usual size is
+   the smaller of the two and wins. */
 :lang(zh) .home-title {
   max-width: none;
+  font-size: min(var(--home-title-size), 12.5cqi);
 }
 
 .home-lead {

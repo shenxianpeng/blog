@@ -57,7 +57,7 @@ Secondary (inline code, some theme accents) is a teal of the same family.
 | Headings, home headlines, UI, buttons | Geist | 700 for headings, tracking −0.025em (articles) to −0.045em (home headlines) |
 | Article body | Newsreader | article body at 19px, line-height 1.7 |
 | Code, dates | Geist Mono | |
-| Chinese | Noto Serif SC in reading text; PingFang SC / Noto Sans SC in headings | line-height 1.85, no italics, no negative tracking |
+| Chinese | Noto Serif SC in reading text; PingFang SC / Noto Sans SC in headings | line-height 1.85, no italics, no negative tracking; home headlines break only at spaces and punctuation (`word-break: keep-all`) |
 
 All from Google Fonts. Noto Serif SC is served in unicode-range slices, so
 English pages do not download it.
@@ -67,7 +67,17 @@ English pages do not download it.
 From the `lg` breakpoint the body is padded 4rem a side (Blowfish uses 8rem),
 giving 72rem of content. Full-bleed bands (`.home-band`) span the viewport and
 pad their content back to the same 72rem, so everything lines up with the
-header. Article text keeps Blowfish's `max-w-prose` measure.
+header.
+
+The header is Blowfish's `fixed-fill` layout: a solid bar in the page colour
+with a 1px rule under it. The `fixed` layout's translucent, blurred bar let
+bright content smear through.
+
+Chinese article text keeps Blowfish's `max-w-prose` measure, about 35
+characters a line. English is capped at 37rem (592px, roughly 70 characters),
+and the series boxes with it: `max-w-prose` is 65ch, and Newsreader's "0",
+which `ch` measures, is a third wider than its average letter, so the theme's
+column ran 79–91. Article titles and headings use `text-wrap: balance`.
 
 ## Home page
 
