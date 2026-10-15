@@ -7,6 +7,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-12-04
+series: ["My Open Source Projects"]
+series_order: 1
 ---
 
 In recent years, Python versions have been updated quite frequently — new versions are constantly released, while older versions are gradually End-Of-Life (EOL).
