@@ -5,7 +5,7 @@ summary: |
 tags:
   - Jenkins
   - Java
-  - Agent8
+  - Open Source
 authors:
   - shenxianpeng
 date: 2026-10-16
@@ -13,7 +13,9 @@ series: ["我的开源项目"]
 series_order: 6
 ---
 
-很多公司的产品不只在主流 Linux 上构建，还要在 AIX、HP-UX、Solaris 和一批 RHEL 6 的机器上出包。这些机器跑了很多年，没人想动，而且它们都是 Jenkins agent，每个平台的构建都从它们身上来。
+在 AIX 上跑 Jenkins agent，我踩过不少坑：2020 年在 AIX 7.1 + Java 1.8 上[用 Artifactory 插件上传制品失败](/zh-cn/posts/2020/java-net-socketexception-on-aix/)，2021 年 [Git clone 失败](/zh-cn/posts/2021/git-clone-failed-on-aix/)，2023 年又遇到 [IBM Java 的证书链校验失败](/zh-cn/posts/2023/upload-artifacts-failed-on-aix/)。这类机器不好伺候，但产品的 AIX 版本就是从它们身上构建出来的。
+
+很多公司都有这样一批机器：AIX、HP-UX、Solaris，再加几台 RHEL 6。它们跑了很多年，没人想动，而且都是 Jenkins agent，每个平台的构建都从它们身上来。
 
 问题是，这些系统上的 Java 基本停在 8。
 
@@ -30,7 +32,7 @@ series_order: 6
 
 ## Agent8 是什么
 
-[Agent8][agent8] 做的事情很简单：让只有 Java 8 的构建机继续当一个普通的 Jenkins agent，连接 Java 21+ 上的新版 controller。
+[Agent8][agent8] 让只有 Java 8 的构建机继续当一个普通的 Jenkins agent，连接跑在 Java 21+ 上的新版 controller。
 
 它是怎么做到的：
 
@@ -83,7 +85,7 @@ CI 每周都会对着最新的 LTS 和 weekly 跑一遍：Pipeline 构建、Git 
 
 还没验证的：Solaris 和 HP-UX 上的完整构建、真实的 AIX 机器，以及会在 agent 上跑自己代码的插件（Maven、Docker、制品上传、命令行 git 等）。如果你要用，建议先挑一台机器把 job 跑通，再整体迁移。
 
-另外要说明的是：**Agent8 是独立项目，不属于 Jenkins 项目，也没有得到 Jenkins 项目的认可或支持。** 遇到问题请提到 [Agent8 的 issues][issues]，不要提到 Jenkins 的 issue tracker。
+**Agent8 是独立项目，不属于 Jenkins 项目，也没有得到 Jenkins 项目的认可或支持。** 遇到问题请提到 [Agent8 的 issues][issues]，不要提到 Jenkins 的 issue tracker。
 
 ## 社区的反馈
 
