@@ -1,6 +1,6 @@
 ---
 title: "Open-source guardrails for software delivery."
-heroLead: "Linting, commit standards, and CI/CD automation — maintained in the open, and running in the CI of more than 1000 public repositories."
+heroLead: "Linting, commit standards, and CI/CD automation — maintained in the open. cpp-linter alone has more than 1,000 repositories on GitHub depending on it."
 heroButtons:
   - label: "See the projects"
     url: "/portfolio/"
@@ -22,7 +22,7 @@ flagship:
   users: ["Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 products:
   title: "Infrastructure you own."
-  text: "Self-hosted Keycloak, Atlassian apps that run inside your own tenant, and Mac backups to your own storage."
+  text: "Self-hosted Keycloak, Jenkins agents for build hosts stuck on Java 8, Atlassian apps that run inside your own tenant, and Mac backups to your own storage."
   items:
     - name: "Keelhaven"
       label: "Free · Open source · macOS 14+"
@@ -33,7 +33,7 @@ products:
       style: "wide"
     - name: "keelapps"
       label: "Atlassian Marketplace"
-      text: "Permission audits, recurring tasks, scheduled reports and page approvals for Jira and Confluence Cloud."
+      text: "Twelve apps for Jira and Confluence Cloud: permission audits, recurring tasks, scheduled reports, page approvals, and bulk page and attachment tools."
       url: "https://keelapps.app"
       demo: "accesslens"
       demoLabel: "Animated demo of AccessLens for Jira: a reverse lookup shows the three projects the contractors group can reach, then an access review confirms two, flags the project anonymous users can browse for remediation, and is signed off."
@@ -42,7 +42,7 @@ products:
       flip: true
     - name: "keelinfra"
       label: "Product"
-      text: "Self-hosted Keycloak you can run in production, with upgrade paths re-tested nightly in public CI."
+      text: "Self-hosted Keycloak you can run in production, with upgrade paths re-tested nightly in public CI. And Agent8, which keeps Java 8 build hosts on a current Jenkins."
       url: "https://keelinfra.io"
       demo: "keelinfra"
       demoLabel: "Animated demo of keelinfra: ./configure and ./install bring up Keycloak on three nodes, then the nightly upgrade matrix runs every supported upgrade path through install, log in, upgrade and a check that the pre-upgrade session still works."

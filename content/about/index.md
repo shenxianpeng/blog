@@ -26,7 +26,7 @@ layoutBackgroundHeaderSpace: false
 
 ## 开源
 
-- [cpp-linter](https://github.com/cpp-linter)：每个 PR 上跑 clang-format 和 clang-tidy。Apache、Samsung、Qualcomm、Bloomberg 等 1000 多个公开仓库的 CI 在用。
+- [cpp-linter](https://github.com/cpp-linter)：每个 PR 上跑 clang-format 和 clang-tidy。GitHub 上有 1000 多个仓库依赖它，包括 Apache、Samsung、Qualcomm、Bloomberg 的项目。
 - [commit-check](https://github.com/commit-check/commit-check)：一份策略统一校验提交信息、分支名和 AI 署名，CI 里或 pre-commit 里都能跑。
 - [Conventional Branch](https://conventionalbranch.org)：分支命名规范。
 - [Open Delivery Spec](https://github.com/open-delivery-spec)：把构建、测试、评审、部署的过程变成机器可校验的证据。
@@ -34,7 +34,7 @@ layoutBackgroundHeaderSpace: false
 
 ## 产品
 
-- [keelinfra](https://keelinfra.io)：生产可用的自托管 Keycloak。
+- [keelinfra](https://keelinfra.io)：生产可用的自托管 Keycloak；还有 [Agent8](https://github.com/keelinfra/agent8)，让只有 Java 8 的构建机继续接入新版 Jenkins。
 - [keelapps](https://keelapps.app)：Jira 与 Confluence Cloud 的管理工具。
 - [Keelhaven](https://keelhaven.app)：把 Mac 备份到你自己的存储，免费。
 
