@@ -5,7 +5,7 @@ summary: |
 tags:
   - Jenkins
   - Java
-  - Agent8
+  - Open Source
 authors:
   - shenxianpeng
 date: 2026-10-16
@@ -13,7 +13,9 @@ series: ["My Open Source Projects"]
 series_order: 6
 ---
 
-Plenty of companies build their product on more than mainstream Linux. They also ship from AIX, HP-UX, Solaris and a set of RHEL 6 machines. These hosts have built releases for years, nobody wants to touch them, and they are Jenkins agents: every platform build comes from them.
+I've hit my share of problems running Jenkins agents on AIX: in 2020, [Artifactory uploads failing](/zh-cn/posts/2020/java-net-socketexception-on-aix/) (in Chinese) on AIX 7.1 with Java 1.8; in 2021, [Git clone failing](/posts/2021/git-clone-failed-on-aix/); in 2023, [an IBM Java certificate chain error](/posts/2023/upload-artifacts-failed-on-aix/). These machines are hard to look after, but the AIX build of the product comes from them.
+
+Plenty of companies have a set of hosts like this: AIX, HP-UX, Solaris, plus a few RHEL 6 machines. They have built releases for years, nobody wants to touch them, and they are Jenkins agents: every platform build comes from them.
 
 The problem is that Java on those systems mostly stops at 8.
 
@@ -30,7 +32,7 @@ What many teams actually do is keep a second, old Jenkins just for those platfor
 
 ## What Agent8 is
 
-[Agent8][agent8] does one thing: it lets a build host that only has Java 8 stay an ordinary Jenkins agent of a current controller on Java 21+.
+[Agent8][agent8] lets a build host that only has Java 8 stay an ordinary Jenkins agent of a current controller on Java 21+.
 
 How it works:
 
@@ -83,7 +85,7 @@ Every week CI runs against the latest LTS and weekly: Pipeline builds, Git check
 
 Not verified yet: full builds on Solaris and HP-UX, real AIX hosts, and plugins that run their own code on the agent (Maven, Docker, artifact uploads, command-line git and so on). If you try it, get one job working on one host before moving the rest.
 
-One more thing: **Agent8 is an independent project. It is not part of, or endorsed or supported by, the Jenkins project.** Please report problems on [Agent8's issues][issues], not the Jenkins issue tracker.
+**Agent8 is an independent project. It is not part of, or endorsed or supported by, the Jenkins project.** Please report problems on [Agent8's issues][issues], not the Jenkins issue tracker.
 
 ## What the community said
 
