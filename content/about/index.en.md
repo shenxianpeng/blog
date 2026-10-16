@@ -26,7 +26,7 @@ Open-source maintainer and product builder, based in Vilnius, Lithuania. Everyth
 
 ## Open source
 
-- [cpp-linter](https://github.com/cpp-linter): clang-format and clang-tidy on every pull request. In the CI of more than 1000 public repositories, including Apache, Samsung, Qualcomm and Bloomberg.
+- [cpp-linter](https://github.com/cpp-linter): clang-format and clang-tidy on every pull request. More than 1,000 repositories on GitHub depend on it, including projects from Apache, Samsung, Qualcomm and Bloomberg.
 - [commit-check](https://github.com/commit-check/commit-check): one policy for commit messages, branch names and AI attribution, in CI or as a pre-commit hook.
 - [Conventional Branch](https://conventionalbranch.org): a branch naming specification.
 - [Open Delivery Spec](https://github.com/open-delivery-spec): machine-checkable evidence of what was built, tested, reviewed and deployed.
@@ -34,7 +34,7 @@ Open-source maintainer and product builder, based in Vilnius, Lithuania. Everyth
 
 ## Products
 
-- [keelinfra](https://keelinfra.io): self-hosted Keycloak for production.
+- [keelinfra](https://keelinfra.io): self-hosted Keycloak for production, and [Agent8](https://github.com/keelinfra/agent8), which keeps Java 8 build hosts on a current Jenkins.
 - [keelapps](https://keelapps.app): admin tools for Jira and Confluence Cloud.
 - [Keelhaven](https://keelhaven.app): Mac backup to storage you own. Free.
 

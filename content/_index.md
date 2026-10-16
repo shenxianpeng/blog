@@ -1,7 +1,7 @@
 ---
 title: "给软件交付装上开源护栏。"
 heroTitle: "给软件交付<br>装上开源护栏。"
-heroLead: "代码检查、提交规范、CI/CD 自动化——全部开源维护，跑在 1000 多个公开仓库的 CI 里。"
+heroLead: "代码检查、提交规范、CI/CD 自动化——全部开源维护。仅 cpp-linter 在 GitHub 上就有 1000 多个仓库依赖它。"
 heroButtons:
   - label: "看项目"
     url: "/zh-cn/portfolio/"
@@ -23,7 +23,7 @@ flagship:
   users: ["Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 products:
   title: "掌握在你自己手里的基础设施。"
-  text: "自托管的 Keycloak，跑在你自己租户里的 Atlassian 应用，还有备份到你自己存储的 Mac 备份工具。"
+  text: "自托管的 Keycloak，给老构建机用的 Jenkins agent，跑在你自己租户里的 Atlassian 应用，还有备份到你自己存储的 Mac 备份工具。"
   items:
     - name: "Keelhaven"
       label: "免费 · 开源 · macOS 14+"
@@ -34,7 +34,7 @@ products:
       style: "wide"
     - name: "keelapps"
       label: "Atlassian Marketplace"
-      text: "Jira 与 Confluence Cloud 的权限审计、周期任务、定时报表和页面审批。"
+      text: "12 个 Jira 与 Confluence Cloud 应用：权限审计、周期任务、定时报表、页面审批，以及批量处理页面和附件的工具。"
       url: "https://keelapps.app"
       demo: "accesslens"
       demoLabel: "AccessLens for Jira 的演示动画：反向查询 contractors 用户组能访问的三个项目，然后在访问审查里确认两个、把匿名用户可浏览的项目标记为需整改，最后签核。"
@@ -43,7 +43,7 @@ products:
       flip: true
     - name: "keelinfra"
       label: "产品"
-      text: "生产可用的自托管 Keycloak，升级路径每晚在公开 CI 里重新验证一遍。"
+      text: "生产可用的自托管 Keycloak，升级路径每晚在公开 CI 里重新验证一遍。还有 Agent8，让只有 Java 8 的构建机继续接入新版 Jenkins。"
       url: "https://keelinfra.io"
       demo: "keelinfra"
       demoLabel: "keelinfra 的演示动画：./configure 和 ./install 在三台节点上装好 Keycloak，然后每晚的升级矩阵把每条支持的升级路径跑一遍：安装、登录、升级，再确认升级前的会话仍然可用。"
