@@ -24,29 +24,29 @@ layoutBackgroundHeaderSpace: false
 
 ## 个人简介
 
-DevOps / AI 工程师，现居立陶宛维尔纽斯。十六年软件工程经验，从 QA、测试开发一路做到 DevOps，2015 年起在 Rocket Software 负责构建、发布与交付自动化。目前专注企业级 **Agentic 应用**开发，让 AI 以受控的方式承担真实的工程任务。
+DevOps 与发布工程师，现居立陶宛维尔纽斯。2009 年入行，从 QA、测试开发一路做到 DevOps；2014 年加入 Rocket Software，2018 年起负责构建、发布与交付自动化。目前专注企业级 **Agentic 应用**开发，让 AI 以受控的方式承担真实的工程任务。
 
-业余维护多个开源组织和项目，写的工具每天跑在 **Microsoft、Apache、NASA、Samsung、Bloomberg、Qualcomm** 等数百个项目的 CI 里。
+业余维护多个开源组织和项目，仅 cpp-linter 在 GitHub 上就有 1000 多个仓库依赖它，包括 **Apache、Samsung、Qualcomm、Bloomberg** 的项目。
 
 **核心亮点**
 
-- 开源 C/C++ 质量工具 [cpp-linter](https://github.com/cpp-linter) 被 Microsoft、Apache、NASA、Samsung、Bloomberg、Qualcomm、Jupyter 等数百个项目采用
-- Jenkins **官方插件**（[Explain Error](https://github.com/jenkinsci/explain-error-plugin)）作者，Jenkins GitHub 组织成员
+- 开源 C/C++ 质量工具 [cpp-linter](https://github.com/cpp-linter)：GitHub 上有 1000 多个仓库依赖它，包括 Apache、Samsung、Qualcomm、Bloomberg、LLNL、Nextcloud 的项目
+- Jenkins 插件 [Explain Error](https://github.com/jenkinsci/explain-error-plugin) 作者，Jenkins GitHub 组织成员
 - **Anthropic Open Source Developer Program** 入选者（2026）
 - **EuroPython 2025** 议题评审
-- 累计发布 250+ 篇原创技术文章（[博客](https://shenxianpeng.dev) + 公众号「沈显鹏」）
+- 2017 年至今发布 240+ 篇原创技术文章（[博客](https://shenxianpeng.dev)，同步发在公众号「沈显鹏」）
 
 ---
 
 ## 工作经历
 
-**高级 DevOps 工程师** | Rocket Software，立陶宛 | _2024.07 – 至今_
+**高级 DevOps 与发布工程师**（Senior DevOps & Release Engineer）| Rocket Software，立陶宛 | _2024.07 – 至今_
 
 - 开发企业级 **Agentic 应用**：基于 **GitHub Copilot SDK** 构建承担工程任务的 AI agent，连接代码理解、任务编排、工具调用与结果反馈。
 - 将 AI 引入代码审查、构建失败分析等日常工程环节。
 - 同时负责团队 CI/CD 与交付基础设施的持续建设。
 
-**DevOps 工程师** | Rocket Software，大连 | _2015 – 2024.06_
+**DevOps 与发布工程师** | Rocket Software，大连 | _2018.06 – 2024.06_
 
 - 主导 CI/CD 转型：多条产品线从手工构建和 Bamboo 迁移到 **Jenkins + 共享库**，构建逻辑全部代码化。
 - 用 **Ansible** 实现基础设施即代码，自动化部署 Jenkins 与开发环境。
@@ -56,6 +56,8 @@ DevOps / AI 工程师，现居立陶宛维尔纽斯。十六年软件工程经�
 - 为多条产品线引入**代码覆盖率**报告。
 - 多次获得 **Rocket Build Award**，多项方案被纳入产品路线图。
 
+**测试开发工程师** | Rocket Software，大连 | _2014.12 – 2018.05_ — Rocket Discover 自动化测试负责人：从零搭建自动化测试框架，带团队把回归测试自动化。
+
 **测试开发工程师** | 京东，北京 | _2012 – 2014_ — 自动化测试与持续集成流水线。
 
 **QA 工程师** | SIMCOM（上海）、东软（北京） | _2009 – 2011_ — 测试用例设计与执行，带领小型 QA 团队。
@@ -64,17 +66,17 @@ DevOps / AI 工程师，现居立陶宛维尔纽斯。十六年软件工程经�
 
 ## 开源项目
 
-**[cpp-linter](https://github.com/cpp-linter)** — C/C++ 代码质量自动化：clang-format + clang-tidy，以 GitHub Action 和 pre-commit hook 交付。被 Microsoft、Apache、NASA、Samsung、Bloomberg、Qualcomm、Jupyter 等数百个项目用于日常 CI。
+**[cpp-linter](https://github.com/cpp-linter)** — C/C++ 代码质量自动化：clang-format + clang-tidy，以 GitHub Action 和 pre-commit hook 交付。GitHub 上有 1000 多个仓库依赖它，包括 Apache、Samsung、Qualcomm、Bloomberg、LLNL、Nextcloud 的项目。
 
 **[commit-check](https://github.com/commit-check)** — Git 提交元数据的策略引擎：一份版本化的 TOML 策略，统一校验提交信息、分支命名、作者身份、signoff 与 **AI 署名**，在本地 hook、CI、GitHub Actions 之间共享同一套规则。
 
 **[conventional-branch](https://github.com/conventional-branch)** — Git 分支命名规范与工具集，1.1.0 起原生支持 **AI Coding Agent** 分支前缀。
 
-**[Explain Error](https://github.com/jenkinsci/explain-error-plugin)** — Jenkins 官方插件：AI 分析构建失败原因，支持 **AI Auto-Fix 自动创建修复 PR**、用量统计与配额管控，兼容 OpenAI、Gemini、Azure OpenAI、DeepSeek、Qwen、Ollama、AWS Bedrock 等 Provider。
+**[Explain Error](https://github.com/jenkinsci/explain-error-plugin)** — jenkinsci 组织下的 Jenkins 插件：AI 分析构建失败原因，支持 **AI Auto-Fix 自动创建修复 PR**、用量统计与配额管控，兼容 OpenAI、Gemini、Azure OpenAI、DeepSeek、Qwen、Ollama、AWS Bedrock 等 Provider。
 
 **[Open Delivery Spec](https://github.com/open-delivery-spec)** — 检测、分析和治理 AI 生成代码的开源规范与工具集：AI 代码检出、质量评分、策略门禁，作为 CI 质量门运行（本博客仓库的每个 PR 都在用它）。
 
-**其他**：[devops-maturity](https://github.com/devops-maturity)（DevOps 成熟度评估与徽章）、[MkDocs NG](https://github.com/mkdocs-ng)（MkDocs 生态的社区维护）、[gitstats](https://github.com/shenxianpeng/gitstats)（Git 仓库统计可视化）、[jenkinsfilelint](https://github.com/shenxianpeng/jenkinsfilelint)（无需 Jenkins 服务器的 Jenkinsfile 校验）。
+**其他**：[devops-maturity](https://github.com/devops-maturity)（DevOps 成熟度评估与徽章）、[MkDocs NG](https://github.com/mkdocs-ng)（MkDocs 生态的社区维护）、[gitstats](https://github.com/shenxianpeng/gitstats)（Git 仓库统计可视化）、[jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint)（无需 Jenkins 服务器的 Jenkinsfile 校验）。
 
 ---
 

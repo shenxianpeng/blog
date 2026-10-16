@@ -25,29 +25,29 @@ layoutBackgroundHeaderSpace: false
 
 ## About Me
 
-DevOps / AI engineer based in Vilnius, Lithuania. Sixteen years in software engineering, from QA and test automation to DevOps, with build, release, and delivery automation at Rocket Software since 2015. My current focus is enterprise **agentic applications**: AI that takes on real engineering tasks under controlled workflows.
+DevOps and release engineer based in Vilnius, Lithuania. In software engineering since 2009, from QA and test automation to DevOps; at Rocket Software since 2014, on build, release, and delivery automation since 2018. My current focus is enterprise **agentic applications**: AI that takes on real engineering tasks under controlled workflows.
 
-Outside work I maintain a number of open source organizations and projects, and my tools run daily in the CI of hundreds of projects — including **Microsoft, Apache, NASA, Samsung, Bloomberg, and Qualcomm**.
+Outside work I maintain a number of open source organizations and projects. More than 1,000 repositories on GitHub depend on cpp-linter alone, including projects at **Apache, Samsung, Qualcomm, and Bloomberg**.
 
 **Highlights**
 
-- [cpp-linter](https://github.com/cpp-linter), my C/C++ quality tooling, is used by hundreds of notable projects including Microsoft, Apache, NASA, Samsung, Bloomberg, Qualcomm, and Jupyter
-- Author of an **official Jenkins plugin** ([Explain Error](https://github.com/jenkinsci/explain-error-plugin)); member of the Jenkins GitHub organization
+- [cpp-linter](https://github.com/cpp-linter), my C/C++ quality tooling: more than 1,000 repositories on GitHub depend on it, including projects at Apache, Samsung, Qualcomm, Bloomberg, LLNL, and Nextcloud
+- Author of the **Jenkins plugin** [Explain Error](https://github.com/jenkinsci/explain-error-plugin); member of the Jenkins GitHub organization
 - Selected for the **Anthropic Open Source Developer Program** (2026)
 - **EuroPython 2025** proposal reviewer
-- 250+ original technical articles ([blog](https://shenxianpeng.dev/) + WeChat)
+- 240+ original technical articles since 2017 ([blog](https://shenxianpeng.dev/), also published on WeChat)
 
 ---
 
 ## Work Experience
 
-**Senior DevOps Engineer** | Rocket Software, Lithuania | _Jul 2024 – Present_
+**Senior DevOps & Release Engineer** | Rocket Software, Lithuania | _Jul 2024 – Present_
 
 - Build enterprise **agentic applications**: AI agents on the **GitHub Copilot SDK** that take on engineering tasks, connecting code understanding, task orchestration, tool invocation, and feedback.
 - Bring AI into everyday engineering steps such as code review and build-failure analysis.
 - Own the team's CI/CD and delivery infrastructure.
 
-**DevOps Engineer** | Rocket Software, Dalian | _2015 – Jun 2024_
+**DevOps & Release Engineer** | Rocket Software, Dalian | _Jun 2018 – Jun 2024_
 
 - Led CI/CD transformation across multiple product lines: from manual and Bamboo builds to **Jenkins with shared libraries**, all build logic as code.
 - Built infrastructure as code with **Ansible** for provisioning Jenkins and development environments.
@@ -57,6 +57,8 @@ Outside work I maintain a number of open source organizations and projects, and 
 - Introduced **code coverage** reporting for multiple product lines.
 - Multiple **Rocket Build Awards**; several solutions adopted into product roadmaps.
 
+**Software Engineer in Test** | Rocket Software, Dalian | _Dec 2014 – May 2018_ — test automation lead for Rocket Discover: built the automation framework from scratch and led the team that automated its regression testing.
+
 **Software Engineer in Test** | JD.COM, Beijing | _2012 – 2014_ — automated testing and CI pipelines.
 
 **QA Engineer** | SIMCOM (Shanghai) & Neusoft (Beijing) | _2009 – 2011_ — test design and execution; led small QA teams.
@@ -65,17 +67,17 @@ Outside work I maintain a number of open source organizations and projects, and 
 
 ## Open Source Projects
 
-**[cpp-linter](https://github.com/cpp-linter)** — C/C++ code quality automation: clang-format and clang-tidy delivered as a GitHub Action and pre-commit hook. Runs in the daily CI of hundreds of projects, including Microsoft, Apache, NASA, Samsung, Bloomberg, Qualcomm, and Jupyter.
+**[cpp-linter](https://github.com/cpp-linter)** — C/C++ code quality automation: clang-format and clang-tidy delivered as a GitHub Action and pre-commit hook. More than 1,000 repositories on GitHub depend on it, including projects at Apache, Samsung, Qualcomm, Bloomberg, LLNL, and Nextcloud.
 
 **[commit-check](https://github.com/commit-check)** — a policy engine for Git commit metadata: one versioned TOML policy validating commit messages, branch names, author identity, signoff trailers, and **AI attribution**, shared across local hooks, CI, and GitHub Actions.
 
 **[conventional-branch](https://github.com/conventional-branch)** — a branch naming specification and toolset; since 1.1.0 it natively supports **AI Coding Agent** branch prefixes.
 
-**[Explain Error](https://github.com/jenkinsci/explain-error-plugin)** — an official Jenkins plugin that uses AI to explain build failures, with **AI Auto-Fix** (automatic repair PRs), usage statistics and quota controls, and providers including OpenAI, Gemini, Azure OpenAI, DeepSeek, Qwen, Ollama, and AWS Bedrock.
+**[Explain Error](https://github.com/jenkinsci/explain-error-plugin)** — a Jenkins plugin, in the jenkinsci organization, that uses AI to explain build failures, with **AI Auto-Fix** (automatic repair PRs), usage statistics and quota controls, and providers including OpenAI, Gemini, Azure OpenAI, DeepSeek, Qwen, Ollama, and AWS Bedrock.
 
 **[Open Delivery Spec](https://github.com/open-delivery-spec)** — an open specification and toolset for detecting, analyzing, and governing AI-generated code: AI-code detection, quality scoring, and policy gates that run as a CI quality gate (every PR on this blog's repository goes through it).
 
-**More**: [devops-maturity](https://github.com/devops-maturity) (DevOps maturity assessment and badges), [MkDocs NG](https://github.com/mkdocs-ng) (community maintenance of the MkDocs ecosystem), [gitstats](https://github.com/shenxianpeng/gitstats) (Git repository analytics), [jenkinsfilelint](https://github.com/shenxianpeng/jenkinsfilelint) (Jenkinsfile validation without a Jenkins server).
+**More**: [devops-maturity](https://github.com/devops-maturity) (DevOps maturity assessment and badges), [MkDocs NG](https://github.com/mkdocs-ng) (community maintenance of the MkDocs ecosystem), [gitstats](https://github.com/shenxianpeng/gitstats) (Git repository analytics), [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint) (Jenkinsfile validation without a Jenkins server).
 
 ---
 
