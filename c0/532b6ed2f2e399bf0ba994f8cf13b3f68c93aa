@@ -1,0 +1,19 @@
+endpoint-probe.json
+  s_b8bf1d07b9d234::t_9254b814b68025 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c0532b6ed2f2e399bf0ba994f8cf13b3f68c93aa",
+  "prompts": {},
+  "sessions": {
+    "s_b8bf1d07b9d234": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "225eb13c-3e2c-4b84-bb06-31d19fb0de9b",
+        "model": "unknown"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
