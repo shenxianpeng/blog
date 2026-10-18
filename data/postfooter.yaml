@@ -1,0 +1,101 @@
+# The "From the author" and "Follow" blocks at the end of each post and essay
+# (layouts/partials/post-footer.html).
+#
+# Projects are picked by the post's tags, compared case-insensitively. The
+# post's first tag wins, then its second, and so on; a project is listed once
+# and at most two are shown. A post none of whose tags match gets `fallback`.
+# Links carry utm_source=blog&utm_medium=post-footer&utm_campaign=<post slug>,
+# so each project's own analytics can count what the blog sends it, and the
+# blog reports a project_click event (layouts/partials/extend-footer.html).
+# `id` is the event's `project` value; keep it in step with the domain map in
+# that script.
+
+fallback: cpp-linter
+
+projects:
+  - id: cpp-linter
+    name: cpp-linter
+    url: https://cpp-linter.github.io/
+    tags: [cpp-linter, clang, coverage, static analysis, c/c++, gcov]
+    text:
+      en: clang-format and clang-tidy on every pull request, as a GitHub Action, a pre-commit hook and a Python package.
+      zh-cn: 在每个 PR 上自动跑 clang-format 和 clang-tidy，提供 GitHub Action、pre-commit hook 和 Python 包三种用法。
+
+  - id: keelinfra
+    name: Agent8
+    url: https://keelinfra.io/jenkins/
+    tags: [jenkins, aix, solaris, java, pipeline]
+    text:
+      en: A Jenkins agent for build hosts that stop at Java 8, so Solaris, HP-UX and AIX machines keep working with a current Jenkins.
+      zh-cn: 给停在 Java 8 的构建机用的 Jenkins agent，让 Solaris、HP-UX 和 AIX 机器继续接入新版 Jenkins。
+
+  - id: conventional-branch
+    name: Conventional Branch
+    url: https://conventionalbranch.org/
+    tags: [conventional branch, git, fork]
+    text:
+      en: A specification for Git branch names that people can read and CI can check.
+      zh-cn: 一套 Git 分支命名规范，人看得懂，CI 也能校验。
+
+  - id: commit-check
+    name: Commit Check
+    url: https://commit-check.com/
+    tags: [commit-check, pre-commit, git, github, python, pip, uv]
+    text:
+      en: Check commit messages, branch names and author details in pre-commit and in CI.
+      zh-cn: 在 pre-commit 和 CI 里检查提交信息、分支名和作者信息。
+
+  - id: devops-maturity
+    name: DevOps Maturity
+    url: https://devops-maturity.github.io/
+    tags: [devops, devsecops, slsa, sbom, ci-cd, agentic devops, artifactory, jfrog]
+    text:
+      en: Score a repository's DevOps and supply-chain practices, and get a gap list and a badge.
+      zh-cn: 给仓库的 DevOps 和供应链实践打分，生成差距清单和徽章。
+
+  - id: keelapps
+    name: keelapps
+    url: https://keelapps.app/
+    tags: [jira, confluence, atlassian, bitbucket]
+    text:
+      en: Apps for Jira and Confluence Cloud, including permission audits, recurring tasks, scheduled reports and page approvals.
+      zh-cn: Jira 和 Confluence Cloud 的应用：权限审计、周期任务、定时报表、页面审批等。
+
+  - id: keelhaven
+    name: Keelhaven
+    url: https://keelhaven.app/
+    tags: [keelhaven, backup, macos]
+    text:
+      en: Mac backup to storage you own. A native menu bar app over restic; files are encrypted before they leave your Mac.
+      zh-cn: 把 Mac 备份到你自己的存储。基于 restic 的原生菜单栏应用，文件离开 Mac 前就已加密。
+
+  - id: gitstats
+    name: gitstats
+    url: https://gitstats.readthedocs.io/
+    tags: [gitstats, stats]
+    text:
+      en: Generate an HTML statistics report for any Git repository.
+      zh-cn: 为任意 Git 仓库生成 HTML 统计报告。
+
+labels:
+  en:
+    projects: From the author
+    more: Learn more
+    follow: Follow
+    followText: New posts by RSS, or follow on GitHub, X or LinkedIn.
+  zh-cn:
+    projects: 作者的开源项目
+    more: 了解更多
+    follow: 关注
+    followText: 微信扫码关注公众号「沈显鹏」，或用 RSS、GitHub 订阅更新。
+    qrAlt: 微信公众号「沈显鹏」二维码
+
+follow:
+  en:
+    - { method: rss, label: RSS, url: /index.xml }
+    - { method: github, label: GitHub, url: https://github.com/shenxianpeng }
+    - { method: x, label: X, url: https://x.com/xianpengshen }
+    - { method: linkedin, label: LinkedIn, url: https://www.linkedin.com/in/xianpeng-shen/ }
+  zh-cn:
+    - { method: rss, label: RSS, url: /zh-cn/index.xml }
+    - { method: github, label: GitHub, url: https://github.com/shenxianpeng }

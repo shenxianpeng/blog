@@ -8,6 +8,15 @@ heroButtons:
   - label: "读文章"
     url: "/zh-cn/posts/"
     style: "outline"
+heroAlso:
+  label: "也在维护："
+  links:
+    - label: "Conventional Branch"
+      url: "https://conventionalbranch.org/"
+    - label: "Commit Check"
+      url: "https://commit-check.com/"
+    - label: "DevOps Maturity"
+      url: "https://devops-maturity.github.io/"
 flagship:
   label: "cpp-linter"
   title: "每个 PR 都自动检查。"

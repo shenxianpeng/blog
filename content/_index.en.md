@@ -7,6 +7,15 @@ heroButtons:
   - label: "Read the blog"
     url: "/posts/"
     style: "outline"
+heroAlso:
+  label: "Also maintained: "
+  links:
+    - label: "Conventional Branch"
+      url: "https://conventionalbranch.org/"
+    - label: "Commit Check"
+      url: "https://commit-check.com/"
+    - label: "DevOps Maturity"
+      url: "https://devops-maturity.github.io/"
 flagship:
   label: "cpp-linter"
   title: "Lint every pull request."
