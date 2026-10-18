@@ -1,6 +1,6 @@
 ---
-title: How to make Jenkins pipeline not fail if a specific error occurs
-summary: Introducing the `catchError` step in Jenkins pipeline to handle specific errors without failing the entire build, allowing for more flexible error management.
+title: "Jenkins catchError: Keep a Pipeline from Failing on a Specific Error"
+summary: Use the `catchError` step in a Jenkinsfile to catch a failing step and set the stage and build result to UNSTABLE, SUCCESS or FAILURE as you choose, with a complete pipeline example and its console output.
 tags:
   - Jenkins
 authors:

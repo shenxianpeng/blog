@@ -1,6 +1,6 @@
 ---
-title: For Those Who Want to Use JFrog Artifactory to Manage Artifacts
-summary: This article introduces the concepts, advantages, working principles, and best practices of JFrog Artifactory, helping readers understand how to use Artifactory to manage software artifacts.
+title: "What Is JFrog Artifactory? A Guide for Teams Managing Build Artifacts"
+summary: What JFrog Artifactory is, its four main advantages as a universal repository manager (package formats, CI integration, search and artifact lifecycle management), and a tour of its home page, from experience running it for continuous integration.
 tags:
   - Artifactory
   - JFrog

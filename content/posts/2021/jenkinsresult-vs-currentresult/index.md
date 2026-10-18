@@ -1,7 +1,7 @@
 ---
-title: Jenkins 中 `result` 与 `currentResult` 的区别
+title: Jenkins 中 currentBuild.result 与 currentBuild.currentResult 的区别
 summary: |
-  本文解释了 Jenkins Pipeline 中 `result` 与 `currentResult` 的区别，并通过 Declarative Pipeline 与 Scripted Pipeline 示例展示它们在不同阶段的表现。
+  `currentBuild.result` 在被显式设置之前一直是 null，而 `currentBuild.currentResult` 始终反映构建的当前状态。本文通过 Declarative Pipeline 与 Scripted Pipeline 示例及其输出，展示两者在不同阶段的表现。
 tags:
   - Jenkins
 date: 2021-01-14

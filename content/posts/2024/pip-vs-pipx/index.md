@@ -1,6 +1,6 @@
 ---
-title: pip vs pipx 的区别
-summary: 本文介绍了 pip 和 pipx 的区别，帮助开发者选择合适的工具来管理 Python 包和命令行工具。
+title: pip 和 pipx 有什么区别？该用哪个
+summary: pip 用来给项目安装依赖库，装在全局或虚拟环境里；pipx 专门安装 Python 命令行工具，每个工具一个独立的虚拟环境。本文从用途、安装范围和依赖隔离三方面对比两者，并说明什么时候该用哪个。
 tags:
   - Python
 date: 2024-11-26

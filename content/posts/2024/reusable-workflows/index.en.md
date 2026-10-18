@@ -1,6 +1,6 @@
 ---
-title: Must-Know GitHub Action Feature - Reusable Workflows
-summary: This article introduces the Reusable Workflows feature of GitHub Actions, helping developers and teams manage and reuse CI/CD processes more efficiently.
+title: "GitHub Actions Reusable Workflows: How to Use Them and 7 Best Practices"
+summary: How to define a reusable workflow with `workflow_call` and inputs, call it from another repository with `uses:`, seven best practices for keeping shared workflows maintainable, and how they compare with Jenkins Shared Libraries.
 tags:
   - GitHub
   - Jenkins
