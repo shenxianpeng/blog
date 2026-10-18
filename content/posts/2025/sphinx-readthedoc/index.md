@@ -7,6 +7,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-04-12
+aliases:
+  - /2025/04/sphinx-readthedoc/
 ---
 
 在日常的开源项目或团队协作中，我们经常会需要一个易于维护、可自动部署的文档系统。

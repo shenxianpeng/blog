@@ -8,6 +8,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-06-05
+aliases:
+  - /2025/06/jenkins-concurrent-build-cn/
 ---
 
 ## 背景介绍

@@ -7,6 +7,7 @@ tags:
 date: 2021-11-06
 aliases:
   - /2021/11/world-quality-report/
+  - /2023/10/world-quality-report/
 authors:
   - shenxianpeng
 ---

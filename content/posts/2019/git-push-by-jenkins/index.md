@@ -4,6 +4,7 @@ summary: 如何通过 Jenkins Pipeline 脚本来提交修改的代码到 Git 仓
 date: 2019-07-22
 aliases:
   - /2019/07/git-push-by-jenkins/
+  - /2019/05/auto-bump-build-version/
 tags:
 - Jenkins
 - Git

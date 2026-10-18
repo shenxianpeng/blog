@@ -7,6 +7,8 @@ tags:
 date: 2020-08-30
 authors:
   - shenxianpeng
+aliases:
+  - /2020/08/about-pip-install-and-versioning/
 ---
 
 ## Backgroup

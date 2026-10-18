@@ -8,6 +8,7 @@ tags:
 date: 2020-04-28
 aliases:
   - /2020/04/bitbucket-webhooks/
+  - /2020/04/bitbucket-webhooks-cn/
 authors:
   - shenxianpeng
 ---

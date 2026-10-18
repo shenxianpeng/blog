@@ -8,6 +8,8 @@ translate: false
 authors:
   - shenxianpeng
 date: 2025-05-26
+aliases:
+  - /2025/05/ai/
 ---
 
 ## 分享两个最近的体会

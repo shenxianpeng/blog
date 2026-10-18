@@ -6,6 +6,7 @@ tags:
 date: 2021-10-23
 aliases:
   - /2021/10/git-cheatsheet/
+  - /2018/02/git-command-cheat/
 translate: false
 authors:
   - shenxianpeng

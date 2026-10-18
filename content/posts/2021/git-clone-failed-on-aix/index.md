@@ -8,6 +8,7 @@ tags:
 date: 2021-06-20
 aliases:
   - /2021/06/git-clone-failed-on-aix/
+  - /2023/09/git-clone-failed-on-aix/
 authors:
   - shenxianpeng
 ---

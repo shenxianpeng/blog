@@ -7,6 +7,8 @@ translate: false
 authors:
   - shenxianpeng
 date: 2025-06-28
+aliases:
+  - /2025/06/jfrog-report/
 ---
 
 大家好，我是沈显鹏。

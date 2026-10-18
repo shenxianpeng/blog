@@ -8,6 +8,8 @@ tags:
 date: 2021-01-12
 authors:
   - shenxianpeng
+aliases:
+  - /2021/01/open-port-22/
 ---
 
 Recently our Bamboo server has an error when connecting to the Windows build system.

@@ -8,6 +8,8 @@ translate: false
 authors:
   - shenxianpeng
 date: 2025-02-27
+aliases:
+  - /2025/02/my-first-pr-to-cpython/
 ---
 
 昨晚，哄完女儿睡觉已经是午夜十二点了。我回到自己的屋里，打开 GitHub，看看当晚有没有什么可以贡献的项目。

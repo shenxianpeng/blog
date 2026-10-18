@@ -7,6 +7,9 @@ tags:
 categories:
 - Hexo
 translate: false
+aliases:
+  - /2017/10/configure-rss-subscription-for-hexo/
+  - /2017/10/insert-img-in-hexo-article/
 ---
 
 ## Hexo 配置 rss 订阅功能

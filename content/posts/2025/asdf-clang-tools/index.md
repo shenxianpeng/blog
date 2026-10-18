@@ -8,6 +8,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-05-29
+aliases:
+  - /2025/05/asdf-clang-tools/
 ---
 
 最近，我在 cpp-linter 组织下发布了一个名为 **[asdf-clang-tools](https://github.com/cpp-linter/asdf-clang-tools)** 的全新仓库。这个项目是从 amrox/asdf-clang-tools fork 而来。由于原作者多年没有维护，我对其进行了修复、升级和功能扩展，使其焕然一新。简单来说，asdf-clang-tools 是一个 **asdf 插件**，用于安装和管理 Clang Tools 相关工具（如 clang-format、clang-tidy、clang-query 和 clang-apply-replacements 等）。

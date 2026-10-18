@@ -7,6 +7,7 @@ tags:
 date: 2024-09-24
 aliases:
   - /2024/09/conventional-branch/
+  - /2024/09/conventional-branch-zh/
 authors:
   - shenxianpeng
 series: ["Conventional Branch"]

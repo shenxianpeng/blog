@@ -7,6 +7,8 @@ date: 2021-01-03
 translate: false
 authors:
   - shenxianpeng
+aliases:
+  - /2021/01/2021-devops-job-requirement/
 ---
 
 ## 前言
