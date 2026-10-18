@@ -1,7 +1,7 @@
 ---
 title: Jenkins 要 Java 21，老构建机只有 Java 8：我做了 Agent8
 summary: |
-  Jenkins 的 agent 也必须跑 Java 21，AIX 7.1、Solaris、HP-UX 这些最高只有 Java 8 的构建机就连不上新版 Jenkins 了。Agent8 把官方 agent.jar 降级到 Java 8，让它们继续当普通的 agent。
+  Jenkins 的 agent 也必须跑 Java 21，Solaris、HP-UX、AIX 7.1 这些最高只有 Java 8 的构建机就连不上新版 Jenkins 了。Agent8 把官方 agent.jar 降级到 Java 8，让它们继续当普通的 agent。
 tags:
   - Jenkins
   - Java
@@ -13,9 +13,9 @@ series: ["我的开源项目"]
 series_order: 6
 ---
 
-在 AIX 上跑 Jenkins agent，我踩过不少坑：2020 年在 AIX 7.1 + Java 1.8 上[用 Artifactory 插件上传制品失败](/zh-cn/posts/2020/java-net-socketexception-on-aix/)，2021 年 [Git clone 失败](/zh-cn/posts/2021/git-clone-failed-on-aix/)，2023 年又遇到 [IBM Java 的证书链校验失败](/zh-cn/posts/2023/upload-artifacts-failed-on-aix/)。这类机器不好伺候，但产品的 AIX 版本就是从它们身上构建出来的。
+如果你的 Jenkins 里还挂着几台 Solaris、HP-UX 或 AIX 的构建机，最近可能已经感觉到了：controller 越来越难升级了。
 
-很多公司都有这样一批机器：AIX、HP-UX、Solaris，再加几台 RHEL 6。它们跑了很多年，没人想动，而且都是 Jenkins agent，每个平台的构建都从它们身上来。
+很多公司都有这样一批机器：Solaris、HP-UX、AIX，再加几台 RHEL 6。它们跑了很多年，没人想动，而且都是 Jenkins agent，每个平台的构建都从它们身上来。
 
 问题是，这些系统上的 Java 基本停在 8。
 
@@ -29,6 +29,8 @@ series_order: 6
 - 不升级，老 agent 继续能用，整个 Jenkins 停在一个没人打补丁的版本上，每次审计都要申请例外。
 
 最后很多团队的做法是：专门为这些平台留一套旧 Jenkins，或者干脆手工构建。
+
+现在有了 AI，很多报错丢给它就能解决，读日志、改配置都很快。但它改变不了一件事：这些系统上就是没有 Java 21。
 
 ## Agent8 是什么
 
@@ -78,12 +80,12 @@ Release 按 Jenkins 版本命名，比如 `jenkins-2.580.1` 就是给 Jenkins 2.
 | Linux（IBM Semeru，OpenJ9） | OpenJ9 8 | CI 中测试，尽力支持 |
 | Linux | HotSpot 11、17 | CI 中测试（LTS） |
 | AIX 7.1 / 7.2 | IBM Java 8 | 实验阶段 |
-| Solaris | Java 8、11 | 在真机上能安装并连上，实验阶段 |
-| HP-UX（Itanium） | Java 8 | 在真机上能安装并连上，实验阶段 |
+| Solaris | Java 8、11 | 已在真机上跑通 |
+| HP-UX（Itanium） | Java 8 | 已在真机上跑通 |
 
 CI 每周都会对着最新的 LTS 和 weekly 跑一遍：Pipeline 构建、Git checkout（JGit）、`withCredentials`、中止构建、构建中途重启 agent、script console。
 
-还没验证的：Solaris 和 HP-UX 上的完整构建、真实的 AIX 机器，以及会在 agent 上跑自己代码的插件（Maven、Docker、制品上传、命令行 git 等）。如果你要用，建议先挑一台机器把 job 跑通，再整体迁移。
+还没验证的：真实的 AIX 机器，以及会在 agent 上跑自己代码的插件（Maven、Docker、制品上传、命令行 git 等）。如果你要用，建议先挑一台机器把 job 跑通，再整体迁移。
 
 **Agent8 是独立项目，不属于 Jenkins 项目，也没有得到 Jenkins 项目的认可或支持。** 遇到问题请提到 [Agent8 的 issues][issues]，不要提到 Jenkins 的 issue tracker。
 
