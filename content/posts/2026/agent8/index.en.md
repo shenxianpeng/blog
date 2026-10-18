@@ -1,7 +1,7 @@
 ---
 title: "Jenkins Needs Java 21, Your Old Build Hosts Stop at Java 8: I Built Agent8"
 summary: |
-  Jenkins agents must run Java 21 too, so build hosts that stop at Java 8, such as AIX 7.1, Solaris and HP-UX, can no longer join a current Jenkins. Agent8 downgrades the official agent.jar to Java 8 so they keep working as ordinary agents.
+  Jenkins agents must run Java 21 too, so build hosts that stop at Java 8, such as Solaris, HP-UX and AIX 7.1, can no longer join a current Jenkins. Agent8 downgrades the official agent.jar to Java 8 so they keep working as ordinary agents.
 tags:
   - Jenkins
   - Java
@@ -13,9 +13,9 @@ series: ["My Open Source Projects"]
 series_order: 6
 ---
 
-I've hit my share of problems running Jenkins agents on AIX: in 2020, [Artifactory uploads failing](/zh-cn/posts/2020/java-net-socketexception-on-aix/) (in Chinese) on AIX 7.1 with Java 1.8; in 2021, [Git clone failing](/posts/2021/git-clone-failed-on-aix/); in 2023, [an IBM Java certificate chain error](/posts/2023/upload-artifacts-failed-on-aix/). These machines are hard to look after, but the AIX build of the product comes from them.
+If your Jenkins still has a few Solaris, HP-UX or AIX build hosts attached, you may have noticed already: the controller keeps getting harder to upgrade.
 
-Plenty of companies have a set of hosts like this: AIX, HP-UX, Solaris, plus a few RHEL 6 machines. They have built releases for years, nobody wants to touch them, and they are Jenkins agents: every platform build comes from them.
+Plenty of companies have a set of hosts like this: Solaris, HP-UX, AIX, plus a few RHEL 6 machines. They have built releases for years, nobody wants to touch them, and they are Jenkins agents: every platform build comes from them.
 
 The problem is that Java on those systems mostly stops at 8.
 
@@ -29,6 +29,8 @@ So teams end up picking one:
 - Don't upgrade. The old agents keep working, the whole Jenkins stays on a release nobody patches, and every audit needs an exception.
 
 What many teams actually do is keep a second, old Jenkins just for those platforms, or build them by hand.
+
+With AI, plenty of errors are now quick to fix: paste the log, get a config change. But it can't change one thing: there is no Java 21 for these systems.
 
 ## What Agent8 is
 
@@ -78,12 +80,12 @@ I want to be clear about this part:
 | Linux (IBM Semeru, OpenJ9) | OpenJ9 8 | Tested in CI, best effort |
 | Linux | HotSpot 11, 17 | Tested in CI (LTS) |
 | AIX 7.1 / 7.2 | IBM Java 8 | Experimental |
-| Solaris | Java 8, 11 | Installs and connects on real Solaris, experimental |
-| HP-UX (Itanium) | Java 8 | Installs and connects on real HP-UX, experimental |
+| Solaris | Java 8, 11 | Works on real Solaris hosts |
+| HP-UX (Itanium) | Java 8 | Works on real HP-UX hosts |
 
 Every week CI runs against the latest LTS and weekly: Pipeline builds, Git checkout (JGit), `withCredentials`, aborts, an agent restart mid-build, and the script console.
 
-Not verified yet: full builds on Solaris and HP-UX, real AIX hosts, and plugins that run their own code on the agent (Maven, Docker, artifact uploads, command-line git and so on). If you try it, get one job working on one host before moving the rest.
+Not verified yet: real AIX hosts, and plugins that run their own code on the agent (Maven, Docker, artifact uploads, command-line git and so on). If you try it, get one job working on one host before moving the rest.
 
 **Agent8 is an independent project. It is not part of, or endorsed or supported by, the Jenkins project.** Please report problems on [Agent8's issues][issues], not the Jenkins issue tracker.
 
