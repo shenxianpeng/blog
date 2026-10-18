@@ -1,0 +1,33 @@
+{{- /*
+  Override of themes/blowfish/layouts/partials/analytics/ga.html (v3.6.0).
+  Blowfish only renders it for production builds (head.html checks
+  hugo.IsProduction), so `hugo server` never reports to GA.
+
+  Two things are added to the theme's gtag snippet, both sent as parameters
+  on every event through the config call:
+
+  - traffic_type: "internal" for the site owner's own visits. Opening any page
+    once with ?internal=1 stores a flag in localStorage on that browser;
+    ?internal=0 clears it. GA's "Internal Traffic" data filter matches this
+    parameter, the same mechanism keelhaven.app uses.
+  - webdriver: "true" or "false", from navigator.webdriver. Reported only, so
+    the bot traffic in GA (headless browsers, 0 s engagement) can be measured
+    before anything is filtered; nothing is blocked here.
+*/ -}}
+{{- $id := site.Config.Services.GoogleAnalytics.ID -}}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  (function () {
+    var params = { webdriver: navigator.webdriver ? 'true' : 'false' };
+    try {
+      var flag = new URLSearchParams(location.search).get('internal');
+      if (flag === '1') localStorage.setItem('sxp-internal', '1');
+      else if (flag === '0') localStorage.removeItem('sxp-internal');
+      if (localStorage.getItem('sxp-internal') === '1') params.traffic_type = 'internal';
+    } catch (e) {}
+    gtag('config', '{{ $id }}', params);
+  })();
+</script>
