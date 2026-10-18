@@ -132,28 +132,28 @@ Here are the open-source Python packages I own or maintain on [Python Package In
 [badge-downloads-devops-maturity]: https://static.pepy.tech/badge/devops-maturity/month
 [badge-downloads-used-by]: https://static.pepy.tech/badge/used-by/month
 
-<!-- Badge Images - Last Commit -->
-[badge-commit-commit-check]: https://img.shields.io/github/last-commit/commit-check/commit-check?style=flat-square
-[badge-commit-hadolint-py]: https://img.shields.io/github/last-commit/shenxianpeng/hadolint-pre-commit?style=flat-square
-[badge-commit-clang-tools]: https://img.shields.io/github/last-commit/cpp-linter/clang-tools-pip?style=flat-square
-[badge-commit-cpp-linter]: https://img.shields.io/github/last-commit/cpp-linter/cpp-linter?style=flat-square
-[badge-commit-atlassian-api-py]: https://img.shields.io/github/last-commit/shenxianpeng/atlassian-api-py?style=flat-square
-[badge-commit-clang-apply-replacements]: https://img.shields.io/github/last-commit/cpp-linter/clang-apply-replacements?style=flat-square
-[badge-commit-gitstats]: https://img.shields.io/github/last-commit/shenxianpeng/gitstats?style=flat-square
-[badge-commit-gnuplot-wheel]: https://img.shields.io/github/last-commit/shenxianpeng/gnuplot-wheel?style=flat-square
-[badge-commit-cpp-linter-hooks]: https://img.shields.io/github/last-commit/cpp-linter/cpp-linter-hooks?style=flat-square
-[badge-commit-badgepy]: https://img.shields.io/github/last-commit/shenxianpeng/badgepy?style=flat-square
-[badge-commit-mkdocs-ng]: https://img.shields.io/github/last-commit/mkdocs-ng/mkdocs?style=flat-square
-[badge-commit-commit-check-mcp]: https://img.shields.io/github/last-commit/commit-check/commit-check-mcp?style=flat-square
-[badge-commit-gitoxide]: https://img.shields.io/github/last-commit/shenxianpeng/gitoxide?style=flat-square
-[badge-commit-py-eol]: https://img.shields.io/github/last-commit/shenxianpeng/py-eol?style=flat-square
-[badge-commit-repokeeper]: https://img.shields.io/github/last-commit/shenxianpeng/repokeeper?style=flat-square
-[badge-commit-jenkinsfilelint]: https://img.shields.io/github/last-commit/jenkinsci/jenkinsfilelint?style=flat-square
-[badge-commit-mkdocs-ng-material]: https://img.shields.io/github/last-commit/mkdocs-ng/mkdocs-material?style=flat-square
-[badge-commit-pipguard]: https://img.shields.io/github/last-commit/shenxianpeng/pipguard?style=flat-square
-[badge-commit-clang-include-cleaner]: https://img.shields.io/github/last-commit/cpp-linter/clang-include-cleaner?style=flat-square
-[badge-commit-devops-maturity]: https://img.shields.io/github/last-commit/devops-maturity/devops-maturity?style=flat-square
-[badge-commit-used-by]: https://img.shields.io/github/last-commit/shenxianpeng/used-by?style=flat-square
+<!-- Badge Images - Last Commit (data from .github/scripts/gen_last_commit_badges.py) -->
+[badge-commit-commit-check]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/commit-check.json&style=flat-square
+[badge-commit-hadolint-py]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/hadolint-py.json&style=flat-square
+[badge-commit-clang-tools]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/clang-tools.json&style=flat-square
+[badge-commit-cpp-linter]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/cpp-linter.json&style=flat-square
+[badge-commit-atlassian-api-py]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/atlassian-api-py.json&style=flat-square
+[badge-commit-clang-apply-replacements]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/clang-apply-replacements.json&style=flat-square
+[badge-commit-gitstats]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/gitstats.json&style=flat-square
+[badge-commit-gnuplot-wheel]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/gnuplot-wheel.json&style=flat-square
+[badge-commit-cpp-linter-hooks]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/cpp-linter-hooks.json&style=flat-square
+[badge-commit-badgepy]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/badgepy.json&style=flat-square
+[badge-commit-mkdocs-ng]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/mkdocs-ng.json&style=flat-square
+[badge-commit-commit-check-mcp]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/commit-check-mcp.json&style=flat-square
+[badge-commit-gitoxide]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/gitoxide.json&style=flat-square
+[badge-commit-py-eol]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/py-eol.json&style=flat-square
+[badge-commit-repokeeper]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/repokeeper.json&style=flat-square
+[badge-commit-jenkinsfilelint]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/jenkinsfilelint.json&style=flat-square
+[badge-commit-mkdocs-ng-material]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/mkdocs-ng-material.json&style=flat-square
+[badge-commit-pipguard]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/pipguard.json&style=flat-square
+[badge-commit-clang-include-cleaner]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/clang-include-cleaner.json&style=flat-square
+[badge-commit-devops-maturity]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/devops-maturity.json&style=flat-square
+[badge-commit-used-by]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/used-by.json&style=flat-square
 
 <!-- Badge Images - Package Names -->
 [badge-name-commit-check]: https://img.shields.io/badge/commit--check-blue?style=flat-square&logo=github
