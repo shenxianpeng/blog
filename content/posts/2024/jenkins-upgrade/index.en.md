@@ -7,6 +7,8 @@ tags:
 date: 2024-10-25
 authors:
   - shenxianpeng
+aliases:
+  - /2024/10/jenkins-upgrade-en/
 ---
 
 ## Background

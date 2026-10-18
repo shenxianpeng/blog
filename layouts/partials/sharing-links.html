@@ -1,0 +1,24 @@
+{{- /*
+  Copy of themes/blowfish/layouts/partials/sharing-links.html (v3.6.0) with the
+  post footer (layouts/partials/post-footer.html) rendered first. single.html
+  calls this right after the article body and author box, which is where the
+  footer belongs; the theme has no hook of its own there.
+*/ -}}
+{{ partial "post-footer.html" . }}
+{{ with .Params.sharingLinks | default (.Site.Params.article.sharingLinks | default false) }}
+  {{ $links := hugo.Data.sharing }}
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    {{ range . }}
+      {{ with index $links . }}
+        <a
+          class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          target="_blank"
+          href="{{ printf .url $.Permalink $.Title | safeURL }}"
+          title="{{ i18n .title }}"
+          aria-label="{{ i18n .title }}">
+          {{ partial "icon.html" .icon }}
+        </a>
+      {{ end }}
+    {{ end }}
+  </section>
+{{ end }}

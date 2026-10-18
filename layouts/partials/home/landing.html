@@ -2,7 +2,7 @@
   The site's home page, replacing Blowfish's centred landing hero. Three
   bands, all driven by front matter in content/_index.en.md and
   content/_index.md:
-    hero      title (or heroTitle), heroLead, heroButtons
+    hero      title (or heroTitle), heroLead, heroButtons, heroAlso
     flagship  full-bleed dark band: label, title, text, links, demo, users
     products  title, text, items (style: wide | dark | mint; demo optional;
               wide tiles also take tone: mint and flip: true for demo-left)
@@ -25,6 +25,14 @@
             <a class="home-btn{{ if eq .style "outline" }} home-btn-outline{{ end }}" href="{{ .url | relURL }}">{{ .label }}</a>
           {{ end }}
         </div>
+      {{ end }}
+      {{- /* heroAlso: one quiet line naming the open-source projects that are
+             neither the flagship nor products. The label carries its own
+             trailing space ("Also maintained: ", but "也在维护："). */}}
+      {{ with .Params.heroAlso }}
+        <p class="home-also">{{ .label }}
+          {{- range $i, $l := .links }}{{ if $i }}<span aria-hidden="true"> · </span>{{ end }}<a href="{{ $l.url | safeURL }}">{{ $l.label }}</a>{{ end -}}
+        </p>
       {{ end }}
     </div>
   </section>

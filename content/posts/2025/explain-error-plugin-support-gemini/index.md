@@ -9,6 +9,8 @@ authors:
 date: 2025-08-03
 series: ["Explain Error Plugin"]
 series_order: 2
+aliases:
+  - /2025/08/explain-error-plugin-support-gemini/
 ---
 
 上周我发布了 [Jenkins Explain Error Plugin](https://shenxianpeng.dev/2025/07/explain-error-plugin/)，旨在帮助 Jenkins 用户通过内置 AI 来更快地分析和解决 Jenkins 构建中的错误。

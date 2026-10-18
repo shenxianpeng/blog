@@ -9,6 +9,8 @@ categories:
 translate: false
 authors:
   - shenxianpeng
+aliases:
+  - /2019/07/add-disqus-to-hexo/
 ---
 
 ## 在你的 Hexo 网站添加 Disqus

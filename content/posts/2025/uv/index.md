@@ -8,6 +8,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-05-05
+aliases:
+  - /2025/05/uv/
 ---
 
 如果你已经习惯了 `pip install`、手动创建虚拟环境、自己管理 requirements.txt，那你可能会对 [uv](https://docs.astral.sh/uv/) 有些惊喜。

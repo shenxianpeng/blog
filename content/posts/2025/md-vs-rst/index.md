@@ -8,6 +8,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-04-11
+aliases:
+  - /2025/04/md-vs-rst/
 ---
 
 在日常工作中，无论是写 README、写博客，还是写项目文档，我们总要选择一种标记语言来排版内容。

@@ -8,6 +8,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2022-07-28
+aliases:
+  - /2022/07/create-gpg-keys/
 ---
 
 ### First, List your GPG key

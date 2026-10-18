@@ -84,7 +84,8 @@ column ran 79–91. Article titles and headings use `text-wrap: balance`.
 Top to bottom:
 
 1. **Hero** — centred headline (`title`, or `heroTitle` for a manual line
-   break), `heroLead` and pill buttons. No image.
+   break), `heroLead`, pill buttons, and `heroAlso`: one muted line of links to
+   the other open-source projects. No image.
 2. **Flagship** — dark full-bleed band for cpp-linter: label, short headline,
    text, links, the animated demo, and the users row.
 3. **Products** — centred headline, then three wide tiles with animated
@@ -93,6 +94,13 @@ Top to bottom:
 4. **Writing** — recent posts as one list of ruled rows: date, title, tag.
 5. **Page body** — only the Chinese home has one: the WeChat QR code.
 6. **Sponsor** — full-bleed tinted band.
+
+## Post footer
+
+Posts and essays end with "From the author" (one or two project cards, the
+home tiles' white surface and shadow at a smaller radius) and "Follow" (text
+links; the WeChat QR code on Chinese pages), within the article's measure.
+Styles `.post-footer-*` in `custom.css`.
 
 ## Rules
 

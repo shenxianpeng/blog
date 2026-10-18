@@ -6,6 +6,8 @@ tags:
 date: 2025-08-17
 authors:
   - shenxianpeng
+aliases:
+  - /2025/08/devops-maturity/
 ---
 
 对，我又开源了一个项目 —— **DevOps Maturity（成熟度）**。

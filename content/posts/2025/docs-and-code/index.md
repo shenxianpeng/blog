@@ -8,6 +8,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-05-14
+aliases:
+  - /2025/05/docs-and-code/
 ---
 
 不知道你是否也在企业中使用过 Confluence，或者其他类似的 Wiki 工具。刚接触它时，我觉得这玩意儿真不错：功能强大、支持各种排版样式、可以插入图片、视频、图标，还能查看历史版本，使用体验比 Git 轻松太多了。

@@ -8,6 +8,8 @@ tags:
 date: 2021-05-04
 authors:
   - shenxianpeng
+aliases:
+  - /2021/05/artifactory-api-search/
 ---
 
 ## Problem

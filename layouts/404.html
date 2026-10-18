@@ -6,11 +6,34 @@
     English pages lived under /en/ until 2026-09. Every page gets a redirect at
     build time (partials/legacy-redirects.html); this catches what that does not
     cover, such as paginated lists.
+
+    Before 2025-08 the blog ran on Hexo, with posts at /YYYY/MM/slug/. Those
+    URLs are front-matter aliases where the post survived; for any that are
+    not, try the post with the same year and slug (Chinese first, as Hexo was,
+    or English for a -en slug, and without a -cn / -zh / -en suffix) and go
+    there if it exists. This only helps people following old links: the page
+    is still served with status 404, so search engines need the aliases.
   */}}
   <script>
     (function () {
       var p = location.pathname;
-      if (p.indexOf("/en/") === 0) location.replace(p.slice(3) + location.search + location.hash);
+      if (p.indexOf("/en/") === 0) {
+        location.replace(p.slice(3) + location.search + location.hash);
+        return;
+      }
+      var m = p.match(/^\/(\d{4})\/\d{2}\/([^\/]+?)\/?$/);
+      if (!m || !window.fetch) return;
+      var year = m[1], slug = m[2], base = slug.replace(/-(cn|zh|en)$/, "");
+      var zh = "/zh-cn/posts/" + year + "/", en = "/posts/" + year + "/";
+      var tries = /-en$/.test(slug)
+        ? [en + base + "/", zh + base + "/"]
+        : [zh + slug + "/", zh + base + "/", en + base + "/"];
+      (function next(i) {
+        if (i >= tries.length) return;
+        fetch(tries[i], { method: "HEAD" })
+          .then(function (r) { if (r.ok) location.replace(tries[i] + location.hash); else next(i + 1); })
+          .catch(function () { next(i + 1); });
+      })(0);
     })();
   </script>
   <h1 class="mb-3 text-4xl font-extrabold">{{ i18n "error.404_title" | emojify }}</h1>

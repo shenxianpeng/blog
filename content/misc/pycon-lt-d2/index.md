@@ -8,6 +8,8 @@ tags:
   - Lithuania
 author: shenxianpeng
 date: 2025-04-24
+aliases:
+  - /2025/04/pycon-lt-d2/
 ---
 
 今天是我参加 PyCon LT 2025 的第二天：Data Day，主题是 Dataframes、Databases、Orchestration。

@@ -1,5 +1,5 @@
 ---
-title: 如何让 Jenkins Pipeline 在特定错误发生时不中断失败
+title: Jenkins catchError：让 Pipeline 在特定错误发生时不失败
 summary: 介绍如何在 Jenkins Pipeline 中使用 `catchError` 捕获特定错误，并在不中断整个构建的情况下更新阶段或构建结果，从而实现更灵活的错误处理。
 tags:
   - Jenkins

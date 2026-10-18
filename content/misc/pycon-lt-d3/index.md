@@ -8,6 +8,8 @@ tags:
   - Lithuania
 author: shenxianpeng
 date: 2025-04-29
+aliases:
+  - /2025/04/pycon-lt-d3/
 ---
 
 今天是我参加 PyCon LT 2025 的第三天：AI and ML Day，主题是 LLM 和 Neural Networks。

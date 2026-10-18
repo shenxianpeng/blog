@@ -8,6 +8,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-06-12
+aliases:
+  - /2025/06/commit-message-template/
 ---
 
 ## 背景

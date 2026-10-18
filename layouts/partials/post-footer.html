@@ -1,0 +1,64 @@
+{{- /*
+  "From the author" and "Follow", at the end of posts and essays. Rendered from
+  layouts/partials/sharing-links.html, just above the share buttons. Projects
+  are chosen by tag from data/postfooter.yaml, which also holds the copy.
+  Clicks are reported as project_click / follow_click by the script in
+  layouts/partials/extend-footer.html: data-ga-project and data-ga-follow name
+  the target, data-ga-placement the block.
+*/ -}}
+{{- if in (slice "posts" "misc") .Section -}}
+  {{- $d := hugo.Data.postfooter -}}
+  {{- $lang := .Lang -}}
+  {{- $labels := index $d.labels $lang | default (index $d.labels "en") -}}
+
+  {{- $picked := slice -}}
+  {{- range .Params.tags -}}
+    {{- $tag := lower . -}}
+    {{- range $d.projects -}}
+      {{- if and (in .tags $tag) (not (in $picked .id)) (lt (len $picked) 2) -}}
+        {{- $picked = $picked | append .id -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $picked }}{{ $picked = slice $d.fallback }}{{ end -}}
+  {{- $campaign := path.Base (strings.TrimSuffix "/" .RelPermalink) -}}
+
+  <aside class="post-footer">
+    <section class="post-footer-block" data-ga-placement="post_footer">
+      <h2 class="post-footer-label">{{ $labels.projects }}</h2>
+      <div class="post-footer-cards">
+        {{- range $picked }}
+          {{- with index (where $d.projects "id" .) 0 }}
+            <a class="post-footer-card" data-ga-project="{{ .id }}"
+              href="{{ printf "%s?utm_source=blog&utm_medium=post-footer&utm_campaign=%s" .url $campaign | safeURL }}">
+              <span class="post-footer-name">{{ .name }}</span>
+              <span class="post-footer-desc">{{ index .text $lang | default .text.en }}</span>
+              <span class="post-footer-more">{{ $labels.more }} ›</span>
+            </a>
+          {{- end }}
+        {{- end }}
+      </div>
+    </section>
+
+    <section class="post-footer-block post-footer-follow" data-ga-placement="post_footer">
+      <h2 class="post-footer-label">{{ $labels.follow }}</h2>
+      <div class="post-footer-follow-body">
+        {{- if eq $lang "zh-cn" }}
+          {{- with resources.Get "img/qrcode.jpg" }}
+            {{- $qr := .Resize "240x webp q85" }}
+            <img class="post-footer-qr" src="{{ $qr.RelPermalink }}" width="120" height="{{ div (mul 120 $qr.Height) $qr.Width }}"
+              alt="{{ $labels.qrAlt }}" loading="lazy" data-zoom-src="{{ .RelPermalink }}">
+          {{- end }}
+        {{- end }}
+        <div>
+          <p class="post-footer-follow-text">{{ $labels.followText }}</p>
+          <p class="post-footer-follow-links">
+            {{- range index $d.follow $lang | default (index $d.follow "en") }}
+              <a href="{{ .url }}" data-ga-follow="{{ .method }}">{{ .label }}</a>
+            {{- end }}
+          </p>
+        </div>
+      </div>
+    </section>
+  </aside>
+{{- end -}}

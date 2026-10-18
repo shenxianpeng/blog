@@ -7,6 +7,8 @@ tags:
 date: 2021-05-13
 authors:
   - shenxianpeng
+aliases:
+  - /2021/05/branch-naming-convention/
 ---
 
 ## Why need branching naming convention

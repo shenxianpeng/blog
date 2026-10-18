@@ -5,6 +5,8 @@ tags:
   - Thoughts
 author: shenxianpeng
 date: 2025-07-13
+aliases:
+  - /2025/05/run-or-not/
 ---
 
 今晚孩子睡得早，我坐在阳台的沙发上，打开昨天和同事聚餐剩下的啤酒，听着窗外邻居用我听不懂的语言聊天，心里有点感慨。

@@ -7,6 +7,8 @@ tags:
 date: 2020-08-17
 authors:
   - shenxianpeng
+aliases:
+  - /2020/08/update-jira-server-account-avatar-with-rest-api/
 ---
 
 ## Backgroud

@@ -53,7 +53,9 @@ The home page overrides Blowfish's `landing` layout
 (`layouts/partials/home/landing.html`) plus `layouts/index.html` and
 `layouts/partials/recent-articles/main.html`. All of its copy is front matter
 in `content/_index.en.md` and `content/_index.md`: `title` (and optional
-`heroTitle` for a manual line break), `heroLead`, `heroButtons`, `flagship`
+`heroTitle` for a manual line break), `heroLead`, `heroButtons`, `heroAlso`
+(one quiet line linking the open-source projects that are neither flagship
+nor product), `flagship`
 (the dark cpp-linter band), `products`, `writing` and `sponsor`. The Chinese
 page's body holds the WeChat QR section. `demo: <name>` on the flagship or a
 product renders `layouts/partials/home/demo-<name>.html`, a pure-CSS animation
@@ -67,9 +69,36 @@ change the timelines in the script and rerun it, do not edit the block. Keep tha
 (github.com/shenxianpeng): one positioning line, cpp-linter as the flagship,
 keelinfra / keelapps / Keelhaven as the products.
 
+Every post and essay ends with a **post footer**
+(`layouts/partials/post-footer.html`, rendered from the
+`sharing-links.html` override): "From the author", up to two project cards
+picked by the post's tags, and "Follow" (RSS, GitHub, X, LinkedIn; on Chinese
+pages the WeChat QR code instead of X and LinkedIn). The tag-to-project map
+and all its copy are in `data/postfooter.yaml`; add a tag there rather than in
+the template.
+
 For other visual work: prefer a theme config option in
 `config/_default/params.toml` over new CSS, and prefer a `layouts/` override
 over touching `themes/blowfish/`.
+
+## Analytics
+
+Google Analytics 4 (`googleAnalytics` in `hugo.toml`), production builds only.
+`layouts/partials/analytics/ga.html` overrides the theme's snippet:
+
+- **Owner visits.** Opening any page with `?internal=1` stores `sxp-internal`
+  in that browser's localStorage, and every hit from it then carries
+  `traffic_type: internal`, which GA's Internal Traffic filter drops;
+  `?internal=0` clears it. Do this once per browser you read the site in.
+- **Bots.** Every hit carries `webdriver: "true" | "false"` from
+  `navigator.webdriver`. It is reported, not used to block anything.
+
+`layouts/partials/extend-footer.html` reports two events from link clicks:
+`project_click` (`project`, `placement`, `link_url`) for links to the
+author's projects, matched by domain, and `follow_click` (`method`,
+`placement`, `link_url`) for RSS, the GitHub profile, X, LinkedIn and email.
+When a new project gets a site, add its domain to the list in that script and
+to `data/postfooter.yaml`.
 
 ## Writing Style & Tone
 
@@ -351,6 +380,12 @@ at `/` and English under `/en/`.
   `/<path>/`, and `/<path>/` to `/zh-cn/<path>/` for Chinese pages that have no
   English page at that path. Nothing goes in front matter. A Chinese post's old
   URL serves its English version once one exists.
+- **Hexo URLs.** Before 2025-08 posts lived at `/YYYY/MM/slug/`. Those
+  addresses are front-matter `aliases`, on `index.md` when the Hexo post was
+  Chinese and on `index.en.md` when it was English. A Hexo address that is not
+  an alias falls through to `layouts/404.html`, which tries the post with the
+  same year and slug in the browser; that helps readers, not search engines,
+  so give a surviving post its alias.
 - **The résumé moved** from `/hireme/` to `/resume/` in 2026-09. `/hireme/`,
   `/en/hireme/` and `/zh-cn/hireme/` are front-matter `aliases` on the two
   résumé pages; `/resume-cn` is a static page in `static/resume-cn/`, because

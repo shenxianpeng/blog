@@ -8,6 +8,8 @@ tags:
   - Lithuania
 author: shenxianpeng
 date: 2025-04-23
+aliases:
+  - /2025/04/pycon-lt-d1/
 ---
 
 第一次参加了 Python 的大会，没想到是在国外。

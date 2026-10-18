@@ -7,6 +7,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-06-23
+aliases:
+  - /2025/06/show-badge-on-jenkins/
 ---
 
 ## Issue

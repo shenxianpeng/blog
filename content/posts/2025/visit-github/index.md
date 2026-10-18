@@ -7,6 +7,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-04-13
+aliases:
+  - /2025/04/visit-github/
 ---
 
 昨天想必有些人可能已经遇到 GitHub 无法访问的情况了。

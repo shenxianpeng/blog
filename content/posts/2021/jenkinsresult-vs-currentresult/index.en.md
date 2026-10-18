@@ -1,7 +1,7 @@
 ---
-title: What's the difference between result and currentResult in Jenkins?
+title: "Jenkins currentBuild.result vs currentBuild.currentResult: What's the Difference?"
 summary: |
-  This article explains the difference between `result` and `currentResult` in Jenkins pipelines, including examples of how they behave in both declarative and scripted pipelines.
+  `currentBuild.result` stays null until something sets it, while `currentBuild.currentResult` always reports the build's current status. Declarative and Scripted Pipeline examples with their console output show how the two differ at each stage.
 tags:
   - Jenkins
 date: 2021-01-14

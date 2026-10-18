@@ -8,6 +8,8 @@ tags:
 authors:
   - shenxianpeng
 date: 2025-06-02
+aliases:
+  - /2025/06/code-refactor/
 ---
 
 今天这篇文章，起因是我看到前同事发的一条朋友圈。

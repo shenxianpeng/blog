@@ -7,6 +7,8 @@ tags:
 date: 2021-01-11
 authors:
   - shenxianpeng
+aliases:
+  - /2021/01/sparse-checkout/
 ---
 
 This post just a note to myself and it works on my environment. it has not been widely tested.

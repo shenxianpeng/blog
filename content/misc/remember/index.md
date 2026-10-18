@@ -6,6 +6,8 @@ tags:
   - Life
 date: 2024-07-09
 author: shenxianpeng
+aliases:
+  - /2024/07/remember/
 ---
 
 最近开车的时候我总爱听赵雷的歌，尤其是那首《我记得》。

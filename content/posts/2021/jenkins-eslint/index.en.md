@@ -9,6 +9,8 @@ tags:
 date: 2021-06-07
 authors:
   - shenxianpeng
+aliases:
+  - /2021/06/eslint-jenkins/
 ---
 
 > I'm just documenting to myself that it was solved by following.
