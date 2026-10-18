@@ -1,0 +1,60 @@
+# Keeps the "Last Commit" column on /portfolio/pypistats/ fresh.
+# shields.io's github/last-commit badge often renders "invalid", so the page
+# uses shields' endpoint badge fed by JSON on the `badges` branch; this job
+# rewrites that JSON. See .github/scripts/gen_last_commit_badges.py.
+name: Refresh last-commit badges
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  push:
+    branches: ["main"]
+    paths:
+      - "content/portfolio/pypistats/index.en.md"
+      - ".github/scripts/gen_last_commit_badges.py"
+      - ".github/workflows/last-commit-badges.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: last-commit-badges
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Start from the published badges
+        run: |
+          mkdir out
+          if git fetch --depth=1 origin badges; then
+            git archive FETCH_HEAD | tar -x -C out
+          fi
+          cp -r out previous
+
+      - name: Generate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/gen_last_commit_badges.py --out out
+
+      - name: Publish to the badges branch
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if diff -rq previous out; then
+            echo "No change."
+            exit 0
+          fi
+          cd out
+          git init -q -b badges
+          git add -A
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "badges: refresh last-commit data"
+          git push -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" badges
