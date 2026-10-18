@@ -1,0 +1,51 @@
+AGENTS.md
+  s_3b1f4d993766cf::t_00bd4efa45fb9c 56-58
+  s_3b1f4d993766cf::t_5cf0ec8bfa9ab9 383-388
+  s_3b1f4d993766cf::t_9e10aa908047de 72-79,84-101
+  s_3b1f4d993766cf::t_9f7425bf6b96f2 102
+layouts/partials/sharing-links.html
+  s_3b1f4d993766cf::t_ff5a662e24da2b 1-24
+content/_index.md
+  s_3b1f4d993766cf::t_9b8c4af5b2a385 11-19
+layouts/partials/post-footer.html
+  s_3b1f4d993766cf::t_184ca232b0ebc1 1-64
+assets/css/custom.css
+  s_3b1f4d993766cf::t_677f54a1beadda 1289-1406
+  s_3b1f4d993766cf::t_5a49a7555d04ae 226-252
+layouts/partials/home/landing.html
+  s_3b1f4d993766cf::t_dc3c21e74dde0d 29,32-33,35
+  s_3b1f4d993766cf::t_cb4566b71e97af 34
+  s_3b1f4d993766cf::t_f1f0cac425b3db 30-31
+  s_3b1f4d993766cf::t_5a80328f186b86 5
+  s_3b1f4d993766cf::t_577d760ddcb17b 36
+data/postfooter.yaml
+  s_3b1f4d993766cf::t_d9f2e505548b2a 29-30
+  s_3b1f4d993766cf::t_5b0c8962817edc 1-28,31-101
+DESIGN.md
+  s_3b1f4d993766cf::t_f4c69796826caa 98-103
+  s_3b1f4d993766cf::t_f0d9808669bda0 87-88
+  s_3b1f4d993766cf::t_fa8391b04e0ea1 104
+content/_index.en.md
+  s_3b1f4d993766cf::t_68212b8093e3dc 10,12-18
+  s_3b1f4d993766cf::t_d499c8e34c20e4 11
+layouts/partials/extend-footer.html
+  s_3b1f4d993766cf::t_735444b1b4d450 65-66
+  s_3b1f4d993766cf::t_9b9614ae6a2af9 13
+  s_3b1f4d993766cf::t_0ae91fa6112274 1-12,14-64,67-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d8c6bd60aa715f7dd0b0db9ac2e1f254fa8705e9",
+  "prompts": {},
+  "sessions": {
+    "s_3b1f4d993766cf": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2969eecb-975d-43eb-a8ec-7534023fdcae",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}

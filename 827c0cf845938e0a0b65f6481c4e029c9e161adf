@@ -1,0 +1,19 @@
+layouts/partials/analytics/ga.html
+  s_3b1f4d993766cf::t_ba6b4078e7ae4c 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "827c0cf845938e0a0b65f6481c4e029c9e161adf",
+  "prompts": {},
+  "sessions": {
+    "s_3b1f4d993766cf": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2969eecb-975d-43eb-a8ec-7534023fdcae",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
