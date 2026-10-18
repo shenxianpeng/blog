@@ -1,0 +1,27 @@
+.github/scripts/tests/test_gen_demo_css.py
+  s_f31ea6d3a8ce07::t_cc07d15d9e309f 1-73
+.github/scripts/gen_demo_css.py
+  s_f31ea6d3a8ce07::t_d08ae455203de5 1-332
+AGENTS.md
+  s_f31ea6d3a8ce07::t_73365434d9ea60 63-65
+DESIGN.md
+  s_f31ea6d3a8ce07::t_52a6cc541eda71 110-115
+assets/css/custom.css
+  s_f31ea6d3a8ce07::t_d816d022d65344 587,805-806
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "434f70f68de52b114b5279bc6ddb036bda89984f",
+  "prompts": {},
+  "sessions": {
+    "s_f31ea6d3a8ce07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "95f5bcd6-2568-4f3b-a2d0-1939ca7b3aa2",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}

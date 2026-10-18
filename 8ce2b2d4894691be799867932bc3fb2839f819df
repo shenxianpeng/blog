@@ -1,0 +1,32 @@
+content/posts/2026/mkdocs-ng-1.8/index.md
+  s_af4846c89b96a3::t_c8df2250fc8e9a 17,23,65,80
+  s_af4846c89b96a3::t_c3a7b0b79f22ce 78
+  s_af4846c89b96a3::t_4ac87331411085 25,33,35,61
+  s_af4846c89b96a3::t_16e2c3e9b56181 1-16,18-22,24,26-32,34,36-60,62-64,66-77,79,81-84
+content/posts/2026/mkdocs-ng-1.8/index.en.md
+  s_af4846c89b96a3::t_a20baef6ef1a50 1-16,18-22,24,26-32,34,36-60,62-64,66-77,79,81-84
+  s_af4846c89b96a3::t_1fa6a8a95d3188 17,23,65,80
+  s_af4846c89b96a3::t_919b165a43c09e 25,33,35,61
+  s_af4846c89b96a3::t_fed74922096163 78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8ce2b2d4894691be799867932bc3fb2839f819df",
+  "prompts": {},
+  "humans": {
+    "h_95e33fbd4ab2d9": {
+      "author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_af4846c89b96a3": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019ff750-c621-71ba-a5c8-deba59629418",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}

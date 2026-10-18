@@ -1,0 +1,21 @@
+content/portfolio/pypistats/index.md
+  s_e00aa729253cb5::t_612109615e709e 22,26-27,30-31,33,35-36
+content/portfolio/pypistats/index.en.md
+  s_e00aa729253cb5::t_612109615e709e 21,25-26,29-30,32,34-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "20da4040c77e242cfb0813f7880544aca029431b",
+  "prompts": {},
+  "sessions": {
+    "s_e00aa729253cb5": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a087c4-2901-722d-93ce-1750e306865d",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}

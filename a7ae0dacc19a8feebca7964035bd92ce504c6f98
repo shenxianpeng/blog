@@ -1,0 +1,31 @@
+content/posts/2026/open-delivery-spec/index.md
+  h_95e33fbd4ab2d9 12
+content/posts/2026/open-delivery-spec/index.en.md
+  h_95e33fbd4ab2d9 12
+content/posts/2026/open-delivery-spec-update/index.en.md
+  h_95e33fbd4ab2d9 1-136
+content/posts/2026/open-delivery-spec-update/index.md
+  s_b1e88c0b171643::t_a7fea5cbedb216 1-11,13-15,17,19-24,26,28-32,36,39-49,51-67,69-76,79-123,125-133
+  h_95e33fbd4ab2d9 12,16,18,25,27,33-35,37-38,50,68,77-78,124,134-135
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a7ae0dacc19a8feebca7964035bd92ce504c6f98",
+  "prompts": {},
+  "humans": {
+    "h_95e33fbd4ab2d9": {
+      "author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_b1e88c0b171643": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "971f1ddb-8f4d-4c25-ad48-afabf0c80fc3",
+        "model": "claude-fable-5"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}

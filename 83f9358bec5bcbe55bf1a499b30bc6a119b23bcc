@@ -1,0 +1,19 @@
+layouts/partials/legacy-redirects.html
+  s_797e3933ee8a97::t_02b78bfc125c2d 32-36,42,51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "83f9358bec5bcbe55bf1a499b30bc6a119b23bcc",
+  "prompts": {},
+  "sessions": {
+    "s_797e3933ee8a97": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2b4a1047-5655-4524-a769-e344963d8e3f",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}

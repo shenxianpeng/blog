@@ -1,0 +1,133 @@
+.github/scripts/blog_utils.py
+  s_b54698f7f85f94::t_38ffd3be952ac2 7,27
+.github/scripts/tests/test_blog_utils.py
+  s_b54698f7f85f94::t_8959fb3f2f96a9 36
+.github/workflows/pages.yaml
+  s_797e3933ee8a97::t_3970ef06f37668 58
+AGENTS.md
+  s_b54698f7f85f94::t_552022164ae141 8,409
+README.md
+  s_b54698f7f85f94::t_d0e9730b68be93 3-4
+config/_default/hugo.toml
+  s_b54698f7f85f94::t_dd75b7b4cc7ce1 6
+content/hireme/index.en.md
+  s_b54698f7f85f94::t_3067b0a663fd87 35
+content/hireme/index.md
+  s_b54698f7f85f94::t_87ea156b4d9f00 37
+content/misc/2020-summary/index.en.md
+  s_b54698f7f85f94::t_03202a06c14717 27,31,35,39,43,51,93-94
+content/misc/2020-summary/index.md
+  s_b54698f7f85f94::t_ee740d3b7abb91 29,33,37,41,45,53
+content/misc/2022-summary/index.en.md
+  s_b54698f7f85f94::t_9bdfaecb69172f 61-63
+content/misc/2023-summary/index.en.md
+  s_b54698f7f85f94::t_045f3796dc7417 69-72
+content/misc/2024-summary/index.en.md
+  s_b54698f7f85f94::t_7c488b2b5c4fd8 84-88
+content/misc/2025-summary/index.en.md
+  s_b54698f7f85f94::t_11c76ab5c081bd 26
+content/misc/2025-summary/index.md
+  s_b54698f7f85f94::t_c81e445a7c64a4 26
+content/misc/from-qa-to-dev-to-devops/index.en.md
+  s_b54698f7f85f94::t_6a09e7491b0062 50,76-77
+content/misc/from-qa-to-dev-to-devops/index.md
+  s_b54698f7f85f94::t_b40104dd042798 51,77-78
+content/posts/2019/artifactory-integrate-with-jenkins/index.md
+  s_b54698f7f85f94::t_0d64b3d7ccfedb 14
+content/posts/2019/git-stats/index.en.md
+  s_b54698f7f85f94::t_fa55d7d43dc1d2 28
+content/posts/2019/git-stats/index.md
+  s_b54698f7f85f94::t_bdee48544023fa 30
+content/posts/2019/hexo-add-disqus/index.md
+  s_b54698f7f85f94::t_89ad0672293520 35
+content/posts/2019/jenkins-windows-agent/index.en.md
+  s_b54698f7f85f94::t_6d5cc35b9282a6 120
+content/posts/2019/jenkins-windows-agent/index.md
+  s_b54698f7f85f94::t_0fd4d1a56b99c7 134
+content/posts/2021/gcov-example/index.en.md
+  s_b54698f7f85f94::t_77d690b255cec0 30
+content/posts/2021/gcov-example/index.md
+  s_b54698f7f85f94::t_dcff1ab960f8f5 29,220
+content/posts/2021/git-guidelines/index.md
+  s_b54698f7f85f94::t_b61ecc8dd0bb1a 54
+content/posts/2021/git-repository-settings/index.en.md
+  s_b54698f7f85f94::t_1dcd950c583197 50
+content/posts/2021/git-repository-settings/index.md
+  s_b54698f7f85f94::t_6d113404c75b09 52
+content/posts/2021/github-special-repository/index.md
+  s_b54698f7f85f94::t_9d4c88605c87d0 59,98
+content/posts/2021/jenkins-windows-agent-cannot-start/index.en.md
+  s_b54698f7f85f94::t_8e33dfed89224c 83
+content/posts/2021/jenkins-windows-agent-cannot-start/index.md
+  s_b54698f7f85f94::t_e729f16f8a6e16 84
+content/posts/2023/commit-check/index.en.md
+  s_b54698f7f85f94::t_0d66bc501ce81e 17
+content/posts/2023/commit-check/index.md
+  s_b54698f7f85f94::t_58abfa1da479ad 19
+content/posts/2023/devops-trends-2023/index.md
+  s_b54698f7f85f94::t_47bad2f270d3af 87
+content/posts/2023/witness-and-slsa/index.en.md
+  s_b54698f7f85f94::t_4634fa306ca824 222
+content/posts/2023/witness-and-slsa/index.md
+  s_b54698f7f85f94::t_f8bad853c05ec4 224
+content/posts/2024/cpp-linter-action/index.en.md
+  s_b54698f7f85f94::t_918936fb3d0c48 25
+content/posts/2024/cpp-linter-action/index.md
+  s_b54698f7f85f94::t_633a67be5e1aaf 27
+content/posts/2024/gitstats/index.en.md
+  s_b54698f7f85f94::t_c77f3580574979 17-18
+content/posts/2024/gitstats/index.md
+  s_b54698f7f85f94::t_54529271a5b47d 19-20
+content/posts/2025/any-updates/index.md
+  s_b54698f7f85f94::t_4fa9ee028221e5 104
+content/posts/2025/auto-translate-post/index.en.md
+  s_b54698f7f85f94::t_41b306e9a8380b 13
+content/posts/2025/auto-translate-post/index.md
+  s_b54698f7f85f94::t_1ccff64a87bbc8 13
+content/posts/2025/explain-error-plugin-support-gemini/index.en.md
+  s_b54698f7f85f94::t_be160fcbd7d1ad 14
+content/posts/2025/explain-error-plugin-support-gemini/index.md
+  s_b54698f7f85f94::t_09ec12ab9c94c5 14
+content/posts/2026/gitstats-2.0/index.en.md
+  s_b54698f7f85f94::t_e40b949a5dd83e 94
+content/posts/2026/gitstats-2.0/index.md
+  s_b54698f7f85f94::t_0e34d760f556b4 97
+content/posts/2026/mkdocs-ng-1.8/index.en.md
+  s_b54698f7f85f94::t_076420f729b8d8 17
+content/posts/2026/mkdocs-ng-1.8/index.md
+  s_b54698f7f85f94::t_12785ccfc0a2ae 17
+content/posts/2026/pipguard/index.en.md
+  s_b54698f7f85f94::t_0934bdad4b0d0c 182
+content/posts/2026/pipguard/index.md
+  s_b54698f7f85f94::t_7333471f53f79d 182
+content/posts/2026/repokeeper/index.en.md
+  s_b54698f7f85f94::t_e18d30c52ab5ae 259
+content/posts/2026/repokeeper/index.md
+  s_b54698f7f85f94::t_d096ce261142d0 259
+static/CNAME
+  s_b54698f7f85f94::t_ccfee562fba503 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "81e017820af34d395d7e35673fffe07c56527697",
+  "prompts": {},
+  "sessions": {
+    "s_797e3933ee8a97": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2b4a1047-5655-4524-a769-e344963d8e3f",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    },
+    "s_b54698f7f85f94": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "238b8642-daed-4b1c-a5ec-b20ad6fb5211",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
