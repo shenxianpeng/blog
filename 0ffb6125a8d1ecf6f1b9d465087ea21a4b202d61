@@ -1,0 +1,33 @@
+content/_index.en.md
+  s_6a2551f36c67b4::t_9d5fe3df6ec020 3,25,36,45
+content/_index.md
+  s_6a2551f36c67b4::t_0c4a844e05e552 4,26,37,46
+content/about/index.en.md
+  s_6a2551f36c67b4::t_2087dfb989d454 29,37
+content/about/index.md
+  s_6a2551f36c67b4::t_96f8ee5b3fcf00 29,37
+content/portfolio/keelapps/index.en.md
+  s_6a2551f36c67b4::t_0882e41355eb63 5
+content/portfolio/keelapps/index.md
+  s_6a2551f36c67b4::t_9b23e35d30c7f3 5
+content/portfolio/keelinfra/index.en.md
+  s_6a2551f36c67b4::t_1e8cddd58c970c 5
+content/portfolio/keelinfra/index.md
+  s_6a2551f36c67b4::t_b8e84212f195b4 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0ffb6125a8d1ecf6f1b9d465087ea21a4b202d61",
+  "prompts": {},
+  "sessions": {
+    "s_6a2551f36c67b4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "aecda146-5351-460c-8b33-2d8807cf3942",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
