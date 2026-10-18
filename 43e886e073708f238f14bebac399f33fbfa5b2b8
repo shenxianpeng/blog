@@ -1,0 +1,19 @@
+README.md
+  s_b8bf1d07b9d234::t_8f8b29bee9c848 1-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "43e886e073708f238f14bebac399f33fbfa5b2b8",
+  "prompts": {},
+  "sessions": {
+    "s_b8bf1d07b9d234": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "225eb13c-3e2c-4b84-bb06-31d19fb0de9b",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}

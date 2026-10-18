@@ -1,0 +1,35 @@
+content/posts/2026/no-ai-slop/index.md
+  s_7fdf2dcd1068e2::t_f7ca9ea0e472d3 1-10,12-14,18,20-38,40,42-56,58-78,80-83,85,92-95,102-105,109,113,115-121,123-126,128-131
+  s_fb2203e4dda36d::t_d5dbd23c1b7630 19
+  s_fb2203e4dda36d::t_5d523eab338958 39,41
+  h_95e33fbd4ab2d9 11,15-17,57,79,84,86-91,96-101,106-108,110-112,114,122,127,132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "2dcdb8052411e1e639f16ca3f0309712046374c0",
+  "prompts": {},
+  "humans": {
+    "h_95e33fbd4ab2d9": {
+      "author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_7fdf2dcd1068e2": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f8ba8-fce4-70a3-a057-f83c3b3eca5e",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    },
+    "s_fb2203e4dda36d": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f8bb7-7e47-7205-b500-1856f654d1d0",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}

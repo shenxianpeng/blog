@@ -1,0 +1,21 @@
+.github/scripts/gen_demo_css.py
+  s_79f4d1035d61a1::t_5cd6e1fca6acde 333
+assets/css/custom.css
+  s_79f4d1035d61a1::t_d01aba8ac02ea7 835,1008
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "2dfc7fc6ec4eaa1303c26b4f9d1d65fd6f1803dc",
+  "prompts": {},
+  "sessions": {
+    "s_79f4d1035d61a1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1f1265ee-becd-4492-821e-cae2e3eb15cc",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}

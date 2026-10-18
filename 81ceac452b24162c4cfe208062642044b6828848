@@ -1,0 +1,14 @@
+content/posts/2026/open-delivery-spec/index.md
+  h_95e33fbd4ab2d9 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "81ceac452b24162c4cfe208062642044b6828848",
+  "prompts": {},
+  "humans": {
+    "h_95e33fbd4ab2d9": {
+      "author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
