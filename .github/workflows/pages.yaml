@@ -69,6 +69,10 @@ jobs:
           publish_branch: master
           publish_dir: ./public
           keep_files: false
+          # Replace master with a single commit on every deploy. Appending
+          # commits kept a full copy of the site per deploy: 731 commits and
+          # 588 MB by 2026-10, none of which Pages ever serves.
+          force_orphan: true
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: "Site updated"
