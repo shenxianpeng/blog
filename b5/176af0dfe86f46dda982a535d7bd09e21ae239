@@ -1,0 +1,19 @@
+.github/workflows/pages.yaml
+  s_e528095b4b48be::t_a54574f6732888 72-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b5176af0dfe86f46dda982a535d7bd09e21ae239",
+  "prompts": {},
+  "sessions": {
+    "s_e528095b4b48be": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3e2bbb02-260a-4ee6-bcbc-548a47f21d7a",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
