@@ -1,0 +1,41 @@
+.github/workflows/auto-translate.yml
+  s_808bcb54b94641::t_0aed7d99f2387c 23,26
+.github/workflows/last-commit-badges.yml
+  s_808bcb54b94641::t_fd6a81e85c04f3 30
+.github/workflows/ods-validate.yml
+  s_6535937731a8c8::t_f5da1ac35be3b7 12-14,22,28
+.github/workflows/pages.yaml
+  s_6535937731a8c8::t_fe99875019e936 37,42,47,65
+.github/workflows/sync_devto.yml
+  s_808bcb54b94641::t_b6b0779f37c85d 21-23,30,33,44-45,47
+.github/workflows/sync_medium.yml
+  s_808bcb54b94641::t_2fef95ca47d251 21-23,30,33,44-45,47
+.github/workflows/sync_wechat.yml
+  s_808bcb54b94641::t_e17b7d5bda2be8 13-15,22,25,36-37,39
+.github/workflows/trigger-profile-update.yml
+  s_808bcb54b94641::t_844802bf3a0088 9-10,18-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "49582652403f8399bafed2d68f432a31b91f73e5",
+  "prompts": {},
+  "sessions": {
+    "s_6535937731a8c8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7be933fd-3555-4179-bf89-3d88091b3193",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    },
+    "s_808bcb54b94641": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8f452822-7f74-42c5-8597-23c2eec5567e",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
