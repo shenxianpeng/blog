@@ -18,16 +18,19 @@ on:
           - draft
           - public
 
+permissions:
+  contents: read
+
 jobs:
   sync-to-medium:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Set up Python
-        uses: actions/setup-python@v7
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: '3.x'
 
@@ -38,8 +41,10 @@ jobs:
 
       - name: Resolve blog post path
         id: find_post
+        env:
+          INPUT_POST_PATH: ${{ github.event.inputs.post_path }}
         run: |
-          post_path="${{ github.event.inputs.post_path }}"
+          post_path="$INPUT_POST_PATH"
 
           if [ -n "$post_path" ]; then
             if [ ! -f "$post_path" ]; then

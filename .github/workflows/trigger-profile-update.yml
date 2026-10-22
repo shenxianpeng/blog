@@ -6,6 +6,8 @@ on:
       - main
   workflow_dispatch:
 
+permissions: {}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,11 +15,31 @@ jobs:
     - name: Wait website to be updated
       run: sleep 180  # wait for website to be up-to-date
     - name: Trigger workflow
-      uses: convictional/trigger-workflow-and-wait@f69fa9eedd3c62a599220f4d5745230e237904be # v1.6.5
-      with:
-        owner: shenxianpeng
-        repo: shenxianpeng
-        workflow_file_name: blog-post.yml
-        ref: master
-        trigger_workflow: true
-        github_token: ${{ secrets.PERSONAL_TOKEN }}
+      # Replaces the archived convictional/trigger-workflow-and-wait action with the
+      # GitHub CLI: dispatch blog-post.yml in shenxianpeng/shenxianpeng, wait for that
+      # run to finish and fail this job if it did not succeed (same behaviour as before).
+      env:
+        GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+      run: |
+        repo=shenxianpeng/shenxianpeng
+        workflow=blog-post.yml
+        latest_run() {
+          gh run list --repo "$repo" --workflow "$workflow" --event workflow_dispatch \
+            --limit 1 --json databaseId --jq '.[0].databaseId'
+        }
+        before=$(latest_run)
+        gh workflow run "$workflow" --repo "$repo" --ref master
+        run_id="$before"
+        for _ in $(seq 1 30); do
+          sleep 10
+          run_id=$(latest_run)
+          if [ -n "$run_id" ] && [ "$run_id" != "$before" ]; then
+            break
+          fi
+        done
+        if [ -z "$run_id" ] || [ "$run_id" = "$before" ]; then
+          echo "::error::$workflow in $repo did not start within 5 minutes"
+          exit 1
+        fi
+        echo "Waiting for https://github.com/$repo/actions/runs/$run_id"
+        gh run watch "$run_id" --repo "$repo" --interval 10 --exit-status
