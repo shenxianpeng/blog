@@ -50,4 +50,4 @@ This blog has never carried ads. If the writing or the tools helped, you can spo
 
 ## Contact
 
-A problem with one of the tools, or just want to talk: [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com), or find me on [GitHub](https://github.com/shenxianpeng) and [X](https://x.com/xianpengshen). Sixteen years on the build, test and release side of software. The details are on the [résumé](/resume/).
+A problem with one of the tools, or just want to talk: [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com), or find me on [GitHub](https://github.com/shenxianpeng) and [X](https://x.com/xianpengshen). On the build, test and release side of software since 2009. The details are on the [résumé](/resume/).

@@ -28,7 +28,7 @@ flagship:
       url: "https://github.com/cpp-linter"
   demo: "cpp-linter"
   demoLabel: "cpp-linter 在 GitHub PR 上的演示动画：检查失败，cpp-linter 给出 clang-format 修改建议，提交建议后检查通过。"
-  usersLabel: "这些项目的 CI 在用"
+  usersLabel: "这些机构的项目在用"
   users: ["Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 products:
   title: "掌握在你自己手里的基础设施。"

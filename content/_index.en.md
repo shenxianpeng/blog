@@ -27,7 +27,7 @@ flagship:
       url: "https://github.com/cpp-linter"
   demo: "cpp-linter"
   demoLabel: "Animated demo of cpp-linter on a GitHub pull request: the check fails, cpp-linter posts a clang-format suggestion, the suggestion is committed, and the check passes."
-  usersLabel: "In the CI of"
+  usersLabel: "Used by projects from"
   users: ["Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 products:
   title: "Infrastructure you own."
