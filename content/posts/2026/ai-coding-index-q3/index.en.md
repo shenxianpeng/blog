@@ -38,13 +38,13 @@ The [gitstats](https://github.com/shenxianpeng/gitstats) [Gallery](https://shenx
 
 | Measure | 2025 Q3 | 2026 Q2 | 2026 Q3 |
 |---|---:|---:|---:|
-| Pooled share (all 20 projects' commits added up) | 1.4% (421 / 30,492) | 7.0% (2,708 / 38,573) | **13.2% (5,696 / 43,131)** |
-| Pooled share without VS Code | 0.8% (216 / 25,922) | 2.7% (866 / 31,880) | **5.7% (2,099 / 36,829)** |
+| Pooled share | 1.4% (421 / 30,492) | 7.0% (2,708 / 38,573) | **13.2% (5,696 / 43,131)** |
+| Without VS Code | 0.8% (216 / 25,922) | 2.7% (866 / 31,880) | **5.7% (2,099 / 36,829)** |
 | Median project | 0.1% | 2.3% | **5.3%** |
 | Projects at 5% or more | 2 of 20 | 5 of 20 | **10 of 19** |
-| VS Code's part of all AI-marked commits | 48.7% | 68.0% | **63.1%** |
+| VS Code's part of marked | 48.7% | 68.0% | **63.1%** |
 
-Only 19 projects count in 2026 Q3: Aider made no commits this quarter.
+The pooled share adds up the commits of all 20 projects, so the large ones weigh more; the median counts each project once. Only 19 projects count in 2026 Q3: Aider made no commits this quarter.
 
 ### By project
 
