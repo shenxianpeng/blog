@@ -237,22 +237,27 @@ def pypistats(p):
 
 
 def keelinfra(p):
-    """A key (Keycloak) in front of a three-node cluster: identity, self-hosted, HA."""
-    # cluster nodes, faint, behind the key
-    nodes = ((330, 240), (600, 180), (870, 240))
-    for (x1, y1), (x2, y2) in ((nodes[0], nodes[1]), (nodes[1], nodes[2]), (nodes[0], nodes[2])):
-        p.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{INDIGO}" stroke-width="5" opacity="0.3"/>')
-    for x, y in nodes:
-        p.append(f'<rect x="{x - 55}" y="{y - 28}" width="110" height="56" rx="14" fill="{BG}" stroke="{INDIGO}" stroke-width="7" opacity="0.7"/>')
-        p.append(f'<circle cx="{x - 28}" cy="{y}" r="7" fill="{INDIGO}" opacity="0.8"/>')
-    # the key: ring head, shaft, two teeth
-    p.append(f'<circle cx="400" cy="420" r="110" fill="{BG}" stroke="{BLUE}" stroke-width="{SW + 6}"/>')
-    p.append(f'<circle cx="400" cy="420" r="38" fill="none" stroke="{BLUE}" stroke-width="{SW}"/>')
-    p.append(f'<rect x="505" y="396" width="330" height="48" rx="24" fill="{BLUE}"/>')
-    p.append(f'<rect x="700" y="430" width="40" height="70" rx="12" fill="{BLUE}"/>')
-    p.append(f'<rect x="780" y="430" width="40" height="92" rx="12" fill="{BLUE}"/>')
-    # re-tested nightly: it passed
-    _badge(p, 940, 580, 84)
+    """Agent8: three old build hosts, each wired to one current controller, all green."""
+    # the current controller, with its node list
+    p.append(f'<rect x="700" y="230" width="270" height="340" rx="26" fill="{BG}" stroke="{BLUE}" stroke-width="{SW}"/>')
+    p.append(f'<line x1="700" y1="298" x2="970" y2="298" stroke="{BLUE}" stroke-width="6" opacity="0.55"/>')
+    p.append(f'<circle cx="736" cy="264" r="9" fill="{BLUE}" opacity="0.9"/>')
+    p.append(f'<circle cx="768" cy="264" r="9" fill="{MUTE}"/>')
+    for i in range(3):
+        y = 350 + i * 66
+        p.append(f'<circle cx="748" cy="{y}" r="13" fill="{OK}"/>')
+        p.append(f'<rect x="778" y="{y - 11}" width="{150 - i * 22}" height="22" rx="11" fill="{MUTE}" opacity="0.5"/>')
+    # old build hosts: rack boxes with drive slots and a status light
+    for i, y in enumerate((165, 345, 525)):
+        p.append(f'<rect x="230" y="{y}" width="210" height="110" rx="20" fill="{BG}" stroke="{INDIGO}" stroke-width="{SW - 2}"/>')
+        for k in range(2):
+            p.append(f'<line x1="262" y1="{y + 40 + k * 30}" x2="352" y2="{y + 40 + k * 30}" stroke="{INDIGO}" stroke-width="8" stroke-linecap="round" opacity="0.6"/>')
+        p.append(f'<circle cx="400" cy="{y + 55}" r="11" fill="{OK}"/>')
+        # the connection to the controller's node row
+        ty = 350 + i * 66
+        p.append(f'<path d="M440,{y + 55} C570,{y + 55} 570,{ty} 700,{ty}" fill="none" stroke="{OK}" stroke-width="8" stroke-linecap="round" opacity="0.85"/>')
+    # every host stays connected: it passed
+    _badge(p, 960, 590, 74)
 
 
 def keelapps(p):

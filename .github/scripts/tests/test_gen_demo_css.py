@@ -65,9 +65,9 @@ def test_every_animated_class_in_the_partials_has_keyframes():
     defined = set(re.findall(r"@keyframes ([\w-]+)", block))
     used = set(re.findall(r"animation: ([\w-]+) ", block))
     assert used <= defined
-    for name in ("demo-cpp-linter.html", "demo-accesslens.html", "demo-keelinfra.html"):
+    for name in ("demo-cpp-linter.html", "demo-accesslens.html", "demo-agent8.html"):
         with open(os.path.join(PARTIALS, name), encoding="utf-8") as f:
             html = f.read()
-        for cls in set(re.findall(r"\b((?:cl|al|ki)-demo-[\w-]+)", html)):
+        for cls in set(re.findall(r"\b((?:cl|al|a8)-demo-[\w-]+)", html)):
             if cls in defined:
                 assert cls in used, f"{cls} has keyframes but no animation rule"

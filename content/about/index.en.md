@@ -34,7 +34,7 @@ Open-source maintainer and product builder, based in Vilnius, Lithuania. Everyth
 
 ## Products
 
-- [keelinfra](https://keelinfra.io): self-hosted Keycloak for production, and [Agent8](https://github.com/keelinfra/agent8), which keeps Java 8 build hosts on a current Jenkins.
+- [keelinfra](https://keelinfra.io): [Agent8](https://github.com/keelinfra/agent8), which keeps Java 8 build hosts such as AIX, Solaris and HP-UX on a current Jenkins.
 - [keelapps](https://keelapps.app): admin tools for Jira and Confluence Cloud.
 - [Keelhaven](https://keelhaven.app): Mac backup to storage you own. Free.
 

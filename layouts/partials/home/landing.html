@@ -3,6 +3,7 @@
   bands, all driven by front matter in content/_index.en.md and
   content/_index.md:
     hero      title (or heroTitle), heroLead, heroButtons, heroAlso
+              (stages: stage + links, or plain links)
     flagship  full-bleed dark band: label, title, text, links, demo, users
     products  title, text, items (style: wide | dark | mint; demo optional;
               wide tiles also take tone: mint and flip: true for demo-left)
@@ -26,12 +27,19 @@
           {{ end }}
         </div>
       {{ end }}
-      {{- /* heroAlso: one quiet line naming the open-source projects that are
-             neither the flagship nor products. The label carries its own
-             trailing space ("Also maintained: ", but "也在维护："). */}}
+      {{- /* heroAlso: one quiet line under the buttons. With `stages`, it
+             walks the delivery pipeline the GitHub profile banner draws,
+             each stage name followed by the projects that run there:
+             commit → review → build → release. With plain `links`, it is a
+             list separated by dots. The label carries its own trailing space
+             ("From commit to release: ", but "从 commit 到 release："). */}}
       {{ with .Params.heroAlso }}
         <p class="home-also">{{ .label }}
-          {{- range $i, $l := .links }}{{ if $i }}<span aria-hidden="true"> · </span>{{ end }}<a href="{{ $l.url | safeURL }}">{{ $l.label }}</a>{{ end -}}
+          {{- with .stages }}
+            {{- range $i, $s := . }}{{ if $i }}<span class="home-also-sep" aria-hidden="true"> → </span>{{ end }}<span class="home-also-step"><span class="home-also-stage">{{ $s.stage }}</span> {{ range $j, $l := $s.links }}{{ if $j }}, {{ end }}<a href="{{ $l.url | safeURL }}">{{ $l.label }}</a>{{ end }}</span>{{ end -}}
+          {{- else }}
+            {{- range $i, $l := .links }}{{ if $i }}<span aria-hidden="true"> · </span>{{ end }}<a href="{{ $l.url | safeURL }}">{{ $l.label }}</a>{{ end -}}
+          {{- end -}}
         </p>
       {{ end }}
     </div>

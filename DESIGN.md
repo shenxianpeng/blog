@@ -7,7 +7,7 @@ This describes what the site runs. Implementation:
 | Colours (light and dark) | `assets/css/schemes/evergreen.css`, selected by `colorScheme` in `config/_default/params.toml` |
 | Fonts | loaded in `layouts/partials/extend-head.html`, stacks in `assets/css/custom.css` |
 | Home page | `layouts/partials/home/landing.html`, `layouts/index.html`, `layouts/partials/recent-articles/main.html`, styles `.home-*` in `assets/css/custom.css`, content in the front matter of `content/_index.en.md` and `content/_index.md` |
-| Home demos | `layouts/partials/home/demo-cpp-linter.html`, `demo-keelhaven.html`, `demo-accesslens.html`, `demo-keelinfra.html`; CSS under "Animated demos" in `custom.css` |
+| Home demos | `layouts/partials/home/demo-cpp-linter.html`, `demo-keelhaven.html`, `demo-accesslens.html`, `demo-agent8.html`; CSS under "Animated demos" in `custom.css` |
 
 ## Direction
 
@@ -84,13 +84,16 @@ column ran 79–91. Article titles and headings use `text-wrap: balance`.
 Top to bottom:
 
 1. **Hero** — centred headline (`title`, or `heroTitle` for a manual line
-   break), `heroLead`, pill buttons, and `heroAlso`: one muted line of links to
-   the other open-source projects. No image.
+   break), `heroLead`, pill buttons, and `heroAlso`: one muted line that walks
+   the pipeline from the GitHub profile banner, `commit` → `review` → `build`
+   → `release`, each stage name as a small code chip followed by the projects
+   that run there. No image.
 2. **Flagship** — dark full-bleed band for cpp-linter: label, short headline,
    text, links, the animated demo, and the users row.
 3. **Products** — centred headline, then three wide tiles with animated
-   demos, alternating sides: Keelhaven (demo right), keelapps (mint, demo
-   left via `flip: true`), keelinfra (dark, demo right).
+   demos, alternating sides, in the GitHub profile's order: keelinfra (dark,
+   Agent8 demo right), keelapps (mint, demo left via `flip: true`), Keelhaven
+   (demo right).
 4. **Writing** — recent posts as one list of ruled rows: date, title, tag.
 5. **Page body** — only the Chinese home has one: the WeChat QR code.
 6. **Sponsor** — full-bleed tinted band.
@@ -125,13 +128,15 @@ Styles `.post-footer-*` in `custom.css`.
   - **AccessLens** (keelapps, 16s): reverse lookup by group, then an access
     review with Confirm / Remediate and sign-off. Labels, badges and
     colours follow `keelapps/accesslens-for-jira/static/explore`.
-  - **keelinfra** (18s): `./configure -c examples/ha-3node.yml` and
-    `./install` (the ten plays of `playbooks/install.yml`, recap on three
-    nodes), then the nightly upgrade matrix: each supported path from
-    `upgrade-matrix.yml` goes through install, log in, upgrade and "session
-    survives". Paths and the session echo come from keelinfra/keycloak;
-    update them when `UPGRADES.md` changes.
-  - The cpp-linter, AccessLens and keelinfra CSS is generated: timings live as data in
+  - **Agent8** (keelinfra, 18s): on an AIX host, `sh install.sh --url
+    https://jenkins.example.com/ --replace agent.jar` prints install.sh's own
+    messages for Jenkins 2.580.1 (remoting `3386.v353e57a_1b_ea_0`, release
+    `jenkins-2.580.1`), then the agent is restarted; then the controller's
+    Nodes page shows the AIX, Solaris, HP-UX and CentOS 6 hosts, all on Java 8,
+    coming online, and a build on the AIX host finishing. Update the version
+    and the messages when a new LTS or a change to `install.sh` makes them
+    stale. (The Keycloak demo it replaced is in git history.)
+  - The cpp-linter, AccessLens and Agent8 CSS is generated: timings live as data in
     `.github/scripts/gen_demo_css.py`, which rewrites the marked block in
     `custom.css`. Edit the script and rerun it, never the block;
     `--check` (and `.github/scripts/tests/test_gen_demo_css.py`) fails when

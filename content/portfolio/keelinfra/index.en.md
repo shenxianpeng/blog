@@ -1,8 +1,8 @@
 ---
 title: "keelinfra"
 weight: 3
-externalUrl: "https://keelinfra.io"
-summary: "Self-hosted Keycloak you can run in production: HA, backups with point-in-time recovery, monitoring, and upgrade paths re-tested nightly in public CI. Plus Agent8, which runs Jenkins agents on build hosts stuck on Java 8, 11 or 17."
+externalUrl: "https://keelinfra.io/jenkins/"
+summary: "Agent8 runs Jenkins agents on build hosts stuck on Java 8, 11 or 17, such as AIX, Solaris and HP-UX, connected to a current controller on Java 21. One install script; releases named after the Jenkins version they were tested with."
 showDate: false
 showReadingTime: false
 showWordCount: false

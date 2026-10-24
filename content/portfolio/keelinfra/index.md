@@ -1,8 +1,8 @@
 ---
 title: "keelinfra"
 weight: 3
-externalUrl: "https://keelinfra.io"
-summary: "生产可用的自托管 Keycloak：高可用、备份与时间点恢复、监控、升级路径，每晚在公开 CI 里重新验证。还有 Agent8，让只有 Java 8、11 或 17 的构建机继续当 Jenkins agent。"
+externalUrl: "https://keelinfra.io/jenkins/"
+summary: "Agent8 让只有 Java 8、11 或 17 的构建机（AIX、Solaris、HP-UX）继续当 Jenkins agent，接入跑在 Java 21 上的新版控制器。一个安装脚本；每个 release 以测试过的 Jenkins 版本命名。"
 showDate: false
 showReadingTime: false
 showWordCount: false
