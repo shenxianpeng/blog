@@ -40,7 +40,7 @@ Every problem the upgrade itself caused started from 2.346.3 or older:
 - With 300 plugins, Jenkins did not start from the 12 lines 2.164.3 to 2.277.4 and 2.319.3 to 2.346.3.
 - With 100 plugins it always started, but from 2.319.3 to 2.346.3 the GitHub and SSH server plugins loaded only in part.
 
-In the usage statistics, 10.8% of controllers still run 2.346.3 or older.
+In the usage statistics, 14.9% of controllers still run 2.346.3 or older.
 
 ## What the log looks like
 
