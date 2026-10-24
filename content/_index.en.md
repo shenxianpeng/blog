@@ -45,12 +45,12 @@ flagship:
   users: ["Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 products:
   title: "Infrastructure you own."
-  text: "Jenkins agents for build hosts stuck on Java 8, self-hosted Keycloak, Atlassian apps that run inside your own tenant, and Mac backups to your own storage."
+  text: "Jenkins agents for build hosts stuck on Java 8, Atlassian apps that run inside your own tenant, and Mac backups to your own storage."
   items:
     - name: "keelinfra"
       label: "Free · Open source · Support plans"
-      text: "Agent8 keeps build hosts stuck on Java 8, such as AIX, Solaris and HP-UX, connected to a current Jenkins as ordinary agents. And a self-hosted Keycloak you can run in production, with upgrade paths re-tested nightly in public CI."
-      url: "https://keelinfra.io"
+      text: "Agent8 keeps build hosts stuck on Java 8, such as AIX, Solaris and HP-UX, connected to a current Jenkins as ordinary agents. One install script, and releases named after the Jenkins version they were tested with."
+      url: "https://keelinfra.io/jenkins/"
       demo: "agent8"
       demoLabel: "Animated demo of Agent8: on an AIX build host, install.sh checks the host's Java 8, finds the release for the controller's remoting version, verifies the jars and swaps them in; then the Nodes page of Jenkins 2.580.1 shows the AIX, Solaris, HP-UX and CentOS 6 hosts coming online on Java 8, and a build on the AIX host finishes."
       style: "wide"

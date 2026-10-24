@@ -69,8 +69,8 @@ cpp-linter, AccessLens and Agent8 demo CSS is generated
 by `.github/scripts/gen_demo_css.py` into a marked block of `custom.css`:
 change the timelines in the script and rerun it, do not edit the block. Keep that page saying the same thing as the GitHub profile README
 (github.com/shenxianpeng): one positioning line, the same commit → review →
-build → release stages, cpp-linter as the flagship, and keelinfra (Agent8
-first) / keelapps / Keelhaven as the products, in that order.
+build → release stages, cpp-linter as the flagship, and keelinfra (Agent8) /
+keelapps / Keelhaven as the products, in that order.
 
 Every post and essay ends with a **post footer**
 (`layouts/partials/post-footer.html`, rendered from the

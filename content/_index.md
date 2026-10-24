@@ -46,12 +46,12 @@ flagship:
   users: ["Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 products:
   title: "掌握在你自己手里的基础设施。"
-  text: "给停在 Java 8 的构建机用的 Jenkins agent，自托管的 Keycloak，跑在你自己租户里的 Atlassian 应用，还有备份到你自己存储的 Mac 备份工具。"
+  text: "给停在 Java 8 的构建机用的 Jenkins agent，跑在你自己租户里的 Atlassian 应用，还有备份到你自己存储的 Mac 备份工具。"
   items:
     - name: "keelinfra"
       label: "免费 · 开源 · 提供付费支持"
-      text: "Agent8 让停在 Java 8 的构建机（AIX、Solaris、HP-UX）继续作为普通节点接入新版 Jenkins。另有生产可用的自托管 Keycloak，升级路径每晚在公开 CI 里重新验证一遍。"
-      url: "https://keelinfra.io"
+      text: "Agent8 让停在 Java 8 的构建机（AIX、Solaris、HP-UX）继续作为普通节点接入新版 Jenkins。一个安装脚本搞定，每个 release 以测试过的 Jenkins 版本命名。"
+      url: "https://keelinfra.io/jenkins/"
       demo: "agent8"
       demoLabel: "Agent8 的演示动画：在一台 AIX 构建机上，install.sh 检查本机的 Java 8，按控制器的 remoting 版本找到对应的 release，校验 jar 后替换进去；随后 Jenkins 2.580.1 的节点页里，AIX、Solaris、HP-UX 和 CentOS 6 四台 Java 8 主机依次上线，AIX 上的一次构建成功完成。"
       style: "wide"

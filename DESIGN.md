@@ -135,8 +135,7 @@ Styles `.post-footer-*` in `custom.css`.
     Nodes page shows the AIX, Solaris, HP-UX and CentOS 6 hosts, all on Java 8,
     coming online, and a build on the AIX host finishing. Update the version
     and the messages when a new LTS or a change to `install.sh` makes them
-    stale. (The Keycloak demo it replaced is in git history and on
-    keelinfra.io.)
+    stale. (The Keycloak demo it replaced is in git history.)
   - The cpp-linter, AccessLens and Agent8 CSS is generated: timings live as data in
     `.github/scripts/gen_demo_css.py`, which rewrites the marked block in
     `custom.css`. Edit the script and rerun it, never the block;
