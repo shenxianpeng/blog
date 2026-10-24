@@ -13,7 +13,7 @@ date: 2026-10-24
 series: ["GitStats"]
 series_order: 5
 ---
-> 数据截至 2026-09-30 · 2026-10-24 按 gitstats 2.12 的统计规则重新统计 · 作者：shenxianpeng（gitstats）
+> 数据截至 2026-09-30 · 2026-10-24 按 gitstats 2.12 的统计规则重新统计
 
 ## 一句话结论
 

@@ -13,7 +13,7 @@ date: 2026-10-24
 series: ["GitStats"]
 series_order: 6
 ---
-> gitstats monthly note · October 2026 · data: 2025 Q4 to 2026 Q3 · by shenxianpeng
+> gitstats monthly note · October 2026 · data: 2025 Q4 to 2026 Q3
 
 ## The short version
 

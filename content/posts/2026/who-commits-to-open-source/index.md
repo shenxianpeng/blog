@@ -13,7 +13,7 @@ date: 2026-10-24
 series: ["GitStats"]
 series_order: 6
 ---
-> gitstats 月度短文 · 2026 年 10 月 · 数据：2025 Q4 至 2026 Q3 · 作者：shenxianpeng
+> gitstats 月度短文 · 2026 年 10 月 · 数据：2025 Q4 至 2026 Q3
 
 ## 一句话结论
 

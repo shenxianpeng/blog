@@ -13,7 +13,7 @@ date: 2026-10-24
 series: ["GitStats"]
 series_order: 5
 ---
-> Data through 2026-09-30 · recounted 2026-10-24 with the rules of gitstats 2.12 · by shenxianpeng (gitstats)
+> Data through 2026-09-30 · recounted 2026-10-24 with the rules of gitstats 2.12
 
 ## The short version
 
