@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Generate the CSS for the home page's animated product demos.
 
-The cpp-linter, AccessLens and keelinfra demos
-(layouts/partials/home/demo-{cpp-linter,accesslens,keelinfra}.html) are pure CSS. Each element that appears, swaps or
+The cpp-linter, AccessLens and Agent8 demos
+(layouts/partials/home/demo-{cpp-linter,accesslens,agent8}.html) are pure CSS. Each element that appears, swaps or
 moves has its own keyframes, and a scene change touches dozens of them, so the
 timelines live here as plain data -- "visible from 26% to 49% of the loop",
 "cursor at (474, 238) at 42%" -- and this script writes the CSS.
@@ -16,7 +16,7 @@ markers.
     python3 .github/scripts/gen_demo_css.py --check   # exit 1 if it is stale
 
 Timings are percentages of each loop (cpp-linter 20s, AccessLens 16s,
-keelinfra 18s). The
+Agent8 18s). The
 header comment of each partial says what happens when. Cursor coordinates are
 pixels inside the fixed-size demo window, measured to the pointer's tip.
 """
@@ -294,87 +294,77 @@ cur = [("0%, 18%", "opacity: 0; " + c(430, 400)), ("20%", "opacity: 1; " + c(420
 al_k.append(props("al-demo-cursor", cur))
 
 
-# ---- keelinfra (18s loop) -----------------------------------------------------
-# 0-45 terminal: ./configure typed (2-7) and confirmed (9), ./install typed
-# (11-13), the ten plays of playbooks/install.yml (15-33), the recap (36-39).
-# 47-97 upgrade matrix: each path's four checks turn green column by column,
-# rows staggered; the session assertion's echo appears at 90.
+# ---- Agent8 for Jenkins (18s loop) --------------------------------------------
+# 0-45 terminal on an AIX host: install.sh typed (2-9), its eight messages
+# (11-28), the agent restart typed (31-35). 47-97 the controller's Nodes page:
+# the built-in node is online throughout, the four Java 8 hosts connect one
+# after another (55, 61, 67, 73), and a build on the AIX host finishes (84).
 
-ki = """/* keelinfra: ./configure and ./install, then the nightly upgrade matrix. */
+a8 = """/* Agent8: install.sh on an AIX host, then the Java 8 hosts come online. */
 
-.home-demo-ki { display: flex; justify-content: center; }
-.ki-demo-win { width: 600px; height: 430px; overflow: hidden; border: 1px solid #30363d; border-radius: 10px; background: #0d1117; color: #e6edf3; text-align: left; box-shadow: 0 24px 60px rgb(0 0 0 / 0.5); }
-.ki-demo-bar { position: relative; display: flex; align-items: center; height: 32px; padding: 0 12px; border-bottom: 1px solid #30363d; background: #161b22; }
-.ki-demo-dots { display: flex; gap: 6px; }
-.ki-demo-dots i { width: 10px; height: 10px; border-radius: 50%; background: #30363d; }
-.ki-demo-title { position: absolute; inset: 0; text-align: center; color: #8b949e; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 12px; }
-.ki-demo-title b { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-weight: 500; opacity: 0; }
-.ki-demo-t1 { opacity: 1; animation: ki-demo-t1 18s linear infinite; }
-.ki-demo-t2 { animation: ki-demo-t2 18s linear infinite; }
-.ki-demo-body { position: relative; height: 398px; }
-.ki-demo-term, .ki-demo-matrix { position: absolute; inset: 0; padding: 14px 16px; opacity: 0; }
-.ki-demo-term { font-family: var(--font-code); font-size: 12px; line-height: 17px; animation: ki-demo-term 18s ease infinite; }
-.ki-demo-matrix { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", sans-serif; font-size: 12.5px; animation: ki-demo-matrix 18s ease infinite; }
-.ki-demo-ln { overflow: hidden; white-space: nowrap; }
-.ki-demo-ps { color: #7ee787; }
-.ki-demo-type { display: inline-block; overflow: hidden; vertical-align: bottom; white-space: nowrap; }
-.ki-demo-type1 { width: 36ch; animation: ki-demo-type1 18s infinite; }
-.ki-demo-type2 { width: 9ch; animation: ki-demo-type2 18s infinite; }
-.ki-demo-ok { color: #7ee787; }
-.ki-demo-play { color: #8b949e; }
-.ki-demo-host { display: inline-block; width: 12ch; color: #e3b341; }
-.ki-demo-mhead { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 12px; }
-.ki-demo-mhead strong { font-size: 15px; }
-.ki-demo-mhead span, .ki-demo-row em { color: #8b949e; font-style: normal; }
-.ki-demo-grid { display: grid; grid-template-columns: 170px repeat(4, minmax(0, 1fr)); align-items: center; padding: 0 12px; white-space: nowrap; }
-.ki-demo-gh { height: 30px; border: 1px solid #30363d; border-radius: 6px 6px 0 0; background: #161b22; color: #8b949e; font-size: 11.5px; font-weight: 600; }
-.ki-demo-gh span:not(:first-child), .ki-demo-cell { justify-self: center; }
-.ki-demo-row { height: 46px; border: 1px solid #30363d; border-top: 0; white-space: nowrap; }
-.ki-demo-row:nth-last-child(2) { border-radius: 0 0 6px 6px; }
-.ki-demo-cell { position: relative; width: 16px; height: 16px; }
-.ki-demo-cell i { position: absolute; inset: 0; display: flex; opacity: 0; }
-.ki-demo-spin { transform-box: view-box; transform-origin: 8px 8px; animation: ki-demo-spin 1s linear infinite; }
-.ki-demo-echo { margin-top: 14px; color: #7ee787; font-family: var(--font-code); font-size: 12px; opacity: 0; animation: ki-demo-echo 18s ease infinite; }
+.home-demo-a8 { display: flex; justify-content: center; }
+.a8-demo-win { width: 600px; height: 430px; overflow: hidden; border: 1px solid #30363d; border-radius: 10px; background: #0d1117; color: #e6edf3; text-align: left; box-shadow: 0 24px 60px rgb(0 0 0 / 0.5); }
+.a8-demo-bar { position: relative; display: flex; align-items: center; height: 32px; padding: 0 12px; border-bottom: 1px solid #30363d; background: #161b22; }
+.a8-demo-dots { display: flex; gap: 6px; }
+.a8-demo-dots i { width: 10px; height: 10px; border-radius: 50%; background: #30363d; }
+.a8-demo-title { position: absolute; inset: 0; text-align: center; color: #8b949e; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 12px; }
+.a8-demo-title b { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-weight: 500; opacity: 0; }
+.a8-demo-t1 { opacity: 1; animation: a8-demo-t1 18s linear infinite; }
+.a8-demo-t2 { animation: a8-demo-t2 18s linear infinite; }
+.a8-demo-body { position: relative; height: 398px; }
+.a8-demo-term, .a8-demo-nodes { position: absolute; inset: 0; padding: 14px 14px; opacity: 0; }
+.a8-demo-term { font-family: var(--font-code); font-size: 11px; line-height: 18px; animation: a8-demo-term 18s ease infinite; }
+.a8-demo-nodes { padding: 14px 16px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", sans-serif; font-size: 12.5px; animation: a8-demo-nodes 18s ease infinite; }
+.a8-demo-ln { overflow: hidden; white-space: nowrap; }
+.a8-demo-ps { color: #7ee787; }
+.a8-demo-out { color: #c9d1d9; }
+.a8-demo-type { display: inline-block; overflow: hidden; vertical-align: bottom; white-space: nowrap; }
+.a8-demo-type1 { width: 68ch; animation: a8-demo-type1 18s infinite; }
+.a8-demo-type2 { width: 33ch; animation: a8-demo-type2 18s infinite; }
+.a8-demo-mhead { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 12px; }
+.a8-demo-mhead strong { font-size: 15px; }
+.a8-demo-mhead span { color: #8b949e; }
+.a8-demo-grid { display: grid; grid-template-columns: 180px 120px minmax(0, 1fr) 56px; align-items: center; padding: 0 12px; white-space: nowrap; }
+.a8-demo-gh { height: 30px; border: 1px solid #30363d; border-radius: 6px 6px 0 0; background: #161b22; color: #8b949e; font-size: 11.5px; font-weight: 600; }
+.a8-demo-gh span:last-child, .a8-demo-cell { justify-self: center; }
+.a8-demo-row { height: 46px; border: 1px solid #30363d; border-top: 0; color: #c9d1d9; }
+.a8-demo-row strong { color: #e6edf3; font-weight: 600; }
+.a8-demo-row:nth-last-child(2) { border-radius: 0 0 6px 6px; }
+.a8-demo-cell { position: relative; width: 16px; height: 16px; }
+.a8-demo-cell i { position: absolute; inset: 0; display: flex; opacity: 0; }
+.a8-demo-spin { transform-box: view-box; transform-origin: 8px 8px; animation: a8-demo-spin 1s linear infinite; }
+.a8-demo-echo { margin-top: 14px; color: #7ee787; font-family: var(--font-code); font-size: 12px; opacity: 0; animation: a8-demo-echo 18s ease infinite; }
 """
-PLAYS = 10
-KI_LINES = {"l1": 9, "l2": 10.5, "recap": 36, "n0": 37, "n1": 38, "n2": 39}
-for key in KI_LINES:
-    ki += f".ki-demo-{key} {{ opacity: 0; animation: ki-demo-{key} 18s linear infinite; }}\n"
-for i in range(PLAYS):
-    ki += f".ki-demo-p{i} {{ opacity: 0; animation: ki-demo-p{i} 18s linear infinite; }}\n"
+A8_OUT = [11, 13, 15, 18, 20.5, 23, 25.5, 28]   # when each install.sh message appears
+A8_L2 = 30.5                                     # the restart prompt
+for i in range(len(A8_OUT)):
+    a8 += f".a8-demo-o{i} {{ opacity: 0; animation: a8-demo-o{i} 18s linear infinite; }}\n"
+a8 += ".a8-demo-l2 { opacity: 0; animation: a8-demo-l2 18s linear infinite; }\n"
 
+A8_NODES, A8_RUN = 5, 3.5
+A8_ONLINE = {1: 55, 2: 61, 3: 67, 4: 73}         # node 0, the built-in node, is online throughout
+for r in range(A8_NODES):
+    for st in ("d" if r == 0 else "prd"):
+        a8 += f".a8-demo-s{r}{st} {{ animation: a8-demo-s{r}{st} 18s linear infinite; }}\n"
 
-def ki_cell_time(row, col):
-    """When cell (row, col) of the matrix turns green, in percent of the loop."""
-    return round(50 + col * 10 + row * 1.6, 2)
-
-
-KI_ROWS, KI_COLS, KI_RUN = 5, 4, 3.5
-for r in range(KI_ROWS):
-    for col in range(KI_COLS):
-        for st in "prd":
-            ki += f".ki-demo-c{r}{col}{st} {{ animation: ki-demo-c{r}{col}{st} 18s linear infinite; }}\n"
-
-ki_k = [
-    vis("ki-demo-term", [(1, 45)]),
-    vis("ki-demo-matrix", [(47, 97)]),
-    vis("ki-demo-t1", [(0, 46), (98, 100)], 0.3),
-    vis("ki-demo-t2", [(46, 98)], 0.3),
-    vis("ki-demo-echo", [(90, 100)]),
-    props("ki-demo-type1", [("0%, 2%", "width: 0; animation-timing-function: steps(36, end);"), ("7%, 100%", "width: 36ch;")]),
-    props("ki-demo-type2", [("0%, 11%", "width: 0; animation-timing-function: steps(9, end);"), ("13%, 100%", "width: 9ch;")]),
-    props("ki-demo-spin", [("100%", "transform: rotate(360deg);")]),
+a8_k = [
+    vis("a8-demo-term", [(1, 45)]),
+    vis("a8-demo-nodes", [(47, 97)]),
+    vis("a8-demo-t1", [(0, 46), (98, 100)], 0.3),
+    vis("a8-demo-t2", [(46, 98)], 0.3),
+    vis("a8-demo-echo", [(84, 100)]),
+    props("a8-demo-type1", [("0%, 2%", "width: 0; animation-timing-function: steps(68, end);"), ("9%, 100%", "width: 68ch;")]),
+    props("a8-demo-type2", [("0%, 31%", "width: 0; animation-timing-function: steps(33, end);"), ("35%, 100%", "width: 33ch;")]),
+    props("a8-demo-spin", [("100%", "transform: rotate(360deg);")]),
+    vis("a8-demo-l2", [(A8_L2, 100)], 0.3),
 ]
-for key, t in KI_LINES.items():
-    ki_k.append(vis(f"ki-demo-{key}", [(t, 100)], 0.3))
-for i in range(PLAYS):
-    ki_k.append(vis(f"ki-demo-p{i}", [(15 + i * 2, 100)], 0.3))
-for r in range(KI_ROWS):
-    for col in range(KI_COLS):
-        t = ki_cell_time(r, col)
-        ki_k.append(vis(f"ki-demo-c{r}{col}p", [(0, round(t - KI_RUN, 2))], 0.3))
-        ki_k.append(vis(f"ki-demo-c{r}{col}r", [(round(t - KI_RUN, 2), t)], 0.3))
-        ki_k.append(vis(f"ki-demo-c{r}{col}d", [(t, 100)], 0.3))
+for i, t in enumerate(A8_OUT):
+    a8_k.append(vis(f"a8-demo-o{i}", [(t, 100)], 0.3))
+a8_k.append(vis("a8-demo-s0d", [(0, 100)], 0.3))
+for r, t in A8_ONLINE.items():
+    a8_k.append(vis(f"a8-demo-s{r}p", [(0, round(t - A8_RUN, 2))], 0.3))
+    a8_k.append(vis(f"a8-demo-s{r}r", [(round(t - A8_RUN, 2), t)], 0.3))
+    a8_k.append(vis(f"a8-demo-s{r}d", [(t, 100)], 0.3))
 
 
 def build():
@@ -382,7 +372,7 @@ def build():
     return (
         cl + "\n" + "\n".join(cl_k) + "\n\n"
         + al + "\n" + "\n".join(al_k) + "\n\n"
-        + ki + "\n" + "\n".join(ki_k) + "\n\n"
+        + a8 + "\n" + "\n".join(a8_k) + "\n\n"
     )
 
 
