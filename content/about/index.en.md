@@ -29,8 +29,8 @@ Open-source maintainer and product builder, based in Vilnius, Lithuania. Everyth
 - [cpp-linter](https://github.com/cpp-linter): clang-format and clang-tidy on every pull request. More than 1,000 repositories on GitHub depend on it, including projects from Apache, Samsung, Qualcomm and Bloomberg.
 - [commit-check](https://github.com/commit-check/commit-check): one policy for commit messages, branch names and AI attribution, in CI or as a pre-commit hook.
 - [Conventional Branch](https://conventionalbranch.org): a branch naming specification.
-- [Open Delivery Spec](https://github.com/open-delivery-spec): machine-checkable evidence of what was built, tested, reviewed and deployed.
 - [explain-error-plugin](https://github.com/jenkinsci/explain-error-plugin) and [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint), in the jenkinsci organization: AI diagnosis of build failures, and Jenkinsfile validation without a Jenkins server.
+- [clang-tools](https://github.com/cpp-linter/clang-tools-static-binaries): static clang-format and clang-tidy binaries for Linux, macOS and Windows, one release per LLVM version, downloaded more than 750,000 times. cpp-linter installs its tools from these releases.
 
 ## Products
 
