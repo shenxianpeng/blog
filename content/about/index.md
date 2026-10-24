@@ -50,4 +50,4 @@ Jenkins GitHub 组织成员，EuroPython 2025 议题评审，2026 年入选 Anth
 
 ## 联系我
 
-工具用起来有问题，或者想聊聊：[xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)，或在 [GitHub](https://github.com/shenxianpeng)、[X](https://x.com/xianpengshen) 上找我。做软件十六年，构建、测试、发布这一段的活都干过，细节在[简历](/zh-cn/resume/)。
+工具用起来有问题，或者想聊聊：[xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)，或在 [GitHub](https://github.com/shenxianpeng)、[X](https://x.com/xianpengshen) 上找我。2009 年入行，构建、测试、发布这一段的活都干过，细节在[简历](/zh-cn/resume/)。
