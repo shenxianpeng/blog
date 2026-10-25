@@ -50,6 +50,11 @@ text; dark pages use `neutral-800` and `--color-neutral`.
 
 Secondary (inline code, some theme accents) is a teal of the same family.
 
+Which appearance a visitor sees follows their system setting. The sun/moon
+switcher picks the other one and remembers it; switching back to what the
+system shows forgets the choice, and the page follows the system again. The
+logic is the `assets/js/appearance.js` override of the theme's script.
+
 ## Type
 
 | Use | Face | Notes |
