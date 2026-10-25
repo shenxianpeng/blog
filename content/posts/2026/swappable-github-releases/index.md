@@ -91,7 +91,7 @@ immutable releases 和构建来源证明，能证明文件就是流水线产出�
 - release 里有签名文件，不代表有人去验证它。
 - 打 `cli` 标签、1,000 star 以上的 Go 和 Rust 项目只是 GitHub 的一小部分，换个范围比例会不一样。
 
-每个项目一行的完整结果在 [cli-releases-2026-10-24.csv](cli-releases-2026-10-24.csv)，扫描脚本在 [keelinfra/release-ledger][script]。
+每个项目一行的完整结果在 [cli-releases-2026-10-24.csv](cli-releases-2026-10-24.csv)，扫描脚本和之后每个月重跑的结果在 [keelinfra/release-integrity][script]。
 
 ## 我自己的项目
 
@@ -103,6 +103,6 @@ immutable releases 和构建来源证明，能证明文件就是流水线产出�
 [verify-asset]: https://cli.github.com/manual/gh_release_verify-asset
 [attest]: https://github.com/actions/attest
 [litellm]: https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html
-[script]: https://github.com/keelinfra/release-ledger/blob/b30dd7f6eb7d8084e16fc739878945e0370daaba/research/release-integrity/scan.py
+[script]: https://github.com/keelinfra/release-integrity
 [clang-tools]: https://github.com/cpp-linter/clang-tools-static-binaries
 [release-ledger]: https://github.com/keelinfra/release-ledger

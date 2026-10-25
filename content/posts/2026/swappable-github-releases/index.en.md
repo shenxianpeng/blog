@@ -91,7 +91,7 @@ Immutable releases and build provenance prove that a file is what the pipeline p
 - Shipping a signature isn't the same as anyone verifying it.
 - Go and Rust projects tagged `cli` with 1,000+ stars are a small slice of GitHub; a different slice would give different numbers.
 
-The full results, one row per project, are in [cli-releases-2026-10-24.csv](/zh-cn/posts/2026/swappable-github-releases/cli-releases-2026-10-24.csv), and the scan script is in [keelinfra/release-ledger][script].
+The full results, one row per project, are in [cli-releases-2026-10-24.csv](/zh-cn/posts/2026/swappable-github-releases/cli-releases-2026-10-24.csv), and the scan script, rerun every month, is in [keelinfra/release-integrity][script].
 
 ## My own projects
 
@@ -103,6 +103,6 @@ Before writing this I ran the same script on my own projects. The latest release
 [verify-asset]: https://cli.github.com/manual/gh_release_verify-asset
 [attest]: https://github.com/actions/attest
 [litellm]: https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html
-[script]: https://github.com/keelinfra/release-ledger/blob/b30dd7f6eb7d8084e16fc739878945e0370daaba/research/release-integrity/scan.py
+[script]: https://github.com/keelinfra/release-integrity
 [clang-tools]: https://github.com/cpp-linter/clang-tools-static-binaries
 [release-ledger]: https://github.com/keelinfra/release-ledger
