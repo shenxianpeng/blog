@@ -1,0 +1,243 @@
+repo,tag,published,age_days,assets,binaries,immutable,provenance,digests_checked,signed,checksums,verdict,stars
+rtk-ai/rtk,v1.0.1,2026-10-14,10,24,23,False,False,3,False,True,checksums only,84449
+junegunn/fzf,v0.74.5,2026-10-11,13,26,25,False,False,3,False,True,checksums only,83753
+jesseduffield/lazygit,v0.66.2,2026-10-16,8,14,13,False,False,3,False,True,checksums only,83401
+BurntSushi/ripgrep,15.2.0,2026-07-15,101,28,14,False,False,3,False,True,checksums only,69396
+tw93/Pake,V3.17.6,2026-10-17,7,64,64,False,False,2,False,False,nothing,62292
+sharkdp/bat,v0.26.1,2025-12-02,325,21,21,False,False,2,False,False,nothing,60913
+cli/cli,v2.103.2,2026-10-23,0,22,21,True,True,1,False,True,immutable,46728
+herdrdev/herdr,v0.9.5,2026-10-14,10,5,5,True,False,2,False,False,immutable,45650
+sharkdp/fd,v10.5.0,2026-08-26,59,22,22,False,True,1,False,False,provenance,44853
+sxyazi/yazi,v26.9.1,2026-09-01,53,17,17,False,False,2,False,False,nothing,42999
+codewhale-hq/Codewhale,v0.10.1,2026-10-08,16,34,32,False,False,3,False,True,checksums only,41115
+ajeetdsouza/zoxide,v0.10.0,2026-07-04,112,17,17,False,False,2,False,False,nothing,40274
+esengine/DeepSeek-Reasonix,studio-v2.50.0,2026-10-23,0,35,20,False,False,3,True,True,signed,35955
+googleworkspace/cli,v0.22.5,2026-03-31,206,14,7,True,True,1,False,True,immutable,31847
+gitleaks/gitleaks,v8.30.1,2026-03-21,217,11,10,False,False,3,False,True,checksums only,30293
+sharkdp/hyperfine,v2.0.0,2026-10-07,16,21,21,False,False,2,False,False,nothing,29146
+charmbracelet/glow,v3.0.0,2026-08-11,73,56,33,False,False,3,True,True,signed,27786
+t8y2/dbx,v0.6.53,2026-10-24,0,33,25,False,False,3,True,True,signed,27671
+asdf-vm/asdf,v0.20.2,2026-09-22,32,10,5,False,False,3,False,True,checksums only,25607
+yorukot/superfile,v1.6.0,2026-06-07,138,7,6,False,False,3,False,True,checksums only,23913
+pranshuparmar/witr,v0.3.4,2026-10-04,19,20,19,False,False,3,False,True,checksums only,22780
+charmbracelet/vhs,v0.12.1,2026-09-24,30,32,21,False,False,3,True,True,signed,21190
+1jehuang/jcode,v0.99.1,2026-10-22,2,11,9,False,False,3,False,True,checksums only,21183
+antonmedv/fx,40.0.1,2026-10-22,2,6,6,False,False,2,False,False,nothing,20695
+Orange-OpenSource/hurl,8.0.1,2026-04-29,178,16,8,True,False,3,False,True,immutable,19273
+asciinema/asciinema,v3.2.1,2026-06-16,130,5,5,False,False,2,False,False,nothing,17908
+projectdiscovery/katana,v1.8.0,2026-10-05,19,9,8,False,False,3,False,True,checksums only,17723
+mikefarah/yq,v4.54.1,2026-09-29,25,59,53,True,False,3,True,True,immutable,16174
+xerj-org/xerj,v1.0.0-rc.98,2026-10-22,2,20,10,True,False,3,False,True,immutable,15221
+ClementTsang/bottom,0.14.9,2026-08-27,58,35,35,True,True,1,False,False,immutable,14121
+orf/gping,gping-v1.21.0,2026-08-31,53,11,11,False,False,2,False,False,nothing,12724
+dlvhdr/gh-dash,v4.26.2,2026-10-16,8,15,14,False,False,3,False,True,checksums only,12680
+svenstaro/genact,v1.6.0,2026-10-01,22,10,10,False,False,2,False,False,nothing,12224
+o2sh/onefetch,3.1.0,2026-10-18,5,5,5,False,False,2,False,False,nothing,12073
+majd/ipatool,v2.7.0,2026-10-09,14,14,7,False,False,3,False,True,checksums only,11893
+hatoo/oha,v1.16.0,2026-08-23,62,7,7,False,False,2,False,False,nothing,10629
+wader/fq,v0.18.0,2026-08-25,59,7,6,False,False,3,False,True,checksums only,10618
+projectdiscovery/httpx,v1.12.0,2026-09-08,46,9,8,False,False,3,False,True,checksums only,10529
+claudiodangelis/qrcp,v0.11.7,2026-09-30,24,21,20,False,False,3,False,True,checksums only,10525
+Kuberwastaken/claurst,v0.2.0,2026-10-14,10,8,5,False,False,3,False,True,checksums only,10326
+gruntwork-io/terragrunt,v1.2.1,2026-10-23,0,27,21,True,False,3,True,True,immutable,9896
+reviewdog/reviewdog,v0.21.2,2026-09-18,35,10,9,True,False,3,False,True,immutable,9692
+Nasiko-Labs/nasiko,v1.0.0,2026-02-12,254,1,1,False,False,1,False,False,nothing,9454
+mfontanini/presenterm,v0.16.1,2026-02-20,246,24,12,False,False,3,False,True,checksums only,8932
+pdfcpu/pdfcpu,v0.16.3,2026-10-19,4,19,9,False,False,3,False,True,checksums only,8882
+boyter/scc,v4.1.0,2026-09-07,46,9,8,False,False,3,False,True,checksums only,8841
+vi/websocat,v1.14.1,2025-12-27,301,14,14,False,False,2,False,False,nothing,8732
+smtg-ai/claude-squad,v1.0.20,2026-08-20,65,7,6,False,False,3,False,True,checksums only,8661
+pemistahl/grex,v1.4.6,2025-11-14,344,6,6,False,False,2,False,False,nothing,8282
+ducaale/xh,v0.26.3,2026-10-21,3,6,6,False,False,2,False,False,nothing,8146
+TomWright/dasel,v3.11.2,2026-06-27,119,16,16,False,False,2,False,False,nothing,8050
+rorkai/App-Store-Connect-CLI,5.16.1,2026-10-24,0,6,5,False,False,3,False,True,checksums only,8029
+svenstaro/miniserve,v0.35.0,2026-04-08,199,14,14,False,False,2,False,False,nothing,7922
+mufeedvh/code2prompt,v4.2.0,2025-12-11,316,4,4,False,False,2,False,False,nothing,7732
+GoogleCloudPlatform/kubectl-ai,v0.0.31,2026-03-27,211,9,8,False,False,3,False,True,checksums only,7592
+pimalaya/himalaya,v2.2.1,2026-10-02,22,9,9,False,False,2,False,False,nothing,7528
+chmln/sd,v1.1.0,2026-02-25,240,9,9,False,False,2,False,False,nothing,7398
+wasm-bindgen/wasm-pack,v0.15.0,2026-05-15,162,6,6,False,False,2,False,False,nothing,7292
+aome510/spotify-player,v0.25.1,2026-09-09,45,10,5,False,False,3,False,True,checksums only,7285
+simeji/jid,v1.1.3,2026-08-02,83,18,17,False,False,3,False,True,checksums only,7208
+sharkdp/pastel,v0.12.0,2026-02-14,252,19,19,False,False,2,False,False,nothing,6524
+mtkennerly/ludusavi,v0.31.0,2026-04-04,202,5,5,False,False,2,False,False,nothing,6469
+kucherenko/jscpd,v5.4.2,2026-10-20,4,19,8,False,True,1,True,True,provenance,6446
+alexpasmantier/television,0.15.9,2026-06-14,131,22,11,False,False,3,False,True,checksums only,6377
+HelixDB/helix-db,v3.5.1,2026-10-08,15,5,5,False,False,2,False,False,nothing,6235
+Dicklesworthstone/destructive_command_guard,v0.15.3,2026-10-08,16,34,6,False,False,3,True,True,signed,6209
+dalance/procs,v0.14.12,2026-06-25,121,6,6,False,False,2,False,False,nothing,6203
+dundee/gdu,v5.38.0,2026-10-05,19,32,30,False,False,3,True,True,signed,6151
+ynqa/jnv,v0.7.1,2026-04-01,206,20,9,False,False,3,False,True,checksums only,6126
+inngest/inngest,v1.49.0,2026-10-23,0,7,6,False,False,3,False,True,checksums only,5986
+sachaos/viddy,v1.3.1,2026-06-14,132,12,6,False,False,3,False,True,checksums only,5433
+metalbear-co/mirrord,3.278.0,2026-10-22,1,18,15,False,True,1,False,True,provenance,5380
+fallow-rs/fallow,v3.35.0,2026-10-22,2,89,47,True,False,3,True,True,immutable,5228
+unhappychoice/gitlogue,v0.12.1,2026-10-17,7,5,5,False,False,2,False,False,nothing,5217
+devspace-sh/devspace,v6.3.21,2026-04-22,184,20,10,False,False,3,False,True,checksums only,5207
+domcyrus/rustnet,v1.7.0,2026-10-06,17,22,22,False,False,2,False,False,nothing,5158
+arduino/arduino-cli,v1.5.1,2026-06-05,141,19,16,False,False,3,False,True,checksums only,5071
+mvanhorn/cli-printing-press,v4.34.0,2026-10-23,1,7,6,False,False,3,False,True,checksums only,4846
+sayanarijit/xplr,v1.2.1,2026-10-23,1,17,6,False,False,3,True,True,signed,4844
+topgrade-rs/topgrade,v17.14.1,2026-10-20,3,13,13,True,True,1,False,False,immutable,4695
+alexellis/arkade,0.11.134,2026-10-23,1,12,6,False,False,3,False,True,checksums only,4623
+restatedev/restate,v1.8.1,2026-10-21,3,31,16,False,False,3,False,True,checksums only,4599
+medialab/xan,0.61.0,2026-09-11,43,12,6,False,False,3,False,True,checksums only,4541
+six-ddc/plow,v1.4.0,2026-04-28,179,13,12,False,False,3,False,True,checksums only,4514
+jhspetersson/fselect,0.10.4,2026-10-23,1,8,8,False,False,2,False,False,nothing,4474
+crate-ci/typos,v1.51.1,2026-10-06,17,6,6,True,False,2,False,False,immutable,4195
+arxanas/git-branchless,v0.11.1,2026-05-21,155,4,4,False,False,2,False,False,nothing,4133
+version-fox/vfox,v1.0.13,2026-10-17,7,26,24,False,False,3,True,True,signed,4000
+JohannesKaufmann/html-to-markdown,v2.5.2,2026-06-07,139,12,11,False,False,3,False,True,checksums only,3837
+ouch-org/ouch,0.8.3,2026-09-13,41,26,13,False,False,2,True,False,signed,3798
+bgreenwell/doxx,v0.1.4,2026-05-26,151,27,15,False,False,3,False,True,checksums only,3778
+graykode/abtop,v0.5.5,2026-09-14,40,19,8,False,False,3,False,True,checksums only,3772
+geekjourneyx/md2wechat-skill,v3.8.0,2026-09-24,30,14,10,False,False,3,False,True,checksums only,3757
+str4d/rage,v0.12.1,2026-07-14,102,12,12,False,True,1,False,False,provenance,3698
+SurgeDM/Surge,v0.12.3,2026-10-22,2,13,12,False,False,3,False,True,checksums only,3600
+railwayapp/nixpacks,v1.41.0,2025-10-24,364,8,8,False,False,2,False,False,nothing,3554
+agent-of-empires/agent-of-empires,v1.21.0,2026-10-21,2,8,4,False,False,3,False,True,checksums only,3380
+bahdotsh/wrkflw,v0.8.0,2026-04-21,185,6,6,False,False,2,False,False,nothing,3334
+pamburus/hl,v0.36.5,2026-10-21,2,9,9,True,False,2,False,False,immutable,3313
+atanunq/viu,v1.6.1,2025-12-15,313,7,7,False,False,2,False,False,nothing,3300
+aandrew-me/tgpt,v2.15.0,2026-09-23,31,30,30,False,False,2,False,False,nothing,3285
+danvergara/dblab,v0.53.0,2026-10-15,8,6,5,False,False,3,False,True,checksums only,3245
+hairyhenderson/gomplate,v5.3.1,2026-10-22,2,31,14,False,True,1,False,True,provenance,3213
+amalshaji/portr,v2.0.0,2026-09-27,27,7,6,False,False,3,False,True,checksums only,3189
+guptarohit/asciigraph,v0.10.0,2026-06-21,124,10,9,False,False,3,False,True,checksums only,3099
+projectdiscovery/uncover,v1.2.1,2026-05-20,157,9,8,False,False,3,False,True,checksums only,3092
+dnote/dnote,cli-v0.17.0,2026-10-17,6,8,7,False,False,3,False,True,checksums only,3089
+gobackup/gobackup,v3.1.1,2026-07-06,110,5,4,False,False,3,False,True,checksums only,3082
+Veirt/weathr,v1.4.0,2026-02-23,243,9,9,False,False,2,False,False,nothing,3071
+vercel-labs/opensrc,v0.7.3,2026-06-23,122,8,7,False,False,3,False,True,checksums only,3023
+1Password/typeshare,v1.13.4,2025-12-11,316,2,1,False,False,1,False,False,nothing,2988
+altsem/gitu,v0.43.0,2026-07-11,104,5,5,False,False,2,False,False,nothing,2939
+projectdiscovery/dnsx,v1.3.1,2026-08-31,54,9,8,False,False,3,False,True,checksums only,2913
+jnsahaj/lumen,v2.32.0,2026-07-16,99,12,6,False,True,1,False,True,provenance,2899
+frain-dev/convoy,v26.9.2,2026-10-20,4,11,10,False,False,3,False,True,checksums only,2883
+zk-org/zk,v0.15.7,2026-10-15,9,9,9,False,False,2,False,False,nothing,2851
+openclaw/wacli,v0.25.0,2026-10-23,0,10,6,False,False,3,False,True,checksums only,2844
+runkids/skillshare,v0.26.4,2026-10-24,0,9,8,False,False,3,False,True,checksums only,2827
+pvolok/dekit,v0.10.2,2026-10-11,12,8,5,False,False,3,False,True,checksums only,2768
+sheeki03/tirith,v0.4.2,2026-09-11,43,12,8,False,True,1,True,True,provenance,2765
+Helvesec/rmux,v0.10.0,2026-08-04,81,13,11,True,True,1,True,True,immutable,2670
+go-musicfox/go-musicfox,v5.1.0,2026-08-10,75,21,20,False,False,3,False,True,checksums only,2610
+mesamirh/MovieBox-Tui,v0.1.27,2026-10-23,1,7,6,False,True,1,False,True,provenance,2577
+tbillington/kondo,v0.9,2026-01-23,274,6,6,False,False,2,False,False,nothing,2543
+mohsen1/yek,v0.25.5,2026-06-29,117,7,7,False,False,2,False,False,nothing,2475
+RevylAI/greenlight,v0.2.0,2026-07-28,87,5,4,False,False,3,False,True,checksums only,2452
+zurawiki/gptcommit,v0.6.0,2026-09-24,30,5,5,False,False,2,False,False,nothing,2416
+0xMassi/webclaw,v0.7.0,2026-10-20,4,8,7,False,False,3,False,True,checksums only,2388
+Zouuup/landrun,v0.1.17,2026-07-22,94,2,2,False,False,2,False,False,nothing,2326
+Achno/gowall,v0.2.4,2026-04-09,197,5,5,False,False,2,False,False,nothing,2320
+mbrt/gmailctl,v0.13.0,2026-09-28,26,6,5,False,False,3,False,True,checksums only,2208
+noborus/trdsql,v1.2.3,2026-05-29,148,14,14,False,False,2,False,False,nothing,2177
+lusingander/serie,v0.10.0,2026-10-12,11,6,6,True,False,2,False,False,immutable,2163
+kdheepak/taskwarrior-tui,v0.27.0,2026-04-09,198,16,9,False,False,3,False,True,checksums only,2153
+ipinfo/cli,ipinfo-3.3.3,2026-10-20,4,30,27,False,False,2,False,False,nothing,2120
+bensadeh/circumflex,5.1,2026-10-04,20,6,5,False,False,3,False,True,checksums only,2101
+noborus/ov,v0.55.0,2026-09-29,25,22,21,False,False,3,False,True,checksums only,2044
+vladkens/macmon,v0.10.0,2026-10-14,9,1,1,False,True,1,False,False,provenance,2043
+ofek/pyapp,v0.30.0,2026-10-12,12,2,2,False,False,2,False,False,nothing,2039
+the-open-engine/zeroshot,v10.17.0,2026-10-24,0,9,5,False,False,3,False,True,checksums only,2036
+carapace-sh/carapace-bin,v1.8.1,2026-10-17,7,26,25,False,False,3,False,True,checksums only,2001
+unkn0wn-root/resterm,v1.16.1,2026-10-22,2,12,6,False,False,3,False,True,checksums only,1996
+cloudfoundry/cli,v8.19.0,2026-08-28,56,17,17,False,False,2,False,False,nothing,1939
+brandonyoungdev/tldx,v1.6.0,2026-08-13,72,7,6,False,False,3,False,True,checksums only,1931
+Dicklesworthstone/pi_agent_rust,v0.8.0,2026-10-14,10,32,10,False,False,3,True,True,signed,1930
+sweetpad-dev/sweetpad,cli-v0.1.13,2026-10-10,13,1,1,False,True,1,False,False,provenance,1913
+kptdev/kpt,v1.0.1,2026-09-25,29,16,14,False,False,3,True,True,signed,1900
+carvel-dev/ytt,v0.55.4,2026-10-19,5,10,7,False,False,3,True,True,signed,1884
+run-llama/semtools,v3.0.1,2026-03-11,227,5,5,False,False,2,False,False,nothing,1877
+aquaproj/aqua,v2.65.2,2026-10-22,2,15,6,True,True,1,True,True,immutable,1876
+hetznercloud/cli,v1.70.2,2026-10-23,1,21,19,False,False,3,True,True,signed,1848
+lahfir/agent-desktop,v0.10.1,2026-10-18,6,11,10,False,True,1,False,True,provenance,1820
+remotemobprogramming/mob,5.4.2,2026-01-26,270,6,3,False,False,3,False,True,checksums only,1793
+iwe-org/iwe,iwe-v0.29.1,2026-10-24,0,12,6,False,False,3,False,True,checksums only,1792
+1jehuang/mermaid-rs-renderer,v0.3.1,2026-07-06,110,6,6,False,False,2,False,False,nothing,1787
+orhun/gpg-tui,v0.11.2,2026-04-23,184,3,1,False,False,2,True,True,signed,1776
+LargeModGames/spotatui,v0.46.0,2026-10-14,9,25,18,False,False,3,False,True,checksums only,1752
+Twigpine/zero,v0.11.0,2026-10-16,8,10,5,False,False,3,False,True,checksums only,1741
+sachaos/todoist,v0.24.0,2026-05-02,175,10,9,False,False,3,False,True,checksums only,1729
+github/gh-stack,v0.2.1,2026-10-09,15,12,12,False,True,1,False,False,provenance,1718
+yamafaktory/jql,jql-v9.0.3,2026-09-08,45,14,7,False,False,3,False,True,checksums only,1687
+kimono-koans/httm,0.51.0,2026-09-18,36,2,2,False,False,2,False,False,nothing,1668
+quantumsheep/sshs,4.8.0,2026-08-28,57,18,9,False,False,3,False,True,checksums only,1638
+chojs23/concord,v2.6.3,2026-10-18,6,18,8,False,False,3,False,True,checksums only,1627
+rvben/rumdl,v0.3.0,2026-10-17,7,14,7,True,True,1,False,True,immutable,1604
+Yakitrak/notesmd-cli,v0.3.8,2026-10-13,10,6,5,False,False,3,False,True,checksums only,1602
+dlvhdr/diffnav,v0.13.0,2026-10-06,18,9,8,False,False,3,False,True,checksums only,1602
+abhixdd/ghgrab,v2.2.0,2026-10-16,8,6,5,False,False,3,False,True,checksums only,1595
+xevrion/hatchzip,v0.1.3,2026-10-24,0,22,11,False,True,1,False,True,provenance,1555
+bgreenwell/lstr,v0.4.0,2026-07-14,102,27,15,False,False,3,False,True,checksums only,1547
+elringus/sprite-dicing,v4.0.0,2026-09-11,43,8,8,False,False,2,False,False,nothing,1541
+msoap/shell2http,v1.18.0,2026-10-11,12,18,17,False,False,3,False,True,checksums only,1510
+bgreenwell/xleak,v0.2.6,2026-05-24,153,27,15,False,False,3,False,True,checksums only,1510
+karust/openserp,v0.8.14,2026-10-19,4,8,8,False,False,2,False,False,nothing,1499
+lance0/ttl,v0.24.1,2026-10-21,3,6,5,False,False,3,False,True,checksums only,1488
+taiki-e/cargo-llvm-cov,v0.9.1,2026-09-06,48,17,17,True,True,1,False,False,immutable,1482
+peterldowns/localias,v3.0.0+commit.43c3619,2025-11-07,350,4,4,False,False,2,False,False,nothing,1477
+kubecolor/kubecolor,v0.8.0,2026-09-19,35,18,17,True,True,1,False,True,immutable,1475
+Skardyy/mcat,v0.6.7,2026-10-24,0,32,15,False,False,3,False,True,checksums only,1445
+ekristen/aws-nuke,v3.68.3,2026-10-02,22,14,6,False,False,3,True,True,signed,1415
+cloudposse/atmos,v1.233.2,2026-10-24,0,49,22,True,True,1,True,True,immutable,1406
+rest-sh/restish,v2.3.0,2026-06-30,116,30,29,False,False,3,False,True,checksums only,1390
+wait4x/wait4x,v3.7.3,2026-10-23,0,29,14,False,False,3,False,True,checksums only,1382
+github/gh-skyline,v0.1.9,2026-05-22,155,14,14,False,True,1,False,False,provenance,1366
+sergi0g/cup,v3.6.0,2026-10-23,1,2,2,False,False,2,False,False,nothing,1360
+ignite/cli,v30.0.0-rc.2,2026-09-24,30,5,4,False,False,3,False,True,checksums only,1354
+abhimanyu003/sttr,v0.2.30,2025-12-25,303,31,19,False,False,3,True,True,signed,1354
+buyukakyuz/install-nothing,v0.5.0,2025-12-17,311,5,5,False,False,2,False,False,nothing,1350
+monosans/proxy-scraper-checker,build-3854,2026-10-23,0,56,56,True,True,1,False,False,immutable,1345
+514-labs/dnsglobe,v0.5.0,2026-08-07,77,16,7,False,False,3,False,True,checksums only,1333
+unstablebuild/rune,v1.3.1,2026-10-23,0,14,10,True,False,2,False,False,immutable,1310
+marcosnils/bin,v0.29.4,2026-09-23,31,8,7,False,False,3,False,True,checksums only,1309
+retlehs/quien,v0.12.0,2026-06-23,122,9,8,False,False,3,False,True,checksums only,1302
+lasantosr/intelli-shell,v3.4.6,2026-10-08,16,8,8,False,False,2,False,False,nothing,1299
+sharkdp/diskus,v0.9.0,2025-12-06,321,19,19,False,False,2,False,False,nothing,1266
+foresterre/cargo-msrv,v0.19.6,2026-10-21,2,5,5,False,False,2,False,False,nothing,1249
+lindell/multi-gitter,v0.64.0,2026-10-22,1,19,17,False,False,3,True,True,signed,1247
+tomasz-tomczyk/crit,v0.23.1,2026-10-23,1,7,6,False,False,3,False,True,checksums only,1242
+thClaws/thClaws,v0.144.0,2026-10-23,1,18,9,False,False,3,False,True,checksums only,1242
+suzuki-shunsuke/pinact,v5.0.1,2026-10-22,2,14,6,True,True,1,True,True,immutable,1235
+chaqchase/lla,v0.6.6,2026-10-08,16,36,35,False,False,3,False,True,checksums only,1233
+gowebly/gowebly,v3.1.1,2026-04-20,187,15,14,False,False,3,False,True,checksums only,1232
+ovh/venom,v1.3.0,2026-01-06,291,10,10,False,False,2,False,False,nothing,1224
+cocogitto/cocogitto,7.0.0,2026-03-04,234,6,6,False,False,2,False,False,nothing,1220
+tuna-f1sh/cyme,v3.0.2,2026-09-11,43,6,6,False,False,2,False,False,nothing,1218
+naggie/dstask,v1.0.1,2026-01-10,287,11,10,False,False,3,False,True,checksums only,1214
+vividvilla/csvtotable,v3.2.0,2026-08-21,63,6,5,False,False,3,False,True,checksums only,1185
+heartleo/zlib,v0.0.11,2026-10-21,3,7,6,False,False,3,False,True,checksums only,1176
+tombi-toml/tombi,v1.9.4,2026-10-24,0,17,17,False,True,1,False,False,provenance,1173
+Siriusmart/youtube-tui,v0.9.4,2026-03-17,220,4,4,False,False,2,False,False,nothing,1173
+dropbox/dbxcli,v3.7.4,2026-09-25,28,8,7,False,False,3,False,True,checksums only,1162
+sibprogrammer/xq,v1.5.1,2026-08-23,62,10,9,False,False,3,False,True,checksums only,1161
+JakWai01/lurk,v0.3.14,2026-04-20,187,1,1,False,False,1,False,False,nothing,1159
+asheshgoplani/agent-deck,v1.16.30,2026-10-18,5,5,4,False,True,1,False,True,provenance,1154
+sunny0826/kubecm,v0.35.1,2026-03-09,229,8,7,False,False,3,False,True,checksums only,1146
+floatpane/matcha,v1.1.0,2026-10-10,14,7,6,False,False,3,False,True,checksums only,1144
+alvarorichard/GoAnime,v1.8.7,2026-09-15,39,10,8,False,False,3,False,True,checksums only,1138
+Owloops/updo,v0.4.8,2026-05-26,151,15,14,False,False,3,False,True,checksums only,1137
+291-Group/LAN-Orangutan,v3.4.2,2026-10-18,6,17,15,False,False,3,False,True,checksums only,1133
+aliyun/aliyun-cli,v3.5.2,2026-10-22,2,43,7,False,True,1,True,False,provenance,1120
+carvel-dev/kapp,v0.66.1,2026-10-13,11,8,5,False,False,3,True,True,signed,1097
+iosifache/annas-mcp,v0.1,2026-06-26,120,9,8,False,False,3,False,True,checksums only,1094
+raskrebs/sonar,v0.10.0,2026-10-15,9,7,6,False,False,3,False,True,checksums only,1092
+dkorunic/betteralign,v0.15.4,2026-10-20,4,11,10,False,False,3,False,True,checksums only,1088
+numtide/treefmt,v2.6.0,2026-08-31,53,6,5,False,False,3,False,True,checksums only,1086
+emanuele-em/proxelar,v0.6.1,2026-09-22,32,9,7,False,True,1,False,True,provenance,1084
+boyter/cs,v3.2.0,2026-09-11,43,9,8,False,False,3,False,True,checksums only,1080
+pgplex/pgschema,v1.13.3,2026-10-15,8,9,8,False,False,3,False,True,checksums only,1072
+deviceinsight/kafkactl,v5.21.0,2026-10-09,15,15,14,False,False,3,False,True,checksums only,1072
+harehare/mq,v0.9.3,2026-10-12,12,65,64,True,False,3,False,True,immutable,1064
+projectdiscovery/cloudlist,v1.5.0,2026-10-14,10,9,8,False,False,3,False,True,checksums only,1058
+pionxzh/wakaru,v1.14.0,2026-10-10,14,5,5,False,False,2,False,False,nothing,1055
+SylphxAI/anymd,v8.5.5,2026-10-19,4,25,16,False,True,1,True,True,provenance,1051
+getsentry/sentry-cli,3.8.2,2026-10-22,2,15,15,False,False,2,False,False,nothing,1044
+square/certigo,v1.18.1,2026-09-28,25,5,5,False,False,2,False,False,nothing,1038
+DataDog/pup,v2.3.0,2026-10-22,1,14,8,False,False,3,True,True,signed,1033
+longbridge/longbridge-terminal,v0.30.0,2026-10-12,12,14,7,False,False,3,False,True,checksums only,1024
+seachicken/gh-poi,v0.18.5,2026-10-18,6,12,11,False,False,3,False,True,checksums only,1023
+schpet/linear-cli,v3.1.0,2026-10-22,1,23,13,False,False,3,False,True,checksums only,1018
+scaleway/scaleway-cli,v2.65.2,2026-10-21,3,18,17,True,False,3,False,True,immutable,1016
+next-hat/nanocl,nanocl-0.18.1,2026-09-26,28,4,4,False,False,2,False,False,nothing,1002
+str4d/age-plugin-yubikey,v0.5.1,2026-04-08,199,3,3,False,False,2,False,False,nothing,1002
