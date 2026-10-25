@@ -1,8 +1,8 @@
 ---
-title: "Open-Source AI Coding Index, 2026 Q3: 13.2% of Commits in 20 Large Projects Name an AI Assistant"
+title: "Open-Source AI Attribution Index, 2026 Q3: 13.2% of Commits Disclose AI, and It Depends on Who Writes Them"
 summary: |
-  Counting the commits that name an AI coding assistant in the git history of 20 large open-source projects: 13.2% in 2026 Q3, up from 1.4% a year earlier.
-  The growth is concentrated in VS Code and in a few maintainers; Rust, Kubernetes and Django are still close to zero.
+  Counting the commits that disclose AI help in the git history of 20 large open-source projects: 13.2% in 2026 Q3, up from 1.4% a year earlier.
+  It measures the habit of disclosing, not how much code AI wrote: one pandas maintainer discloses on about 97% of their commits, while most contributors never do.
 tags:
   - AI
   - gitstats
@@ -17,13 +17,15 @@ series_order: 5
 
 ## The short version
 
-**In 2026 Q3, 13.2% of the commits in 20 large open-source projects named an AI coding assistant, up from 1.4% a year earlier. The growth is concentrated: VS Code alone made 63% of those commits. Without VS Code the share is 5.7%, and the median project is at 5.3%.**
+**In 2026 Q3, 13.2% of the commits in 20 large open-source projects disclosed AI help, up from 1.4% a year earlier. That number measures the habit of disclosing; it can't say how much code AI actually wrote.**
 
-The other end of the table hasn't moved: Rust, Kubernetes and Django are still close to zero.
+Disclosure comes down to the person. One pandas core maintainer wrote `Co-authored-by: Claude` on 606 of their 625 commits this quarter, about 97%; most contributors wrote it on none. How much AI the others used can't be read from the code. So 13.2% is a **lower bound**, and very likely far below actual use.
+
+The growth is concentrated too: VS Code alone made 63% of the disclosing commits. Without VS Code the share is 5.7%, and the median project is at 5.3%. At the other end, Rust, Kubernetes and Django are still close to zero.
 
 ![Pooled share, pooled share excluding VS Code, and median project](fig1-index.en.png)
 
-## What this index counts
+## What counts as a disclosure
 
 The [gitstats](https://github.com/shenxianpeng/gitstats) [Gallery](https://shenxianpeng.dev/gitstats/gallery/) rebuilds a report from the full git history of 20 large open-source projects every week. One of the things it counts is commits that name an AI assistant. A commit counts if any of these is true:
 
@@ -146,6 +148,12 @@ So the index answers "where have AI marks **appeared**, and **how fast** are the
 7. **Project selection.** The 20 projects are the Gallery's fixed sample: large, well-known, English-speaking communities. They don't represent open source as a whole, and 4 of them are AI coding tools.
 8. **Recounted.** The Gallery froze its snapshot of this quarter on 2026-10-15. gitstats 2.12 then learned marks it had missed: Claude named by model alone (such as `Opus 4.7`), Grok, IBM Bob, Pi, and disclosures that name no assistant, such as "a closed-source coding agent". This report recounts the 20 projects with those rules, as of 2026-10-24. Against the frozen snapshot, Node.js goes from 22.6% to 24.4% and Git from 5.1% to 7.3%; the pooled share stays at 13.2%. The recount also takes in commits merged after the quarter with an author date inside it.
 
+## Making disclosure countable
+
+A disclosure can only be counted if people write one, and write it the same way. This quarter alone shows `Co-authored-by`, `Assisted-by`, a bare model name, and "a closed-source coding agent", under project rules that all differ.
+
+[commit-check](https://github.com/commit-check/commit-check), which I maintain, turns this into a commit rule: with `ai_attribution = "disclose"` it asks for AI help to be disclosed in a trailer such as `Assisted-by:`, and rejects the tool as a co-author or a sign-off. It can't decide for anyone whether to disclose; it makes the disclosures that are written consistent enough to count and compare.
+
 ## Reproduce it
 
 **1. From the Gallery's data** (every pooled number in this report comes from these 20 projects of it):
@@ -183,4 +191,4 @@ In `report-pandas/summary.json`, `ai_assisted.by_month` and `ai_assisted.commits
 
 Suggested citation (draft):
 
-> Shen, Xianpeng. *Open-Source AI Coding Index, 2026 Q3.* gitstats Gallery, 2026. Data: https://shenxianpeng.dev/gitstats/gallery/ai.json (recounted 2026-10-24).
+> Shen, Xianpeng. *Open-Source AI Attribution Index, 2026 Q3.* gitstats Gallery, 2026. Data: https://shenxianpeng.dev/gitstats/gallery/ai.json (recounted 2026-10-24).

@@ -1,8 +1,8 @@
 ---
-title: "开源 AI 编程指数 2026 Q3：20 个大项目里 13.2% 的提交署名了 AI"
+title: "开源 AI 署名指数 2026 Q3：13.2% 的提交写明了 AI，写不写因人而异"
 summary: |
-  按 git 历史统计 20 个大型开源项目里署名 AI 编程助手的提交：2026 年第三季度合计 13.2%，一年前是 1.4%。
-  增长高度集中在 VS Code 和少数几位维护者身上，Rust、Kubernetes、Django 仍然接近 0。
+  按 git 历史统计 20 个大型开源项目里写明 AI 参与的提交：2026 年第三季度合计 13.2%，一年前是 1.4%。
+  这组数字衡量的是署名习惯，AI 实际写了多少代码它回答不了：一位 pandas 维护者约 97% 的提交都写了，大多数贡献者一条都没写。
 tags:
   - AI
   - gitstats
@@ -17,13 +17,15 @@ series_order: 5
 
 ## 一句话结论
 
-**2026 年第三季度，20 个大型开源项目里有 13.2% 的提交显式署名了 AI 编程助手，一年前是 1.4%；但增长高度集中：VS Code 一家占了全部署名提交的 63%，不算 VS Code 是 5.7%，中位数项目是 5.3%。**
+**2026 年第三季度，20 个大型开源项目里有 13.2% 的提交写明了 AI 参与，一年前是 1.4%。这个数字衡量的是署名习惯，AI 实际写了多少代码，它回答不了。**
 
-另一面同样明显：Rust、Kubernetes、Django 的署名提交仍然接近 0。
+写不写完全因人而异。pandas 一位核心维护者本季度 625 条提交里，606 条写了 `Co-authored-by: Claude`，约 97%；大多数贡献者一条都没写。没写的人用了多少 AI，从代码本身看不出来。所以 13.2% 是**下限**，很可能远低于实际用量。
+
+增长也高度集中：VS Code 一家占了全部署名提交的 63%，不算 VS Code 是 5.7%，中位数项目是 5.3%。另一面，Rust、Kubernetes、Django 的署名提交仍然接近 0。
 
 ![20 个项目的合计占比、不含 VS Code 的合计占比和中位数](fig1-index.zh.png)
 
-## 这个指数数的是什么
+## 怎么算「署名」
 
 [gitstats](https://github.com/shenxianpeng/gitstats) 的 [Gallery](https://shenxianpeng.dev/gitstats/gallery/) 每周对 20 个大型开源项目的完整 git 历史生成报告。其中一项是「署名 AI 的提交」：一条提交只要满足下面任一项就被计入：
 
@@ -146,6 +148,12 @@ series_order: 5
 7. **项目选择。** 这 20 个项目是 Gallery 的固定样本，偏向大型、知名、英文社区的项目，不代表整个开源世界。其中 4 个是 AI 编程工具自身。
 8. **重新统计。** Gallery 在 2026-10-15 冻结了本季度的快照。之后 gitstats 2.12 补上了几种此前识别不出的署名写法：只写模型型号的 Claude（如 `Opus 4.7`）、Grok、IBM Bob、Pi，以及「a closed-source coding agent」这类不写名字的披露。本文按 2026-10-24 的新规则重新统计了这 20 个项目，与冻结快照相比，Node.js 从 22.6% 变为 24.4%，Git 从 5.1% 变为 7.3%，合计占比不变（13.2%）。重新统计也包含了季度结束后才合入、作者日期在季度内的提交。
 
+## 想让署名可信，先把写法统一
+
+署名要能统计，前提是有人写，而且写法一致。本季度看到的写法就有 `Co-authored-by`、`Assisted-by`、只写模型型号、只写「a closed-source coding agent」好几种，各项目的规定也各不相同。
+
+我维护的 [commit-check](https://github.com/commit-check/commit-check) 可以把这件事变成提交规则：设置 `ai_attribution = "disclose"` 后，它要求用 `Assisted-by:` 这类披露行写明 AI 参与，拒绝把 AI 写成共同作者或签名人。要不要写，它替不了人决定；但写了的署名格式统一，才能统计、才能比较。
+
 ## 如何复现
 
 **1. 直接用 Gallery 的数据**（本报告的全部汇总数字都来自其中这 20 个项目）：
@@ -183,7 +191,7 @@ gitstats pandas report-pandas
 
 引用格式（草稿）：
 
-> Shen, Xianpeng. *Open-Source AI Coding Index, 2026 Q3.* gitstats Gallery, 2026. Data: https://shenxianpeng.dev/gitstats/gallery/ai.json (recounted 2026-10-24).
+> Shen, Xianpeng. *Open-Source AI Attribution Index, 2026 Q3.* gitstats Gallery, 2026. Data: https://shenxianpeng.dev/gitstats/gallery/ai.json (recounted 2026-10-24).
 
 ---
 
