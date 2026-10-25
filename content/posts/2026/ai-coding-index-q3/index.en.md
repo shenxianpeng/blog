@@ -1,8 +1,8 @@
 ---
-title: "Open-Source AI Attribution Index, 2026 Q3: 13.2% of Commits Disclose AI, and It Depends on Who Writes Them"
+title: "Open-Source AI Attribution Index, 2026 Q3: Only 13.2% of Commits Disclose AI, and That Is Too Low"
 summary: |
-  Counting the commits that disclose AI help in the git history of 20 large open-source projects: 13.2% in 2026 Q3, up from 1.4% a year earlier.
-  It measures the habit of disclosing, not how much code AI wrote: one pandas maintainer discloses on about 97% of their commits, while most contributors never do.
+  Almost every developer I know writes code with AI, yet in 20 large open-source projects only 13.2% of 2026 Q3 commits disclose it, and Rust, Kubernetes and Django are near zero. Many people use AI and don't say so.
+  My view: maintainers shouldn't ask whether AI wrote a change, but whether the contributor can stand behind it. Disclosing is still the better habit.
 tags:
   - AI
   - gitstats
@@ -15,15 +15,72 @@ series_order: 5
 ---
 > Data through 2026-09-30 · recounted 2026-10-24 with the rules of gitstats 2.12
 
-## The short version
+Among the developers I know, almost nobody who has an AI coding tool still writes code by hand, line by line. Open X, or any developer community, and AI-written code is everywhere.
 
-**In 2026 Q3, 13.2% of the commits in 20 large open-source projects disclosed AI help, up from 1.4% a year earlier. That number measures the habit of disclosing; it can't say how much code AI actually wrote.**
+Yet in the git history of 20 large open-source projects, only **13.2%** of the commits in 2026 Q3 disclose AI help, up from 1.4% a year earlier. VS Code alone made 63% of those; without it, the share is 5.7%. Rust, Kubernetes and Django are close to zero.
 
-Disclosure comes down to the person. One pandas core maintainer wrote `Co-authored-by: Claude` on 606 of their 625 commits this quarter, about 97%; most contributors wrote it on none. How much AI the others used can't be read from the code. So 13.2% is a **lower bound**, and very likely far below actual use.
-
-The growth is concentrated too: VS Code alone made 63% of the disclosing commits. Without VS Code the share is 5.7%, and the median project is at 5.3%. At the other end, Rust, Kubernetes and Django are still close to zero.
+I don't believe the contributors to these projects aren't using AI. The likelier explanation is that many of them use it and don't say so.
 
 ![Pooled share, pooled share excluding VS Code, and median project](fig1-index.en.png)
+
+## Used, but not disclosed
+
+Within one project, disclosure comes down to the person.
+
+Since January 2026, pandas has required contributors to disclose AI use, naming the tool, the model and its version. This quarter one long-time core maintainer wrote `Co-authored-by: Claude` on 606 of their 625 commits, about 97%. Without them, the other contributors disclosed on 8.1% of their commits. CPython and Git look the same: nine in ten disclosing commits come from one person, and without that person the shares drop to 2.4% and 0.8%.
+
+| Project | 2026 Q3 share | Top author's part of marked commits | Share without that author |
+|---|---:|---:|---:|
+| pandas | 66.7% | 96% (606 / 632) | 8.1% (26 / 322) |
+| CPython | 18.0% | 90% (220 / 244) | 2.4% (24 / 995) |
+| Git | 7.3% | 90% (63 / 70) | 0.8% (7 / 868) |
+| Node.js | 24.4% | 33% (124 / 381) | 18.9% (257 / 1,357) |
+| VS Code | 57.1% | 9% (309 / 3,597) | 55.2% (3,288 / 5,953) |
+
+(This table comes from auditing each repository commit by commit, by author date; its counts match the tables below.)
+
+![Share of 2026 Q3 AI-marked commits from the single top author](fig4-concentration.en.png)
+
+Same rules, same tools within reach, and one person discloses on nearly every commit while most people disclose on none. I find it hard to believe that only one or two people in each of these projects use AI.
+
+VS Code shows the other side. Its 3,597 disclosing commits come from 129 authors, and the top five make only 32% of them. Copilot tooling can write `Co-authored-by: Copilot` automatically, so most people's commits carry it. Whether people disclose depends a lot on whether their tool does it for them.
+
+## Not every zero is hiding
+
+To be fair, some zeros have other causes:
+
+- **Rust** adopted an LLM policy in August 2026: LLMs may be used to analyse, check and review, but not to create, and LLM-written code is allowed only under experiment rules. Part of its zero is a restriction.
+- **PyTorch** asks for disclosure in the pull request; **Django** requires disclosure too, but it doesn't reach the commit message. Neither is counted here.
+- **Node.js** recommends leaving commercial brand names out of commit messages and writing "a closed-source coding agent" instead. gitstats 2.12 now counts that wording.
+- **Codex CLI**'s public repository is now exported from an internal OpenAI one, and the marks in the original commits don't survive.
+
+These explain some of the zeros. To me, they don't explain a gap this wide between "everyone writes code with AI" and "about one commit in eight says so".
+
+## Why people don't disclose
+
+My guess is that many projects and communities still can't accept code written by AI. Disclose, and the pull request may get extra rounds of questions or be closed outright; don't, and nobody can tell from the code.
+
+I still find it hard to understand. With AI-written code this common, why hide it?
+
+## What maintainers should look at
+
+I don't think maintainers should question whether a contributor or an AI wrote a change. What matters is whether the contributor can stand behind it.
+
+In these cases a maintainer has every reason to close the pull request:
+
+- the code makes no sense, or doesn't match the problem it claims to fix;
+- the maintainer asks a few simple questions and the contributor can't answer them;
+- every answer is plainly AI-generated, with no sign the contributor understands the change.
+
+Using AI to help put an answer together is fine; what matters is whether the contributor understands the code. If they can explain it and change it, it doesn't matter whether AI wrote it.
+
+A side note: many maintainers also look at a contributor's GitHub profile. If the contributor is a well-known name in open source, a maintainer may want to merge the change even when it has problems, because what they want is that person. Judging by the tool and judging by the name both miss the code.
+
+## Disclose anyway
+
+Disclosure shouldn't be a bar to merging, but I'd still disclose. Maintainers, and whoever reads the code later, can see how it came about; and the more people disclose, the closer this index gets to real use.
+
+The wording needs to be consistent too. This quarter alone shows `Co-authored-by`, `Assisted-by`, a bare model name, and "a closed-source coding agent". [commit-check](https://github.com/commit-check/commit-check), which I maintain, turns this into a commit rule: with `ai_attribution = "disclose"` it asks for AI help to be disclosed in a trailer such as `Assisted-by:`, and rejects the tool as a co-author or a sign-off.
 
 ## What counts as a disclosure
 
@@ -94,41 +151,23 @@ How a tool team commits, and how it syncs its public repository, decides these n
 
 ### The Python data and AI stack: the fastest growth, but look at who commits
 
-- **pandas, at 66.7%,** tops the table. The audit found that **606 of its 632 marked commits come from one long-time core maintainer**: nearly every one of their 625 commits this quarter carries `Co-authored-by: Claude …`. **Without them, the rest of the contributors are at 8.1%.** Since 2026-01 pandas has required contributors to disclose AI use, naming the tool, the model and its version.
+- **pandas, at 66.7%,** tops the table, but 606 of its 632 marked commits come from one maintainer (see above).
 - **Transformers (17.0%) and PyTorch (9.7%)** both jumped in 2026 Q3 (from 4.8% and 2.4%). We didn't audit them commit by commit. PyTorch's AI policy (2026-07) asks for disclosure in the pull request, not the commit.
 - **NumPy (2.0%), LangChain (1.1%) and FastAPI (0.3%)** have stayed low.
 
 ### Language runtimes and systems infrastructure: two extremes
 
 - **Node.js, 24.4%**: almost all marks are `Assisted-by:` disclosures (`Codex`, `OpenCode`, `Claude` and others), from 40 authors; the top three made 77% of them. Node.js published an AI use policy on 2026-08-12, and marked commits rose clearly in the two months after. The same policy **recommends leaving commercial brand names out of commit messages**, writing "a closed-source coding agent" instead: gitstats counts those commits under an unnamed assistant, 11 of them this quarter. Disclosures made only in the pull request still aren't counted, so Node.js's number remains a lower bound.
-- **CPython, 18.0%**: **220 of 244 come from one core developer**. Without them it's 2.4%. CPython's guidance says disclosing AI use in the pull request is appreciated but not required.
-- **Git, 7.3%**: marks only appeared in 2026, and **63 of the 70 come from one maintainer**, mostly disclosures that name a model alone, such as `Assisted-by: Opus 4.7`. Without them it's 0.8%.
+- **CPython, 18.0%**: 220 of 244 come from one core developer. CPython's guidance says disclosing AI use in the pull request is appreciated but not required.
+- **Git, 7.3%**: marks only appeared in 2026, and 63 of the 70 come from one maintainer, mostly disclosures that name a model alone, such as `Assisted-by: Opus 4.7`.
 - **nginx, 5.5%**: 91 commits this quarter, 5 of them marked: a small sample.
-- **Rust (≈0%) and Kubernetes (0%)**: Rust adopted an LLM policy in 2026-08. LLMs may be used to analyse, check and review, but not to create; LLM-written code is allowed only under experiment rules. Part of Rust's zero is a **restriction**, not just a missing mark.
+- **Rust (≈0%) and Kubernetes (0%)**: see above for Rust's policy.
 
 ### Editor, web frameworks and packaging
 
 - **VS Code, 57.1%**: unlike pandas, this is **broad**. 3,597 marked commits come from 129 authors, and the top five make only 32% of them. A year ago its marks were mostly the Copilot agent committing as the author; now they are mostly people's commits with `Co-authored-by: Copilot`. Two things to keep in mind: VS Code and Copilot both come from Microsoft, so this is a team using its own tools; and Copilot tooling can write that trailer automatically (VS Code has a `git.addAICoAuthor` setting that was on by default for a few weeks in 2026-04 and is off by default now).
 - **React, 19.8%**: from 0 to 20% in a year, but on 162 commits this quarter, 32 marked.
 - **Homebrew (2.4%)** is roughly flat. **Django (0%)** requires contributors to disclose AI use, but the disclosure doesn't reach the commit message (presumably it stays in the pull request or ticket).
-
-## How concentrated the marks are
-
-![Share of 2026 Q3 AI-marked commits from the single top author](fig4-concentration.en.png)
-
-Two high shares can mean very different things:
-
-| Project | 2026 Q3 share | Top author's part of marked commits | Share without that author |
-|---|---:|---:|---:|
-| pandas | 66.7% | 96% (606 / 632) | 8.1% (26 / 322) |
-| CPython | 18.0% | 90% (220 / 244) | 2.4% (24 / 995) |
-| Git | 7.3% | 90% (63 / 70) | 0.8% (7 / 868) |
-| Node.js | 24.4% | 33% (124 / 381) | 18.9% (257 / 1,357) |
-| VS Code | 57.1% | 9% (309 / 3,597) | 55.2% (3,288 / 5,953) |
-
-(This table comes from auditing each repository commit by commit, by author date; its counts match the table above.)
-
-So the index answers "where have AI marks **appeared**, and **how fast** are they growing" better than "which community relies on AI more".
 
 ## Method and limits
 
@@ -147,12 +186,6 @@ So the index answers "where have AI marks **appeared**, and **how fast** are the
 6. **Small samples.** React (162 commits), nginx (91) and Gemini CLI (170) had few commits this quarter; a handful can move them several points.
 7. **Project selection.** The 20 projects are the Gallery's fixed sample: large, well-known, English-speaking communities. They don't represent open source as a whole, and 4 of them are AI coding tools.
 8. **Recounted.** The Gallery froze its snapshot of this quarter on 2026-10-15. gitstats 2.12 then learned marks it had missed: Claude named by model alone (such as `Opus 4.7`), Grok, IBM Bob, Pi, and disclosures that name no assistant, such as "a closed-source coding agent". This report recounts the 20 projects with those rules, as of 2026-10-24. Against the frozen snapshot, Node.js goes from 22.6% to 24.4% and Git from 5.1% to 7.3%; the pooled share stays at 13.2%. The recount also takes in commits merged after the quarter with an author date inside it.
-
-## Making disclosure countable
-
-A disclosure can only be counted if people write one, and write it the same way. This quarter alone shows `Co-authored-by`, `Assisted-by`, a bare model name, and "a closed-source coding agent", under project rules that all differ.
-
-[commit-check](https://github.com/commit-check/commit-check), which I maintain, turns this into a commit rule: with `ai_attribution = "disclose"` it asks for AI help to be disclosed in a trailer such as `Assisted-by:`, and rejects the tool as a co-author or a sign-off. It can't decide for anyone whether to disclose; it makes the disclosures that are written consistent enough to count and compare.
 
 ## Reproduce it
 
