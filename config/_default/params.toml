@@ -24,7 +24,7 @@ disableTextInHeader = false
 
 defaultBackgroundImage = "/img/no-exist-img.jpg"
 defaultFeaturedImage = "/img/background.svg"
-defaultSocialImage = "/img/logo.png"
+defaultSocialImage = "/img/social-card.png" # .github/scripts/gen_site_icons.py
 
 highlightCurrentMenuArea = true
 smartTOC = true
