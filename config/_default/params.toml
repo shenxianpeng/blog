@@ -6,8 +6,8 @@
 # https://blowfish.page/docs/configuration/#theme-parameters
 
 colorScheme = "evergreen" # assets/css/schemes/evergreen.css
-defaultAppearance = "dark" # valid options: light or dark
-autoSwitchAppearance = true
+defaultAppearance = "light" # used only when autoSwitchAppearance is off
+autoSwitchAppearance = true # follow the system; see assets/js/appearance.js
 
 enableSearch = true
 enableCodeCopy = true
