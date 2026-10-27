@@ -43,7 +43,7 @@ ACCENT = "#4FB88A"
 
 # At 16 and 32 px the whole headshot is a blur; crop to the face (cap brim to
 # chin) for the tab-sized icons. Fractions of the square photo.
-FACE = (0.1875, 0.215, 0.8125, 0.84)
+FACE = (0.20, 0.255, 0.825, 0.88)
 
 
 def round_icon(img, size):
