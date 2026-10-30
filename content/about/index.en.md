@@ -42,7 +42,7 @@ More on each of them on the [Projects](/portfolio/) page.
 
 ## Community
 
-Member of the Jenkins GitHub organization. EuroPython 2025 proposal reviewer. Anthropic Open Source Developer Program, 2026. Writing here since 2017; the Chinese posts also go out on WeChat (沈显鹏).
+Member of the Jenkins GitHub organization. Top 3 in Lithuania for public contributions on [committers.top](https://committers.top/lithuania_public). EuroPython 2025 proposal reviewer. Anthropic Open Source Developer Program, 2026. Writing here since 2017; the Chinese posts also go out on WeChat (沈显鹏).
 
 ## Support
 
