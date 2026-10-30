@@ -49,7 +49,7 @@ products:
   text: "给停在 Java 8 的构建机用的 Jenkins agent，跑在你自己租户里的 Atlassian 应用，还有备份到你自己存储的 Mac 备份工具。"
   items:
     - name: "keelinfra"
-      label: "免费 · 开源 · 提供付费支持"
+      label: "免费 · 开源 · MIT"
       text: "Agent8 让停在 Java 8 的构建机（AIX、Solaris、HP-UX）继续作为普通节点接入新版 Jenkins。一个安装脚本搞定，每个 release 以测试过的 Jenkins 版本命名。"
       url: "https://keelinfra.io/jenkins/"
       demo: "agent8"
@@ -76,10 +76,6 @@ products:
 writing:
   title: "文章"
   text: "2017 年开始写，中英文双语。"
-sponsor:
-  text: "省了你的时间，欢迎赞助，让开源这部分持续维护。"
-  label: "在 GitHub 上赞助"
-  url: "https://github.com/sponsors/shenxianpeng"
 ---
 
 ## 关注公众号

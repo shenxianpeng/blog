@@ -57,7 +57,8 @@ in `content/_index.en.md` and `content/_index.md`: `title` (and optional
 (one quiet line; with `stages` it walks commit → review → build → release
 like the GitHub profile banner, each stage followed by its projects),
 `flagship`
-(the dark cpp-linter band), `products`, `writing` and `sponsor`. The Chinese
+(the dark cpp-linter band), `products`, `writing` and an optional `sponsor`
+(unset on purpose: keep money links off the home page). The Chinese
 page's body holds the WeChat QR section. `demo: <name>` on the flagship or a
 product renders `layouts/partials/home/demo-<name>.html`, a pure-CSS animation
 of the tool at work: cpp-linter (thread comment, PR review, step summary,

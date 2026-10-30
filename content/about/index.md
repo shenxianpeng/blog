@@ -46,7 +46,7 @@ Jenkins GitHub 组织成员，按公开贡献在 [committers.top](https://commit
 
 ## 支持我
 
-博客一直没有广告。文章或工具帮到了你的话，可以在 [GitHub Sponsors](https://github.com/sponsors/shenxianpeng) 赞助，通过 [Thanks.dev](https://thanks.dev/u/gh/shenxianpeng) 支持，或[请我喝杯咖啡](https://buymeacoffee.com/shenxianpeng)。
+博客一直没有广告。工具帮到了你的话，可以在 [GitHub Sponsors](https://github.com/sponsors/shenxianpeng) 说声谢谢。
 
 ## 联系我
 

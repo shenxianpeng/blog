@@ -48,7 +48,7 @@ products:
   text: "Jenkins agents for build hosts stuck on Java 8, Atlassian apps that run inside your own tenant, and Mac backups to your own storage."
   items:
     - name: "keelinfra"
-      label: "Free · Open source · Support plans"
+      label: "Free · Open source · MIT"
       text: "Agent8 keeps build hosts stuck on Java 8, such as AIX, Solaris and HP-UX, connected to a current Jenkins as ordinary agents. One install script, and releases named after the Jenkins version they were tested with."
       url: "https://keelinfra.io/jenkins/"
       demo: "agent8"
@@ -75,8 +75,4 @@ products:
 writing:
   title: "Writing."
   text: "Since 2017, in Chinese and English."
-sponsor:
-  text: "If one of these tools saves you time, sponsoring keeps it maintained."
-  label: "Sponsor on GitHub"
-  url: "https://github.com/sponsors/shenxianpeng"
 ---

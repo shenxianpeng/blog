@@ -46,7 +46,7 @@ Member of the Jenkins GitHub organization. Top 3 in Lithuania for public contrib
 
 ## Support
 
-This blog has never carried ads. If the writing or the tools helped, you can sponsor me on [GitHub Sponsors](https://github.com/sponsors/shenxianpeng), support the work via [Thanks.dev](https://thanks.dev/u/gh/shenxianpeng), or [buy me a coffee](https://buymeacoffee.com/shenxianpeng).
+This blog has never carried ads. If a tool helped, [GitHub Sponsors](https://github.com/sponsors/shenxianpeng) is the way to say thanks.
 
 ## Contact
 

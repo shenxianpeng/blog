@@ -99,11 +99,9 @@ On October 13 I posted it on the [Jenkins community forum][thread], and within a
 
 As with Keelhaven, much of this feedback was something I had not thought of myself.
 
-## Free, with paid support available
+## Free
 
 Agent8 is MIT-licensed. Everything in the repository is free, with no gated features.
-
-If you need more than that, such as a pilot on AIX, Solaris or HP-UX with us, a check of whether the plugins you use work on a Java 8 agent, or a tested build ready before every controller upgrade, see [keelinfra's pricing page][pricing]. Prices are fixed, and the first answer is free.
 
 ---
 
@@ -118,4 +116,3 @@ If you have AIX, Solaris or HP-UX build hosts and can help verify builds, please
 [background]: https://keelinfra.io/blog/jenkins-java-21-aix-rhel6-build-hosts/
 [issues]: https://github.com/keelinfra/agent8/issues
 [thread]: https://community.jenkins.io/t/keeping-java-8-build-hosts-aix-solaris-hp-ux-rhel-6-as-agents-of-a-current-jenkins/37378
-[pricing]: https://keelinfra.io/jenkins/pricing/

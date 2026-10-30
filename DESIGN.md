@@ -101,7 +101,8 @@ Top to bottom:
    (demo right).
 4. **Writing** — recent posts as one list of ruled rows: date, title, tag.
 5. **Page body** — only the Chinese home has one: the WeChat QR code.
-6. **Sponsor** — full-bleed tinted band.
+6. **Sponsor** — full-bleed tinted band, drawn only when the `sponsor` front
+   matter is set. Off since 2026-10: the one sponsor link lives on About.
 
 ## Post footer
 

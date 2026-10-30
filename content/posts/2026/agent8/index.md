@@ -99,11 +99,9 @@ CI 每周都会对着最新的 LTS 和 weekly 跑一遍：Pipeline 构建、Git 
 
 和上次 Keelhaven 一样，这些反馈很多是我自己没想到的。
 
-## 免费，也有付费支持
+## 免费
 
 Agent8 是 MIT 协议，仓库里的东西全部免费，没有阉割的功能。
-
-如果你需要更多保障，比如在 AIX、Solaris 或 HP-UX 上和我们一起做试点、检查你用到的插件能不能在 Java 8 agent 上工作，或者每次 controller 升级之前都有一个测试过的版本，可以看看 [keelinfra 的定价页][pricing]。都是固定价格，第一个问题的回答免费。
 
 ---
 
@@ -118,4 +116,3 @@ Agent8 是 MIT 协议，仓库里的东西全部免费，没有阉割的功能�
 [background]: https://keelinfra.io/blog/jenkins-java-21-aix-rhel6-build-hosts/
 [issues]: https://github.com/keelinfra/agent8/issues
 [thread]: https://community.jenkins.io/t/keeping-java-8-build-hosts-aix-solaris-hp-ux-rhel-6-as-agents-of-a-current-jenkins/37378
-[pricing]: https://keelinfra.io/jenkins/pricing/
