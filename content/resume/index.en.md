@@ -75,9 +75,7 @@ Outside work I maintain a number of open source organizations and projects. More
 
 **[Explain Error](https://github.com/jenkinsci/explain-error-plugin)** — a Jenkins plugin, in the jenkinsci organization, that uses AI to explain build failures, with **AI Auto-Fix** (automatic repair PRs), usage statistics and quota controls, and providers including OpenAI, Gemini, Azure OpenAI, DeepSeek, Qwen, Ollama, and AWS Bedrock.
 
-**[Open Delivery Spec](https://github.com/open-delivery-spec)** — an open specification and toolset for detecting, analyzing, and governing AI-generated code: AI-code detection, quality scoring, and policy gates that run as a CI quality gate (every PR on this blog's repository goes through it).
-
-**More**: [devops-maturity](https://github.com/devops-maturity) (DevOps maturity assessment and badges), [MkDocs NG](https://github.com/mkdocs-ng) (community maintenance of the MkDocs ecosystem), [gitstats](https://github.com/shenxianpeng/gitstats) (Git repository analytics), [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint) (Jenkinsfile validation without a Jenkins server).
+**More**: [MkDocs NG](https://github.com/mkdocs-ng) (community maintenance of the MkDocs ecosystem), [gitstats](https://github.com/shenxianpeng/gitstats) (Git repository analytics), [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint) (Jenkinsfile validation without a Jenkins server).
 
 ---
 

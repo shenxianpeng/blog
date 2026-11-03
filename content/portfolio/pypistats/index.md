@@ -35,7 +35,6 @@ build:
 | [![Package][badge-name-mkdocs-ng-material]][gh-mkdocs-ng-material] | [![PyPI][badge-version-mkdocs-ng-material]][mkdocs-ng-material] | [![Downloads][badge-downloads-mkdocs-ng-material]][mkdocs-ng-material] | [![Commit][badge-commit-mkdocs-ng-material]][gh-mkdocs-ng-material] |
 | [![Package][badge-name-pipguard]][gh-pipguard] | [![PyPI][badge-version-pipguard]][pipguard] | [![Downloads][badge-downloads-pipguard]][pipguard] | [![Commit][badge-commit-pipguard]][gh-pipguard] |
 | [![Package][badge-name-clang-include-cleaner]][gh-clang-include-cleaner] | [![PyPI][badge-version-clang-include-cleaner]][clang-include-cleaner] | [![Downloads][badge-downloads-clang-include-cleaner]][clang-include-cleaner] | [![Commit][badge-commit-clang-include-cleaner]][gh-clang-include-cleaner] |
-| [![Package][badge-name-devops-maturity]][gh-devops-maturity] | [![PyPI][badge-version-devops-maturity]][devops-maturity] | [![Downloads][badge-downloads-devops-maturity]][devops-maturity] | [![Commit][badge-commit-devops-maturity]][gh-devops-maturity] |
 | [![Package][badge-name-used-by]][gh-used-by] | [![PyPI][badge-version-used-by]][used-by] | [![Downloads][badge-downloads-used-by]][used-by] | [![Commit][badge-commit-used-by]][gh-used-by] |
 
 ---
@@ -60,7 +59,6 @@ build:
 [mkdocs-ng-material]: https://pypi.org/project/mkdocs-ng-material/
 [pipguard]: https://pypi.org/project/pipguard/
 [clang-include-cleaner]: https://pypi.org/project/clang-include-cleaner/
-[devops-maturity]: https://pypi.org/project/devops-maturity/
 [used-by]: https://pypi.org/project/used-by/
 
 <!-- GitHub Repository Links -->
@@ -83,7 +81,6 @@ build:
 [gh-mkdocs-ng-material]: https://github.com/mkdocs-ng/mkdocs-material
 [gh-pipguard]: https://github.com/shenxianpeng/pipguard
 [gh-clang-include-cleaner]: https://github.com/cpp-linter/clang-include-cleaner
-[gh-devops-maturity]: https://github.com/devops-maturity/devops-maturity
 [gh-used-by]: https://github.com/shenxianpeng/used-by
 
 <!-- Badge Images - Version -->
@@ -106,7 +103,6 @@ build:
 [badge-version-mkdocs-ng-material]: https://img.shields.io/pypi/v/mkdocs-ng-material?style=flat-square
 [badge-version-pipguard]: https://img.shields.io/pypi/v/pipguard?style=flat-square
 [badge-version-clang-include-cleaner]: https://img.shields.io/pypi/v/clang-include-cleaner?style=flat-square
-[badge-version-devops-maturity]: https://img.shields.io/pypi/v/devops-maturity?style=flat-square
 [badge-version-used-by]: https://img.shields.io/pypi/v/used-by?style=flat-square
 
 <!-- Badge Images - Downloads -->
@@ -129,7 +125,6 @@ build:
 [badge-downloads-mkdocs-ng-material]: https://static.pepy.tech/badge/mkdocs-ng-material/month
 [badge-downloads-pipguard]: https://static.pepy.tech/badge/pipguard/month
 [badge-downloads-clang-include-cleaner]: https://static.pepy.tech/badge/clang-include-cleaner/month
-[badge-downloads-devops-maturity]: https://static.pepy.tech/badge/devops-maturity/month
 [badge-downloads-used-by]: https://static.pepy.tech/badge/used-by/month
 
 <!-- Badge Images - Last Commit (data from .github/scripts/gen_last_commit_badges.py) -->
@@ -152,7 +147,6 @@ build:
 [badge-commit-mkdocs-ng-material]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/mkdocs-ng-material.json&style=flat-square
 [badge-commit-pipguard]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/pipguard.json&style=flat-square
 [badge-commit-clang-include-cleaner]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/clang-include-cleaner.json&style=flat-square
-[badge-commit-devops-maturity]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/devops-maturity.json&style=flat-square
 [badge-commit-used-by]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/shenxianpeng/blog/badges/last-commit/used-by.json&style=flat-square
 
 <!-- Badge Images - Package Names -->
@@ -175,5 +169,4 @@ build:
 [badge-name-mkdocs-ng-material]: https://img.shields.io/badge/mkdocs--ng--material-blue?style=flat-square&logo=github
 [badge-name-pipguard]: https://img.shields.io/badge/pipguard-blue?style=flat-square&logo=github
 [badge-name-clang-include-cleaner]: https://img.shields.io/badge/clang--include--cleaner-blue?style=flat-square&logo=github
-[badge-name-devops-maturity]: https://img.shields.io/badge/devops--maturity-blue?style=flat-square&logo=github
 [badge-name-used-by]: https://img.shields.io/badge/used--by-blue?style=flat-square&logo=github

@@ -74,9 +74,7 @@ DevOps 与发布工程师，现居立陶宛维尔纽斯。2009 年入行，从 Q
 
 **[Explain Error](https://github.com/jenkinsci/explain-error-plugin)** — jenkinsci 组织下的 Jenkins 插件：AI 分析构建失败原因，支持 **AI Auto-Fix 自动创建修复 PR**、用量统计与配额管控，兼容 OpenAI、Gemini、Azure OpenAI、DeepSeek、Qwen、Ollama、AWS Bedrock 等 Provider。
 
-**[Open Delivery Spec](https://github.com/open-delivery-spec)** — 检测、分析和治理 AI 生成代码的开源规范与工具集：AI 代码检出、质量评分、策略门禁，作为 CI 质量门运行（本博客仓库的每个 PR 都在用它）。
-
-**其他**：[devops-maturity](https://github.com/devops-maturity)（DevOps 成熟度评估与徽章）、[MkDocs NG](https://github.com/mkdocs-ng)（MkDocs 生态的社区维护）、[gitstats](https://github.com/shenxianpeng/gitstats)（Git 仓库统计可视化）、[jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint)（无需 Jenkins 服务器的 Jenkinsfile 校验）。
+**其他**：[MkDocs NG](https://github.com/mkdocs-ng)（MkDocs 生态的社区维护）、[gitstats](https://github.com/shenxianpeng/gitstats)（Git 仓库统计可视化）、[jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint)（无需 Jenkins 服务器的 Jenkinsfile 校验）。
 
 ---
 

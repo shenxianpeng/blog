@@ -40,18 +40,10 @@ projects:
   - id: commit-check
     name: Commit Check
     url: https://commit-check.com/
-    tags: [commit-check, pre-commit, git, github, python, pip, uv]
+    tags: [commit-check, pre-commit, git, github, python, pip, uv, devops, devsecops, slsa, sbom, ci-cd, agentic devops]
     text:
       en: Check commit messages, branch names and author details in pre-commit and in CI.
       zh-cn: 在 pre-commit 和 CI 里检查提交信息、分支名和作者信息。
-
-  - id: devops-maturity
-    name: DevOps Maturity
-    url: https://devops-maturity.github.io/
-    tags: [devops, devsecops, slsa, sbom, ci-cd, agentic devops, artifactory, jfrog]
-    text:
-      en: Score a repository's DevOps and supply-chain practices, and get a gap list and a badge.
-      zh-cn: 给仓库的 DevOps 和供应链实践打分，生成差距清单和徽章。
 
   - id: keelapps
     name: keelapps

@@ -4,7 +4,7 @@
 Unlike post covers (gen_cover.py, seeded and random), these are designed by
 hand, one per project, because each portfolio card is a product: the artwork
 depicts what the project actually does — lint findings for cpp-linter, a branch
-diagram for conventional-branch, maturity steps for devops-maturity.
+diagram for conventional-branch.
 
 What they share is the design language, and that is what makes the page read as
 one body of work: the same dark ground, the same faint grid, one accent palette,
@@ -123,33 +123,6 @@ def conventional_branch(p):
     p.append(f'<circle cx="700" cy="620" r="20" fill="{INDIGO}" opacity="0.9"/>')
 
 
-def devops_maturity(p):
-    """A staircase of maturity levels, the team partway up."""
-    step_w, step_h = 128, 88
-    x0, y0 = 300, 620
-    for i in range(5):
-        x = x0 + i * step_w
-        y = y0 - (i + 1) * step_h
-        col = BLUE if i == 2 else MUTE
-        op = "0.9" if i == 2 else "0.35"
-        p.append(
-            f'<rect x="{x}" y="{y}" width="{step_w - 10}" height="{y0 - y}" rx="14" fill="{col}" opacity="{op}"/>'
-        )
-    # the climber: dots up the steps, current position ringed, summit flagged
-    for i in range(3):
-        cx = x0 + i * step_w + (step_w - 10) / 2
-        cy = y0 - (i + 1) * step_h - 34
-        if i == 2:
-            p.append(f'<circle cx="{cx:.0f}" cy="{cy}" r="20" fill="{OK}"/>')
-            p.append(f'<circle cx="{cx:.0f}" cy="{cy}" r="36" fill="none" stroke="{OK}" stroke-width="5" opacity="0.45"/>')
-        else:
-            p.append(f'<circle cx="{cx:.0f}" cy="{cy}" r="13" fill="{OK}" opacity="0.55"/>')
-    top_cx = x0 + 4 * step_w + (step_w - 10) / 2
-    top_cy = y0 - 5 * step_h
-    p.append(f'<line x1="{top_cx:.0f}" y1="{top_cy - 24}" x2="{top_cx:.0f}" y2="{top_cy - 110}" stroke="{WARN}" stroke-width="8" stroke-linecap="round"/>')
-    p.append(f'<path d="M{top_cx:.0f},{top_cy - 110} h64 l-20,24 20,24 h-64 z" fill="{WARN}" opacity="0.9"/>')
-
-
 def explain_error(p):
     """A build error handed to the model, an explanation handed back."""
     p.append(f'<circle cx="360" cy="400" r="96" fill="{BG}" stroke="{ERR}" stroke-width="{SW + 2}"/>')
@@ -205,23 +178,6 @@ def clang_tools_distributions(p):
     p.append(f'<rect x="680" y="530" width="180" height="120" rx="22" fill="{BG}" stroke="{OK}" stroke-width="{SW}"/>')
     p.append(f'<circle cx="770" cy="590" r="34" fill="none" stroke="{OK}" stroke-width="9"/>')
     p.append(f'<circle cx="770" cy="590" r="8" fill="{OK}"/>')
-
-
-def open_delivery_spec(p):
-    """A spec checklist standing behind a governance shield."""
-    p.append(f'<rect x="380" y="180" width="300" height="420" rx="26" fill="{BG}" stroke="{BLUE}" stroke-width="{SW}"/>')
-    for i in range(4):
-        y = 260 + i * 82
-        col = OK if i < 3 else MUTE
-        p.append(f'<circle cx="440" cy="{y}" r="17" fill="none" stroke="{col}" stroke-width="7"/>')
-        if i < 3:
-            _check(p, 440, y, 9, col, 6)
-        p.append(f'<rect x="482" y="{y - 12}" width="{150 - i * 18}" height="24" rx="12" fill="{MUTE}" opacity="0.45"/>')
-    p.append(
-        f'<path d="M760,360 l100,40 v84 c0,84 -100,128 -100,128 s-100,-44 -100,-128 v-84 z" '
-        f'fill="{BG}" stroke="{OK}" stroke-width="{SW + 2}" stroke-linejoin="round"/>'
-    )
-    _check(p, 760, 482, 42)
 
 
 def pypistats(p):
@@ -309,11 +265,9 @@ COVERS = {
     "cpp-linter": cpp_linter,
     "commit-check": commit_check,
     "conventional-branch": conventional_branch,
-    "devops-maturity": devops_maturity,
     "explain-error-plugin": explain_error,
     "gitstats": gitstats,
     "clang-tools-distributions": clang_tools_distributions,
-    "atlassian-api-py": open_delivery_spec,  # bundle dir kept for URL stability; page is Open Delivery Spec
     "pypistats": pypistats,
     "keelinfra": keelinfra,
     "keelapps": keelapps,
