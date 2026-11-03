@@ -159,6 +159,19 @@ def gitstats(p):
         p.append(f'<circle cx="{x}" cy="680" r="12" fill="{INDIGO}" opacity="0.85"/>')
 
 
+def atlassian_api_py(p):
+    """One Python client, three Atlassian services answering it."""
+    p.append(f'<rect x="290" y="250" width="300" height="300" rx="26" fill="{BG}" stroke="{BLUE}" stroke-width="{SW}"/>')
+    for i, (w, col) in enumerate(((170, BLUE), (220, INDIGO), (130, MUTE), (190, BLUE))):
+        p.append(f'<rect x="330" y="{300 + i * 56}" width="{w}" height="22" rx="11" fill="{col}" opacity="0.6"/>')
+    for y, col in ((230, BLUE), (400, INDIGO), (570, OK)):
+        p.append(f'<path d="M590,400 C680,400 680,{y} 770,{y}" fill="none" stroke="{col}" stroke-width="8" stroke-linecap="round" opacity="0.75"/>')
+        p.append(f'<rect x="770" y="{y - 55}" width="140" height="110" rx="22" fill="{BG}" stroke="{col}" stroke-width="{SW}"/>')
+    _check(p, 840, 570, 26)
+    p.append(f'<circle cx="840" cy="230" r="16" fill="{BLUE}" opacity="0.85"/>')
+    p.append(f'<rect x="810" y="388" width="60" height="24" rx="12" fill="{INDIGO}" opacity="0.85"/>')
+
+
 def clang_tools_distributions(p):
     """One toolchain fanned out into three ways to ship it."""
     p.append(f'<rect x="270" y="330" width="150" height="140" rx="26" fill="{BG}" stroke="{BLUE}" stroke-width="{SW}"/>')
@@ -268,6 +281,7 @@ COVERS = {
     "explain-error-plugin": explain_error,
     "gitstats": gitstats,
     "clang-tools-distributions": clang_tools_distributions,
+    "atlassian-api-py": atlassian_api_py,
     "pypistats": pypistats,
     "keelinfra": keelinfra,
     "keelapps": keelapps,
