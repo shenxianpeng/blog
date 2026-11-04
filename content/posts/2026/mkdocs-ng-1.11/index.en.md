@@ -1,7 +1,7 @@
 ---
 title: "MkDocs NG 1.11.0 Released: Six Months of Maintaining MkDocs, Further Than I Expected"
 summary: |
-  Six months into maintaining MkDocs, 10 of the 15 most-upvoted open upstream issues are fixed, 1.11.0 builds multi-language sites from a single mkdocs.yml, and clean builds are faster than both upstream 1.6.1 and the Rust-based Zensical. Plus an introduction to Sumi, MkDocs NG's own theme.
+  Six months into maintaining MkDocs, 10 of the 15 most-upvoted open upstream issues are fixed, 1.11.0 builds multi-language sites from a single mkdocs.yml, and clean builds are faster than both upstream 1.6.1 and the Rust-based Zensical. Plus how to choose between Sumi and Material, and the new plugin catalog website.
 tags:
   - Open Source
   - Documentation
@@ -117,7 +117,7 @@ From 1.6.1 to 1.11 the language didn't change; it's still Python. All of the spe
 
 ## Sumi: MkDocs NG's own theme
 
-Finally, let me introduce [Sumi](https://sumi.mkdocs-ng.org/).
+Next, let me introduce [Sumi](https://sumi.mkdocs-ng.org/).
 
 Sumi is Japanese for "ink": paper, ink and a vermilion seal. It's the documentation theme I made for MkDocs NG, with ideas borrowed from [Oink](https://oink.pgsty.com/). What it offers:
 
@@ -150,6 +150,44 @@ plugins:
 ```sh
 mkdocs serve
 ```
+
+### How is Sumi different from Material for MkDocs?
+
+First, where Material for MkDocs stands. Since November 2025 it has been in maintenance mode: the upstream team moved on to Zensical, and there are no new features, only critical fixes. According to [Zensical's announcement](https://zensical.org/upcoming-changes/), that critical maintenance runs until May 5, 2027.
+
+I forked Material into the MkDocs NG organization too. The package is `mkdocs-ng-material`, now at 9.8.0 with upstream's 9.8.0 security fixes, and its docs are at [material.mkdocs-ng.org](https://material.mkdocs-ng.org/). The theme name is still `material`, so your config doesn't change:
+
+```sh
+pip install mkdocs-ng-material
+```
+
+So both paths are open: install `mkdocs-ng-material` to keep using Material, or try Sumi.
+
+Roughly, they differ like this:
+
+| | Material for MkDocs | Sumi |
+| --- | --- | --- |
+| Status | Critical fixes only upstream; `mkdocs-ng-material` maintained in the NG organization | New theme, 0.2.x, under active development |
+| Maturity | Years of work, the most features and users | Released in November 2026, still filling gaps |
+| Components | Extension syntax such as `!!! note` and `=== "Tab"` | `> [!NOTE]` and `{tab="…"}`, so your source renders on GitHub too |
+| External resources | Loads fonts from Google Fonts by default (can be turned off) | Fonts and icons ship with the theme, no CDN at all |
+| Whole-site pages | Blog plugin built in; a landing page needs your own template | Landing page, blog, releases page and print edition built in |
+
+When would I pick Sumi?
+
+- **A new docs site** where you want clean source files that also read well on GitHub.
+- **Intranet or offline hosting** with no external requests at all.
+- **One design** for docs, landing page, blog and downloads.
+
+If your site already relies heavily on Material's features, stay on `mkdocs-ng-material`; there's no need to switch. If you want to try Sumi, it reads most Material content as is, and switching usually means changing two lines. See [Migrating from Material](https://sumi.mkdocs-ng.org/docs/start/migrate/).
+
+## The plugin catalog is now a website
+
+This time I also turned the MkDocs plugin catalog into a website: [catalog.mkdocs-ng.org](https://catalog.mkdocs-ng.org/).
+
+It updates itself every week, ranks projects by downloads and activity, and marks the plugins tested on MkDocs NG. It also discovers new plugins on PyPI automatically: after this week's update it will list more than 470 plugins, themes and Markdown extensions. For comparison, [mkdocs/catalog](https://github.com/mkdocs/catalog) and [ProperDocs/catalog](https://github.com/ProperDocs/catalog) list about 300 each. As far as I know, it is the most complete MkDocs plugin directory today.
+
+If your plugin isn't there, please [open an issue](https://github.com/mkdocs-ng/catalog/issues).
 
 ## How to switch
 

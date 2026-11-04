@@ -1,7 +1,7 @@
 ---
 title: MkDocs NG 1.11.0 发布：维护 MkDocs 这半年，比我预想的走得更远
 summary: |
-  接手维护 MkDocs 半年，上游点赞最多的 15 个 open issue 修掉了 10 个，1.11.0 支持一个 mkdocs.yml 构建多语言站点，干净构建比上游 1.6.1 和 Rust 写的 Zensical 都快。顺便介绍 MkDocs NG 自己的主题 Sumi。
+  接手维护 MkDocs 半年，上游点赞最多的 15 个 open issue 修掉了 10 个，1.11.0 支持一个 mkdocs.yml 构建多语言站点，干净构建比上游 1.6.1 和 Rust 写的 Zensical 都快。最后聊聊 Sumi 和 Material 怎么选，以及新上线的插件目录网站。
 tags:
   - Open Source
   - Documentation
@@ -117,7 +117,7 @@ series_order: 4
 
 ## Sumi：MkDocs NG 自己的主题
 
-最后介绍一下 [Sumi](https://sumi.mkdocs-ng.org/zh/)。
+接下来介绍一下 [Sumi](https://sumi.mkdocs-ng.org/zh/)。
 
 Sumi 是日语"墨"的意思：纸、墨与一方朱印。它是我为 MkDocs NG 做的文档主题，设计理念借鉴了 [Oink](https://oink.pgsty.com/)。几个特点：
 
@@ -151,6 +151,44 @@ plugins:
 ```sh
 mkdocs serve
 ```
+
+### Sumi 和 Material for MkDocs 有什么区别？
+
+先说 Material for MkDocs 的现状。从 2025 年 11 月起，它进入了维护模式，上游团队的精力转到了 Zensical，不再开发新功能，只做关键修复。按 [Zensical 官网的说明](https://zensical.org/upcoming-changes/)，这种关键维护会持续到 2027 年 5 月 5 日。
+
+我把 Material 也 fork 到了 MkDocs NG 组织下，包名是 `mkdocs-ng-material`，现在是 9.8.0，已经同步了上游 9.8.0 的安全修复，文档在 [material.mkdocs-ng.org](https://material.mkdocs-ng.org/)。主题名还是 `material`，配置一行都不用改：
+
+```sh
+pip install mkdocs-ng-material
+```
+
+所以两条路都在：想继续用 Material，就装 `mkdocs-ng-material`；想试试新东西，就用 Sumi。
+
+两者的区别大概是这样：
+
+| | Material for MkDocs | Sumi |
+| --- | --- | --- |
+| 状态 | 上游只做关键修复；`mkdocs-ng-material` 在 NG 组织下继续维护 | 新主题，0.2.x，还在持续开发 |
+| 成熟度 | 多年积累，功能和用户都最多 | 2026 年 11 月才发布，功能还在补 |
+| 组件写法 | `!!! note`、`=== "Tab"` 这类扩展语法 | `> [!NOTE]`、`{tab="…"}`，源文件在 GitHub 上也能正常显示 |
+| 外部资源 | 默认从 Google Fonts 加载字体，可以关掉 | 字体、图标全部随主题发布，不连任何 CDN |
+| 整站页面 | 自带博客插件，首页要自己写模板 | 首页、博客、发布页、打印版都内置 |
+
+什么时候选 Sumi？我的建议是：
+
+- **新建的文档站**，想要源文件干净、在 GitHub 上也好读，可以直接从 Sumi 开始。
+- **内网或离线部署**，不想有任何外部请求。
+- **想用一套设计**把文档、首页、博客、下载页放在一起。
+
+如果你的站点已经深度用了 Material 的各种功能，那继续用 `mkdocs-ng-material` 就好，没必要折腾。想试 Sumi 的话，大部分 Material 内容可以直接读，切换通常只改两行，详见 [从 Material 迁移](https://sumi.mkdocs-ng.org/zh/docs/start/migrate/)。
+
+## 插件目录做成了网站
+
+这次还把 MkDocs 的插件目录做成了一个网站：[catalog.mkdocs-ng.org](https://catalog.mkdocs-ng.org/)。
+
+它每周自动更新一次，按下载量和活跃度排序，在 MkDocs NG 上测过的插件会单独标出来。它还会自动从 PyPI 发现新插件，这周的更新之后会收录 470 多个插件、主题和 Markdown 扩展。作为对比，[mkdocs/catalog](https://github.com/mkdocs/catalog) 和 [ProperDocs/catalog](https://github.com/ProperDocs/catalog) 目前各收录 300 个左右。据我所知，这是现在最全的 MkDocs 插件目录。
+
+如果你的插件不在里面，欢迎[提 Issue](https://github.com/mkdocs-ng/catalog/issues)。
 
 ## 怎么切过来
 
