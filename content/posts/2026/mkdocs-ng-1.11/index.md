@@ -12,11 +12,9 @@ series: ["MkDocs NG"]
 series_order: 4
 ---
 
-半年前，我写了一篇《[我又开始为爱发电了：正式维护 MkDocs 和 Material for MkDocs](/zh-cn/posts/2026/mkdocs-ng/)》。
+半年前，我写了一篇《[我又开始为爱发电了：正式维护 MkDocs 和 Material for MkDocs](/zh-cn/posts/2026/mkdocs-ng/)》，开始维护 MkDocs。之后又陆续写了 [v1.7.x 的进展](/zh-cn/posts/2026/mkdocs-ng-update/)和 [1.8.0 的发布](/zh-cn/posts/2026/mkdocs-ng-1.8/)。
 
-说实话，那篇文章基本没什么水花。后来又写了 [v1.7.x 的进展](/zh-cn/posts/2026/mkdocs-ng-update/)和 [1.8.0 的发布](/zh-cn/posts/2026/mkdocs-ng-1.8/)，读的人也不多。
-
-但这件事我一直没停。11 月 4 日，MkDocs NG 1.11.0 发布了，正好借这个机会，聊聊这半年发生了什么。
+11 月 4 日，MkDocs NG 1.11.0 发布了，正好借这个机会，聊聊这半年发生了什么。
 
 ## MkDocs 现在的处境
 

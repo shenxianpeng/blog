@@ -12,11 +12,9 @@ series: ["MkDocs NG"]
 series_order: 4
 ---
 
-Six months ago I wrote "[Why I Forked MkDocs and Material for MkDocs](/posts/2026/mkdocs-ng/)".
+Six months ago I wrote "[Why I Forked MkDocs and Material for MkDocs](/posts/2026/mkdocs-ng/)" and started maintaining MkDocs. Follow-ups on [v1.7.x](/posts/2026/mkdocs-ng-update/) and [the 1.8.0 release](/posts/2026/mkdocs-ng-1.8/) came after.
 
-Honestly, it barely made a ripple. The follow-ups on [v1.7.x](/posts/2026/mkdocs-ng-update/) and [the 1.8.0 release](/posts/2026/mkdocs-ng-1.8/) didn't get many readers either.
-
-But I kept going. On November 4, MkDocs NG 1.11.0 came out, so this is a good moment to look back at the last six months.
+On November 4, MkDocs NG 1.11.0 came out, so this is a good moment to look back at the last six months.
 
 ## Where MkDocs stands
 
