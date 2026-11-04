@@ -64,7 +64,7 @@ The full list is on the [Fixed Upstream Issues](https://mkdocs-ng.org/about/fixe
 1.11.0 is the first final release since 1.9.0. There are no breaking changes: configuration, themes and plugins that work with 1.9 keep working. The highlights:
 
 - **One `mkdocs.yml` for every language.** With the new `languages` setting, the default language goes at the site root and the others under `/zh/`, `/de/` and so on. Translations sit next to the original (`page.zh.md`), and untranslated pages fall back to the default language, so no link breaks. Each language is an ordinary build, so plugins need no changes. See [Multi-language Sites](https://mkdocs-ng.org/user-guide/multi-language-sites/).
-- **`mkdocs serve` is much faster.** Unchanged pages are no longer converted or rendered again. On a 1,000-page site, the time from saving to seeing the change dropped from 5.1 seconds to about 0.9 (default theme).
+- **`mkdocs serve` is much faster.** Unchanged pages are no longer converted or rendered again. On a 1,000-page site, the time from saving to seeing the change dropped from 5.1 seconds to about 1 (default theme).
 - **Installing a plugin no longer swaps MkDocs NG out.** Some plugins and themes used to quietly replace MkDocs NG with upstream 1.6.1, and some printed a "switch to ProperDocs" warning. Both problems are gone.
 - **Ready for editors and AI.** Sites created with `mkdocs new` come with `llms.txt` and an `AGENTS.md`, and `mkdocs.yml` now has a JSON Schema, so editors can complete and validate your settings.
 - Smaller improvements: GitHub-style `> [!NOTE]` alerts render as admonitions, `mkdocs serve` picks another port when 8000 is taken, and `docs_dir: .` works.
@@ -91,24 +91,25 @@ Since 1.8.0, every PR runs performance benchmarks on [CodSpeed](https://codspeed
 
 We built the same 1,000 pages of Markdown with each tool on the same 4-core machine, clean builds without caches:
 
-![Clean build of a 1,000-page site: MkDocs NG with Material 11.5 s, Zensical 17.4 s, MkDocs 1.6.1 with Material 34.8 s](build-speed.svg)
+![Clean build of a 1,000-page site: MkDocs NG with Material 11.1 s, Zensical 15.9 s, ProperDocs with Material 32.1 s, MkDocs 1.6.1 with Material 34.2 s](build-speed.svg)
 
 | Tool | Theme | Time |
 | --- | --- | --- |
-| MkDocs NG 1.11 | Default | 7.9 s |
-| MkDocs NG 1.11 | Material | 11.5 s |
-| MkDocs NG 1.11 | Sumi | 12.0 s |
-| Zensical 0.0.74 | Its own (based on Material) | 17.4 s |
-| ProperDocs 1.6.7 | Default | 18.8 s |
-| MkDocs 1.6.1 | Default | 18.9 s |
-| MkDocs 1.6.1 | Material | 34.8 s |
+| MkDocs NG 1.11 | Default | 8.8 s |
+| MkDocs NG 1.11 | Material | 11.1 s |
+| MkDocs NG 1.11 | Sumi | 12.2 s |
+| Zensical 0.0.74 | Its own (based on Material) | 15.9 s |
+| MkDocs 1.6.1 | Default | 16.4 s |
+| ProperDocs 1.6.7 | Default | 16.9 s |
+| ProperDocs 1.6.7 | Material | 32.1 s |
+| MkDocs 1.6.1 | Material | 34.2 s |
 
-With Material on both, MkDocs NG takes 11.5 seconds and upstream 1.6.1 takes 34.8, a third of the time. Without caches it is also faster than the Rust-based Zensical (17.4 seconds).
+With Material, MkDocs NG takes 11.1 seconds, ProperDocs 32.1 and upstream 1.6.1 34.2: a third of the time. Without caches it is also faster than the Rust-based Zensical (15.9 seconds).
 
 A few things to be clear about, so this doesn't mislead:
 
-- Zensical has a build cache. **With its cache kept** it takes only 6.4 seconds, faster than us. MkDocs NG has no cache between builds yet.
-- For showing an edit in `serve`, Zensical takes 0.8 seconds; 1.11.0 gets us to about 0.9. Close, but not ahead.
+- Zensical has a build cache. **With its cache kept** it takes only 5.7 seconds, faster than us. MkDocs NG has no cache between builds yet.
+- For showing an edit in `serve`, Zensical and MkDocs NG (default theme) both take 1.2 seconds, a tie. With Material we take 2.7 seconds, still slower.
 - Zensical is still at 0.0.x and will surely get faster.
 
 The method and the script are public under [Build speed](https://mkdocs-ng.org/about/comparison/#build-speed). Feel free to reproduce it on your own machine.

@@ -64,7 +64,7 @@ series_order: 4
 1.11.0 是 1.9.0 之后的第一个正式版，没有破坏性变更，1.9 能用的配置、主题和插件都照常工作。几个重点：
 
 - **一个 `mkdocs.yml` 搞定多语言。** 新的 `languages` 配置项，默认语言放在站点根目录，其他语言放到 `/zh/`、`/de/` 下面。翻译文件就放在原文旁边（`page.zh.md`），没翻译的页面自动回退到默认语言，链接不会断。每种语言都是一次普通构建，插件不需要做任何改动。详见 [Multi-language Sites](https://mkdocs-ng.org/user-guide/multi-language-sites/)。
-- **`mkdocs serve` 快了很多。** 没变的页面不再重新转换、重新渲染。1000 页的站点，保存后看到修改的时间从 5.1 秒降到了 0.9 秒左右（默认主题）。
+- **`mkdocs serve` 快了很多。** 没变的页面不再重新转换、重新渲染。1000 页的站点，保存后看到修改的时间从 5.1 秒降到了 1 秒左右（默认主题）。
 - **装什么插件都不会把 MkDocs NG 换掉。** 以前装某些插件或主题，会把 MkDocs NG 悄悄换回上游 1.6.1；有些插件还会打印"请切换到 ProperDocs"的警告。现在这两个问题都没有了。
 - **为编辑器和 AI 做好准备。** `mkdocs new` 生成的新站点自带 `llms.txt` 和 `AGENTS.md`；`mkdocs.yml` 有了 JSON Schema，编辑器能自动补全和校验配置。
 - 还有一些小改进：GitHub 风格的 `> [!NOTE]` 提示框能直接渲染、8000 端口被占用时自动换一个端口、`docs_dir: .` 可以用了。
@@ -91,24 +91,25 @@ series_order: 4
 
 我们用同一份 1000 页的 Markdown，在同一台 4 核机器上，对各个工具做了干净构建（不带缓存）：
 
-![1000 页站点的干净构建时间对比：MkDocs NG + Material 11.5 秒，Zensical 17.4 秒，MkDocs 1.6.1 + Material 34.8 秒](build-speed.svg)
+![1000 页站点的干净构建时间对比：MkDocs NG + Material 11.1 秒，Zensical 15.9 秒，ProperDocs + Material 32.1 秒，MkDocs 1.6.1 + Material 34.2 秒](build-speed.svg)
 
 | 工具 | 主题 | 时间 |
 | --- | --- | --- |
-| MkDocs NG 1.11 | 默认主题 | 7.9 秒 |
-| MkDocs NG 1.11 | Material | 11.5 秒 |
-| MkDocs NG 1.11 | Sumi | 12.0 秒 |
-| Zensical 0.0.74 | 自带（基于 Material） | 17.4 秒 |
-| ProperDocs 1.6.7 | 默认主题 | 18.8 秒 |
-| MkDocs 1.6.1 | 默认主题 | 18.9 秒 |
-| MkDocs 1.6.1 | Material | 34.8 秒 |
+| MkDocs NG 1.11 | 默认主题 | 8.8 秒 |
+| MkDocs NG 1.11 | Material | 11.1 秒 |
+| MkDocs NG 1.11 | Sumi | 12.2 秒 |
+| Zensical 0.0.74 | 自带（基于 Material） | 15.9 秒 |
+| MkDocs 1.6.1 | 默认主题 | 16.4 秒 |
+| ProperDocs 1.6.7 | 默认主题 | 16.9 秒 |
+| ProperDocs 1.6.7 | Material | 32.1 秒 |
+| MkDocs 1.6.1 | Material | 34.2 秒 |
 
-同样用 Material 主题，MkDocs NG 是 11.5 秒，上游 1.6.1 是 34.8 秒，时间只要原来的三分之一；不带缓存时，也比 Rust 写的 Zensical（17.4 秒）快。
+同样用 Material 主题，MkDocs NG 是 11.1 秒，ProperDocs 是 32.1 秒，上游 1.6.1 是 34.2 秒，时间只要它们的三分之一；不带缓存时，也比 Rust 写的 Zensical（15.9 秒）快。
 
 但也要说清楚几点，免得误导：
 
-- Zensical 有构建缓存，**保留缓存时**它只要 6.4 秒，比我们快。MkDocs NG 目前没有跨构建的缓存。
-- `serve` 热更新上，Zensical 是 0.8 秒，我们在 1.11.0 里做到了 0.9 秒左右，基本追平，但还没超过。
+- Zensical 有构建缓存，**保留缓存时**它只要 5.7 秒，比我们快。MkDocs NG 目前没有跨构建的缓存。
+- `serve` 热更新上，改一个页面后看到结果，Zensical 和 MkDocs NG（默认主题）都是 1.2 秒，打平；用 Material 主题时我们是 2.7 秒，还慢一些。
 - Zensical 还在 0.0.x，后面肯定也会继续变快。
 
 测试方法和脚本都公开在 [Build speed](https://mkdocs-ng.org/about/comparison/#build-speed)，欢迎在自己的机器上复现。
