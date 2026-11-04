@@ -35,8 +35,6 @@ The community has gone in a few directions:
 - **[Zensical](https://zensical.org/)**: a new project from the team behind Material for MkDocs, with a core written in Rust, currently at 0.0.74. It reads `mkdocs.yml`, but doesn't run MkDocs plugins; it reimplements about thirty popular ones natively.
 - **[ProperDocs](https://properdocs.org/)**: a fork of 1.6 started by a former MkDocs maintainer, with its own package and command name. Its last release, 1.6.7, came out in March 2026, with no release in the seven months since.
 
-Each project has its own trade-offs, and I'm not going to rank them.
-
 When people look at a fork, their first question is often: is it the original team?
 
 I don't think that matters much. Original authors leave, original teams move on to new things, and that's normal. Whether a project keeps going depends on whether someone is **willing** to maintain and improve it for the long haul. Without that will, the original team stops too.
@@ -86,6 +84,10 @@ My role is closer to a product owner: I explain the vision (what I want, what I 
 
 The direction is still mine to set, and not every proposal gets accepted. AI once suggested adding an `mkdocs-ng` command; I said no, because users' CI scripts all say `mkdocs`, and a new command brings the migration cost right back. It also suggested having `serve` render the page being edited first; I turned that down twice and we kept to caching.
 
+This is also why I think MkDocs NG can keep going. Zensical is a team, and a team has to eat: alongside the free, open source Zensical, they make Studio, a closed-source app with free and paid editions, and Spark, a paid membership, [to fund the team](https://zensical.org/upcoming-changes/). That's perfectly normal.
+
+I don't have that pressure. I write code with Claude Code and hardly have to count tokens. As long as I have the will and the time, maintaining MkDocs NG is something I can just do.
+
 ## Somehow, it became the fastest
 
 The other surprise was performance.
@@ -111,11 +113,10 @@ The same 1,000 pages of Markdown, the same 4-core machine, clean builds without 
 
 With Material, MkDocs NG takes 11.1 seconds, ProperDocs 32.1 and upstream 1.6.1 34.2: a third of the time. Without caches it is also faster than the Rust-based Zensical (15.9 seconds).
 
-A few things to be clear about:
+Two things to be clear about:
 
 - Zensical has a build cache. **With its cache kept** it takes only 5.7 seconds, faster than us. MkDocs NG has no cache between builds yet.
-- From editing a page in `serve` to seeing the result, Zensical and MkDocs NG (default theme) both take 1.2 seconds, a tie. With Material we take 2.7 seconds, still slower.
-- Zensical is still at 0.0.x and will surely get faster.
+- From editing a page in `serve` to seeing the result, Zensical and MkDocs NG (default theme) both take 1.2 seconds, a tie.
 
 The method and script are public under [Build speed](https://mkdocs-ng.org/about/comparison/#build-speed). Feel free to run it on your own machine.
 
@@ -179,6 +180,21 @@ I also turned the MkDocs plugin catalog into a website: [catalog.mkdocs-ng.org](
 It updates itself every week, ranks projects by downloads and activity, and marks the plugins tested on MkDocs NG. It also discovers new plugins on PyPI automatically: after this week's update it will list more than 470 plugins, themes and Markdown extensions. For comparison, [mkdocs/catalog](https://github.com/mkdocs/catalog) and [ProperDocs/catalog](https://github.com/ProperDocs/catalog) list about 300 each. As far as I know, it is the most complete MkDocs plugin directory today.
 
 If your plugin isn't there, please [open an issue](https://github.com/mkdocs-ng/catalog/issues).
+
+## Which way to go
+
+If your docs still run on MkDocs, my advice is: don't stay where you are.
+
+1.6.1 still builds today, and the code is still there. But upstream no longer updates it: new Python versions, security fixes in dependencies, newly found bugs, nobody handles them. The software supply chain keeps moving. Stand still, and your code is still there, but it no longer connects to the chain. That's close to running naked on the internet, and I don't think that's an exaggeration.
+
+Moving on, there are two paths today:
+
+1. **MkDocs NG**: change one dependency line; plugins, config and CI stay as they are. Upstream's leftover issues are getting fixed, and clean builds are the fastest. The cost: for now it's mainly me maintaining it, running on the will I described above.
+2. **Try Zensical**: it's backed by the original Material team, with income to fund the team, and its cached builds are fast. The cost: it's still at 0.0.x and doesn't run MkDocs plugins, only native rewrites of about thirty popular ones, so check that the plugins you use are among them before migrating.
+
+I won't say much about ProperDocs. I didn't build on it because my standards for code and docs differ from its, so I forked my own. It hasn't released in more than seven months; whether it can keep going, you can judge for yourself.
+
+Those are the trade-offs. Which way to go is your call.
 
 ## How to switch
 

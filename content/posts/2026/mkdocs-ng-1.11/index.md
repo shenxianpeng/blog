@@ -37,8 +37,6 @@ series_order: 4
 - **[Zensical](https://zensical.org/)**：Material for MkDocs 原班团队的新项目，核心用 Rust 写，目前是 0.0.74。能读 `mkdocs.yml`，但不运行 MkDocs 插件，而是把三十个左右常用插件用原生方式重写。
 - **[ProperDocs](https://properdocs.org/)**：MkDocs 前维护者发起的 1.6 fork，换了包名和命令名。最后一个版本 1.6.7 发布于 2026 年 3 月，之后七个多月没有新版本。
 
-每个项目有自己的取舍，我不评价谁好谁坏。
-
 很多人看一个 fork，第一个问题是：是不是原班人马？
 
 我觉得这没那么重要。原作者可以离开，原班人马也可以去做新东西，这都很正常。一个项目能不能走下去，要看有没有人**愿意**长期维护它、持续改进它。没有这份意愿，原班人马也会停下来。
@@ -88,6 +86,10 @@ languages:
 
 但方向还得我来定，而且不是每个方案都接。AI 提过加一个 `mkdocs-ng` 命令，我否了：用户的 CI 脚本里写的都是 `mkdocs`，命令一改，迁移成本就回来了。它还提过让 `serve` 先渲染正在编辑的那一页，我也否了两次，最后只做了缓存。
 
+这也是我觉得 MkDocs NG 能一直做下去的原因。Zensical 是一个团队，团队要吃饭，所以在开源免费的 Zensical 之外，他们还做了闭源的 Studio（有免费版和付费版）和付费会员 Spark，[用来养活团队](https://zensical.org/upcoming-changes/)。这很正常。
+
+我没有这个压力。我用 Claude Code 写代码，token 几乎不用算。只要我还有愿力、有时间，维护 MkDocs NG 就是顺手的事。
+
 ## 没想到，它成了最快的那一个
 
 另一个意外是性能。
@@ -113,11 +115,10 @@ languages:
 
 同样用 Material 主题，MkDocs NG 是 11.1 秒，ProperDocs 是 32.1 秒，上游 1.6.1 是 34.2 秒，时间只要它们的三分之一；不带缓存时，也比 Rust 写的 Zensical（15.9 秒）快。
 
-但有几点得说清楚：
+但有两点得说清楚：
 
 - Zensical 有构建缓存，**保留缓存时**只要 5.7 秒，比我们快。MkDocs NG 目前没有跨构建的缓存。
-- `serve` 里改一个页面到看到结果，Zensical 和 MkDocs NG（默认主题）都是 1.2 秒，打平；用 Material 主题时我们是 2.7 秒，还慢一些。
-- Zensical 还在 0.0.x，后面肯定会更快。
+- `serve` 里改一个页面到看到结果，Zensical 和 MkDocs NG（默认主题）都是 1.2 秒，打平。
 
 测试方法和脚本都公开在 [Build speed](https://mkdocs-ng.org/about/comparison/#build-speed)，欢迎在自己的机器上跑一遍。
 
@@ -182,6 +183,21 @@ pip install mkdocs-ng-material
 它每周自动更新，按下载量和活跃度排序，在 MkDocs NG 上测过的插件会单独标出来。它还会自动从 PyPI 发现新插件，这周的更新之后会收录 470 多个插件、主题和 Markdown 扩展。作为对比，[mkdocs/catalog](https://github.com/mkdocs/catalog) 和 [ProperDocs/catalog](https://github.com/ProperDocs/catalog) 目前各 300 个左右。据我所知，这是现在最全的 MkDocs 插件目录。
 
 你的插件不在里面的话，欢迎[提 Issue](https://github.com/mkdocs-ng/catalog/issues)。
+
+## 该怎么选
+
+如果你的文档还在用 MkDocs，我的建议是：别待在原地。
+
+1.6.1 今天照样能构建，代码也还在。但上游不再更新，新的 Python 版本、依赖的安全修复、新冒出来的 bug，都没人管了。软件供应链一直在往前走，你停在原地，代码虽然还在，供应链却已经接不上了。这跟在互联网上裸奔差不多，一点都不夸张。
+
+往前走，现在有两条路：
+
+1. **MkDocs NG**：改一行依赖，插件、配置、CI 都不用动；上游遗留的问题在修，干净构建也是最快的。代价是目前主要是我一个人在维护，靠的就是前面说的愿力。
+2. **试试 Zensical**：背后是 Material 原班团队，有收入养团队，带缓存的构建很快。代价是它还在 0.0.x，不运行 MkDocs 插件，只原生重写了三十个左右常用的，迁移前要先确认你用的插件在不在里面。
+
+ProperDocs 我就不多说了。当初我没在它的基础上做，是因为我对代码和文档的要求跟它不太一样，所以自己 fork 了一个。它现在七个多月没发版，后面能不能维持下去，大家自己判断。
+
+利弊就这些，选哪条你自己定。
 
 ## 怎么切过来
 
