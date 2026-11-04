@@ -14,13 +14,13 @@ series_order: 4
 
 On May 13, I sent PRs to 10 MkDocs plugins in one go, all with the same change: switch the dependency from `mkdocs` to `mkdocs-ng`.
 
-None of them were merged.
+And none of them were merged.
 
 One was closed the same day, with this reply from the author:
 
 > This plugin will work with any backwards-compatible fork without any changes, so I don't see the point in sticking to a fork with low adoption.
 
-Fair point. MkDocs NG was two weeks old at the time. If I were a plugin author, I'd probably have said the same.
+Fair point. MkDocs NG was two weeks old at the time. If I were a plugin author, I probably wouldn't have switched to mkdocs-ng either.
 
 Six months later, I'm still maintaining it. On November 4, MkDocs NG 1.11.0 came out. This post is about what happened in those six months and why I keep going. (Earlier posts: [why I forked](/posts/2026/mkdocs-ng/), [v1.7.x progress](/posts/2026/mkdocs-ng-update/), [the 1.8.0 release](/posts/2026/mkdocs-ng-1.8/).)
 
@@ -28,24 +28,30 @@ Six months later, I'm still maintaining it. On November 4, MkDocs NG 1.11.0 came
 
 First, a quick look at where MkDocs stands.
 
-The last upstream 1.x release is 1.6.1 from August 2024, and there has been no release in more than two years. Upstream's effort went into 2.0, a complete rewrite that is still a pre-release (2.0.dev6 from September 2026): no plugins, no themes, and it exits with an error when it finds a `mkdocs.yml`. Existing sites can't upgrade, and the plugin ecosystem can't follow.
+The last 1.x release of MkDocs is 1.6.1 from August 2024, and there has been no release in more than two years. As for why it stopped being maintained, I wrote briefly about the back story before; if you're curious, see [why I forked](/posts/2026/mkdocs-ng/).
 
-The community has gone in a few directions:
+After the MkDocs author took back control, they put out a 2.0 pre-release, and the community largely rejected it, because 2.0 is a complete rewrite: no plugins, no themes, and it exits with an error when it finds a `mkdocs.yml`. Existing sites can't upgrade, and the plugin ecosystem can't follow.
+
+So the community has gone in a few directions:
 
 - **[Zensical](https://zensical.org/)**: a new project from the team behind Material for MkDocs, with a core written in Rust, currently at 0.0.74. It reads `mkdocs.yml`, but doesn't run MkDocs plugins; it reimplements about thirty popular ones natively.
 - **[ProperDocs](https://properdocs.org/)**: a fork of 1.6 started by a former MkDocs maintainer, with its own package and command name. Its last release, 1.6.7, came out in March 2026, with no release in the seven months since.
 
 When people look at a fork, their first question is often: is it the original team?
 
-I don't think that matters much. Original authors leave, original teams move on to new things, and that's normal. Whether a project keeps going depends on whether someone is **willing** to maintain and improve it for the long haul. Without that will, the original team stops too.
+It used to matter a lot. Now I don't think it matters that much. Why?
 
-My will comes from something practical: I can't do without it. The docs sites of cpp-linter, commit-check and pipguard are all built with MkDocs. I run into what works and what gets in the way every day.
+Original authors leave, and original teams move on to new things. That's normal.
 
-So when I took it over, I wasn't looking to reinvent it. There was one goal: **this supply chain must not break.**
+Whether a project keeps going depends on whether someone has the **will** to maintain and improve it for the long haul. Without that will, the original team stops too.
 
-I accept that point. Nobody owes a small fork a dependency change. So I turned the problem around: **if plugins won't change, MkDocs NG must not need them to.**
+My will comes from something practical: I can't do without it. The docs sites of [cpp-linter](https://cpp-linter.github.io), [commit-check](https://commit-check.com) and [pipguard](https://shenxianpeng.dev/pipguard) are all built with MkDocs. I run into what works and what gets in the way every day.
 
-Since 1.10, a plugin can keep `mkdocs` in its dependencies, and once `mkdocs-ng` is installed, MkDocs NG is what runs. Some plugins used to quietly swap NG back to upstream 1.6.1, and some printed a "switch to ProperDocs" warning; both problems are gone. Later I closed the remaining open ones of those 10 PRs myself.
+So when I took it over, I wasn't looking to reinvent it. There was one goal: **make sure this supply chain doesn't break.**
+
+I accept what that plugin author said. There's no reason for anyone to change dependencies for a fork that's just getting started. So I turned the problem around: **if plugins won't change, MkDocs NG must not need them to.**
+
+Since 1.10, a plugin can keep `mkdocs` in its dependencies, and once `mkdocs-ng` is installed, MkDocs NG is what runs. Some plugins used to quietly swap NG back to upstream 1.6.1, and some printed a "switch to ProperDocs" warning; both problems are gone. Later I closed pretty much all of those 10 PRs myself.
 
 ## The most-upvoted upstream issues: mostly cleared
 
@@ -61,7 +67,7 @@ The full list is on [Fixed Upstream Issues](https://mkdocs-ng.org/about/fixed-up
 
 ## 1.11.0: one mkdocs.yml for every language
 
-1.11.0 is the first final release since 1.9.0, with no breaking changes. The biggest new feature is multi-language sites:
+1.11.0 is the first final release since 1.9.0, with no breaking changes. The biggest new feature is **multi-language sites**:
 
 ```yaml
 # mkdocs.yml
@@ -76,9 +82,7 @@ For everything else (faster `serve`, `llms.txt`, a JSON Schema for `mkdocs.yml`,
 
 ## 79 PRs in five days
 
-The biggest surprise of these six months was AI.
-
-From October 31 to November 4, five days, the mkdocs-ng organization merged 79 PRs: 39 in the main repository, 19 in Sumi, 8 in the plugin catalog and 7 in Material. Four releases went out: 1.9.0, 1.10.0rc1, 1.11.0rc1 and 1.11.0. One person in their spare time couldn't have done that before.
+With Claude Code (Opus 5.5) behind me, from October 31 to November 4, five days, the mkdocs-ng organization merged 79 PRs: 39 in the main repository, 19 in Sumi, 8 in the plugin catalog and 7 in Material. Four releases went out: 1.9.0, 1.10.0rc1, 1.11.0rc1 and 1.11.0. One person in their spare time couldn't have done that before.
 
 My role is closer to a product owner: I explain the vision (what I want, what I don't, what must never break), and AI handles the implementation, tests and docs. Even the outline of this post was dictated.
 
@@ -86,7 +90,9 @@ The direction is still mine to set, and not every proposal gets accepted. AI onc
 
 This is also why I think MkDocs NG can keep going. Zensical is a team, and a team has to eat: alongside the free, open source Zensical, they make Studio, a closed-source app with free and paid editions, and Spark, a paid membership, [to fund the team](https://zensical.org/upcoming-changes/). That's perfectly normal.
 
-I don't have that pressure. I write code with Claude Code and hardly have to count tokens. As long as I have the will and the time, maintaining MkDocs NG is something I can just do.
+I don't have that pressure. First, open source is my hobby. Second, my Claude Code was a gift from Anthropic, and the tokens are practically unlimited.
+
+So as long as I have the will and the time, maintaining MkDocs NG is something I can just do.
 
 ## Somehow, it became the fastest
 
@@ -185,38 +191,28 @@ If your plugin isn't there, please [open an issue](https://github.com/mkdocs-ng/
 
 If your docs still run on MkDocs, my advice is: don't stay where you are.
 
-1.6.1 still builds today, and the code is still there. But upstream no longer updates it: new Python versions, security fixes in dependencies, newly found bugs, nobody handles them. The software supply chain keeps moving. Stand still, and your code is still there, but it no longer connects to the chain. That's close to running naked on the internet, and I don't think that's an exaggeration.
+1.6.1 still builds today, and the code is still there. But upstream no longer updates it: security fixes in dependencies and newly found bugs, nobody handles them. The software supply chain keeps moving. Stand still, and you no longer connect to it. That's close to running naked on the internet, and I don't think that's an exaggeration.
 
 Moving on, there are two paths today:
 
-1. **MkDocs NG**: change one dependency line; plugins, config and CI stay as they are. Upstream's leftover issues are getting fixed, and clean builds are the fastest. The cost: for now it's mainly me maintaining it, running on the will I described above.
-2. **Try Zensical**: it's backed by the original Material team, with income to fund the team, and its cached builds are fast. The cost: it's still at 0.0.x and doesn't run MkDocs plugins, only native rewrites of about thirty popular ones, so check that the plugins you use are among them before migrating.
+1. **MkDocs NG**: change one dependency line; plugins, config and CI stay as they are. Almost all of upstream's leftover issues are fixed, and clean builds are the fastest.
+2. **Try Zensical**: it's backed by the original Material team. The cost: it's still at 0.0.x and doesn't run MkDocs plugins, only native rewrites of about thirty popular ones, so check that the plugins you use are among them before migrating.
 
-I won't say much about ProperDocs. I didn't build on it because my standards for code and docs differ from its, so I forked my own. It hasn't released in more than seven months; whether it can keep going, you can judge for yourself.
-
-Those are the trade-offs. Which way to go is your call.
+I won't say much about ProperDocs. I forked instead of building on it because, to put it bluntly, I don't agree with its code or its direction. It hasn't released in more than seven months; whether it can keep going, you can judge for yourself.
 
 ## How to switch
 
-Try it first in a throwaway environment with uv. It leaves your own environment alone:
+It's one line: replace `mkdocs` with `mkdocs-ng` in your dependencies.
 
-```sh
-uvx --from mkdocs-ng --with-requirements requirements.txt mkdocs build --strict
-```
+The command is still `mkdocs`, the config is still `mkdocs.yml`, and plugins and themes stay as they are.
 
-If that works, switching is one line, and you don't need to uninstall `mkdocs` first:
-
-```sh
-pip install -U mkdocs-ng
-```
-
-The command is still `mkdocs`, the config is still `mkdocs.yml`, and plugins and themes stay as they are. Switching back is one line too. See the [migration guide](https://mkdocs-ng.org/user-guide/migrating/).
+Switching back is one line too. See the [migration guide](https://mkdocs-ng.org/user-guide/migrating/).
 
 ## Finally
 
 Six months ago I wrote that code is only the first half of a project's reach; the second half is people.
 
-I've given the code my best this half year. Now I need your help:
+I've given the code my best. Now I need your help:
 
 - **Try Sumi and MkDocs NG** on your docs site.
 - **Open an [issue](https://github.com/mkdocs-ng/mkdocs/issues)** when something breaks or you need something. The roadmap is [#59](https://github.com/mkdocs-ng/mkdocs/issues/59); tell us what you want most.
