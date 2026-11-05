@@ -1,0 +1,133 @@
+# Xianpeng Shen's blog: MkDocs NG with the Sumi theme.
+#
+# Content is in content/, as page bundles: index.md is Chinese, index.en.md is
+# English. English is served at the root, Chinese at /zh-cn/ (see `languages`).
+# Site-specific behaviour (old URLs, the portfolio, drafts, static files) is in
+# hooks/site.py; templates are in overrides/, styles in assets/css/.
+site_name: Xianpeng Shen
+site_url: https://shenxianpeng.dev/
+site_description: "Xianpeng Shen builds open-source guardrails for software delivery: cpp-linter, commit standards, and CI/CD automation. Writing on AI, DevOps, and open source."
+site_author: Xianpeng Shen
+copyright: "Copyright © 2017–2026 Xianpeng Shen. All rights reserved."
+repo_url: https://github.com/shenxianpeng/blog
+edit_uri: edit/main/content/
+docs_dir: content
+
+theme:
+  name: sumi
+  custom_dir: overrides
+  palette: auto
+  accent: "#1D6A4B"
+  locale: en
+  favicon: favicon-32x32.png
+  social_image: https://shenxianpeng.dev/img/social-card.png
+  toc_depth: 4
+  hide: [sidebar, breadcrumbs]
+  comments:
+    provider: giscus
+    repo: shenxianpeng/blog
+    repo_id: MDEwOlJlcG9zaXRvcnkxMDkwODc5MTM=
+    category: Announcements
+    category_id: DIC_kwDOBoCMqc4CVG-1
+    mapping: specific
+    theme_dark: transparent_dark
+
+plugins:
+  - search
+  - sumi:
+      git_dates: false
+      date_format: "%Y-%m-%d"
+      print:
+        enabled: false
+      blog:
+        dir: [posts, misc]
+        layout: cards
+        feed_path: index.xml
+        feed_format: rss
+        feed_items: 0
+        tags_dir: tags
+        authors:
+          shenxianpeng:
+            name: Xianpeng Shen
+            avatar: /img/sxp.jpg
+            url: https://shenxianpeng.dev/about/
+
+hooks:
+  - hooks/site.py
+
+# Hugo's Markdown (Goldmark) also allows code blocks inside list items, turns
+# bare URLs into links and has ~~strikethrough~~ and task lists.
+markdown_extensions:
+  - toc:
+      permalink: "#"
+      toc_depth: 2-4
+  - pymdownx.highlight:
+      css_class: highlight
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.magiclink
+  - pymdownx.tilde
+  - pymdownx.tasklist
+
+exclude_docs: |
+  tracking.md
+
+extra:
+  analytics:
+    provider: google
+    property: G-LDW3BHJTTW
+  social:
+    - icon: brand-github
+      link: https://github.com/shenxianpeng
+      name: GitHub
+    - icon: brand-x
+      link: https://x.com/xianpengshen
+      name: X
+    - icon: brand-linkedin
+      link: https://www.linkedin.com/in/xianpeng-shen/
+      name: LinkedIn
+    - icon: mail
+      link: mailto:xianpeng.shen@gmail.com
+      name: Email
+
+nav:
+  - Posts: posts/index.md
+  - Projects: portfolio/index.md
+  - About: about/index.md
+
+languages:
+  en:
+    name: English
+    # English has only the posts that were translated; the others are
+    # redirected to their Chinese page (hooks/site.py).
+    fallback: false
+  zh-cn:
+    name: 简体中文
+    source: true
+    site_name: 沈显鹏
+    site_description: 沈显鹏的个人网站：维护 cpp-linter 等开源工具，给软件交付做护栏；写 AI、DevOps、CI/CD 与开源。
+    theme:
+      locale: zh
+    plugins:
+      - search
+      - sumi:
+          git_dates: false
+          date_format: "%Y-%m-%d"
+          print:
+            enabled: false
+          blog:
+            dir: [posts, misc]
+            layout: cards
+            feed_path: index.xml
+            feed_format: rss
+            feed_items: 0
+            tags_dir: tags
+            authors:
+              shenxianpeng:
+                name: 沈显鹏
+                avatar: /img/sxp.jpg
+                url: https://shenxianpeng.dev/zh-cn/about/
+    nav:
+      - 文章: posts/index.md
+      - 作品: portfolio/index.md
+      - 关于: about/index.md

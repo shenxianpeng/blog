@@ -1,0 +1,144 @@
+/* Sumi in the site's "Evergreen" look (DESIGN.md): grey-green paper,
+   green-black ink, one forest-green accent; Geist for headings and UI,
+   Newsreader for reading, Geist Mono for code and dates, Noto Serif SC for
+   Chinese. Sumi reads every colour, font and size from these variables;
+   the values come from assets/css/schemes/evergreen.css. */
+
+:root {
+  --font-display: "Geist", "PingFang SC", "Noto Sans SC", system-ui, sans-serif;
+  --font-read: "Newsreader", "Noto Serif SC", Georgia, serif;
+  --font-ui: "Geist", "PingFang SC", "Noto Sans SC", system-ui, sans-serif;
+  --font-code: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --sumi-font: var(--font-ui);
+  --sumi-font-mono: var(--font-code);
+  --sumi-accent: #1D6A4B;
+  --sumi-bg: #F2F3EF;
+  --sumi-bg-elev: #FFFFFF;
+  --sumi-bg-soft: #E7E9E3;
+  --sumi-bg-sunken: #E7E9E3;
+  --sumi-fg: #0D120F;
+  --sumi-fg-2: #36403A;
+  --sumi-fg-3: #5C665F;
+  --sumi-line: #D3D7CF;
+  --sumi-line-2: #B7C1B9;
+  --sumi-link: #1D6A4B;
+  --sumi-link-hover: #14513A;
+  --sumi-header-bg: #F2F3EF;
+  --sumi-code-inline: rgb(13 18 15 / 0.06);
+  --sumi-code-head: #E7E9E3;
+  --sumi-content-w: 42rem;
+  --sumi-shadow-md: 0 1px 2px rgb(13 18 15 / 0.04), 0 20px 50px rgb(13 18 15 / 0.07);
+}
+
+:root[data-theme="dark"] {
+  --sumi-accent: #4FB88A;
+  --sumi-bg: #111914;
+  --sumi-bg-elev: #243029;
+  --sumi-bg-soft: #1A231D;
+  --sumi-bg-sunken: #0D120F;
+  --sumi-fg: #F2F3EF;
+  --sumi-fg-2: #B7C1B9;
+  --sumi-fg-3: #8A968E;
+  --sumi-line: #243029;
+  --sumi-line-2: #36403A;
+  --sumi-link: #4FB88A;
+  --sumi-link-hover: #7FD4A8;
+  --sumi-header-bg: #111914;
+  --sumi-code-bg: #0D120F;
+  --sumi-code-inline: rgb(242 243 239 / 0.08);
+  --sumi-code-head: #1A231D;
+  --sumi-shadow-md: 0 0 0 1px rgb(255 255 255 / 0.04), 0 20px 50px rgb(0 0 0 / 0.35);
+}
+
+body {
+  /* Full-bleed home bands are 100vw wide; 100vw includes a classic scrollbar. */
+  overflow-x: clip;
+}
+
+/* The header: a solid bar in the page colour with a hairline under it. */
+.sumi-header { background: var(--sumi-header-bg); backdrop-filter: none; border-bottom: 1px solid var(--sumi-line); }
+.sumi-header-inner, .sumi-footer-inner { max-width: 72rem; margin-inline: auto; }
+.sumi-brand-name { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.01em; }
+.sumi-header .sumi-logo, .sumi-brand svg { display: none; }
+
+h1, h2, h3, h4,
+.sumi-prose :is(h1, h2, h3, h4),
+.sumi-post-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+/* Reading text: Newsreader, which has a small x-height, at 19px. English is
+   capped at about 70 characters a line, Chinese at about 35. */
+.sumi-post .sumi-content,
+.sumi-article .sumi-content {
+  font-family: var(--font-read);
+  font-size: 1.1875rem;
+  line-height: 1.7;
+}
+.sumi-content :where(pre, code) { font-size: 0.85em; }
+:lang(en) .sumi-post :is(.sumi-content, .sumi-series, .post-footer) { max-width: 37rem; }
+:lang(zh) .sumi-post .sumi-content,
+:lang(zh) .sumi-article .sumi-content { font-size: 1.125rem; line-height: 1.85; }
+:lang(zh) :is(h1, h2, h3, h4, .sumi-post-title) { letter-spacing: 0; }
+
+/* Article header: title above the date line, as on the Hugo site. */
+.sumi-post h1 { font-size: clamp(2rem, 4vw, 2.75rem); line-height: 1.12; letter-spacing: -0.035em; }
+.sumi-archive-year li { padding-block: 1px; }
+
+/* Lists of posts: the Hugo site's card grid, three across, white cards on paper. */
+.sumi-blog, .sumi-blog[data-view="cards"] { max-width: 72rem; }
+.sumi-blog-head h1 { font-size: clamp(2rem, 4vw, 2.5rem); letter-spacing: -0.035em; }
+.sumi-blog[data-view="cards"] .sumi-post-list { grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); gap: 1.25rem; }
+.sumi-blog[data-view="cards"] .sumi-post-card { border-radius: 8px; border-color: var(--sumi-line); background: var(--sumi-bg-elev); }
+.sumi-blog[data-view="cards"] .sumi-post-cover { aspect-ratio: 3 / 2; }
+.sumi-blog[data-view="cards"] .sumi-post-title { font-size: 1.05rem; line-height: 1.3; }
+.sumi-blog[data-view="cards"] .sumi-post-excerpt { font-family: var(--font-read); font-size: 15px; }
+.sumi-blog[data-view="cards"] .sumi-authors { display: none; }
+.sumi-tag--static { border: 1px solid color-mix(in srgb, var(--sumi-accent) 45%, transparent); background: transparent; color: var(--sumi-accent); border-radius: 4px; height: 20px; padding: 0 6px; font-size: 11.5px; }
+.portfolio .sumi-post-title { font-size: 1.05rem; }
+.portfolio-ext { color: var(--sumi-fg-3); font-size: .8em; }
+
+/* The home page: no sidebar or table of contents; its bands align to 72rem. */
+.sumi-home { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem; }
+@media (min-width: 1024px) { .sumi-home { padding: 0 4rem; max-width: calc(72rem + 8rem); } }
+
+/* Footer: the menu, then the copyright. */
+.site-footer-menu { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; margin-bottom: .5rem; }
+.site-footer-menu a { color: var(--sumi-fg-2); text-decoration: none; font-size: 14.5px; }
+.site-footer-menu a:hover { color: var(--sumi-accent); }
+
+.home-qrcode { display: block; width: 200px; max-width: 100%; margin: 0 auto; }
+
+/* The Hugo site's lists had no filters or view switch: tags have pages of
+   their own (/tags/), and the feed is in the footer. */
+.sumi-blog-bar, .sumi-blog-feed { display: none; }
+.sumi-blog-head { margin-bottom: 2rem; }
+
+/* Posts open with the title, not the cover: the cover shows on the cards. */
+.sumi-post-hero { display: none; }
+.sumi-post-heading { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 2.75rem); line-height: 1.12; letter-spacing: -0.035em; }
+:lang(zh) .sumi-post-heading { letter-spacing: 0; }
+
+/* Cards as on the Hugo site: title, date line, tags, then the summary. */
+.sumi-blog[data-view="cards"] .sumi-post-title { order: 1; margin: 0; }
+.sumi-blog[data-view="cards"] .sumi-post-cover { margin-bottom: 14px; }
+.sumi-blog[data-view="cards"] .sumi-post-link { padding: 0 16px 16px; }
+.sumi-blog[data-view="cards"] .sumi-post-meta { order: 2; margin-top: 4px; }
+.sumi-blog[data-view="cards"] .sumi-post-foot { order: 3; margin-top: 8px; }
+.sumi-blog[data-view="cards"] .sumi-post-excerpt { order: 4; margin: 8px 0 0; -webkit-line-clamp: 5; }
+.sumi-blog[data-view="cards"] .sumi-post-cover { order: 0; }
+.sumi-post .sumi-post-heading { font-size: clamp(1.9rem, 3.4vw, 2.25rem); line-height: 1.18; text-wrap: pretty; }
+/* The series note: a mint band, as on the Hugo site. */
+.sumi-series { background: color-mix(in srgb, var(--sumi-accent) 16%, var(--sumi-bg-elev)); border-color: color-mix(in srgb, var(--sumi-accent) 30%, transparent); }
+
+/* The intro line under a list title, in the reading face. */
+.sumi-blog-head p { font-family: var(--font-read); color: var(--sumi-fg-2); font-size: 1rem; margin: .25rem 0 0; max-width: 37rem; }
+.sumi-blog-head hr { max-width: 37rem; margin-inline: 0; }
+.sumi-blog-head h1 { margin-bottom: .25rem; }
+
+/* Section headings without Sumi's rule above them, as on the Hugo site. */
+.sumi-prose h2 { border-top: 0; padding-top: 0; margin-top: 2em; }

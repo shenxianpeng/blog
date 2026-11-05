@@ -36,7 +36,7 @@ Jenkins Controller 通过 REST API 连接到 Docker 主机。
 
 ```bash
 ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock
-````
+```
 
 **Step 3**：重新加载并重启 Docker 服务：
 

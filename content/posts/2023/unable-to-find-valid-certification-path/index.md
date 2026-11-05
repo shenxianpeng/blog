@@ -54,6 +54,7 @@ root@mysolaris:/# keytool -import -alias example -keystore /usr/java/jre/lib/sec
 这时候会提示你输入密码，默认密码为 `changeit`，输入即可。然后重启你的 JVM 或是 VM。等再次通过该 Agent 上传 artifacts，一切恢复正常。
 
 > 可参考： https://stackoverflow.com/questions/21076179/pkix-path-building-failed-and-unable-to-find-valid-certification-path-to-requ
+
 ---
 
 转载本站文章请注明作者和出处，请勿用于任何商业用途。欢迎关注公众号「沈显鹏」

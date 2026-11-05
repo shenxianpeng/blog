@@ -1,0 +1,7 @@
+# What the site needs to build: MkDocs NG, the Sumi theme and the Markdown
+# extensions in mkdocs.yml. Until the next releases of MkDocs NG (the
+# `source` language option) and Sumi (Hugo-style blogs) are on PyPI, they
+# come from their branches.
+mkdocs-ng @ git+https://github.com/mkdocs-ng/mkdocs@claude/project-thread-fs4sg7
+mkdocs-sumi @ git+https://github.com/mkdocs-ng/mkdocs-sumi@claude/project-thread-fs4sg7
+pymdown-extensions>=10

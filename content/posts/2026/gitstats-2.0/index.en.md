@@ -71,25 +71,23 @@ This was added in version 1.6, allowing users to switch between dark and light m
 
 Old Version:
 
-{{< gallery >}}
-  <img src="old-1.png" class="grid-w30" />
-  <img src="old-2.png" class="grid-w30" />
-  <img src="old-3.png" class="grid-w30" />
-  <img src="old-4.png" class="grid-w30" />
-  <img src="old-5.png" class="grid-w30" />
-  <img src="old-6.png" class="grid-w30" />
-{{< /gallery >}}
+- ![old-1.png](old-1.png)
+- ![old-2.png](old-2.png)
+- ![old-3.png](old-3.png)
+- ![old-4.png](old-4.png)
+- ![old-5.png](old-5.png)
+- ![old-6.png](old-6.png)
+{.gallery}
 
 New Version:
 
-{{< gallery >}}
-  <img src="new-1.png" class="grid-w30" />
-  <img src="new-2.png" class="grid-w30" />
-  <img src="new-3.png" class="grid-w30" />
-  <img src="new-4.png" class="grid-w30" />
-  <img src="new-5.png" class="grid-w30" />
-  <img src="new-6.png" class="grid-w30" />
-{{< /gallery >}}
+- ![new-1.png](new-1.png)
+- ![new-2.png](new-2.png)
+- ![new-3.png](new-3.png)
+- ![new-4.png](new-4.png)
+- ![new-5.png](new-5.png)
+- ![new-6.png](new-6.png)
+{.gallery}
 
 You can visit [this online preview](https://shenxianpeng.dev/gitstats/index.html) to see the actual effect, which is a report generated based on GitStats' own repository.
 

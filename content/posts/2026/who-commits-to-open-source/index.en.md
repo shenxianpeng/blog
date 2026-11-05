@@ -19,13 +19,13 @@ series_order: 6
 
 **Of the 446,000 commits made to 107 large open-source projects in the last year, 29% came from organization addresses. But projects differ widely: the median project is at 16%. Projects run by a company are close to 100%; community projects such as Flask, Requests and FastAPI are close to 0. Google reaches furthest: it committed to 40 of the projects in 12 months.**
 
-![The last four quarters' commits of 107 projects, by author address](fig3-mix.en.png)
+![The last four quarters' commits of 107 projects, by author address](fig3-mix.png)
 
 Every commit carries its author's email address, and a domain such as `@google.com` or `@redhat.com` says roughly which organization the address belongs to. [gitstats](https://github.com/shenxianpeng/gitstats) counts commits by that domain. Mail anyone can sign up for (`gmail.com`, `qq.com`) counts as personal; the private `noreply` addresses of GitHub and GitCode count as hidden; and a domain only one person commits from (`@jane.dev`) is a one-person domain, not an organization.
 
 ## 1. Company projects and community projects are two different worlds
 
-![Each project's share of commits from organization addresses, by ecosystem](fig1-ecosystems.en.png)
+![Each project's share of commits from organization addresses, by ecosystem](fig1-ecosystems.png)
 
 The highest shares belong almost entirely to projects a company runs:
 
@@ -43,7 +43,7 @@ By ecosystem, **Python's median is 3.5%**, the lowest of the eight: NumPy 3.5%, 
 
 ## 2. The most commits and the widest reach are not the same thing
 
-![Organizations that committed to the most projects in 12 months](fig2-reach.en.png)
+![Organizations that committed to the most projects in 12 months](fig2-reach.png)
 
 google.com made the most commits in the last 12 months (21,933) and also reached the most projects: **40**, from TensorFlow, Kubernetes and Go to Git, curl and CPython. Next come redhat.com and ibm.com (26 projects each) and microsoft.com (22).
 

@@ -21,7 +21,7 @@ authors:
 1. 查看本地仓库的日志：
    ```bash
    git log --oneline
-``
+   ```
 
 ![list your logs in oneline](example-01.png)
 

@@ -1,0 +1,24 @@
+{#- Every page: the site's fonts and stylesheets on top of Sumi's. -#}
+{% extends "base.html" %}
+{% block styles %}
+  {{ super() }}
+  {#- Geist (headings, UI), Newsreader (reading), Geist Mono (code, dates), Noto
+      Serif SC for Chinese, in unicode-range slices so English pages never
+      download it. Stacks are in assets/css/sumi-evergreen.css. #}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Geist:wght@300..800&family=Geist+Mono:wght@400..600&family=Noto+Serif+SC:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/assets/site/schemes/evergreen.css">
+  <link rel="stylesheet" href="/assets/site/sumi-evergreen.css">
+  <link rel="stylesheet" href="/assets/site/custom.css">
+{% endblock %}
+{% block extrahead %}
+  <meta name="google-site-verification" content="2E2Cl6XpgMYdmYe_jdwSrs6XdeFCzHgFhOBisOn9hbs">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+{% endblock %}
+{% block scripts %}
+  {{ super() }}
+  <script src="/assets/site/site.js" defer></script>
+{% endblock %}

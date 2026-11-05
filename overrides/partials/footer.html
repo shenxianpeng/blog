@@ -1,0 +1,23 @@
+{#- Footer: the Hugo site's footer menu (Essays, Archive, Tags, RSS), the
+    copyright, the social links and Sumi's credit. -#}
+{%- import "partials/macros.html" as m with context -%}
+{%- set zh = config.extra.lang == 'zh-cn' %}
+<footer class="sumi-footer">
+  <div class="sumi-footer-inner">
+    <div class="sumi-footer-left">
+      <nav class="site-footer-menu" aria-label="Footer">
+        <a href="{{ 'misc/' | url }}">{{ '随笔' if zh else 'Essays' }}</a>
+        <a href="{{ 'archive/' | url }}">{{ '归档' if zh else 'Archive' }}</a>
+        <a href="{{ 'tags/' | url }}">{{ '标签' if zh else 'Tags' }}</a>
+        <a href="{{ 'index.xml' | url }}" data-ga-follow="rss">RSS</a>
+      </nav>
+      {%- if config.copyright %}<div class="sumi-copyright">{{ config.copyright }}</div>{% endif %}
+      <div class="sumi-credit">{{ t('built_with', mkdocs='<a href="https://github.com/mkdocs-ng/mkdocs" rel="noopener">MkDocs NG</a>', sumi='<a href="https://sumi.mkdocs-ng.org/" rel="noopener">Sumi</a>') | safe }}</div>
+    </div>
+    <div class="sumi-footer-right">
+      {%- for s in (config.extra.social or []) %}
+      <a class="sumi-icon-btn" href="{{ s.link }}" rel="noopener" aria-label="{{ s.name or s.link }}" title="{{ s.name or s.link }}" data-ga-follow="{{ (s.name or '') | lower }}">{{ m.social_icon(s.icon) }}</a>
+      {%- endfor %}
+    </div>
+  </div>
+</footer>

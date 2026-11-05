@@ -1,0 +1,126 @@
+{#-
+  The home page (template: home.html in content/index.md and index.en.md).
+  Ported from the Hugo site's layouts/partials/home/landing.html and
+  layouts/index.html: hero, the dark cpp-linter band, the product tiles, recent
+  writing, the page body (the WeChat QR code on the Chinese home) and the
+  sponsor band. All copy is front matter; `demo: <name>` renders
+  partials/home/demo-<name>.html. Styles: .home-* in assets/css/custom.css.
+-#}
+{% extends "main.html" %}
+{% block layout %}
+{%- set p = page.meta %}
+<main id="main" class="sumi-home">
+<article class="home">
+  <section class="home-hero">
+    <div class="home-hero-text">
+      <h1 class="home-title">{{ p.heroTitle or page.title }}</h1>
+      {%- if p.heroLead %}<p class="home-lead">{{ p.heroLead | sumi_md }}</p>{% endif %}
+      {%- if p.heroButtons %}
+      <div class="home-actions">
+        {%- for b in p.heroButtons %}
+        <a class="home-btn{% if b.style == 'outline' %} home-btn-outline{% endif %}" href="{{ b.url }}">{{ b.label }}</a>
+        {%- endfor %}
+      </div>
+      {%- endif %}
+      {%- set also = p.heroAlso %}
+      {%- if also %}
+      <p class="home-also">{{ also.label }}
+        {%- if also.stages %}
+          {%- for s in also.stages %}{% if not loop.first %}<span class="home-also-sep" aria-hidden="true"> → </span>{% endif %}<span class="home-also-step"><span class="home-also-stage">{{ s.stage }}</span> {% for l in s.links %}{% if not loop.first %}, {% endif %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</span>{% endfor -%}
+        {%- else %}
+          {%- for l in also.links %}{% if not loop.first %}<span aria-hidden="true"> · </span>{% endif %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor -%}
+        {%- endif -%}
+      </p>
+      {%- endif %}
+    </div>
+  </section>
+
+  {%- set f = p.flagship %}
+  {%- if f %}
+  <section class="home-band home-flagship">
+    {%- if f.label %}<p class="home-flagship-label">{{ f.label }}</p>{% endif %}
+    <h2 class="home-band-title">{{ f.title }}</h2>
+    {%- if f.text %}<p class="home-band-text">{{ f.text }}</p>{% endif %}
+    {%- if f.links %}
+    <p class="home-links">{% for l in f.links %}<a href="{{ l.url }}">{{ l.label }} ›</a>{% endfor %}</p>
+    {%- endif %}
+    {%- if f.demo %}{% with item = f %}{% include "partials/home/demo-" ~ f.demo ~ ".html" %}{% endwith %}{% endif %}
+    {%- if f.users %}
+    <div class="home-users">
+      {%- if f.usersLabel %}<p class="home-users-label">{{ f.usersLabel }}</p>{% endif %}
+      <p class="home-users-list">{% for u in f.users %}<span>{{ u }}</span>{% endfor %}</p>
+    </div>
+    {%- endif %}
+  </section>
+  {%- endif %}
+
+  {%- set pr = p.products %}
+  {%- if pr %}
+  {%- set more = pr.moreLabel or 'Learn more' %}
+  <section class="home-section home-products">
+    <div class="home-section-intro">
+      <h2 class="home-band-title">{{ pr.title }}</h2>
+      {%- if pr.text %}<p class="home-band-text">{{ pr.text }}</p>{% endif %}
+    </div>
+    {%- for item in pr['items'] if item['style'] == 'wide' %}
+    <a class="home-tile home-tile-wide{% if item.tone %} home-tile-{{ item.tone }}{% endif %}{% if item.flip %} home-tile-flip{% endif %}" href="{{ item.url }}">
+      <div class="home-tile-text">
+        {%- if item.label %}<span class="home-tile-label">{{ item.label }}</span>{% endif %}
+        <span class="home-tile-name">{{ item.name }}</span>
+        <span class="home-tile-desc">{{ item.text }}</span>
+        <span class="home-tile-more">{{ more }} ›</span>
+      </div>
+      {%- if item.demo %}{% include "partials/home/demo-" ~ item.demo ~ ".html" %}{% endif %}
+    </a>
+    {%- endfor %}
+    {%- set rest = pr['items'] | rejectattr('style', 'equalto', 'wide') | list %}
+    {%- if rest %}
+    <div class="home-tiles">
+      {%- for item in rest %}
+      <a class="home-tile home-tile-{{ item['style'] or 'light' }}" href="{{ item.url }}">
+        {%- if item.label %}<span class="home-tile-label">{{ item.label }}</span>{% endif %}
+        <span class="home-tile-name">{{ item.name }}</span>
+        <span class="home-tile-desc">{{ item.text }}</span>
+        <span class="home-tile-more">{{ more }} ›</span>
+        {%- if item.demo %}{% include "partials/home/demo-" ~ item.demo ~ ".html" %}{% endif %}
+      </a>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </section>
+  {%- endif %}
+
+  {%- set w = p.writing %}
+  <section class="home-section home-writing">
+    <div class="home-section-head">
+      <div>
+        <h2 class="home-band-title">{{ w.title if w else t('blog') }}</h2>
+        {%- if w and w.text %}<p class="home-band-text">{{ w.text }}</p>{% endif %}
+      </div>
+      <a class="home-more" href="{{ 'posts/' | url }}">{{ '全部文章' if config.extra.lang == 'zh-cn' else 'All posts' }} ›</a>
+    </div>
+    <div class="home-posts">
+      {%- for post in (sumi.all_posts or [])[:6] %}
+      <a class="home-post" href="{{ post.url | url }}">
+        <time class="home-meta" datetime="{{ post.date.strftime('%Y-%m-%d') }}">{{ post.date.strftime('%Y-%m-%d') }}</time>
+        <span class="home-post-title">{{ post.title }}</span>
+        <span class="home-meta home-post-tag">{{ post.tags[0] if post.tags else '' }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </section>
+
+  {%- if page.content | striptags | trim %}
+  <section class="home-section home-body sumi-prose">{{ page.content }}</section>
+  {%- endif %}
+
+  {%- set sp = p.sponsor %}
+  {%- if sp %}
+  <section class="home-band home-sponsor">
+    <h2 class="home-sponsor-text">{{ sp.text | sumi_md }}</h2>
+    <a class="home-btn" href="{{ sp.url }}">{{ sp.label }}</a>
+  </section>
+  {%- endif %}
+</article>
+</main>
+{% endblock %}

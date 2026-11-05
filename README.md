@@ -5,6 +5,8 @@
 
 Welcome to Xianpeng Shen’s blog, where I share insights on AI, DevOps, CI/CD, and Open Source.
 
+Built with [MkDocs NG](https://mkdocs-ng.org/) and the [Sumi](https://sumi.mkdocs-ng.org/) theme. To run it locally: `make install-site && make dev`.
+
 ## License
 
 This work is licensed under the [CC BY-NC-SA 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en).

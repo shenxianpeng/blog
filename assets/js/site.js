@@ -1,0 +1,77 @@
+/* Click tracking for links to the author's projects and follow channels
+   (ported from the Hugo site's layouts/partials/extend-footer.html).
+   project_click  project: id below, or data-ga-project on the link;
+                  placement, link_url
+   follow_click   method: rss | github | x | linkedin | email, or
+                  data-ga-follow; placement, link_url
+   placement is the nearest data-ga-placement (the post footer sets
+   "post_footer"), else where the link sits. gtag only exists on
+   shenxianpeng.dev (overrides/partials/analytics.html). */
+(function () {
+    var PROJECTS = [
+      ['cpp-linter.github.io', '', 'cpp-linter'],
+      ['github.com', '/cpp-linter', 'cpp-linter'],
+      ['conventionalbranch.org', '', 'conventional-branch'],
+      ['github.com', '/conventional-branch', 'conventional-branch'],
+      ['commit-check.com', '', 'commit-check'],
+      ['github.com', '/commit-check', 'commit-check'],
+      ['keelapps.app', '', 'keelapps'],
+      ['keelhaven.app', '', 'keelhaven'],
+      ['keelinfra.io', '', 'keelinfra'],
+      ['gitstats.readthedocs.io', '', 'gitstats'],
+      ['github.com', '/shenxianpeng/gitstats', 'gitstats']
+    ];
+
+    function under(path, prefix) {
+      return !prefix || path === prefix || path.indexOf(prefix + '/') === 0;
+    }
+
+    function projectOf(url) {
+      var host = url.hostname.replace(/^www\./, '');
+      for (var i = 0; i < PROJECTS.length; i++) {
+        var p = PROJECTS[i];
+        if ((host === p[0] || host.slice(-p[0].length - 1) === '.' + p[0]) && under(url.pathname, p[1])) return p[2];
+      }
+      return '';
+    }
+
+    function followOf(url) {
+      var host = url.hostname.replace(/^www\./, '');
+      var path = url.pathname.replace(/\/+$/, '');
+      if (url.protocol === 'mailto:') return url.pathname.indexOf('xianpeng.shen@') === 0 ? 'email' : '';
+      if (host === location.hostname && /\/index\.xml$/.test(url.pathname)) return 'rss';
+      if (host === 'github.com' && path === '/shenxianpeng') return 'github';
+      if ((host === 'x.com' || host === 'twitter.com') && path === '/xianpengshen') return 'x';
+      if (host === 'linkedin.com' && path === '/in/xianpeng-shen') return 'linkedin';
+      return '';
+    }
+
+    function placementOf(a) {
+      var marked = a.closest('[data-ga-placement]');
+      if (marked) return marked.getAttribute('data-ga-placement');
+      if (a.closest('.home')) return 'home';
+      if (/^\/(zh-cn\/)?portfolio\//.test(location.pathname)) return 'portfolio';
+      if (a.closest('.sumi-content')) return 'post_body';
+      if (a.closest('.sumi-post-authors')) return 'author';
+      if (a.closest('.sumi-footer')) return 'site_footer';
+      if (a.closest('.sumi-header')) return 'header';
+      return 'other';
+    }
+
+    document.addEventListener('click', function (event) {
+      if (typeof window.gtag !== 'function' || !event.target.closest) return;
+      var a = event.target.closest('a[href]');
+      if (!a) return;
+      var url;
+      try { url = new URL(a.getAttribute('href'), location.href); } catch (e) { return; }
+      var project = a.getAttribute('data-ga-project') || projectOf(url);
+      if (project) {
+        window.gtag('event', 'project_click', { project: project, placement: placementOf(a), link_url: url.href });
+        return;
+      }
+      var method = a.getAttribute('data-ga-follow') || followOf(url);
+      if (method) {
+        window.gtag('event', 'follow_click', { method: method, placement: placementOf(a), link_url: url.href });
+      }
+    }, true);
+  })();

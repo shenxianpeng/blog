@@ -73,26 +73,24 @@ gitstats . report
 
 旧版本：
 
-{{< gallery >}}
-  <img src="old-1.png" class="grid-w30" />
-  <img src="old-2.png" class="grid-w30" />
-  <img src="old-3.png" class="grid-w30" />
-  <img src="old-4.png" class="grid-w30" />
-  <img src="old-5.png" class="grid-w30" />
-  <img src="old-6.png" class="grid-w30" />
-{{< /gallery >}}
+- ![old-1.png](old-1.png)
+- ![old-2.png](old-2.png)
+- ![old-3.png](old-3.png)
+- ![old-4.png](old-4.png)
+- ![old-5.png](old-5.png)
+- ![old-6.png](old-6.png)
+{.gallery}
 
 新版本：
 
-{{< gallery >}}
-  <img src="new-home.png" class="grid-w30" />
-  <img src="new-1.png" class="grid-w30" />
-  <img src="new-2.png" class="grid-w30" />
-  <img src="new-3.png" class="grid-w30" />
-  <img src="new-4.png" class="grid-w30" />
-  <img src="new-5.png" class="grid-w30" />
-  <img src="new-6.png" class="grid-w30" />
-{{< /gallery >}}
+- ![new-home.png](new-home.png)
+- ![new-1.png](new-1.png)
+- ![new-2.png](new-2.png)
+- ![new-3.png](new-3.png)
+- ![new-4.png](new-4.png)
+- ![new-5.png](new-5.png)
+- ![new-6.png](new-6.png)
+{.gallery}
 
 你可以访问 [这个在线预览](https://shenxianpeng.dev/gitstats/index.html) 看实际效果，这是基于 GitStats 自身仓库生成的报告。
 

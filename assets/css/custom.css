@@ -1,118 +1,8 @@
-/* Blowfish loads this file after its own stylesheet. Keep it to what the theme
-   cannot express through configuration. Colours come from the Evergreen scheme
-   (assets/css/schemes/evergreen.css); the theme's compiled Tailwind only has
-   the utilities the theme itself uses, so the site's own components below are
-   plain CSS. */
-
-/* ---- Type ------------------------------------------------------------- */
-
-:root {
-  --font-display: "Geist", "PingFang SC", "Noto Sans SC", system-ui, sans-serif;
-  --font-read: "Newsreader", "Noto Serif SC", Georgia, serif;
-  --font-ui: "Geist", "PingFang SC", "Noto Sans SC", system-ui, sans-serif;
-  --font-code: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-}
-
-body {
-  font-family: var(--font-ui);
-  /* Full-bleed home bands are 100vw wide; 100vw includes a classic scrollbar. */
-  overflow-x: clip;
-}
-
-/* Blowfish pads the 80rem body by 8rem a side from lg up, leaving 64rem for
-   content; the home page needs more. 4rem a side gives 72rem, which the
-   full-bleed bands below align to. Articles keep their own measure (see
-   .article-content below). */
-@media (min-width: 1024px) {
-  body,
-  /* the fixed header's inner container repeats the body's classes */
-  header > .fixed > .max-w-7xl {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-
-/* The header is Blowfish's fixed-fill layout (params.toml), a solid bar. The
-   fixed layout's 25% tint, 40px blur and large shadow let whatever scrolled
-   under it show through as a smear: the white cpp-linter demo, the green
-   buttons. A hairline separates the bar from the page instead. */
-header > .fixed {
-  border-bottom: 1px solid rgb(var(--color-neutral-200));
-}
-
-.dark header > .fixed {
-  border-bottom-color: rgb(var(--color-neutral-700));
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-display);
-  font-weight: 700;
-  letter-spacing: -0.025em;
-}
-
-#single_header h1 {
-  letter-spacing: -0.035em;
-  line-height: 1.08;
-}
-
-/* Even out heading lines, so a title does not end on one stranded word or
-   character (a Chinese title on a phone left 门 alone on its last line). */
-#single_header h1,
-.article-content :is(h2, h3, h4) {
-  text-wrap: balance;
-}
-
-.prose {
-  font-family: var(--font-read);
-}
-
-.prose :where(h1, h2, h3, h4) {
-  font-weight: 700;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-family: var(--font-code);
-}
-
-/* Newsreader has a small x-height; at the theme's 16px it reads cramped. */
-.article-content {
-  font-size: 1.1875rem;
-  line-height: 1.7;
-}
-
-.article-content :where(pre, code) {
-  font-size: 0.85em;
-}
-
-/* The theme's measure is max-w-prose, 65ch, and ch is the width of "0". In
-   Newsreader that is a third wider than an average letter, so the column came
-   out 680px and English ran 79-91 characters a line. 37rem is 592px, roughly
-   70. The series boxes above and below the text take the same width so the
-   edges still line up. Chinese, at about 35 characters a line, keeps the
-   theme's measure. */
-:lang(en) :is(.article-content, details:has(+ .article-content), .article-content ~ details) {
-  max-width: 37rem;
-}
-
-/* CJK has no italics, needs more leading, and no negative tracking. */
-:lang(zh) .prose,
-:lang(zh) .article-content {
-  line-height: 1.85;
-}
-
-:lang(zh) .article-content {
-  font-size: 1.125rem;
-}
-
-:lang(zh) :is(h1, h2, h3, h4) {
-  letter-spacing: 0;
-}
+/* The site's own components on top of Sumi: the home page, its animated
+   demos and the post footer. Colours come from the Evergreen scheme
+   (assets/css/schemes/evergreen.css) as rgb(var(--color-…)) triplets; Sumi's
+   own tokens are mapped to the same scheme in assets/css/sumi-evergreen.css.
+   Dark mode is Sumi's [data-theme="dark"]. */
 
 /* ---- Home page --------------------------------------------------------
    layouts/partials/home/landing.html, layouts/index.html,
@@ -124,7 +14,7 @@ samp {
   --home-shadow: 0 1px 2px rgb(13 18 15 / 0.04), 0 20px 50px rgb(13 18 15 / 0.07);
 }
 
-/* Full-bleed band: escapes Blowfish's centred max-w-7xl body. */
+/* Full-bleed band: escapes the home page's centred 72rem column. */
 .home-band {
   box-sizing: border-box;
   width: 100vw;
@@ -242,11 +132,11 @@ samp {
   text-underline-offset: 4px;
 }
 
-.dark .home-also {
+[data-theme="dark"] .home-also {
   color: rgb(var(--color-neutral-400));
 }
 
-.dark .home-also a {
+[data-theme="dark"] .home-also a {
   color: rgb(var(--color-primary-400));
 }
 
@@ -269,12 +159,12 @@ samp {
   color: rgb(var(--color-neutral-400));
 }
 
-.dark .home-also-stage {
+[data-theme="dark"] .home-also-stage {
   background: rgb(var(--color-neutral-700));
   color: rgb(var(--color-neutral-300));
 }
 
-.dark .home-also-sep {
+[data-theme="dark"] .home-also-sep {
   color: rgb(var(--color-neutral-500));
 }
 
@@ -1014,69 +904,69 @@ samp {
 
 /* ---- Dark appearance: page is neutral-800, cards lift to neutral-700. -- */
 
-:root.dark {
+:root[data-theme="dark"] {
   --home-card: var(--color-neutral-700);
   --home-shadow: 0 0 0 1px rgb(255 255 255 / 0.04), 0 20px 50px rgb(0 0 0 / 0.35);
 }
 
-.dark :is(.home-title, .home-band-title, .home-tile, .home-post, .home-sponsor-text) {
+[data-theme="dark"] :is(.home-title, .home-band-title, .home-tile, .home-post, .home-sponsor-text) {
   color: rgb(var(--color-neutral));
 }
 
-.dark :is(.home-lead, .home-band-text, .home-meta) {
+[data-theme="dark"] :is(.home-lead, .home-band-text, .home-meta) {
   color: rgb(var(--color-neutral-400));
 }
 
-.dark .home-tile-desc {
+[data-theme="dark"] .home-tile-desc {
   color: rgb(var(--color-neutral-300));
 }
 
-.dark :is(.home-more, .home-tile-more, .home-tile-label, .home-links) {
+[data-theme="dark"] :is(.home-more, .home-tile-more, .home-tile-label, .home-links) {
   color: rgb(var(--color-primary-400));
 }
 
-.dark .home-post:hover .home-post-title {
+[data-theme="dark"] .home-post:hover .home-post-title {
   color: rgb(var(--color-primary-400));
 }
 
-.dark .home-btn {
+[data-theme="dark"] .home-btn {
   border-color: rgb(var(--color-primary-400));
   background: rgb(var(--color-primary-400));
   color: rgb(var(--color-neutral-900));
 }
 
-.dark .home-btn-outline {
+[data-theme="dark"] .home-btn-outline {
   background: transparent;
   color: rgb(var(--color-primary-400));
 }
 
-.dark .home-flagship {
+[data-theme="dark"] .home-flagship {
   background: rgb(var(--color-neutral-900));
   border-block: 1px solid rgb(var(--color-neutral-700));
 }
 
-.dark .home-tile-dark {
+[data-theme="dark"] .home-tile-dark {
   background: rgb(var(--color-neutral-900));
   box-shadow: 0 0 0 1px rgb(var(--color-neutral-700));
 }
 
-.dark .home-tile-mint {
+[data-theme="dark"] .home-tile-mint {
   background: rgb(var(--color-primary-900));
 }
 
-.dark .home-tile-mint :is(.home-tile-label, .home-tile-more) {
+[data-theme="dark"] .home-tile-mint :is(.home-tile-label, .home-tile-more) {
   color: rgb(var(--color-primary-300));
 }
 
-.dark .home-posts {
+[data-theme="dark"] .home-posts {
   border-top-color: rgb(var(--color-neutral));
 }
 
-.dark .home-post {
+[data-theme="dark"] .home-post {
   border-color: rgb(var(--color-neutral-700));
 }
 
-.dark .home-sponsor {
+[data-theme="dark"] .home-sponsor {
   background: rgb(var(--color-neutral-700) / 0.45);
 }
 
@@ -1313,14 +1203,14 @@ samp {
   text-decoration: none;
 }
 
-.dark :is(.post-footer-label, .post-footer-card) {
+[data-theme="dark"] :is(.post-footer-label, .post-footer-card) {
   color: rgb(var(--color-neutral));
 }
 
-.dark :is(.post-footer-desc, .post-footer-follow-text) {
+[data-theme="dark"] :is(.post-footer-desc, .post-footer-follow-text) {
   color: rgb(var(--color-neutral-300));
 }
 
-.dark :is(.post-footer-more, .post-footer-follow-links a) {
+[data-theme="dark"] :is(.post-footer-more, .post-footer-follow-links a) {
   color: rgb(var(--color-primary-400));
 }

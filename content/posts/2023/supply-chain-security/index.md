@@ -54,7 +54,7 @@ Verified build using builder "https://github.com/slsa-framework/slsa-github-gene
 Verifying artifact test-1.0.0-py3-none-any.whl: PASSED
 
 PASSED: Verified SLSA provenance
-````
+```
 
 ---
 

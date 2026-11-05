@@ -30,7 +30,7 @@ authors:
 + CXX=ibm-clang_r
 + XCC=ibm-clang_r
 + MAKE_SHARED=ibm-clang_r
-````
+```
 
 同时，可参考 [选项映射文档](https://www.ibm.com/docs/en/openxl-c-and-cpp-aix/17.1.0?topic=options-mapping) 进行新 Clang 选项的映射。
 

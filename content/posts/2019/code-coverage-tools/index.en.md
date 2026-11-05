@@ -19,7 +19,7 @@ When you’re trying to demonstrate test coverage to your higher-ups, code cover
 List of Code Coverage Tools
 
 | Tools  | Support Language  | Cost | Partners  |
-|---|---|---|---|---|
+|---|---|---|---|
 | [Squish Coco](https://www.froglogic.com/coco/)  | C, C++, C#, SystemC, Tcl and QML | Not disclosed |[Botom of this page Selected Clients](https://www.froglogic.com/coco/)|
 | [BullseyeCoverage](http://www.bullseye.com/productInfo.html) | C, C++ |$800 for 1-year license and up |   |
 | [Testwell](https://www.verifysoft.com/en_code_coverage.html)| C, C++, C#, Java| Not disclosed| |
