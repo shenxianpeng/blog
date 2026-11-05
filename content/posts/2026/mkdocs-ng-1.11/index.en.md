@@ -1,7 +1,7 @@
 ---
 title: "Six Months of Maintaining MkDocs: It Takes Will, Not the Original Team"
 summary: |
-  Six months ago I sent PRs to 10 MkDocs plugins asking them to depend on mkdocs-ng. None were merged. Now MkDocs NG 1.11.0 is out: 10 of the 15 most-upvoted open upstream issues are fixed, plugins work without changing their dependencies, and clean builds are faster than upstream and the Rust-based Zensical. Plus how to choose between Sumi and Material, and the new plugin catalog website.
+  Today MkDocs NG 1.11.0 is out: 10 of the 15 most-upvoted open upstream issues are fixed, plugins work without changing their dependencies, and clean builds are faster than upstream and the Rust-based Zensical. Plus how to choose between Sumi and Material, and the new plugin catalog website.
 tags:
   - Open Source
   - Documentation
@@ -30,7 +30,7 @@ First, a quick look at where MkDocs stands.
 
 The last 1.x release of MkDocs is 1.6.1 from August 2024, and there has been no release in more than two years. As for why it stopped being maintained, I wrote briefly about the back story before; if you're curious, see [why I forked](/posts/2026/mkdocs-ng/).
 
-After the MkDocs author took back control, they put out a 2.0 pre-release, and the community largely rejected it, because 2.0 is a complete rewrite: no plugins, no themes, and it exits with an error when it finds a `mkdocs.yml`. Existing sites can't upgrade, and the plugin ecosystem can't follow.
+After the MkDocs author took back control, they put out a 2.0 pre-release, and the community seems not interested in it, because 2.0 is a complete rewrite. Existing sites can't upgrade, and the plugin ecosystem can't follow.
 
 So the community has gone in a few directions:
 
@@ -51,7 +51,7 @@ So when I took it over, I wasn't looking to reinvent it. There was one goal: **m
 
 I accept what that plugin author said. There's no reason for anyone to change dependencies for a fork that's just getting started. So I turned the problem around: **if plugins won't change, MkDocs NG must not need them to.**
 
-Since 1.10, a plugin can keep `mkdocs` in its dependencies, and once `mkdocs-ng` is installed, MkDocs NG is what runs. Some plugins used to quietly swap NG back to upstream 1.6.1, and some printed a "switch to ProperDocs" warning; both problems are gone. Later I closed pretty much all of those 10 PRs myself.
+Since 1.10, a plugin can keep `mkdocs` in its dependencies, and once `mkdocs-ng` is installed, MkDocs NG is what runs. Some plugins used to quietly swap NG back to upstream 1.6.1, and some printed a "switch to ProperDocs" warning; both problems are gone. Later I closed all of those 10 PRs myself.
 
 ## The most-upvoted upstream issues: mostly cleared
 
@@ -88,9 +88,9 @@ My role is closer to a product owner: I explain the vision (what I want, what I 
 
 The direction is still mine to set, and not every proposal gets accepted. AI once suggested adding an `mkdocs-ng` command; I said no, because users' CI scripts all say `mkdocs`, and a new command brings the migration cost right back. It also suggested having `serve` render the page being edited first; I turned that down twice and we kept to caching.
 
-This is also why I think MkDocs NG can keep going. Zensical is a team, and a team has to eat: alongside the free, open source Zensical, they make Studio, a closed-source app with free and paid editions, and Spark, a paid membership, [to fund the team](https://zensical.org/upcoming-changes/). That's perfectly normal.
+This is also why I think MkDocs NG can keep going. Zensical is a team; alongside the free, open source Zensical, they make Studio, a closed-source app with free and paid editions, and Spark, a paid membership, [to fund the team](https://zensical.org/upcoming-changes/). That's perfectly normal.
 
-I don't have that pressure. First, open source is my hobby. Second, my Claude Code was a gift from Anthropic, and the tokens are practically unlimited.
+I don't have that pressure. First, it is my hobby. Second, my Claude Code was a gift from Anthropic, and the tokens are practically unlimited.
 
 So as long as I have the will and the time, maintaining MkDocs NG is something I can just do.
 
@@ -198,7 +198,7 @@ Moving on, there are two paths today:
 1. **MkDocs NG**: change one dependency line; plugins, config and CI stay as they are. Almost all of upstream's leftover issues are fixed, and clean builds are the fastest.
 2. **Try Zensical**: it's backed by the original Material team. The cost: it's still at 0.0.x and doesn't run MkDocs plugins, only native rewrites of about thirty popular ones, so check that the plugins you use are among them before migrating.
 
-I won't say much about ProperDocs. I forked instead of building on it because, to put it bluntly, I don't agree with its code or its direction. It hasn't released in more than seven months; whether it can keep going, you can judge for yourself.
+I won't say much about ProperDocs. I forked instead of building on it because, to put it bluntly, I'm not in favor of its code or its direction. It hasn't released in more than 8 months; whether it can keep going, you can judge for yourself.
 
 ## How to switch
 
@@ -210,7 +210,7 @@ Switching back is one line too. See the [migration guide](https://mkdocs-ng.org/
 
 ## Finally
 
-Six months ago I wrote that code is only the first half of a project's reach; the second half is people.
+Six months ago, I wrote that code is only the first half of a project's reach; the second half is people.
 
 I've given the code my best. Now I need your help:
 
@@ -218,7 +218,3 @@ I've given the code my best. Now I need your help:
 - **Open an [issue](https://github.com/mkdocs-ng/mkdocs/issues)** when something breaks or you need something. The roadmap is [#59](https://github.com/mkdocs-ng/mkdocs/issues/59); tell us what you want most.
 - **Contributions are welcome**: code, docs, translations, or adding a plugin you use to the [plugin catalog](https://catalog.mkdocs-ng.org/).
 - If you find it useful, star [mkdocs-ng/mkdocs](https://github.com/mkdocs-ng/mkdocs) and [mkdocs-ng/mkdocs-sumi](https://github.com/mkdocs-ng/mkdocs-sumi), or share this with friends who still use MkDocs.
-
----
-
-Please cite the author and source when reproducing articles from this site. Do not use for any commercial purposes. Welcome to follow my WeChat Official Account "沈显鹏".
