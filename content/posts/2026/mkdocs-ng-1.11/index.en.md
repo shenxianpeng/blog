@@ -1,7 +1,7 @@
 ---
-title: "Six Months of Maintaining MkDocs: It Takes Will, Not the Original Team"
+title: "Six Months of Maintaining MkDocs NG: Why I Keep Going"
 summary: |
-  Today MkDocs NG 1.11.0 is out: 10 of the 15 most-upvoted open upstream issues are fixed, plugins work without changing their dependencies, and clean builds are faster than upstream and the Rust-based Zensical. Plus how to choose between Sumi and Material, and the new plugin catalog website.
+  Today MkDocs NG 1.11.0 is out: 10 of the 15 most-upvoted open upstream issues are fixed, plugins work without changing their dependencies, and clean builds got a lot faster. Plus how to choose between Sumi and Material, and the new plugin catalog website.
 tags:
   - Open Source
   - Documentation
@@ -24,34 +24,28 @@ Fair point. MkDocs NG was two weeks old at the time. If I were a plugin author, 
 
 Six months later, I'm still maintaining it. On November 4, MkDocs NG 1.11.0 came out. This post is about what happened in those six months and why I keep going. (Earlier posts: [why I forked](/posts/2026/mkdocs-ng/), [v1.7.x progress](/posts/2026/mkdocs-ng-update/), [the 1.8.0 release](/posts/2026/mkdocs-ng-1.8/).)
 
-## The original team, and the will to keep going
-
-First, a quick look at where MkDocs stands.
+## Where MkDocs stands, and why I keep going
 
 The last 1.x release of MkDocs is 1.6.1 from August 2024, and there has been no release in more than two years. As for why it stopped being maintained, I wrote briefly about the back story before; if you're curious, see [why I forked](/posts/2026/mkdocs-ng/).
 
-After the MkDocs author took back control, they put out a 2.0 pre-release, and the community seems not interested in it, because 2.0 is a complete rewrite. Existing sites can't upgrade, and the plugin ecosystem can't follow.
+Upstream's focus is now MkDocs 2.0, a ground-up rewrite that is still a pre-release. It doesn't run 1.x plugins or themes, so existing sites can't simply upgrade to it.
 
-So the community has gone in a few directions:
+Meanwhile, the community has gone in a few directions:
 
 - **[Zensical](https://zensical.org/)**: a new project from the team behind Material for MkDocs, with a core written in Rust, currently at 0.0.74. It reads `mkdocs.yml`, but doesn't run MkDocs plugins; it reimplements about thirty popular ones natively.
-- **[ProperDocs](https://properdocs.org/)**: a fork of 1.6 started by a former MkDocs maintainer, with its own package and command name. Its last release, 1.6.7, came out in March 2026, with no release in the seven months since.
+- **[ProperDocs](https://properdocs.org/)**: a fork of 1.6 started by a former MkDocs maintainer, with its own package and command name. Its latest release is 1.6.7.
 
 When people look at a fork, their first question is often: is it the original team?
 
-It used to matter a lot. Now I don't think it matters that much. Why?
+I used to think that mattered a lot. Now I think a different question matters more to users: is someone committed to maintaining it for the long haul? People's priorities change, and moving on to new work is normal. Each of these projects has people putting in that commitment in their own way. This post is about mine.
 
-Original authors leave, and original teams move on to new things. That's normal.
-
-Whether a project keeps going depends on whether someone has the **will** to maintain and improve it for the long haul. Without that will, the original team stops too.
-
-My will comes from something practical: I can't do without it. The docs sites of [cpp-linter](https://cpp-linter.github.io), [commit-check](https://commit-check.com) and [pipguard](https://shenxianpeng.dev/pipguard) are all built with MkDocs. I run into what works and what gets in the way every day.
+It comes from something practical: I can't do without it. The docs sites of [cpp-linter](https://cpp-linter.github.io), [commit-check](https://commit-check.com) and [pipguard](https://shenxianpeng.dev/pipguard) are all built with MkDocs. I run into what works and what gets in the way every day.
 
 So when I took it over, I wasn't looking to reinvent it. There was one goal: **make sure this supply chain doesn't break.**
 
 I accept what that plugin author said. There's no reason for anyone to change dependencies for a fork that's just getting started. So I turned the problem around: **if plugins won't change, MkDocs NG must not need them to.**
 
-Since 1.10, a plugin can keep `mkdocs` in its dependencies, and once `mkdocs-ng` is installed, MkDocs NG is what runs. Some plugins used to quietly swap NG back to upstream 1.6.1, and some printed a "switch to ProperDocs" warning; both problems are gone. Later I closed all of those 10 PRs myself.
+Since 1.10, a plugin can keep `mkdocs` in its dependencies, and once `mkdocs-ng` is installed, MkDocs NG is what runs. Some plugins used to quietly swap NG back to upstream 1.6.1, and some printed a warning suggesting a different fork; both problems are gone. Later I closed all of those 10 PRs myself.
 
 ## The most-upvoted upstream issues: mostly cleared
 
@@ -88,17 +82,15 @@ My role is closer to a product owner: I explain the vision (what I want, what I 
 
 The direction is still mine to set, and not every proposal gets accepted. AI once suggested adding an `mkdocs-ng` command; I said no, because users' CI scripts all say `mkdocs`, and a new command brings the migration cost right back. It also suggested having `serve` render the page being edited first; I turned that down twice and we kept to caching.
 
-This is also why I think MkDocs NG can keep going. Zensical is a team; alongside the free, open source Zensical, they make Studio, a closed-source app with free and paid editions, and Spark, a paid membership, [to fund the team](https://zensical.org/upcoming-changes/). That's perfectly normal.
-
-I don't have that pressure. First, it is my hobby. Second, my Claude Code was a gift from Anthropic, and the tokens are practically unlimited.
+This is also why I think MkDocs NG can keep going. First, it's my hobby. Second, my Claude Code was a gift from Anthropic, and the tokens are practically unlimited. Projects run by a full-time team have to fund that team, which is a different and harder problem; I'm lucky not to have it.
 
 So as long as I have the will and the time, maintaining MkDocs NG is something I can just do.
 
-## Somehow, it became the fastest
+## Build speed
 
 The other surprise was performance.
 
-Among all the forks and alternatives, MkDocs NG turned out to have the fastest clean builds. Honestly, I didn't see that coming.
+In our clean-build benchmark, MkDocs NG came out ahead. Honestly, I didn't see that coming.
 
 Looking back, it comes from keeping a close eye on performance. Since 1.8.0, every PR runs benchmarks on [CodSpeed](https://codspeed.io/), and any regression is caught before merging. On that footing we optimized bit by bit: navigation rendering is no longer O(N²), `serve` reuses unchanged pages, the search plugin reads pages three times faster.
 
@@ -117,14 +109,14 @@ The same 1,000 pages of Markdown, the same 4-core machine, clean builds without 
 | ProperDocs 1.6.7 | Material | 32.1 s |
 | MkDocs 1.6.1 | Material | 34.2 s |
 
-With Material, MkDocs NG takes 11.1 seconds, ProperDocs 32.1 and upstream 1.6.1 34.2: a third of the time. Without caches it is also faster than the Rust-based Zensical (15.9 seconds).
+With Material, MkDocs NG takes 11.1 seconds against 34.2 for upstream 1.6.1, about a third of the time.
 
-Two things to be clear about:
+This is one benchmark on one kind of site, and the picture changes with caching:
 
 - Zensical has a build cache. **With its cache kept** it takes only 5.7 seconds, faster than us. MkDocs NG has no cache between builds yet.
 - From editing a page in `serve` to seeing the result, Zensical and MkDocs NG (default theme) both take 1.2 seconds, a tie.
 
-The method and script are public under [Build speed](https://mkdocs-ng.org/about/comparison/#build-speed). Feel free to run it on your own machine.
+The method and script are public under [Build speed](https://mkdocs-ng.org/about/comparison/#build-speed). Your own site may behave differently, so feel free to run it on your machine, and if you spot a mistake in how any tool is set up, please tell me and I'll fix it.
 
 From 1.6.1 to 1.11 the language didn't change; it's still Python. All of the speed-up comes from changes like not re-rendering the navigation for every page and not recomputing pages that didn't change.
 
@@ -183,22 +175,23 @@ For a new docs site, intranet or offline hosting, or one design for docs, landin
 
 I also turned the MkDocs plugin catalog into a website: [catalog.mkdocs-ng.org](https://catalog.mkdocs-ng.org/).
 
-It updates itself every week, ranks projects by downloads and activity, and marks the plugins tested on MkDocs NG. It also discovers new plugins on PyPI automatically: after this week's update it will list more than 470 plugins, themes and Markdown extensions. For comparison, [mkdocs/catalog](https://github.com/mkdocs/catalog) and [ProperDocs/catalog](https://github.com/ProperDocs/catalog) list about 300 each. As far as I know, it is the most complete MkDocs plugin directory today.
+It updates itself every week, ranks projects by downloads and activity, and marks the plugins tested on MkDocs NG. It also discovers new plugins on PyPI automatically, so after this week's update it lists more than 470 plugins, themes and Markdown extensions. It's open to everyone, so I hope it's useful whichever MkDocs-based tool you use.
 
 If your plugin isn't there, please [open an issue](https://github.com/mkdocs-ng/catalog/issues).
 
 ## Which way to go
 
-If your docs still run on MkDocs, my advice is: don't stay where you are.
+If your docs still run on MkDocs 1.6.1, my advice is to plan a move.
 
-1.6.1 still builds today, and the code is still there. But upstream no longer updates it: security fixes in dependencies and newly found bugs, nobody handles them. The software supply chain keeps moving. Stand still, and you no longer connect to it. That's close to running naked on the internet, and I don't think that's an exaggeration.
+1.6.1 still builds today. But it hasn't had a release in over two years, so security fixes in dependencies and newly found bugs don't reach it. The software supply chain keeps moving, and the gap only grows the longer you stay.
 
-Moving on, there are two paths today:
+There are several good options, and the right one depends on your site:
 
-1. **MkDocs NG**: change one dependency line; plugins, config and CI stay as they are. Almost all of upstream's leftover issues are fixed, and clean builds are the fastest.
-2. **Try Zensical**: it's backed by the original Material team. The cost: it's still at 0.0.x and doesn't run MkDocs plugins, only native rewrites of about thirty popular ones, so check that the plugins you use are among them before migrating.
+1. **MkDocs NG**: change one dependency line; plugins, config and CI stay as they are. Most of the long-standing upstream issues are fixed, and clean builds are fast.
+2. **Zensical**: built by the original Material team, with a Rust core and fast cached builds. It's still at 0.0.x and doesn't run MkDocs plugins, only native rewrites of about thirty popular ones, so check that the plugins you use are among them before migrating.
+3. **ProperDocs**: led by a former MkDocs maintainer and staying close to 1.6, with its own package and command name.
 
-I won't say much about ProperDocs. I forked instead of building on it because, to put it bluntly, I'm not in favor of its code or its direction. It hasn't released in more than 8 months; whether it can keep going, you can judge for yourself.
+I started my own fork instead of building on ProperDocs because I had different ideas about where to take it. That's one of the good things about open source: people can try different directions, and users get to choose.
 
 ## How to switch
 
