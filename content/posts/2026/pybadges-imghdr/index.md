@@ -77,7 +77,7 @@ sudo apt install python3-pybadges
 
 ## 办法三：换成 badgepy
 
-[badgepy][badgepy] 是 pybadges 的延续版本，一直有人维护。当初我有个项目要用 pybadges，碰到几个 bug，issue 提了也没人回，就 fork 了一份自己修。
+[badgepy][badgepy] 是 pybadges 的延续版本，一直有人维护。
 
 `badge()` 的参数和顺序没变，命令行参数也没变。同样的参数生成的 SVG 逐字节相同，只有迁移指南里列出的两处 bug 修复例外。它不依赖 `imghdr` 和 `pkg_resources`，支持 Python 3.10 到 3.15，和 pybadges 一样是 Apache-2.0 协议。
 

@@ -77,7 +77,7 @@ This only helps code that runs on the system Python. A `pip install` in a virtua
 
 ## Option 3: switch to badgepy
 
-[badgepy][badgepy] is a maintained continuation of pybadges. I forked it when I needed pybadges for a project and its open issues had stopped getting answers. The `badge()` function takes the same arguments in the same order, the command line takes the same flags, and for the same arguments the SVG is the same, byte for byte, apart from two bug fixes listed in the migration guide. It doesn't use `imghdr` or `pkg_resources`, supports Python 3.10 to 3.15, and is Apache-2.0 licensed like pybadges.
+[badgepy][badgepy] is a maintained continuation of pybadges. The `badge()` function takes the same arguments in the same order, the command line takes the same flags, and for the same arguments the SVG is the same, byte for byte, apart from two bug fixes listed in the migration guide. It doesn't use `imghdr` or `pkg_resources`, supports Python 3.10 to 3.15, and is Apache-2.0 licensed like pybadges.
 
 For most projects the change is two lines:
 
