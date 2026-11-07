@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from gen_demo_css import BEGIN, CSS_PATH, END, build, splice, vis
 
-PARTIALS = os.path.join(os.path.dirname(CSS_PATH), "..", "..", "layouts", "partials", "home")
+PARTIALS = os.path.join(os.path.dirname(CSS_PATH), "..", "..", "overrides", "partials", "home")
 
 
 def read_css():

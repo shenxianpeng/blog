@@ -2,7 +2,7 @@
 """Generate the CSS for the home page's animated product demos.
 
 The cpp-linter, AccessLens and Agent8 demos
-(layouts/partials/home/demo-{cpp-linter,accesslens,agent8}.html) are pure CSS. Each element that appears, swaps or
+(overrides/partials/home/demo-{cpp-linter,accesslens,agent8}.html) are pure CSS. Each element that appears, swaps or
 moves has its own keyframes, and a scene change touches dozens of them, so the
 timelines live here as plain data -- "visible from 26% to 49% of the loop",
 "cursor at (474, 238) at 42%" -- and this script writes the CSS.

@@ -120,7 +120,7 @@ Caused by: javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.h: PKIX path 
   -alias cacertalias \
   -keystore /usr/java8_64/jre/lib/security/cacerts \
   -file /path/to/your/certificate.pem
-````
+```
 
 奇怪的是，在 **Windows、Linux 和 AIX 7.3** 构建机上无法复现该问题。
 

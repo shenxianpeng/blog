@@ -4,10 +4,11 @@ This describes what the site runs. Implementation:
 
 | What | Where |
 |---|---|
-| Colours (light and dark) | `assets/css/schemes/evergreen.css`, selected by `colorScheme` in `config/_default/params.toml` |
-| Fonts | loaded in `layouts/partials/extend-head.html`, stacks in `assets/css/custom.css` |
-| Home page | `layouts/partials/home/landing.html`, `layouts/index.html`, `layouts/partials/recent-articles/main.html`, styles `.home-*` in `assets/css/custom.css`, content in the front matter of `content/_index.en.md` and `content/_index.md` |
-| Home demos | `layouts/partials/home/demo-cpp-linter.html`, `demo-keelhaven.html`, `demo-accesslens.html`, `demo-agent8.html`; CSS under "Animated demos" in `custom.css` |
+| Theme | [Sumi](https://sumi.mkdocs-ng.org/) on MkDocs NG; how Sumi looks here is `assets/css/sumi-evergreen.css` |
+| Colours (light and dark) | `assets/css/schemes/evergreen.css`, mapped onto Sumi's variables in `assets/css/sumi-evergreen.css` |
+| Fonts | loaded in `overrides/main.html`, stacks in `assets/css/sumi-evergreen.css` |
+| Home page | `overrides/home.html`, styles `.home-*` in `assets/css/custom.css`, content in the front matter of `content/index.en.md` and `content/index.md` |
+| Home demos | `overrides/partials/home/demo-cpp-linter.html`, `demo-keelhaven.html`, `demo-accesslens.html`, `demo-agent8.html`; CSS under "Animated demos" in `custom.css` |
 
 ## Direction
 
@@ -30,9 +31,10 @@ Deliberately avoided, because they read as AI-generated:
 Cool grey-green paper, green-black ink, one forest-green accent. Green is the
 colour of a passing check, which is what the site's projects are about.
 
-Blowfish reads the scheme as RGB triplets on a neutral / primary / secondary
-scale. Light pages use `--color-neutral` as background and `neutral-900` as
-text; dark pages use `neutral-800` and `--color-neutral`.
+The scheme is RGB triplets on a neutral / primary / secondary scale (the home
+page and post footer use them as `rgb(var(--color-…))`); `sumi-evergreen.css`
+gives Sumi the same values. Light pages use `--color-neutral` as background and
+`neutral-900` as text; dark pages use `neutral-800` and `--color-neutral`.
 
 | Role | Light | Dark |
 |---|---|---|
@@ -69,20 +71,18 @@ English pages do not download it.
 
 ## Layout
 
-From the `lg` breakpoint the body is padded 4rem a side (Blowfish uses 8rem),
-giving 72rem of content. Full-bleed bands (`.home-band`) span the viewport and
+The header, footer, post lists and home page are 72rem wide. Full-bleed bands (`.home-band`) span the viewport and
 pad their content back to the same 72rem, so everything lines up with the
 header.
 
-The header is Blowfish's `fixed-fill` layout: a solid bar in the page colour
-with a 1px rule under it. The `fixed` layout's translucent, blurred bar let
-bright content smear through.
+The header is a solid bar in the page colour with a 1px rule under it, with
+Posts · Projects · About as tabs; on phones they move into a drawer. A
+translucent, blurred bar would let bright content smear through.
 
-Chinese article text keeps Blowfish's `max-w-prose` measure, about 35
-characters a line. English is capped at 37rem (592px, roughly 70 characters),
-and the series boxes with it: `max-w-prose` is 65ch, and Newsreader's "0",
-which `ch` measures, is a third wider than its average letter, so the theme's
-column ran 79–91. Article titles and headings use `text-wrap: balance`.
+Articles use Sumi's layout: the text column in the middle, the table of
+contents on the right. Chinese article text runs about 35 characters a line.
+English is capped at 37rem (592px, roughly 70 characters), and the series
+boxes with it. Article titles and headings use `text-wrap: balance`.
 
 ## Home page
 
@@ -112,14 +112,13 @@ Styles `.post-footer-*` in `custom.css`.
 
 ## Rules
 
-- Change colours in `evergreen.css`, not in component CSS. Components use
-  `rgb(var(--color-…))`.
-- The theme's compiled Tailwind only contains the utilities the theme uses.
-  New components need plain CSS in `custom.css`, not new Tailwind classes.
+- Change colours in `evergreen.css` (and its Sumi mapping), not in component
+  CSS. Components use `rgb(var(--color-…))` or Sumi's `--sumi-…` variables.
+- New components are plain CSS in `custom.css`.
 - One accent. No gradient washes on page surfaces (the Keelhaven demo's
   desktop backdrop is the one gradient), no emoji, no left-border callouts.
 - Show a product by animating what it does (`demo: <name>` in front matter
-  renders `layouts/partials/home/demo-<name>.html`), not with an
+  renders `overrides/partials/home/demo-<name>.html`), not with an
   illustration. Demos are pure CSS loops (12–20s), fixed-pixel layouts scaled
   with `zoom` on small screens, and fall back to one static frame under
   `prefers-reduced-motion`. The Keelhaven demo is ported from keelhaven.app;

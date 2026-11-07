@@ -1,0 +1,51 @@
+{#- "From the author" and "Follow", at the end of posts and essays. Projects are
+    chosen by tag from data/postfooter.yaml (loaded by hooks/site.py), which
+    also holds the copy. Clicks are reported as project_click / follow_click
+    by assets/js/site.js. -#}
+{%- set d = config.extra.postfooter %}
+{%- set lang = config.extra.lang %}
+{%- if d and sumi.post %}
+{%- set labels = d.labels[lang] or d.labels.en %}
+{%- set ns = namespace(picked=[]) %}
+{%- for tag in sumi.post.tags %}
+  {%- for proj in d.projects %}
+    {%- if (tag | lower) in proj.tags and proj.id not in ns.picked and ns.picked | length < 2 %}
+      {%- set ns.picked = ns.picked + [proj.id] %}
+    {%- endif %}
+  {%- endfor %}
+{%- endfor %}
+{%- if not ns.picked %}{% set ns.picked = [d.fallback] %}{% endif %}
+{%- set campaign = page.url.rstrip('/').split('/')[-1] %}
+<aside class="post-footer">
+  <section class="post-footer-block" data-ga-placement="post_footer">
+    <h2 class="post-footer-label">{{ labels.projects }}</h2>
+    <div class="post-footer-cards">
+      {%- for id in ns.picked %}
+      {%- for proj in d.projects if proj.id == id %}
+      <a class="post-footer-card" data-ga-project="{{ proj.id }}" href="{{ proj.url }}?utm_source=blog&amp;utm_medium=post-footer&amp;utm_campaign={{ campaign | urlencode }}">
+        <span class="post-footer-name">{{ proj.name }}</span>
+        <span class="post-footer-desc">{{ proj.text[lang] or proj.text.en }}</span>
+        <span class="post-footer-more">{{ labels.more }} ›</span>
+      </a>
+      {%- endfor %}
+      {%- endfor %}
+    </div>
+  </section>
+  <section class="post-footer-block post-footer-follow" data-ga-placement="post_footer">
+    <h2 class="post-footer-label">{{ labels.follow }}</h2>
+    <div class="post-footer-follow-body">
+      {%- if lang == 'zh-cn' %}
+      <img class="post-footer-qr" src="/img/qrcode.jpg" width="120" alt="{{ labels.qrAlt }}" loading="lazy">
+      {%- endif %}
+      <div>
+        <p class="post-footer-follow-text">{{ labels.followText }}</p>
+        <p class="post-footer-follow-links">
+          {%- for f in d.follow[lang] or d.follow.en %}
+          <a href="{{ f.url }}" data-ga-follow="{{ f.method }}">{{ f.label }}</a>
+          {%- endfor %}
+        </p>
+      </div>
+    </div>
+  </section>
+</aside>
+{%- endif %}

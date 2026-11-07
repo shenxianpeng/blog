@@ -14,3 +14,4 @@ resources/
 
 **/*/__pycache__/
 .gstack/
+site/

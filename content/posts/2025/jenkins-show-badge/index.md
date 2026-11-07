@@ -23,7 +23,7 @@ publishHTML([
     reportName: "Documentation",
     useWrapperFileDirectly: true
 ])
-````
+```
 
 然而，一些来自 Shields.io 的徽章在已发布的文档中无法正常显示。
 

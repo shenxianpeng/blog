@@ -21,7 +21,7 @@ ansible_ssh_pass=
 ansible_connection=winrm
 ansible_winrm_transport=ntlm
 ansible_winrm_server_cert_validation=ignore
-````
+```
 
 但是，当我运行 playbook 时，出现了如下错误：
 

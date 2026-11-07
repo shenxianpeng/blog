@@ -1,5 +1,5 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+# Build the site with MkDocs NG and the Sumi theme, and deploy it to GitHub Pages
+name: Deploy site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -30,37 +30,22 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.165.0
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Setup Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
-          fetch-depth: 0  # fetch all history for .GitInfo and .Lastmod
-          submodules: true
-      - name: Setup Go
-        uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
-        with:
-          go-version: '1.24'
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
-      - name: Setup Hugo
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Build with Hugo
-        env:
-          # For maximum backward compatibility with Hugo modules
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-        run: |
-          hugo --gc --minify --baseURL "https://shenxianpeng.dev/"
-      - name: Keep the English feed at its old address
-        # The English feed moved from /en/index.xml to /index.xml when English
-        # became the default language. An XML file cannot redirect on GitHub
-        # Pages, so publish a copy for readers still subscribed to the old path.
-        run: cp public/index.xml public/en/index.xml
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: site-requirements.txt
+      - name: Install MkDocs NG and Sumi
+        run: pip install -r site-requirements.txt
+      - name: Build
+        # hooks/site.py also writes the old addresses (/en/…, Chinese pages at
+        # the root, /categories/…) as redirects, and copies the English feed
+        # to /en/index.xml.
+        run: mkdocs build --site-dir public
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
         with:

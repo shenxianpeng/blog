@@ -1,0 +1,19 @@
+{#- Projects: the bundles in content/portfolio/, collected by hooks/site.py,
+    as cards that link out. -#}
+{% extends "main.html" %}
+{% block content %}
+<div class="sumi-blog portfolio" data-view="cards">
+  <header class="sumi-blog-head sumi-prose"><h1>{{ page.title }}</h1>{{ page.content }}</header>
+  <ol class="sumi-post-list">
+    {%- for p in config.extra.portfolio %}
+    <li class="sumi-post-card">
+      <a class="sumi-post-link" href="{{ p.url | url }}"{% if p.external %} target="_blank" rel="noopener"{% endif %} data-ga-project="{{ p.title | lower }}">
+        <div class="sumi-post-cover" aria-hidden="true">{% if p.image %}<img src="{{ p.image | url }}" alt="" loading="lazy" decoding="async">{% endif %}</div>
+        <h2 class="sumi-post-title">{{ p.title }}{% if p.external %} <span class="portfolio-ext" aria-hidden="true">↗</span>{% endif %}</h2>
+        <p class="sumi-post-excerpt">{{ p.summary }}</p>
+      </a>
+    </li>
+    {%- endfor %}
+  </ol>
+</div>
+{% endblock %}

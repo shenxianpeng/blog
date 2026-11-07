@@ -21,7 +21,7 @@ Yet in the git history of 20 large open-source projects, only **13.2%** of the c
 
 I don't believe the contributors to these projects aren't using AI. The likelier explanation is that many of them use it and don't say so.
 
-![Pooled share, pooled share excluding VS Code, and median project](fig1-index.en.png)
+![Pooled share, pooled share excluding VS Code, and median project](fig1-index.png)
 
 ## Used, but not disclosed
 
@@ -39,7 +39,7 @@ Since January 2026, pandas has required contributors to disclose AI use, naming 
 
 (This table comes from auditing each repository commit by commit, by author date; its counts match the tables below.)
 
-![Share of 2026 Q3 AI-marked commits from the single top author](fig4-concentration.en.png)
+![Share of 2026 Q3 AI-marked commits from the single top author](fig4-concentration.png)
 
 Same rules, same tools within reach, and one person discloses on nearly every commit while most people disclose on none. I find it hard to believe that only one or two people in each of these projects use AI.
 
@@ -132,11 +132,11 @@ The pooled share adds up the commits of all 20 projects, so the large ones weigh
 
 "Most-named assistant" comes from the data's `all_time.assistants`, over each project's whole history, not just this quarter. FastAPI has 3 marked commits in all, one each for Claude, Cursor and Copilot.
 
-![2026 Q3 ranking](fig3-ranking-2026q3.en.png)
+![2026 Q3 ranking](fig3-ranking-2026q3.png)
 
 ## By ecosystem
 
-![Quarterly trend by ecosystem](fig2-ecosystems.en.png)
+![Quarterly trend by ecosystem](fig2-ecosystems.png)
 
 ### The AI coding tools themselves: the lowest numbers, and falling
 

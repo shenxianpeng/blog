@@ -2,11 +2,15 @@ default: dev
 
 d: dev
 dev:
-	hugo serve --buildFuture
+	mkdocs serve
 
 b: build
 build:
-	hugo build
+	mkdocs build
+
+# Install what the site needs to build
+install-site:
+	pip3 install -r site-requirements.txt
 
 # Install dependencies for translation
 install-deps:
@@ -24,18 +28,14 @@ checkpoint:
 	@git push
 	@echo Checkpoint created and pushed to remote
 
-# Update submodules
-update-submodules:
-	@git submodule update --init --recursive
-
 # make help
 help:
 	@echo "Available targets:"
-	@echo "  dev               Serve the site with Hugo (including future content)"
-	@echo "  build             Build the site with Hugo"
+	@echo "  install-site      Install MkDocs NG, Sumi and the Markdown extensions"
+	@echo "  dev               Serve the site with live reload"
+	@echo "  build             Build the site into site/"
 	@echo "  install-deps      Install dependencies for translation"
 	@echo "  translate         Auto translate Chinese posts to English (requires Gemini API key)"
 	@echo "  checkpoint        Create a git checkpoint with a timestamp"
-	@echo "  update-submodules Update git submodules"
 
-.PHONY: dev build install-deps translate checkpoint update-submodules help
+.PHONY: dev build install-site install-deps translate checkpoint help

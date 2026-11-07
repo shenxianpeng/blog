@@ -33,15 +33,15 @@ It defines the **characteristics and metrics** of different maturity levels, so 
 
 Key points:
 
-![Key Points](keypoints.en.png)
+![Key Points](keypoints.png)
 
 The specification covers **basics, quality, security, supply chain security, analytics and reporting**, with actionable assessment items for each part:
 
-![Specification](spec.en.png)
+![Specification](spec.png)
 
 For results, instead of complex percentages or scores, we use **badge levels** to motivate teams to keep improving:
 
-![Badge Levels](level.en.png)
+![Badge Levels](level.png)
 
 More details can be found on the official site 👉 https://devops-maturity.github.io/en/
 

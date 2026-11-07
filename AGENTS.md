@@ -1,17 +1,17 @@
 # AGENTS.md — Xianpeng Shen's Blog
 
-Instructions for AI coding agents working on this repository. This is a personal technical blog built with Hugo + Blowfish theme, deployed to GitHub Pages. The blog covers AI, DevOps, CI/CD, and Open Source.
+Instructions for AI coding agents working on this repository. This is a personal technical blog built with MkDocs NG and the Sumi theme, deployed to GitHub Pages. The blog covers AI, DevOps, CI/CD, and Open Source.
 
 ## Project Overview
 
-- **Framework:** Hugo static site generator with Blowfish theme
-- **Toolchain:** Hugo **extended** 0.162–0.165 (CI pins 0.165.0 in
-  `.github/workflows/pages.yaml`; Netlify previews take theirs from a
-  `HUGO_VERSION` variable in the Netlify UI) and Blowfish **v3.6.0** as a git
-  submodule in `themes/blowfish/`. Blowfish 3 does not build on older Hugo.
-  The one build warning left, `module.mounts.lang` being deprecated, is
-  expected: that mount is what makes `index.md` Chinese (see [URL
-  layout](#url-layout)); moving to `sites.matrix` is a separate job.
+- **Framework:** [MkDocs NG](https://mkdocs-ng.org/) with the
+  [Sumi](https://sumi.mkdocs-ng.org/) theme, both from the same maintainer
+  (moved from Hugo + Blowfish in 2026-11). Configuration is `mkdocs.yml`;
+  the build needs only Python (`pip install -r site-requirements.txt`).
+- **Site code:** `hooks/site.py` (Hugo habits MkDocs lacks: drafts, the
+  Projects cards, series pages, old-address redirects, static files) and
+  `overrides/` (templates: home page, Projects, post footer, footer,
+  analytics). Prefer a Sumi option or an override over new hook code.
 - **Deployment:** GitHub Pages (`shenxianpeng.dev`)
 - **Languages:** Bilingual — Chinese (zh-cn, written first) + English (en, the
   site's default language)
@@ -39,27 +39,26 @@ one of them; fix whichever is wrong, and keep the two in step.
 
 Where it lives:
 
-- **Colours:** `assets/css/schemes/evergreen.css`, selected by `colorScheme` in
-  `config/_default/params.toml`. Change a colour there, never in component CSS.
-- **Fonts:** Google Fonts `<link>` in `layouts/partials/extend-head.html`,
-  font stacks at the top of `assets/css/custom.css`.
-- **Site components:** plain CSS in `assets/css/custom.css`. The theme ships
-  pre-compiled Tailwind containing only the utilities the theme itself uses, so
-  a Tailwind class that appears nowhere in `themes/blowfish/` does nothing.
-- **Width:** `custom.css` narrows Blowfish's `lg` body padding to 4rem a side
-  (72rem of content); the home page's full-bleed bands align to that.
+- **Colours:** `assets/css/schemes/evergreen.css` holds the palette;
+  `assets/css/sumi-evergreen.css` maps it onto Sumi's variables (light and
+  dark). Change a colour there, never in component CSS.
+- **Fonts:** Google Fonts `<link>` in `overrides/main.html`, font stacks at the
+  top of `assets/css/sumi-evergreen.css`.
+- **Site components:** plain CSS in `assets/css/custom.css` (home page, demos,
+  post footer) and `assets/css/sumi-evergreen.css` (how Sumi's header, cards,
+  posts and lists look here). Both are loaded by `overrides/main.html`.
+- **Width:** the header, footer, lists and home page are 72rem wide; the home
+  page's full-bleed bands align to that.
 
-The home page overrides Blowfish's `landing` layout
-(`layouts/partials/home/landing.html`) plus `layouts/index.html` and
-`layouts/partials/recent-articles/main.html`. All of its copy is front matter
-in `content/_index.en.md` and `content/_index.md`: `title` (and optional
+The home page is `overrides/home.html` (`template: home.html`). All of its copy
+is front matter in `content/index.en.md` and `content/index.md`: `title` (and optional
 `heroTitle` for a manual line break), `heroLead`, `heroButtons`, `heroAlso`
 (one quiet line; with `stages` it walks commit → review → build → release
 like the GitHub profile banner, each stage followed by its projects),
 `flagship`
 (the dark cpp-linter band), `products`, `writing` and `sponsor`. The Chinese
 page's body holds the WeChat QR section. `demo: <name>` on the flagship or a
-product renders `layouts/partials/home/demo-<name>.html`, a pure-CSS animation
+product renders `overrides/partials/home/demo-<name>.html`, a pure-CSS animation
 of the tool at work: cpp-linter (thread comment, PR review, step summary,
 auto-fix), Keelhaven (ported from keelhaven.app) and keelapps (AccessLens
 permission audit) and Agent8 for keelinfra (install.sh on an AIX host, then
@@ -73,21 +72,20 @@ build → release stages, cpp-linter as the flagship, and keelinfra (Agent8) /
 keelapps / Keelhaven as the products, in that order.
 
 Every post and essay ends with a **post footer**
-(`layouts/partials/post-footer.html`, rendered from the
-`sharing-links.html` override): "From the author", up to two project cards
+(`overrides/partials/post-footer.html`, Sumi's post-footer slot): "From the author", up to two project cards
 picked by the post's tags, and "Follow" (RSS, GitHub, X, LinkedIn; on Chinese
 pages the WeChat QR code instead of X and LinkedIn). The tag-to-project map
 and all its copy are in `data/postfooter.yaml`; add a tag there rather than in
 the template.
 
-For other visual work: prefer a theme config option in
-`config/_default/params.toml` over new CSS, and prefer a `layouts/` override
-over touching `themes/blowfish/`.
+For other visual work: prefer a Sumi option in `mkdocs.yml` over new CSS, and
+prefer CSS or an `overrides/` template over hook code. A gap that other Sumi
+sites would hit too belongs in Sumi itself (github.com/mkdocs-ng/mkdocs-sumi).
 
 ## Analytics
 
-Google Analytics 4 (`googleAnalytics` in `hugo.toml`), production builds only.
-`layouts/partials/analytics/ga.html` overrides the theme's snippet:
+Google Analytics 4 (`extra.analytics` in `mkdocs.yml`), on shenxianpeng.dev
+only, never on previews or local builds. `overrides/partials/analytics.html`:
 
 - **Owner visits.** Opening any page with `?internal=1` stores `sxp-internal`
   in that browser's localStorage, and every hit from it then carries
@@ -96,7 +94,7 @@ Google Analytics 4 (`googleAnalytics` in `hugo.toml`), production builds only.
 - **Bots.** Every hit carries `webdriver: "true" | "false"` from
   `navigator.webdriver`. It is reported, not used to block anything.
 
-`layouts/partials/extend-footer.html` reports two events from link clicks:
+`assets/js/site.js` reports two events from link clicks:
 `project_click` (`project`, `placement`, `link_url`) for links to the
 author's projects, matched by domain, and `follow_click` (`method`,
 `placement`, `link_url`) for RSS, the GitHub profile, X, LinkedIn and email.
@@ -296,9 +294,9 @@ The `index.en.md` version should have:
 
 ### Cover image (`featured.jpg`)
 
-Every post has one, in the post's own directory. It is **not** decoration: Hugo
-publishes it as the `og:image` and `twitter:image` for the post, and Blowfish
-also derives the list-page card thumbnail from it. Get it wrong and both the
+Every post has one, in the post's own directory. It is **not** decoration: Sumi
+publishes it as the `og:image` and `twitter:image` for the post, and uses it as
+the card picture on list pages. Get it wrong and both the
 social preview and the article list suffer.
 
 | | |
@@ -308,10 +306,9 @@ social preview and the article list suffer.
 | **Format** | JPEG, quality 85, progressive |
 | **File size** | Target under 200 KB. Over 300 KB means something is wrong |
 
-Why 3:2 specifically: Blowfish renders cards with `.Resize "600x"` — it sets the
-width and lets the height follow the source aspect ratio. A square or portrait
-cover makes that one card taller than its neighbours and the grid loses its
-rhythm. Every cover being 3:2 is what keeps the list aligned.
+Why 3:2 specifically: the cards show the cover at 3:2 and crop anything else,
+so a square or portrait cover loses its top and bottom. Every cover being 3:2
+is what keeps the list looking as designed.
 
 Why the size cap: this file is the `og:image`. Social crawlers fetch it with
 tight size and timeout limits, so a multi-megabyte cover risks the preview card
@@ -370,39 +367,36 @@ English became the default content language in 2026-09. Before that Chinese was
 at `/` and English under `/en/`.
 
 - **File names still decide the language.** `index.md` is Chinese, `index.en.md`
-  is English. `config/_default/module.toml` mounts `content/` with
-  `lang = "zh-cn"`, which makes Chinese the language of un-suffixed files even
-  though the default language is English. Do not rename files to
-  `index.zh-cn.md`; the WeChat, dev.to and Medium sync workflows and
-  `make translate` all rely on the current names.
-- **Keep it a single mount.** Mounting `content/` once per language puts bundle
-  images in both mounts, and Hugo 0.154.5 panics
-  (`contentNodeShifter.Delete`) as soon as such a bundle is a draft.
-- **Old URLs redirect.** `layouts/partials/legacy-redirects.html` writes a
-  meta-refresh page for every old address at build time: `/en/<path>/` to
+  is English. In `mkdocs.yml`, `zh-cn` has `source: true`, which makes Chinese
+  the language of un-suffixed files even though English is the default
+  language. Do not rename files to `index.zh-cn.md`; the WeChat, dev.to and
+  Medium sync workflows and `make translate` all rely on the current names.
+- **Images in an English post** are referenced by their plain name
+  (`chart.png`), never `chart.en.png`: a `.en.` file is the English version of
+  `chart.png`, and is picked automatically.
+- **Old URLs redirect.** `hooks/site.py` writes a meta-refresh page for every
+  old address at build time: `/en/<path>/` to
   `/<path>/`, and `/<path>/` to `/zh-cn/<path>/` for Chinese pages that have no
   English page at that path. Nothing goes in front matter. A Chinese post's old
   URL serves its English version once one exists.
 - **Hexo URLs.** Before 2025-08 posts lived at `/YYYY/MM/slug/`. Those
   addresses are front-matter `aliases`, on `index.md` when the Hexo post was
   Chinese and on `index.en.md` when it was English. A Hexo address that is not
-  an alias falls through to `layouts/404.html`, which tries the post with the
-  same year and slug in the browser; that helps readers, not search engines,
-  so give a surviving post its alias.
+  an alias gets the 404 page, so give a surviving post its alias.
 - **The résumé moved** from `/hireme/` to `/resume/` in 2026-09. `/hireme/`,
   `/en/hireme/` and `/zh-cn/hireme/` are front-matter `aliases` on the two
-  résumé pages; `/resume-cn` is a static page in `static/resume-cn/`, because
-  Hugo writes a Chinese page's aliases under `/zh-cn/` and cannot reach the root.
-- **Feeds.** English is `/index.xml`, Chinese is `/zh-cn/index.xml`. The Pages
-  workflow copies the English feed to `/en/index.xml`, its old address.
+  résumé pages (an alias that starts with `/` is from the site root);
+  `/resume-cn` is a static page in `static/resume-cn/`.
+- **Feeds.** English is `/index.xml`, Chinese is `/zh-cn/index.xml`, both RSS
+  with every post. `hooks/site.py` copies the English feed to `/en/index.xml`,
+  its old address.
 - **Comments.** Giscus threads are keyed by the pre-2026-09 path
-  (`posts/x/` for Chinese, `en/posts/x/` for English) in
-  `layouts/partials/comments.html`, so the two languages never share a thread.
+  (`posts/x/` for Chinese, `en/posts/x/` for English), set as `comments_term`
+  by `hooks/site.py`, so the two languages never share a thread.
 - **Linking between posts.** In a Chinese post link to `/zh-cn/posts/…`; in an
   English post link to `/posts/…`. A Chinese post that links to `/posts/…` sends
   its reader to the English version.
-- **404.** GitHub Pages serves only the root `404.html` (the English one), so
-  `layouts/404.html` is bilingual and links to both home pages.
+- **404.** GitHub Pages serves only the root `404.html` (the English one).
 
 ## Bilingual Content Management
 
@@ -419,20 +413,24 @@ at `/` and English under `/en/`.
 - The structure (headings, sections) should mirror the Chinese version
 - Tone in English: same conversational but technically precise style
 
-## Hugo & Build Rules
+## Build Rules
 
 ### Local Development
 ```bash
-make dev     # hugo serve --buildFuture (includes future-dated posts)
-make build   # hugo build (production build, excludes future dates)
+make install-site   # pip install -r site-requirements.txt
+make dev            # mkdocs serve
+make build          # mkdocs build: the production build, into site/
 ```
 
-### Content Rules for Hugo
+### Content Rules
 - All content files go under `content/` with the required directory structure
 - Static assets (images, downloads) go under `static/`
 - Images in posts: use relative paths or absolute `/img/` paths
-- Never modify theme files directly in `themes/blowfish/` — use `layouts/` overrides
-- Do not create posts with future dates unless actively drafting for scheduled publishing
+- Markdown is Python-Markdown, not Goldmark: a code block inside a list item
+  is indented under it, and a fence closes with the same number of backticks
+  it opened with
+- No Hugo shortcodes (`{{</* … */>}}`): use Markdown, HTML or Sumi's syntax
+- `draft: true` keeps a post out of the build
 
 ## Before Committing
 
@@ -442,7 +440,7 @@ make build   # hugo build (production build, excludes future dates)
 - [ ] Front matter complete: title, summary, tags, authors, date
 - [ ] Date is correct and matches directory year
 - [ ] All links are valid (no broken GitHub links, no 404s)
-- [ ] All internal links use relative paths or `{{</* ref */>}}` shortcodes
+- [ ] All internal links use relative paths or site paths (`/zh-cn/posts/…`)
 - [ ] Code blocks have language specifiers
 - [ ] Images have alt text
 - [ ] No emojis in body text
@@ -450,11 +448,10 @@ make build   # hugo build (production build, excludes future dates)
 
 ### Technical Checks
 ```bash
-# Build check (catches Hugo errors, shortcode issues, broken refs)
+# Build check (catches Markdown, link and template errors)
 make build
 
-# If build errors exist, fix them before committing
-# Common issues: broken shortcodes, invalid refs, missing templates
+# If the build fails or warns about a missing file, fix it before committing
 ```
 
 ### Git Rules
