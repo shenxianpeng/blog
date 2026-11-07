@@ -26,7 +26,7 @@ layoutBackgroundHeaderSpace: false
 
 ## 开源
 
-- [cpp-linter](https://github.com/cpp-linter)：每个 PR 上跑 clang-format 和 clang-tidy。GitHub 上有 1000 多个仓库依赖它，包括 Apache、Samsung、Qualcomm、Bloomberg 的项目。所用的工具来自我维护的[静态二进制](https://github.com/cpp-linter/clang-tools-static-binaries)，每个 LLVM 版本一个发布，累计下载超过 75 万次。
+- [cpp-linter](https://github.com/cpp-linter)：每个 PR 上跑 clang-format 和 clang-tidy。GitHub 上有 1000 多个仓库依赖它，包括 AWS、Apache、Samsung、Qualcomm、Bloomberg 的项目。所用的工具来自我维护的[静态二进制](https://github.com/cpp-linter/clang-tools-static-binaries)，每个 LLVM 版本一个发布，累计下载超过 75 万次。
 - [commit-check](https://github.com/commit-check/commit-check)：一份策略统一校验提交信息、分支名和 AI 署名，CI 里或 pre-commit 里都能跑。
 - [Conventional Branch](https://conventionalbranch.org)：分支命名规范。
 - jenkinsci 组织下的 [explain-error-plugin](https://github.com/jenkinsci/explain-error-plugin) 和 [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint)：用 AI 解释构建失败，以及不用 Jenkins 服务器也能校验 Jenkinsfile。
