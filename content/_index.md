@@ -43,7 +43,7 @@ flagship:
   demo: "cpp-linter"
   demoLabel: "cpp-linter 在 GitHub PR 上的演示动画：检查失败，cpp-linter 给出 clang-format 修改建议，提交建议后检查通过。"
   usersLabel: "这些机构的项目在用"
-  users: ["Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
+  users: ["AWS", "Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 products:
   title: "掌握在你自己手里的基础设施。"
   text: "给停在 Java 8 的构建机用的 Jenkins agent，跑在你自己租户里的 Atlassian 应用，还有备份到你自己存储的 Mac 备份工具。"
