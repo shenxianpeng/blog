@@ -22,7 +22,7 @@ showAuthor: true
 layoutBackgroundHeaderSpace: false
 ---
 
-Release engineer, based in Vilnius, Lithuania. I build open-source tools that keep software shipping, even after upstream moves on.
+DevOps and release engineer, based in Vilnius, Lithuania. I build open-source tools that keep software shipping, even after upstream moves on.
 
 I have worked on the build, test and release side of software since 2009. AI has made writing code cheap. What comes after the code is as expensive as ever: knowing who, or which agent, made a change, building it on the hosts you actually have, showing where a release came from, and patching it for years. From December 2027 the EU Cyber Resilience Act turns part of that into a legal duty: a manufacturer selling software in the EU has to declare a support period and ship security updates until it ends. The projects below are for that stretch.
 
