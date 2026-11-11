@@ -77,8 +77,8 @@ The About page (`content/about/`) opens with the positioning line, then draws
 the same pipeline as a diagram with the `{{</* pipeline */>}}` shortcode
 (`layouts/shortcodes/pipeline.html`, data in `data/pipeline.yaml`, styles
 `.pipeline-*` in `custom.css`): one dot per stage on a line, five columns on a
-wide screen and a vertical line on a phone. Its stages are the home page's and
-the profile README's; change the three together.
+wide screen and a vertical line on a phone. Its stages are the home page's;
+change the two together.
 
 Every post and essay ends with a **post footer**
 (`layouts/partials/post-footer.html`, rendered from the

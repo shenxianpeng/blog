@@ -3,8 +3,7 @@
 # with the projects that work there. `label` is the diagram's accessible name.
 #
 # The same stages, in the same order, are in heroAlso.stages of
-# content/_index.en.md and content/_index.md and in the GitHub profile README
-# (github.com/shenxianpeng). Change all of them together.
+# content/_index.en.md and content/_index.md. Change them together.
 
 label:
   en: "From commit to release, and long after: the stages and the projects that work at each one."
