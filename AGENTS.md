@@ -68,9 +68,10 @@ Wide product tiles also take `tone` (mint, dark) and `flip: true`. The
 cpp-linter, AccessLens and Agent8 demo CSS is generated
 by `.github/scripts/gen_demo_css.py` into a marked block of `custom.css`:
 change the timelines in the script and rerun it, do not edit the block. Keep that page saying the same thing as the GitHub profile README
-(github.com/shenxianpeng): one positioning line, the same commit → review →
-build → release → support stages, cpp-linter as the flagship, and keelinfra (Agent8) /
-keelapps / Keelhaven as the products, in that order.
+(github.com/shenxianpeng): one positioning line, cpp-linter as the flagship,
+and keelinfra (Agent8) / keelapps / Keelhaven as the products, in that order.
+The stages are for this site only: the profile README lists the projects
+plainly, without stage labels.
 
 The About page (`content/about/`) opens with the positioning line, then draws
 the same pipeline as a diagram with the `{{</* pipeline */>}}` shortcode
