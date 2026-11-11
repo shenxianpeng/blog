@@ -1,7 +1,7 @@
 ---
 title: "把软件稳稳发出去。"
 heroTitle: "把软件稳稳<br>发出去。"
-heroLead: "从 commit 到 release 每一步都用得上的开源工具，不管代码出自人还是 AI agent 之手。发布之后上游不再维护了，我接着维护。2009 年入行，我一直在做构建、测试和发布。"
+heroLead: "帮团队把软件稳稳发出去的开源工具，不管代码出自人还是 AI agent 之手，上游不管了也一样。2009 年入行，我一直在做构建、测试和发布。"
 heroButtons:
   - label: "看项目"
     url: "/zh-cn/portfolio/"

@@ -1,6 +1,6 @@
 ---
 title: "Keep software shipping."
-heroLead: "Open-source tools for every step from commit to release, whether a person or an AI agent wrote the code, and for the years after, when upstream has moved on. I have worked on the build, test and release side of software since 2009."
+heroLead: "Open-source tools that keep software shipping, whether a person or an AI agent wrote the code, even after upstream moves on. I have worked on the build, test and release side of software since 2009."
 heroButtons:
   - label: "See the projects"
     url: "/portfolio/"
