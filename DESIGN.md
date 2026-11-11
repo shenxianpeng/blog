@@ -90,8 +90,8 @@ Top to bottom:
 
 1. **Hero** — centred headline (`title`, or `heroTitle` for a manual line
    break), `heroLead`, pill buttons, and `heroAlso`: one muted line that walks
-   the pipeline from the GitHub profile banner, `commit` → `review` → `build`
-   → `release`, each stage name as a small code chip followed by the projects
+   the pipeline from the GitHub profile, `commit` → `review` → `build` →
+   `release` → `support`, each stage name as a small code chip followed by the projects
    that run there. No image.
 2. **Flagship** — dark full-bleed band for cpp-linter: label, short headline,
    text, links, the animated demo, and the users row.

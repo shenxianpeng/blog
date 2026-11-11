@@ -1,7 +1,7 @@
 ---
-title: "给软件交付装上开源护栏。"
-heroTitle: "给软件交付<br>装上开源护栏。"
-heroLead: "在 commit 和 release 之间把关的检查，不管代码出自人还是 AI agent 之手。2009 年入行，我一直在做构建、测试和发布。"
+title: "把软件稳稳发出去。"
+heroTitle: "把软件稳稳<br>发出去。"
+heroLead: "从 commit 到 release 每一步都用得上的开源工具，不管代码出自人还是 AI agent 之手。发布之后上游不再维护了，我接着维护。2009 年入行，我一直在做构建、测试和发布。"
 heroButtons:
   - label: "看项目"
     url: "/zh-cn/portfolio/"
@@ -9,7 +9,7 @@ heroButtons:
     url: "/zh-cn/posts/"
     style: "outline"
 heroAlso:
-  label: "从 commit 到 release："
+  label: "从 commit 到 release，再到发布之后："
   stages:
     - stage: "commit"
       links:
@@ -31,6 +31,12 @@ heroAlso:
       links:
         - label: "release-ledger"
           url: "https://keelinfra.io/cra/"
+    - stage: "support"
+      links:
+        - label: "Jenkins Extended Security"
+          url: "https://github.com/keelinfra/jenkins-extended-security"
+        - label: "MkDocs NG"
+          url: "https://mkdocs-ng.org/"
 flagship:
   label: "cpp-linter"
   title: "每个 PR 都自动检查。"
