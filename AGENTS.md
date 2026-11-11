@@ -72,6 +72,13 @@ change the timelines in the script and rerun it, do not edit the block. Keep tha
 build → release stages, cpp-linter as the flagship, and keelinfra (Agent8) /
 keelapps / Keelhaven as the products, in that order.
 
+The About page (`content/about/`) opens with the positioning line, then draws
+the same pipeline as a diagram with the `{{</* pipeline */>}}` shortcode
+(`layouts/shortcodes/pipeline.html`, data in `data/pipeline.yaml`, styles
+`.pipeline-*` in `custom.css`): one dot per stage on a line, five columns on a
+wide screen and a vertical line on a phone. Its stages are the home page's and
+the profile README's; change the three together.
+
 Every post and essay ends with a **post footer**
 (`layouts/partials/post-footer.html`, rendered from the
 `sharing-links.html` override): "From the author", up to two project cards

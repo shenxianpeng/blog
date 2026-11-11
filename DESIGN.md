@@ -103,6 +103,16 @@ Top to bottom:
 5. **Page body** — only the Chinese home has one: the WeChat QR code.
 6. **Sponsor** — full-bleed tinted band.
 
+## About page
+
+Opens with the positioning line and one paragraph on why, then the pipeline
+as a diagram (`{{< pipeline >}}`): the banner's line with one dot per stage,
+the stage name as the hero's code chip under each dot, and the projects of
+that stage as accent links below it. Five columns within the article's
+measure; under 35rem the line turns vertical. The line into the last stage,
+`support`, is dashed: it stands for years, where the others stand for minutes.
+Styles `.pipeline-*` in `custom.css`.
+
 ## Post footer
 
 Posts and essays end with "From the author" (one or two project cards, the

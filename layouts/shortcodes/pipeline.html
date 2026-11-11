@@ -1,0 +1,22 @@
+{{- /*
+  {{< pipeline >}}: the pipeline from the home page hero and the GitHub
+  profile, drawn as a diagram: one dot per stage on a line, the stage name
+  under the dot, then the projects that work at that stage. Five columns on a
+  wide screen, a vertical line on a phone. Data: data/pipeline.yaml.
+  Styles: .pipeline-* in assets/css/custom.css.
+  Plain divs with list roles, so the theme's .prose list styles stay out.
+*/ -}}
+{{- $d := hugo.Data.pipeline -}}
+{{- $lang := .Page.Language.Lang -}}
+<div class="pipeline" role="list" aria-label="{{ index $d.label $lang | default $d.label.en }}">
+  {{- range $d.stages }}
+  <div class="pipeline-step" role="listitem">
+    <span class="pipeline-stage">{{ .stage }}</span>
+    <span class="pipeline-projects">
+      {{- range .projects }}
+      <a href="{{ .url | safeURL }}">{{ .name }}</a>
+      {{- end }}
+    </span>
+  </div>
+  {{- end }}
+</div>
