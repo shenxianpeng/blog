@@ -54,8 +54,8 @@ The home page overrides Blowfish's `landing` layout
 `layouts/partials/recent-articles/main.html`. All of its copy is front matter
 in `content/_index.en.md` and `content/_index.md`: `title` (and optional
 `heroTitle` for a manual line break), `heroLead`, `heroButtons`, `heroAlso`
-(one quiet line; with `stages` it walks commit → review → build → release
-like the GitHub profile banner, each stage followed by its projects),
+(one quiet line; with `stages` it walks commit → review → build → release →
+support like the GitHub profile, each stage followed by its projects),
 `flagship`
 (the dark cpp-linter band), `products`, `writing` and `sponsor`. The Chinese
 page's body holds the WeChat QR section. `demo: <name>` on the flagship or a
@@ -68,9 +68,17 @@ Wide product tiles also take `tone` (mint, dark) and `flip: true`. The
 cpp-linter, AccessLens and Agent8 demo CSS is generated
 by `.github/scripts/gen_demo_css.py` into a marked block of `custom.css`:
 change the timelines in the script and rerun it, do not edit the block. Keep that page saying the same thing as the GitHub profile README
-(github.com/shenxianpeng): one positioning line, the same commit → review →
-build → release stages, cpp-linter as the flagship, and keelinfra (Agent8) /
-keelapps / Keelhaven as the products, in that order.
+(github.com/shenxianpeng): one positioning line, cpp-linter as the flagship,
+and keelinfra (Agent8) / keelapps / Keelhaven as the products, in that order.
+The stages are for this site only: the profile README lists the projects
+plainly, without stage labels.
+
+The About page (`content/about/`) opens with the positioning line, then draws
+the same pipeline as a diagram with the `{{</* pipeline */>}}` shortcode
+(`layouts/shortcodes/pipeline.html`, data in `data/pipeline.yaml`, styles
+`.pipeline-*` in `custom.css`): one dot per stage on a line, five columns on a
+wide screen and a vertical line on a phone. Its stages are the home page's;
+change the two together.
 
 Every post and essay ends with a **post footer**
 (`layouts/partials/post-footer.html`, rendered from the

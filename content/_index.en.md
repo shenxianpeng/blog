@@ -1,6 +1,6 @@
 ---
-title: "Open-source guardrails for software delivery."
-heroLead: "The checks that run between a commit and a release, whether a person or an AI agent wrote the code. I have worked on the build, test and release side of software since 2009."
+title: "Keep software shipping."
+heroLead: "Open-source tools that keep software shipping, whether a person or an AI agent wrote the code, even after upstream moves on. I have worked on the build, test and release side of software since 2009."
 heroButtons:
   - label: "See the projects"
     url: "/portfolio/"
@@ -8,7 +8,7 @@ heroButtons:
     url: "/posts/"
     style: "outline"
 heroAlso:
-  label: "From commit to release: "
+  label: "From commit to release, and long after: "
   stages:
     - stage: "commit"
       links:
@@ -30,6 +30,12 @@ heroAlso:
       links:
         - label: "release-ledger"
           url: "https://keelinfra.io/cra/"
+    - stage: "support"
+      links:
+        - label: "Jenkins Extended Security"
+          url: "https://github.com/keelinfra/jenkins-extended-security"
+        - label: "MkDocs NG"
+          url: "https://mkdocs-ng.org/"
 flagship:
   label: "cpp-linter"
   title: "Lint every pull request."

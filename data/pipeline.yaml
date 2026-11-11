@@ -1,0 +1,48 @@
+# The pipeline diagram on the About page ({{< pipeline >}},
+# layouts/shortcodes/pipeline.html): the stages a change goes through, each
+# with the projects that work there. `label` is the diagram's accessible name.
+#
+# The same stages, in the same order, are in heroAlso.stages of
+# content/_index.en.md and content/_index.md. Change them together.
+
+label:
+  en: "From commit to release, and long after: the stages and the projects that work at each one."
+  zh-cn: "从提交到发布，再到发布之后：每个阶段和在这个阶段工作的项目。"
+
+stages:
+  - stage: commit
+    projects:
+      - name: commit-check
+        url: https://commit-check.com/
+      - name: Conventional Branch
+        url: https://conventionalbranch.org/
+
+  - stage: review
+    projects:
+      - name: cpp-linter
+        url: https://cpp-linter.github.io/
+
+  - stage: build
+    projects:
+      - name: explain-error
+        url: https://github.com/jenkinsci/explain-error-plugin
+      - name: jenkinsfilelint
+        url: https://github.com/jenkinsci/jenkinsfilelint
+      - name: Agent8
+        url: https://keelinfra.io/jenkins/
+
+  - stage: release
+    projects:
+      - name: release-ledger
+        url: https://keelinfra.io/cra/
+      - name: clang-tools binaries
+        url: https://github.com/cpp-linter/clang-tools-static-binaries
+
+  # Everything after the release: the line into this stage is dashed, because
+  # it stands for years, not minutes.
+  - stage: support
+    projects:
+      - name: Jenkins Extended Security
+        url: https://github.com/keelinfra/jenkins-extended-security
+      - name: MkDocs NG
+        url: https://mkdocs-ng.org/

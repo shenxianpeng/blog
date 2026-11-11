@@ -114,6 +114,151 @@ samp {
   letter-spacing: 0;
 }
 
+/* ---- Pipeline diagram ---------------------------------------------------
+   {{< pipeline >}} on the About page (layouts/shortcodes/pipeline.html, data
+   in data/pipeline.yaml): the banner's line with one dot per stage. Each step
+   draws its own dot and the line to the next step, so the count of stages can
+   change without touching this. The line into the last stage is dashed. */
+
+.pipeline {
+  --pipeline-accent: var(--color-primary-600);
+  --pipeline-dot: 0.625rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  margin: 2rem 0 2.25rem;
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  line-height: 1.35;
+}
+
+.dark .pipeline {
+  --pipeline-accent: var(--color-primary-400);
+}
+
+.pipeline-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1.5rem 0.75rem 0 0;
+}
+
+.pipeline-step::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--pipeline-dot);
+  height: var(--pipeline-dot);
+  border-radius: 50%;
+  background: rgb(var(--pipeline-accent));
+}
+
+.pipeline-step::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--pipeline-dot) / 2 - 1px);
+  left: var(--pipeline-dot);
+  right: 0;
+  height: 2px;
+  background: rgb(var(--pipeline-accent));
+}
+
+.pipeline-step:nth-last-child(2)::after {
+  background: repeating-linear-gradient(
+    to right,
+    rgb(var(--pipeline-accent)) 0 6px,
+    transparent 6px 11px
+  );
+}
+
+.pipeline-step:last-child::after {
+  content: none;
+}
+
+.pipeline-stage {
+  padding: 0.05rem 0.4rem;
+  border-radius: 4px;
+  background: rgb(var(--color-neutral-100));
+  color: rgb(var(--color-neutral-600));
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+}
+
+.dark .pipeline-stage {
+  background: rgb(var(--color-neutral-700));
+  color: rgb(var(--color-neutral-300));
+}
+
+.pipeline-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.article-content .pipeline-projects a {
+  color: rgb(var(--pipeline-accent));
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.article-content .pipeline-projects a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Five columns need about 30rem; below that the line runs down the left. */
+@media (max-width: 559px) {
+  .pipeline {
+    grid-auto-flow: row;
+  }
+
+  .pipeline-step {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0 0 1.1rem 1.5rem;
+  }
+
+  .pipeline-step:last-child {
+    padding-bottom: 0;
+  }
+
+  .pipeline-step::before {
+    top: 0.3rem;
+  }
+
+  .pipeline-step::after {
+    top: calc(0.3rem + var(--pipeline-dot));
+    bottom: -0.3rem;
+    left: calc(var(--pipeline-dot) / 2 - 1px);
+    right: auto;
+    width: 2px;
+    height: auto;
+  }
+
+  .pipeline-step:nth-last-child(2)::after {
+    background: repeating-linear-gradient(
+      to bottom,
+      rgb(var(--pipeline-accent)) 0 6px,
+      transparent 6px 11px
+    );
+  }
+
+  .pipeline-stage {
+    flex: none;
+    min-width: 4.25rem;
+    text-align: center;
+  }
+
+  .pipeline-projects {
+    flex-flow: row wrap;
+    gap: 0.15rem 0.9rem;
+  }
+}
+
 /* ---- Home page --------------------------------------------------------
    layouts/partials/home/landing.html, layouts/index.html,
    layouts/partials/recent-articles/main.html, layouts/partials/home/demo-*.
