@@ -1,8 +1,8 @@
 ---
-title: "Commit Check"
-weight: 6
+title: "commit-check"
+weight: 1
 externalUrl: "https://commit-check.com/"
-summary: "一个免费的强大工具，用于强制执行提交元数据、分支命名等。"
+summary: "一份策略统一校验提交信息、分支名和 AI 署名，CI 里或 pre-commit 里都能跑。PyPI 上每月下载约 5.5 万次。"
 showDate: false
 showReadingTime: false
 showWordCount: false

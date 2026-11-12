@@ -1,7 +1,7 @@
 ---
-title: "Clang Tools Distributions"
-weight: 11
-summary: "Multiple distribution methods for clang-format and clang-tidy, supporting Docker, static binaries, and Python Wheel packages."
+title: "clang-tools binaries"
+weight: 5
+summary: "clang-format, clang-tidy and other LLVM tools for every LLVM version, as static binaries, Docker images and Python wheels, so nobody has to build LLVM. The static binaries have been downloaded more than 750,000 times."
 showDate: false
 showReadingTime: false
 showWordCount: false

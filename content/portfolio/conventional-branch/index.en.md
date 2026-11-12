@@ -1,8 +1,8 @@
 ---
 title: "Conventional Branch"
-weight: 7
+weight: 2
 externalUrl: "https://conventionalbranch.org/"
-summary: "A specification for adding human and machine readable meaning to branch."
+summary: "A branch naming specification: a type prefix such as feature/ or bugfix/, then a short description, so people and tools can both read a branch name. commit-check can enforce it."
 showDate: false
 showReadingTime: false
 showWordCount: false

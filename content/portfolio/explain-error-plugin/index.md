@@ -1,8 +1,8 @@
 ---
-title: "Jenkins Explain Error 插件"
-weight: 9
+title: "explain-error"
+weight: 4
 externalUrl: "https://plugins.jenkins.io/explain-error/"
-summary: "一个 Jenkins 插件，帮助用户通过 AI 来更快地分析和解决构建中的错误。"
+summary: "jenkinsci 组织下的 Jenkins 插件，用 AI 解释流水线和任务为什么构建失败。"
 showDate: false
 showReadingTime: false
 showWordCount: false
