@@ -1,7 +1,7 @@
 ---
-title: "PyPI 开源项目"
-weight: 1
-summary: "我在 PyPI 上维护的 Python 开源包，涵盖 DevOps、数据可视化等领域"
+title: "PyPI 上的 Python 包"
+weight: 13
+summary: "我在 PyPI 上维护的 Python 包，按月下载量排序。"
 showDate: false
 showReadingTime: false
 showWordCount: false

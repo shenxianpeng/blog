@@ -1,8 +1,8 @@
 ---
-title: "Commit Check"
-weight: 6
+title: "commit-check"
+weight: 1
 externalUrl: "https://commit-check.com/"
-summary: "A free, powerful tool that enforces commit metadata, branch naming, and more."
+summary: "One policy for commit messages, branch names and AI attribution, in CI or as a pre-commit hook. About 55,000 downloads a month on PyPI."
 showDate: false
 showReadingTime: false
 showWordCount: false
