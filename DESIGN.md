@@ -102,11 +102,11 @@ base with a 1.55 line-height.
    search; every other page keeps the theme's header with those.
 
 1. **Hero** — left-aligned, 64px under the header, two columns from 1024px
-   (628 : 508, 48px gap), sized to fit the first screen of a laptop:
+   (601 : 535, 48px gap), sized to fit the first screen of a laptop:
    - left: the author's photo (52px), name (16px, 600) and `heroRole` (14px,
      muted), linked to About; the headline (`title`, or `heroTitle` with a
      manual line break) at 62px, line-height 1.04, tracking −0.035em;
-     `heroLead` at 19px in body-text colour; pill buttons 46px high, 15px,
+     `heroLead` at 19px in body-text colour; pill buttons 48px high, 15px,
      600;
    - right: **stages** (`heroAlso.stages`), the pipeline `commit` → `review`
      → `build` → `release` as a card (the About page's diagram has a fifth
