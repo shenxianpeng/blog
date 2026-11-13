@@ -45,7 +45,7 @@ heroAlso:
 proof:
   stats:
     - value: "750,000+"
-      label: "downloads of the clang-tools static binaries"
+      label: "downloads of the clang-tools binaries"
     - value: "1,000+"
       label: "GitHub repositories depend on cpp-linter"
     - value: "55,000+"

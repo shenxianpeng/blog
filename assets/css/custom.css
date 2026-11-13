@@ -400,7 +400,7 @@ samp {
    work there, and one sentence on what they do. Rows on a narrow screen,
    five columns under an ink rule from 1024px. */
 .home-stages {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   font-family: var(--font-ui);
   text-align: left;
 }
@@ -552,8 +552,9 @@ samp {
 /* Hero: who is speaking, the headline, then the proof and the stages, sized
    so all of it sits on the first screen of a laptop. Centred type. */
 
+/* No top padding: Blowfish's fixed header already leaves 92px under it. */
 .home-hero {
-  padding: 3rem 0 3.5rem;
+  padding: 0 0 3.5rem;
   text-align: center;
   /* lets the Chinese title size itself to the column, in cqi */
   container-type: inline-size;
@@ -563,7 +564,7 @@ samp {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 /* The author's photo, name and role above the headline; links to About. */
@@ -654,32 +655,32 @@ samp {
    they are three centred columns. */
 .home-proof {
   max-width: 60rem;
-  margin: 2.5rem auto 0;
+  margin: 2rem auto 0;
   padding-top: 2rem;
   border-top: 1px solid rgb(var(--color-neutral-200));
   font-family: var(--font-ui);
 }
 
+/* The <dl> has the label first (it is the term); the number is drawn first.
+   On a phone the list is a two-column grid, numbers then labels, so the
+   labels line up whatever the numbers' widths: each .home-stat dissolves
+   (display: contents) and dense placement puts its number in column one. */
 .home-stats {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 0.75rem;
+  grid-template-columns: max-content minmax(0, 1fr);
+  grid-auto-flow: row dense;
+  align-items: baseline;
+  gap: 0.75rem 0.875rem;
   margin: 0;
   text-align: left;
 }
 
-/* The <dl> has the label first (it is the term); draw the number first. */
 .home-stat {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  align-items: baseline;
-  gap: 0.875rem;
+  display: contents;
 }
 
 .home-stat-value {
-  flex: none;
-  min-width: 6.75rem;
+  grid-column: 1;
   margin: 0;
   font-family: var(--font-display);
   font-size: 1.625rem;
@@ -690,33 +691,38 @@ samp {
 }
 
 .home-stat-label {
+  grid-column: 2;
   font-size: 0.9375rem;
   line-height: 1.4;
   color: rgb(var(--color-neutral-500));
 }
 
+/* Three centred columns, the number above its label. In a reversed column
+   flex-end is the top, which keeps the numbers level when a label wraps. */
 @media (min-width: 640px) {
   .home-stats {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: row;
+    align-items: stretch;
     gap: 2rem;
     text-align: center;
   }
 
   .home-stat {
+    display: flex;
     flex-direction: column-reverse;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     gap: 0.375rem;
   }
 
   .home-stat-value {
-    min-width: 0;
     font-size: clamp(1.75rem, 3.2vw, 2.5rem);
   }
 }
 
 .home-users {
-  margin-top: 1.75rem;
+  margin-top: 1.5rem;
 }
 
 .home-users-label {
@@ -1676,7 +1682,12 @@ samp {
 
 @media (max-width: 767px) {
   .home-hero {
-    padding: 2rem 0 3rem;
+    padding-bottom: 3rem;
+  }
+
+  /* Both buttons on one row on a 375px phone. */
+  .home-btn {
+    padding: 0 1.25rem;
   }
 
   .home-proof {
