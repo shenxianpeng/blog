@@ -1126,30 +1126,33 @@ samp {
 
 /* Sponsor */
 
+/* One sentence and a link under a rule, right above the site footer. */
 .home-sponsor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.75rem;
-  margin-top: 8.5rem;
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  margin-top: 5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgb(var(--color-neutral-200));
+  font-family: var(--font-ui);
   text-align: center;
-  background: rgb(var(--color-neutral-100));
 }
 
 .home-sponsor-text {
   margin: 0;
-  max-width: 56rem;
-  font-size: clamp(1.875rem, 3.8vw, 3.5rem);
-  line-height: 1.08;
-  letter-spacing: -0.04em;
-  color: rgb(var(--color-neutral-900));
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  color: rgb(var(--color-neutral-600));
 }
 
-:lang(zh) .home-sponsor-text {
-  line-height: 1.35;
-  letter-spacing: 0;
+.home-sponsor-link {
+  margin-left: 0.375rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: rgb(var(--color-primary-600));
+  text-decoration: none;
+}
+
+.home-sponsor-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /* ---- Animated demos (layouts/partials/home/demo-*.html) --------------
@@ -1564,7 +1567,7 @@ samp {
   --home-shadow: 0 0 0 1px rgb(255 255 255 / 0.04), 0 20px 50px rgb(0 0 0 / 0.35);
 }
 
-.dark :is(.home-title, .home-band-title, .home-tile, .home-post, .home-sponsor-text, .home-id-name, .home-stat-value) {
+.dark :is(.home-title, .home-band-title, .home-tile, .home-post, .home-id-name, .home-stat-value) {
   color: rgb(var(--color-neutral));
 }
 
@@ -1634,7 +1637,15 @@ samp {
 }
 
 .dark .home-sponsor {
-  background: rgb(var(--color-neutral-700) / 0.45);
+  border-top-color: rgb(var(--color-neutral-700));
+}
+
+.dark .home-sponsor-text {
+  color: rgb(var(--color-neutral-300));
+}
+
+.dark .home-sponsor-link {
+  color: rgb(var(--color-primary-400));
 }
 
 /* ---- Narrow screens ---------------------------------------------------- */
@@ -1743,9 +1754,7 @@ samp {
   }
 
   .home-sponsor {
-    margin-top: 5rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    margin-top: 3.5rem;
   }
 }
 
