@@ -551,7 +551,7 @@ samp {
 
 @media (min-width: 1024px) {
   .home-hero-top {
-    grid-template-columns: minmax(0, 1.24fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.16fr) minmax(0, 1fr);
     gap: 3rem;
   }
 }
@@ -748,7 +748,7 @@ samp {
 
 @media (min-width: 1024px) {
   .home-flagship {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.04fr);
     gap: 3.5rem;
   }
 }
@@ -970,12 +970,12 @@ samp {
 
 @media (min-width: 1024px) {
   .home-feature {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.04fr);
     gap: 3.5rem;
   }
 
   .home-feature-flip {
-    grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.04fr) minmax(0, 1fr);
   }
 
   .home-feature-flip .home-demo {
