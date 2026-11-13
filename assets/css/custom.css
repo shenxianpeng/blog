@@ -294,13 +294,31 @@ body:has(.home) {
 @media (min-width: 1024px) {
   body:has(.home) {
     --home-gutter: 3rem;
+  }
+
+  body:has(.home),
+  /* the site header's inner container, so its ends line up with the page */
+  body:has(.home) header > .fixed > .max-w-7xl {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
 
+/* The header is the site's own, the same on every page. Blowfish reserves
+   148px for it, which leaves 91px of air under the 57px bar; the home page
+   takes that space back and sets its own distance to the hero (64px). The
+   bar is 65px high under 768px, where the menu collapses. */
+body:has(.home) > header > div:first-child {
+  min-height: 65px;
+}
+
+@media (min-width: 768px) {
+  body:has(.home) > header > div:first-child {
+    min-height: 57px;
+  }
+}
+
 .home,
-.home-header,
 .home-writing,
 .home-sponsor {
   font-size: 1rem;
@@ -308,75 +326,11 @@ body:has(.home) {
 }
 
 /* Full-bleed band: escapes Blowfish's centred max-w-7xl body. */
-.home-band,
-.home-header {
+.home-band {
   box-sizing: border-box;
   width: 100vw;
   margin-inline: calc(50% - 50vw);
   padding-inline: max(var(--home-gutter, 1.5rem), calc((100vw - 74rem) / 2));
-}
-
-/* The home page's header (layouts/partials/header/home.html): the site name
-   and a text menu in a full-bleed bar over a rule. It is not fixed. */
-.home-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.25rem 1rem;
-  /* 64px, and the rule under it */
-  min-height: calc(4rem + 1px);
-  padding-block: 0.5rem;
-  border-bottom: 1px solid rgb(var(--color-neutral-200));
-  font-family: var(--font-ui);
-}
-
-.home-header-name {
-  font-size: 1.0625rem;
-  font-weight: 600;
-  color: rgb(var(--color-neutral-900));
-  text-decoration: none;
-}
-
-.home-header-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.25rem 1.5rem;
-  font-size: 0.9375rem;
-}
-
-.home-header-nav a {
-  color: rgb(var(--color-neutral-900));
-  text-decoration: none;
-}
-
-.home-header-nav .home-header-lang {
-  font-family: var(--font-code);
-  font-size: 0.8125rem;
-  color: rgb(var(--color-neutral-500));
-}
-
-.home-header :is(.home-header-name, .home-header-nav a):hover {
-  color: rgb(var(--color-primary-700));
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.dark .home-header {
-  border-bottom-color: rgb(var(--color-neutral-700));
-}
-
-.dark :is(.home-header-name, .home-header-nav a) {
-  color: rgb(var(--color-neutral));
-}
-
-.dark .home-header-nav .home-header-lang {
-  color: rgb(var(--color-neutral-400));
-}
-
-.dark .home-header :is(.home-header-name, .home-header-nav a):hover {
-  color: rgb(var(--color-primary-300));
 }
 
 .home-section {

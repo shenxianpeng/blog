@@ -64,10 +64,8 @@ label each; `usersLabel` and `users`), `flagship` (the dark cpp-linter
 band), `features` (open-source projects with a section of their own; now
 commit-check), `products` (`items`, and `also` for a product that only gets
 a line), `writing` and `sponsor` (a tinted band that also carries the footer menu and
-closes the page; the theme's footer is hidden on the home page). The home
-page also has its own header, a plain text menu
-(`layouts/partials/header/home.html`), where every other page has the
-theme's. The numbers in
+closes the page; the theme's footer is hidden on the home page). The header
+is the theme's, the same on every page. The numbers in
 `proof` go stale: when you touch them, check them against the About page and
 pypistats.org. The Chinese page's body holds the WeChat QR section.
 

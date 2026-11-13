@@ -94,12 +94,12 @@ to in 2026-11; treat them as the spec. The page is drawn on its own grid:
 74rem (1184px) of content, where the rest of the site has 72rem, on a 16px
 base with a 1.55 line-height.
 
-0. **Header** — the home page has its own (`layouts/partials/header/home.html`,
-   chosen in the `header/fixed-fill.html` override): a 64px full-bleed bar
-   over a rule, not fixed, with the site name on the left (17px, 600) and a
-   text menu on the right at 15px: Posts, Projects, About, GitHub, and the
-   other language in 13px Geist Mono, muted. No icons, appearance switch or
-   search; every other page keeps the theme's header with those.
+0. **Header** — the site's own, the same as on every other page (the
+   proposal drew a text-only menu; one header across the site won). On the
+   home page its inner container takes the page's 3rem side padding so its
+   ends line up with the content, and the 148px Blowfish reserves for it is
+   cut to the bar's own height, so the hero's 64px of top padding is the
+   whole distance between the two.
 
 1. **Hero** — left-aligned, 64px under the header, two columns from 1024px
    (601 : 535, 48px gap), sized to fit the first screen of a laptop:
