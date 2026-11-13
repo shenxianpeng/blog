@@ -348,7 +348,7 @@ samp {
 }
 
 .home-btn-outline:hover {
-  background: rgb(var(--color-primary-600) / 0.08);
+  background: rgba(var(--color-primary-600), 0.08);
   color: rgb(var(--color-primary-700));
 }
 
@@ -888,6 +888,178 @@ samp {
 .home-tile-mint .home-tile-label,
 .home-tile-mint .home-tile-more {
   color: rgb(var(--color-primary-700));
+}
+
+/* Product cards: three in a row from 960px, stacked below that. Each is a
+   .home-tile at card size with a small static preview of the product
+   (layouts/partials/home/preview-*.html) above its "Learn more". */
+
+.home-cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+@media (min-width: 960px) {
+  .home-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.home-tile-card {
+  align-items: stretch;
+  gap: 0.5rem;
+  padding: 1.75rem;
+  border-radius: 22px;
+  text-align: left;
+}
+
+.home-tile-card .home-tile-label {
+  font-size: 0.8125rem;
+}
+
+.home-tile-card .home-tile-name {
+  font-size: 1.75rem;
+}
+
+.home-tile-card .home-tile-desc {
+  max-width: none;
+  font-size: 1rem;
+}
+
+.home-tile-card .home-tile-more {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+/* The previews: a few rows of the product's own screen. They take the
+   card's text colour and draw their rules and surfaces as tints of it, so
+   one set of rules serves the white, mint and dark cards in both
+   appearances. */
+.home-pv {
+  display: block;
+  align-self: stretch;
+  margin-top: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(var(--color-neutral-900), 0.14);
+  border-radius: 12px;
+  background: rgba(var(--home-card), 0.6);
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.home-pv-mono {
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+}
+
+.home-pv-row,
+.home-pv-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.home-pv-row {
+  padding: 0.45rem 0.75rem;
+  border-top: 1px solid rgba(var(--color-neutral-900), 0.1);
+}
+
+.home-pv-row:first-child {
+  border-top: 0;
+}
+
+.home-pv-head {
+  background: rgba(var(--color-neutral-900), 0.05);
+}
+
+.home-pv-pad {
+  padding: 0.7rem 0.75rem;
+}
+
+.home-pv-muted,
+.home-pv-head {
+  opacity: 0.75;
+}
+
+.home-pv-dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 9999px;
+  background: rgb(var(--color-primary-400));
+}
+
+.home-pv-tag {
+  font-family: var(--font-code);
+  font-size: 0.6875rem;
+  letter-spacing: 0.02em;
+}
+
+.home-pv-flag {
+  padding: 0 0.35rem;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.home-pv-bar {
+  display: block;
+  height: 0.375rem;
+  margin: 0.6rem 0 0.5rem;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: rgba(var(--color-neutral-900), 0.1);
+}
+
+.home-pv-bar > i {
+  display: block;
+  width: 72%;
+  height: 100%;
+  background: rgb(var(--color-primary-600));
+}
+
+.home-pv-muted {
+  display: block;
+}
+
+.home-pv-line > .home-pv-muted {
+  display: inline;
+}
+
+/* On a dark surface (the dark card, or any card in the dark appearance) the
+   tints are of white instead of ink. */
+.home-tile-dark .home-pv,
+.dark .home-pv {
+  border-color: rgb(255 255 255 / 0.16);
+}
+
+.home-tile-dark .home-pv {
+  background: transparent;
+}
+
+.home-tile-dark .home-pv-row,
+.dark .home-pv-row {
+  border-top-color: rgb(255 255 255 / 0.1);
+}
+
+.home-tile-dark .home-pv-head,
+.dark .home-pv-head {
+  background: rgb(255 255 255 / 0.06);
+}
+
+.home-tile-dark .home-pv-bar,
+.dark .home-pv-bar {
+  background: rgb(255 255 255 / 0.16);
+}
+
+.dark .home-pv-bar > i {
+  background: rgb(var(--color-primary-400));
 }
 
 /* Writing: one list of ruled rows. */
