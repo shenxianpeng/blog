@@ -3,25 +3,23 @@
   The command and the JSON are the README's own example
   (github.com/commit-check/commit-check, "AI-native usage"): a commit message
   piped to `commit-check -m --format json`, and the failing entry of the
-  output's `checks` array, whole. Styles: .cc-demo-* in assets/css/custom.css.
+  output's `checks` array. The entry is cut short for the card: the error
+  message ends in an ellipsis, and the line of dots stands for its last three
+  fields (fix, docs_url, reason). Styles: .cc-demo-* in assets/css/custom.css.
   Context: the feature's front matter; `demoLabel` is the accessible
   description.
 */ -}}
 <div class="home-demo home-demo-cc">
 <div class="cc-demo" role="img" aria-label="{{ .demoLabel }}">
 <div class="cc-demo-bar" aria-hidden="true"><i></i><i></i><i></i><span>zsh</span></div>
-<div class="cc-demo-body" aria-hidden="true"><span class="cc-demo-cmd"><b>$</b> echo "Fix: add streaming support" | commit-check -m --format json</span>
-<span class="cc-demo-note"># the failing entry of "checks"</span>
-{
+<div class="cc-demo-body" aria-hidden="true"><div class="cc-demo-cmd"><b>$</b> echo "Fix: add streaming support" | commit-check -m --format json</div><div class="cc-demo-out">{
   "rule_id": "CC001",
   "check": "message",
   "status": <span class="cc-demo-fail">"fail"</span>,
   "value": "Fix: add streaming support",
-  "error": "The commit message should follow Conventional Commits. See https://www.conventionalcommits.org",
-  "suggest": "Use \"fix: add streaming support\"",
-  "fix": <span class="cc-demo-fix">"fix: add streaming support"</span>,
-  "docs_url": "https://commit-check.com/rules/#cc001",
-  "reason": ""
-}</div>
+  "error": "The commit message should follow Conventional Commits…",
+  "suggest": <span class="cc-demo-fix">"Use \"fix: add streaming support\""</span>,
+  <span class="cc-demo-note">…</span>
+}</div></div>
 </div>
 </div>

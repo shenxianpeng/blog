@@ -7,10 +7,10 @@
               a `tag`). Under both: proof (stats: value + label; usersLabel,
               users).
     flagship  full-bleed dark band, text left and demo right: label, title,
-              text, links, demo
-    features  further open-source projects, one section each, text and demo
-              side by side: label, title, text, chips, links, demo, and
-              flip: true for demo-left
+              text, chips (chipActive names the accented one), links, demo
+    features  further open-source projects, one full-bleed section each,
+              text and demo side by side: label, title, text, chips,
+              chipActive, links, demo, and flip: true for demo-left
     products  title, text, items, also (one line of Markdown under the
               tiles). style: card is a compact card with tone: dark | mint
               and `preview: <name>`, a small static picture of the product
@@ -126,6 +126,13 @@
         {{ with .label }}<p class="home-flagship-label">{{ . }}</p>{{ end }}
         <h2 class="home-band-title">{{ .title }}</h2>
         {{ with .text }}<p class="home-band-text">{{ . }}</p>{{ end }}
+        {{- /* chips: a row of small pills; the one equal to chipActive is
+               drawn in the accent colour. */}}
+        {{ with .chips }}
+          <ul class="home-chips">
+            {{ range . }}<li{{ if eq . $page.Params.flagship.chipActive }} class="is-active"{{ end }}>{{ . }}</li>{{ end }}
+          </ul>
+        {{ end }}
         {{ with .links }}
           <p class="home-links">
             {{ range . }}<a href="{{ .url | safeURL }}">{{ .label }} ›</a>{{ end }}
@@ -140,14 +147,14 @@
          after the flagship, text beside a demo. */}}
   {{ range .Params.features }}
     {{ $feature := . }}
-    <section class="home-section home-feature{{ if .flip }} home-feature-flip{{ end }}">
+    <section class="home-band home-feature{{ if .flip }} home-feature-flip{{ end }}">
       <div class="home-feature-text">
         {{ with .label }}<p class="home-feature-label">{{ . }}</p>{{ end }}
         <h2 class="home-band-title">{{ .title }}</h2>
         {{ with .text }}<p class="home-band-text">{{ . }}</p>{{ end }}
         {{ with .chips }}
           <ul class="home-chips">
-            {{ range . }}<li>{{ . }}</li>{{ end }}
+            {{ range . }}<li{{ if eq . $feature.chipActive }} class="is-active"{{ end }}>{{ . }}</li>{{ end }}
           </ul>
         {{ end }}
         {{ with .links }}

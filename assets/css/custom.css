@@ -278,23 +278,25 @@ samp {
 }
 
 .home-section {
-  padding-top: 5.5rem;
+  padding-top: 4.5rem;
 }
 
+/* Section headlines: 42px in the two project sections, 36px over the
+   products and the writing (set where those are styled). */
 .home-band-title {
   margin: 0;
-  font-size: clamp(2rem, 3.6vw, 2.75rem);
+  font-size: clamp(2rem, 3.4vw, 2.625rem);
   line-height: 1.08;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.03em;
   color: rgb(var(--color-neutral-900));
 }
 
 .home-band-text {
-  margin: 1rem 0 0;
-  max-width: 36rem;
-  font-size: clamp(1.0625rem, 1.4vw, 1.1875rem);
-  line-height: 1.55;
-  color: rgb(var(--color-neutral-500));
+  margin: 1.125rem 0 0;
+  max-width: 32.5rem;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: rgb(var(--color-neutral-600));
 }
 
 :lang(zh) .home-band-title,
@@ -324,15 +326,15 @@ samp {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 3rem;
-  padding: 0 1.625rem;
+  min-height: 2.875rem;
+  padding: 0 1.375rem;
   border: 1px solid rgb(var(--color-primary-600));
   border-radius: 9999px;
   background: rgb(var(--color-primary-600));
   color: #fff;
   font-family: var(--font-ui);
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.9375rem;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -356,7 +358,8 @@ samp {
 .home-more,
 .home-tile-more {
   font-family: var(--font-ui);
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
   color: rgb(var(--color-primary-600));
   text-decoration: none;
 }
@@ -364,8 +367,8 @@ samp {
 .home-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin: 1.75rem 0 0;
+  gap: 1.5rem;
+  margin: 1.625rem 0 0;
 }
 
 /* heroAlso with plain links: one quiet line that closes the hero. */
@@ -407,10 +410,10 @@ samp {
 }
 
 .home-stages-label {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.875rem;
   font-family: var(--font-code);
   font-size: 0.75rem;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: rgb(var(--color-neutral-500));
 }
@@ -431,19 +434,23 @@ samp {
   gap: 1rem;
   padding: 0.75rem 0;
   border-bottom: 1px solid rgb(var(--color-neutral-100));
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   line-height: 1.45;
+}
+
+.home-stage:first-child {
+  padding-top: 0.75rem;
 }
 
 .home-stage:last-child {
   border-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 0.125rem;
 }
 
 .home-stage-name {
   flex: none;
-  width: 4.25rem;
-  padding-top: 0.15rem;
+  width: 4.375rem;
+  padding-top: 0.125rem;
   font-family: var(--font-code);
   font-size: 0.75rem;
   color: rgb(var(--color-primary-600));
@@ -452,7 +459,6 @@ samp {
 .home-stage-body {
   display: flex;
   flex-direction: column;
-  gap: 0.125rem;
   min-width: 0;
 }
 
@@ -472,8 +478,8 @@ samp {
 }
 
 .home-stage-tag {
-  margin-left: 0.125rem;
-  padding: 0.05rem 0.4rem;
+  margin-left: 0.25rem;
+  padding: 0.0625rem 0.375rem;
   border-radius: 4px;
   background: rgb(var(--color-primary-100));
   color: rgb(var(--color-primary-700));
@@ -482,7 +488,6 @@ samp {
 }
 
 .home-stage-note {
-  font-size: 0.875rem;
   color: rgb(var(--color-neutral-500));
 }
 
@@ -546,8 +551,8 @@ samp {
 
 @media (min-width: 1024px) {
   .home-hero-top {
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-    gap: 3.5rem;
+    grid-template-columns: minmax(0, 1.24fr) minmax(0, 1fr);
+    gap: 3rem;
   }
 }
 
@@ -555,7 +560,6 @@ samp {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.25rem;
   /* lets the Chinese title size itself to this column, in cqi */
   container-type: inline-size;
 }
@@ -565,13 +569,14 @@ samp {
   display: inline-flex;
   align-items: center;
   gap: 0.875rem;
+  margin-bottom: 1.75rem;
   font-family: var(--font-ui);
   text-decoration: none;
 }
 
 .home-id-photo {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.25rem;
+  height: 3.25rem;
   margin: 0;
   border-radius: 9999px;
   object-fit: cover;
@@ -584,14 +589,14 @@ samp {
 }
 
 .home-id-name {
-  font-size: 1.0625rem;
+  font-size: 1rem;
   font-weight: 600;
   color: rgb(var(--color-neutral-900));
   transition: color 0.2s ease-out;
 }
 
 .home-id-role {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   color: rgb(var(--color-neutral-500));
 }
 
@@ -617,11 +622,10 @@ samp {
 }
 
 .home-lead {
-  margin: 0;
+  margin: 1.375rem 0 0;
   max-width: 35rem;
-  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
-  line-height: 1.5;
-  letter-spacing: -0.01em;
+  font-size: 1.1875rem;
+  line-height: 1.55;
   color: rgb(var(--color-neutral-600));
 }
 
@@ -629,7 +633,7 @@ samp {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  padding-top: 0.5rem;
+  margin-top: 1.875rem;
 }
 
 /* Proof: a row of facts and the organisations whose projects use cpp-linter,
@@ -672,8 +676,8 @@ samp {
 
 .home-stat-label {
   grid-column: 2;
-  font-size: 0.9375rem;
-  line-height: 1.4;
+  font-size: 0.875rem;
+  line-height: 1.55;
   color: rgb(var(--color-neutral-500));
 }
 
@@ -682,7 +686,7 @@ samp {
    a label wraps. */
 @media (min-width: 640px) {
   .home-stats {
-    grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(11.25rem, 1fr));
     grid-auto-flow: row;
     align-items: stretch;
     gap: 1.5rem;
@@ -696,7 +700,8 @@ samp {
   }
 
   .home-stat-value {
-    font-size: clamp(1.625rem, 2.6vw, 2rem);
+    font-size: 2rem;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -704,8 +709,8 @@ samp {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 0.5rem 1.75rem;
-  margin-top: 1.5rem;
+  gap: 0.625rem 1.75rem;
+  margin-top: 1.75rem;
 }
 
 .home-users-label {
@@ -717,60 +722,42 @@ samp {
 .home-users-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem 1.5rem;
+  gap: 0.625rem 1.75rem;
   margin: 0;
   font-size: 1.125rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   color: rgb(var(--color-neutral-600));
 }
 
-/* Flagship: always a dark band, in both appearances. Text and demo stacked
-   and centred; from 1024px the text is on the left and the demo, scaled to
-   its column, on the right. */
+/* Flagship: a dark band in both appearances (neutral-800; in the dark
+   appearance, where that is the page, neutral-900 between two rules). Text
+   and demo are stacked on a narrow screen; from 1024px the text is on the
+   left and the demo on the right. */
 
 .home-flagship {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 2.5rem;
-  justify-items: center;
+  align-items: center;
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
-  text-align: center;
-  background: rgb(var(--color-neutral-900));
-  color: rgb(var(--color-neutral));
-}
-
-.home-flagship-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* The generated demo block gives .home-demo-cl a top margin for the old
-   stacked layout; the grid's gap does that job now. */
-.home-flagship .home-demo-cl {
-  margin-top: 0;
+  background: rgb(var(--color-neutral-800));
+  color: rgb(var(--color-neutral-300));
 }
 
 @media (min-width: 1024px) {
   .home-flagship {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
     gap: 3.5rem;
-    align-items: center;
-    justify-items: stretch;
-    padding-top: 5.5rem;
-    padding-bottom: 5.5rem;
-    text-align: left;
   }
+}
 
-  .home-flagship-text {
-    align-items: flex-start;
-  }
-
-  .home-flagship .home-links {
-    justify-content: flex-start;
-  }
+.home-flagship-text,
+.home-feature-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .home-flagship .home-band-title {
@@ -783,7 +770,7 @@ samp {
 
 .home-flagship-label,
 .home-feature-label {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.625rem;
   font-family: var(--font-code);
   font-size: 0.8125rem;
   color: rgb(var(--color-primary-600));
@@ -793,29 +780,202 @@ samp {
   color: rgb(var(--color-primary-400));
 }
 
+.home-flagship .home-links,
+.home-feature .home-links {
+  justify-content: flex-start;
+}
+
 .home-flagship .home-links {
   color: rgb(var(--color-primary-400));
 }
 
-/* Features: an open-source project with a section of its own after the
-   flagship, text beside its demo from 1024px; flip puts the demo on the
-   left. */
+/* Chips: a row of small mono pills under a section's text; the one named by
+   chipActive is drawn in the accent colour. */
+.home-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.375rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-chips li {
+  padding: 0.3125rem 0.75rem;
+  border: 1px solid rgb(var(--color-neutral-300));
+  border-radius: 9999px;
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: rgb(var(--color-neutral-600));
+}
+
+.home-chips li.is-active {
+  border-color: rgb(var(--color-primary-600));
+  color: rgb(var(--color-primary-600));
+}
+
+.home-flagship .home-chips li,
+.dark .home-chips li {
+  border-color: rgb(var(--color-neutral-600));
+  color: rgb(var(--color-neutral-300));
+}
+
+.home-flagship .home-chips li.is-active,
+.dark .home-chips li.is-active {
+  border-color: rgb(var(--color-primary-400));
+  color: rgb(var(--color-primary-400));
+}
+
+/* If the animated cpp-linter demo is put back in the band: the generated
+   block gives it a top margin for the old stacked layout, and the grid's gap
+   does that job now. */
+.home-flagship .home-demo-cl {
+  margin-top: 0;
+}
+
+/* cpp-linter's static frame (layouts/partials/home/demo-cpp-linter-review.html):
+   a GitHub pull request with one clang-format suggestion. GitHub's own
+   colours, in both appearances. */
+
+.home-demo-clr {
+  min-width: 0;
+}
+
+.clr-demo {
+  overflow: hidden;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 1px 0 rgb(var(--color-neutral-600));
+  color: #1f2328;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.clr-demo-head {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.clr-demo-muted,
+.clr-demo-by {
+  color: #59636e;
+}
+
+.clr-demo-by strong {
+  color: #1f2328;
+}
+
+.clr-demo-open {
+  margin-left: auto;
+  padding: 0.125rem 0.625rem;
+  border-radius: 9999px;
+  background: #1f883d;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.clr-demo-main {
+  padding: 0.875rem 1rem 0.375rem;
+}
+
+.clr-demo-by {
+  margin-bottom: 0.5rem;
+}
+
+.clr-demo-diff {
+  overflow: hidden;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  line-height: 1.7;
+}
+
+.clr-demo-diff-head {
+  padding: 0.25rem 0.625rem;
+  background: #f6f8fa;
+  color: #59636e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+.clr-demo-del,
+.clr-demo-add {
+  overflow: hidden;
+  padding: 0 0.625rem;
+  white-space: pre;
+}
+
+.clr-demo-del {
+  background: #ffebe9;
+}
+
+.clr-demo-add {
+  background: #dafbe1;
+}
+
+.clr-demo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem 0.625rem;
+  border-top: 1px solid #d0d7de;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+.clr-demo-commit {
+  padding: 0.25rem 0.625rem;
+  border-radius: 6px;
+  background: #1f883d;
+  color: #fff;
+  font-weight: 600;
+}
+
+.clr-demo-batch {
+  padding: 0.1875rem 0.625rem;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background: #f6f8fa;
+}
+
+.clr-demo-check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem 0.875rem;
+}
+
+.clr-demo-check svg {
+  flex: none;
+}
+
+/* Features: an open-source project with a full-bleed section of its own
+   after the flagship, closed by a rule. Text beside its demo from 1024px;
+   flip puts the demo on the left. */
 
 .home-feature {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 2.5rem;
   align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgb(var(--color-neutral-200));
 }
 
 @media (min-width: 1024px) {
   .home-feature {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
     gap: 3.5rem;
   }
 
   .home-feature-flip {
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
   }
 
   .home-feature-flip .home-demo {
@@ -823,41 +983,12 @@ samp {
   }
 }
 
-.home-feature-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.home-feature .home-links {
-  justify-content: flex-start;
-}
-
-.home-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1.25rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.home-chips li {
-  padding: 0.3rem 0.75rem;
-  border: 1px solid rgb(var(--color-neutral-300));
-  border-radius: 9999px;
-  font-family: var(--font-code);
-  font-size: 0.75rem;
-  color: rgb(var(--color-neutral-600));
+.dark .home-feature {
+  border-bottom-color: rgb(var(--color-neutral-700));
 }
 
 .dark .home-feature-label {
   color: rgb(var(--color-primary-400));
-}
-
-.dark .home-chips li {
-  border-color: rgb(var(--color-neutral-600));
-  color: rgb(var(--color-neutral-300));
 }
 
 /* commit-check's demo (layouts/partials/home/demo-commit-check.html): a
@@ -874,7 +1005,7 @@ samp {
   background: rgb(var(--color-neutral-800));
   color: rgb(var(--color-neutral-300));
   font-family: var(--font-code);
-  font-size: 0.8125rem;
+  font-size: 0.78125rem;
   line-height: 1.7;
 }
 
@@ -888,16 +1019,16 @@ samp {
   align-items: center;
   gap: 0.375rem;
   padding: 0.625rem 0.875rem;
-  background: rgb(255 255 255 / 0.05);
+  background: rgb(255 255 255 / 0.04);
   color: rgb(var(--color-neutral-400));
-  font-size: 0.75rem;
+  font-size: 0.71875rem;
 }
 
 .cc-demo-bar i {
   width: 0.5625rem;
   height: 0.5625rem;
   border-radius: 9999px;
-  background: rgb(255 255 255 / 0.18);
+  background: rgb(var(--color-neutral-600));
 }
 
 .cc-demo-bar span {
@@ -906,12 +1037,20 @@ samp {
 
 .cc-demo-body {
   padding: 1rem 1.125rem 1.125rem;
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
+  overflow-x: auto;
+}
+
+.cc-demo-cmd,
+.cc-demo-out {
+  white-space: pre;
 }
 
 .cc-demo-cmd {
   color: rgb(var(--color-neutral));
+}
+
+.cc-demo-out {
+  margin-top: 0.5rem;
 }
 
 .cc-demo-cmd b,
@@ -941,16 +1080,25 @@ samp {
   padding-bottom: 0.5rem;
 }
 
+.home-section-intro .home-band-title,
+.home-section-head .home-band-title {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  line-height: 1.1;
+}
+
 .home-section-intro .home-band-text {
   margin: 0;
-  max-width: 32rem;
+  max-width: 32.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: rgb(var(--color-neutral-500));
 }
 
 /* A product that does not get a card: one quiet line under the cards. */
 .home-products-also {
   margin: 0;
   font-family: var(--font-ui);
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   color: rgb(var(--color-neutral-500));
 }
 
@@ -976,7 +1124,7 @@ samp {
 .home-products {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .home-tile {
@@ -1098,52 +1246,80 @@ samp {
 
 .home-tile-card {
   align-items: stretch;
-  gap: 0.5rem;
-  padding: 1.75rem;
-  border-radius: 22px;
+  gap: 0;
+  padding: 1.5rem;
+  border-radius: 18px;
+  box-shadow: none;
   text-align: left;
 }
 
+/* A card without a tone is the flat surface colour, not a white tile. */
+.home-tile-card:not(.home-tile-dark, .home-tile-mint) {
+  background: rgb(var(--color-neutral-100));
+  color: rgb(var(--color-neutral-600));
+}
+
 .home-tile-card .home-tile-label {
-  font-size: 0.8125rem;
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgb(var(--color-neutral-500));
+}
+
+.home-tile-card.home-tile-dark .home-tile-label {
+  color: rgb(var(--color-neutral-400));
 }
 
 .home-tile-card .home-tile-name {
-  font-size: 1.75rem;
+  margin-top: 0.375rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgb(var(--color-neutral-900));
+}
+
+.home-tile-card.home-tile-dark .home-tile-name {
+  color: rgb(var(--color-neutral));
 }
 
 .home-tile-card .home-tile-desc {
   max-width: none;
-  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .home-tile-card .home-tile-more {
   margin-top: auto;
-  padding-top: 1rem;
-  font-size: 1rem;
+  padding-top: 1.125rem;
+  font-size: 0.875rem;
 }
 
-/* The previews: a few rows of the product's own screen. They take the
-   card's text colour and draw their rules and surfaces as tints of it, so
-   one set of rules serves the white, mint and dark cards in both
-   appearances. */
+/* The previews: a few rows of the product's own screen, on a white
+   surface inside a light card and on the card's own colour inside the dark
+   one. */
 .home-pv {
   display: block;
   align-self: stretch;
-  margin-top: 0.75rem;
+  margin-top: 1.125rem;
   overflow: hidden;
-  border: 1px solid rgba(var(--color-neutral-900), 0.14);
-  border-radius: 12px;
-  background: rgba(var(--home-card), 0.6);
+  border: 1px solid rgb(var(--color-neutral-200));
+  border-radius: 10px;
+  background: rgb(var(--home-card));
+  color: rgb(var(--color-neutral-600));
   font-family: var(--font-ui);
-  font-size: 0.8125rem;
-  line-height: 1.4;
+  font-size: 0.75rem;
+  line-height: 1.5;
   text-align: left;
+}
+
+.home-pv b {
+  color: rgb(var(--color-neutral-900));
 }
 
 .home-pv-mono {
   font-family: var(--font-code);
-  font-size: 0.75rem;
+  font-size: 0.71875rem;
 }
 
 .home-pv-row,
@@ -1155,8 +1331,8 @@ samp {
 }
 
 .home-pv-row {
-  padding: 0.45rem 0.75rem;
-  border-top: 1px solid rgba(var(--color-neutral-900), 0.1);
+  padding: 0.375rem 0.625rem;
+  border-top: 1px solid rgb(var(--color-neutral-200));
 }
 
 .home-pv-row:first-child {
@@ -1164,22 +1340,30 @@ samp {
 }
 
 .home-pv-head {
-  background: rgba(var(--color-neutral-900), 0.05);
+  background: rgb(var(--color-neutral-50));
+}
+
+.home-pv-head,
+.home-pv-muted {
+  color: rgb(var(--color-neutral-500));
 }
 
 .home-pv-pad {
-  padding: 0.7rem 0.75rem;
+  padding: 0.625rem 0.75rem;
 }
 
-.home-pv-muted,
-.home-pv-head {
-  opacity: 0.75;
+.home-pv-muted {
+  display: block;
+}
+
+.home-pv-line > .home-pv-muted {
+  display: inline;
 }
 
 .home-pv-dot {
   display: inline-block;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.4375rem;
+  height: 0.4375rem;
   margin-right: 0.5rem;
   border-radius: 9999px;
   background: rgb(var(--color-primary-400));
@@ -1201,10 +1385,10 @@ samp {
 .home-pv-bar {
   display: block;
   height: 0.375rem;
-  margin: 0.6rem 0 0.5rem;
+  margin: 0.625rem 0 0.5rem;
   overflow: hidden;
   border-radius: 9999px;
-  background: rgba(var(--color-neutral-900), 0.1);
+  background: rgb(var(--color-neutral-100));
 }
 
 .home-pv-bar > i {
@@ -1214,38 +1398,41 @@ samp {
   background: rgb(var(--color-primary-600));
 }
 
-.home-pv-muted {
-  display: block;
-}
-
-.home-pv-line > .home-pv-muted {
-  display: inline;
-}
-
-/* On a dark surface (the dark card, or any card in the dark appearance) the
-   tints are of white instead of ink. */
+/* Inside the dark card, and inside any card in the dark appearance. */
 .home-tile-dark .home-pv,
 .dark .home-pv {
-  border-color: rgb(255 255 255 / 0.16);
+  border-color: rgb(var(--color-neutral-700));
+  background: transparent;
+  color: rgb(var(--color-neutral-300));
 }
 
-.home-tile-dark .home-pv {
-  background: transparent;
+.home-tile-dark .home-pv b,
+.dark .home-pv b {
+  color: rgb(var(--color-neutral));
 }
 
 .home-tile-dark .home-pv-row,
 .dark .home-pv-row {
-  border-top-color: rgb(255 255 255 / 0.1);
+  border-top-color: rgb(var(--color-neutral-700));
 }
 
 .home-tile-dark .home-pv-head,
 .dark .home-pv-head {
-  background: rgb(255 255 255 / 0.06);
+  background: rgba(var(--color-neutral-700), 0.45);
+}
+
+.home-tile-dark :is(.home-pv-head, .home-pv-muted),
+.dark :is(.home-pv-head, .home-pv-muted) {
+  color: rgb(var(--color-neutral-400));
+}
+
+.dark .home-tile-card:not(.home-tile-dark, .home-tile-mint) .home-pv {
+  background: rgba(var(--color-neutral-800), 0.6);
 }
 
 .home-tile-dark .home-pv-bar,
 .dark .home-pv-bar {
-  background: rgb(255 255 255 / 0.16);
+  background: rgba(var(--color-neutral-600), 0.6);
 }
 
 .dark .home-pv-bar > i {
@@ -1260,7 +1447,7 @@ samp {
   align-items: baseline;
   justify-content: space-between;
   gap: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.875rem;
 }
 
 .home-section-head > div {
@@ -1272,6 +1459,12 @@ samp {
 
 .home-section-head .home-band-text {
   margin: 0;
+  font-size: 0.9375rem;
+  color: rgb(var(--color-neutral-500));
+}
+
+.home-writing {
+  padding-top: 5rem;
 }
 
 .home-more {
@@ -1279,29 +1472,29 @@ samp {
 }
 
 .home-posts {
-  border-top: 1px solid rgb(var(--color-neutral-900));
+  border-top: 1px solid rgb(var(--color-neutral-200));
 }
 
 .home-post {
   display: grid;
-  grid-template-columns: 8.5rem minmax(0, 1fr) 11rem;
-  gap: 2rem;
+  grid-template-columns: 6rem minmax(0, 1fr) auto;
+  gap: 1.5rem;
   align-items: baseline;
-  padding: 1.5rem 0;
+  padding: 0.875rem 0;
   border-bottom: 1px solid rgb(var(--color-neutral-200));
   color: rgb(var(--color-neutral-900));
   text-decoration: none;
 }
 
 .home-post-title {
-  font-size: 1.375rem;
+  font-size: 1.0625rem;
   font-weight: 600;
-  line-height: 1.35;
-  letter-spacing: -0.02em;
+  line-height: 1.4;
   transition: color 0.2s ease-out;
 }
 
 .home-post-tag {
+  font-size: 0.75rem;
   text-align: right;
 }
 
@@ -1328,28 +1521,58 @@ samp {
 
 /* Sponsor */
 
-/* One sentence and a link under a rule, right above the site footer. */
+/* A tinted full-bleed band on top of the site footer: one sentence and a
+   link on the left, the footer menu on the right. The theme footer's own
+   menu is hidden on this page, so the links are not there twice; its
+   copyright line stays below the band. */
 .home-sponsor {
-  margin-top: 5rem;
-  padding-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  margin-top: 3rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
   border-top: 1px solid rgb(var(--color-neutral-200));
+  background: rgb(var(--color-neutral-100));
   font-family: var(--font-ui);
-  text-align: center;
+}
+
+main:has(.home) + #site-footer > nav {
+  display: none;
 }
 
 .home-sponsor-text {
   margin: 0;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   line-height: 1.5;
   color: rgb(var(--color-neutral-600));
 }
 
 .home-sponsor-link {
-  margin-left: 0.375rem;
   font-weight: 600;
   white-space: nowrap;
   color: rgb(var(--color-primary-600));
   text-decoration: none;
+}
+
+.home-sponsor-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.home-sponsor-nav a {
+  color: rgb(var(--color-neutral-500));
+  text-decoration: none;
+}
+
+.home-sponsor-nav a:hover {
+  color: rgb(var(--color-neutral-900));
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .home-sponsor-link:hover {
@@ -1831,7 +2054,7 @@ samp {
 }
 
 .dark .home-posts {
-  border-top-color: rgb(var(--color-neutral));
+  border-top-color: rgb(var(--color-neutral-700));
 }
 
 .dark .home-post {
@@ -1840,7 +2063,30 @@ samp {
 
 .dark .home-sponsor {
   border-top-color: rgb(var(--color-neutral-700));
+  background: rgba(var(--color-neutral-700), 0.45);
 }
+
+.dark .home-sponsor-nav a {
+  color: rgb(var(--color-neutral-400));
+}
+
+.dark .home-sponsor-nav a:hover {
+  color: rgb(var(--color-neutral));
+}
+
+.dark .home-tile-card:not(.home-tile-dark, .home-tile-mint) {
+  background: rgb(var(--color-neutral-700));
+  color: rgb(var(--color-neutral-300));
+}
+
+.dark .home-tile-card .home-tile-label {
+  color: rgb(var(--color-neutral-400));
+}
+
+.dark .home-tile-card .home-tile-name {
+  color: rgb(var(--color-neutral));
+}
+
 
 .dark .home-sponsor-text {
   color: rgb(var(--color-neutral-300));
@@ -1954,14 +2200,20 @@ samp {
     gap: 1.5rem;
   }
 
+  .home-tile-card {
+    padding: 1.5rem;
+    border-radius: 18px;
+    align-items: stretch;
+  }
+
   .home-post {
     grid-template-columns: minmax(0, 1fr);
-    gap: 0.375rem;
-    padding: 1.125rem 0;
+    gap: 0.25rem;
+    padding: 0.875rem 0;
   }
 
   .home-post-title {
-    font-size: 1.1875rem;
+    font-size: 1.0625rem;
   }
 
   .home-post-tag {
@@ -1969,7 +2221,11 @@ samp {
   }
 
   .home-sponsor {
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .home-writing {
+    padding-top: 4rem;
   }
 }
 
