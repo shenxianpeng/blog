@@ -15,8 +15,8 @@ A personal site with depth, not a page of text. The tools themselves carry
 it: an animated demo of the flagship at work, real users, real numbers and
 real posts. Structure comes from a full-bleed dark band, tiles with soft
 shadows, and jumps in type size — short headlines, quiet sublines. The home
-page is kept short: who is speaking, what he works on and the proof are on
-the first screen.
+page is kept short: who is speaking, what he works on (the stages card) and
+the proof are on the first screen.
 
 Deliberately avoided, because they read as AI-generated:
 
@@ -88,38 +88,51 @@ column ran 79–91. Article titles and headings use `text-wrap: balance`.
 
 Top to bottom:
 
-1. **Hero** — centred, and sized to fit the first screen of a laptop:
-   - the author's photo, name and `heroRole`, linked to About;
-   - the headline (`title`, or `heroTitle` with a manual line break that only
-     applies under 768px), 64px at most, then `heroLead` and pill buttons;
-   - **proof**, under a rule: three numbers with a label each, and the
-     organisations whose projects use cpp-linter. On a phone each number sits
-     on a row with its label;
-   - **stages** (`heroAlso.stages`): the pipeline `commit` → `review` →
-     `build` → `release` → `support` as a list under an ink rule. Each stage
-     has its name as the code chip the About diagram uses, its projects as
-     accent links and a one-sentence `note`. Five columns from 1024px, rows
-     below that.
-2. **Flagship** — dark full-bleed band for cpp-linter: label, short headline,
-   text, links and the animated demo.
-3. **Products** — centred headline, then three cards in a row (stacked under
-   960px), in the GitHub profile's order: keelinfra (dark), keelapps (mint),
-   Keelhaven (white). Each card has a small static preview of the product
+1. **Hero** — left-aligned, two columns from 1024px, and sized to fit the
+   first screen of a laptop:
+   - left: the author's photo, name and `heroRole`, linked to About; the
+     headline (`title`, or `heroTitle` with a manual line break), 62px at
+     most; `heroLead` and pill buttons;
+   - right: **stages** (`heroAlso.stages`), the pipeline `commit` → `review`
+     → `build` → `release` → `support` as a card (neutral-50, rule border,
+     18px radius), one row per stage: its name in Geist Mono in the accent
+     colour, its projects as accent links (one may carry a small tag, such as
+     "flagship") and a one-sentence `note`;
+   - under both, **proof**, under a rule: five facts, each a number or a
+     short phrase above its label, in as many equal columns as fit, then the
+     organisations whose projects use cpp-linter on one line. On a phone each
+     fact sits on a row with its label.
+2. **Flagship** — dark full-bleed band for cpp-linter. Stacked and centred
+   on a narrow screen; from 1024px the label, headline, text and links are on
+   the left and the animated demo, scaled to its column, on the right.
+3. **Features** — an open-source project with a section of its own, text
+   beside its demo; `flip: true` puts the demo on the left. Now one:
+   commit-check, with a terminal showing the README's JSON example
+   (`demo-commit-check.html`, static, dark in both appearances) and a row of
+   chips.
+4. **Products** — headline left and one sentence right, then cards side by
+   side (stacked under 960px): keelinfra (dark) and Keelhaven (white). Each
+   card has a small static preview of the product
    (`layouts/partials/home/preview-<name>.html`): a few rows of its own
-   screen, drawn in tints of the card's text colour. The animated demos of
-   the three products are no longer on the home page; their partials remain
-   and render for an item with `style: wide`.
-4. **Writing** — the four most recent posts as one list of ruled rows: date,
-   title, tag.
-5. **Page body** — only the Chinese home has one: the WeChat QR code.
-6. **Sponsor** — one sentence and a link under a rule, above the site
+   screen, drawn in tints of the card's text colour. keelapps is one quiet
+   line under the cards (`products.also`): its buyers are on the Atlassian
+   Marketplace, not on this blog. The animated demos of the three products
+   are no longer on the home page; their partials remain and render for an
+   item with `style: wide`.
+5. **Writing** — headline and subline on one baseline, then the four most
+   recent posts as one list of ruled rows: date, title, tag.
+6. **Page body** — only the Chinese home has one: the WeChat QR code.
+7. **Sponsor** — one sentence and a link under a rule, above the site
    footer.
+
+Section headlines on the home page are 44px at most; the hero's is the only
+larger one.
 
 ## About page
 
 Opens with the positioning line and one paragraph on why, then the pipeline
 as a diagram (`{{< pipeline >}}`): the banner's line with one dot per stage,
-the stage name as the hero's code chip under each dot, and the projects of
+the stage name as a small code chip under each dot, and the projects of
 that stage as accent links below it. Five columns within the article's
 measure; under 35rem the line turns vertical. The line into the last stage,
 `support`, is dashed: it stands for years, where the others stand for minutes.

@@ -33,8 +33,8 @@ Instructions for AI coding agents working on this repository. This is a personal
 **`DESIGN.md` describes the site as built** — the "Evergreen" look adopted in
 2026-09: grey-green paper, green-black ink, one forest-green accent; Geist for
 headings and UI, Newsreader for reading, Geist Mono for code and dates, Noto
-Serif SC for Chinese; a short home page with the author, the proof and the
-delivery stages on the first screen, then the cpp-linter band with its
+Serif SC for Chinese; a short home page with the author, the delivery stages
+and the proof on the first screen, then the cpp-linter band with its
 animated demo. A mismatch between the live site and `DESIGN.md` is a bug in
 one of them; fix whichever is wrong, and keep the two in step.
 
@@ -55,28 +55,33 @@ The home page overrides Blowfish's `landing` layout
 `layouts/partials/recent-articles/main.html`. All of its copy is front matter
 in `content/_index.en.md` and `content/_index.md`: `heroRole` (one line
 under the author's name; the photo and name come from `params.author`),
-`title` (and optional `heroTitle` with a manual line break for phones),
-`heroLead`, `heroButtons`, `proof` (`stats`: a number and a label each;
-`usersLabel` and `users`), `heroAlso` (with `stages` it lists commit →
-review → build → release → support, each stage with its projects and a
-one-sentence `note`), `flagship` (the dark cpp-linter band), `products`,
-`writing` and `sponsor` (one line above the footer). The numbers in `proof`
-go stale: when you touch them, check them against the About page and
+`title` (and optional `heroTitle` with a manual line break), `heroLead`,
+`heroButtons`, `heroAlso` (with `stages` it is the card beside the headline:
+commit → review → build → release → support, each stage with its projects
+and a one-sentence `note`), `proof` (`stats`: a number or short phrase and a
+label each; `usersLabel` and `users`), `flagship` (the dark cpp-linter
+band), `features` (open-source projects with a section of their own; now
+commit-check), `products` (`items`, and `also` for a product that only gets
+a line), `writing` and `sponsor` (one line above the footer). The numbers in
+`proof` go stale: when you touch them, check them against the About page and
 pypistats.org. The Chinese page's body holds the WeChat QR section.
 
-The three products are cards (`style: card`, with `tone` and `preview:
-<name>`, a small static picture in `layouts/partials/home/preview-<name>.html`).
-`demo: <name>` on the flagship, or on a product with `style: wide`, renders
-`layouts/partials/home/demo-<name>.html`, a pure-CSS animation of the tool at
-work. Only the cpp-linter one (thread comment, PR review, step summary,
-auto-fix) is on the home page now; the Keelhaven, AccessLens (keelapps) and
-Agent8 (keelinfra) demos are kept in the repo but not shown.
+The products are cards (`style: card`, with `tone` and `preview: <name>`, a
+small static picture in `layouts/partials/home/preview-<name>.html`):
+keelinfra and Keelhaven. keelapps is one line under them, because its buyers
+are on the Atlassian Marketplace, not on this blog.
+`demo: <name>` on the flagship, a feature, or a product with `style: wide`
+renders `layouts/partials/home/demo-<name>.html`, a CSS mock-up of the tool
+at work. On the home page now: cpp-linter's animation (thread comment, PR
+review, step summary, auto-fix) and commit-check's static terminal. The
+Keelhaven, AccessLens (keelapps) and Agent8 (keelinfra) animations are kept
+in the repo but not shown.
 Wide product tiles also take `tone` (mint, dark) and `flip: true`. The
 cpp-linter, AccessLens and Agent8 demo CSS is generated
 by `.github/scripts/gen_demo_css.py` into a marked block of `custom.css`:
 change the timelines in the script and rerun it, do not edit the block. Keep that page saying the same thing as the GitHub profile README
 (github.com/shenxianpeng): one positioning line, cpp-linter as the flagship,
-and keelinfra (Agent8) / keelapps / Keelhaven as the products, in that order.
+commit-check next, and keelinfra (Agent8) and Keelhaven as the products.
 The stages are for this site only: the profile README lists the projects
 plainly, without stage labels.
 
