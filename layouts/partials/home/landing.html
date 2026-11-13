@@ -75,21 +75,35 @@
       </div>
     {{ end }}
 
-      {{- /* heroAlso: one quiet line that closes the hero. With `stages`, it
-             walks the delivery pipeline the GitHub profile banner draws,
-             each stage name followed by the projects that run there:
-             commit → review → build → release. With plain `links`, it is a
-             list separated by dots. The label carries its own trailing space
-             ("From commit to release: ", but "从 commit 到 release："). */}}
-      {{ with .Params.heroAlso }}
+    {{- /* heroAlso closes the hero. With `stages`, it is the delivery
+           pipeline as a list, in order: commit, review, build, release,
+           support. Each stage has its name, the projects that work there and
+           a one-sentence `note`; five columns on a wide screen, rows on a
+           narrow one. With plain `links` instead, it is one quiet line, the
+           links separated by dots, and the label carries its own trailing
+           separator ("Also: "). */}}
+    {{ with .Params.heroAlso }}
+      {{ if .stages }}
+        <div class="home-stages">
+          {{ with .label }}<p class="home-stages-label">{{ . }}</p>{{ end }}
+          <ol class="home-stages-list">
+            {{ range .stages }}
+              <li class="home-stage">
+                <span class="home-stage-name">{{ .stage }}</span>
+                <span class="home-stage-body">
+                  <span class="home-stage-projects">{{ range $j, $l := .links }}{{ if $j }}, {{ end }}<a href="{{ $l.url | safeURL }}">{{ $l.label }}</a>{{ end }}</span>
+                  {{ with .note }}<span class="home-stage-note">{{ . }}</span>{{ end }}
+                </span>
+              </li>
+            {{ end }}
+          </ol>
+        </div>
+      {{ else }}
         <p class="home-also">{{ .label }}
-          {{- with .stages }}
-            {{- range $i, $s := . }}{{ if $i }}<span class="home-also-sep" aria-hidden="true"> → </span>{{ end }}<span class="home-also-step"><span class="home-also-stage">{{ $s.stage }}</span> {{ range $j, $l := $s.links }}{{ if $j }}, {{ end }}<a href="{{ $l.url | safeURL }}">{{ $l.label }}</a>{{ end }}</span>{{ end -}}
-          {{- else }}
-            {{- range $i, $l := .links }}{{ if $i }}<span aria-hidden="true"> · </span>{{ end }}<a href="{{ $l.url | safeURL }}">{{ $l.label }}</a>{{ end -}}
-          {{- end -}}
+          {{- range $i, $l := .links }}{{ if $i }}<span aria-hidden="true"> · </span>{{ end }}<a href="{{ $l.url | safeURL }}">{{ $l.label }}</a>{{ end -}}
         </p>
       {{ end }}
+    {{ end }}
   </section>
 
   {{ with .Params.flagship }}

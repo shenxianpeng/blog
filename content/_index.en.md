@@ -9,29 +9,34 @@ heroButtons:
     url: "/posts/"
     style: "outline"
 heroAlso:
-  label: "From commit to release, and long after: "
+  label: "From commit to release, and long after"
   stages:
     - stage: "commit"
+      note: "One policy for commit messages, branch names and AI attribution."
       links:
         - label: "commit-check"
           url: "https://commit-check.com/"
         - label: "Conventional Branch"
           url: "https://conventionalbranch.org/"
     - stage: "review"
+      note: "clang-format and clang-tidy on every pull request."
       links:
         - label: "cpp-linter"
           url: "https://cpp-linter.github.io/"
     - stage: "build"
+      note: "AI diagnosis of failed Jenkins builds, and Java 8 build hosts on a current Jenkins."
       links:
         - label: "explain-error"
           url: "https://github.com/jenkinsci/explain-error-plugin"
         - label: "Agent8"
           url: "https://keelinfra.io/jenkins/"
     - stage: "release"
+      note: "SBOM, signed provenance and alerts for exploited vulnerabilities, as the EU Cyber Resilience Act asks."
       links:
         - label: "release-ledger"
           url: "https://keelinfra.io/cra/"
     - stage: "support"
+      note: "Security fixes for the last Jenkins LTS on Java 17, and MkDocs 1.x, maintained."
       links:
         - label: "Jenkins Extended Security"
           url: "https://github.com/keelinfra/jenkins-extended-security"

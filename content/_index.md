@@ -10,29 +10,34 @@ heroButtons:
     url: "/zh-cn/posts/"
     style: "outline"
 heroAlso:
-  label: "从 commit 到 release，再到发布之后："
+  label: "从 commit 到 release，再到发布之后"
   stages:
     - stage: "commit"
+      note: "一份策略校验提交信息、分支名和 AI 署名。"
       links:
         - label: "commit-check"
           url: "https://commit-check.com/"
         - label: "Conventional Branch"
           url: "https://conventionalbranch.org/"
     - stage: "review"
+      note: "每个 PR 上跑 clang-format 和 clang-tidy。"
       links:
         - label: "cpp-linter"
           url: "https://cpp-linter.github.io/"
     - stage: "build"
+      note: "用 AI 解释 Jenkins 构建失败；让只有 Java 8 的构建机接入新版 Jenkins。"
       links:
         - label: "explain-error"
           url: "https://github.com/jenkinsci/explain-error-plugin"
         - label: "Agent8"
           url: "https://keelinfra.io/jenkins/"
     - stage: "release"
+      note: "SBOM、签名的构建溯源和在野漏洞告警，对应欧盟《网络弹性法案》的要求。"
       links:
         - label: "release-ledger"
           url: "https://keelinfra.io/cra/"
     - stage: "support"
+      note: "给最后一个能跑在 Java 17 上的 Jenkins LTS 补安全修复；持续维护的 MkDocs 1.x。"
       links:
         - label: "Jenkins Extended Security"
           url: "https://github.com/keelinfra/jenkins-extended-security"

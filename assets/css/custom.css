@@ -368,17 +368,13 @@ samp {
   margin: 1.75rem 0 0;
 }
 
-/* heroAlso: the projects that are neither flagship nor product, one line. */
+/* heroAlso with plain links: one quiet line that closes the hero. */
 .home-also {
-  margin: 0;
+  margin: 2rem 0 0;
   font-family: var(--font-ui);
   font-size: 0.9375rem;
   line-height: 1.6;
   color: rgb(var(--color-neutral-500));
-}
-
-.home-hero > .home-also {
-  margin-top: 2rem;
 }
 
 .home-also a {
@@ -399,32 +395,141 @@ samp {
   color: rgb(var(--color-primary-400));
 }
 
-/* heroAlso with stages: the pipeline from the GitHub banner, in one line.
-   Each step stays on one line; the arrows wrap between steps. */
-.home-also-step {
-  white-space: nowrap;
+/* heroAlso with stages: the delivery pipeline as a list, one item per stage:
+   its name (the code chip the About page's diagram uses), the projects that
+   work there, and one sentence on what they do. Rows on a narrow screen,
+   five columns under an ink rule from 1024px. */
+.home-stages {
+  margin-top: 2.5rem;
+  font-family: var(--font-ui);
+  text-align: left;
 }
 
-.home-also-stage {
+.home-stages-label {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgb(var(--color-neutral-500));
+}
+
+:lang(zh) .home-stages-label {
+  font-size: 0.8125rem;
+  letter-spacing: 0;
+}
+
+.home-stages-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgb(var(--color-neutral-900));
+}
+
+.home-stage {
+  display: flex;
+  gap: 0.875rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgb(var(--color-neutral-200));
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+.home-stage:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.home-stage-name {
+  flex: none;
+  align-self: flex-start;
+  min-width: 4.25rem;
   padding: 0.05rem 0.4rem;
   border-radius: 4px;
   background: rgb(var(--color-neutral-100));
   color: rgb(var(--color-neutral-600));
   font-family: var(--font-code);
   font-size: 0.8125rem;
+  text-align: center;
 }
 
-.home-also-sep {
+.home-stage-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.home-stage-projects {
+  color: rgb(var(--color-neutral-500));
+}
+
+.home-stage-projects a {
+  font-weight: 600;
+  color: rgb(var(--color-primary-600));
+  text-decoration: none;
+}
+
+.home-stage-projects a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.home-stage-note {
+  font-size: 0.875rem;
+  color: rgb(var(--color-neutral-500));
+}
+
+@media (min-width: 1024px) {
+  .home-stages-list {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .home-stage {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.875rem 1rem 0;
+    border-bottom: 0;
+    border-left: 1px solid rgb(var(--color-neutral-200));
+  }
+
+  .home-stage:first-child {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .home-stage:last-child {
+    padding-right: 0;
+  }
+
+  .home-stage-name {
+    min-width: 0;
+  }
+}
+
+.dark .home-stages-label,
+.dark .home-stage-projects,
+.dark .home-stage-note {
   color: rgb(var(--color-neutral-400));
 }
 
-.dark .home-also-stage {
+.dark .home-stages-list {
+  border-top-color: rgb(var(--color-neutral));
+}
+
+.dark .home-stage {
+  border-color: rgb(var(--color-neutral-700));
+}
+
+.dark .home-stage-name {
   background: rgb(var(--color-neutral-700));
   color: rgb(var(--color-neutral-300));
 }
 
-.dark .home-also-sep {
-  color: rgb(var(--color-neutral-500));
+.dark .home-stage-projects a {
+  color: rgb(var(--color-primary-400));
 }
 
 .home-links a {
