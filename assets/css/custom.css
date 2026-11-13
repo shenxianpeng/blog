@@ -285,7 +285,8 @@ body:has(.home) {
   }
 }
 
-@media (min-width: 768px) {
+/* Blowfish's md breakpoint is 853px, not Tailwind's 768px. */
+@media (min-width: 853px) {
   body:has(.home) {
     --home-gutter: 6rem;
   }
@@ -307,12 +308,12 @@ body:has(.home) {
 /* The header is the site's own, the same on every page. Blowfish reserves
    148px for it, which leaves 91px of air under the 57px bar; the home page
    takes that space back and sets its own distance to the hero (64px). The
-   bar is 65px high under 768px, where the menu collapses. */
+   bar is 65px high under 853px, where the menu collapses. */
 body:has(.home) > header > div:first-child {
   min-height: 65px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 853px) {
   body:has(.home) > header > div:first-child {
     min-height: 57px;
   }
