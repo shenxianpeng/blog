@@ -58,12 +58,16 @@ in `content/_index.en.md` and `content/_index.md`: `heroRole` (one line
 under the author's name; the photo and name come from `params.author`),
 `title` (and optional `heroTitle` with a manual line break), `heroLead`,
 `heroButtons`, `heroAlso` (with `stages` it is the card beside the headline:
-commit → review → build → release → support, each stage with its projects
-and a one-sentence `note`), `proof` (`stats`: a number or short phrase and a
+commit → review → build → release, each stage with its projects and a
+one-phrase `note`), `proof` (`stats`: a number or short phrase and a
 label each; `usersLabel` and `users`), `flagship` (the dark cpp-linter
 band), `features` (open-source projects with a section of their own; now
 commit-check), `products` (`items`, and `also` for a product that only gets
-a line), `writing` and `sponsor` (a tinted band that also carries the footer menu). The numbers in
+a line), `writing` and `sponsor` (a tinted band that also carries the footer menu and
+closes the page; the theme's footer is hidden on the home page). The home
+page also has its own header, a plain text menu
+(`layouts/partials/header/home.html`), where every other page has the
+theme's. The numbers in
 `proof` go stale: when you touch them, check them against the About page and
 pypistats.org. The Chinese page's body holds the WeChat QR section.
 
@@ -93,8 +97,9 @@ The About page (`content/about/`) opens with the positioning line, then draws
 the same pipeline as a diagram with the `{{</* pipeline */>}}` shortcode
 (`layouts/shortcodes/pipeline.html`, data in `data/pipeline.yaml`, styles
 `.pipeline-*` in `custom.css`): one dot per stage on a line, five columns on a
-wide screen and a vertical line on a phone. Its stages are the home page's;
-change the two together.
+wide screen and a vertical line on a phone. Its first four stages are the
+home page's; the home card leaves out the fifth, support. Change the shared
+ones together.
 
 Every post and essay ends with a **post footer**
 (`layouts/partials/post-footer.html`, rendered from the

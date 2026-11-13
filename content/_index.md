@@ -10,7 +10,7 @@ heroButtons:
     url: "/zh-cn/posts/"
     style: "outline"
 heroAlso:
-  label: "从 commit 到 release，再到发布之后"
+  label: "从 commit 到 release"
   stages:
     - stage: "commit"
       note: "提交信息、分支名和 AI 署名的统一策略"
@@ -37,13 +37,6 @@ heroAlso:
       links:
         - label: "release-ledger"
           url: "https://keelinfra.io/cra/"
-    - stage: "support"
-      note: "给最后一个支持 Java 17 的 Jenkins LTS 补安全修复；持续维护的 MkDocs 1.x"
-      links:
-        - label: "Jenkins Extended Security"
-          url: "https://github.com/keelinfra/jenkins-extended-security"
-        - label: "MkDocs NG"
-          url: "https://mkdocs-ng.org/"
 proof:
   stats:
     - value: "75 万+"

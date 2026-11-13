@@ -9,7 +9,7 @@ heroButtons:
     url: "/posts/"
     style: "outline"
 heroAlso:
-  label: "From commit to release, and long after"
+  label: "From commit to release"
   stages:
     - stage: "commit"
       note: "Commit message, branch name and AI-attribution policy"
@@ -36,13 +36,6 @@ heroAlso:
       links:
         - label: "release-ledger"
           url: "https://keelinfra.io/cra/"
-    - stage: "support"
-      note: "Security fixes for the last Jenkins LTS on Java 17; MkDocs 1.x, maintained"
-      links:
-        - label: "Jenkins Extended Security"
-          url: "https://github.com/keelinfra/jenkins-extended-security"
-        - label: "MkDocs NG"
-          url: "https://mkdocs-ng.org/"
 proof:
   stats:
     - value: "750,000+"

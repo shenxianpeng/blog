@@ -1,0 +1,18 @@
+{{- /*
+  The header for `header.layout = "fixed-fill"` (config/_default/params.toml).
+  The home page has a header of its own, a plain text menu drawn to the
+  proposal (header/home.html). Every other page gets the theme's fixed-fill
+  header: the else branch is a copy of
+  themes/blowfish/layouts/partials/header/fixed-fill.html (v3.6.0); keep it in
+  step when the theme is updated.
+*/ -}}
+{{ if .IsHome }}
+  {{ partial "header/home.html" . }}
+{{ else }}
+  <div class="min-h-[148px]"></div>
+  <div class="fixed top-0 inset-x-0 bg-neutral dark:bg-neutral-800 z-100">
+    <div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32">
+      {{ partial "header/basic.html" . }}
+    </div>
+  </div>
+{{ end }}

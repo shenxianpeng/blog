@@ -90,17 +90,27 @@ column ran 79–91. Article titles and headings use `text-wrap: balance`.
 Top to bottom:
 
 The layout and its numbers come from the proposal the home page was rebuilt
-to in 2026-11; treat them as the spec.
+to in 2026-11; treat them as the spec. The page is drawn on its own grid:
+74rem (1184px) of content, where the rest of the site has 72rem, on a 16px
+base with a 1.55 line-height.
 
-1. **Hero** — left-aligned, two columns from 1024px (1.16 : 1, 48px gap),
-   sized to fit the first screen of a laptop:
+0. **Header** — the home page has its own (`layouts/partials/header/home.html`,
+   chosen in the `header/fixed-fill.html` override): a 64px full-bleed bar
+   over a rule, not fixed, with the site name on the left (17px, 600) and a
+   text menu on the right at 15px: Posts, Projects, About, GitHub, and the
+   other language in 13px Geist Mono, muted. No icons, appearance switch or
+   search; every other page keeps the theme's header with those.
+
+1. **Hero** — left-aligned, 64px under the header, two columns from 1024px
+   (628 : 508, 48px gap), sized to fit the first screen of a laptop:
    - left: the author's photo (52px), name (16px, 600) and `heroRole` (14px,
      muted), linked to About; the headline (`title`, or `heroTitle` with a
      manual line break) at 62px, line-height 1.04, tracking −0.035em;
      `heroLead` at 19px in body-text colour; pill buttons 46px high, 15px,
      600;
    - right: **stages** (`heroAlso.stages`), the pipeline `commit` → `review`
-     → `build` → `release` → `support` as a card (neutral-50, rule border,
+     → `build` → `release` as a card (the About page's diagram has a fifth
+     stage, `support`; the home card stops at release) (neutral-50, rule border,
      18px radius, 24px by 26px padding), one row per stage at 14px: its name
      in 12px Geist Mono in the accent colour, its projects as accent links
      (one may carry a small tag, such as "flagship") and a one-phrase `note`
@@ -122,8 +132,7 @@ to in 2026-11; treat them as the spec.
    true` puts the demo on the left. Same label, headline, text, chips and
    links as the flagship, on the page colour. Now one: commit-check, with a
    terminal (`demo-commit-check.html`, static, dark in both appearances)
-   showing the README's JSON example: its first six fields, and an ellipsis
-   for the rest.
+   showing the README's JSON example cut down to its first six fields.
 4. **Products** — a 36px headline on the left and one 15px sentence on the
    right, then cards side by side (stacked under 960px): keelinfra (dark,
    neutral-800) and Keelhaven (the flat surface colour, neutral-100). Cards
@@ -138,10 +147,10 @@ to in 2026-11; treat them as the spec.
    rows, 14px of padding each: date (13px mono), title (17px, 600), tag
    (12px mono).
 6. **Page body** — only the Chinese home has one: the WeChat QR code.
-7. **Sponsor** — a tinted full-bleed band (neutral-100 under a rule) on top
-   of the site footer: one 15px sentence and a link on the left, the footer
-   menu on the right. The theme footer's own menu is hidden on this page;
-   its copyright line stays below the band.
+7. **Sponsor** — a tinted full-bleed band (neutral-100 under a rule) that
+   closes the page: one 15px sentence and a link on the left, the footer
+   menu on the right, and 62px of page under it. The theme's footer (its
+   menu and the copyright line) is not shown on the home page.
 
 Not on the home page any more, but kept in the repo: the animated demos of
 cpp-linter (four scenes), Agent8, AccessLens and Keelhaven. `demo:

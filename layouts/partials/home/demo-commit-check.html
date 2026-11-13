@@ -3,9 +3,10 @@
   The command and the JSON are the README's own example
   (github.com/commit-check/commit-check, "AI-native usage"): a commit message
   piped to `commit-check -m --format json`, and the failing entry of the
-  output's `checks` array. The entry is cut short for the card: the error
-  message ends in an ellipsis, and the line of dots stands for its last three
-  fields (fix, docs_url, reason). Styles: .cc-demo-* in assets/css/custom.css.
+  output's `checks` array. The entry is cut short for the card, as the
+  proposal draws it: the error message ends in an ellipsis and the object
+  closes after `suggest`, leaving out its last three fields (fix, docs_url,
+  reason). Styles: .cc-demo-* in assets/css/custom.css.
   Context: the feature's front matter; `demoLabel` is the accessible
   description.
 */ -}}
@@ -18,8 +19,7 @@
   "status": <span class="cc-demo-fail">"fail"</span>,
   "value": "Fix: add streaming support",
   "error": "The commit message should follow Conventional Commits…",
-  "suggest": <span class="cc-demo-fix">"Use \"fix: add streaming support\""</span>,
-  <span class="cc-demo-note">…</span>
+  "suggest": <span class="cc-demo-fix">"Use \"fix: add streaming support\""</span>
 }</div></div>
 </div>
 </div>
