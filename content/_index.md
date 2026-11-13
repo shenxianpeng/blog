@@ -1,8 +1,8 @@
 ---
-title: "把软件稳稳发出去。"
-heroTitle: "把软件稳稳<br>发出去。"
-heroRole: "DevOps 与发布工程师，2009 年入行 · 维尔纽斯"
-heroLead: "帮团队把软件稳稳发出去的开源工具，不管代码出自人还是 AI agent 之手，上游不管了也一样。"
+title: "给软件交付装上开源护栏。"
+heroTitle: "给软件交付<br>装上开源护栏。"
+heroRole: "构建与发布工程师，2009 年入行 · 维尔纽斯"
+heroLead: "在 commit 和 release 之间把关的检查，不管代码出自人还是 AI agent 之手。"
 heroButtons:
   - label: "看项目"
     url: "/zh-cn/portfolio/"

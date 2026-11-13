@@ -1,7 +1,7 @@
 ---
-title: "Keep software shipping."
-heroRole: "DevOps and release engineer since 2009 · Vilnius"
-heroLead: "Open-source tools that keep software shipping, whether a person or an AI agent wrote the code, even after upstream moves on."
+title: "Open-source guardrails for software delivery."
+heroRole: "Build & release engineer since 2009 · Vilnius"
+heroLead: "The checks that run between a commit and a release, whether a person or an AI agent wrote the code."
 heroButtons:
   - label: "See the projects"
     url: "/portfolio/"
