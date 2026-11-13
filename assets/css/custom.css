@@ -1040,9 +1040,19 @@ samp {
   overflow-x: auto;
 }
 
+/* Lines keep their shape where the terminal has a column of its own, and
+   wrap on a narrower screen, so nothing is cut off. */
 .cc-demo-cmd,
 .cc-demo-out {
-  white-space: pre;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 1024px) {
+  .cc-demo-cmd,
+  .cc-demo-out {
+    white-space: pre;
+  }
 }
 
 .cc-demo-cmd {
