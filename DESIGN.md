@@ -12,10 +12,11 @@ This describes what the site runs. Implementation:
 ## Direction
 
 A personal site with depth, not a page of text. The tools themselves carry
-it: animated demos that show each one at work, real users and real posts.
-Structure comes from full-bleed bands that change light and dark, large tiles
-with soft shadows, and big jumps in type size — short headlines, quiet
-sublines.
+it: each one shown at work, real users, real numbers and real posts.
+Structure comes from a full-bleed dark band, flat cards and jumps in type
+size — short headlines, quiet sublines. The home
+page is kept short: who is speaking, what he works on (the stages card) and
+the proof are on the first screen.
 
 Deliberately avoided, because they read as AI-generated:
 
@@ -38,8 +39,8 @@ text; dark pages use `neutral-800` and `--color-neutral`.
 |---|---|---|
 | Page | `#F2F3EF` (neutral) | `#111914` (neutral-800) |
 | Card, tile | `#FFFFFF` | `#243029` (neutral-700) |
-| Band (sponsor) | `#E7E9E3` (neutral-100) | neutral-700 at 45% |
-| Flagship band | `#0D120F` (neutral-900), both appearances | same, with neutral-700 rules |
+| Flagship band | `#111914` (neutral-800) | `#0D120F` (neutral-900), with neutral-700 rules |
+| Sponsor band, flat card | `#E7E9E3` (neutral-100) | neutral-700 (the band at 45%) |
 | Rule | `#D3D7CF` (neutral-200) | `#243029` (neutral-700) |
 | Ink | `#0D120F` (neutral-900) | `#F2F3EF` (neutral) |
 | Body text | `#36403A` (neutral-600) | `#B7C1B9` (neutral-300) |
@@ -88,26 +89,79 @@ column ran 79–91. Article titles and headings use `text-wrap: balance`.
 
 Top to bottom:
 
-1. **Hero** — centred headline (`title`, or `heroTitle` for a manual line
-   break), `heroLead`, pill buttons, and `heroAlso`: one muted line that walks
-   the pipeline from the GitHub profile, `commit` → `review` → `build` →
-   `release` → `support`, each stage name as a small code chip followed by the projects
-   that run there. No image.
-2. **Flagship** — dark full-bleed band for cpp-linter: label, short headline,
-   text, links, the animated demo, and the users row.
-3. **Products** — centred headline, then three wide tiles with animated
-   demos, alternating sides, in the GitHub profile's order: keelinfra (dark,
-   Agent8 demo right), keelapps (mint, demo left via `flip: true`), Keelhaven
-   (demo right).
-4. **Writing** — recent posts as one list of ruled rows: date, title, tag.
-5. **Page body** — only the Chinese home has one: the WeChat QR code.
-6. **Sponsor** — full-bleed tinted band.
+The layout and its numbers come from the proposal the home page was rebuilt
+to in 2026-11; treat them as the spec. The page is drawn on its own grid:
+74rem (1184px) of content, where the rest of the site has 72rem, on a 16px
+base with a 1.55 line-height.
+
+0. **Header** — the site's own, the same as on every other page (the
+   proposal drew a text-only menu; one header across the site won). On the
+   home page its inner container takes the page's 3rem side padding so its
+   ends line up with the content, and the 148px Blowfish reserves for it is
+   cut to the bar's own height, so the hero's 64px of top padding is the
+   whole distance between the two.
+
+1. **Hero** — left-aligned, 64px under the header, two columns from 1024px
+   (601 : 535, 48px gap), sized to fit the first screen of a laptop:
+   - left: the author's photo (52px), name (16px, 600) and `heroRole` (14px,
+     muted), linked to About; the headline (`title`, or `heroTitle` with a
+     manual line break) at 62px, line-height 1.04, tracking −0.035em;
+     `heroLead` at 19px in body-text colour; pill buttons 48px high, 15px,
+     600;
+   - right: **stages** (`heroAlso.stages`), the pipeline `commit` → `review`
+     → `build` → `release` as a card (the About page's diagram has a fifth
+     stage, `support`; the home card stops at release) (neutral-50, rule border,
+     18px radius, 24px by 26px padding), one row per stage at 14px: its name
+     in 12px Geist Mono in the accent colour, its projects as accent links
+     (one may carry a small tag, such as "flagship") and a one-phrase `note`
+     in muted text, with no full stop;
+   - under both, **proof**, under a rule: five facts, each a 32px number or
+     short phrase above a 14px label, in as many 180px-or-wider columns as
+     fit, then the organisations whose projects use cpp-linter on one line
+     at 18px, 700. On a phone each fact sits on a row with its label.
+2. **Flagship** — dark full-bleed band for cpp-linter, 72px of padding.
+   Stacked on a narrow screen; from 1024px the text is on the left and the
+   demo on the right. Text: a 13px mono label in the accent colour, the
+   headline at 42px, 17px text, a row of **chips** (12px mono pills; the one
+   named by `chipActive` in the accent colour) and the links at 15px, 600.
+   Demo: one static frame of a GitHub pull request, the format-review
+   suggestion with its "Commit suggestion" button
+   (`demo-cpp-linter-review.html`), in GitHub's own colours.
+3. **Features** — an open-source project with a full-bleed section of its
+   own, 64px of padding, closed by a rule; text beside its demo, and `flip:
+   true` puts the demo on the left. Same label, headline, text, chips and
+   links as the flagship, on the page colour. Now one: commit-check, with a
+   terminal (`demo-commit-check.html`, static, dark in both appearances)
+   showing the README's JSON example cut down to its first six fields.
+4. **Products** — a 36px headline on the left and one 15px sentence on the
+   right, then cards side by side (stacked under 960px): keelinfra (dark,
+   neutral-800) and Keelhaven (the flat surface colour, neutral-100). Cards
+   are flat: 18px radius, 24px padding, no shadow; a 12px mono label, the
+   name at 24px, 14px text, a small static preview of the product
+   (`layouts/partials/home/preview-<name>.html`, a few rows of its own
+   screen) and "Learn more" at 14px, 600. keelapps is one quiet 14px line
+   under the cards (`products.also`): its buyers are on the Atlassian
+   Marketplace, not on this blog.
+5. **Writing** — a 36px headline with its subline on the same baseline and
+   "All posts" at the far end, then the four most recent posts as ruled
+   rows, 14px of padding each: date (13px mono), title (17px, 600), tag
+   (12px mono).
+6. **Page body** — only the Chinese home has one: the WeChat QR code.
+7. **Sponsor** — a tinted full-bleed band (neutral-100 under a rule) that
+   closes the page: one 15px sentence and a link on the left, the footer
+   menu on the right, and 62px of page under it. The theme's footer (its
+   menu and the copyright line) is not shown on the home page.
+
+Not on the home page any more, but kept in the repo: the animated demos of
+cpp-linter (four scenes), Agent8, AccessLens and Keelhaven. `demo:
+"cpp-linter"` on the flagship puts the first back; the other three render
+for a product with `style: wide`.
 
 ## About page
 
 Opens with the positioning line and one paragraph on why, then the pipeline
 as a diagram (`{{< pipeline >}}`): the banner's line with one dot per stage,
-the stage name as the hero's code chip under each dot, and the projects of
+the stage name as a small code chip under each dot, and the projects of
 that stage as accent links below it. Five columns within the article's
 measure; under 35rem the line turns vertical. The line into the last stage,
 `support`, is dashed: it stands for years, where the others stand for minutes.
@@ -123,7 +177,9 @@ Styles `.post-footer-*` in `custom.css`.
 ## Rules
 
 - Change colours in `evergreen.css`, not in component CSS. Components use
-  `rgb(var(--color-…))`.
+  `rgb(var(--color-…))`. The tokens are comma-separated triplets, so a
+  translucent colour is `rgba(var(--color-…), 0.1)`; `rgb(var(--color-…) /
+  0.1)` is invalid CSS and is silently dropped.
 - The theme's compiled Tailwind only contains the utilities the theme uses.
   New components need plain CSS in `custom.css`, not new Tailwind classes.
 - One accent. No gradient washes on page surfaces (the Keelhaven demo's

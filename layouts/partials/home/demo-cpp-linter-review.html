@@ -1,0 +1,30 @@
+{{- /*
+  cpp-linter in the flagship band of the home page: one static frame, the
+  format-review feature. A GitHub pull request with a clang-format suggestion
+  from github-actions on src/demo.hpp, its "Commit suggestion" button, and
+  the cpp-linter check passing. The code is the example from the action's
+  screenshots, the same as in the animated demo (demo-cpp-linter.html), which
+  walks all four features and can be put back with `demo: "cpp-linter"`.
+  Colours are GitHub's own. Styles: .clr-demo-* in assets/css/custom.css.
+  Context: the flagship front matter; `demoLabel` is the accessible
+  description.
+*/ -}}
+<div class="home-demo home-demo-clr">
+<div class="clr-demo" role="img" aria-label="{{ .demoLabel }}">
+<div class="clr-demo-head" aria-hidden="true"><strong>Add Dummy class</strong><span class="clr-demo-muted">#42</span><span class="clr-demo-open">Open</span></div>
+<div class="clr-demo-main" aria-hidden="true">
+<div class="clr-demo-by"><strong>github-actions</strong> bot · clang-format suggestions · src/demo.hpp</div>
+<div class="clr-demo-diff">
+<div class="clr-demo-diff-head">Suggested change</div>
+<div class="clr-demo-del">8   - Dummy() :numb(0), useless("\0"){}</div>
+<div class="clr-demo-add">8   + Dummy()</div>
+<div class="clr-demo-add">9   +     : numb(0)</div>
+<div class="clr-demo-add">10  +     , useless("\0")</div>
+<div class="clr-demo-add">11  + {</div>
+<div class="clr-demo-add">12  + }</div>
+<div class="clr-demo-actions"><span class="clr-demo-commit">Commit suggestion</span><span class="clr-demo-batch">Add suggestion to batch</span></div>
+</div>
+</div>
+<div class="clr-demo-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="none" stroke="#1f883d" stroke-width="1.6"/><path d="M5 8.2l2 2 4-4.2" fill="none" stroke="#1f883d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>cpp-linter</strong> / cpp-linter (pull_request) — Successful</span></div>
+</div>
+</div>
