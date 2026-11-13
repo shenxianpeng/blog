@@ -1,6 +1,7 @@
 ---
 title: "Keep software shipping."
-heroLead: "Open-source tools that keep software shipping, whether a person or an AI agent wrote the code, even after upstream moves on. I have worked on the build, test and release side of software since 2009."
+heroRole: "DevOps and release engineer since 2009 · Vilnius, Lithuania"
+heroLead: "Open-source tools that keep software shipping, whether a person or an AI agent wrote the code, even after upstream moves on."
 heroButtons:
   - label: "See the projects"
     url: "/portfolio/"
@@ -36,10 +37,20 @@ heroAlso:
           url: "https://github.com/keelinfra/jenkins-extended-security"
         - label: "MkDocs NG"
           url: "https://mkdocs-ng.org/"
+proof:
+  stats:
+    - value: "750,000+"
+      label: "downloads of the clang-tools static binaries"
+    - value: "1,000+"
+      label: "GitHub repositories depend on cpp-linter"
+    - value: "55,000+"
+      label: "PyPI downloads of commit-check a month"
+  usersLabel: "cpp-linter is used by projects from"
+  users: ["AWS", "Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 flagship:
   label: "cpp-linter"
   title: "Lint every pull request."
-  text: "clang-format and clang-tidy on each PR, as a GitHub Action, a pre-commit hook and a Python package. Fixes arrive as review suggestions you can commit in one click. The clang tools come from static binaries for every LLVM version, downloaded more than 750,000 times."
+  text: "clang-format and clang-tidy on each PR, as a GitHub Action, a pre-commit hook and a Python package. Fixes arrive as review suggestions you can commit in one click. The clang tools come from static binaries for every LLVM version."
   links:
     - label: "Documentation"
       url: "https://cpp-linter.github.io/"
@@ -47,8 +58,6 @@ flagship:
       url: "https://github.com/cpp-linter"
   demo: "cpp-linter"
   demoLabel: "Animated demo of cpp-linter on a GitHub pull request: the check fails, cpp-linter posts a clang-format suggestion, the suggestion is committed, and the check passes."
-  usersLabel: "Used by projects from"
-  users: ["AWS", "Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 products:
   title: "Infrastructure you own."
   text: "Jenkins agents for build hosts stuck on Java 8, Atlassian apps that run inside your own tenant, and Mac backups to your own storage."

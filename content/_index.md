@@ -1,7 +1,8 @@
 ---
 title: "把软件稳稳发出去。"
 heroTitle: "把软件稳稳<br>发出去。"
-heroLead: "帮团队把软件稳稳发出去的开源工具，不管代码出自人还是 AI agent 之手，上游不管了也一样。2009 年入行，我一直在做构建、测试和发布。"
+heroRole: "DevOps 与发布工程师，2009 年入行 · 立陶宛维尔纽斯"
+heroLead: "帮团队把软件稳稳发出去的开源工具，不管代码出自人还是 AI agent 之手，上游不管了也一样。"
 heroButtons:
   - label: "看项目"
     url: "/zh-cn/portfolio/"
@@ -37,10 +38,20 @@ heroAlso:
           url: "https://github.com/keelinfra/jenkins-extended-security"
         - label: "MkDocs NG"
           url: "https://mkdocs-ng.org/"
+proof:
+  stats:
+    - value: "75 万+"
+      label: "clang-tools 静态二进制累计下载"
+    - value: "1000+"
+      label: "个 GitHub 仓库依赖 cpp-linter"
+    - value: "5.5 万+"
+      label: "commit-check 每月 PyPI 下载"
+  usersLabel: "这些机构的项目在用 cpp-linter"
+  users: ["AWS", "Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 flagship:
   label: "cpp-linter"
   title: "每个 PR 都自动检查。"
-  text: "在每个 PR 上跑 clang-format 和 clang-tidy，提供 GitHub Action、pre-commit hook 和 Python 包三种用法。修改建议直接出现在代码审查里，点一下就能提交。所用的 clang 工具来自每个 LLVM 版本一个发布的静态二进制，累计下载超过 75 万次。"
+  text: "在每个 PR 上跑 clang-format 和 clang-tidy，提供 GitHub Action、pre-commit hook 和 Python 包三种用法。修改建议直接出现在代码审查里，点一下就能提交。所用的 clang 工具来自每个 LLVM 版本一个发布的静态二进制。"
   links:
     - label: "文档"
       url: "https://cpp-linter.github.io/"
@@ -48,8 +59,6 @@ flagship:
       url: "https://github.com/cpp-linter"
   demo: "cpp-linter"
   demoLabel: "cpp-linter 在 GitHub PR 上的演示动画：检查失败，cpp-linter 给出 clang-format 修改建议，提交建议后检查通过。"
-  usersLabel: "这些机构的项目在用"
-  users: ["AWS", "Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 products:
   title: "掌握在你自己手里的基础设施。"
   text: "给停在 Java 8 的构建机用的 Jenkins agent，跑在你自己租户里的 Atlassian 应用，还有备份到你自己存储的 Mac 备份工具。"

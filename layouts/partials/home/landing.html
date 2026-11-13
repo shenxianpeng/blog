@@ -2,9 +2,11 @@
   The site's home page, replacing Blowfish's centred landing hero. Three
   bands, all driven by front matter in content/_index.en.md and
   content/_index.md:
-    hero      title (or heroTitle), heroLead, heroButtons, heroAlso
-              (stages: stage + links, or plain links)
-    flagship  full-bleed dark band: label, title, text, links, demo, users
+    hero      heroRole (with the site author's photo and name), title (or
+              heroTitle), heroLead, heroButtons, proof (stats: value +
+              label; usersLabel, users), heroAlso (stages: stage + links,
+              or plain links)
+    flagship  full-bleed dark band: label, title, text, links, demo
     products  title, text, items (style: wide | dark | mint; demo optional;
               wide tiles also take tone: mint and flip: true for demo-left)
   `demo: <name>` renders layouts/partials/home/demo-<name>.html, an animated
@@ -16,8 +18,27 @@
 <article class="home">
   <section class="home-hero">
     <div class="home-hero-text">
-      {{- /* heroTitle: optional display version of the title, for a manual
-             <br> where the browser would split a CJK phrase. */}}
+      {{- /* Who is speaking, above the headline: the site author's photo and
+             name (params.author in languages.*.toml) and heroRole, one line.
+             Links to the About page. The photo's alt is empty because the
+             name is the text next to it. */}}
+      {{ with .Params.heroRole }}
+        <a class="home-id" href="{{ "about/" | relLangURL }}">
+          {{ with $page.Site.Params.Author.image }}
+            {{ with resources.Get . }}
+              {{ $photo := .Fill "112x112 Center" }}
+              <img class="home-id-photo" src="{{ $photo.RelPermalink }}" width="56" height="56" alt="">
+            {{ end }}
+          {{ end }}
+          <span class="home-id-text">
+            <span class="home-id-name">{{ $page.Site.Params.Author.name }}</span>
+            <span class="home-id-role">{{ . }}</span>
+          </span>
+        </a>
+      {{ end }}
+      {{- /* heroTitle: optional display version of the title, with a manual
+             <br> for narrow screens, where the browser would split a CJK
+             phrase. The break is dropped from 768px up. */}}
       <h1 class="home-title">{{ with .Params.heroTitle }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</h1>
       {{ with .Params.heroLead }}<p class="home-lead">{{ . | markdownify }}</p>{{ end }}
       {{ with .Params.heroButtons }}
@@ -27,7 +48,34 @@
           {{ end }}
         </div>
       {{ end }}
-      {{- /* heroAlso: one quiet line under the buttons. With `stages`, it
+    </div>
+
+    {{- /* proof: the evidence, right under the buttons so it is on the first
+           screen. A row of numbers (a <dl>: the label is the term, the number
+           its value, drawn number first) and the organisations whose projects
+           use cpp-linter. */}}
+    {{ with .Params.proof }}
+      <div class="home-proof">
+        {{ with .stats }}
+          <dl class="home-stats">
+            {{ range . }}
+              <div class="home-stat">
+                <dt class="home-stat-label">{{ .label }}</dt>
+                <dd class="home-stat-value">{{ .value }}</dd>
+              </div>
+            {{ end }}
+          </dl>
+        {{ end }}
+        {{ with .users }}
+          <div class="home-users">
+            {{ with $page.Params.proof.usersLabel }}<p class="home-users-label">{{ . }}</p>{{ end }}
+            <p class="home-users-list">{{ range . }}<span>{{ . }}</span>{{ end }}</p>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+
+      {{- /* heroAlso: one quiet line that closes the hero. With `stages`, it
              walks the delivery pipeline the GitHub profile banner draws,
              each stage name followed by the projects that run there:
              commit → review → build → release. With plain `links`, it is a
@@ -42,7 +90,6 @@
           {{- end -}}
         </p>
       {{ end }}
-    </div>
   </section>
 
   {{ with .Params.flagship }}
@@ -56,12 +103,6 @@
         </p>
       {{ end }}
       {{ with .demo }}{{ partial (printf "home/demo-%s.html" .) $page.Params.flagship }}{{ end }}
-      {{ with .users }}
-        <div class="home-users">
-          {{ with $page.Params.flagship.usersLabel }}<p class="home-users-label">{{ . }}</p>{{ end }}
-          <p class="home-users-list">{{ range $i, $u := . }}<span>{{ $u }}</span>{{ end }}</p>
-        </div>
-      {{ end }}
     </section>
   {{ end }}
 
