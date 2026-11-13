@@ -12,10 +12,11 @@ This describes what the site runs. Implementation:
 ## Direction
 
 A personal site with depth, not a page of text. The tools themselves carry
-it: animated demos that show each one at work, real users and real posts.
-Structure comes from full-bleed bands that change light and dark, large tiles
-with soft shadows, and big jumps in type size — short headlines, quiet
-sublines.
+it: an animated demo of the flagship at work, real users, real numbers and
+real posts. Structure comes from a full-bleed dark band, tiles with soft
+shadows, and jumps in type size — short headlines, quiet sublines. The home
+page is kept short: who is speaking, what he works on and the proof are on
+the first screen.
 
 Deliberately avoided, because they read as AI-generated:
 
@@ -38,7 +39,6 @@ text; dark pages use `neutral-800` and `--color-neutral`.
 |---|---|---|
 | Page | `#F2F3EF` (neutral) | `#111914` (neutral-800) |
 | Card, tile | `#FFFFFF` | `#243029` (neutral-700) |
-| Band (sponsor) | `#E7E9E3` (neutral-100) | neutral-700 at 45% |
 | Flagship band | `#0D120F` (neutral-900), both appearances | same, with neutral-700 rules |
 | Rule | `#D3D7CF` (neutral-200) | `#243029` (neutral-700) |
 | Ink | `#0D120F` (neutral-900) | `#F2F3EF` (neutral) |
@@ -88,20 +88,32 @@ column ran 79–91. Article titles and headings use `text-wrap: balance`.
 
 Top to bottom:
 
-1. **Hero** — centred headline (`title`, or `heroTitle` for a manual line
-   break), `heroLead`, pill buttons, and `heroAlso`: one muted line that walks
-   the pipeline from the GitHub profile, `commit` → `review` → `build` →
-   `release` → `support`, each stage name as a small code chip followed by the projects
-   that run there. No image.
+1. **Hero** — centred, and sized to fit the first screen of a laptop:
+   - the author's photo, name and `heroRole`, linked to About;
+   - the headline (`title`, or `heroTitle` with a manual line break that only
+     applies under 768px), 64px at most, then `heroLead` and pill buttons;
+   - **proof**, under a rule: three numbers with a label each, and the
+     organisations whose projects use cpp-linter. On a phone each number sits
+     on a row with its label;
+   - **stages** (`heroAlso.stages`): the pipeline `commit` → `review` →
+     `build` → `release` → `support` as a list under an ink rule. Each stage
+     has its name as the code chip the About diagram uses, its projects as
+     accent links and a one-sentence `note`. Five columns from 1024px, rows
+     below that.
 2. **Flagship** — dark full-bleed band for cpp-linter: label, short headline,
-   text, links, the animated demo, and the users row.
-3. **Products** — centred headline, then three wide tiles with animated
-   demos, alternating sides, in the GitHub profile's order: keelinfra (dark,
-   Agent8 demo right), keelapps (mint, demo left via `flip: true`), Keelhaven
-   (demo right).
-4. **Writing** — recent posts as one list of ruled rows: date, title, tag.
+   text, links and the animated demo.
+3. **Products** — centred headline, then three cards in a row (stacked under
+   960px), in the GitHub profile's order: keelinfra (dark), keelapps (mint),
+   Keelhaven (white). Each card has a small static preview of the product
+   (`layouts/partials/home/preview-<name>.html`): a few rows of its own
+   screen, drawn in tints of the card's text colour. The animated demos of
+   the three products are no longer on the home page; their partials remain
+   and render for an item with `style: wide`.
+4. **Writing** — the four most recent posts as one list of ruled rows: date,
+   title, tag.
 5. **Page body** — only the Chinese home has one: the WeChat QR code.
-6. **Sponsor** — full-bleed tinted band.
+6. **Sponsor** — one sentence and a link under a rule, above the site
+   footer.
 
 ## About page
 
@@ -123,7 +135,9 @@ Styles `.post-footer-*` in `custom.css`.
 ## Rules
 
 - Change colours in `evergreen.css`, not in component CSS. Components use
-  `rgb(var(--color-…))`.
+  `rgb(var(--color-…))`. The tokens are comma-separated triplets, so a
+  translucent colour is `rgba(var(--color-…), 0.1)`; `rgb(var(--color-…) /
+  0.1)` is invalid CSS and is silently dropped.
 - The theme's compiled Tailwind only contains the utilities the theme uses.
   New components need plain CSS in `custom.css`, not new Tailwind classes.
 - One accent. No gradient washes on page surfaces (the Keelhaven demo's

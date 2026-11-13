@@ -33,8 +33,9 @@ Instructions for AI coding agents working on this repository. This is a personal
 **`DESIGN.md` describes the site as built** — the "Evergreen" look adopted in
 2026-09: grey-green paper, green-black ink, one forest-green accent; Geist for
 headings and UI, Newsreader for reading, Geist Mono for code and dates, Noto
-Serif SC for Chinese; a home page built from full-bleed bands and animated
-product demos. A mismatch between the live site and `DESIGN.md` is a bug in
+Serif SC for Chinese; a short home page with the author, the proof and the
+delivery stages on the first screen, then the cpp-linter band with its
+animated demo. A mismatch between the live site and `DESIGN.md` is a bug in
 one of them; fix whichever is wrong, and keep the two in step.
 
 Where it lives:
@@ -52,18 +53,24 @@ Where it lives:
 The home page overrides Blowfish's `landing` layout
 (`layouts/partials/home/landing.html`) plus `layouts/index.html` and
 `layouts/partials/recent-articles/main.html`. All of its copy is front matter
-in `content/_index.en.md` and `content/_index.md`: `title` (and optional
-`heroTitle` for a manual line break), `heroLead`, `heroButtons`, `heroAlso`
-(one quiet line; with `stages` it walks commit → review → build → release →
-support like the GitHub profile, each stage followed by its projects),
-`flagship`
-(the dark cpp-linter band), `products`, `writing` and `sponsor`. The Chinese
-page's body holds the WeChat QR section. `demo: <name>` on the flagship or a
-product renders `layouts/partials/home/demo-<name>.html`, a pure-CSS animation
-of the tool at work: cpp-linter (thread comment, PR review, step summary,
-auto-fix), Keelhaven (ported from keelhaven.app) and keelapps (AccessLens
-permission audit) and Agent8 for keelinfra (install.sh on an AIX host, then
-the Java 8 hosts coming online on the controller's Nodes page).
+in `content/_index.en.md` and `content/_index.md`: `heroRole` (one line
+under the author's name; the photo and name come from `params.author`),
+`title` (and optional `heroTitle` with a manual line break for phones),
+`heroLead`, `heroButtons`, `proof` (`stats`: a number and a label each;
+`usersLabel` and `users`), `heroAlso` (with `stages` it lists commit →
+review → build → release → support, each stage with its projects and a
+one-sentence `note`), `flagship` (the dark cpp-linter band), `products`,
+`writing` and `sponsor` (one line above the footer). The numbers in `proof`
+go stale: when you touch them, check them against the About page and
+pypistats.org. The Chinese page's body holds the WeChat QR section.
+
+The three products are cards (`style: card`, with `tone` and `preview:
+<name>`, a small static picture in `layouts/partials/home/preview-<name>.html`).
+`demo: <name>` on the flagship, or on a product with `style: wide`, renders
+`layouts/partials/home/demo-<name>.html`, a pure-CSS animation of the tool at
+work. Only the cpp-linter one (thread comment, PR review, step summary,
+auto-fix) is on the home page now; the Keelhaven, AccessLens (keelapps) and
+Agent8 (keelinfra) demos are kept in the repo but not shown.
 Wide product tiles also take `tone` (mint, dark) and `flip: true`. The
 cpp-linter, AccessLens and Agent8 demo CSS is generated
 by `.github/scripts/gen_demo_css.py` into a marked block of `custom.css`:
