@@ -24,6 +24,7 @@ heroAlso:
       links:
         - label: "cpp-linter"
           url: "https://cpp-linter.github.io/"
+          tag: "主打"
     - stage: "build"
       note: "用 AI 解释 Jenkins 构建失败；让只有 Java 8 的构建机接入新版 Jenkins。"
       links:
@@ -51,6 +52,10 @@ proof:
       label: "个 GitHub 仓库依赖 cpp-linter"
     - value: "5.5 万+"
       label: "commit-check 每月 PyPI 下载"
+    - value: "Jenkins 组织"
+      label: "成员，jenkinsci 下有两个项目"
+    - value: "前 3"
+      label: "立陶宛公开贡献排名"
   usersLabel: "这些机构的项目在用 cpp-linter"
   users: ["AWS", "Apache", "Samsung", "Qualcomm", "Bloomberg", "LLNL", "Nextcloud"]
 flagship:
@@ -64,9 +69,23 @@ flagship:
       url: "https://github.com/cpp-linter"
   demo: "cpp-linter"
   demoLabel: "cpp-linter 在 GitHub PR 上的演示动画：检查失败，cpp-linter 给出 clang-format 修改建议，提交建议后检查通过。"
+features:
+  - label: "commit-check"
+    title: "提交策略即代码。"
+    text: "提交信息、分支名、作者、签署、标签、文件和 AI 署名，一份配置文件统一检查。可以跑在 CI 里、pre-commit 里，也可以让 AI agent 读它的 JSON 输出。"
+    chips: ["GitHub Action", "pre-commit hook", "--format json", "AI 署名"]
+    links:
+      - label: "commit-check.com"
+        url: "https://commit-check.com/"
+      - label: "GitHub"
+        url: "https://github.com/commit-check/commit-check"
+    demo: "commit-check"
+    demoLabel: "终端演示：把提交信息 “Fix: add streaming support” 交给 commit-check，并加上 --format json。输出的 checks 数组里失败的那一项，规则是 CC001，状态是 fail，建议改用 “fix: add streaming support”，fix 字段里就是改好的提交信息。"
+    flip: true
 products:
   title: "掌握在你自己手里的基础设施。"
-  text: "给停在 Java 8 的构建机用的 Jenkins agent，跑在你自己租户里的 Atlassian 应用，还有备份到你自己存储的 Mac 备份工具。"
+  text: "给停在 Java 8 的构建机用的 Jenkins agent，还有备份到你自己存储的 Mac 备份工具。"
+  also: "另外还有 [keelapps](https://keelapps.app)：Jira 与 Confluence Cloud 的管理应用，在 Atlassian Marketplace 上架。"
   items:
     - name: "keelinfra"
       label: "免费 · 开源 · 提供付费支持"
@@ -75,13 +94,6 @@ products:
       preview: "agent8"
       style: "card"
       tone: "dark"
-    - name: "keelapps"
-      label: "Atlassian Marketplace"
-      text: "12 个 Jira 与 Confluence Cloud 应用：权限审计、周期任务、定时报表、页面审批，以及批量处理页面和附件的工具。"
-      url: "https://keelapps.app"
-      preview: "accesslens"
-      style: "card"
-      tone: "mint"
     - name: "Keelhaven"
       label: "免费 · 开源 · macOS 14+"
       text: "把 Mac 备份到你自己的存储。基于 restic 的原生菜单栏应用，文件离开 Mac 前就已加密。"

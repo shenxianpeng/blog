@@ -1,63 +1,92 @@
 {{- /*
-  The site's home page, replacing Blowfish's centred landing hero. Three
-  bands, all driven by front matter in content/_index.en.md and
-  content/_index.md:
-    hero      heroRole (with the site author's photo and name), title (or
-              heroTitle), heroLead, heroButtons, proof (stats: value +
-              label; usersLabel, users), heroAlso (stages: stage + links,
-              or plain links)
-    flagship  full-bleed dark band: label, title, text, links, demo
-    products  title, text, items. style: card is a compact card, three in a
-              row, with tone: dark | mint and `preview: <name>`, a small
-              static picture of the product (home/preview-<name>.html).
-              style: wide is a full-width tile with an animated demo, tone
-              and flip: true for demo-left; any other style (dark | mint |
-              light) is a half-width tile.
-  `demo: <name>` renders layouts/partials/home/demo-<name>.html, an animated
-  CSS mock-up of the product at work, with `demoLabel` as its description.
-  layouts/index.html adds recent writing, the page body and the sponsor band
+  The site's home page, replacing Blowfish's centred landing hero. All of it
+  is driven by front matter in content/_index.en.md and content/_index.md:
+    hero      two columns. Left: heroRole (with the site author's photo and
+              name), title (or heroTitle), heroLead, heroButtons. Right:
+              heroAlso.stages as a card (stage, links, note; a link may carry
+              a `tag`). Under both: proof (stats: value + label; usersLabel,
+              users).
+    flagship  full-bleed dark band, text left and demo right: label, title,
+              text, links, demo
+    features  further open-source projects, one section each, text and demo
+              side by side: label, title, text, chips, links, demo, and
+              flip: true for demo-left
+    products  title, text, items, also (one line of Markdown under the
+              tiles). style: card is a compact card with tone: dark | mint
+              and `preview: <name>`, a small static picture of the product
+              (home/preview-<name>.html). style: wide is a full-width tile
+              with an animated demo, tone and flip: true for demo-left; any
+              other style (dark | mint | light) is a half-width tile.
+  `demo: <name>` renders layouts/partials/home/demo-<name>.html, a CSS
+  mock-up of the tool at work, with `demoLabel` as its description.
+  layouts/index.html adds recent writing, the page body and the sponsor line
   after these. Styles: .home-* in assets/css/custom.css.
 */ -}}
 {{- $page := . -}}
 <article class="home">
   <section class="home-hero">
-    <div class="home-hero-text">
-      {{- /* Who is speaking, above the headline: the site author's photo and
-             name (params.author in languages.*.toml) and heroRole, one line.
-             Links to the About page. The photo's alt is empty because the
-             name is the text next to it. */}}
-      {{ with .Params.heroRole }}
-        <a class="home-id" href="{{ "about/" | relLangURL }}">
-          {{ with $page.Site.Params.Author.image }}
-            {{ with resources.Get . }}
-              {{ $photo := .Fill "112x112 Center" }}
-              <img class="home-id-photo" src="{{ $photo.RelPermalink }}" width="56" height="56" alt="">
+    <div class="home-hero-top">
+      <div class="home-hero-text">
+        {{- /* Who is speaking, above the headline: the site author's photo
+               and name (params.author in languages.*.toml) and heroRole, one
+               line. Links to the About page. The photo's alt is empty
+               because the name is the text next to it. */}}
+        {{ with .Params.heroRole }}
+          <a class="home-id" href="{{ "about/" | relLangURL }}">
+            {{ with $page.Site.Params.Author.image }}
+              {{ with resources.Get . }}
+                {{ $photo := .Fill "112x112 Center" }}
+                <img class="home-id-photo" src="{{ $photo.RelPermalink }}" width="56" height="56" alt="">
+              {{ end }}
             {{ end }}
-          {{ end }}
-          <span class="home-id-text">
-            <span class="home-id-name">{{ $page.Site.Params.Author.name }}</span>
-            <span class="home-id-role">{{ . }}</span>
-          </span>
-        </a>
-      {{ end }}
-      {{- /* heroTitle: optional display version of the title, with a manual
-             <br> for narrow screens, where the browser would split a CJK
-             phrase. The break is dropped from 768px up. */}}
-      <h1 class="home-title">{{ with .Params.heroTitle }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</h1>
-      {{ with .Params.heroLead }}<p class="home-lead">{{ . | markdownify }}</p>{{ end }}
-      {{ with .Params.heroButtons }}
-        <div class="home-actions">
-          {{ range . }}
-            <a class="home-btn{{ if eq .style "outline" }} home-btn-outline{{ end }}" href="{{ .url | relURL }}">{{ .label }}</a>
-          {{ end }}
-        </div>
+            <span class="home-id-text">
+              <span class="home-id-name">{{ $page.Site.Params.Author.name }}</span>
+              <span class="home-id-role">{{ . }}</span>
+            </span>
+          </a>
+        {{ end }}
+        {{- /* heroTitle: optional display version of the title, with a
+               manual <br> where the browser would split a CJK phrase. */}}
+        <h1 class="home-title">{{ with .Params.heroTitle }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</h1>
+        {{ with .Params.heroLead }}<p class="home-lead">{{ . | markdownify }}</p>{{ end }}
+        {{ with .Params.heroButtons }}
+          <div class="home-actions">
+            {{ range . }}
+              <a class="home-btn{{ if eq .style "outline" }} home-btn-outline{{ end }}" href="{{ .url | relURL }}">{{ .label }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+
+      {{- /* heroAlso.stages: the delivery pipeline as a card beside the
+             headline, one row per stage in order: commit, review, build,
+             release, support. Each row has the stage's name, the projects
+             that work there (a link may carry a small `tag`, such as
+             "flagship") and a one-sentence `note`. */}}
+      {{ with .Params.heroAlso }}
+        {{ if .stages }}
+          <div class="home-stages">
+            {{ with .label }}<p class="home-stages-label">{{ . }}</p>{{ end }}
+            <ol class="home-stages-list">
+              {{ range .stages }}
+                <li class="home-stage">
+                  <span class="home-stage-name">{{ .stage }}</span>
+                  <span class="home-stage-body">
+                    <span class="home-stage-projects">{{ range $j, $l := .links }}{{ if $j }}, {{ end }}<a href="{{ $l.url | safeURL }}">{{ $l.label }}</a>{{ with $l.tag }} <span class="home-stage-tag">{{ . }}</span>{{ end }}{{ end }}</span>
+                    {{ with .note }}<span class="home-stage-note">{{ . }}</span>{{ end }}
+                  </span>
+                </li>
+              {{ end }}
+            </ol>
+          </div>
+        {{ end }}
       {{ end }}
     </div>
 
-    {{- /* proof: the evidence, right under the buttons so it is on the first
-           screen. A row of numbers (a <dl>: the label is the term, the number
-           its value, drawn number first) and the organisations whose projects
-           use cpp-linter. */}}
+    {{- /* proof: the evidence, under the two columns and still on the first
+           screen. A row of facts (a <dl>: the label is the term, the number
+           its value, drawn number first) and the organisations whose
+           projects use cpp-linter. */}}
     {{ with .Params.proof }}
       <div class="home-proof">
         {{ with .stats }}
@@ -79,30 +108,11 @@
       </div>
     {{ end }}
 
-    {{- /* heroAlso closes the hero. With `stages`, it is the delivery
-           pipeline as a list, in order: commit, review, build, release,
-           support. Each stage has its name, the projects that work there and
-           a one-sentence `note`; five columns on a wide screen, rows on a
-           narrow one. With plain `links` instead, it is one quiet line, the
-           links separated by dots, and the label carries its own trailing
-           separator ("Also: "). */}}
+    {{- /* heroAlso with plain `links` instead of stages: one quiet line that
+           closes the hero, the links separated by dots. The label carries
+           its own trailing separator ("Also: "). */}}
     {{ with .Params.heroAlso }}
-      {{ if .stages }}
-        <div class="home-stages">
-          {{ with .label }}<p class="home-stages-label">{{ . }}</p>{{ end }}
-          <ol class="home-stages-list">
-            {{ range .stages }}
-              <li class="home-stage">
-                <span class="home-stage-name">{{ .stage }}</span>
-                <span class="home-stage-body">
-                  <span class="home-stage-projects">{{ range $j, $l := .links }}{{ if $j }}, {{ end }}<a href="{{ $l.url | safeURL }}">{{ $l.label }}</a>{{ end }}</span>
-                  {{ with .note }}<span class="home-stage-note">{{ . }}</span>{{ end }}
-                </span>
-              </li>
-            {{ end }}
-          </ol>
-        </div>
-      {{ else }}
+      {{ if not .stages }}
         <p class="home-also">{{ .label }}
           {{- range $i, $l := .links }}{{ if $i }}<span aria-hidden="true"> · </span>{{ end }}<a href="{{ $l.url | safeURL }}">{{ $l.label }}</a>{{ end -}}
         </p>
@@ -112,15 +122,41 @@
 
   {{ with .Params.flagship }}
     <section class="home-band home-flagship">
-      {{ with .label }}<p class="home-flagship-label">{{ . }}</p>{{ end }}
-      <h2 class="home-band-title">{{ .title }}</h2>
-      {{ with .text }}<p class="home-band-text">{{ . }}</p>{{ end }}
-      {{ with .links }}
-        <p class="home-links">
-          {{ range . }}<a href="{{ .url | safeURL }}">{{ .label }} ›</a>{{ end }}
-        </p>
-      {{ end }}
+      <div class="home-flagship-text">
+        {{ with .label }}<p class="home-flagship-label">{{ . }}</p>{{ end }}
+        <h2 class="home-band-title">{{ .title }}</h2>
+        {{ with .text }}<p class="home-band-text">{{ . }}</p>{{ end }}
+        {{ with .links }}
+          <p class="home-links">
+            {{ range . }}<a href="{{ .url | safeURL }}">{{ .label }} ›</a>{{ end }}
+          </p>
+        {{ end }}
+      </div>
       {{ with .demo }}{{ partial (printf "home/demo-%s.html" .) $page.Params.flagship }}{{ end }}
+    </section>
+  {{ end }}
+
+  {{- /* features: the open-source projects that get a section of their own
+         after the flagship, text beside a demo. */}}
+  {{ range .Params.features }}
+    {{ $feature := . }}
+    <section class="home-section home-feature{{ if .flip }} home-feature-flip{{ end }}">
+      <div class="home-feature-text">
+        {{ with .label }}<p class="home-feature-label">{{ . }}</p>{{ end }}
+        <h2 class="home-band-title">{{ .title }}</h2>
+        {{ with .text }}<p class="home-band-text">{{ . }}</p>{{ end }}
+        {{ with .chips }}
+          <ul class="home-chips">
+            {{ range . }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        {{ end }}
+        {{ with .links }}
+          <p class="home-links">
+            {{ range . }}<a href="{{ .url | safeURL }}">{{ .label }} ›</a>{{ end }}
+          </p>
+        {{ end }}
+      </div>
+      {{ with .demo }}{{ partial (printf "home/demo-%s.html" .) $feature }}{{ end }}
     </section>
   {{ end }}
 
@@ -134,7 +170,7 @@
       {{ $wide := where .items "style" "wide" }}
       {{ $cards := where .items "style" "card" }}
       {{ $rest := where (where .items "style" "ne" "wide") "style" "ne" "card" }}
-      {{- /* Cards: three in a row, each with a small static preview of the
+      {{- /* Cards: side by side, each with a small static preview of the
              product instead of an animated demo. */}}
       {{ with $cards }}
         <div class="home-cards">
@@ -176,6 +212,8 @@
           {{ end }}
         </div>
       {{ end }}
+      {{- /* also: one quiet line for a product that does not get a card. */}}
+      {{ with .also }}<p class="home-products-also">{{ . | markdownify }}</p>{{ end }}
     </section>
   {{ end }}
 </article>

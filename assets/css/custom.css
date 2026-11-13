@@ -278,22 +278,22 @@ samp {
 }
 
 .home-section {
-  padding-top: 8.5rem;
+  padding-top: 5.5rem;
 }
 
 .home-band-title {
   margin: 0;
-  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
-  line-height: 1.02;
-  letter-spacing: -0.045em;
+  font-size: clamp(2rem, 3.6vw, 2.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
   color: rgb(var(--color-neutral-900));
 }
 
 .home-band-text {
-  margin: 1.25rem 0 0;
-  max-width: 46rem;
-  font-size: clamp(1.125rem, 1.6vw, 1.375rem);
-  line-height: 1.5;
+  margin: 1rem 0 0;
+  max-width: 36rem;
+  font-size: clamp(1.0625rem, 1.4vw, 1.1875rem);
+  line-height: 1.55;
   color: rgb(var(--color-neutral-500));
 }
 
@@ -395,18 +395,19 @@ samp {
   color: rgb(var(--color-primary-400));
 }
 
-/* heroAlso with stages: the delivery pipeline as a list, one item per stage:
-   its name (the code chip the About page's diagram uses), the projects that
-   work there, and one sentence on what they do. Rows on a narrow screen,
-   five columns under an ink rule from 1024px. */
+/* heroAlso with stages: the delivery pipeline as a card beside the headline,
+   one row per stage: its name, the projects that work there (one may carry a
+   small tag) and one sentence on what they do. */
 .home-stages {
-  margin-top: 2rem;
+  padding: 1.5rem 1.625rem;
+  border: 1px solid rgb(var(--color-neutral-200));
+  border-radius: 18px;
+  background: rgb(var(--color-neutral-50));
   font-family: var(--font-ui);
-  text-align: left;
 }
 
 .home-stages-label {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
   font-family: var(--font-code);
   font-size: 0.75rem;
   letter-spacing: 0.06em;
@@ -420,19 +421,16 @@ samp {
 }
 
 .home-stages-list {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
   margin: 0;
   padding: 0;
   list-style: none;
-  border-top: 1px solid rgb(var(--color-neutral-900));
 }
 
 .home-stage {
   display: flex;
-  gap: 0.875rem;
+  gap: 1rem;
   padding: 0.75rem 0;
-  border-bottom: 1px solid rgb(var(--color-neutral-200));
+  border-bottom: 1px solid rgb(var(--color-neutral-100));
   font-size: 0.9375rem;
   line-height: 1.45;
 }
@@ -444,21 +442,17 @@ samp {
 
 .home-stage-name {
   flex: none;
-  align-self: flex-start;
-  min-width: 4.25rem;
-  padding: 0.05rem 0.4rem;
-  border-radius: 4px;
-  background: rgb(var(--color-neutral-100));
-  color: rgb(var(--color-neutral-600));
+  width: 4.25rem;
+  padding-top: 0.15rem;
   font-family: var(--font-code);
-  font-size: 0.8125rem;
-  text-align: center;
+  font-size: 0.75rem;
+  color: rgb(var(--color-primary-600));
 }
 
 .home-stage-body {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.125rem;
   min-width: 0;
 }
 
@@ -477,36 +471,24 @@ samp {
   text-underline-offset: 4px;
 }
 
+.home-stage-tag {
+  margin-left: 0.125rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 4px;
+  background: rgb(var(--color-primary-100));
+  color: rgb(var(--color-primary-700));
+  font-family: var(--font-code);
+  font-size: 0.6875rem;
+}
+
 .home-stage-note {
   font-size: 0.875rem;
   color: rgb(var(--color-neutral-500));
 }
 
-@media (min-width: 1024px) {
-  .home-stages-list {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .home-stage {
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 0.875rem 1rem 0;
-    border-bottom: 0;
-    border-left: 1px solid rgb(var(--color-neutral-200));
-  }
-
-  .home-stage:first-child {
-    padding-left: 0;
-    border-left: 0;
-  }
-
-  .home-stage:last-child {
-    padding-right: 0;
-  }
-
-  .home-stage-name {
-    min-width: 0;
-  }
+.dark .home-stages {
+  border-color: rgb(var(--color-neutral-700));
+  background: rgba(var(--color-neutral-700), 0.45);
 }
 
 .dark .home-stages-label,
@@ -515,21 +497,18 @@ samp {
   color: rgb(var(--color-neutral-400));
 }
 
-.dark .home-stages-list {
-  border-top-color: rgb(var(--color-neutral));
-}
-
 .dark .home-stage {
   border-color: rgb(var(--color-neutral-700));
 }
 
-.dark .home-stage-name {
-  background: rgb(var(--color-neutral-700));
-  color: rgb(var(--color-neutral-300));
-}
-
+.dark .home-stage-name,
 .dark .home-stage-projects a {
   color: rgb(var(--color-primary-400));
+}
+
+.dark .home-stage-tag {
+  background: rgb(var(--color-primary-900));
+  color: rgb(var(--color-primary-300));
 }
 
 .home-links a {
@@ -549,22 +528,36 @@ samp {
   color: rgb(var(--color-neutral-500));
 }
 
-/* Hero: who is speaking, the headline, then the proof and the stages, sized
-   so all of it sits on the first screen of a laptop. Centred type. */
+/* Hero: two columns from 1024px. Left: who is speaking, the headline, the
+   lead and the buttons. Right: the stages card. Under both, the proof. Sized
+   so all of it sits on the first screen of a laptop. Left-aligned type. */
 
 /* No top padding: Blowfish's fixed header already leaves 92px under it. */
 .home-hero {
   padding: 0 0 3.5rem;
-  text-align: center;
-  /* lets the Chinese title size itself to the column, in cqi */
-  container-type: inline-size;
+}
+
+.home-hero-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .home-hero-top {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 3.5rem;
+  }
 }
 
 .home-hero-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.25rem;
+  /* lets the Chinese title size itself to this column, in cqi */
+  container-type: inline-size;
 }
 
 /* The author's photo, name and role above the headline; links to About. */
@@ -573,7 +566,6 @@ samp {
   align-items: center;
   gap: 0.875rem;
   font-family: var(--font-ui);
-  text-align: left;
   text-decoration: none;
 }
 
@@ -608,55 +600,43 @@ samp {
 }
 
 .home-title {
-  --home-title-size: clamp(2.5rem, 5.4vw, 4rem);
+  --home-title-size: clamp(2.5rem, 4.6vw, 3.875rem);
   margin: 0;
-  max-width: 22ch;
   font-size: var(--home-title-size);
-  line-height: 1.02;
-  letter-spacing: -0.04em;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
   text-wrap: balance;
   color: rgb(var(--color-neutral-900));
 }
 
-/* heroTitle breaks the Chinese title into two lines by hand for a phone,
-   where the longer line is 5 characters. 12.5cqi keeps a 7-character line
-   inside the column; on wider screens the usual size is the smaller of the
-   two and wins, and the title fits on one line, so the break is dropped. */
+/* heroTitle breaks the Chinese title into lines by hand. 12.5cqi keeps a
+   line of up to 7 characters inside the column however narrow it gets; on
+   wider screens the usual size is the smaller of the two and wins. */
 :lang(zh) .home-title {
-  max-width: none;
   font-size: min(var(--home-title-size), 12.5cqi);
-}
-
-@media (min-width: 768px) {
-  .home-title br {
-    display: none;
-  }
 }
 
 .home-lead {
   margin: 0;
-  max-width: 40rem;
-  font-size: clamp(1.125rem, 1.6vw, 1.3125rem);
-  line-height: 1.45;
+  max-width: 35rem;
+  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+  line-height: 1.5;
   letter-spacing: -0.01em;
-  color: rgb(var(--color-neutral-500));
+  color: rgb(var(--color-neutral-600));
 }
 
 .home-actions {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.875rem;
+  gap: 0.75rem;
   padding-top: 0.5rem;
 }
 
-/* Proof: numbers and the organisations whose projects use cpp-linter, under
-   a rule. On a phone each number sits on a row with its label; from 640px
-   they are three centred columns. */
+/* Proof: a row of facts and the organisations whose projects use cpp-linter,
+   under a rule. */
 .home-proof {
-  max-width: 60rem;
-  margin: 2rem auto 0;
-  padding-top: 2rem;
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
   border-top: 1px solid rgb(var(--color-neutral-200));
   font-family: var(--font-ui);
 }
@@ -672,7 +652,6 @@ samp {
   align-items: baseline;
   gap: 0.75rem 0.875rem;
   margin: 0;
-  text-align: left;
 }
 
 .home-stat {
@@ -683,10 +662,11 @@ samp {
   grid-column: 1;
   margin: 0;
   font-family: var(--font-display);
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.1;
   letter-spacing: -0.03em;
+  white-space: nowrap;
   color: rgb(var(--color-neutral-900));
 }
 
@@ -697,45 +677,47 @@ samp {
   color: rgb(var(--color-neutral-500));
 }
 
-/* Three centred columns, the number above its label. In a reversed column
-   flex-end is the top, which keeps the numbers level when a label wraps. */
+/* From 640px: as many equal columns as fit, the number above its label. In
+   a reversed column flex-end is the top, which keeps the numbers level when
+   a label wraps. */
 @media (min-width: 640px) {
   .home-stats {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
     grid-auto-flow: row;
     align-items: stretch;
-    gap: 2rem;
-    text-align: center;
+    gap: 1.5rem;
   }
 
   .home-stat {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
-    align-items: center;
     gap: 0.375rem;
   }
 
   .home-stat-value {
-    font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+    font-size: clamp(1.625rem, 2.6vw, 2rem);
   }
 }
 
 .home-users {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.75rem;
   margin-top: 1.5rem;
 }
 
 .home-users-label {
-  margin: 0 0 0.625rem;
-  font-size: 0.875rem;
+  margin: 0;
+  font-size: 0.8125rem;
   color: rgb(var(--color-neutral-500));
 }
 
 .home-users-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.25rem 1.25rem;
+  gap: 0.25rem 1.5rem;
   margin: 0;
   font-size: 1.125rem;
   font-weight: 600;
@@ -743,24 +725,52 @@ samp {
   color: rgb(var(--color-neutral-600));
 }
 
-@media (min-width: 768px) {
-  .home-users-list {
-    gap: 0.5rem 2.25rem;
-    font-size: 1.375rem;
-  }
-}
-
-/* Flagship: always a dark band, in both appearances. */
+/* Flagship: always a dark band, in both appearances. Text and demo stacked
+   and centred; from 1024px the text is on the left and the demo, scaled to
+   its column, on the right. */
 
 .home-flagship {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 8.75rem;
-  padding-bottom: 8rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2.5rem;
+  justify-items: center;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
   text-align: center;
   background: rgb(var(--color-neutral-900));
   color: rgb(var(--color-neutral));
+}
+
+.home-flagship-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* The generated demo block gives .home-demo-cl a top margin for the old
+   stacked layout; the grid's gap does that job now. */
+.home-flagship .home-demo-cl {
+  margin-top: 0;
+}
+
+@media (min-width: 1024px) {
+  .home-flagship {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    gap: 3.5rem;
+    align-items: center;
+    justify-items: stretch;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+    text-align: left;
+  }
+
+  .home-flagship-text {
+    align-items: flex-start;
+  }
+
+  .home-flagship .home-links {
+    justify-content: flex-start;
+  }
 }
 
 .home-flagship .home-band-title {
@@ -771,10 +781,15 @@ samp {
   color: rgb(var(--color-neutral-300));
 }
 
+.home-flagship-label,
+.home-feature-label {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+  color: rgb(var(--color-primary-600));
+}
+
 .home-flagship-label {
-  margin: 0 0 0.875rem;
-  font-size: 1.1875rem;
-  font-weight: 600;
   color: rgb(var(--color-primary-400));
 }
 
@@ -782,14 +797,180 @@ samp {
   color: rgb(var(--color-primary-400));
 }
 
-/* Products */
+/* Features: an open-source project with a section of its own after the
+   flagship, text beside its demo from 1024px; flip puts the demo on the
+   left. */
 
-.home-section-intro {
+.home-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .home-feature {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    gap: 3.5rem;
+  }
+
+  .home-feature-flip {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  }
+
+  .home-feature-flip .home-demo {
+    order: -1;
+  }
+}
+
+.home-feature-text {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-feature .home-links {
+  justify-content: flex-start;
+}
+
+.home-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-chips li {
+  padding: 0.3rem 0.75rem;
+  border: 1px solid rgb(var(--color-neutral-300));
+  border-radius: 9999px;
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  color: rgb(var(--color-neutral-600));
+}
+
+.dark .home-feature-label {
+  color: rgb(var(--color-primary-400));
+}
+
+.dark .home-chips li {
+  border-color: rgb(var(--color-neutral-600));
+  color: rgb(var(--color-neutral-300));
+}
+
+/* commit-check's demo (layouts/partials/home/demo-commit-check.html): a
+   terminal with the README's own example, static. Dark in both appearances;
+   the red of "fail" is the terminal's, not a site colour. */
+
+.home-demo-cc {
+  min-width: 0;
+}
+
+.cc-demo {
+  overflow: hidden;
+  border-radius: 14px;
+  background: rgb(var(--color-neutral-800));
+  color: rgb(var(--color-neutral-300));
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+  line-height: 1.7;
+}
+
+.dark .cc-demo {
+  background: rgb(var(--color-neutral-900));
+  box-shadow: 0 0 0 1px rgb(var(--color-neutral-700));
+}
+
+.cc-demo-bar {
+  display: flex;
   align-items: center;
-  padding-bottom: 2.5rem;
-  text-align: center;
+  gap: 0.375rem;
+  padding: 0.625rem 0.875rem;
+  background: rgb(255 255 255 / 0.05);
+  color: rgb(var(--color-neutral-400));
+  font-size: 0.75rem;
+}
+
+.cc-demo-bar i {
+  width: 0.5625rem;
+  height: 0.5625rem;
+  border-radius: 9999px;
+  background: rgb(255 255 255 / 0.18);
+}
+
+.cc-demo-bar span {
+  margin-left: 0.5rem;
+}
+
+.cc-demo-body {
+  padding: 1rem 1.125rem 1.125rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.cc-demo-cmd {
+  color: rgb(var(--color-neutral));
+}
+
+.cc-demo-cmd b,
+.cc-demo-fix {
+  font-weight: 400;
+  color: rgb(var(--color-primary-400));
+}
+
+.cc-demo-note {
+  color: rgb(var(--color-neutral-400));
+}
+
+.cc-demo-fail {
+  color: #f28b82;
+}
+
+/* Products */
+
+/* Headline on the left, its one-sentence text on the right; they stack
+   when the row is too narrow for both. */
+.home-section-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.home-section-intro .home-band-text {
+  margin: 0;
+  max-width: 32rem;
+}
+
+/* A product that does not get a card: one quiet line under the cards. */
+.home-products-also {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  color: rgb(var(--color-neutral-500));
+}
+
+.home-products-also a {
+  font-weight: 600;
+  color: rgb(var(--color-primary-600));
+  text-decoration: none;
+}
+
+.home-products-also a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.dark .home-products-also {
+  color: rgb(var(--color-neutral-400));
+}
+
+.dark .home-products-also a {
+  color: rgb(var(--color-primary-400));
 }
 
 .home-products {
@@ -896,7 +1077,8 @@ samp {
   color: rgb(var(--color-primary-700));
 }
 
-/* Product cards: three in a row from 960px, stacked below that. Each is a
+/* Product cards: side by side in equal columns from 960px, stacked below
+   that. Each is a
    .home-tile at card size with a small static preview of the product
    (layouts/partials/home/preview-*.html) above its "Learn more". */
 
@@ -908,7 +1090,9 @@ samp {
 
 @media (min-width: 960px) {
   .home-cards {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
   }
 }
 
@@ -1070,12 +1254,24 @@ samp {
 
 /* Writing: one list of ruled rows. */
 
+/* Headline and its subline on one baseline, "All posts" at the far end. */
 .home-section-head {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
   justify-content: space-between;
   gap: 1.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.home-section-head > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.375rem 1rem;
+}
+
+.home-section-head .home-band-text {
+  margin: 0;
 }
 
 .home-more {
@@ -1656,9 +1852,17 @@ samp {
 
 /* ---- Narrow screens ---------------------------------------------------- */
 
+/* The cpp-linter window is 720px wide. From 1024px it sits in the flagship
+   band's right column and is scaled to fit it. */
 @media (min-width: 1024px) {
   .cl-demo-window {
-    zoom: 1.15;
+    zoom: 0.66;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cl-demo-window {
+    zoom: 0.78;
   }
 }
 
@@ -1696,7 +1900,7 @@ samp {
   }
 
   .home-section {
-    padding-top: 5rem;
+    padding-top: 4rem;
   }
 
   .home-flagship {

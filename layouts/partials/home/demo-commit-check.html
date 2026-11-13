@@ -1,0 +1,27 @@
+{{- /*
+  commit-check demo for its section on the home page: a terminal, static.
+  The command and the JSON are the README's own example
+  (github.com/commit-check/commit-check, "AI-native usage"): a commit message
+  piped to `commit-check -m --format json`, and the failing entry of the
+  output's `checks` array, whole. Styles: .cc-demo-* in assets/css/custom.css.
+  Context: the feature's front matter; `demoLabel` is the accessible
+  description.
+*/ -}}
+<div class="home-demo home-demo-cc">
+<div class="cc-demo" role="img" aria-label="{{ .demoLabel }}">
+<div class="cc-demo-bar" aria-hidden="true"><i></i><i></i><i></i><span>zsh</span></div>
+<div class="cc-demo-body" aria-hidden="true"><span class="cc-demo-cmd"><b>$</b> echo "Fix: add streaming support" | commit-check -m --format json</span>
+<span class="cc-demo-note"># the failing entry of "checks"</span>
+{
+  "rule_id": "CC001",
+  "check": "message",
+  "status": <span class="cc-demo-fail">"fail"</span>,
+  "value": "Fix: add streaming support",
+  "error": "The commit message should follow Conventional Commits. See https://www.conventionalcommits.org",
+  "suggest": "Use \"fix: add streaming support\"",
+  "fix": <span class="cc-demo-fix">"fix: add streaming support"</span>,
+  "docs_url": "https://commit-check.com/rules/#cc001",
+  "reason": ""
+}</div>
+</div>
+</div>
