@@ -12,9 +12,9 @@ This describes what the site runs. Implementation:
 ## Direction
 
 A personal site with depth, not a page of text. The tools themselves carry
-it: an animated demo of the flagship at work, real users, real numbers and
-real posts. Structure comes from a full-bleed dark band, tiles with soft
-shadows, and jumps in type size — short headlines, quiet sublines. The home
+it: each one shown at work, real users, real numbers and real posts.
+Structure comes from a full-bleed dark band, flat cards and jumps in type
+size — short headlines, quiet sublines. The home
 page is kept short: who is speaking, what he works on (the stages card) and
 the proof are on the first screen.
 
@@ -39,7 +39,8 @@ text; dark pages use `neutral-800` and `--color-neutral`.
 |---|---|---|
 | Page | `#F2F3EF` (neutral) | `#111914` (neutral-800) |
 | Card, tile | `#FFFFFF` | `#243029` (neutral-700) |
-| Flagship band | `#0D120F` (neutral-900), both appearances | same, with neutral-700 rules |
+| Flagship band | `#111914` (neutral-800) | `#0D120F` (neutral-900), with neutral-700 rules |
+| Sponsor band, flat card | `#E7E9E3` (neutral-100) | neutral-700 (the band at 45%) |
 | Rule | `#D3D7CF` (neutral-200) | `#243029` (neutral-700) |
 | Ink | `#0D120F` (neutral-900) | `#F2F3EF` (neutral) |
 | Body text | `#36403A` (neutral-600) | `#B7C1B9` (neutral-300) |
@@ -88,45 +89,64 @@ column ran 79–91. Article titles and headings use `text-wrap: balance`.
 
 Top to bottom:
 
-1. **Hero** — left-aligned, two columns from 1024px, and sized to fit the
-   first screen of a laptop:
-   - left: the author's photo, name and `heroRole`, linked to About; the
-     headline (`title`, or `heroTitle` with a manual line break), 62px at
-     most; `heroLead` and pill buttons;
+The layout and its numbers come from the proposal the home page was rebuilt
+to in 2026-11; treat them as the spec.
+
+1. **Hero** — left-aligned, two columns from 1024px (1.16 : 1, 48px gap),
+   sized to fit the first screen of a laptop:
+   - left: the author's photo (52px), name (16px, 600) and `heroRole` (14px,
+     muted), linked to About; the headline (`title`, or `heroTitle` with a
+     manual line break) at 62px, line-height 1.04, tracking −0.035em;
+     `heroLead` at 19px in body-text colour; pill buttons 46px high, 15px,
+     600;
    - right: **stages** (`heroAlso.stages`), the pipeline `commit` → `review`
      → `build` → `release` → `support` as a card (neutral-50, rule border,
-     18px radius), one row per stage: its name in Geist Mono in the accent
-     colour, its projects as accent links (one may carry a small tag, such as
-     "flagship") and a one-sentence `note`;
-   - under both, **proof**, under a rule: five facts, each a number or a
-     short phrase above its label, in as many equal columns as fit, then the
-     organisations whose projects use cpp-linter on one line. On a phone each
-     fact sits on a row with its label.
-2. **Flagship** — dark full-bleed band for cpp-linter. Stacked and centred
-   on a narrow screen; from 1024px the label, headline, text and links are on
-   the left and the animated demo, scaled to its column, on the right.
-3. **Features** — an open-source project with a section of its own, text
-   beside its demo; `flip: true` puts the demo on the left. Now one:
-   commit-check, with a terminal showing the README's JSON example
-   (`demo-commit-check.html`, static, dark in both appearances) and a row of
-   chips.
-4. **Products** — headline left and one sentence right, then cards side by
-   side (stacked under 960px): keelinfra (dark) and Keelhaven (white). Each
-   card has a small static preview of the product
-   (`layouts/partials/home/preview-<name>.html`): a few rows of its own
-   screen, drawn in tints of the card's text colour. keelapps is one quiet
-   line under the cards (`products.also`): its buyers are on the Atlassian
-   Marketplace, not on this blog. The animated demos of the three products
-   are no longer on the home page; their partials remain and render for an
-   item with `style: wide`.
-5. **Writing** — headline and subline on one baseline, then the four most
-   recent posts as one list of ruled rows: date, title, tag.
+     18px radius, 24px by 26px padding), one row per stage at 14px: its name
+     in 12px Geist Mono in the accent colour, its projects as accent links
+     (one may carry a small tag, such as "flagship") and a one-phrase `note`
+     in muted text, with no full stop;
+   - under both, **proof**, under a rule: five facts, each a 32px number or
+     short phrase above a 14px label, in as many 180px-or-wider columns as
+     fit, then the organisations whose projects use cpp-linter on one line
+     at 18px, 700. On a phone each fact sits on a row with its label.
+2. **Flagship** — dark full-bleed band for cpp-linter, 72px of padding.
+   Stacked on a narrow screen; from 1024px the text is on the left and the
+   demo on the right. Text: a 13px mono label in the accent colour, the
+   headline at 42px, 17px text, a row of **chips** (12px mono pills; the one
+   named by `chipActive` in the accent colour) and the links at 15px, 600.
+   Demo: one static frame of a GitHub pull request, the format-review
+   suggestion with its "Commit suggestion" button
+   (`demo-cpp-linter-review.html`), in GitHub's own colours.
+3. **Features** — an open-source project with a full-bleed section of its
+   own, 64px of padding, closed by a rule; text beside its demo, and `flip:
+   true` puts the demo on the left. Same label, headline, text, chips and
+   links as the flagship, on the page colour. Now one: commit-check, with a
+   terminal (`demo-commit-check.html`, static, dark in both appearances)
+   showing the README's JSON example: its first six fields, and an ellipsis
+   for the rest.
+4. **Products** — a 36px headline on the left and one 15px sentence on the
+   right, then cards side by side (stacked under 960px): keelinfra (dark,
+   neutral-800) and Keelhaven (the flat surface colour, neutral-100). Cards
+   are flat: 18px radius, 24px padding, no shadow; a 12px mono label, the
+   name at 24px, 14px text, a small static preview of the product
+   (`layouts/partials/home/preview-<name>.html`, a few rows of its own
+   screen) and "Learn more" at 14px, 600. keelapps is one quiet 14px line
+   under the cards (`products.also`): its buyers are on the Atlassian
+   Marketplace, not on this blog.
+5. **Writing** — a 36px headline with its subline on the same baseline and
+   "All posts" at the far end, then the four most recent posts as ruled
+   rows, 14px of padding each: date (13px mono), title (17px, 600), tag
+   (12px mono).
 6. **Page body** — only the Chinese home has one: the WeChat QR code.
-7. **Sponsor** — one sentence and a link under a rule, above the site
-   footer.
+7. **Sponsor** — a tinted full-bleed band (neutral-100 under a rule) on top
+   of the site footer: one 15px sentence and a link on the left, the footer
+   menu on the right. The theme footer's own menu is hidden on this page;
+   its copyright line stays below the band.
 
-Section headlines on the home page are 44px at most; the hero's is the only
-larger one.
+Not on the home page any more, but kept in the repo: the animated demos of
+cpp-linter (four scenes), Agent8, AccessLens and Keelhaven. `demo:
+"cpp-linter"` on the flagship puts the first back; the other three render
+for a product with `style: wide`.
 
 ## About page
 

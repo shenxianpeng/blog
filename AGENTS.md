@@ -34,8 +34,9 @@ Instructions for AI coding agents working on this repository. This is a personal
 2026-09: grey-green paper, green-black ink, one forest-green accent; Geist for
 headings and UI, Newsreader for reading, Geist Mono for code and dates, Noto
 Serif SC for Chinese; a short home page with the author, the delivery stages
-and the proof on the first screen, then the cpp-linter band with its
-animated demo. A mismatch between the live site and `DESIGN.md` is a bug in
+and the proof on the first screen. Its layout, sizes and spacing follow a
+proposal the owner signed off in 2026-11; `DESIGN.md` records the numbers,
+so change them there and in the CSS together. A mismatch between the live site and `DESIGN.md` is a bug in
 one of them; fix whichever is wrong, and keep the two in step.
 
 Where it lives:
@@ -62,7 +63,7 @@ and a one-sentence `note`), `proof` (`stats`: a number or short phrase and a
 label each; `usersLabel` and `users`), `flagship` (the dark cpp-linter
 band), `features` (open-source projects with a section of their own; now
 commit-check), `products` (`items`, and `also` for a product that only gets
-a line), `writing` and `sponsor` (one line above the footer). The numbers in
+a line), `writing` and `sponsor` (a tinted band that also carries the footer menu). The numbers in
 `proof` go stale: when you touch them, check them against the About page and
 pypistats.org. The Chinese page's body holds the WeChat QR section.
 
@@ -72,9 +73,12 @@ keelinfra and Keelhaven. keelapps is one line under them, because its buyers
 are on the Atlassian Marketplace, not on this blog.
 `demo: <name>` on the flagship, a feature, or a product with `style: wide`
 renders `layouts/partials/home/demo-<name>.html`, a CSS mock-up of the tool
-at work. On the home page now: cpp-linter's animation (thread comment, PR
-review, step summary, auto-fix) and commit-check's static terminal. The
-Keelhaven, AccessLens (keelapps) and Agent8 (keelinfra) animations are kept
+at work. On the home page now, both static: `cpp-linter-review` (a pull
+request with one clang-format suggestion) and `commit-check` (a terminal
+with the README's JSON example). The flagship and each feature also take
+`chips`, a row of small pills, and `chipActive`, the one to accent. The
+animations of cpp-linter (thread comment, PR review, step summary,
+auto-fix), Keelhaven, AccessLens (keelapps) and Agent8 (keelinfra) are kept
 in the repo but not shown.
 Wide product tiles also take `tone` (mint, dark) and `flip: true`. The
 cpp-linter, AccessLens and Agent8 demo CSS is generated
