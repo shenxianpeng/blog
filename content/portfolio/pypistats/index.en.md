@@ -1,7 +1,7 @@
 ---
-title: "PyPI Open Source Projects"
-weight: 1
-summary: "My maintained Python packages on PyPI covering DevOps, data visualization, and more"
+title: "Python packages on PyPI"
+weight: 13
+summary: "The Python packages I maintain on PyPI, sorted by monthly downloads."
 showDate: false
 showReadingTime: false
 showWordCount: false

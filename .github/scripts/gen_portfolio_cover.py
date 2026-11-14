@@ -261,6 +261,70 @@ def keelhaven(p):
     p.append(f'<circle cx="1030" cy="295" r="4" fill="{WARN}" opacity="0.7"/>')
 
 
+def release_ledger(p):
+    """A release tag, and the ledger of what went into it, signed."""
+    # the release tag
+    p.append(f'<path d="M235,330 H365 L435,400 L365,470 H235 Z" fill="{BG}" stroke="{INDIGO}" stroke-width="{SW}" stroke-linejoin="round"/>')
+    p.append(f'<circle cx="372" cy="400" r="13" fill="{INDIGO}"/>')
+    p.append(f'<line x1="465" y1="400" x2="535" y2="400" stroke="{MUTE}" stroke-width="10" stroke-linecap="round"/>')
+    p.append(f'<polyline points="510,375 535,400 510,425" fill="none" stroke="{MUTE}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>')
+    # the ledger: one row per component
+    p.append(f'<rect x="575" y="175" width="330" height="450" rx="24" fill="{BG}" stroke="{BLUE}" stroke-width="{SW}"/>')
+    for i, w in enumerate((190, 150, 205, 125)):
+        y = 250 + i * 72
+        p.append(f'<rect x="615" y="{y}" width="28" height="28" rx="7" fill="{BLUE}" opacity="0.85"/>')
+        p.append(f'<rect x="662" y="{y}" width="{w}" height="28" rx="14" fill="{MUTE}" opacity="0.45"/>')
+    # signed provenance
+    _badge(p, 900, 590, 84)
+
+
+def jenkins_extended_security(p):
+    """Upstream turns away; the old line carries on, one security patch at a time."""
+    p.append(f'<line x1="240" y1="450" x2="560" y2="450" stroke="{MUTE}" stroke-width="10" opacity="0.7" stroke-linecap="round"/>')
+    for x in (300, 400, 500):
+        p.append(f'<circle cx="{x}" cy="450" r="24" fill="{BLUE}"/>')
+    # upstream moves on
+    p.append(
+        f'<path d="M560,450 C660,450 660,260 770,260 H930" fill="none" stroke="{MUTE}" '
+        f'stroke-width="10" opacity="0.55" stroke-linecap="round"/>'
+    )
+    p.append(f'<polyline points="905,235 930,260 905,285" fill="none" stroke="{MUTE}" stroke-width="10" opacity="0.55" stroke-linecap="round" stroke-linejoin="round"/>')
+    # the line that stays, patched
+    p.append(
+        f'<line x1="560" y1="450" x2="960" y2="450" stroke="{OK}" stroke-width="10" '
+        f'stroke-dasharray="4 26" stroke-linecap="round"/>'
+    )
+    for x in (670, 800, 930):
+        p.append(f'<rect x="{x - 34}" y="416" width="68" height="68" rx="16" fill="{BG}" stroke="{OK}" stroke-width="{SW - 2}"/>')
+        p.append(f'<line x1="{x - 15}" y1="450" x2="{x + 15}" y2="450" stroke="{OK}" stroke-width="9" stroke-linecap="round"/>')
+        p.append(f'<line x1="{x}" y1="435" x2="{x}" y2="465" stroke="{OK}" stroke-width="9" stroke-linecap="round"/>')
+    p.append(f'<circle cx="560" cy="450" r="24" fill="{INDIGO}"/>')
+
+
+def mkdocs_ng(p):
+    """A Markdown page in, the same site out, still building."""
+    # the Markdown source, with its heading mark
+    p.append(f'<rect x="235" y="225" width="250" height="350" rx="22" fill="{BG}" stroke="{INDIGO}" stroke-width="{SW}"/>')
+    for dx in (0, 22):
+        p.append(f'<line x1="{286 + dx}" y1="282" x2="{278 + dx}" y2="330" stroke="{INDIGO}" stroke-width="7" stroke-linecap="round"/>')
+    for dy in (0, 20):
+        p.append(f'<line x1="268" y1="{296 + dy}" x2="318" y2="{296 + dy}" stroke="{INDIGO}" stroke-width="7" stroke-linecap="round"/>')
+    p.append(f'<rect x="338" y="293" width="105" height="26" rx="13" fill="{INDIGO}" opacity="0.8"/>')
+    for i, w in enumerate((170, 130, 155)):
+        p.append(f'<rect x="275" y="{375 + i * 56}" width="{w}" height="24" rx="12" fill="{MUTE}" opacity="0.45"/>')
+    p.append(f'<line x1="515" y1="400" x2="585" y2="400" stroke="{MUTE}" stroke-width="10" stroke-linecap="round"/>')
+    p.append(f'<polyline points="560,375 585,400 560,425" fill="none" stroke="{MUTE}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>')
+    # the built site: navigation beside the page
+    _window(p, 625, 185, 340, 430)
+    for i in range(4):
+        p.append(f'<rect x="655" y="{285 + i * 50}" width="72" height="20" rx="10" fill="{INDIGO}" opacity="{0.9 if i == 1 else 0.45}"/>')
+    p.append(f'<line x1="752" y1="270" x2="752" y2="590" stroke="{BLUE}" stroke-width="4" opacity="0.35"/>')
+    p.append(f'<rect x="778" y="285" width="120" height="26" rx="13" fill="{BLUE}" opacity="0.9"/>')
+    for i, w in enumerate((155, 125, 145)):
+        p.append(f'<rect x="778" y="{345 + i * 50}" width="{w}" height="20" rx="10" fill="{MUTE}" opacity="0.45"/>')
+    _badge(p, 965, 600, 74)
+
+
 COVERS = {
     "cpp-linter": cpp_linter,
     "commit-check": commit_check,
@@ -272,6 +336,9 @@ COVERS = {
     "keelinfra": keelinfra,
     "keelapps": keelapps,
     "keelhaven": keelhaven,
+    "release-ledger": release_ledger,
+    "jenkins-extended-security": jenkins_extended_security,
+    "mkdocs-ng": mkdocs_ng,
 }
 
 

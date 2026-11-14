@@ -21,7 +21,9 @@ Instructions for AI coding agents working on this repository. This is a personal
   language config, mounts, or links between posts.
 - **Main sections:** `posts/` (technical articles), `misc/` (personal essays, annual
   summaries), plus `about/`, `portfolio/` (labelled Projects in the menu; open
-  source and the three products side by side), `resume/` (the CV, reachable only
+  source in the home page's stage order, then the three products, then
+  gitstats and the PyPI package list, all set by `weight`; project names are
+  spelled as on the home page), `resume/` (the CV, reachable only
   from About; `/hireme/` and `/resume-cn` redirect to it), `archive/`, `tags/`,
   `authors/`. The top menu is Posts · Projects · About; Essays (`misc/`), Archive,
   Tags and RSS live in the footer.

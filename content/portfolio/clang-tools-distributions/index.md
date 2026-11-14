@@ -1,7 +1,7 @@
 ---
-title: "Clang Tools Distributions"
-weight: 11
-summary: "为 clang-format 和 clang-tidy 提供多种分发方式，支持 Docker、静态二进制和 Python Wheel 三种形式。"
+title: "clang-tools binaries"
+weight: 5
+summary: "给每个 LLVM 版本发布 clang-format、clang-tidy 等工具，有静态二进制、Docker 镜像和 Python wheel 三种形式，不用自己编译 LLVM。静态二进制累计下载超过 75 万次。"
 showDate: false
 showReadingTime: false
 showWordCount: false
