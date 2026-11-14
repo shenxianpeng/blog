@@ -56,6 +56,16 @@ switcher picks the other one and remembers it; switching back to what the
 system shows forgets the choice, and the page follows the system again. The
 logic is the `assets/js/appearance.js` override of the theme's script.
 
+## Site icon
+
+The favicon and app icons are a mark, not the author photo: on a
+green-black (`#111914`) rounded square, a path from a commit (a paper-coloured
+dot) to a release (an accent-green dot), drawn as a check mark in `#4FB88A`.
+It says "from commit to release, checks passing" and still reads at 16px.
+The mark is `mark_svg()` in `.github/scripts/gen_site_icons.py`, which writes
+every icon size; the author photo (`params.author.image`) stays wherever the
+author is shown and on the default social card.
+
 ## Type
 
 | Use | Face | Notes |
