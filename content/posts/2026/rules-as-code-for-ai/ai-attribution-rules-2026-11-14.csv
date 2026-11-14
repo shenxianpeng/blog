@@ -1,0 +1,32 @@
+repo,stars,rule_file,rule_checked_at_commit,check,check_file,violating_commits_2026-10-15_to_2026-11-14
+BerriAI/litellm,63253,AGENTS.md,9271edc73400693faeba830742584612d2f64f78,none found,,73
+tldraw/tldraw,51419,AGENTS.md,694791e0acebc0f9df4a16a5880b72d128f8a621,none found,,46
+reactive-resume/reactive-resume,45752,AGENTS.md,72a44dc3024f7d41dd300371476f8410fb1e0876,none found,,41
+HKUDS/Vibe-Trading,38223,CONTRIBUTING.md,143ba0c60903c1219f5163f2e5c0c372b577d2ae,none found,,38
+vercel/next.js,143513,AGENTS.md,2a40e648f6b8ea51388f5bedbf0ae87affb95311,none found,,34
+webpack/webpack,66004,AGENTS.md,889003810685d20eb9244ff6a2e35b341c142a7e,none found,,33
+elastic/elasticsearch,78682,AGENTS.md,7865babebf984024be9932cfa12a936ac2d296a5,none found,,23
+JuliaLang/julia,49273,AGENTS.md,68d7091c4e2a8dca2e5427ec10868f0fc6d4c214,none found,,19
+twentyhq/twenty,60923,CLAUDE.md,c3ba1401f45dbc35bf5ed3d48c4ddc2e58f2bb15,none found,,18
+SeleniumHQ/selenium,34589,CONTRIBUTING.md,fac6796228587b354c6024146c076a6e16c738b4,none found,,12
+luongnv89/claude-howto,47187,CLAUDE.md,556af8d52327525d241f17574ef3f11976982fc8,none found,,12
+mudler/LocalAI,50365,AGENTS.md,fc6779d41ee6030816a11958233595cd894bb423,none found,,12
+telegramdesktop/tdesktop,33570,AGENTS.md,fad667c6d71c5e965a9da71e48dc1ab82ba0568d,none found,,8
+ggml-org/llama.cpp,135034,AGENTS.md,a0e6dc7384edb8f5d927155e1d26c10b4a310e6d,none found,,5
+zeroclaw-labs/zeroclaw,33365,AGENTS.md,a516d33155b476eb1fe84a238efe28471f2be1c5,none found,,5
+rohitg00/agentmemory,30359,CONTRIBUTING.md,45b556e56497c04129e193be744a4d312eb05281,none found,,4
+h4ckf0r0day/obscura,35340,CONTRIBUTING.md,52126c40283a383c522e96f7b6a31ceab52fbe2a,none found,,2
+remix-run/remix,33456,AGENTS.md,9077d3281891e32ba609db232485d50660b8fae9,none found,,2
+Homebrew/brew,50330,AGENTS.md,dcffb26f699a7893f1d2b84e4771a44e7e970095,none found,,1
+babel/babel,44061,AGENTS.md,0ca5fdaab734b2b755136ca12b79fc71d5f8e012,none found,,1
+cheaper-inference/OmniRoute,87383,AGENTS.md,2c06e3c0cb68464379dfdc9a828a1e9868887aaf,local hook,.husky/commit-msg,1
+chen08209/FlClash,63230,AGENTS.md,3abda78af45d0f2f6881d611270e47a520478d16,local hook,tool/hooks/commit_msg.sh,0
+debpalash/VoiceStudio,110505,AGENTS.md,b0c53c575fd2daabe82d92095134d59cd9e65411,CI,.github/scripts/agent_identities.py,0
+floci-io/floci,31731,AGENTS.md,1883855c94af014a514f35f3c4ff2dce71c3ce78,CI,.github/workflows/pr-hygiene.yml,0
+iOfficeAI/AionUi,34273,AGENTS.md,6a7fed3d580170b1271b8f09e8b3bf63786d4e89,none found,,0
+microsoft/playwright-mcp,39642,CLAUDE.md,b8b4183e099f136cbec0388a6088d4aa2f6b9685,none found,,0
+moby/moby,72259,AGENTS.md,c60492bfb176acf27e7154aba01f8395fdf64332,CI,.github/scripts/check-agent-coauthors.js,0
+nautechsystems/nautilus_trader,31522,AGENTS.md,4138e7c5de84d249dbe1b9852651b7fe0bc6504e,CI,scripts/ci/check_commit_message.py,0
+photoprism/photoprism,40449,AGENTS.md,00a995d35bbc6dcb7933c0f2d7422a40d6d38a01,none found,,0
+tw93/Mole,75026,AGENTS.md,7b9584cea35c3122da5b1cb6cacc062d4231f904,none found,,0
+utmapp/UTM,36882,CONTRIBUTING.md,3f18819e9e55267d3c9d604acb473f15d52fe64d,none found,,0
