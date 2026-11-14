@@ -2,7 +2,9 @@
   Copy of themes/blowfish/layouts/index.html (v3.6.0), reordered for the
   site's home page: the landing bands (layouts/partials/home/landing.html),
   recent writing, the page body when there is one (the WeChat QR code on the
-  Chinese home), then the sponsor band from the `sponsor` front matter.
+  Chinese home), then the sponsor band from the `sponsor` front matter: a
+  tinted full-bleed band with one sentence and a link on the left and the
+  footer menu on the right, sitting on top of the site footer.
 */ -}}
 {{ define "main" }}
   {{ if .Site.Params.homepage.layoutSwitcher | default false }}
@@ -23,8 +25,14 @@
   {{ end }}
   {{ with .Params.sponsor }}
     <section class="home-band home-sponsor">
-      <h2 class="home-sponsor-text">{{ .text | markdownify }}</h2>
-      <a class="home-btn" href="{{ .url | safeURL }}">{{ .label }}</a>
+      <p class="home-sponsor-text">{{ .text | markdownify }} <a class="home-sponsor-link" href="{{ .url | safeURL }}">{{ .label }} ›</a></p>
+      {{- /* The footer menu, at the far end of the band. custom.css hides the
+             theme footer's own copy of it on this page. */}}
+      {{ with $.Site.Menus.footer }}
+        <nav class="home-sponsor-nav" aria-label="{{ i18n "nav.footer_menu" }}">
+          {{ range . }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
+        </nav>
+      {{ end }}
     </section>
   {{ end }}
 {{ end }}
