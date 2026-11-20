@@ -2787,11 +2787,32 @@ body:not(:has(.home)) #main-content {
 }
 
 .about-role {
+  overflow: hidden;
   margin: 0.25rem 0 0;
   font-family: var(--font-code);
   font-size: 0.75rem;
   line-height: 1.5;
   color: rgb(var(--color-neutral-500));
+}
+
+/* The parts of the role wrap as wholes. Each has a dot in the gap before it;
+   the row is pulled left by that gap, so the dot of a part that starts a
+   line falls outside .about-role and is clipped. */
+.about-role-parts {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.75em;
+}
+
+.about-role-parts > span {
+  position: relative;
+  padding-left: 1.75em;
+}
+
+.about-role-parts > span::before {
+  content: "\00b7";
+  position: absolute;
+  left: 0.575em;
 }
 
 .about-links {

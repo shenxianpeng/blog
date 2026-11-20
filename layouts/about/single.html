@@ -5,9 +5,10 @@
   the very end.
 
     header  the site author's photo and name (params.author in
-            languages.*.toml), `role`, and `links` (label, url, primary: true
-            for the one with the dark border). A url without a scheme is a
-            path on this site, in the page's language.
+            languages.*.toml), `role` (its parts separated by " · "), and
+            `links` (label, url, primary: true for the one with the dark
+            border). A url without a scheme is a path on this site, in the
+            page's language.
     facts   `facts.label` and `facts.items` (label, value): what is otherwise
             spread over the text, as one short list. Beside the text from
             1024px, where an article has its table of contents; between the
@@ -28,7 +29,11 @@
       {{ end }}
       <div class="about-id">
         <h1 class="about-name">{{ site.Params.Author.name }}</h1>
-        {{ with .Params.role }}<p class="about-role">{{ . }}</p>{{ end }}
+        {{- /* One span per part of the role, so a narrow screen breaks the line
+               between parts and the dot is drawn by CSS only inside a line. */}}
+        {{ with .Params.role }}
+          <p class="about-role"><span class="about-role-parts">{{ range split . " · " }}<span>{{ . }}</span>{{ end }}</span></p>
+        {{ end }}
       </div>
       {{ with .Params.links }}
         <div class="about-links">

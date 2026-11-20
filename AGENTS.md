@@ -95,7 +95,13 @@ commit-check next, and keelinfra (Agent8) and Keelhaven as the products.
 The stages are for this site only: the profile README lists the projects
 plainly, without stage labels.
 
-The About page (`content/about/`) opens with the positioning line, then draws
+The About page (`content/about/`) has its own template,
+`layouts/about/single.html`: a header with the author's photo and name
+(`params.author`), `role` and `links`, then the text with `facts` beside it
+("At a glance"; above the text on a narrow screen). All three are front
+matter in `index.en.md` and `index.md`; the facts repeat numbers from the
+text and the home page's `proof`, so change them together. Styles `.about-*`
+in `custom.css`. The text opens with the positioning line, then draws
 the same pipeline as a diagram with the `{{</* pipeline */>}}` shortcode
 (`layouts/shortcodes/pipeline.html`, data in `data/pipeline.yaml`, styles
 `.pipeline-*` in `custom.css`): one dot per stage on a line, five columns on a
