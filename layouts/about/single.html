@@ -1,0 +1,66 @@
+{{- /*
+  The About page (content/about/), replacing Blowfish's single.html for it.
+  The theme opened with the word "About" and a zen-mode icon, kept the text
+  in one column on the left and showed the author's photo only in a card at
+  the very end.
+
+    header  the site author's photo and name (params.author in
+            languages.*.toml), `role`, and `links` (label, url, primary: true
+            for the one with the dark border). A url without a scheme is a
+            path on this site, in the page's language.
+    facts   `facts.label` and `facts.items` (label, value): what is otherwise
+            spread over the text, as one short list. Beside the text from
+            1024px, where an article has its table of contents; between the
+            header and the text below that.
+    text    the page body, in the article's measure, then the comments.
+
+  Styles: .about-* in assets/css/custom.css. The photo's alt is empty because
+  the name is the text next to it.
+*/ -}}
+{{ define "main" }}
+  <article class="about">
+    <header class="about-head" data-ga-placement="about">
+      {{ with site.Params.Author.image }}
+        {{ with resources.Get . }}
+          {{ $photo := .Fill "144x144 Center" }}
+          <img class="about-photo" src="{{ $photo.RelPermalink }}" width="72" height="72" alt="">
+        {{ end }}
+      {{ end }}
+      <div class="about-id">
+        <h1 class="about-name">{{ site.Params.Author.name }}</h1>
+        {{ with .Params.role }}<p class="about-role">{{ . }}</p>{{ end }}
+      </div>
+      {{ with .Params.links }}
+        <div class="about-links">
+          {{ range . }}
+            {{ $url := .url }}
+            {{ if not (findRE `^[a-z]+:` $url) }}{{ $url = $url | relLangURL }}{{ end }}
+            <a class="about-link{{ if .primary }} about-link-primary{{ end }}" href="{{ $url }}">{{ .label }}</a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </header>
+
+    <div class="about-body">
+      {{ with .Params.facts }}
+        <aside class="about-facts">
+          <h2 class="about-facts-label">{{ .label }}</h2>
+          <dl>
+            {{ range .items }}
+              <div class="about-fact"><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>
+            {{ end }}
+          </dl>
+        </aside>
+      {{ end }}
+
+      <div class="about-main">
+        <section class="max-w-full prose dark:prose-invert">
+          <div class="article-content max-w-prose">{{ .Content }}</div>
+        </section>
+        <footer class="pt-8 max-w-prose print:hidden">
+          {{ partial "article-comments.html" . }}
+        </footer>
+      </div>
+    </div>
+  </article>
+{{ end }}

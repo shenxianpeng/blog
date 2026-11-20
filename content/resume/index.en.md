@@ -21,6 +21,7 @@ showEdit: false
 showViews: false
 showLikes: false
 layoutBackgroundHeaderSpace: false
+showZenMode: false
 ---
 
 ## About Me

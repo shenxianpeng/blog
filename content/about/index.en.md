@@ -20,9 +20,37 @@ showViews: false
 showLikes: false
 showAuthor: true
 layoutBackgroundHeaderSpace: false
+
+# The header and the facts beside the text (layouts/about/single.html).
+role: "Build & release engineer since 2009 · Vilnius, Lithuania"
+links:
+  - label: "GitHub"
+    url: "https://github.com/shenxianpeng"
+    primary: true
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/xianpeng-shen/"
+  - label: "Email"
+    url: "mailto:xianpeng.shen@gmail.com"
+  - label: "Résumé"
+    url: "resume/"
+facts:
+  label: "At a glance"
+  items:
+    - label: "In the field since"
+      value: "2009"
+    - label: "Maintains"
+      value: "cpp-linter, commit-check"
+    - label: "Jenkins"
+      value: "org member, 2 projects"
+    - label: "Public contributions"
+      value: "Top 3 in Lithuania"
+    - label: "Writing here since"
+      value: "2017"
+    - label: "Languages"
+      value: "English, 中文"
 ---
 
-DevOps and release engineer, based in Vilnius, Lithuania. I build open-source tools that keep software shipping, even after upstream moves on.
+DevOps and release engineer. I build open-source tools that keep software shipping, even after upstream moves on.
 
 I have worked on the build, test and release side of software since 2009. AI has made writing code cheap. What comes after the code is as expensive as ever: knowing who, or which agent, made a change, building it on the hosts you actually have, showing where a release came from, and patching it for years. From December 2027 the EU Cyber Resilience Act turns part of that into a legal duty: a manufacturer selling software in the EU has to declare a support period and ship security updates until it ends. The projects below are for that stretch.
 

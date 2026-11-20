@@ -2734,3 +2734,211 @@ body:not(:has(.home)) #main-content {
 .dark :is(.projects-stage, .projects-row + .projects-row) {
   border-color: rgb(var(--color-neutral-700));
 }
+
+/* ---- About page ---------------------------------------------------------
+   layouts/about/single.html. Who is speaking comes first: photo, name, role
+   and four links over a rule. Under it the text keeps the article's measure
+   and the facts take the place an article gives its table of contents: 4rem
+   from the text, 18rem wide, in view while the text scrolls. 59rem is the
+   three added up (37 + 4 + 18), so the header's rule ends where the facts
+   do; the Chinese measure is 40.25rem. Below 1024px the facts sit between
+   the header and the text. */
+
+.about {
+  max-width: 59rem;
+  font-family: var(--font-ui);
+}
+
+:lang(zh) .about {
+  max-width: 62.25rem;
+}
+
+.about-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.125rem;
+  padding-bottom: 1.125rem;
+  border-bottom: 1px solid rgb(var(--color-neutral-200));
+}
+
+.about-photo {
+  flex: none;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.about-id {
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+
+.about-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: rgb(var(--color-neutral-900));
+}
+
+.about-role {
+  margin: 0.25rem 0 0;
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: rgb(var(--color-neutral-500));
+}
+
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.125rem;
+  padding: 0 0.875rem;
+  border: 1px solid rgb(var(--color-neutral-300));
+  border-radius: 9999px;
+  color: rgb(var(--color-neutral-900));
+  font-size: 0.8125rem;
+  text-decoration: none;
+}
+
+.about-link-primary {
+  border-color: rgb(var(--color-neutral-900));
+  font-weight: 500;
+}
+
+.about-link:hover {
+  border-color: rgb(var(--color-primary-600));
+  color: rgb(var(--color-primary-600));
+}
+
+.about-body {
+  display: grid;
+  gap: 1.75rem;
+  margin-top: 1.5rem;
+}
+
+.about-facts {
+  max-width: 37rem;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+}
+
+.about-facts-label {
+  margin: 0 0 0.25rem;
+  font-family: var(--font-code);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgb(var(--color-neutral-500));
+}
+
+:lang(zh) .about-facts-label {
+  font-size: 0.75rem;
+  letter-spacing: 0;
+}
+
+.about-facts dl {
+  margin: 0;
+}
+
+.about-fact {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgb(var(--color-neutral-200));
+}
+
+.about-fact:last-child {
+  border-bottom: 0;
+}
+
+.about-fact dt {
+  color: rgb(var(--color-neutral-500));
+}
+
+.about-fact dd {
+  margin: 0;
+  color: rgb(var(--color-neutral-900));
+  font-weight: 500;
+  text-align: right;
+}
+
+/* The positioning line, a size up from the text it introduces. */
+.about .article-content > p:first-child {
+  margin-top: 0;
+  font-size: 1.3125rem;
+  line-height: 1.4;
+  color: rgb(var(--color-neutral-900));
+}
+
+:lang(zh) .about .article-content > p:first-child {
+  line-height: 1.7;
+}
+
+@media (min-width: 640px) {
+  .about .article-content > p:first-child {
+    font-size: 1.4375rem;
+  }
+
+  :lang(zh) .about .article-content > p:first-child {
+    font-size: 1.375rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-body {
+    grid-template-columns: minmax(0, 1fr) 18rem;
+    column-gap: 4rem;
+    align-items: start;
+  }
+
+  .about-main {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .about-facts {
+    position: sticky;
+    top: 5.5rem;
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+.dark :is(.about-name, .about-link, .about-fact dd, .about .article-content > p:first-child) {
+  color: rgb(var(--color-neutral));
+}
+
+.dark :is(.about-role, .about-facts-label, .about-fact dt) {
+  color: rgb(var(--color-neutral-400));
+}
+
+.dark :is(.about-head, .about-fact) {
+  border-color: rgb(var(--color-neutral-700));
+}
+
+.dark .about-link {
+  border-color: rgb(var(--color-neutral-600));
+}
+
+.dark .about-link-primary {
+  border-color: rgb(var(--color-neutral));
+}
+
+.dark .about-link:hover {
+  border-color: rgb(var(--color-primary-400));
+  color: rgb(var(--color-primary-400));
+}
