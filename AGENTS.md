@@ -419,6 +419,9 @@ at `/` and English under `/en/`.
   `/en/hireme/` and `/zh-cn/hireme/` are front-matter `aliases` on the two
   résumé pages; `/resume-cn` is a static page in `static/resume-cn/`, because
   Hugo writes a Chinese page's aliases under `/zh-cn/` and cannot reach the root.
+- **List pages are not paginated** since 2026-11. The old page URLs
+  `/posts/page/2/`, `/zh-cn/posts/page/2/` and `/zh-cn/posts/page/3/` are
+  static redirects in `static/` back to the first page.
 - **Feeds.** English is `/index.xml`, Chinese is `/zh-cn/index.xml`. The Pages
   workflow copies the English feed to `/en/index.xml`, its old address.
 - **Comments.** Giscus threads are keyed by the pre-2026-09 path
