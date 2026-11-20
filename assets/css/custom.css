@@ -963,10 +963,13 @@ body:has(.home) > header > div:first-child {
   font-family: -apple-system, "Segoe UI", sans-serif;
 }
 
+/* <pre>, so the minified production HTML keeps the indentation. */
 .clr-demo-del,
 .clr-demo-add {
   overflow: hidden;
+  margin: 0;
   padding: 0 0.625rem;
+  font: inherit;
   white-space: pre;
 }
 
@@ -1118,8 +1121,10 @@ body:has(.home) > header > div:first-child {
   color: rgb(var(--color-neutral));
 }
 
+/* A <pre>, for the same reason as the diff lines above. */
 .cc-demo-out {
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 0;
+  font: inherit;
 }
 
 .cc-demo-cmd b,

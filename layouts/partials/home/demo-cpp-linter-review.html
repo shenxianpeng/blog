@@ -6,6 +6,8 @@
   screenshots, the same as in the animated demo (demo-cpp-linter.html), which
   walks all four features and can be put back with `demo: "cpp-linter"`.
   Colours are GitHub's own. Styles: .clr-demo-* in assets/css/custom.css.
+  The diff lines are <pre>: the production build runs `hugo --minify`, which
+  collapses runs of spaces everywhere else and would flatten the indentation.
   Context: the flagship front matter; `demoLabel` is the accessible
   description.
 */ -}}
@@ -16,12 +18,12 @@
 <div class="clr-demo-by"><strong>github-actions</strong> bot · clang-format suggestions · src/demo.hpp</div>
 <div class="clr-demo-diff">
 <div class="clr-demo-diff-head">Suggested change</div>
-<div class="clr-demo-del">8   - Dummy() :numb(0), useless("\0"){}</div>
-<div class="clr-demo-add">8   + Dummy()</div>
-<div class="clr-demo-add">9   +     : numb(0)</div>
-<div class="clr-demo-add">10  +     , useless("\0")</div>
-<div class="clr-demo-add">11  + {</div>
-<div class="clr-demo-add">12  + }</div>
+<pre class="clr-demo-del">8   - Dummy() :numb(0), useless("\0"){}</pre>
+<pre class="clr-demo-add">8   + Dummy()</pre>
+<pre class="clr-demo-add">9   +     : numb(0)</pre>
+<pre class="clr-demo-add">10  +     , useless("\0")</pre>
+<pre class="clr-demo-add">11  + {</pre>
+<pre class="clr-demo-add">12  + }</pre>
 <div class="clr-demo-actions"><span class="clr-demo-commit">Commit suggestion</span><span class="clr-demo-batch">Add suggestion to batch</span></div>
 </div>
 </div>
