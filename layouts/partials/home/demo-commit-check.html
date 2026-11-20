@@ -7,19 +7,21 @@
   proposal draws it: the error message ends in an ellipsis and the object
   closes after `suggest`, leaving out its last three fields (fix, docs_url,
   reason). Styles: .cc-demo-* in assets/css/custom.css.
+  The output is a <pre>: the production build runs `hugo --minify`, which
+  collapses runs of spaces everywhere else and would flatten the JSON.
   Context: the feature's front matter; `demoLabel` is the accessible
   description.
 */ -}}
 <div class="home-demo home-demo-cc">
 <div class="cc-demo" role="img" aria-label="{{ .demoLabel }}">
 <div class="cc-demo-bar" aria-hidden="true"><i></i><i></i><i></i><span>zsh</span></div>
-<div class="cc-demo-body" aria-hidden="true"><div class="cc-demo-cmd"><b>$</b> echo "Fix: add streaming support" | commit-check -m --format json</div><div class="cc-demo-out">{
+<div class="cc-demo-body" aria-hidden="true"><div class="cc-demo-cmd"><b>$</b> echo "Fix: add streaming support" | commit-check -m --format json</div><pre class="cc-demo-out">{
   "rule_id": "CC001",
   "check": "message",
   "status": <span class="cc-demo-fail">"fail"</span>,
   "value": "Fix: add streaming support",
   "error": "The commit message should follow Conventional Commits…",
   "suggest": <span class="cc-demo-fix">"Use \"fix: add streaming support\""</span>
-}</div></div>
+}</pre></div>
 </div>
 </div>
