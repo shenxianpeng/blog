@@ -1,24 +1,22 @@
 {{- /*
-  Copy of themes/blowfish/layouts/partials/sharing-links.html (v3.6.0) with the
-  post footer (layouts/partials/post-footer.html) rendered first. single.html
-  calls this right after the article body and author box, which is where the
-  footer belongs; the theme has no hook of its own there.
+  Replaces themes/blowfish/layouts/partials/sharing-links.html (v3.6.0).
+  single.html calls this right after the article body and author box, which
+  is where the post footer (layouts/partials/post-footer.html) belongs; the
+  theme has no hook of its own there. The share links follow it as one line
+  of text links in the article's measure, like "Follow"; the theme drew grey
+  icon squares centred under a wider column.
 */ -}}
 {{ partial "post-footer.html" . }}
 {{ with .Params.sharingLinks | default (.Site.Params.article.sharingLinks | default false) }}
   {{ $links := hugo.Data.sharing }}
-  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
-    {{ range . }}
-      {{ with index $links . }}
-        <a
-          class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          target="_blank"
-          href="{{ printf .url $.Permalink $.Title | safeURL }}"
-          title="{{ i18n .title }}"
-          aria-label="{{ i18n .title }}">
-          {{ partial "icon.html" .icon }}
-        </a>
-      {{ end }}
-    {{ end }}
+  {{ $names := dict "twitter" "X" "linkedin" "LinkedIn" "telegram" "Telegram" "facebook" "Facebook" "reddit" "Reddit" "bluesky" "Bluesky" "whatsapp" "WhatsApp" "line" "LINE" "pinterest" "Pinterest" "email" (i18n "sharing.name_email") }}
+  <section class="post-share">
+    <span class="post-share-label">{{ i18n "sharing.label" }}</span>
+    {{- range . }}
+      {{- $id := . }}
+      {{- with index $links . }}
+        <a target="_blank" rel="noopener" href="{{ printf .url $.Permalink $.Title | safeURL }}" title="{{ i18n .title }}">{{ index $names $id | default $id }}</a>
+      {{- end }}
+    {{- end }}
   </section>
 {{ end }}

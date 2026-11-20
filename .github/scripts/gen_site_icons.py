@@ -1,32 +1,40 @@
 #!/usr/bin/env python3
-"""Generate the site's icons and default social card from the author photo.
+"""Generate the site's icons and default social card.
 
-Everything comes from one source, assets/img/sxp.jpg (the headshot also used on
-GitHub, X and LinkedIn), so changing the photo means rerunning this script.
+The icons are the site mark: on a green-black square, a path from a commit
+(the paper-coloured dot) to a release (the green dot), drawn as a check mark,
+because the site is about getting changes from commit to release with checks
+that pass. It is drawn in MARK_SVG below and reads at 16 px.
 
-    python3 .github/scripts/gen_site_icons.py
+The social card keeps the author photo, assets/img/sxp.jpg (the headshot also
+used on GitHub, X and LinkedIn).
+
+    python3 .github/scripts/gen_site_icons.py              # icons and card
+    python3 .github/scripts/gen_site_icons.py --icons-only
 
 Writes, overriding the Blowfish theme's defaults (a pufferfish):
 
-  static/favicon.ico            16, 32 and 48 px, round, cropped to the face
-  static/favicon-16x16.png      round, cropped to the face (tab size)
-  static/favicon-32x32.png      round, cropped to the face (tab size)
+  static/favicon.ico            16, 32 and 48 px, rounded square
+  static/favicon-16x16.png      rounded square (tab size)
+  static/favicon-32x32.png      rounded square (tab size)
   static/apple-touch-icon.png   180 px, square and opaque (iOS adds the corners)
   static/android-chrome-192x192.png, static/android-chrome-512x512.png
   static/site.webmanifest       name and colours for those icons
   assets/img/social-card.png    1200x630, the og:image of pages without a
                                 cover (params.toml: defaultSocialImage)
 
-The social card is rendered with Playwright's Chromium so the Geist web font
-loads before the screenshot (pip install playwright). The icons need only Pillow.
+Everything is rendered with Playwright's Chromium (pip install playwright;
+set CHROMIUM to a Chrome binary if Playwright has no browser of its own), so
+the Geist web font loads before the social card's screenshot.
 """
 
 import base64
 import io
 import json
 import os
+import sys
 
-from PIL import Image, ImageDraw
+from PIL import Image
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 PHOTO = os.path.join(ROOT, "assets", "img", "sxp.jpg")
@@ -41,30 +49,51 @@ MUTED = "#8A968E"
 RULE = "#243029"
 ACCENT = "#4FB88A"
 
-# At 16 and 32 px the whole headshot is a blur; crop to the face (cap brim to
-# chin) for the tab-sized icons. Fractions of the square photo.
-FACE = (0.20, 0.255, 0.825, 0.88)
+# The mark, on a 64-unit grid. `radius` rounds the square: 14 for the tab and
+# Android icons, 0 for the Apple touch icon, which iOS masks itself.
+def mark_svg(radius=14):
+    return (
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">'
+        f'<rect width="64" height="64" rx="{radius}" fill="{PAGE_DARK}"/>'
+        f'<path d="M11 33 L28 44 L52 18" fill="none" stroke="{ACCENT}" stroke-width="7" '
+        'stroke-linecap="round" stroke-linejoin="round"/>'
+        f'<circle cx="11" cy="33" r="6.5" fill="{INK}"/>'
+        f'<circle cx="52" cy="18" r="6.5" fill="{ACCENT}"/>'
+        "</svg>"
+    )
 
 
-def round_icon(img, size):
-    """A circular icon with a transparent outside, antialiased by drawing at 4x."""
-    big = img.resize((size * 4, size * 4), Image.LANCZOS)
-    mask = Image.new("L", big.size, 0)
-    ImageDraw.Draw(mask).ellipse((0, 0, big.width - 1, big.height - 1), fill=255)
-    out = Image.new("RGBA", big.size, (0, 0, 0, 0))
-    out.paste(big, (0, 0), mask)
-    return out.resize((size, size), Image.LANCZOS)
+def launch(p):
+    exe = os.environ.get("CHROMIUM")
+    return p.chromium.launch(executable_path=exe) if exe else p.chromium.launch()
 
 
-def icons(photo):
-    w, h = photo.size
-    face = photo.crop((int(FACE[0] * w), int(FACE[1] * h), int(FACE[2] * w), int(FACE[3] * h)))
+def render_mark(page, size, radius=14):
+    """The mark at exactly size x size pixels, transparent outside the square."""
+    page.set_viewport_size({"width": size, "height": size})
+    svg = mark_svg(radius).replace("<svg ", f'<svg width="{size}" height="{size}" ', 1)
+    page.set_content(f"<!doctype html><style>html,body{{margin:0}}svg{{display:block}}</style>{svg}")
+    png = page.screenshot(clip={"x": 0, "y": 0, "width": size, "height": size}, omit_background=True)
+    return Image.open(io.BytesIO(png)).convert("RGBA")
+
+
+def icons():
+    from playwright.sync_api import sync_playwright
+
+    with sync_playwright() as p:
+        browser = launch(p)
+        page = browser.new_page()
+        tab = {size: render_mark(page, size) for size in (16, 32, 48, 192, 512)}
+        touch = render_mark(page, 180, radius=0).convert("RGB")
+        browser.close()
     for size in (16, 32):
-        round_icon(face, size).save(os.path.join(STATIC, f"favicon-{size}x{size}.png"), optimize=True)
-    round_icon(face, 256).save(os.path.join(STATIC, "favicon.ico"), sizes=[(16, 16), (32, 32), (48, 48)])
-    photo.resize((180, 180), Image.LANCZOS).save(os.path.join(STATIC, "apple-touch-icon.png"), optimize=True)
+        tab[size].save(os.path.join(STATIC, f"favicon-{size}x{size}.png"), optimize=True)
+    # Each ICO frame drawn at its own size, not downscaled from one big frame.
+    tab[48].save(os.path.join(STATIC, "favicon.ico"), sizes=[(16, 16), (32, 32), (48, 48)],
+                 append_images=[tab[16], tab[32]])
+    touch.save(os.path.join(STATIC, "apple-touch-icon.png"), optimize=True)
     for size in (192, 512):
-        photo.resize((size, size), Image.LANCZOS).save(os.path.join(STATIC, f"android-chrome-{size}x{size}.png"), optimize=True)
+        tab[size].save(os.path.join(STATIC, f"android-chrome-{size}x{size}.png"), optimize=True)
     manifest = {
         "name": "Xianpeng Shen",
         "short_name": "Xianpeng Shen",
@@ -130,7 +159,7 @@ def social_card(photo):
     from playwright.sync_api import sync_playwright
 
     with sync_playwright() as p:
-        browser = p.chromium.launch()
+        browser = launch(p)
         page = browser.new_page(viewport={"width": 1200, "height": 630})
         page.set_content(card_html(photo), wait_until="networkidle")
         # SVG text does not trigger web-font loading by itself; ask for each face.
@@ -143,13 +172,14 @@ def social_card(photo):
 
 
 def main():
-    photo = Image.open(PHOTO).convert("RGB")
-    icons(photo)
-    social_card(photo)
+    icons()
+    if "--icons-only" not in sys.argv[1:]:
+        social_card(Image.open(PHOTO).convert("RGB"))
     for name in ("favicon.ico", "favicon-16x16.png", "favicon-32x32.png", "apple-touch-icon.png",
                  "android-chrome-192x192.png", "android-chrome-512x512.png", "site.webmanifest"):
         print(f"  static/{name}  ({os.path.getsize(os.path.join(STATIC, name)) // 1024} KB)")
-    print(f"  assets/img/social-card.png  ({os.path.getsize(CARD) // 1024} KB)")
+    if "--icons-only" not in sys.argv[1:]:
+        print(f"  assets/img/social-card.png  ({os.path.getsize(CARD) // 1024} KB)")
 
 
 if __name__ == "__main__":

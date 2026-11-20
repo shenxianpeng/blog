@@ -1,0 +1,23 @@
+{{- /*
+  Replaces Blowfish's related.html (v3.6.0), a grid of six cards wider than
+  the text. Three ruled rows (date, title) inside the article's measure, like
+  the home page's Writing list. Hugo ranks by tags first, so a 2020 post with
+  the same tags used to come first; the six best matches are re-sorted by
+  date and the newest three kept.
+*/ -}}
+{{- if .Params.showRelatedContent | default (site.Params.article.showRelatedContent | default false) -}}
+  {{- $related := site.RegularPages.Related . | first 6 -}}
+  {{- with $related -}}
+    <section class="post-related">
+      <h2 class="post-footer-label">{{ i18n "article.related_articles" }}</h2>
+      <div class="home-posts">
+        {{- range first 3 .ByDate.Reverse }}
+          <a class="home-post" href="{{ .RelPermalink }}">
+            <time class="home-meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+            <span class="home-post-title">{{ .Title }}</span>
+          </a>
+        {{- end }}
+      </div>
+    </section>
+  {{- end -}}
+{{- end -}}

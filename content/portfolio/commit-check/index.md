@@ -1,8 +1,9 @@
 ---
 title: "commit-check"
-weight: 1
+stage: commit
+weight: 6
 externalUrl: "https://commit-check.com/"
-summary: "一份策略统一校验提交信息、分支名和 AI 署名，CI 里或 pre-commit 里都能跑。PyPI 上每月下载约 5.5 万次。"
+summary: "提交信息、分支名、作者、签名和 AI 署名，用一个配置文件来检查。可以跑在 CI 里、作为 pre-commit hook，也可以让 AI agent 读它的 JSON 输出。"
 showDate: false
 showReadingTime: false
 showWordCount: false

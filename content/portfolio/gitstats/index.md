@@ -1,8 +1,9 @@
 ---
 title: "gitstats"
-weight: 12
+stage: more
+weight: 10
 externalUrl: "https://gitstats.readthedocs.io/"
-summary: "Git 统计工具，生成 Git 仓库的统计报告。"
+summary: "为 Git 仓库生成统计报告。"
 showDate: false
 showReadingTime: false
 showWordCount: false

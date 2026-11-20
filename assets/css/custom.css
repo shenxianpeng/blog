@@ -2320,7 +2320,7 @@ main:has(.home) + #site-footer {
 .post-footer {
   display: grid;
   gap: 2.5rem;
-  max-width: 42rem;
+  max-width: 40.25rem;
   margin: 3.5rem 0 2rem;
 }
 
@@ -2428,4 +2428,304 @@ main:has(.home) + #site-footer {
 
 .dark :is(.post-footer-more, .post-footer-follow-links a) {
   color: rgb(var(--color-primary-400));
+}
+
+/* ---- Inner pages: header space -----------------------------------------
+   Blowfish reserves 148px for the fixed header, 91px of it empty under the
+   bar; on a phone that and the breadcrumb pushed an article's first line of
+   text under the fold. Every page but the home (which sets its own space
+   above) gets the bar's height and a fixed gap instead. */
+
+body:not(:has(.home)) > header > div:first-child {
+  min-height: 65px;
+}
+
+body:not(:has(.home)) #main-content {
+  padding-top: 1.25rem;
+}
+
+@media (min-width: 853px) {
+  body:not(:has(.home)) > header > div:first-child {
+    min-height: 57px;
+  }
+
+  body:not(:has(.home)) #main-content {
+    padding-top: 3rem;
+  }
+}
+
+/* The table of contents sits 4rem from the text instead of at the far right
+   of the 72rem body, which left a 330px hole between the two. */
+@media (min-width: 1024px) {
+  #single_header + section > div:has(> .toc) {
+    margin-inline-start: 4rem;
+  }
+}
+
+/* ---- Post lists ---------------------------------------------------------
+   layouts/partials/post-rows.html (Posts, Essays, a tag's page) and
+   layouts/portfolio/list.html (Projects): the home page's Writing rows,
+   grouped by year, in a 50rem column. */
+
+.post-list {
+  max-width: 50rem;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.post-list-head {
+  margin-bottom: 1rem;
+}
+
+.post-list-title {
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: rgb(var(--color-neutral-900));
+}
+
+.post-list-count {
+  margin: 0.5rem 0 0;
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+  color: rgb(var(--color-neutral-500));
+}
+
+.post-list-intro {
+  margin-top: 0.75rem;
+  font-size: 1.0625rem;
+  color: rgb(var(--color-neutral-600));
+}
+
+.post-list-intro p {
+  margin: 0;
+}
+
+.post-list-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-top: 1.5rem;
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+}
+
+.post-list-years a {
+  color: rgb(var(--color-neutral-600));
+  text-decoration: none;
+}
+
+.post-list-years a:hover {
+  color: rgb(var(--color-primary-600));
+}
+
+.post-list-year {
+  margin-top: 3rem;
+  scroll-margin-top: 5rem;
+}
+
+.post-list-year-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.625rem;
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: rgb(var(--color-neutral-900));
+}
+
+.post-list-year-count {
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: rgb(var(--color-neutral-500));
+}
+
+/* The year is in the heading, so a row's date is month and day. */
+.post-list .home-post {
+  grid-template-columns: 3.5rem minmax(0, 1fr) auto;
+}
+
+/* ---- Projects ---------------------------------------------------------- */
+
+.projects-group {
+  margin-top: 3.5rem;
+}
+
+.projects-stage {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: 1.5rem;
+  border-top: 1px solid rgb(var(--color-neutral-200));
+}
+
+.projects-stage:last-child {
+  border-bottom: 1px solid rgb(var(--color-neutral-200));
+}
+
+.projects-stage:not(:has(.projects-stage-name)) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.projects-stage-name {
+  padding-top: 1.2rem;
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+  color: rgb(var(--color-primary-600));
+}
+
+.projects-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 0;
+  color: rgb(var(--color-neutral-900));
+  text-decoration: none;
+}
+
+.projects-row + .projects-row {
+  border-top: 1px solid rgb(var(--color-neutral-200));
+}
+
+.projects-label {
+  font-size: 0.75rem;
+}
+
+.projects-name {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  transition: color 0.2s ease-out;
+}
+
+.projects-host {
+  white-space: nowrap;
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgb(var(--color-neutral-500));
+}
+
+.projects-desc {
+  max-width: 40rem;
+  font-size: 0.9375rem;
+  color: rgb(var(--color-neutral-600));
+}
+
+.projects-row:hover .projects-name {
+  color: rgb(var(--color-primary-600));
+}
+
+/* ---- End of an article --------------------------------------------------
+   Related posts (layouts/partials/related.html), the share line
+   (sharing-links.html) and the previous/next links take the article's
+   measure, like the post footer above them. */
+
+/* 40.25rem is the Chinese text column: the theme's 65ch at 18px. */
+.post-related,
+.post-share {
+  max-width: 40.25rem;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+#single_header ~ footer {
+  max-width: 40.25rem;
+}
+
+:lang(en) :is(.post-related, .post-share, #single_header ~ footer) {
+  max-width: 37rem;
+}
+
+.post-related {
+  margin-top: 3rem;
+}
+
+.post-related .home-post {
+  grid-template-columns: 6rem minmax(0, 1fr);
+}
+
+.post-related .home-post-title {
+  font-size: 1rem;
+}
+
+.post-share {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin-top: 2rem;
+  font-size: 0.9375rem;
+}
+
+.post-share-label {
+  color: rgb(var(--color-neutral-500));
+}
+
+.post-share a {
+  font-weight: 600;
+  color: rgb(var(--color-primary-600));
+  text-decoration: none;
+}
+
+.post-share a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 767px) {
+  /* The theme's 36px title took four lines of a phone's first screen. */
+  #single_header h1 {
+    font-size: 1.875rem;
+    line-height: 1.15;
+  }
+
+  .post-list .home-post {
+    grid-template-columns: 3.25rem minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .post-related .home-post {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.125rem;
+  }
+
+  .projects-stage {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .projects-stage-name {
+    padding-top: 1rem;
+  }
+}
+
+.dark :is(.post-list-title, .post-list-year-title, .projects-row) {
+  color: rgb(var(--color-neutral));
+}
+
+.dark :is(.post-list-intro, .projects-desc) {
+  color: rgb(var(--color-neutral-300));
+}
+
+.dark :is(.post-list-years a, .post-share-label) {
+  color: rgb(var(--color-neutral-400));
+}
+
+.dark :is(.post-list-count, .post-list-year-count, .projects-host) {
+  color: rgb(var(--color-neutral-400));
+}
+
+.dark :is(.post-list-years a:hover, .projects-stage-name, .post-share a) {
+  color: rgb(var(--color-primary-400));
+}
+
+.dark .projects-row:hover .projects-name {
+  color: rgb(var(--color-primary-400));
+}
+
+.dark :is(.projects-stage, .projects-row + .projects-row) {
+  border-color: rgb(var(--color-neutral-700));
 }

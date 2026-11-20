@@ -1,5 +1,6 @@
 ---
 title: "Jenkins Extended Security"
+stage: more
 weight: 7
 externalUrl: "https://github.com/keelinfra/jenkins-extended-security"
 summary: "Jenkins 2.541.3, the last LTS that runs on Java 17, with the core security fixes released after it. The patches, a reproducible build and the tests are public."

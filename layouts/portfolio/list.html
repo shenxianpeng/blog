@@ -1,0 +1,50 @@
+{{- /*
+  The Projects page. Replaces Blowfish's card grid, whose generated icon
+  illustrations were in another palette and said nothing about the projects.
+  Open source is grouped by the delivery stage it works at, the same stages as
+  the home page's card and the About page's pipeline (commit → review → build
+  → release), then the products, then the rest. Each project bundle in
+  content/portfolio/ sets `stage` (commit, review, build, release, more or
+  product), and a product sets `label`. Rows link to `externalUrl`, or to the
+  bundle's own page when it has none. Styles .projects-* in custom.css.
+*/ -}}
+{{ define "main" }}
+  {{- $pages := .Pages.ByWeight -}}
+  {{- $lang := .Lang -}}
+  <div class="post-list projects">
+    <header class="post-list-head">
+      <h1 class="post-list-title">{{ .Title }}</h1>
+      {{- with .Content }}<div class="post-list-intro">{{ . }}</div>{{ end }}
+    </header>
+
+    {{- $groups := slice
+      (dict "id" "oss" "stages" (slice "commit" "review" "build" "release" "more"))
+      (dict "id" "products" "stages" (slice "product")) -}}
+    {{- range $groups }}
+      {{- $group := . }}
+      <section class="projects-group">
+        <h2 class="post-list-year-title">{{ i18n (printf "projects.%s" .id) }}</h2>
+        {{- range .stages }}
+          {{- $stage := . }}
+          {{- with where $pages "Params.stage" $stage }}
+            <div class="projects-stage">
+              {{- if ne $group.id "products" }}
+                <span class="projects-stage-name">{{ if eq $stage "more" }}{{ i18n "projects.more" }}{{ else }}{{ $stage }}{{ end }}</span>
+              {{- end }}
+              <div class="projects-rows">
+                {{- range . }}
+                  {{- $url := .Params.externalUrl | default .RelPermalink }}
+                  <a class="projects-row" href="{{ $url }}"{{ with .Params.externalUrl }} rel="noopener"{{ end }}>
+                    {{- with .Params.label }}<span class="home-meta projects-label">{{ . }}</span>{{ end }}
+                    <span class="projects-name">{{ .Title }}{{ with .Params.externalUrl }}<span class="projects-host"> {{ (urls.Parse .).Host | strings.TrimPrefix "www." }} ↗</span>{{ end }}</span>
+                    <span class="projects-desc">{{ .Summary | plainify }}</span>
+                  </a>
+                {{- end }}
+              </div>
+            </div>
+          {{- end }}
+        {{- end }}
+      </section>
+    {{- end }}
+  </div>
+{{ end }}

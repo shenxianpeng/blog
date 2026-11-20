@@ -1,8 +1,9 @@
 ---
 title: "cpp-linter"
-weight: 3
+stage: review
+weight: 2
 externalUrl: "https://cpp-linter.github.io/"
-summary: "clang-format and clang-tidy on every pull request. More than 1,000 repositories on GitHub depend on it, including projects from AWS, Apache, Samsung, Qualcomm and Bloomberg."
+summary: "clang-format and clang-tidy on every pull request, as a GitHub Action, a pre-commit hook and a Python package. Fixes arrive as review suggestions you can commit in one click."
 showDate: false
 showReadingTime: false
 showWordCount: false

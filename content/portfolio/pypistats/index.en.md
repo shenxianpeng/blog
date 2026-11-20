@@ -1,7 +1,8 @@
 ---
-title: "Python packages on PyPI"
-weight: 13
-summary: "The Python packages I maintain on PyPI, sorted by monthly downloads."
+title: "PyPI packages"
+stage: more
+weight: 1
+summary: "The Python packages I maintain on PyPI, with their versions and downloads."
 showDate: false
 showReadingTime: false
 showWordCount: false

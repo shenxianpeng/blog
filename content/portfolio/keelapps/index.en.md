@@ -1,6 +1,8 @@
 ---
 title: "keelapps"
-weight: 10
+stage: product
+label: "Atlassian Marketplace"
+weight: 12
 externalUrl: "https://keelapps.app"
 summary: "Twelve admin apps for Jira and Confluence Cloud on the Atlassian Marketplace: permission audits, recurring tasks, scheduled reports, page approvals, and bulk page and attachment tools."
 showDate: false

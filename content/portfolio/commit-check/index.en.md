@@ -1,8 +1,9 @@
 ---
 title: "commit-check"
-weight: 1
+stage: commit
+weight: 6
 externalUrl: "https://commit-check.com/"
-summary: "One policy for commit messages, branch names and AI attribution, in CI or as a pre-commit hook. About 55,000 downloads a month on PyPI."
+summary: "Commit messages, branch names, authors, sign-offs and AI attribution, checked from one config file: in CI, as a pre-commit hook, or by an AI agent reading its JSON output."
 showDate: false
 showReadingTime: false
 showWordCount: false

@@ -1,8 +1,9 @@
 ---
 title: "explain-error"
-weight: 4
+stage: build
+weight: 9
 externalUrl: "https://plugins.jenkins.io/explain-error/"
-summary: "jenkinsci 组织下的 Jenkins 插件，用 AI 解释流水线和任务为什么构建失败。"
+summary: "jenkinsci 下的 Jenkins 插件，用 AI 解释流水线和任务为什么失败。"
 showDate: false
 showReadingTime: false
 showWordCount: false

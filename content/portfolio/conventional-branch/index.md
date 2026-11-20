@@ -1,8 +1,9 @@
 ---
 title: "Conventional Branch"
-weight: 2
+stage: commit
+weight: 7
 externalUrl: "https://conventionalbranch.org/zh/"
-summary: "约定式分支，一份分支命名规范：feature/、bugfix/ 这样的类型前缀加一段简短描述，人和工具都读得懂。commit-check 可以按它来校验。"
+summary: "Git 分支的命名规范，让人和工具都能看出一个分支是干什么的。"
 showDate: false
 showReadingTime: false
 showWordCount: false
