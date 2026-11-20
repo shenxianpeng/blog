@@ -27,6 +27,10 @@ Instructions for AI coding agents working on this repository. This is a personal
   Tags and RSS live in the footer.
 - **Deployment:** GitHub Pages via `.github/workflows/pages.yaml`. Netlify runs
   deploy previews on pull requests only — it is not the production host.
+  Both builds minify the HTML (`--minify` in the workflow,
+  `HUGO_MINIFY_MINIFYOUTPUT` in `netlify.toml`), which collapses runs of
+  spaces outside `<pre>`: markup that depends on its whitespace, such as the
+  code in the home page's demos, has to be a `<pre>`.
 
 ## Design System
 
