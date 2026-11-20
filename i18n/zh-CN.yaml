@@ -41,6 +41,7 @@ footer:
 list:
   externalurl_title: "链接到外部网站"
   no_articles: "这里还没有任何文章可以列出。"
+  years: "年份"
 
 nav:
   scroll_to_top_title: "返回顶部"
@@ -52,6 +53,8 @@ search:
   input_placeholder: "搜索"
 
 sharing:
+  label: "分享"
+  name_email: "邮件"
   email: "通过电子邮件发送"
   facebook: "分享到 Facebook"
   line: "分享到 LINE"
@@ -72,3 +75,9 @@ archive_total:
 # Site home page (layouts/partials/recent-articles/main.html)
 home:
   all_posts: "全部文章"
+
+# Projects page (layouts/portfolio/list.html)
+projects:
+  oss: "开源项目，按交付阶段"
+  products: "产品"
+  more: "其他"

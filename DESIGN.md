@@ -95,6 +95,11 @@ and the series boxes with it: `max-w-prose` is 65ch, and Newsreader's "0",
 which `ch` measures, is a third wider than its average letter, so the theme's
 column ran 79–91. Article titles and headings use `text-wrap: balance`.
 
+Pages other than the home keep only the header bar's height (57px, 65px under
+853px) of Blowfish's 148px header space, then 3rem (1.25rem on a phone) above
+the content. On an article the table of contents sits 4rem right of the text,
+not at the far edge of the body. On a phone an article title is 30px.
+
 ## Home page
 
 Top to bottom:
@@ -183,6 +188,34 @@ Posts and essays end with "From the author" (one or two project cards, the
 home tiles' white surface and shadow at a smaller radius) and "Follow" (text
 links; the WeChat QR code on Chinese pages), within the article's measure.
 Styles `.post-footer-*` in `custom.css`.
+
+Then, in the same measure (37rem in English, 40.25rem in Chinese): one line
+of share links as text (`layouts/partials/sharing-links.html`), "Related" as
+three ruled rows of date and title (`layouts/partials/related.html`: the six
+best matches by tag, newest three), and the previous/next links. Styles
+`.post-related`, `.post-share` in `custom.css`.
+
+## Post lists
+
+Posts, Essays and each tag's page (`layouts/posts/list.html`,
+`layouts/misc/list.html`, `layouts/_default/term.html`, all through
+`layouts/partials/post-rows.html`) are the home page's Writing rows, not
+cards: a 48px title, the post count in mono, a row of years linking down the
+page, then one section per year (a 24px year and its count) of ruled rows:
+month-day in 13px mono, the title at 17px, 600, the first tag in 12px mono.
+50rem wide, every post on one page, no covers. Styles `.post-list-*`.
+
+## Projects page
+
+`layouts/portfolio/list.html`: the same header, then "Open source, by
+delivery stage" — one block per stage (`commit`, `review`, `build`,
+`release`, then `also`), the stage name in 13px mono in the accent colour on
+the left and its projects as ruled rows on the right: name (17px, 600), the
+site's host in 12px mono, and the `summary`. Then "Products": the same rows
+with a 12px mono `label` (price and platform) above the name. Each bundle in
+`content/portfolio/` sets `stage` and, for a product, `label`. Names are
+written the way the projects write them (cpp-linter, commit-check,
+explain-error). No pictures. Styles `.projects-*`.
 
 ## Rules
 

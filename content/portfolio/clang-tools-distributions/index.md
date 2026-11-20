@@ -1,7 +1,8 @@
 ---
-title: "Clang Tools Distributions"
+title: "clang-tools"
+stage: release
 weight: 11
-summary: "为 clang-format 和 clang-tidy 提供多种分发方式，支持 Docker、静态二进制和 Python Wheel 三种形式。"
+summary: "clang-format 和 clang-tidy 的三种分发方式：Docker 镜像、静态二进制和 Python wheel。"
 showDate: false
 showReadingTime: false
 showWordCount: false

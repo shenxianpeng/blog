@@ -1,7 +1,8 @@
 ---
-title: "Clang Tools Distributions"
+title: "clang-tools"
+stage: release
 weight: 11
-summary: "Multiple distribution methods for clang-format and clang-tidy, supporting Docker, static binaries, and Python Wheel packages."
+summary: "clang-format and clang-tidy shipped three ways: Docker images, static binaries and Python wheels."
 showDate: false
 showReadingTime: false
 showWordCount: false
