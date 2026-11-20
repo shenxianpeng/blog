@@ -20,6 +20,7 @@ showLikes: false
 showAuthor: true
 layoutBackgroundBlur: false
 layoutBackgroundHeaderSpace: false
+showZenMode: false
 ---
 
 ## 个人简介

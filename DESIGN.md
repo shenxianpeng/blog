@@ -174,7 +174,26 @@ for a product with `style: wide`.
 
 ## About page
 
-Opens with the positioning line and one paragraph on why, then the pipeline
+Its own template (`layouts/about/single.html`), not the theme's article
+page. It opens with the author, not the word "About": a 72px photo, the name
+at 26px/600, the role in 12px mono, and four pill links on the right (GitHub
+with the ink border, LinkedIn, Email, Résumé; 13px, 34px tall), over a rule.
+On a narrow screen the role breaks between its parts and the links wrap
+under the name.
+
+Under the rule, two columns from 1024px: the text in the article's measure,
+and "At a glance", six facts as ruled rows of label and value (13px; label
+muted, value 500) in the place an article gives its table of contents: 4rem
+from the text, 18rem wide, sticky. The page is 59rem wide in English
+(37 + 4 + 18) and 62.25rem in Chinese, so the header's rule ends where the
+facts do. Below 1024px the facts sit between the header and the text. The
+first paragraph, the positioning line, is set a size up (23px; 22px in
+Chinese; 21px on a phone). There is no author card at the end; the comments
+follow the text. Copy: `role`, `links` and `facts` in the front matter of
+`content/about/index.en.md` and `index.md`; keep the facts in step with the
+home page's `proof`. Styles `.about-*` in `custom.css`.
+
+The text opens with the positioning line and one paragraph on why, then the pipeline
 as a diagram (`{{< pipeline >}}`): the banner's line with one dot per stage,
 the stage name as a small code chip under each dot, and the projects of
 that stage as accent links below it. Five columns within the article's

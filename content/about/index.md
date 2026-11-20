@@ -20,9 +20,37 @@ showViews: false
 showLikes: false
 showAuthor: true
 layoutBackgroundHeaderSpace: false
+
+# 页首和正文旁的事实栏（layouts/about/single.html）。
+role: "构建与发布工程师，2009 年入行 · 立陶宛维尔纽斯"
+links:
+  - label: "GitHub"
+    url: "https://github.com/shenxianpeng"
+    primary: true
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/xianpeng-shen/"
+  - label: "邮件"
+    url: "mailto:xianpeng.shen@gmail.com"
+  - label: "简历"
+    url: "resume/"
+facts:
+  label: "速览"
+  items:
+    - label: "入行"
+      value: "2009 年"
+    - label: "维护"
+      value: "cpp-linter、commit-check"
+    - label: "Jenkins"
+      value: "组织成员，2 个项目"
+    - label: "公开贡献"
+      value: "立陶宛前三"
+    - label: "在这里写作"
+      value: "2017 年起"
+    - label: "语言"
+      value: "中文、English"
 ---
 
-DevOps 与发布工程师，生活在立陶宛维尔纽斯。我做开源工具，帮团队把软件稳稳发出去，上游不管了也一样。
+DevOps 与发布工程师。我做开源工具，帮团队把软件稳稳发出去，上游不管了也一样。
 
 2009 年入行，我一直在做构建、测试和发布。AI 让写代码变便宜了，代码写完之后的事一样没便宜：这次改动是谁、或者哪个 agent 提交的，在你手上那些机器上还能不能构建，发出去的版本说不说得清来历，往后几年出了漏洞谁来补。从 2027 年 12 月起，欧盟《网络弹性法案》把其中一部分写成了法律义务：在欧盟卖软件的厂商要声明支持期，并在支持期内持续提供安全更新。下面这些项目做的就是这一段。
 
