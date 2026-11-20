@@ -51,6 +51,7 @@ footer:
 list:
   externalurl_title: "Link to external site"
   no_articles: "There are no articles to list here yet."
+  years: "Years"
 
 nav:
   scroll_to_top_title: "Scroll to top"
@@ -62,6 +63,8 @@ search:
   input_placeholder: "Search"
 
 sharing:
+  label: "Share"
+  name_email: "Email"
   email: "Send via email"
   facebook: "Share on Facebook"
   line: "Share on LINE"
@@ -86,3 +89,9 @@ archive_total:
 # Site home page (layouts/partials/recent-articles/main.html)
 home:
   all_posts: "All posts"
+
+# Projects page (layouts/portfolio/list.html)
+projects:
+  oss: "Open source, by delivery stage"
+  products: "Products"
+  more: "also"

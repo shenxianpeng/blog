@@ -1,5 +1,7 @@
 ---
 title: "Keelhaven"
+stage: product
+label: "Free · Open source · macOS 14+"
 weight: 5
 externalUrl: "https://keelhaven.app"
 summary: "Mac backup to storage you own. A free, open-source menu bar app over restic; files are encrypted before they leave your Mac."
