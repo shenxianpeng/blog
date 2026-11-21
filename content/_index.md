@@ -39,7 +39,7 @@ heroAlso:
           url: "https://keelinfra.io/cra/"
 proof:
   stats:
-    - value: "85 万+"
+    - value: "50 万+"
       label: "clang-tools 静态二进制累计下载"
     - value: "1000+"
       label: "个 GitHub 仓库依赖 cpp-linter"

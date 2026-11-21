@@ -41,7 +41,7 @@ In software since 2009, from QA and test automation to DevOps; at Rocket Softwar
 ## Highlights
 
 - [cpp-linter](https://github.com/cpp-linter): 1,000+ dependent repositories, including projects at **Apache, Samsung, Qualcomm, Bloomberg, LLNL and Nextcloud**
-- [clang-tools static binaries](https://github.com/cpp-linter/clang-tools-static-binaries): **850,000+** downloads
+- [clang-tools static binaries](https://github.com/cpp-linter/clang-tools-static-binaries): **500,000+** downloads
 - [commit-check](https://github.com/commit-check/commit-check): **70,000+** PyPI downloads a month
 - **Jenkins GitHub organization** member; author of the [Explain Error](https://github.com/jenkinsci/explain-error-plugin) plugin
 - [Top 3 in Lithuania](https://committers.top/lithuania_public) for public GitHub contributions
