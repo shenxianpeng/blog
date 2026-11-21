@@ -1,5 +1,7 @@
 ---
 title: 2020 年终总结
+summary: |
+  2020 年用 Jenkins Shared Libraries 做到无人值守构建，推动团队迁到 Artifactory，落地 Git 提交规范，写了 41 篇博客和 26 篇公众号文章，也放弃了一次出书的机会。
 tags:
   - Thoughts
   - Summary

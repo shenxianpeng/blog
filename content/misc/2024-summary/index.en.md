@@ -1,5 +1,7 @@
 ---
 title: 2024 Year-End Summary
+summary: |
+  The biggest change of 2024 was ending my work in Dalian and moving to Europe. Open source and writing carried on: cpp-linter-action passed a thousand users, I took over gitstats, and I wrote 27 blog posts and 41 WeChat articles.
 tags:
   - Thoughts
   - Summary

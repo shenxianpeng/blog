@@ -107,3 +107,18 @@ projects:
   oss: "Open source, by delivery stage"
   products: "Products"
   more: "also"
+
+# Generated page descriptions (layouts/partials/page-description.html)
+seo:
+  years_one: "in {{ .From }}"
+  years_range: "from {{ .From }} to {{ .To }}"
+  tags_term:
+    one: "1 post about {{ .Title }} on {{ .Author }}'s blog, {{ .Years }}."
+    other: "{{ .Count }} posts about {{ .Title }} on {{ .Author }}'s blog, {{ .Years }}."
+  series_term:
+    one: "The {{ .Title }} series on {{ .Author }}'s blog: 1 post, {{ .Years }}."
+    other: "The {{ .Title }} series on {{ .Author }}'s blog: {{ .Count }} posts, {{ .Years }}."
+  tags_all:
+    other: "All {{ .Count }} tags on {{ .Author }}'s blog, ranked by number of posts."
+  series_all:
+    other: "All {{ .Count }} series on {{ .Author }}'s blog."

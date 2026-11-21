@@ -1,5 +1,7 @@
 ---
 title: 2023 年终总结
+summary: |
+  2023 年的三个身份：带娃的奶爸、坚持 DevOps 最佳实践的工程师、业余做开源和写作的人。cpp-linter-action 用户超过 400，全年写了 20 篇博客和 6 篇公众号文章。
 tags:
   - Thoughts
   - Summary

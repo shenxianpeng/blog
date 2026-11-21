@@ -1,0 +1,24 @@
+{{- /*
+  The page's description for the <meta> tag. Front matter wins. Tag and series
+  pages have none, and used to fall back to the site's description, so 265
+  pages told search engines the same thing; these are generated from the term:
+  its name, how many posts, and the years they span. Strings: `seo.*` in i18n.
+  Context: the page.
+*/ -}}
+{{- $description := .Params.Description -}}
+{{- if and (not $description) (in (slice "tags" "series") .Type) -}}
+  {{- $author := site.Params.Author.name -}}
+  {{- if eq .Kind "term" -}}
+    {{- with where .Pages "Date.Year" "gt" 1000 -}}
+      {{- $sorted := .ByDate -}}
+      {{- $from := (index $sorted 0).Date.Year -}}
+      {{- $to := (index $sorted (sub (len $sorted) 1)).Date.Year -}}
+      {{- $years := i18n "seo.years_one" (dict "From" $from) -}}
+      {{- if ne $from $to }}{{ $years = i18n "seo.years_range" (dict "From" $from "To" $to) }}{{ end -}}
+      {{- $description = i18n (printf "seo.%s_term" $.Type) (dict "Count" (len $sorted) "Title" $.Title "Author" $author "Years" $years) -}}
+    {{- end -}}
+  {{- else if eq .Kind "taxonomy" -}}
+    {{- $description = i18n (printf "seo.%s_all" .Type) (dict "Count" (len .Data.Terms) "Author" $author) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $description -}}

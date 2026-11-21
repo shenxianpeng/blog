@@ -1,5 +1,7 @@
 ---
 title: 2025 Year-End Summary
+summary: |
+  Looking back at 2025: life and work in Vilnius, PyCon LT, creating the Explain Error plugin and joining the Jenkins GitHub organization, and a goal for myself 1,000 days from now.
 tags:
   - Thoughts
   - Summary

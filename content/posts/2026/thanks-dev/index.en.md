@@ -1,6 +1,7 @@
 ---
 title: How to Claim the 'Lottery Ticket' of Open Source—Starting from thanks.dev's Operational Mechanism
 summary: |
+  thanks.dev scans its sponsors' dependency trees and splits the money by how often a project is depended on, regardless of stars. How it works, who pays, which projects get picked, and why maintainers have to register before any money reaches them.
 tags:
   - Donation
 authors:

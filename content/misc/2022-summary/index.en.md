@@ -1,5 +1,7 @@
 ---
 title: 2022 Year-End Summary
+summary: |
+  I started maintaining cpp-linter-action in 2021 and became a parent in 2022, so my keyword was "responsibility". Open source still came first in my spare time: more than 100 projects now depend on cpp-linter-action, and I wrote 19 blog posts.
 tags:
   - Thoughts
   - Summary
