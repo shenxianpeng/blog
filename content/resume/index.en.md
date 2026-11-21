@@ -36,7 +36,7 @@ links:
 
 I build the tooling that keeps software shipping: CI/CD, release engineering and supply chain security, at work and in open source.
 
-In software since 2009, from QA and test automation to DevOps; at Rocket Software since 2014, on build and release since 2018. Now focused on enterprise **agentic applications**: AI that takes on real engineering tasks under controlled workflows.
+In software since 2009, from QA and test automation to DevOps; at Rocket Software since 2014, on build and release since 2018. Now focused on **agentic applications**: AI that takes on real engineering tasks under controlled workflows.
 
 ## Highlights
 
@@ -73,16 +73,16 @@ In software since 2009, from QA and test automation to DevOps; at Rocket Softwar
 ## Open Source
 
 - **[cpp-linter](https://github.com/cpp-linter)**: clang-format and clang-tidy on every pull request, as a GitHub Action and pre-commit hook
-- **[commit-check](https://github.com/commit-check)**: one policy for commit messages, branch names, authors, sign-offs and AI attribution, in hooks and CI
+- **[commit-check](https://github.com/commit-check)**: one policy for commit messages, branches, authors, sign-offs and AI attribution, in hooks and CI
 - **[Explain Error](https://github.com/jenkinsci/explain-error-plugin)**: a Jenkins plugin that uses AI to explain build failures and open repair PRs
 - **[MkDocs NG](https://github.com/mkdocs-ng)**: MkDocs 1.x, maintained, so existing sites and plugins keep building
 - **[Agent8](https://github.com/keelinfra/agent8)**: keeps Java 8 build hosts such as AIX, Solaris and HP-UX on a current Jenkins
-- **[release-ledger](https://github.com/keelinfra/release-ledger)**: adds an SBOM and signed provenance to each release; watches for actively exploited vulnerabilities
+- **[release-ledger](https://github.com/keelinfra/release-ledger)**: adds an SBOM and signed provenance to each release; watches for exploited vulnerabilities
 - **More**: [Conventional Branch](https://conventionalbranch.org), [Extended Security for Jenkins](https://github.com/keelinfra/jenkins-extended-security), [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint), [gitstats](https://github.com/shenxianpeng/gitstats)
 
 ## Skills
 
-- **Delivery**: CI/CD, build and release, Docker, Kubernetes, Ansible, code coverage, supply chain security (SLSA, SBOM)
+- **Delivery**: CI/CD, build and release, Docker, Kubernetes, Ansible, code coverage, supply chain (SLSA, SBOM)
 - **AI engineering**: agentic applications, AI code review, GitHub Copilot SDK, LLM integration
 - **Languages**: Python, Shell, Groovy, Go
 - **Platforms**: Jenkins, GitHub Actions, Linux, Windows, AIX
