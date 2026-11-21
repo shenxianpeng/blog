@@ -39,11 +39,11 @@ heroAlso:
           url: "https://keelinfra.io/cra/"
 proof:
   stats:
-    - value: "75 万+"
+    - value: "85 万+"
       label: "clang-tools 静态二进制累计下载"
     - value: "1000+"
       label: "个 GitHub 仓库依赖 cpp-linter"
-    - value: "5.5 万+"
+    - value: "7 万+"
       label: "commit-check 每月 PyPI 下载"
     - value: "Jenkins 组织"
       label: "成员，jenkinsci 下有两个项目"
