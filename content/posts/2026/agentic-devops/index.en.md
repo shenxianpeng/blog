@@ -44,7 +44,7 @@ GitHub Next refers to this type of automation as Continuous AI, analogizing the 
 
 This is the official introduction to Agentic Workflow.
 
-![Six features of GitHub Agentic Workflows: Markdown workflows, AI decisions, GitHub integration, safety, multiple AI engines, continuous AI](gh-aw.png)
+![](gh-aw.png)
 
 Examples of what can actually be done include:
 - Continuous triage: Automatic labeling and summarizing of new issues.
