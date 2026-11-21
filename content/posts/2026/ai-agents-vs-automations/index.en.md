@@ -14,7 +14,7 @@ date: 2026-04-20
 
 I saw an image online that looked like this:
 
-![](what-do-you-think.webp)
+![Cartoon: a long line of dinosaurs squeezes through a door marked AI AGENT while one stands alone at the door marked AUTOMATION](what-do-you-think.webp)
 
 It made me think of how the current workplace and tech industry have fallen into an AI frenzy. No matter what you're doing—writing tests, optimizing quality, or maintaining your existing stable automation—someone will ask:
 

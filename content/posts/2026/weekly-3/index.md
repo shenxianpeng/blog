@@ -33,7 +33,7 @@ OpenClaw 的核心创新在于将 AI 助手整合进日常的即时通讯工具�
 
 1、**AWS DevOps Agent 正式发布**
 
-![](news-1.png)
+![从太空俯瞰夜晚的地球，城市灯光连成一片](news-1.png)
 
 AWS 在 re:Invent 2025 上宣布的 DevOps Agent 终于正式发布生产环境最佳实践指南。这个 AI Agent 能够自主进行根因分析和事故响应，通过关联多个服务的遥测数据、审查部署历史和理解复杂的应用依赖关系来快速定位问题。AWS 团队分享了从原型到产品的开发经验，特别强调了如何确保 Agent 生成有用的发现和观察结果。
 
@@ -41,7 +41,7 @@ AWS 在 re:Invent 2025 上宣布的 DevOps Agent 终于正式发布生产环境�
 
 2、**Kubernetes 宣布 Ingress NGINX 将于 2026 年 3 月退役**
 
-![](news-2.png)
+![插图：一块牌子上画着 JavaScript 图标和流程图](news-2.png)
 
 Kubernetes Steering 和 Security Response 委员会发布声明，宣布作为云原生环境中约一半基础设施核心组件的 Ingress NGINX 将于 2026 年 3 月退役。这一决定是在多年公开警告该项目缺乏维护者之后做出的。官方推荐用户迁移到 Gateway API，这是 Kubernetes 下一代流量管理方案。
 
@@ -49,7 +49,7 @@ Kubernetes Steering 和 Security Response 委员会发布声明，宣布作为�
 
 3、**Amazon 据报道洽谈向 OpenAI 投资 500 亿美元**
 
-![](news-3.jpg)
+![一位穿深色西装的演讲者在台上讲话](news-3.jpg)
 
 据多家媒体报道，Amazon 正在与 OpenAI 就一笔高达 500 亿美元的投资进行谈判。这将是 AI 领域有史以来最大规模的投资之一，也反映出科技巨头在 AI 竞赛中的激进态度。此前，微软已经向 OpenAI 投资超过 130 亿美元。
 
@@ -57,7 +57,7 @@ Amazon 的这一举动可能会改变 AI 市场的竞争格局。对于开发者
 
 4、**Microsoft 持续采购 Nvidia 和 AMD AI 芯片**
 
-![](news-4.jpg)
+![一位演讲者站在浅蓝色背景前挥手](news-4.jpg)
 
 尽管 Microsoft 推出了自己的 AI 芯片，CEO Satya Nadella 表示公司不会停止从 Nvidia 和 AMD 采购 AI 芯片。这反映出 AI 基础设施建设对算力的巨大需求，单一供应商难以满足快速增长的计算需求。Microsoft 采取多供应商策略，既保证了供应安全，也推动了芯片市场的竞争。
 
@@ -65,7 +65,7 @@ Amazon 的这一举动可能会改变 AI 市场的竞争格局。对于开发者
 
 5、**SonicWall 防火墙遭黑客攻击导致金融科技公司数据泄露**
 
-![](news-5.jpg)
+![漫天飞舞的绿色钞票](news-5.jpg)
 
 金融科技公司 Marquis 将其数据泄露归咎于防火墙供应商 SonicWall 遭受的黑客攻击。这起事件再次提醒我们，供应链安全是现代企业面临的重要挑战。即使自身安全措施得当，第三方服务商的漏洞也可能成为攻击者的入口。
 
@@ -75,7 +75,7 @@ Amazon 的这一举动可能会改变 AI 市场的竞争格局。对于开发者
 
 1、[从像素到字符：GitHub Copilot CLI 动画 ASCII Banner 背后的工程实践](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)（英文）
 
-![](blog-1.png)
+![GitHub Copilot CLI 的终端欢迎界面，带像素风 ASCII 横幅](blog-1.png)
 
 GitHub 工程团队详细介绍了如何为 Copilot CLI 构建一个可访问、多终端兼容的 ASCII 动画。文章深入讲解了自定义工具链的开发、ANSI 颜色角色的使用，以及高级终端工程技术。这不仅是一个技术实现案例，更展示了对用户体验细节的极致追求。
 
@@ -83,7 +83,7 @@ GitHub 工程团队详细介绍了如何为 Copilot CLI 构建一个可访问、
 
 2、[从 AI Agent 原型到产品：构建 AWS DevOps Agent 的经验教训](https://aws.amazon.com/blogs/devops/from-ai-agent-prototype-to-product-lessons-from-building-aws-devops-agent/)（英文）
 
-![](blog-2.png)
+![屏幕上代码的特写](blog-2.png)
 
 AWS DevOps Agent 团队成员 Efe Karakus 分享了从原型到产品的完整开发历程。文章重点介绍了如何确保 AI Agent 在事故响应场景下生成有用的发现和观察结果，包括如何设计 Agent 的能力边界、如何处理不确定性，以及如何与现有的运维工具集成。
 
@@ -91,7 +91,7 @@ AWS DevOps Agent 团队成员 Efe Karakus 分享了从原型到产品的完整�
 
 3、[Anders Hejlsberg 的 7 条经验：C# 和 TypeScript 架构师的智慧](https://github.blog/developer-skills/programming-languages-and-frameworks/7-learnings-from-anders-hejlsberg-the-architect-behind-c-and-typescript/)（英文）
 
-![](blog-3.jpg)
+![GitHub 视频 The future of TypeScript 的封面，画面里有两位嘉宾](blog-3.jpg)
 
 作为 C# 和 TypeScript 的架构师，Anders Hejlsberg 分享了他在语言设计和软件工程方面的核心经验，包括快速反馈循环的重要性、如何扩展软件、开源可见性的价值，以及如何构建持久的工具。
 
@@ -99,7 +99,7 @@ AWS DevOps Agent 团队成员 Efe Karakus 分享了从原型到产品的完整�
 
 4、[使用 Datadog MCP 服务器和 AWS DevOps Agent 加速自主事故解决](https://aws.amazon.com/blogs/devops/accelerate-autonomous-incident-resolutions-using-the-datadog-mcp-server-and-aws-devops-agent-in-preview/)（英文）
 
-![](blog-4.png)
+![Datadog 的 Amazon API Gateway 监控面板，显示错误数和延迟](blog-4.png)
 
 AWS 与 Datadog 合作推出的 MCP 服务器集成，展示了如何将 AI Agent 与可观测性平台结合。值班工程师以往需要花费数小时在多个工具之间手动调查故障，现在 AI Agent 可以自动关联日志、指标和追踪数据，大幅缩短故障恢复时间。
 
@@ -107,7 +107,7 @@ AWS 与 Datadog 合作推出的 MCP 服务器集成，展示了如何将 AI Agen
 
 5、[AI 驱动的开发生命周期（AI-DLC）开源自适应工作流](https://aws.amazon.com/blogs/devops/open-sourcing-adaptive-workflows-for-ai-driven-development-life-cycle-ai-dlc/)（英文）
 
-![](blog-5.png)
+![AI-DLC 循环图：人给任务、AI 出计划、人澄清、AI 修改、人批准、AI 执行、人验证](blog-5.png)
 
 AWS 开源了 AI-DLC 自适应工作流，这是一套将 AI 整合到软件开发全生命周期的方法论。通过强调 AI 主导的工作流和以人为中心的决策制定，AI-DLC 承诺同时提升开发速度和质量。文章分享了与不同行业工程团队合作的经验，说明了如何有效地将 AI 集成到工程工作流中。
 
@@ -117,7 +117,7 @@ AWS 开源了 AI-DLC 自适应工作流，这是一套将 AI 整合到软件开�
 
 1、**[GitHub Copilot CLI](https://github.blog/ai-and-ml/github-copilot/power-agentic-workflows-in-your-terminal-with-github-copilot-cli/)**
 
-![](tool-1.png)
+![屏幕上代码的特写](tool-1.png)
 
 GitHub Copilot CLI 让你可以直接在终端中与 Copilot 交互，支持 agentic 工作流。通过斜杠命令，你可以运行测试、修复代码、获取支持，而无需离开终端。这大幅提升了命令行工作的效率，特别适合习惯在终端环境下工作的开发者。
 
@@ -125,7 +125,7 @@ CLI 支持自然语言查询，可以帮助你快速找到和执行复杂的命�
 
 2、**[GitHub Copilot SDK](https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/)**
 
-![](tool-2.png)
+![GitHub Copilot SDK 的像素风终端横幅](tool-2.png)
 
 现已进入技术预览阶段的 GitHub Copilot SDK，可以让你将 AI Agent 集成到任何应用中。SDK 提供了规划、调用工具、编辑文件和运行命令的可编程层。这意味着你可以在自己的应用中嵌入类似 Copilot 的智能能力，而无需从头构建。
 
@@ -133,7 +133,7 @@ SDK 的发布降低了 AI Agent 的开发门槛，让更多应用能够具备智
 
 3、**[Mermaid ASCII](https://mermaid-ascii.art/)**
 
-![](tool-3.png)
+![Mermaid ASCII 界面：左边是 Mermaid 代码，右边是生成的 ASCII 架构图](tool-3.png)
 
 Mermaid ASCII 让你可以在终端中渲染 Mermaid 图表。这个工具对于需要在命令行环境下查看架构图、流程图的场景非常有用。支持多种图表类型，包括流程图、序列图、类图等。
 
@@ -141,7 +141,7 @@ Mermaid ASCII 让你可以在终端中渲染 Mermaid 图表。这个工具对于
 
 4、**[AWS Infrastructure as Code MCP Server](https://aws.amazon.com/blogs/devops/introducing-the-aws-infrastructure-as-code-mcp-server-ai-powered-cdk-and-cloudformation-assistance/)**
 
-![](tool-4.png)
+![机房里布满网线的服务器机柜](tool-4.png)
 
 AWS 发布的 IaC MCP Server 为 AI 助手提供了与 AWS 基础设施开发工作流集成的能力。基于 Model Context Protocol 构建，这个服务器支持 AI 助手进行文档搜索、验证和故障排除。
 
@@ -149,7 +149,7 @@ AWS 发布的 IaC MCP Server 为 AI 助手提供了与 AWS 基础设施开发工
 
 5、**[EmulatorJS](https://github.com/EmulatorJS/EmulatorJS)**
 
-![](tool-5.png)
+![EmulatorJS 的游戏手柄标志](tool-5.png)
 
 EmulatorJS 是一个基于 JavaScript 的多系统模拟器，支持在浏览器中运行多种经典游戏平台。虽然不是典型的 DevOps 工具，但展示了 WebAssembly 技术的强大能力，对于理解浏览器性能优化和 WebAssembly 应用很有参考价值。
 
@@ -157,7 +157,7 @@ EmulatorJS 是一个基于 JavaScript 的多系统模拟器，支持在浏览器
 
 1、[Project Genie：实时生成交互式世界](https://labs.google/)
 
-![](ai-1.png)
+![Google Project Genie 的页面，标语是创建并探索无限多样的世界](ai-1.png)
 
 Google 发布的 Project Genie 能够实时生成可交互的 3D 世界。用户可以在生成的环境中自由探索和互动，AI 会根据用户的行为动态生成新的场景内容。这项技术展示了生成式 AI 在游戏和虚拟环境领域的应用潜力。
 
@@ -167,7 +167,7 @@ Google 发布的 Project Genie 能够实时生成可交互的 3D 世界。用户
 
 2、[Prism：OpenAI 的新项目](https://openai.com/index/introducing-prism/)
 
-![](ai-2.jpg)
+![蓝色渐变背景上的 Prism 应用图标](ai-2.jpg)
 
 OpenAI 推出的 Prism 项目聚焦于提升 AI 系统的可解释性和透明度。该项目旨在帮助用户更好地理解 AI 的决策过程，增强对 AI 系统的信任。
 
@@ -177,7 +177,7 @@ OpenAI 推出的 Prism 项目聚焦于提升 AI 系统的可解释性和透明�
 
 3、[Unrolling the Codex Agent Loop](https://openai.com/index/unrolling-the-codex-agent-loop/)
 
-![](ai-3.jpg)
+![蓝色渐变背景上的终端提示符和 codex 命令](ai-3.jpg)
 
 OpenAI 工程团队详细解析了 Codex Agent 的工作循环机制。文章深入探讨了 Agent 如何理解代码上下文、规划执行步骤、生成代码并验证结果。这对于理解 AI 编程助手的内部工作原理非常有帮助。
 

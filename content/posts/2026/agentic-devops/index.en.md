@@ -12,7 +12,7 @@ date: 2026-02-17
 
 Agentic DevOps was introduced by Microsoft at the Azure Build conference in 2025. Recently, with GitHub's release of [GitHub Agentic Workflow](https://github.github.com/gh-aw/) and the concept of [Continuous AI](https://githubnext.com/projects/continuous-ai), Agentic DevOps has resurfaced.
 
-![](azure-build.webp)
+![Banner for agentic DevOps at Azure, Microsoft Build 2025](azure-build.webp)
 
 Previously, I shared the [basic concepts of AIOps](../aiops/index.md) and some practical application scenarios on my public account, mainly focusing on operations monitoring, anomaly detection, and automated responses. Combining the concept of Agentic DevOps with the Continuous AI practices proposed by GitHub Next, I felt it was worth organizing and sharing with everyone.
 
@@ -44,7 +44,7 @@ GitHub Next refers to this type of automation as Continuous AI, analogizing the 
 
 This is the official introduction to Agentic Workflow.
 
-![](gh-aw.png)
+![Six features of GitHub Agentic Workflows: Markdown workflows, AI decisions, GitHub integration, safety, multiple AI engines, continuous AI](gh-aw.png)
 
 Examples of what can actually be done include:
 - Continuous triage: Automatic labeling and summarizing of new issues.

@@ -99,7 +99,7 @@ XDA Developers 推荐的 6 个超轻量级 Docker 容器，通过自动化日常
 
 2、**[4 个 Docker 容器通过 Chrome 扩展增强功能](https://www.xda-developers.com/docker-containers-with-chrome-extensions/)**
 
-![](docker-chrome-extensions.jpg)
+![笔记本屏幕上打开的 Docker Desktop 容器页面](docker-chrome-extensions.jpg)
 
 XDA Developers 介绍了 4 个自托管 Docker 容器，通过浏览器扩展实现更好的工作流集成。这些工具的优势是数据完全自主可控，避免隐私风险和订阅费用，同时保持与云服务相当的体验。
 

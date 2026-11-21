@@ -15,7 +15,7 @@ date: 2026-03-12
 
 就是做 Ubuntu 的那个 Canonical。
 
-![](thanks-from.png)
+![thanks.dev 的捐款通知邮件，捐款方是 Canonical](thanks-from.png)
 
 ---
 
@@ -39,11 +39,11 @@ date: 2026-03-12
 
 这种反馈，挺难得的。第一时间在 X 上发了感谢，附上了截图，算是公开道个谢。
 
-![](thanks-to.png)
+![我在 X 上发帖感谢 Canonical 赞助我的开源项目](thanks-to.png)
 
 说句实在话，用开源项目的大厂多的是，但会主动 donate 的，真没几个。在 thanks.dev 上翻了一下，Canonical 的累计捐赠额超过 $67,000，在整个平台排第三，仅次于 Sentry 和 Codecov。他们资助的开源项目不止我一个，是真的在系统性地往回馈这件事上砸钱。
 
-![](top-donars.png)
+![thanks.dev 累计捐赠榜前十，Sentry、Codecov、Canonical 排在前三](top-donars.png)
 
 这件事值得被说出来。开源世界里有大量贡献者在"为爱发电"，靠的是热情和业余时间，但热情不能当饭吃。开源生态要可持续运转，就需要这些真正从中获益的大公司站出来，用实际的资金支持来回馈。Canonical 做的这件事，是对的。
 

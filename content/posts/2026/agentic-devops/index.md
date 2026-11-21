@@ -12,7 +12,7 @@ date: 2026-02-17
 
 Agentic DevOps 是微软在 2025 年的 Azure Build 大会上提出来的。最近，因为 GitHub 发布了 [GitHub Agentic Workflow](https://github.github.com/gh-aw/) 和 [Continuous AI](https://githubnext.com/projects/continuous-ai) 这个概念，让 Agentic DevOps 再次浮现到眼前。
 
-![](azure-build.webp)
+![Azure 在 Microsoft Build 2025 上的 agentic DevOps 主题横幅](azure-build.webp)
 
 之前在公众号分享过 [AIOps 的基本概念](../aiops/index.md)和部分落地场景，主要是围绕运维监控、异常检测和自动化响应等方向。结合 Agentic DevOps 这个概念，以及 GitHub Next 提出的 Continuous AI 相关实践，觉得值得整理出来和大家交流。
 
@@ -44,7 +44,7 @@ GitHub Next 把这类自动化称为 Continuous AI，类比 CI/CD 中“持续�
 
 这是官方关于 Agentic Workflow 的介绍。
 
-![](gh-aw.png)
+![GitHub Agentic Workflows 的六项特性：Markdown 工作流、AI 决策、GitHub 集成、安全优先、多 AI 引擎、持续 AI](gh-aw.png)
 
 实际能做的例子包括：
 - 持续 triage：自动标签、摘要新 issue。

@@ -104,7 +104,7 @@ pipguard install requests pandas   # 干净包正常通过
 
 录了个小 demo，展示 pipguard 是怎么在安装前就识别出恶意行为的：
 
-![](demo.gif)
+![终端演示：pipguard 拦截带恶意 .pth 文件的 litellm 1.82.8，干净的包正常安装](demo.gif)
 
 如果是集成到 CI/CD。可以把 GitHub Actions / GitLab CI / Jenkins 里的 `pip install` 换成 `pipguard install`，整个流水线就会多一层防护。
 

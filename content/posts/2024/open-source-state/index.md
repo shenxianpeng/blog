@@ -53,7 +53,7 @@ Git 于 2005 年首次发布，当我们创建 GitHub 时，Git 还是一个新�
 
 **亚太地区、非洲、南美洲和欧洲的开发者社区逐年扩大，其中印度、巴西和日本处于领先地位。**
 
-![](github-top-10-biggest-countries.webp)
+![折线图：2019 到 2023 年 GitHub 前十开发者社区的排名变化，美国第一，印度第二](github-top-10-biggest-countries.webp)
 
 ### 预测未来五年排名前 10 的开发者社区
 
@@ -165,7 +165,7 @@ Git 于 2005 年首次发布，当我们创建 GitHub 时，Git 还是一个新�
 
 随着越来越多的开发人员尝试这些新技术，我们期望他们能够推动软件开发中的人工智能创新，并继续将该技术快速发展的功能带入主流。
 
-![](github-global-growth-of-generative-AI-projects-1.webp)
+![折线图：GitHub 上生成式 AI 项目数量从 2010 年起增长，2023 年猛增到约 6 万个](github-global-growth-of-generative-AI-projects-1.webp)
 
 **开发人员越来越多地尝试人工智能模型。** 在过去的几年里，我们看到开发人员使用 [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)、[pytorch/pytorch](https://github.com/pytorch/pytorch) 等机器学习库构建项目，而现在我们看到更多的开发人员尝试使用 AI 模型和LLM（例如 [ChatGPT API](https://github.com/topics/chatgpt-api)）。
 
@@ -173,7 +173,7 @@ Git 于 2005 年首次发布，当我们创建 GitHub 时，Git 还是一个新�
 
 **开源人工智能创新多种多样，顶级人工智能项目由个人开发者拥有。** 分析 GitHub 上排名前 20 的开源生成式 AI 项目，其中一些顶级项目归个人所有。这表明 GitHub 上的开源项目继续推动创新，并向我们所有人展示行业的未来发展，社区围绕最令人兴奋的进步而构建。
 
-![](github-top-10-countries-in-generative-AI.webp)
+![柱状图：创建生成式 AI 项目最多的十个国家和地区，美国遥遥领先，印度第二，日本第三](github-top-10-countries-in-generative-AI.webp)
 
 **生成式人工智能正在推动生成式人工智能项目的个人贡献者在全球范围内大幅增长，同比增长 148%，生成式人工智能项目总数也同比增长 248%。** 值得注意的是，美国、印度和日本在开发者社区中处于领先地位，其他地区（包括香港特别行政区）、英国和巴西紧随其后。
 
@@ -188,19 +188,19 @@ Git 于 2005 年首次发布，当我们创建 GitHub 时，Git 还是一个新�
 * HCL 采用率同比增长 36%，这表明开发人员正在为其应用程序利用基础设施。
 * HCL 的增加表明开发人员越来越多地使用声明性语言来指示他们如何利用云部署。
 
-![](top-programming-languages-2023.webp)
+![折线图：2014 到 2023 年 GitHub 前十编程语言的排名变化，JavaScript 和 Python 居前两位](top-programming-languages-2023.webp)
 
 JavaScript 再次夺得第一大最受欢迎语言的桂冠，并且我们继续看到 Python 和 Java 等熟悉的语言逐年保持在前五名语言之列。
 
 **TypeScript 越来越受欢迎。** 今年，TypeScript 首次取代 Java，成为 GitHub 上 OSS 项目中第三大最受欢迎的语言，其用户群增长了 37%。 TypeScript 是一种集语言、类型检查器、编译器和语言服务于一体的语言，它于 2012 年推出，标志着渐进类型的到来，它允许开发人员在代码中采用不同级别的静态和动态类型。
 
-![](github-top-programming-languages-by-usage.webp)
+![柱状图：2023 年 GitHub 上使用最多的语言，依次是 JavaScript、Python、TypeScript、Java 和 C#](github-top-programming-languages-by-usage.webp)
 
 **用于数据分析和操作的流行语言和框架显著增加。** T-SQL 和 TeX 等古老语言在 2023 年不断发展，这凸显了数据科学家、数学家和分析师如何越来越多地使用开源平台和工具。
 
 **底线：** 编程语言不再仅仅局限于传统软件开发领域。
 
-![](github-top-languages-by-percentage-growth.webp)
+![柱状图：2023 年贡献者增长最快的语言，Rust 和 Lua 增幅约 40%，居前两位](github-top-languages-by-percentage-growth.webp)
 
 与 GitHub 上使用的总体最流行语言相比，我们发现 2023 年创建的项目中使用的最流行语言具有显著的一致性。一些值得注意的异常值包括 Kotlin、Rust、Go 和 Lua，它们在 GitHub 上的新项目中出现了更大的增长。
 
@@ -219,11 +219,11 @@ Rust 和 Lua 都以其内存安全性和效率而闻名，并且都可以用于�
 
 事实上，在最近 GitHub 赞助的一项调查中，所有开发人员都表示他们的公司至少采用了一些内部源实践，超过一半的开发人员表示他们的组织中有活跃的内部源文化。
 
-![](github-innersource-developer-survey-results.webp)
+![饼图：56% 的开发者说公司有活跃的内部开源文化，34% 说很多团队在用，10% 说少数团队在用](github-innersource-developer-survey-results.webp)
 
 **GitHub 是开发人员操作和扩展云原生应用程序的地方。** 2023 年，430 万个公共和私有存储库使用 Dockerfile，超过 100 万个公共存储库使用 Dockerfile 来创建容器。过去几年，我们看到 Terraform 和其他云原生技术的使用量不断增加。 IaC 实践的增加也表明开发人员正在为云部署带来更多标准化。
 
-![](github-growth-in-dockerfiles.webp)
+![折线图：使用 Dockerfile 的公开仓库从 2013 年接近零增长到 2023 年超过 100 万个](github-growth-in-dockerfiles.webp)
 
 **生成式人工智能进入 GitHub Actions。** 人工智能在开发者社区中的早期采用和协作能力在 GitHub Marketplace 中的[300 多个人工智能驱动的 GitHub Actions](https://github.com/marketplace?type=actions&query=ai+)和[40 多个 GPT 支持的 GitHub Actions](https://github.com/marketplace?type=actions&query=gpt+)中显而易见。开发人员不仅继续尝试人工智能，还通过 GitHub Marketplace 将其带入开发人员体验及其工作流程的更多部分。
 
@@ -235,7 +235,7 @@ Rust 和 Lua 都以其内存安全性和效率而闻名，并且都可以用于�
 
 **更多的开发人员正在使用自动化来保护依赖关系。** 与 2022 年相比，2023 年开源开发人员合并的针对易受攻击包的自动化Dependabot拉取请求数量增加了 60%，这凸显了共享社区对开源和安全性的奉献精神。得益于 GitHub 上的免费工具（例如 Dependabot、代码扫描和密钥扫描），开源社区的开发人员正在修复更多易受攻击的软件包并解决代码中的更多漏洞。
 
-![](github-top-1000-open-source-projects-with-branch-protection.webp)
+![折线图：前 1000 个公开项目中启用分支保护的比例，从 2020 年的 40% 升到 2023 年的 60%](github-top-1000-open-source-projects-with-branch-protection.webp)
 
 **更多的开源维护者正在保护他们的分支机构。**受保护的分支为维护者提供了更多方法来确保其项目的安全性，我们已经看到超过 60% 的最受欢迎的开源项目 使用它们。自从我们今年早些时候在 GA 中在 GitHub 上推出存储库规则以来，大规模管理这些规则应该会变得更加容易。
 
@@ -249,7 +249,7 @@ Rust 和 Lua 都以其内存安全性和效率而闻名，并且都可以用于�
 
 2023 年，开发者**为 GitHub 上的开源项目做出了总计 3.01 亿的贡献**，其中包括 [Mastodon](https://github.com/mastodon/mastodon) 等热门项目到 [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) 和 [LangChain](https://github.com/langchain-ai/langchain) 等生成式 AI 项目。
 
-![](github-top-open-source-projects-by-contributors.webp)
+![柱状图：2023 年贡献者最多的开源项目，microsoft/vscode 第一，home-assistant/core 第二](github-top-open-source-projects-by-contributors.webp)
 
 商业支持的项目继续吸引一些最开源的贡献，但 2023 年是生成式 AI 项目也进入 GitHub 上十大最受欢迎项目的第一年。说到生成式 AI，几乎三分之一拥有至少一颗星**的开源项目都有一位使用 GitHub Copilot 的维护者。**
 
@@ -263,11 +263,11 @@ Rust 和 Lua 都以其内存安全性和效率而闻名，并且都可以用于�
 
 **首次贡献者继续青睐商业支持的项目。** 去年，我们发现，与其他项目相比，围绕流行的、商业支持的项目的品牌认知度吸引了更多的首次贡献者。这种情况在 2023 年继续出现，一些在 Microsoft、Google、Meta 和 Vercel 支持的首次贡献者中最受欢迎的开源项目。
 
-![](github-open-source-projects-with-most-first-time-contributors.webp)
+![柱状图：2023 年吸引首次贡献者最多的项目，microsoft/vscode 第一，stable-diffusion-webui 第二](github-open-source-projects-with-most-first-time-contributors.webp)
 
 但社区驱动的开源项目（从 home-assistant/core 到 AUTOMATIC1111/stable-diffusion-webui、langchain-ai/langchain 和Significant-Gravitas/Auto-GPT）也见证了首次贡献者的活动激增。这表明，基础模型的开放实验增加了生成人工智能的可及性，为新的创新和更多合作打开了大门。
 
-![](github-first-time-open-source-contributors.webp)
+![棒棒糖图：2015 到 2023 年开源项目的首次贡献者人数，2023 年超过 200 万](github-first-time-open-source-contributors.webp)
 
 **2023 年，首次为开源项目做出贡献的贡献者数量最多。** 新的开发人员通过 freeCodeCamp、First Contributions 和 GitHub Education 等计划参与到开源社区中。我们还看到大量开发人员参与了 Google 和 IBM 等公司的在线开源教育项目。
 
