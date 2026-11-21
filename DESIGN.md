@@ -219,10 +219,19 @@ best matches by tag, newest three), and the previous/next links. Styles
 Posts, Essays and each tag's page (`layouts/posts/list.html`,
 `layouts/misc/list.html`, `layouts/_default/term.html`, all through
 `layouts/partials/post-rows.html`) are the home page's Writing rows, not
-cards: a 48px title, the post count in mono, a row of years linking down the
-page, then one section per year (a 24px year and its count) of ruled rows:
-month-day in 13px mono, the title at 17px, 600, the first tag in 12px mono.
-50rem wide, every post on one page, no covers. Styles `.post-list-*`.
+cards: a 48px title, the post count in mono, then one section per year (a
+24px year and its count) of ruled rows: month-day in 13px mono, the title at
+17px, 600, the first tag in 12px mono. 50rem wide, every post on one page,
+no covers. Styles `.post-list-*`.
+
+The years to jump to are one `<nav>` drawn two ways. From 1024px it is a
+rail in the space to the right of the list (4.5rem from it, 12.5rem wide,
+sticky): "Jump to year", then a row per year in 12px mono with a 4px bar for
+that year's share of the busiest year and the count, on a 2px line down the
+left. The year being read is ink, 600, with the line and the bar in the
+accent. Below 1024px it is one row of years stuck under the site header,
+scrolled sideways, the current year in ink. A list with a single year (a
+small tag) has no nav and keeps the plain 50rem column.
 
 ## Projects page
 

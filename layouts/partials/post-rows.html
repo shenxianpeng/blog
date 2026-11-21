@@ -61,10 +61,8 @@
       var years = document.querySelectorAll('.post-list-year');
       if (!nav || !years.length) return;
       var current = nav.querySelector('.is-current');
-      var waiting = false;
 
       function mark() {
-        waiting = false;
         // The year whose heading has passed the bars at the top of the screen.
         var line = nav.getBoundingClientRect().height < 80 ? nav.getBoundingClientRect().bottom + 24 : 140;
         var id = years[0].id;
@@ -83,9 +81,7 @@
         }
       }
 
-      window.addEventListener('scroll', function () {
-        if (!waiting) { waiting = true; requestAnimationFrame(mark); }
-      }, { passive: true });
+      window.addEventListener('scroll', mark, { passive: true });
       mark();
     })();
   </script>
