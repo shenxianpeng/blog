@@ -4,7 +4,8 @@
   is where the post footer (layouts/partials/post-footer.html) belongs; the
   theme has no hook of its own there. The share links follow it as one line
   of text links in the article's measure, like "Follow"; the theme drew grey
-  icon squares centred under a wider column.
+  icon squares centred under a wider column. "Edit this page" closes that
+  line, at its right end.
 */ -}}
 {{ partial "post-footer.html" . }}
 {{ with .Params.sharingLinks | default (.Site.Params.article.sharingLinks | default false) }}
@@ -17,6 +18,15 @@
       {{- with index $links . }}
         <a target="_blank" rel="noopener" href="{{ printf .url $.Permalink $.Title | safeURL }}" title="{{ i18n .title }}">{{ index $names $id | default $id }}</a>
       {{- end }}
+    {{- end }}
+    {{- /* "Edit this page", which the theme drew as an icon beside the date.
+           The address is built the way the theme's meta/edit.html builds it. */}}
+    {{- if and $.File ($.Params.showEdit | default (site.Params.article.showEdit | default false)) }}
+      {{- $edit := $.Params.editURL | default (site.Params.article.editURL | default "#") }}
+      {{- if $.Params.editAppendPath | default (site.Params.article.editAppendPath | default false) }}
+        {{- $edit = printf "%s/%s" (strings.TrimSuffix "/" $edit) (path.Join $.File.Path) }}
+      {{- end }}
+      <a class="post-share-edit" target="_blank" rel="noopener noreferrer" href="{{ $edit }}">{{ i18n "article.edit_page" }}</a>
     {{- end }}
   </section>
 {{ end }}

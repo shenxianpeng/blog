@@ -1,0 +1,30 @@
+{{- /*
+  Replaces Blowfish's series/series_base.html (v3.6.0). The theme's summary
+  was a bar in primary-200, the most saturated block on the page, saying
+  "<name> - This article is part of a series." This is an outlined card in
+  the page's own colour: a small "Series" label, the name, and "All parts"
+  with a chevron; open, the parts are a numbered list with this article in
+  ink and the others as links. Styles .post-series* in assets/css/custom.css.
+
+  Context: the page. Rendered inside the <details> of series.html and
+  series-closed.html.
+*/ -}}
+{{- $name := index .Params.series 0 -}}
+{{- $posts := sort (index site.Taxonomies.series (strings.ToLower $name)) "Params.series_order" -}}
+<summary class="post-series-summary">
+  <span class="post-series-label">{{ i18n "article.series" }}</span>
+  <span class="post-series-name">{{ $name }}</span>
+  <span class="post-series-more">{{ i18n "article.series_all" }}</span>
+</summary>
+<ol class="post-series-list">
+  {{- range $posts }}
+    <li{{ if eq .Permalink $.Permalink }} class="is-current" aria-current="page"{{ end }}>
+      <span class="post-series-part">{{ i18n "article.part" }} {{ .Params.series_order }}</span>
+      {{- if eq .Permalink $.Permalink }}
+        <span>{{ .Title }}</span>
+      {{- else }}
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- end }}
+    </li>
+  {{- end }}
+</ol>

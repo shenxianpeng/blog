@@ -1,0 +1,46 @@
+{{- /*
+  Replaces themes/blowfish/layouts/partials/article-meta/basic.html (v3.6.0),
+  the lines under an article's title. The theme drew two rows: date, word
+  count, reading time, an edit icon and a zen-mode icon, then the tags as
+  outlined green badges, a third way of drawing a tag on this site. This is
+  one line of small mono text: date, the updated date when it differs, reading
+  time, then the tags as plain accent links, the way the post lists write
+  them. The word count and zen mode are gone; "Edit this page" is at the end
+  of the article, in sharing-links.html. Views and likes, which this site has
+  never turned on, are not carried over.
+
+  Each item is its own span so a narrow screen breaks the line between
+  items; the dot between two items is drawn by CSS (.post-meta in
+  assets/css/custom.css), as on the About page's role line.
+
+  Context: the page, or (dict "context" page "scope" "single").
+*/ -}}
+{{- $context := . -}}
+{{- $scope := "" -}}
+{{- if reflect.IsMap . -}}
+  {{- $context = .context -}}
+  {{- $scope = .scope | default "" -}}
+{{- end -}}
+{{- with $context -}}
+  {{- $showDate := .Params.showDate | default (site.Params.article.showDate | default true) -}}
+  {{- if and (.Params.showDateOnlyInArticle | default (site.Params.article.showDateOnlyInArticle | default false)) (ne $scope "single") -}}
+    {{- $showDate = false -}}
+  {{- end -}}
+  {{- $showUpdated := and (.Params.showDateUpdated | default (site.Params.article.showDateUpdated | default false)) (ne (partial "functions/date.html" .Date) (partial "functions/date.html" .Lastmod)) (gt .Lastmod.Year 1) -}}
+  {{- $showReading := and (.Params.showReadingTime | default (site.Params.article.showReadingTime | default true)) (ne .ReadingTime 0) -}}
+  {{- $terms := slice -}}
+  {{- if .Params.showTaxonomies | default (site.Params.article.showTaxonomies | default false) -}}
+    {{- range slice "categories" "tags" }}{{ $terms = $terms | append ($context.GetTerms .) }}{{ end -}}
+  {{- end -}}
+  <div class="post-meta">
+    <div class="post-meta-items">
+      {{- if $showDate }}<span>{{ partial "meta/date.html" .Date }}</span>{{ end }}
+      {{- if $showUpdated }}<span>{{ partial "meta/date-updated.html" .Lastmod }}</span>{{ end }}
+      {{- if $showReading }}{{ partial "meta/reading-time.html" . }}{{ end }}
+      {{- with $terms }}
+        <span class="post-meta-tags">{{ range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</span>
+      {{- end }}
+      {{- if and (eq $scope "single") .Draft site.Params.article.showDraftLabel }}<span>{{ i18n "article.draft" }}</span>{{ end }}
+    </div>
+  </div>
+{{- end -}}
