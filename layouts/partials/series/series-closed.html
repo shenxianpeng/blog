@@ -1,0 +1,9 @@
+{{- /*
+  Replaces Blowfish's series/series-closed.html (v3.6.0): the same box again
+  after the article, always closed. See series_base.html.
+*/ -}}
+{{ if .Params.series }}
+  <details class="post-series not-prose">
+    {{ partial "series/series_base.html" . }}
+  </details>
+{{ end }}

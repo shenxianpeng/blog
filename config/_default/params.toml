@@ -84,9 +84,9 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   relatedContentLimit = 6
   showTaxonomies = true
   showAuthorsBadges = false
-  showWordCount = true
+  showWordCount = false
   sharingLinks = [ "twitter", "linkedin", "telegram", "email" ]
-  showZenMode = true
+  showZenMode = false
   showComments = true
 
 [list]

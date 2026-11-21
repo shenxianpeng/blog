@@ -1,0 +1,9 @@
+{{- /*
+  Replaces Blowfish's series/series.html (v3.6.0): the box above an article
+  that belongs to a series. See series_base.html.
+*/ -}}
+{{ if .Params.series }}
+  <details class="post-series not-prose"{{ if .Params.seriesOpened | default (site.Params.article.seriesOpened | default false) }} open{{ end }}>
+    {{ partial "series/series_base.html" . }}
+  </details>
+{{ end }}

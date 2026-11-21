@@ -7,8 +7,9 @@ article:
   date_updated: "更新于: {{ .Date }}"
   draft: "草稿"
   edit_title: "编辑内容"
+  edit_page: "编辑此页"
   reading_time:
-    other: "{{ .Count }} 分钟"
+    other: "{{ .Count }} 分钟读完"
   reading_time_title: "预计阅读"
   table_of_contents: "目录"
   word_count:
@@ -17,6 +18,8 @@ article:
   part_of_series: "这篇文章属于一个选集。"
   part: "§"
   this_article: "本文"
+  series: "系列"
+  series_all: "全部篇目"
   related_articles: "相关文章"
 
 author:
