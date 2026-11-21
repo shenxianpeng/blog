@@ -44,7 +44,7 @@ GitHub Next 把这类自动化称为 Continuous AI，类比 CI/CD 中“持续�
 
 这是官方关于 Agentic Workflow 的介绍。
 
-![](gh-aw.jpg)
+![GitHub Agentic Workflows 的六项特性：Markdown 工作流、AI 决策、GitHub 集成、安全优先、多 AI 引擎、持续 AI](gh-aw.jpg)
 
 实际能做的例子包括：
 - 持续 triage：自动标签、摘要新 issue。
