@@ -3655,7 +3655,8 @@ body:not(:has(.home)) #main-content {
   }
 }
 
-.dark :is(.about-name, .about-link, .about-fact dd, .about .article-content > p:first-child) {
+.dark :is(.about-name, .about-link, .about-fact dd),
+.dark .about .article-content > p:first-child {
   color: rgb(var(--color-neutral));
 }
 
