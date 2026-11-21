@@ -2726,8 +2726,7 @@ body:not(:has(.home)) #main-content {
 }
 
 .notfound-search {
-  margin-left: 0.5rem;
-  padding: 0;
+  padding: 0 0.25rem;
   border: 0;
   background: none;
   color: rgb(var(--color-primary-600));
