@@ -3631,7 +3631,8 @@ body:not(:has(.home)) #main-content {
 
   .about-single,
   :lang(zh) .about-single,
-  .about-single :is(.article-content, section) {
+  .about.about-single :is(.article-content, section),
+  :lang(en) .about.about-single .article-content {
     max-width: none;
   }
 
