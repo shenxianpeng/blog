@@ -6,20 +6,37 @@
   bundles because they are the posts' og:image. Not paginated: 170 rows are
   shorter than one page of 100 cards was. Styles .post-list-* in custom.css.
 
+  The years are one <nav> drawn two ways. From 1024px it is a rail to the
+  right of the list that stays in view: year, a bar for that year's share of
+  the busiest year, and the count. Below that it is one row of years stuck
+  under the site header, scrolled sideways. The script at the end marks the
+  year being read (.is-current); without it the first year stays marked.
+
   Context: the list page.
 */ -}}
 {{- $pages := where .Pages "Date.Year" "gt" 1000 -}}
 {{- $groups := $pages.GroupByDate "2006" "desc" -}}
+{{- $most := 1 -}}
+{{- range $groups }}{{ if gt (len .Pages) $most }}{{ $most = len .Pages }}{{ end }}{{ end -}}
 <header class="post-list-head">
   <h1 class="post-list-title">{{ .Title }}</h1>
   <p class="post-list-count">{{ i18n "archive_total" (len $pages) }}</p>
   {{- with .Content }}<div class="post-list-intro">{{ . }}</div>{{ end }}
-  {{- if gt (len $groups) 1 }}
-    <nav class="post-list-years" aria-label="{{ i18n "list.years" }}">
-      {{- range $groups }}<a href="#y{{ .Key }}">{{ .Key }}</a>{{ end -}}
-    </nav>
-  {{- end }}
 </header>
+{{- if gt (len $groups) 1 }}
+  <nav class="post-list-years" aria-label="{{ i18n "list.years" }}">
+    <span class="post-list-years-label" aria-hidden="true">{{ i18n "list.jump_to_year" }}</span>
+    {{- range $i, $group := $groups }}
+      {{- $share := div (mul (len .Pages) 100.0) $most }}
+      <a href="#y{{ .Key }}"{{ if not $i }} class="is-current"{{ end }}>
+        <span>{{ .Key }}</span>
+        <span class="post-list-years-bar" style="{{ printf "--share:%.0f%%" $share | safeCSS }}"></span>
+        <span class="post-list-years-count">{{ len .Pages }}</span>
+      </a>
+    {{- end }}
+  </nav>
+{{- end }}
+<div class="post-list-body">
 {{- range $groups }}
   <section class="post-list-year" id="y{{ .Key }}">
     <h2 class="post-list-year-title">{{ .Key }}<span class="post-list-year-count">{{ len .Pages }}</span></h2>
@@ -35,4 +52,37 @@
   </section>
 {{- else }}
   <p class="post-list-count">{{ i18n "list.no_articles" }}</p>
+{{- end }}
+</div>
+{{- if gt (len $groups) 1 }}
+  <script>
+    (function () {
+      var nav = document.querySelector('.post-list-years');
+      var years = document.querySelectorAll('.post-list-year');
+      if (!nav || !years.length) return;
+      var current = nav.querySelector('.is-current');
+
+      function mark() {
+        // The year whose heading has passed the bars at the top of the screen.
+        var line = nav.getBoundingClientRect().height < 80 ? nav.getBoundingClientRect().bottom + 24 : 140;
+        var id = years[0].id;
+        for (var i = 0; i < years.length; i++) {
+          if (years[i].getBoundingClientRect().top <= line) id = years[i].id;
+        }
+        var next = nav.querySelector('a[href="#' + id + '"]');
+        if (!next || next === current) return;
+        if (current) { current.classList.remove('is-current'); current.removeAttribute('aria-current'); }
+        next.classList.add('is-current');
+        next.setAttribute('aria-current', 'location');
+        current = next;
+        // As a row, keep the marked year in sight.
+        if (nav.scrollWidth > nav.clientWidth) {
+          nav.scrollTo({ left: next.offsetLeft - (nav.clientWidth - next.offsetWidth) / 2, behavior: 'smooth' });
+        }
+      }
+
+      window.addEventListener('scroll', mark, { passive: true });
+      mark();
+    })();
+  </script>
 {{- end }}

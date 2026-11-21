@@ -52,6 +52,7 @@ list:
   externalurl_title: "Link to external site"
   no_articles: "There are no articles to list here yet."
   years: "Years"
+  jump_to_year: "Jump to year"
 
 nav:
   scroll_to_top_title: "Scroll to top"
