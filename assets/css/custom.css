@@ -1425,12 +1425,18 @@ body:has(.home) > header > div:first-child {
   padding: 0.625rem 0.75rem;
 }
 
-.home-pv-muted {
+.home-pv-muted,
+.home-pv > .home-pv-pad {
   display: block;
 }
 
-.home-pv-line > .home-pv-muted {
+:is(.home-pv-line, .home-pv-row) > .home-pv-muted {
   display: inline;
+}
+
+/* A row under a padded block, on the block's own inset. */
+.home-pv-row-pad {
+  padding: 0.5rem 0.75rem;
 }
 
 .home-pv-dot {
@@ -2691,6 +2697,61 @@ body:not(:has(.home)) #main-content {
 /* The year is in the heading, so a row's date is month and day. */
 .post-list .home-post {
   grid-template-columns: 3.5rem minmax(0, 1fr) auto;
+}
+
+/* ---- 404 ---------------------------------------------------------------
+   layouts/404.html: the list pages' title, the site's buttons. */
+
+.notfound-code {
+  margin: 0 0 0.375rem;
+  font-family: var(--font-code);
+  font-size: 0.8125rem;
+  color: rgb(var(--color-neutral-500));
+}
+
+.notfound-text {
+  margin: 1rem 0 0;
+  font-family: var(--font-read);
+  font-size: 1.1875rem;
+  line-height: 1.6;
+  color: rgb(var(--color-neutral-700));
+}
+
+.notfound-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.notfound-search {
+  margin-left: 0.5rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: rgb(var(--color-primary-600));
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.notfound-search:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.dark .notfound-code {
+  color: rgb(var(--color-neutral-400));
+}
+
+.dark .notfound-text {
+  color: rgb(var(--color-neutral-300));
+}
+
+.dark .notfound-search {
+  color: rgb(var(--color-primary-400));
 }
 
 /* ---- Tags --------------------------------------------------------------

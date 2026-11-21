@@ -1,11 +1,16 @@
 {{- /*
-  Static preview for the Keelhaven card on the home page: one backup plan
-  part-way through a run, taken from the animated demo (demo-keelhaven.html)
-  at card size. Decorative: the card's text says what the app does.
+  Static preview for the Keelhaven card on the home page: the two backup
+  plans of the animated demo (demo-keelhaven.html) at card size, Documents
+  part-way through a run and Photos done. Two plans make it as tall as the
+  keelinfra card's preview beside it, so neither card has an empty band under
+  its picture. Decorative: the card's text says what the app does.
   Styles: .home-pv-* in assets/css/custom.css.
 */ -}}
-<span class="home-pv home-pv-pad" aria-hidden="true">
-  <span class="home-pv-line"><b>Documents</b><span class="home-pv-muted">/Volumes/Harbor</span></span>
-  <span class="home-pv-bar"><i></i></span>
-  <span class="home-pv-muted">Backing up… 12 new files, 48 MB</span>
+<span class="home-pv" aria-hidden="true">
+  <span class="home-pv-pad">
+    <span class="home-pv-line"><b>Documents</b><span class="home-pv-muted">/Volumes/Harbor</span></span>
+    <span class="home-pv-bar"><i></i></span>
+    <span class="home-pv-muted">Backing up… 12 new files, 48 MB</span>
+  </span>
+  <span class="home-pv-row home-pv-row-pad"><b>Photos</b><span class="home-pv-muted">Backed up 26 minutes ago</span></span>
 </span>
