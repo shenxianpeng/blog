@@ -233,6 +233,21 @@ accent. Below 1024px it is one row of years stuck under the site header,
 scrolled sideways, the current year in ink. A list with a single year (a
 small tag) has no nav and keeps the plain 50rem column.
 
+Posts and Essays name each other at the right end of the title's line
+("Essays (21) →", 13px mono, accent). Between them they are everything the
+Archive page used to list in a style of its own; that page is gone and its
+addresses redirect to Posts.
+
+## Tags page
+
+`layouts/tags/terms.html`, with the post lists' header (48px title, the
+number of tags in mono, the intro). The tags with five posts or more are
+ruled rows in order of size, in two columns that read down (one on a phone):
+the name at 15px, 600, a 4px accent bar for its share of the largest tag,
+the count in 12px mono. The rest are folded into a `<details>` whose summary
+is an outlined pill ("Show 92 tags with fewer than 5 posts") and open as
+plain links with their counts. Styles `.tags-*`.
+
 ## Projects page
 
 `layouts/portfolio/list.html`: the same header, then "Open source, by

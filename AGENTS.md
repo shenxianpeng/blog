@@ -22,9 +22,10 @@ Instructions for AI coding agents working on this repository. This is a personal
 - **Main sections:** `posts/` (technical articles), `misc/` (personal essays, annual
   summaries), plus `about/`, `portfolio/` (labelled Projects in the menu; open
   source and the three products side by side), `resume/` (the CV, reachable only
-  from About; `/hireme/` and `/resume-cn` redirect to it), `archive/`, `tags/`,
-  `authors/`. The top menu is Posts · Projects · About; Essays (`misc/`), Archive,
-  Tags and RSS live in the footer.
+  from About; `/hireme/` and `/resume-cn` redirect to it), `tags/`,
+  `authors/`. The top menu is Posts · Projects · About; Essays (`misc/`),
+  Tags and RSS live in the footer. There is no Archive page since 2026-11:
+  Posts and Essays list everything, and `/archive/` redirects to Posts.
 - **Deployment:** GitHub Pages via `.github/workflows/pages.yaml`. Netlify runs
   deploy previews on pull requests only — it is not the production host.
   Both builds minify the HTML (`--minify` in the workflow,
@@ -429,6 +430,8 @@ at `/` and English under `/en/`.
   `/en/hireme/` and `/zh-cn/hireme/` are front-matter `aliases` on the two
   résumé pages; `/resume-cn` is a static page in `static/resume-cn/`, because
   Hugo writes a Chinese page's aliases under `/zh-cn/` and cannot reach the root.
+- **The Archive page is gone** since 2026-11. `/archive/`, `/en/archive/`
+  and `/zh-cn/archive/` are static redirects in `static/` to the Posts page.
 - **List pages are not paginated** since 2026-11. The old page URLs
   `/posts/page/2/`, `/zh-cn/posts/page/2/` and `/zh-cn/posts/page/3/` are
   static redirects in `static/` back to the first page.

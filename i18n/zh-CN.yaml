@@ -73,6 +73,13 @@ recent:
 archive_total:
   other: "共 {{ .Count }} 篇"
 
+# Tags page (layouts/tags/terms.html)
+tags:
+  total:
+    other: "共 {{ .Count }} 个标签"
+  show_rest:
+    other: "展开其余 {{ .Count }} 个标签（不足 {{ .Cut }} 篇）"
+
 # Site home page (layouts/partials/recent-articles/main.html)
 home:
   all_posts: "全部文章"

@@ -12,14 +12,26 @@
   under the site header, scrolled sideways. The script at the end marks the
   year being read (.is-current); without it the first year stays marked.
 
+  Posts and Essays link to each other from the title row ("Essays (21) →"):
+  between them they are everything the Archive page used to list.
+
   Context: the list page.
 */ -}}
+{{- $also := false -}}
+{{- if eq .Kind "section" -}}
+  {{- if eq .Section "posts" }}{{ $also = site.GetPage "/misc" }}{{ else if eq .Section "misc" }}{{ $also = site.GetPage "/posts" }}{{ end -}}
+{{- end -}}
 {{- $pages := where .Pages "Date.Year" "gt" 1000 -}}
 {{- $groups := $pages.GroupByDate "2006" "desc" -}}
 {{- $most := 1 -}}
 {{- range $groups }}{{ if gt (len .Pages) $most }}{{ $most = len .Pages }}{{ end }}{{ end -}}
 <header class="post-list-head">
-  <h1 class="post-list-title">{{ .Title }}</h1>
+  <div class="post-list-titlerow">
+    <h1 class="post-list-title">{{ .Title }}</h1>
+    {{- with $also }}
+      <a class="post-list-also" href="{{ .RelPermalink }}">{{ .Title }} ({{ len (where .RegularPages "Date.Year" "gt" 1000) }}) →</a>
+    {{- end }}
+  </div>
   <p class="post-list-count">{{ i18n "archive_total" (len $pages) }}</p>
   {{- with .Content }}<div class="post-list-intro">{{ . }}</div>{{ end }}
 </header>
