@@ -154,7 +154,8 @@ base with a 1.55 line-height.
    are flat: 18px radius, 24px padding, no shadow; a 12px mono label, the
    name at 24px, 14px text, a small static preview of the product
    (`layouts/partials/home/preview-<name>.html`, a few rows of its own
-   screen) and "Learn more" at 14px, 600. keelapps is one quiet 14px line
+   screen; the two previews are the same height, so neither card has an
+   empty band under its picture) and "Learn more" at 14px, 600. keelapps is one quiet 14px line
    under the cards (`products.also`): its buyers are on the Atlassian
    Marketplace, not on this blog.
 5. **Writing** — a 36px headline with its subline on the same baseline and
@@ -269,6 +270,19 @@ the name at 15px, 600, a 4px accent bar for its share of the largest tag,
 the count in 12px mono. The rest are folded into a `<details>` whose summary
 is an outlined pill ("Show 92 tags with fewer than 5 posts") and open as
 plain links with their counts. Styles `.tags-*`.
+
+## 404 page
+
+`layouts/404.html`, one file for both languages because GitHub Pages serves
+only the root one: "404" in 13px mono, the title at the list pages' 48px,
+one sentence in each language in the reading face (the page's own language
+first), then the home page's buttons, filled for this language's home and
+outlined for the other, and "Search the site" as a text button. No emoji.
+Styles `.notfound-*`.
+
+Page titles come in two sizes: 48px for the pages named by one or two words
+(Posts, Essays, Projects, Tags, a tag, 404) and 36px for an article's title,
+which runs to two or three lines. About opens with the author's name instead.
 
 ## Projects page
 
