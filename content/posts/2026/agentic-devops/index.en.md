@@ -44,7 +44,7 @@ GitHub Next refers to this type of automation as Continuous AI, analogizing the 
 
 This is the official introduction to Agentic Workflow.
 
-![](gh-aw.png)
+![](gh-aw.jpg)
 
 Examples of what can actually be done include:
 - Continuous triage: Automatic labeling and summarizing of new issues.

@@ -99,7 +99,7 @@ AWS DevOps Agent 团队成员 Efe Karakus 分享了从原型到产品的完整�
 
 4、[使用 Datadog MCP 服务器和 AWS DevOps Agent 加速自主事故解决](https://aws.amazon.com/blogs/devops/accelerate-autonomous-incident-resolutions-using-the-datadog-mcp-server-and-aws-devops-agent-in-preview/)（英文）
 
-![](blog-4.png)
+![](blog-4.jpg)
 
 AWS 与 Datadog 合作推出的 MCP 服务器集成，展示了如何将 AI Agent 与可观测性平台结合。值班工程师以往需要花费数小时在多个工具之间手动调查故障，现在 AI Agent 可以自动关联日志、指标和追踪数据，大幅缩短故障恢复时间。
 
@@ -157,7 +157,7 @@ EmulatorJS 是一个基于 JavaScript 的多系统模拟器，支持在浏览器
 
 1、[Project Genie：实时生成交互式世界](https://labs.google/)
 
-![](ai-1.png)
+![](ai-1.jpg)
 
 Google 发布的 Project Genie 能够实时生成可交互的 3D 世界。用户可以在生成的环境中自由探索和互动，AI 会根据用户的行为动态生成新的场景内容。这项技术展示了生成式 AI 在游戏和虚拟环境领域的应用潜力。
 
