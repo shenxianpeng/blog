@@ -12,7 +12,7 @@ date: 2025-06-02
 
 This article stems from a WeChat Moments post I saw from a former colleague.
 
-<img src="image.png" alt="A former colleague's WeChat Moments post praising the CI/CD at our old company" width="400" />
+<img src="/zh-cn/posts/2025/code-refactor/image.png" alt="A former colleague's WeChat Moments post praising the CI/CD at our old company" width="400" />
 
 I feel like he's **blatantly praising me** :)
 (Sorry, had to brag a little~)
