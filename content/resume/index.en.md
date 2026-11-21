@@ -36,40 +36,59 @@ links:
 
 I build the tooling that keeps software shipping: CI/CD, release engineering and supply chain security, at work and in open source.
 
+In software since 2009, from QA and test automation to DevOps; at Rocket Software since 2014, on build, release and delivery automation since 2018. My current focus is enterprise **agentic applications**: AI that takes on real engineering tasks under controlled workflows.
+
 ## Highlights
 
-- [cpp-linter](https://github.com/cpp-linter): 1,000+ dependent repositories, including projects at Apache, Samsung, Qualcomm and Bloomberg
-- [clang-tools static binaries](https://github.com/cpp-linter/clang-tools-static-binaries): 850,000+ downloads
-- [commit-check](https://github.com/commit-check/commit-check): 70,000+ PyPI downloads a month
-- Jenkins GitHub organization member; author of [Explain Error](https://github.com/jenkinsci/explain-error-plugin)
+- [cpp-linter](https://github.com/cpp-linter): 1,000+ dependent repositories, including projects at **Apache, Samsung, Qualcomm, Bloomberg, LLNL and Nextcloud**
+- [clang-tools static binaries](https://github.com/cpp-linter/clang-tools-static-binaries): **850,000+** downloads
+- [commit-check](https://github.com/commit-check/commit-check): **70,000+** PyPI downloads a month
+- **Jenkins GitHub organization** member; author of the [Explain Error](https://github.com/jenkinsci/explain-error-plugin) plugin
 - [Top 3 in Lithuania](https://committers.top/lithuania_public) for public GitHub contributions
+- 240+ original technical articles since 2017, on [this blog](https://shenxianpeng.dev/) and WeChat
 
 ## Experience
 
-**Senior DevOps & Release Engineer**, Rocket Software, Lithuania, 2024–now
+**Senior DevOps & Release Engineer**, Rocket Software, Lithuania, _Jul 2024 – Present_
 
-- Build AI agents on the GitHub Copilot SDK for engineering tasks
-- Bring AI into code review and build-failure analysis
+- Build enterprise agentic applications: AI agents on the **GitHub Copilot SDK** that connect code understanding, task orchestration, tool invocation and feedback
+- Bring AI into everyday engineering steps such as code review and build-failure analysis
 - Own the team's CI/CD and delivery infrastructure
 
-**DevOps & Release Engineer**, Rocket Software, Dalian, 2018–2024
+**DevOps & Release Engineer**, Rocket Software, Dalian, _Jun 2018 – Jun 2024_
 
-- Moved multiple product lines from manual and Bamboo builds to Jenkins with shared libraries
-- Containerized enterprise products: multi-arch builds, Kubernetes
-- Created the DevOps maturity badge, adopted at department level
+- Led the CI/CD transformation of multiple product lines, from manual and Bamboo builds to **Jenkins with shared libraries**, with all build logic as code
+- Built infrastructure as code with **Ansible** to provision Jenkins and development environments
+- Containerized enterprise products: multi-arch builds with buildx, health checks, **Kubernetes** deployments
+- Designed the **DevOps maturity badge** system and scaled it to department level; drove **Conventional Commits** adoption across teams
+- Automated VM management with Jira and Python, adopted company-wide
+- Received multiple **Rocket Build Awards**; several solutions were adopted into product roadmaps
 
-**Earlier, 2009–2018:** test automation and QA at Rocket Software, JD.COM, SIMCOM and Neusoft
+**Software Engineer in Test**, Rocket Software, Dalian, _Dec 2014 – May 2018_: test automation lead for Rocket Discover; built the framework from scratch and led the team that automated its regression testing
 
-## Also maintain
+**Software Engineer in Test**, JD.COM, Beijing, _2012 – 2014_: automated testing and CI pipelines
 
-[MkDocs NG](https://github.com/mkdocs-ng) · [Agent8](https://github.com/keelinfra/agent8) · [release-ledger](https://github.com/keelinfra/release-ledger) · [Conventional Branch](https://conventionalbranch.org) · [gitstats](https://github.com/shenxianpeng/gitstats)
+**QA Engineer**, SIMCOM (Shanghai) and Neusoft (Beijing), _2009 – 2011_: test design and execution; led small QA teams
+
+## Open Source
+
+- **[cpp-linter](https://github.com/cpp-linter)**: clang-format and clang-tidy on every pull request, as a GitHub Action and pre-commit hook
+- **[commit-check](https://github.com/commit-check)**: one versioned policy for commit messages, branch names, author identity, sign-offs and AI attribution, across local hooks and CI
+- **[Explain Error](https://github.com/jenkinsci/explain-error-plugin)**: a Jenkins plugin that uses AI to explain build failures and open repair PRs
+- **[MkDocs NG](https://github.com/mkdocs-ng)**: MkDocs 1.x, maintained, so existing sites and plugins keep building
+- **[Agent8](https://github.com/keelinfra/agent8)**: keeps Java 8 build hosts such as AIX, Solaris and HP-UX on a current Jenkins
+- **[release-ledger](https://github.com/keelinfra/release-ledger)**: attaches an SBOM and signed provenance to each release, and watches supported versions for actively exploited vulnerabilities
+- **More**: [Conventional Branch](https://conventionalbranch.org), [Extended Security for Jenkins](https://github.com/keelinfra/jenkins-extended-security), [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint), [gitstats](https://github.com/shenxianpeng/gitstats)
 
 ## Skills
 
-Jenkins, GitHub Actions, Docker, Kubernetes, Ansible, SLSA/SBOM, Python, Shell, Groovy, Go, AIX
+- **Delivery**: CI/CD, build and release, Docker, Kubernetes, Ansible, code quality and coverage, supply chain security (SLSA, SBOM)
+- **AI engineering**: agentic applications, AI code review, GitHub Copilot SDK, LLM integration
+- **Languages**: Python, Shell, Groovy, Go
+- **Platforms**: Jenkins, GitHub Actions, Linux, Windows, AIX
 
 ## Languages and education
 
-Chinese (native), English (professional), Lithuanian (A1)
+Chinese (native), English (professional working proficiency), Lithuanian (A1)
 
-College degree, Software Technology, 2009
+College degree in Software Technology, Liaoning Provincial College of Communications, 2006 – 2009
