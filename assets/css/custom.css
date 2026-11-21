@@ -1434,9 +1434,10 @@ body:has(.home) > header > div:first-child {
   display: inline;
 }
 
-/* A row under a padded block, on the block's own inset. */
+/* A row under a padded block, on the block's own inset; its height makes
+   the Keelhaven preview as tall as the keelinfra one (124px). */
 .home-pv-row-pad {
-  padding: 0.5rem 0.75rem;
+  padding: 0.65625rem 0.75rem;
 }
 
 .home-pv-dot {
