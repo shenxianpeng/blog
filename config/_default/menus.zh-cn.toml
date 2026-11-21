@@ -40,11 +40,6 @@ weight = 3
   weight = 10
 
 [[footer]]
-  name = "归档"
-  pageRef = "archive"
-  weight = 20
-
-[[footer]]
   name = "标签"
   pageRef = "tags"
   weight = 30

@@ -1,0 +1,50 @@
+{{- /*
+  The Tags page, replacing Blowfish's terms.html for this taxonomy: a cloud of
+  some 110 pills in alphabetical order, where a tag with 39 posts looked the
+  same as one with a single post. Here the tags with $cut posts or more are
+  ruled rows in order of size (name, a bar for its share of the largest tag,
+  the count), in two columns that read down; the rest are folded into a
+  <details>, as plain links. Uses the post lists' header. Styles .tags-* in
+  assets/css/custom.css.
+*/ -}}
+{{ define "main" }}
+  {{- $terms := .Data.Terms.ByCount -}}
+  {{- $cut := 5 -}}
+  {{- $most := 1 -}}
+  {{- $rest := 0 -}}
+  {{- range $i, $term := $terms }}
+    {{- if not $i }}{{ $most = .Count }}{{ end }}
+    {{- if lt .Count $cut }}{{ $rest = add $rest 1 }}{{ end }}
+  {{- end }}
+  <div class="post-list tags-page">
+    <header class="post-list-head">
+      <h1 class="post-list-title">{{ .Title }}</h1>
+      <p class="post-list-count">{{ i18n "tags.total" (len $terms) }}</p>
+      {{- with .Content }}<div class="post-list-intro">{{ . }}</div>{{ end }}
+    </header>
+    <div class="tags-top">
+      {{- range $terms }}
+        {{- if ge .Count $cut }}
+          {{- $share := div (mul .Count 100.0) $most }}
+          <a class="tags-row" href="{{ .Page.RelPermalink }}">
+            <span class="tags-name">{{ .Page.Title }}</span>
+            <span class="tags-bar" style="{{ printf "--share:%.0f%%" $share | safeCSS }}"></span>
+            <span class="tags-count">{{ .Count }}</span>
+          </a>
+        {{- end }}
+      {{- end }}
+    </div>
+    {{- if $rest }}
+      <details class="tags-rest">
+        <summary>{{ i18n "tags.show_rest" (dict "Count" $rest "Cut" $cut) }}</summary>
+        <div class="tags-rest-list">
+          {{- range $terms }}
+            {{- if lt .Count $cut }}
+              <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}<span>{{ .Count }}</span></a>
+            {{- end }}
+          {{- end }}
+        </div>
+      </details>
+    {{- end }}
+  </div>
+{{ end }}

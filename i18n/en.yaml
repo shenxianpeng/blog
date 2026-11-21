@@ -87,6 +87,15 @@ archive_total:
   one: "{{ .Count }} post"
   other: "{{ .Count }} posts"
 
+# Tags page (layouts/tags/terms.html)
+tags:
+  total:
+    one: "{{ .Count }} tag"
+    other: "{{ .Count }} tags"
+  show_rest:
+    one: "Show {{ .Count }} tag with fewer than {{ .Cut }} posts"
+    other: "Show {{ .Count }} tags with fewer than {{ .Cut }} posts"
+
 # Site home page (layouts/partials/recent-articles/main.html)
 home:
   all_posts: "All posts"
