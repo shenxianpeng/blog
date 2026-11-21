@@ -3620,6 +3620,12 @@ body:not(:has(.home)) #main-content {
     max-width: none;
   }
 
+  /* The theme prints every link's address after it, which doubled the
+     length of the Highlights. */
+  .about-single a::after {
+    content: none !important;
+  }
+
   .about-single .article-content {
     font-size: 11pt;
     line-height: 1.4;
