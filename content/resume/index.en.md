@@ -36,7 +36,7 @@ links:
 
 I build the tooling that keeps software shipping: CI/CD, release engineering and supply chain security, at work and in open source.
 
-In software since 2009, from QA and test automation to DevOps; at Rocket Software since 2014, on build, release and delivery automation since 2018. My current focus is enterprise **agentic applications**: AI that takes on real engineering tasks under controlled workflows.
+In software since 2009, from QA and test automation to DevOps; at Rocket Software since 2014, on build and release since 2018. Now focused on enterprise **agentic applications**: AI that takes on real engineering tasks under controlled workflows.
 
 ## Highlights
 
@@ -51,7 +51,7 @@ In software since 2009, from QA and test automation to DevOps; at Rocket Softwar
 
 **Senior DevOps & Release Engineer**, Rocket Software, Lithuania, _Jul 2024 – Present_
 
-- Build enterprise agentic applications: AI agents on the **GitHub Copilot SDK** that connect code understanding, task orchestration, tool invocation and feedback
+- Build enterprise agentic applications: AI agents on the **GitHub Copilot SDK** for code understanding, task orchestration and tool invocation
 - Bring AI into everyday engineering steps such as code review and build-failure analysis
 - Own the team's CI/CD and delivery infrastructure
 
@@ -60,7 +60,7 @@ In software since 2009, from QA and test automation to DevOps; at Rocket Softwar
 - Led the CI/CD transformation of multiple product lines, from manual and Bamboo builds to **Jenkins with shared libraries**, with all build logic as code
 - Built infrastructure as code with **Ansible** to provision Jenkins and development environments
 - Containerized enterprise products: multi-arch builds with buildx, health checks, **Kubernetes** deployments
-- Designed the **DevOps maturity badge** system and scaled it to department level; drove **Conventional Commits** adoption across teams
+- Designed the **DevOps maturity badge**, scaled to department level; drove **Conventional Commits** across teams
 - Automated VM management with Jira and Python, adopted company-wide
 - Received multiple **Rocket Build Awards**; several solutions were adopted into product roadmaps
 
@@ -73,16 +73,16 @@ In software since 2009, from QA and test automation to DevOps; at Rocket Softwar
 ## Open Source
 
 - **[cpp-linter](https://github.com/cpp-linter)**: clang-format and clang-tidy on every pull request, as a GitHub Action and pre-commit hook
-- **[commit-check](https://github.com/commit-check)**: one versioned policy for commit messages, branch names, author identity, sign-offs and AI attribution, across local hooks and CI
+- **[commit-check](https://github.com/commit-check)**: one policy for commit messages, branch names, authors, sign-offs and AI attribution, in hooks and CI
 - **[Explain Error](https://github.com/jenkinsci/explain-error-plugin)**: a Jenkins plugin that uses AI to explain build failures and open repair PRs
 - **[MkDocs NG](https://github.com/mkdocs-ng)**: MkDocs 1.x, maintained, so existing sites and plugins keep building
 - **[Agent8](https://github.com/keelinfra/agent8)**: keeps Java 8 build hosts such as AIX, Solaris and HP-UX on a current Jenkins
-- **[release-ledger](https://github.com/keelinfra/release-ledger)**: attaches an SBOM and signed provenance to each release, and watches supported versions for actively exploited vulnerabilities
+- **[release-ledger](https://github.com/keelinfra/release-ledger)**: adds an SBOM and signed provenance to each release; watches for actively exploited vulnerabilities
 - **More**: [Conventional Branch](https://conventionalbranch.org), [Extended Security for Jenkins](https://github.com/keelinfra/jenkins-extended-security), [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint), [gitstats](https://github.com/shenxianpeng/gitstats)
 
 ## Skills
 
-- **Delivery**: CI/CD, build and release, Docker, Kubernetes, Ansible, code quality and coverage, supply chain security (SLSA, SBOM)
+- **Delivery**: CI/CD, build and release, Docker, Kubernetes, Ansible, code coverage, supply chain security (SLSA, SBOM)
 - **AI engineering**: agentic applications, AI code review, GitHub Copilot SDK, LLM integration
 - **Languages**: Python, Shell, Groovy, Go
 - **Platforms**: Jenkins, GitHub Actions, Linux, Windows, AIX

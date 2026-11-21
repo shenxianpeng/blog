@@ -50,7 +50,7 @@ links:
 
 **高级 DevOps 与发布工程师**，Rocket Software，立陶宛，_2024.07 – 至今_
 
-- 开发企业级 Agentic 应用：基于 **GitHub Copilot SDK** 构建 AI agent，连接代码理解、任务编排、工具调用与结果反馈
+- 开发企业级 Agentic 应用：基于 **GitHub Copilot SDK** 构建 AI agent，连接代码理解、任务编排和工具调用
 - 把 AI 引入代码审查、构建失败分析等日常工程环节
 - 负责团队的 CI/CD 与交付基础设施
 
@@ -72,7 +72,7 @@ links:
 ## 开源项目
 
 - **[cpp-linter](https://github.com/cpp-linter)**：在每个 PR 上跑 clang-format 和 clang-tidy，提供 GitHub Action 和 pre-commit hook
-- **[commit-check](https://github.com/commit-check)**：一份版本化策略，统一校验提交信息、分支名、作者身份、signoff 与 AI 署名，本地 hook 和 CI 共用
+- **[commit-check](https://github.com/commit-check)**：一份版本化策略，统一校验提交信息、分支名、作者、signoff 与 AI 署名，本地和 CI 共用
 - **[Explain Error](https://github.com/jenkinsci/explain-error-plugin)**：Jenkins 插件，用 AI 解释构建失败并创建修复 PR
 - **[MkDocs NG](https://github.com/mkdocs-ng)**：持续维护的 MkDocs 1.x，已有站点和插件照常构建
 - **[Agent8](https://github.com/keelinfra/agent8)**：让只有 Java 8 的构建机（AIX、Solaris、HP-UX）继续接入新版 Jenkins
@@ -81,7 +81,7 @@ links:
 
 ## 技能
 
-- **交付工程**：CI/CD、构建与发布、Docker、Kubernetes、Ansible、代码质量与覆盖率、软件供应链安全（SLSA、SBOM）
+- **交付工程**：CI/CD、构建与发布、Docker、Kubernetes、Ansible、代码覆盖率、供应链安全（SLSA、SBOM）
 - **AI 工程**：Agentic 应用、AI 代码审查、GitHub Copilot SDK、LLM 集成
 - **编程语言**：Python、Shell、Groovy、Go
 - **平台**：Jenkins、GitHub Actions、Linux、Windows、AIX
