@@ -3543,6 +3543,67 @@ body:not(:has(.home)) #main-content {
   }
 }
 
+/* The résumé: this template without the facts or the photo. One column in
+   the article's measure, the contact line as plain links, and headings and
+   lists tight enough to print on one page. */
+.about-single {
+  max-width: 37rem;
+}
+
+:lang(zh) .about-single {
+  max-width: 40.25rem;
+}
+
+.about-single .about-body {
+  display: block;
+  margin-top: 1.25rem;
+}
+
+.about-single .about-links {
+  flex-basis: 100%;
+  gap: 0.25rem 1.25rem;
+}
+
+.about-single .about-link {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  color: rgb(var(--color-primary-600));
+  font-size: 0.875rem;
+}
+
+.about-single .about-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.about-single .article-content {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.about-single .article-content h2 {
+  margin: 1.75rem 0 0.5rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.015em;
+}
+
+.about-single .article-content p {
+  margin: 0.75rem 0 0.25rem;
+}
+
+.about-single .article-content ul {
+  margin: 0.25rem 0 0.75rem;
+}
+
+.about-single .article-content li {
+  margin: 0.125rem 0;
+}
+
+.dark .about-single .about-link {
+  color: rgb(var(--color-primary-400));
+}
+
 .dark :is(.about-name, .about-link, .about-fact dd, .about .article-content > p:first-child) {
   color: rgb(var(--color-neutral));
 }

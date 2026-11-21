@@ -202,6 +202,17 @@ measure; under 35rem the line turns vertical. The line into the last stage,
 `support`, is dashed: it stands for years, where the others stand for minutes.
 Styles `.pipeline-*` in `custom.css`.
 
+## Résumé page
+
+`content/resume/`, on the About page's template (`type: about`) without the
+photo or the facts: the name, the role in 12px mono, the address and GitHub
+profile written out as plain accent links (so they survive on paper), over a
+rule. One column in the article's measure. Six short blocks: the positioning
+line, Highlights, Experience, Also maintain, Skills, Languages and education.
+It prints on one A4 page; keep it there. The numbers in Highlights are the
+ones in the home page's `proof`, so check them together. Styles
+`.about-single` in `custom.css`.
+
 ## Article header
 
 Between an article's title (36px; 30px on a phone) and its text:

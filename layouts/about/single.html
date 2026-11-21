@@ -15,16 +15,22 @@
             header and the text below that.
     text    the page body, in the article's measure, then the comments.
 
+  The résumé (content/resume/) uses this template too, with `type: about`:
+  no facts, `showPhoto: false`, one column (.about-single) and the links as
+  plain text, so its address and profile are readable on paper.
+
   Styles: .about-* in assets/css/custom.css. The photo's alt is empty because
   the name is the text next to it.
 */ -}}
 {{ define "main" }}
-  <article class="about">
-    <header class="about-head" data-ga-placement="about">
-      {{ with site.Params.Author.image }}
-        {{ with resources.Get . }}
-          {{ $photo := .Fill "144x144 Center" }}
-          <img class="about-photo" src="{{ $photo.RelPermalink }}" width="72" height="72" alt="">
+  <article class="about{{ if not .Params.facts }} about-single{{ end }}">
+    <header class="about-head" data-ga-placement="{{ .Section }}">
+      {{ if ne .Params.showPhoto false }}
+        {{ with site.Params.Author.image }}
+          {{ with resources.Get . }}
+            {{ $photo := .Fill "144x144 Center" }}
+            <img class="about-photo" src="{{ $photo.RelPermalink }}" width="72" height="72" alt="">
+          {{ end }}
         {{ end }}
       {{ end }}
       <div class="about-id">

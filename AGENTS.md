@@ -96,6 +96,10 @@ commit-check next, and keelinfra (Agent8) and Keelhaven as the products.
 The stages are for this site only: the profile README lists the projects
 plainly, without stage labels.
 
+The résumé (`content/resume/`) is one printed A4 page and uses the About
+template (`type: about`, no photo, no facts). Keep it that short: a new line
+there should replace a weaker one. Its numbers go stale like `proof`.
+
 The About page (`content/about/`) has its own template,
 `layouts/about/single.html`: a header with the author's photo and name
 (`params.author`), `role` and `links`, then the text with `facts` beside it
