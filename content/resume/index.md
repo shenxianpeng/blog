@@ -9,7 +9,7 @@ showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
 showReadingTime : false
-showTableOfContents : true
+showTableOfContents : false
 showTaxonomies : false
 showWordCount : false
 showSummary : false
@@ -17,100 +17,77 @@ sharingLinks : false
 showEdit: false
 showViews: false
 showLikes: false
-showAuthor: true
+showAuthor: false
 layoutBackgroundBlur: false
 layoutBackgroundHeaderSpace: false
 showZenMode: false
+type: about
+showPhoto: false
+
+# 页首，用 About 页的模板（layouts/about/single.html）。
+role: "构建与发布工程师，2009 年入行 · 立陶宛维尔纽斯"
+links:
+  - label: "xianpeng.shen@gmail.com"
+    url: "mailto:xianpeng.shen@gmail.com"
+  - label: "github.com/shenxianpeng"
+    url: "https://github.com/shenxianpeng"
 ---
 
-## 个人简介
+我做让软件持续交付的工具：CI/CD、发布工程和软件供应链安全，工作里做，开源里也做。
 
-DevOps 与发布工程师，现居立陶宛维尔纽斯。2009 年入行，从 QA、测试开发一路做到 DevOps；2014 年加入 Rocket Software，2018 年起负责构建、发布与交付自动化。目前专注企业级 **Agentic 应用**开发，让 AI 以受控的方式承担真实的工程任务。
+2009 年入行，从 QA、测试开发一路做到 DevOps；2014 年加入 Rocket Software，2018 年起负责构建、发布与交付自动化。目前专注企业级 **Agentic 应用**开发，让 AI 以受控的方式承担真实的工程任务。
 
-业余维护多个开源组织和项目，仅 cpp-linter 在 GitHub 上就有 1000 多个仓库依赖它，包括 **Apache、Samsung、Qualcomm、Bloomberg** 的项目。
+## 亮点
 
-**核心亮点**
-
-- 开源 C/C++ 质量工具 [cpp-linter](https://github.com/cpp-linter)：GitHub 上有 1000 多个仓库依赖它，包括 Apache、Samsung、Qualcomm、Bloomberg、LLNL、Nextcloud 的项目
-- Jenkins 插件 [Explain Error](https://github.com/jenkinsci/explain-error-plugin) 作者，Jenkins GitHub 组织成员
-- **Anthropic Open Source Developer Program** 入选者（2026）
-- **EuroPython 2025** 议题评审
-- 2017 年至今发布 240+ 篇原创技术文章（[博客](https://shenxianpeng.dev)，同步发在公众号「沈显鹏」）
-
----
+- [cpp-linter](https://github.com/cpp-linter)：GitHub 上 1000 多个仓库依赖它，包括 **Apache、Samsung、Qualcomm、Bloomberg、LLNL、Nextcloud** 的项目
+- [clang-tools 静态二进制](https://github.com/cpp-linter/clang-tools-static-binaries)：累计下载超过 **85 万**次
+- [commit-check](https://github.com/commit-check/commit-check)：PyPI 月下载量超过 **7 万**次
+- **Jenkins GitHub 组织**成员，[Explain Error](https://github.com/jenkinsci/explain-error-plugin) 插件作者
+- 按 GitHub 公开贡献，[立陶宛排名前三](https://committers.top/lithuania_public)
+- 2017 年至今发布 240+ 篇原创技术文章（[博客](https://shenxianpeng.dev/zh-cn/)，同步发在公众号「沈显鹏」）
 
 ## 工作经历
 
-**高级 DevOps 与发布工程师**（Senior DevOps & Release Engineer）| Rocket Software，立陶宛 | _2024.07 – 至今_
+**高级 DevOps 与发布工程师**，Rocket Software，立陶宛，_2024.07 – 至今_
 
-- 开发企业级 **Agentic 应用**：基于 **GitHub Copilot SDK** 构建承担工程任务的 AI agent，连接代码理解、任务编排、工具调用与结果反馈。
-- 将 AI 引入代码审查、构建失败分析等日常工程环节。
-- 同时负责团队 CI/CD 与交付基础设施的持续建设。
+- 开发企业级 Agentic 应用：基于 **GitHub Copilot SDK** 构建 AI agent，连接代码理解、任务编排和工具调用
+- 把 AI 引入代码审查、构建失败分析等日常工程环节
+- 负责团队的 CI/CD 与交付基础设施
 
-**DevOps 与发布工程师** | Rocket Software，大连 | _2018.06 – 2024.06_
+**DevOps 与发布工程师**，Rocket Software，大连，_2018.06 – 2024.06_
 
-- 主导 CI/CD 转型：多条产品线从手工构建和 Bamboo 迁移到 **Jenkins + 共享库**，构建逻辑全部代码化。
-- 用 **Ansible** 实现基础设施即代码，自动化部署 Jenkins 与开发环境。
-- 容器化企业级产品：buildx 多架构构建、健康检查、**Kubernetes** 部署。
-- 设计 **DevOps 成熟度徽章**体系并推广到部门级；推动 **Conventional Commits** 在多团队落地。
-- 用 Jira + Python 自动化虚拟机管理，被全公司采用。
-- 为多条产品线引入**代码覆盖率**报告。
-- 多次获得 **Rocket Build Award**，多项方案被纳入产品路线图。
+- 主导多条产品线的 CI/CD 转型：从手工构建和 Bamboo 迁移到 **Jenkins + 共享库**，构建逻辑全部代码化
+- 用 **Ansible** 实现基础设施即代码，自动化部署 Jenkins 与开发环境
+- 容器化企业级产品：buildx 多架构构建、健康检查、**Kubernetes** 部署
+- 设计 **DevOps 成熟度徽章**体系并推广到部门级，推动 **Conventional Commits** 在多团队落地
+- 用 Jira + Python 自动化虚拟机管理，被全公司采用
+- 多次获得 **Rocket Build Award**，多项方案被纳入产品路线图
 
-**测试开发工程师** | Rocket Software，大连 | _2014.12 – 2018.05_ — Rocket Discover 自动化测试负责人：从零搭建自动化测试框架，带团队把回归测试自动化。
+**测试开发工程师**，Rocket Software，大连，_2014.12 – 2018.05_：Rocket Discover 自动化测试负责人，从零搭建测试框架，带团队把回归测试自动化
 
-**测试开发工程师** | 京东，北京 | _2012 – 2014_ — 自动化测试与持续集成流水线。
+**测试开发工程师**，京东，北京，_2012 – 2014_：自动化测试与持续集成流水线
 
-**QA 工程师** | SIMCOM（上海）、东软（北京） | _2009 – 2011_ — 测试用例设计与执行，带领小型 QA 团队。
-
----
+**QA 工程师**，SIMCOM（上海）、东软（北京），_2009 – 2011_：测试设计与执行，带领小型 QA 团队
 
 ## 开源项目
 
-**[cpp-linter](https://github.com/cpp-linter)** — C/C++ 代码质量自动化：clang-format + clang-tidy，以 GitHub Action 和 pre-commit hook 交付。GitHub 上有 1000 多个仓库依赖它，包括 Apache、Samsung、Qualcomm、Bloomberg、LLNL、Nextcloud 的项目。
-
-**[commit-check](https://github.com/commit-check)** — Git 提交元数据的策略引擎：一份版本化的 TOML 策略，统一校验提交信息、分支命名、作者身份、signoff 与 **AI 署名**，在本地 hook、CI、GitHub Actions 之间共享同一套规则。
-
-**[conventional-branch](https://github.com/conventional-branch)** — Git 分支命名规范与工具集，1.1.0 起原生支持 **AI Coding Agent** 分支前缀。
-
-**[Explain Error](https://github.com/jenkinsci/explain-error-plugin)** — jenkinsci 组织下的 Jenkins 插件：AI 分析构建失败原因，支持 **AI Auto-Fix 自动创建修复 PR**、用量统计与配额管控，兼容 OpenAI、Gemini、Azure OpenAI、DeepSeek、Qwen、Ollama、AWS Bedrock 等 Provider。
-
-**其他**：[MkDocs NG](https://github.com/mkdocs-ng)（MkDocs 生态的社区维护）、[gitstats](https://github.com/shenxianpeng/gitstats)（Git 仓库统计可视化）、[jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint)（无需 Jenkins 服务器的 Jenkinsfile 校验）。
-
----
+- **[cpp-linter](https://github.com/cpp-linter)**：在每个 PR 上跑 clang-format 和 clang-tidy，提供 GitHub Action 和 pre-commit hook
+- **[commit-check](https://github.com/commit-check)**：一份版本化策略，统一校验提交信息、分支名、作者、signoff 与 AI 署名，本地和 CI 共用
+- **[Explain Error](https://github.com/jenkinsci/explain-error-plugin)**：Jenkins 插件，用 AI 解释构建失败并创建修复 PR
+- **[MkDocs NG](https://github.com/mkdocs-ng)**：持续维护的 MkDocs 1.x，已有站点和插件照常构建
+- **[Agent8](https://github.com/keelinfra/agent8)**：让只有 Java 8 的构建机（AIX、Solaris、HP-UX）继续接入新版 Jenkins
+- **[release-ledger](https://github.com/keelinfra/release-ledger)**：发布时附上 SBOM 和签名的构建溯源，并持续检查支持期内的版本有没有被在野利用的漏洞
+- **其他**：[Conventional Branch](https://conventionalbranch.org)、[Extended Security for Jenkins](https://github.com/keelinfra/jenkins-extended-security)、[jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint)、[gitstats](https://github.com/shenxianpeng/gitstats)
 
 ## 技能
 
-- **工程实践**：CI/CD、构建与发布、容器化（Docker）、基础设施即代码（Ansible）、代码质量与覆盖率、软件供应链安全（SLSA / SBOM）
-- **AI 工程**：Agentic 应用开发、AI 代码审查、GitHub Copilot SDK、LLM 集成（OpenAI / Gemini / Bedrock / Ollama 等）
-- **语言**：Python、Shell、Groovy、Go
-- **平台**：Jenkins、GitHub Actions、Linux、Windows、AIX 等企业级环境
+- **交付工程**：CI/CD、构建与发布、Docker、Kubernetes、Ansible、代码覆盖率、供应链安全（SLSA、SBOM）
+- **AI 工程**：Agentic 应用、AI 代码审查、GitHub Copilot SDK、LLM 集成
+- **编程语言**：Python、Shell、Groovy、Go
+- **平台**：Jenkins、GitHub Actions、Linux、Windows、AIX
 
----
+## 语言与教育
 
-## 社区
+中文（母语）、英语（专业工作水平）、立陶宛语（A1）
 
-- **EuroPython 2025** 议题评审；**PyCon Lithuania 2025** 参会并发布三篇大会记录
-- **Jenkins、MkDocs** 生态维护者
-- Anthropic Open Source Developer Program 入选者
-
----
-
-## 语言
-
-- 中文 — 母语
-- 英语 — 专业工作水平
-- 立陶宛语 — 初级（A1）
-
----
-
-## 教育经历
-
-- 辽宁交通高等专科学校 | 软件技术专业 | _2006 – 2009_
-
----
-
-## 联系我
-
-- 邮箱：[xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)
-- GitHub：[@shenxianpeng](https://github.com/shenxianpeng)
+辽宁交通高等专科学校，软件技术专业，2006 – 2009

@@ -1,7 +1,7 @@
 ---
 title: "Xianpeng Shen's Resume"
 author: shenxianpeng
-showAuthor: true
+showAuthor: false
 aliases:
   - /hireme/
   - /en/hireme/
@@ -12,7 +12,7 @@ showDateUpdated : false
 showHeadingAnchors : false
 showPagination : false
 showReadingTime : false
-showTableOfContents : true
+showTableOfContents : false
 showTaxonomies : false
 showWordCount : false
 showSummary : false
@@ -22,96 +22,73 @@ showViews: false
 showLikes: false
 layoutBackgroundHeaderSpace: false
 showZenMode: false
+type: about
+showPhoto: false
+
+# The header, from the About page's template (layouts/about/single.html).
+role: "Build & release engineer since 2009 · Vilnius, Lithuania"
+links:
+  - label: "xianpeng.shen@gmail.com"
+    url: "mailto:xianpeng.shen@gmail.com"
+  - label: "github.com/shenxianpeng"
+    url: "https://github.com/shenxianpeng"
 ---
 
-## About Me
+I build the tooling that keeps software shipping: CI/CD, release engineering and supply chain security, at work and in open source.
 
-DevOps and release engineer based in Vilnius, Lithuania. In software engineering since 2009, from QA and test automation to DevOps; at Rocket Software since 2014, on build, release, and delivery automation since 2018. My current focus is enterprise **agentic applications**: AI that takes on real engineering tasks under controlled workflows.
+In software since 2009, from QA and test automation to DevOps; at Rocket Software since 2014, on build and release since 2018. Now focused on **agentic applications**: AI that takes on real engineering tasks under controlled workflows.
 
-Outside work I maintain a number of open source organizations and projects. More than 1,000 repositories on GitHub depend on cpp-linter alone, including projects at **Apache, Samsung, Qualcomm, and Bloomberg**.
+## Highlights
 
-**Highlights**
+- [cpp-linter](https://github.com/cpp-linter): 1,000+ dependent repositories, including projects at **Apache, Samsung, Qualcomm, Bloomberg, LLNL and Nextcloud**
+- [clang-tools static binaries](https://github.com/cpp-linter/clang-tools-static-binaries): **850,000+** downloads
+- [commit-check](https://github.com/commit-check/commit-check): **70,000+** PyPI downloads a month
+- **Jenkins GitHub organization** member; author of the [Explain Error](https://github.com/jenkinsci/explain-error-plugin) plugin
+- [Top 3 in Lithuania](https://committers.top/lithuania_public) for public GitHub contributions
+- 240+ original technical articles since 2017, on [this blog](https://shenxianpeng.dev/) and WeChat
 
-- [cpp-linter](https://github.com/cpp-linter), my C/C++ quality tooling: more than 1,000 repositories on GitHub depend on it, including projects at Apache, Samsung, Qualcomm, Bloomberg, LLNL, and Nextcloud
-- Author of the **Jenkins plugin** [Explain Error](https://github.com/jenkinsci/explain-error-plugin); member of the Jenkins GitHub organization
-- Selected for the **Anthropic Open Source Developer Program** (2026)
-- **EuroPython 2025** proposal reviewer
-- 240+ original technical articles since 2017 ([blog](https://shenxianpeng.dev/), also published on WeChat)
+## Experience
 
----
+**Senior DevOps & Release Engineer**, Rocket Software, Lithuania, _Jul 2024 – Present_
 
-## Work Experience
+- Build enterprise agentic applications: AI agents on the **GitHub Copilot SDK** for code understanding, task orchestration and tool invocation
+- Bring AI into everyday engineering steps such as code review and build-failure analysis
+- Own the team's CI/CD and delivery infrastructure
 
-**Senior DevOps & Release Engineer** | Rocket Software, Lithuania | _Jul 2024 – Present_
+**DevOps & Release Engineer**, Rocket Software, Dalian, _Jun 2018 – Jun 2024_
 
-- Build enterprise **agentic applications**: AI agents on the **GitHub Copilot SDK** that take on engineering tasks, connecting code understanding, task orchestration, tool invocation, and feedback.
-- Bring AI into everyday engineering steps such as code review and build-failure analysis.
-- Own the team's CI/CD and delivery infrastructure.
+- Led the CI/CD transformation of multiple product lines, from manual and Bamboo builds to **Jenkins with shared libraries**, with all build logic as code
+- Built infrastructure as code with **Ansible** to provision Jenkins and development environments
+- Containerized enterprise products: multi-arch builds with buildx, health checks, **Kubernetes** deployments
+- Designed the **DevOps maturity badge**, scaled to department level; drove **Conventional Commits** across teams
+- Automated VM management with Jira and Python, adopted company-wide
+- Received multiple **Rocket Build Awards**; several solutions were adopted into product roadmaps
 
-**DevOps & Release Engineer** | Rocket Software, Dalian | _Jun 2018 – Jun 2024_
+**Software Engineer in Test**, Rocket Software, Dalian, _Dec 2014 – May 2018_: test automation lead for Rocket Discover; built the framework from scratch and led the team that automated its regression testing
 
-- Led CI/CD transformation across multiple product lines: from manual and Bamboo builds to **Jenkins with shared libraries**, all build logic as code.
-- Built infrastructure as code with **Ansible** for provisioning Jenkins and development environments.
-- Containerized enterprise products: multi-arch builds with buildx, health checks, **Kubernetes** deployments.
-- Designed the **DevOps maturity badge** system and scaled it to department level; drove **Conventional Commits** adoption across teams.
-- Automated VM management with Jira + Python, adopted company-wide.
-- Introduced **code coverage** reporting for multiple product lines.
-- Multiple **Rocket Build Awards**; several solutions adopted into product roadmaps.
+**Software Engineer in Test**, JD.COM, Beijing, _2012 – 2014_: automated testing and CI pipelines
 
-**Software Engineer in Test** | Rocket Software, Dalian | _Dec 2014 – May 2018_ — test automation lead for Rocket Discover: built the automation framework from scratch and led the team that automated its regression testing.
+**QA Engineer**, SIMCOM (Shanghai) and Neusoft (Beijing), _2009 – 2011_: test design and execution; led small QA teams
 
-**Software Engineer in Test** | JD.COM, Beijing | _2012 – 2014_ — automated testing and CI pipelines.
+## Open Source
 
-**QA Engineer** | SIMCOM (Shanghai) & Neusoft (Beijing) | _2009 – 2011_ — test design and execution; led small QA teams.
-
----
-
-## Open Source Projects
-
-**[cpp-linter](https://github.com/cpp-linter)** — C/C++ code quality automation: clang-format and clang-tidy delivered as a GitHub Action and pre-commit hook. More than 1,000 repositories on GitHub depend on it, including projects at Apache, Samsung, Qualcomm, Bloomberg, LLNL, and Nextcloud.
-
-**[commit-check](https://github.com/commit-check)** — a policy engine for Git commit metadata: one versioned TOML policy validating commit messages, branch names, author identity, signoff trailers, and **AI attribution**, shared across local hooks, CI, and GitHub Actions.
-
-**[conventional-branch](https://github.com/conventional-branch)** — a branch naming specification and toolset; since 1.1.0 it natively supports **AI Coding Agent** branch prefixes.
-
-**[Explain Error](https://github.com/jenkinsci/explain-error-plugin)** — a Jenkins plugin, in the jenkinsci organization, that uses AI to explain build failures, with **AI Auto-Fix** (automatic repair PRs), usage statistics and quota controls, and providers including OpenAI, Gemini, Azure OpenAI, DeepSeek, Qwen, Ollama, and AWS Bedrock.
-
-**More**: [MkDocs NG](https://github.com/mkdocs-ng) (community maintenance of the MkDocs ecosystem), [gitstats](https://github.com/shenxianpeng/gitstats) (Git repository analytics), [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint) (Jenkinsfile validation without a Jenkins server).
-
----
+- **[cpp-linter](https://github.com/cpp-linter)**: clang-format and clang-tidy on every pull request, as a GitHub Action and pre-commit hook
+- **[commit-check](https://github.com/commit-check)**: one policy for commit messages, branches, authors, sign-offs and AI attribution, in hooks and CI
+- **[Explain Error](https://github.com/jenkinsci/explain-error-plugin)**: a Jenkins plugin that uses AI to explain build failures and open repair PRs
+- **[MkDocs NG](https://github.com/mkdocs-ng)**: MkDocs 1.x, maintained, so existing sites and plugins keep building
+- **[Agent8](https://github.com/keelinfra/agent8)**: keeps Java 8 build hosts such as AIX, Solaris and HP-UX on a current Jenkins
+- **[release-ledger](https://github.com/keelinfra/release-ledger)**: adds an SBOM and signed provenance to each release; watches for exploited vulnerabilities
+- **More**: [Conventional Branch](https://conventionalbranch.org), [Extended Security for Jenkins](https://github.com/keelinfra/jenkins-extended-security), [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint), [gitstats](https://github.com/shenxianpeng/gitstats)
 
 ## Skills
 
-- **Engineering practice**: CI/CD, build & release, containers (Docker), infrastructure as code (Ansible), code quality & coverage, software supply chain security (SLSA / SBOM)
-- **AI engineering**: agentic application development, AI code review, GitHub Copilot SDK, LLM integration (OpenAI / Gemini / Bedrock / Ollama and others)
+- **Delivery**: CI/CD, build and release, Docker, Kubernetes, Ansible, code coverage, supply chain (SLSA, SBOM)
+- **AI engineering**: agentic applications, AI code review, GitHub Copilot SDK, LLM integration
 - **Languages**: Python, Shell, Groovy, Go
-- **Platforms**: Jenkins, GitHub Actions, Linux, Windows, and enterprise environments including AIX
+- **Platforms**: Jenkins, GitHub Actions, Linux, Windows, AIX
 
----
+## Languages and education
 
-## Community
+Chinese (native), English (professional working proficiency), Lithuanian (A1)
 
-- **EuroPython 2025** proposal reviewer; attended **PyCon Lithuania 2025** and published three days of conference notes
-- Maintainer in the **Jenkins** and **MkDocs** ecosystems
-- Anthropic Open Source Developer Program
-
----
-
-## Languages
-
-- **Chinese** — Native
-- **English** — Professional Working Proficiency
-- **Lithuanian** — Beginner (A1)
-
----
-
-## Education
-
-- College Degree, Software Technology — Liaoning Provincial College of Communications (2006 – 2009)
-
----
-
-## Contact
-
-- Email: [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)
-- GitHub: [@shenxianpeng](https://github.com/shenxianpeng)
+College degree in Software Technology, Liaoning Provincial College of Communications, 2006 – 2009

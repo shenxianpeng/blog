@@ -3543,7 +3543,143 @@ body:not(:has(.home)) #main-content {
   }
 }
 
-.dark :is(.about-name, .about-link, .about-fact dd, .about .article-content > p:first-child) {
+/* The résumé: this template without the facts or the photo. One column in
+   the article's measure, the contact line as plain links, and headings and
+   lists tight enough to print on one page. */
+.about-single {
+  max-width: 37rem;
+}
+
+:lang(zh) .about-single {
+  max-width: 40.25rem;
+}
+
+.about-single .about-body {
+  display: block;
+  margin-top: 1.25rem;
+}
+
+.about-single .about-links {
+  flex-basis: 100%;
+  gap: 0.25rem 1.25rem;
+}
+
+.about-single .about-link {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  color: rgb(var(--color-primary-600));
+  font-size: 0.875rem;
+}
+
+.about-single .about-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.about-single .article-content {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.about-single .article-content h2 {
+  margin: 1.75rem 0 0.5rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.015em;
+}
+
+.about-single .article-content p {
+  margin: 0.75rem 0 0.25rem;
+}
+
+.about-single .article-content ul {
+  margin: 0.25rem 0 0.75rem;
+}
+
+.about-single .article-content li {
+  margin: 0.125rem 0;
+}
+
+.dark .about-single .about-link {
+  color: rgb(var(--color-primary-400));
+}
+
+/* On paper: no site header, narrower margins and 10pt, so it fits one A4
+   page in both languages. */
+@page resume {
+  size: A4;
+  margin: 11mm 15mm;
+}
+
+@media print {
+  .about-single {
+    page: resume;
+  }
+
+  body:has(.about-single) {
+    height: auto;
+    padding-inline: 0;
+  }
+
+  body:has(.about-single) > header {
+    display: none;
+  }
+
+  body:has(.about-single) #main-content {
+    padding-top: 0;
+  }
+
+  .about-single,
+  :lang(zh) .about-single,
+  .about.about-single :is(.article-content, section),
+  :lang(en) .about.about-single .article-content {
+    max-width: none;
+  }
+
+  /* The theme prints every link's address after it. */
+  .about-single a::after {
+    content: none !important;
+  }
+
+  .about-single .about-head {
+    padding-bottom: 5pt;
+  }
+
+  .about-single .about-body {
+    margin-top: 6pt;
+  }
+
+  .about-single .article-content {
+    font-size: 9.5pt;
+    line-height: 1.32;
+  }
+
+  :lang(zh) .about.about-single .article-content > p:first-child,
+  .about.about-single .article-content > p:first-child {
+    font-size: 11pt;
+    line-height: 1.32;
+  }
+
+  .about-single .article-content h2 {
+    margin: 7pt 0 2pt;
+    font-size: 11pt;
+  }
+
+  .about-single .article-content p {
+    margin: 2.5pt 0 1pt;
+  }
+
+  .about-single .article-content ul {
+    margin: 1pt 0 2.5pt;
+  }
+
+  .about-single .article-content li {
+    margin: 0;
+  }
+}
+
+.dark :is(.about-name, .about-link, .about-fact dd),
+.dark .about .article-content > p:first-child {
   color: rgb(var(--color-neutral));
 }
 
