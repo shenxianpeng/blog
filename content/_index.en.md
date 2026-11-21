@@ -38,11 +38,11 @@ heroAlso:
           url: "https://keelinfra.io/cra/"
 proof:
   stats:
-    - value: "750,000+"
+    - value: "850,000+"
       label: "downloads of the clang-tools static binaries"
     - value: "1,000+"
       label: "GitHub repositories depend on cpp-linter"
-    - value: "55,000+"
+    - value: "70,000+"
       label: "PyPI downloads of commit-check a month"
     - value: "Jenkins org"
       label: "member, two projects under jenkinsci"

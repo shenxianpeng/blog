@@ -61,7 +61,7 @@ DevOps 与发布工程师。我做开源工具，帮团队把软件稳稳发出�
 - **commit**　[commit-check](https://github.com/commit-check/commit-check)：一份策略统一校验提交信息、分支名和 AI 署名，CI 里或 pre-commit 里都能跑。[Conventional Branch](https://conventionalbranch.org)：分支命名规范。
 - **review**　[cpp-linter](https://github.com/cpp-linter)：每个 PR 上跑 clang-format 和 clang-tidy。GitHub 上有 1000 多个仓库依赖它，包括 AWS、Apache、Samsung、Qualcomm、Bloomberg 的项目。
 - **build**　jenkinsci 组织下的 [explain-error-plugin](https://github.com/jenkinsci/explain-error-plugin) 和 [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint)：用 AI 解释构建失败，以及不用 Jenkins 服务器也能校验 Jenkinsfile。[Agent8](https://github.com/keelinfra/agent8) 让只有 Java 8 的构建机（AIX、Solaris、HP-UX）继续接入新版 Jenkins。
-- **release**　[release-ledger](https://github.com/keelinfra/release-ledger)，我最新的项目：发布 release 时自动附上 SBOM 和签名的构建溯源，并持续检查仍在支持期内的版本有没有被在野利用的漏洞。欧盟《网络弹性法案》要求这类漏洞在 24 小时内上报。我给每个 LLVM 版本发布的 clang-format、clang-tidy [静态二进制](https://github.com/cpp-linter/clang-tools-static-binaries)，累计下载超过 75 万次。
+- **release**　[release-ledger](https://github.com/keelinfra/release-ledger)，我最新的项目：发布 release 时自动附上 SBOM 和签名的构建溯源，并持续检查仍在支持期内的版本有没有被在野利用的漏洞。欧盟《网络弹性法案》要求这类漏洞在 24 小时内上报。我给每个 LLVM 版本发布的 clang-format、clang-tidy [静态二进制](https://github.com/cpp-linter/clang-tools-static-binaries)，累计下载超过 85 万次。
 - **support**　[Extended Security for Jenkins 2.541.x](https://github.com/keelinfra/jenkins-extended-security)：Jenkins 2.541.3 是最后一个能跑在 Java 17 上的 LTS，这个项目把之后发布的核心安全修复补回去。[MkDocs NG](https://mkdocs-ng.org)：持续维护的 MkDocs 1.x，已有站点和插件照常构建，1.x 支持到 2028 年底。
 
 ## 产品
