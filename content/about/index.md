@@ -77,7 +77,7 @@ DevOps 与发布工程师。我做开源工具，帮团队把软件稳稳发出�
 
 ## 社区
 
-Jenkins GitHub 组织成员，按公开贡献在 [committers.top](https://committers.top/lithuania_public) 立陶宛榜上排前三，EuroPython 2025 议题评审，2026 年入选 Anthropic Open Source Developer Program。博客从 2017 年写到现在，中文版同步发在公众号「沈显鹏」。
+Jenkins GitHub 组织成员，按公开贡献在 [committers.top](https://committers.top/lithuania_public) 立陶宛榜上排前三。博客从 2017 年写到现在，中文版同步发在公众号「沈显鹏」。
 
 ## 支持我
 
