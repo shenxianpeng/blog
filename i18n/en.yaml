@@ -49,7 +49,6 @@ error:
 footer:
   dark_appearance: "Switch to dark appearance"
   light_appearance: "Switch to light appearance"
-  powered_by: '<a class="hx:flex hx:text-sm hx:items-center hx:gap-1 hx:text-current" target="_blank" rel="noopener noreferrer"</a>'
 
 list:
   externalurl_title: "Link to external site"

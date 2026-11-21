@@ -41,7 +41,10 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 [footer]
   showMenu = true
   showCopyright = true
-  showThemeAttribution = true
+  # Off, not blanked out through i18n: until 2026-11 `footer.powered_by` was
+  # overridden with an empty link, and the English one was missing a ">". The
+  # unclosed <a> ran on into the search box after the footer and broke its row.
+  showThemeAttribution = false
   showAppearanceSwitcher = true
   showScrollToTop = true
 
