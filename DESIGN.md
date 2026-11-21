@@ -201,6 +201,28 @@ measure; under 35rem the line turns vertical. The line into the last stage,
 `support`, is dashed: it stands for years, where the others stand for minutes.
 Styles `.pipeline-*` in `custom.css`.
 
+## Article header
+
+Between an article's title (36px; 30px on a phone) and its text:
+
+- **Meta**, one line of 13px mono in the muted colour
+  (`layouts/partials/article-meta/basic.html`): date, the updated date when
+  it differs, reading time ("5 min read"), then the tags as plain accent
+  links, written as the post lists write them. Items are separated by a dot
+  and the line breaks between items. No word count, no icons: zen mode is
+  off, and "Edit this page" closes the share line at the end of the article.
+- **Series**, when the post belongs to one (`layouts/partials/series/`): an
+  outlined card in the page's colour (1px rule, 10px radius), a small
+  uppercase mono "Series", the name at 14px, 600, and "All parts" with a
+  chevron on the right. Open, the parts are a list (`Part n` in mono, the
+  title); the current article is in ink, the others are accent links. The
+  same card, closed, follows the article.
+- **Table of contents on a phone**: the theme's own, restyled as the same
+  kind of card ("Table of Contents" and a chevron), above the series card.
+  From 1024px it is the theme's column beside the text.
+
+Styles `.post-meta*`, `.post-series*`, `.toc-inside` in `custom.css`.
+
 ## Post footer
 
 Posts and essays end with "From the author" (one or two project cards, the
