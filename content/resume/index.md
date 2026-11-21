@@ -40,7 +40,7 @@ links:
 ## 亮点
 
 - [cpp-linter](https://github.com/cpp-linter)：GitHub 上 1000 多个仓库依赖它，包括 **Apache、Samsung、Qualcomm、Bloomberg、LLNL、Nextcloud** 的项目
-- [clang-tools 静态二进制](https://github.com/cpp-linter/clang-tools-static-binaries)：累计下载超过 **85 万**次
+- [clang-tools 静态二进制](https://github.com/cpp-linter/clang-tools-static-binaries)：累计下载超过 **50 万**次
 - [commit-check](https://github.com/commit-check/commit-check)：PyPI 月下载量超过 **7 万**次
 - **Jenkins GitHub 组织**成员，[Explain Error](https://github.com/jenkinsci/explain-error-plugin) 插件作者
 - 按 GitHub 公开贡献，[立陶宛排名前三](https://committers.top/lithuania_public)

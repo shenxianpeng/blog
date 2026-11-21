@@ -38,7 +38,7 @@ heroAlso:
           url: "https://keelinfra.io/cra/"
 proof:
   stats:
-    - value: "850,000+"
+    - value: "500,000+"
       label: "downloads of the clang-tools static binaries"
     - value: "1,000+"
       label: "GitHub repositories depend on cpp-linter"
