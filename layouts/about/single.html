@@ -24,7 +24,7 @@
 */ -}}
 {{ define "main" }}
   <article class="about{{ if not .Params.facts }} about-single{{ end }}">
-    <header class="about-head" data-ga-placement="{{ .Section }}">
+    <header class="about-head" data-ga-placement="{{ if .Params.facts }}about{{ else }}resume{{ end }}">
       {{ if ne .Params.showPhoto false }}
         {{ with site.Params.Author.image }}
           {{ with resources.Get . }}

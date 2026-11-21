@@ -3604,6 +3604,51 @@ body:not(:has(.home)) #main-content {
   color: rgb(var(--color-primary-400));
 }
 
+/* On paper: no site header, and one A4 page. */
+@media print {
+  body:has(.about-single) > header {
+    display: none;
+  }
+
+  body:has(.about-single) #main-content {
+    padding-top: 0;
+  }
+
+  .about-single,
+  :lang(zh) .about-single,
+  .about-single :is(.article-content, section) {
+    max-width: none;
+  }
+
+  .about-single .article-content {
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+
+  :lang(zh) .about.about-single .article-content > p:first-child,
+  .about.about-single .article-content > p:first-child {
+    font-size: 13pt;
+    line-height: 1.4;
+  }
+
+  .about-single .article-content h2 {
+    margin: 12pt 0 3pt;
+    font-size: 13pt;
+  }
+
+  .about-single .article-content p {
+    margin: 5pt 0 2pt;
+  }
+
+  .about-single .article-content ul {
+    margin: 2pt 0 5pt;
+  }
+
+  .about-single .article-content li {
+    margin: 1pt 0;
+  }
+}
+
 .dark :is(.about-name, .about-link, .about-fact dd, .about .article-content > p:first-child) {
   color: rgb(var(--color-neutral));
 }
