@@ -1,5 +1,7 @@
 ---
 title: 2022 年终总结
+summary: |
+  2021 年开始维护 cpp-linter-action，2022 年有了孩子，关键词变成责任。业余时间优先放在开源上，cpp-linter-action 已被 100 多个项目依赖，全年写了 19 篇博客。
 tags:
   - Thoughts
   - Summary

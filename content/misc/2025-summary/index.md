@@ -1,5 +1,7 @@
 ---
 title: 2025 年终总结
+summary: |
+  回顾 2025 年：在维尔纽斯工作和生活，参加 PyCon LT，做出 Explain Error 插件并加入 Jenkins GitHub 组织，也给 1000 天后的自己定了一个目标。
 tags:
   - Thoughts
   - Summary

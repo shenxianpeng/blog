@@ -1,5 +1,7 @@
 ---
 title: 2024 年终总结
+summary: |
+  2024 年最大的变化是结束大连的工作，搬到欧洲。业余继续做开源和写作：cpp-linter-action 用户过千，接手了 gitstats，全年写了 27 篇博客和 41 篇公众号文章。
 tags:
   - Thoughts
   - Summary

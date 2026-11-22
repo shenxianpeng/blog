@@ -1,6 +1,7 @@
 ---
 title: 开源界的“彩票”怎么领？从 thanks.dev 的运作机制说起
 summary: |
+  thanks.dev 扫描赞助方的依赖树，按被依赖的频率自动分钱，不看 star 数。这篇讲清它怎么运作、谁在出钱、什么样的项目容易被选中，以及维护者要先注册才收得到钱。
 tags:
   - Donation
 authors:

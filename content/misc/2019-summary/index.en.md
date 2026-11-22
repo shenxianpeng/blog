@@ -1,5 +1,7 @@
 ---
 title: 2019 Year-End Summary
+summary: |
+  My keyword for 2019 was "tried my best": moving builds from Bamboo to Jenkins, winning an internal innovation contest with a project that reached the product roadmap, and writing 33 blog posts and 11 WeChat articles.
 tags:
   - Thoughts
   - Summary

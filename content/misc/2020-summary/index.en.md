@@ -1,5 +1,7 @@
 ---
 title: 2020 Year-End Summary
+summary: |
+  In 2020 I got builds running unattended with Jenkins Shared Libraries, moved the team to Artifactory, rolled out Git commit conventions, wrote 41 blog posts and 26 WeChat articles, and turned down a book deal.
 tags:
   - Thoughts
   - Summary

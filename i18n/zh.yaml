@@ -87,3 +87,16 @@ projects:
   oss: "开源项目，按交付阶段"
   products: "产品"
   more: "其他"
+
+# 自动生成的页面描述（layouts/partials/page-description.html）
+seo:
+  years_one: "{{ .From }} 年"
+  years_range: "{{ .From }}–{{ .To }} 年"
+  tags_term:
+    other: "{{ .Author }}博客里关于 {{ .Title }} 的 {{ .Count }} 篇文章（{{ .Years }}）。"
+  series_term:
+    other: "{{ .Author }}博客的 {{ .Title }} 系列，共 {{ .Count }} 篇（{{ .Years }}）。"
+  tags_all:
+    other: "{{ .Author }}博客的全部 {{ .Count }} 个标签，按文章数排序。"
+  series_all:
+    other: "{{ .Author }}博客的全部 {{ .Count }} 个系列。"

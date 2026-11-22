@@ -1,5 +1,7 @@
 ---
 title: 2023 Year-End Summary
+summary: |
+  Three roles in 2023: a dad, an engineer holding on to DevOps best practices, and a spare-time open-source maintainer and writer. cpp-linter-action passed 400 users, and I wrote 20 blog posts and 6 WeChat articles.
 tags:
   - Thoughts
   - Summary

@@ -1,5 +1,7 @@
 ---
 title: 2019 年终总结
+summary: |
+  2019 年的关键词是尽力：把构建从 Bamboo 迁到 Jenkins，内部创新项目拿了第一并进入产品路线图，全年写了 33 篇博客和 11 篇公众号原创文章。
 tags:
   - Thoughts
   - Summary
