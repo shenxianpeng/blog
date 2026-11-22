@@ -37,13 +37,13 @@ date: 2026-01-01
 
 2、[Kubernetes 成为 AI 工作负载的事实标准](https://securityboulevard.com/2025/12/2026-kubernetes-playbook-ai-at-scale-self%E2%80%91healing-clusters-growth/)
 
-![](k8s+ai.png)
+![写着 Kubernetes + AI 的蓝紫色海报，带 Kubernetes 舵轮标志](k8s+ai.jpg)
 
 到 2026 年，最繁重的 AI 工作负载，特别是机器学习操作（MLOps）平台，将以 Kubernetes 为骨干。Kubernetes 提供了统一的控制平面来调度、扩展和管理 AI 组件，无论是突发性的资源密集型任务（数据处理和训练）还是高吞吐量的持续运行服务（实时推理）。这一趋势反映了 GPU 密集型工作负载的快速增长以及最大化昂贵加速器硬件利用率的需求。
 
 3、[Google Cloud 与 Palo Alto Networks 达成百亿美元安全合作](https://www.cnbc.com/2025/12/19/palo-alto-networks-google-cloud-ai-threats.html)
 
-![](paloalto.png)
+![手机屏幕上的 Palo Alto Networks 标志](paloalto.jpg)
 
 2025 年 12 月 22 日，Google Cloud 和 Palo Alto Networks 宣布了一项近 100 亿美元的合作，这是历史上最大的云安全交易。Palo Alto 将其工作负载迁移到 GCP，并利用 Gemini AI 为其安全协处理器提供支持。
 

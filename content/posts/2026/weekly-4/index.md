@@ -35,13 +35,13 @@ GitHub 在 2026 年 2 月 4 日宣布，Copilot Pro+ 和 Enterprise 订阅用户
 
 1、[GitHub 开放 Claude 和 Codex 支持，打破 AI 编程助手单一模型限制](https://github.blog/news-insights/company-news/pick-your-agent-use-claude-and-codex-on-agent-hq/)
 
-![GitHub Agent HQ](news-1.png)
+![GitHub Agent HQ](news-1.jpg)
 
 GitHub 在 2 月 4 日宣布，Copilot Pro+ 和 Enterprise 用户可以在 GitHub 和 VS Code 中使用 Anthropic Claude 和 OpenAI Codex。这是继去年 10 月支持 GPT-4 后，GitHub 首次引入竞争对手的模型。用户可以在设置中切换模型，根据任务选择最适合的 AI 助手。GitHub 表示，多模型支持将在未来几周内向所有付费用户开放。
 
 2、[Substack 确认数据泄露，影响用户邮箱和电话号码](https://techcrunch.com/2026/02/05/substack-confirms-data-breach-affecting-email-addresses-and-phone-numbers/)
 
-![数据泄露](news-2.png)
+![数据泄露](news-2.webp)
 
 写作平台 Substack 在 2 月 5 日确认遭遇数据泄露，黑客窃取了部分用户的电子邮件地址和电话号码。公司表示，密码和支付信息未受影响，已通知受影响用户并重置安全措施。同日，政府技术服务商 Conduent 也披露数据泄露事件扩大，影响人数从最初的数十万增至数百万，涉及社保号、医疗记录等敏感信息。
 
@@ -67,7 +67,7 @@ AI 语音公司 ElevenLabs 在 2 月 5 日宣布完成 5 亿美元融资，由 S
 
 1、[如何最大化 GitHub Copilot 的 Agent 能力](https://github.blog/ai-and-ml/github-copilot/how-to-maximize-github-copilots-agentic-capabilities/)
 
-![Copilot Agent](blog-1.png)
+![Copilot Agent](blog-1.webp)
 
 GitHub 工程团队分享了如何在实际项目中架构和扩展 Copilot 的应用。文章介绍了从简单代码补全到复杂多步骤任务自动化的演进路径，包括提示词模板设计、上下文管理系统、自定义工具集成等技术细节。核心观点包括：Copilot 的价值在于理解意图并自动化工作流，上下文窗口管理是关键瓶颈，自定义工具可以访问企业内部系统。文章基于 GitHub 内部使用经验，提供了大量实践案例和代码示例。
 

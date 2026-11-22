@@ -81,7 +81,7 @@ AI 在其中扮演双重角色：一方面 AI 工作负载带来更多监控复�
 
 5、[**容器vs虚拟机:2026年家庭实验室的转变**](https://www.virtualizationhowto.com/2025/12/why-containers-will-be-more-important-than-ever-in-the-2026-home-lab/)
 
-![Containers vs VMs](homelab.png)
+![Containers vs VMs](homelab.jpg)
 
 Virtualization Howto 观察到一个有趣趋势：家庭实验室（Home Lab）爱好者正从虚拟机转向容器优先架构。驱动因素包括资源限制（AI 模型和大型应用消耗大量 RAM，虚拟机开销难以承受）、快速部署（容器秒级启动 vs 虚拟机分钟级）、以及 Kubernetes 技能成为职场必备。
 
@@ -119,7 +119,7 @@ n8n 是开源工作流自动化工具，类似 Zapier 和 Integromat，但更灵
 
 1、**Meta 的"Conversation Focus"**
 
-![Conversation Focus](conversation-focus.png)
+![Conversation Focus](conversation-focus.jpg)
 
 Meta 在 2025 年 12 月为 Ray-Ban Meta 和 Oakley Meta HSTN 智能眼镜发布的 v21 更新功能。利用 AI 音频处理技术，在嘈杂环境中放大你正在看的人的声音，同时抑制背景噪音，解决"鸡尾酒会问题"（在嘈杂环境中选择性聆听特定人说话的能力）。
 
@@ -127,7 +127,7 @@ Meta 在 2025 年 12 月为 Ray-Ban Meta 和 Oakley Meta HSTN 智能眼镜发布
 
 1、[如何构建个人 Python 学习路线图](https://realpython.com/build-python-learning-roadmap/)
 
-![Python Learning Roadmap](realpython.png)
+![Python Learning Roadmap](realpython.jpg)
 
 Real Python 的系统性指南，教你制定个人化 Python 学习计划。基于 Dominican 大学 Gail Matthews 博士的目标设定研究，提供三个步骤。核心观点："为什么"比"做什么"更重要，没有强烈目的感很难在遇到困难时坚持。
 
