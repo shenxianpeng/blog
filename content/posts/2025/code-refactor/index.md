@@ -14,7 +14,7 @@ aliases:
 
 今天这篇文章，起因是我看到前同事发的一条朋友圈。
 
-<img src="image.png" alt="同事的朋友圈" width="400" height="300" />
+<img src="image.png" alt="前同事的朋友圈，夸我们以前公司的 CI/CD 做得不错" width="400" />
 
 我感觉他这是在**赤裸裸地夸我** ：）
 （不好意思，得瑟一下~）
