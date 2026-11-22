@@ -107,7 +107,7 @@ AI agent 会自动安装这个 skill。
 
 ## 看看效果图
 
-![](diff.png)
+![no-ai-slop 编辑前后的 diff：红色是 AI 套话原文，绿色是编辑后的版本](diff.png)
 
 红色为 AI 套话原文，绿色为编辑后的版本。
 

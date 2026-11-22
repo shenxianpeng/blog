@@ -15,7 +15,7 @@ Donor: `gh/canonical`.
 
 That's Canonical, the company behind Ubuntu.
 
-![](thanks-from.png)
+![Donation notice from thanks.dev, with Canonical as the donor](thanks-from.png)
 
 ---
 
@@ -39,11 +39,11 @@ The money isn't much, just over twenty dollars a month. But for an ordinary deve
 
 This kind of feedback is quite rare. I immediately posted a thank you on X, attaching a screenshot, to publicly express my gratitude.
 
-![](thanks-to.png)
+![My post on X thanking Canonical for sponsoring my open source project](thanks-to.png)
 
 To be honest, there are many large companies that use open-source projects, but very few actively donate. I checked thanks.dev and found that Canonical's cumulative donations exceed $67,000, ranking third on the entire platform, only behind Sentry and Codecov. They sponsor more open-source projects than just mine; they are genuinely and systematically investing money into giving back.
 
-![](top-donars.png)
+![Top ten donors on thanks.dev, led by Sentry, Codecov and Canonical](top-donars.png)
 
 This story deserves to be told. In the open-source world, many contributors are "generating power for love," relying on passion and spare time, but passion doesn't put food on the table. For the open-source ecosystem to operate sustainably, large companies that truly benefit from it need to step up and give back with actual financial support. What Canonical is doing is the right thing.
 

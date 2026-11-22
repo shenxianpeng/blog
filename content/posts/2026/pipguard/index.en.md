@@ -104,7 +104,7 @@ pipguard install requests pandas   # Clean packages pass normally
 
 I recorded a small demo showing how pipguard identifies malicious behavior before installation:
 
-![](demo.gif)
+![Terminal demo: pipguard blocks litellm 1.82.8 for its malicious .pth file and installs clean packages normally](demo.gif)
 
 For integration into CI/CD, you can replace `pip install` in GitHub Actions / GitLab CI / Jenkins with `pipguard install`, adding an extra layer of protection to your entire pipeline.
 
