@@ -31,11 +31,11 @@ date: 2026-11-22
 
 同样的问题，AI native 的公司也遇到过，而且规模大得多。
 
-Anthropic 截至今年 5 月，合进主代码库的代码 [80% 以上是 Claude 写的](https://www.anthropic.com/institute/recursive-self-improvement)。全公司每天合并的代码改动，5 月是 2,500 个左右，到 9 月[超过了 3 万个](https://www.anthropic.com/engineering/redesigning-source-control)。他们自己也承认，人工评审成了新的瓶颈。
+Anthropic 截至今年 5 月，合进主代码库的代码 [80% 以上是 Claude 写的](https://www.anthropic.com/institute/recursive-self-improvement)。全公司每天合并的代码改动，5 月是 2,500 个左右，到 9 月[超过了 3 万个](https://www.anthropic.com/research/redesigning-source-control)。他们自己也说，如果人看代码的速度跟不上 Claude 写的速度，人工评审就会成为瓶颈。
 
 所以每个 PR 都先过一遍 Claude 的自动评审，他们回头算过，以前 claude.ai 出过的事故，这一关大约能拦下三分之一的 bug。
 
-他们在一篇工程文章里写，工程师的角色，是对 Claude 说「不」。
+他们在一篇工程文章里写，很多时候，工程师的角色是对 Claude 说「不」。
 
 OpenAI 那边也差不多。内部有一套[「智能体软件工厂」](https://newsletter.pragmaticengineer.com/p/openai-software-factory)，写代码、写测试、修 CI、等评审，都是 Codex 在干。高风险的改动，AI 看完还得有人再看一遍；上生产之前，要有人拍板。
 
@@ -76,8 +76,8 @@ V2EX 那家公司禁掉 AI，其实他需要的是关卡，不是又一道闸机
 ## 参考
 
 - [V2EX，《我司全面禁止 AI Coding，一夜之间回到古法编程时代》](https://www.v2ex.com/t/1258200)
-- [Anthropic，《When AI builds itself》（截至 2026 年 5 月，合并代码 80% 以上由 Claude 编写；人工评审成为新瓶颈；每个改动都过 Claude 自动评审，回溯估计能拦下以往 claude.ai 事故约三分之一的 bug）](https://www.anthropic.com/institute/recursive-self-improvement)
-- [Anthropic，《Redesigning source control at Anthropic》（2026-10-13，每天合并改动 2,500 → 30,000+；「工程师的角色是对 Claude 说不」）](https://www.anthropic.com/engineering/redesigning-source-control)
+- [Anthropic，《When AI builds itself》（截至 2026 年 5 月，合并代码 80% 以上由 Claude 编写；人看不过来时人工评审会成为瓶颈；每个改动都过 Claude 自动评审，回溯估计能拦下以往 claude.ai 事故约三分之一的 bug）](https://www.anthropic.com/institute/recursive-self-improvement)
+- [Anthropic，《Redesigning source control at Anthropic》（2026-10-13，每天合并改动 2,500 → 30,000+；「很多时候，工程师的角色是对 Claude 说不」）](https://www.anthropic.com/research/redesigning-source-control)
 - [The Pragmatic Engineer，《Inside OpenAI's agentic software factory》（2026-09-15）](https://newsletter.pragmaticengineer.com/p/openai-software-factory)
 - [It's FOSS，Ginux 报道（2026-10-27）](https://itsfoss.com/news/ginux/)
 - [Ginux 仓库](https://github.com/gmkurtzer/ginux)

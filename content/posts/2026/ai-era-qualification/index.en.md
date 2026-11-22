@@ -31,11 +31,11 @@ I think that's the company's real problem. Writing a lot of code with AI isn't w
 
 AI-native companies have run into the same problem, at a much larger scale.
 
-At Anthropic, as of May this year, [over 80% of the code merged into the main codebase was written by Claude](https://www.anthropic.com/institute/recursive-self-improvement). Company-wide daily merged changes went from about 2,500 in May to [more than 30,000 by September](https://www.anthropic.com/engineering/redesigning-source-control). They admit that human review became the new bottleneck.
+At Anthropic, as of May this year, [over 80% of the code merged into the main codebase was written by Claude](https://www.anthropic.com/institute/recursive-self-improvement). Company-wide daily merged changes went from about 2,500 in May to [more than 30,000 by September](https://www.anthropic.com/research/redesigning-source-control). They also say that if people can't review code as fast as Claude writes it, human review will become the bottleneck.
 
 So every PR first goes through an automated Claude review. Looking back at past claude.ai incidents, they estimate this step would have caught about a third of the bugs.
 
-One of their engineering posts says the engineer's role is to say "no" to Claude.
+One of their engineering posts says that very often, the engineers' role was to tell Claude "no."
 
 OpenAI is much the same. Internally they run an ["agentic software factory"](https://newsletter.pragmaticengineer.com/p/openai-software-factory): writing code, writing tests, fixing CI, waiting on review, all done by Codex. High-risk changes still need a human after the AI has looked at them, and someone has to make the call before anything hits production.
 
@@ -76,8 +76,8 @@ The code takes 11 days. The qualification takes a whole career.
 ## References
 
 - [V2EX, "My company banned AI coding outright, and overnight we're back to hand-coding the old-fashioned way" (in Chinese)](https://www.v2ex.com/t/1258200)
-- [Anthropic, "When AI builds itself" (as of May 2026, over 80% of merged code written by Claude; human review the new bottleneck; every change goes through automated Claude review, estimated in hindsight to catch about a third of the bugs behind past claude.ai incidents)](https://www.anthropic.com/institute/recursive-self-improvement)
-- [Anthropic, "Redesigning source control at Anthropic" (2026-10-13; daily merged changes 2,500 → 30,000+; "the engineer's role is to say no to Claude")](https://www.anthropic.com/engineering/redesigning-source-control)
+- [Anthropic, "When AI builds itself" (as of May 2026, over 80% of merged code written by Claude; human review becomes the bottleneck if people can't keep up; every change goes through automated Claude review, estimated in hindsight to catch about a third of the bugs behind past claude.ai incidents)](https://www.anthropic.com/institute/recursive-self-improvement)
+- [Anthropic, "Redesigning source control at Anthropic" (2026-10-13; daily merged changes 2,500 → 30,000+; "very often, the role of the engineers was to tell Claude no")](https://www.anthropic.com/research/redesigning-source-control)
 - [The Pragmatic Engineer, "Inside OpenAI's agentic software factory" (2026-09-15)](https://newsletter.pragmaticengineer.com/p/openai-software-factory)
 - [It's FOSS, coverage of Ginux (2026-10-27)](https://itsfoss.com/news/ginux/)
 - [Ginux repository](https://github.com/gmkurtzer/ginux)
