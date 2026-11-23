@@ -72,23 +72,23 @@ This was added in version 1.6, allowing users to switch between dark and light m
 Old Version:
 
 {{< gallery >}}
-  <img src="old-1.png" class="grid-w30" />
-  <img src="old-2.png" class="grid-w30" />
-  <img src="old-3.png" class="grid-w30" />
-  <img src="old-4.png" class="grid-w30" />
-  <img src="old-5.png" class="grid-w30" />
-  <img src="old-6.png" class="grid-w30" />
+  <img src="old-1.png" alt="Old General page: a Git overview table with project name, report period, files, lines of code, commits and authors" class="grid-w30" />
+  <img src="old-2.png" alt="Old Activity page: red bar charts of commits per year and per week" class="grid-w30" />
+  <img src="old-3.png" alt="Old Authors page: a table of authors with commit share, lines added and removed, and active days" class="grid-w30" />
+  <img src="old-4.png" alt="Old Files page: total files, total lines and average size, above a line chart of file count over time" class="grid-w30" />
+  <img src="old-5.png" alt="Old Lines page: total lines, above a line chart of lines of code over time" class="grid-w30" />
+  <img src="old-6.png" alt="Old Tags page: the date, commit count and authors of each version tag" class="grid-w30" />
 {{< /gallery >}}
 
 New Version:
 
 {{< gallery >}}
-  <img src="new-1.png" class="grid-w30" />
-  <img src="new-2.png" class="grid-w30" />
-  <img src="new-3.png" class="grid-w30" />
-  <img src="new-4.png" class="grid-w30" />
-  <img src="new-5.png" class="grid-w30" />
-  <img src="new-6.png" class="grid-w30" />
+  <img src="new-1.png" alt="New General page: the Git overview with a monospace heading and a thin-ruled table" class="grid-w30" />
+  <img src="new-2.png" alt="New Activity page: blue bar charts of commits per year and per week, with grid lines" class="grid-w30" />
+  <img src="new-3.png" alt="New Authors page: a thin-ruled table of authors with commit share, lines added and removed, and active days" class="grid-w30" />
+  <img src="new-4.png" alt="New Files page: total files, total lines and average size, above a line chart of file count with data points" class="grid-w30" />
+  <img src="new-5.png" alt="New Lines page: total lines, above a line chart of lines of code with data points" class="grid-w30" />
+  <img src="new-6.png" alt="New Tags page: a thin-ruled table of the date, commit count and authors of each version tag" class="grid-w30" />
 {{< /gallery >}}
 
 You can visit [this online preview](https://shenxianpeng.dev/gitstats/index.html) to see the actual effect, which is a report generated based on GitStats' own repository.
