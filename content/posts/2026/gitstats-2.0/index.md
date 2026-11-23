@@ -74,24 +74,24 @@ gitstats . report
 旧版本：
 
 {{< gallery >}}
-  <img src="old-1.png" class="grid-w30" />
-  <img src="old-2.png" class="grid-w30" />
-  <img src="old-3.png" class="grid-w30" />
-  <img src="old-4.png" class="grid-w30" />
-  <img src="old-5.png" class="grid-w30" />
-  <img src="old-6.png" class="grid-w30" />
+  <img src="old-1.png" alt="旧版 General 页：Git 概览表格，列出项目名、报告周期、文件数、代码行数、提交数和作者数" class="grid-w30" />
+  <img src="old-2.png" alt="旧版 Activity 页：按年和按周统计提交数的红色柱状图" class="grid-w30" />
+  <img src="old-3.png" alt="旧版 Authors 页：作者表格，含提交占比、增删行数和活跃天数" class="grid-w30" />
+  <img src="old-4.png" alt="旧版 Files 页：文件总数、总行数和平均大小，下方是文件数随时间变化的折线图" class="grid-w30" />
+  <img src="old-5.png" alt="旧版 Lines 页：总行数，下方是代码行数随时间变化的折线图" class="grid-w30" />
+  <img src="old-6.png" alt="旧版 Tags 页：每个版本标签的日期、提交数和作者" class="grid-w30" />
 {{< /gallery >}}
 
 新版本：
 
 {{< gallery >}}
-  <img src="new-home.png" class="grid-w30" />
-  <img src="new-1.png" class="grid-w30" />
-  <img src="new-2.png" class="grid-w30" />
-  <img src="new-3.png" class="grid-w30" />
-  <img src="new-4.png" class="grid-w30" />
-  <img src="new-5.png" class="grid-w30" />
-  <img src="new-6.png" class="grid-w30" />
+  <img src="new-home.png" alt="新版首页：顶部导航带 GitHub 链接和深色模式开关，下方是 Git 概览表格" class="grid-w30" />
+  <img src="new-1.png" alt="新版 General 页：等宽字体标题和细线表格的 Git 概览" class="grid-w30" />
+  <img src="new-2.png" alt="新版 Activity 页：按年和按周统计提交数的蓝色柱状图，带网格线" class="grid-w30" />
+  <img src="new-3.png" alt="新版 Authors 页：细线表格列出作者的提交占比、增删行数和活跃天数" class="grid-w30" />
+  <img src="new-4.png" alt="新版 Files 页：文件总数、总行数和平均大小，下方是带数据点的文件数折线图" class="grid-w30" />
+  <img src="new-5.png" alt="新版 Lines 页：总行数，下方是带数据点的代码行数折线图" class="grid-w30" />
+  <img src="new-6.png" alt="新版 Tags 页：细线表格列出每个版本标签的日期、提交数和作者" class="grid-w30" />
 {{< /gallery >}}
 
 你可以访问 [这个在线预览](https://shenxianpeng.dev/gitstats/index.html) 看实际效果，这是基于 GitStats 自身仓库生成的报告。
