@@ -29,6 +29,8 @@ links:
     primary: true
   - label: "X"
     url: "https://x.com/xianpengshen"
+  - label: "公众号"
+    url: "/zh-cn/#关注公众号"
   - label: "邮件"
     url: "mailto:xianpeng.shen@gmail.com"
 facts:
