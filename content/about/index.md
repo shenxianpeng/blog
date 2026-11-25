@@ -27,8 +27,8 @@ links:
   - label: "GitHub"
     url: "https://github.com/shenxianpeng"
     primary: true
-  - label: "LinkedIn"
-    url: "https://www.linkedin.com/in/xianpeng-shen/"
+  - label: "X"
+    url: "https://x.com/xianpengshen"
   - label: "邮件"
     url: "mailto:xianpeng.shen@gmail.com"
   - label: "简历"

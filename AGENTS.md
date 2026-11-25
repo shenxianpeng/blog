@@ -117,8 +117,8 @@ ones together.
 Every post and essay ends with a **post footer**
 (`layouts/partials/post-footer.html`, rendered from the
 `sharing-links.html` override): "From the author", up to two project cards
-picked by the post's tags, and "Follow" (RSS, GitHub, X, LinkedIn; on Chinese
-pages the WeChat QR code instead of X and LinkedIn). The tag-to-project map
+picked by the post's tags, and "Follow" (RSS, GitHub, X; on Chinese
+pages the WeChat QR code instead of X). The tag-to-project map
 and all its copy are in `data/postfooter.yaml`; add a tag there rather than in
 the template.
 
@@ -141,7 +141,7 @@ Google Analytics 4 (`googleAnalytics` in `hugo.toml`), production builds only.
 `layouts/partials/extend-footer.html` reports two events from link clicks:
 `project_click` (`project`, `placement`, `link_url`) for links to the
 author's projects, matched by domain, and `follow_click` (`method`,
-`placement`, `link_url`) for RSS, the GitHub profile, X, LinkedIn and email.
+`placement`, `link_url`) for RSS, the GitHub profile, X and email.
 When a new project gets a site, add its domain to the list in that script and
 to `data/postfooter.yaml`.
 

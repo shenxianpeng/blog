@@ -5,7 +5,7 @@
 
   project_click  project: id below, or data-ga-project on the link
                  placement, link_url
-  follow_click   method: rss | github | x | linkedin | email, or data-ga-follow
+  follow_click   method: rss | github | x | email, or data-ga-follow
                  placement, link_url
 
   placement is the nearest data-ga-placement (the post footer sets
@@ -49,7 +49,6 @@
       if (host === location.hostname && /\/index\.xml$/.test(url.pathname)) return 'rss';
       if (host === 'github.com' && path === '/shenxianpeng') return 'github';
       if ((host === 'x.com' || host === 'twitter.com') && path === '/xianpengshen') return 'x';
-      if (host === 'linkedin.com' && path === '/in/xianpeng-shen') return 'linkedin';
       return '';
     }
 

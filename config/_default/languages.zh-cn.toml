@@ -21,7 +21,6 @@ bio = "给软件交付装上开源护栏。"
 links = [
   { github = "https://github.com/shenxianpeng" },
   { x-twitter = "https://x.com/xianpengshen" },
-  { linkedin = "https://www.linkedin.com/in/xianpeng-shen/" },
   { rss = "/zh-cn/index.xml" },
   { email = "mailto:xianpeng.shen@gmail.com" },
 ]

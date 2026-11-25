@@ -178,7 +178,7 @@ for a product with `style: wide`.
 Its own template (`layouts/about/single.html`), not the theme's article
 page. It opens with the author, not the word "About": a 72px photo, the name
 at 26px/600, the role in 12px mono, and four pill links on the right (GitHub
-with the ink border, LinkedIn, Email, Résumé; 13px, 34px tall), over a rule.
+with the ink border, X, Email, Résumé; 13px, 34px tall), over a rule.
 On a narrow screen the role breaks between its parts and the links wrap
 under the name.
 

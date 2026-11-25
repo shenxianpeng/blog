@@ -74,7 +74,7 @@ labels:
     projects: From the author
     more: Learn more
     follow: Follow
-    followText: New posts by RSS, or follow on GitHub, X or LinkedIn.
+    followText: New posts by RSS, or follow on GitHub or X.
   zh-cn:
     projects: 作者的开源项目
     more: 了解更多
@@ -87,7 +87,6 @@ follow:
     - { method: rss, label: RSS, url: /index.xml }
     - { method: github, label: GitHub, url: https://github.com/shenxianpeng }
     - { method: x, label: X, url: https://x.com/xianpengshen }
-    - { method: linkedin, label: LinkedIn, url: https://www.linkedin.com/in/xianpeng-shen/ }
   zh-cn:
     - { method: rss, label: RSS, url: /zh-cn/index.xml }
     - { method: github, label: GitHub, url: https://github.com/shenxianpeng }
