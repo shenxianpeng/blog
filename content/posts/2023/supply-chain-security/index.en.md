@@ -28,7 +28,7 @@ Based on this background, many organizations want to incorporate best practices 
 
 ## How to adopt Supply Chain Security for GitHub and Non-GitHub projects
 
-Next, I will show you how to adopt on both GitHub and Rocket Bitbucket as an example to show you how we integrate software supply chain security
+Next, I will show you how to adopt on both GitHub and our internal Bitbucket as an example to show you how we integrate software supply chain security
 
 ### GitHub projects
 

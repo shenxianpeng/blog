@@ -150,11 +150,11 @@ For now, everyone can not trail overseas. I hope that the pandemic can go away A
 2. I'm reading several very thick books, such as `Code Complete` and `C++ Primer Plus` books.
 3. Btw, I got promoted this month that I have worked here for six years.
 
-## 02/18/2021 - The coach (Qiao Q) left Rocket and started his new career
+## 02/18/2021 - The coach (Qiao Q) left the company and started his new career
 
-I called Qiao a coach because he swims very well and tells me how to freestyle. He also does DevOps/Build-related works in Rocket, then we have a lot of things to talk about, so we have a good relationship.
+I called Qiao a coach because he swims very well and tells me how to freestyle. He also does DevOps/Build-related works at our company, then we have a lot of things to talk about, so we have a good relationship.
 
-I a little upset when I heard that he told me he would leave Rocket. As we talk more, I understand him and support him in this decision.
+I a little upset when I heard that he told me he would leave the company. As we talk more, I understand him and support him in this decision.
 
 Since age and experience are no longer our advantages in Dev, the new challenges will help him get more opportunities in DevOps than he did in his job here, so he made a wise choice, and I hope he will have better development in the future.
 

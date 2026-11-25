@@ -27,12 +27,12 @@ links:
   - label: "GitHub"
     url: "https://github.com/shenxianpeng"
     primary: true
-  - label: "LinkedIn"
-    url: "https://www.linkedin.com/in/xianpeng-shen/"
+  - label: "X"
+    url: "https://x.com/xianpengshen"
+  - label: "公众号"
+    url: "/zh-cn/#关注公众号"
   - label: "邮件"
     url: "mailto:xianpeng.shen@gmail.com"
-  - label: "简历"
-    url: "resume/"
 facts:
   label: "速览"
   items:
@@ -85,4 +85,4 @@ Jenkins GitHub 组织成员，按公开贡献在 [committers.top](https://commit
 
 ## 联系我
 
-工具用起来有问题，或者想聊聊：[xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)，或在 [GitHub](https://github.com/shenxianpeng)、[X](https://x.com/xianpengshen) 上找我。完整的工作经历在[简历](/zh-cn/resume/)。
+工具用起来有问题，或者想聊聊：[xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com)，或在 [GitHub](https://github.com/shenxianpeng)、[X](https://x.com/xianpengshen) 上找我。

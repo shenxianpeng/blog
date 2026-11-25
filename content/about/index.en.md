@@ -27,12 +27,10 @@ links:
   - label: "GitHub"
     url: "https://github.com/shenxianpeng"
     primary: true
-  - label: "LinkedIn"
-    url: "https://www.linkedin.com/in/xianpeng-shen/"
+  - label: "X"
+    url: "https://x.com/xianpengshen"
   - label: "Email"
     url: "mailto:xianpeng.shen@gmail.com"
-  - label: "Résumé"
-    url: "resume/"
 facts:
   label: "At a glance"
   items:
@@ -85,4 +83,4 @@ This blog has never carried ads. If the writing or the tools helped, you can spo
 
 ## Contact
 
-A problem with one of the tools, or just want to talk: [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com), or find me on [GitHub](https://github.com/shenxianpeng) and [X](https://x.com/xianpengshen). The rest of my career is on the [résumé](/resume/).
+A problem with one of the tools, or just want to talk: [xianpeng.shen@gmail.com](mailto:xianpeng.shen@gmail.com), or find me on [GitHub](https://github.com/shenxianpeng) and [X](https://x.com/xianpengshen).

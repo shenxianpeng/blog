@@ -21,9 +21,8 @@ Instructions for AI coding agents working on this repository. This is a personal
   language config, mounts, or links between posts.
 - **Main sections:** `posts/` (technical articles), `misc/` (personal essays, annual
   summaries), plus `about/`, `portfolio/` (labelled Projects in the menu; open
-  source and the three products side by side), `resume/` (the CV, reachable only
-  from About; `/hireme/` and `/resume-cn` redirect to it), `tags/`,
-  `authors/`. The top menu is Posts · Projects · About; Essays (`misc/`),
+  source and the three products side by side), `tags/`, `authors/`. There
+  is no résumé page since 2026-11 (see below). The top menu is Posts · Projects · About; Essays (`misc/`),
   Tags and RSS live in the footer. There is no Archive page since 2026-11:
   Posts and Essays list everything, and `/archive/` redirects to Posts.
 - **Deployment:** GitHub Pages via `.github/workflows/pages.yaml`. Netlify runs
@@ -96,9 +95,11 @@ commit-check next, and keelinfra (Agent8) and Keelhaven as the products.
 The stages are for this site only: the profile README lists the projects
 plainly, without stage labels.
 
-The résumé (`content/resume/`) is one printed A4 page and uses the About
-template (`type: about`, no photo, no facts). Keep it that short: a new line
-there should replace a weaker one. Its numbers go stale like `proof`.
+There is no résumé page since 2026-11: the author does not want his
+employer or work history on the site, and LinkedIn is not linked anywhere
+for the same reason. Do not add either back, and do not name employers in
+posts or essays. The About template still handles a page without `facts`
+(one column, links as plain text) if a résumé ever returns.
 
 The About page (`content/about/`) has its own template,
 `layouts/about/single.html`: a header with the author's photo and name
@@ -117,8 +118,8 @@ ones together.
 Every post and essay ends with a **post footer**
 (`layouts/partials/post-footer.html`, rendered from the
 `sharing-links.html` override): "From the author", up to two project cards
-picked by the post's tags, and "Follow" (RSS, GitHub, X, LinkedIn; on Chinese
-pages the WeChat QR code instead of X and LinkedIn). The tag-to-project map
+picked by the post's tags, and "Follow" (RSS, GitHub, X; on Chinese
+pages the WeChat QR code instead of X). The tag-to-project map
 and all its copy are in `data/postfooter.yaml`; add a tag there rather than in
 the template.
 
@@ -141,7 +142,7 @@ Google Analytics 4 (`googleAnalytics` in `hugo.toml`), production builds only.
 `layouts/partials/extend-footer.html` reports two events from link clicks:
 `project_click` (`project`, `placement`, `link_url`) for links to the
 author's projects, matched by domain, and `follow_click` (`method`,
-`placement`, `link_url`) for RSS, the GitHub profile, X, LinkedIn and email.
+`placement`, `link_url`) for RSS, the GitHub profile, X and email.
 When a new project gets a site, add its domain to the list in that script and
 to `data/postfooter.yaml`.
 
@@ -272,7 +273,6 @@ content/
 │       └── index.en.md
 ├── portfolio/          # Projects: one bundle per project, externalUrl + featured.jpg
 ├── about/
-└── resume/             # The CV; not in any menu
 ```
 
 ### Naming Conventions
@@ -430,10 +430,8 @@ at `/` and English under `/en/`.
   an alias falls through to `layouts/404.html`, which tries the post with the
   same year and slug in the browser; that helps readers, not search engines,
   so give a surviving post its alias.
-- **The résumé moved** from `/hireme/` to `/resume/` in 2026-09. `/hireme/`,
-  `/en/hireme/` and `/zh-cn/hireme/` are front-matter `aliases` on the two
-  résumé pages; `/resume-cn` is a static page in `static/resume-cn/`, because
-  Hugo writes a Chinese page's aliases under `/zh-cn/` and cannot reach the root.
+- **The résumé is gone** since 2026-11. `/resume/`, `/hireme/` and
+  `/resume-cn` now return the 404 page.
 - **The Archive page is gone** since 2026-11. `/archive/`, `/en/archive/`
   and `/zh-cn/archive/` are static redirects in `static/` to the Posts page.
 - **List pages are not paginated** since 2026-11. The old page URLs

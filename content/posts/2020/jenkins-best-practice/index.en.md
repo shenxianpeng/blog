@@ -79,7 +79,7 @@ The thing works behind the scene is called Jenkins Multi-branch Pipeline. Before
 
 So, as you can see from this page, there are multi Jenkins jobs. That is because for each bugfix or feature branch in Bitbucket, this multi-branch pipeline will automatically create a Jenkins job for them.
 
-So, when developers complete their works, they can use these Jenkins jobs to create official build by themselves without the need of involving a build engineer. However, this was not the case in the past. At the time that we did not have these self-service jobs, developers always ask help from me, the build engineer to create a build for them. We have around twenty U2 developers in the team, you can image the efforts needed to satisfy these requirements.
+So, when developers complete their works, they can use these Jenkins jobs to create official build by themselves without the need of involving a build engineer. However, this was not the case in the past. At the time that we did not have these self-service jobs, developers always ask help from me, the build engineer to create a build for them. We have around twenty developers in the team, you can image the efforts needed to satisfy these requirements.
 
 So, I just covered the first benefit of this multi-branch pipeline, which creates a self-service for the team, save their time, save my time.
 

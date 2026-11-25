@@ -1,6 +1,6 @@
 ---
-title: Farewell Rocket China — A Decade's Journey and a New Beginning
-summary: June 28, 2024, marks my last day at Rocket's China branch.  Looking back on a decade's journey and forward to a new chapter.
+title: Farewell, Dalian — A Decade's Journey and a New Beginning
+summary: June 28, 2024, marks my last day at the company's office in Dalian.  Looking back on a decade's journey and forward to a new chapter.
 tags:
   - Work
   - Life
@@ -8,14 +8,14 @@ date: 2024-06-28
 author: shenxianpeng
 ---
 
-Today (June 28th) is my last day at Rocket's China branch, marking the end of my ten years here. This is the longest I've worked at any company in my career, and I wanted to take this opportunity to write a few words to conclude this decade.
+Today (June 28th) is my last day at the company's office in Dalian, marking the end of my ten years here. This is the longest I've worked at any company in my career, and I wanted to take this opportunity to write a few words to conclude this decade.
 
 **Time flies.** In the blink of an eye, ten years have quietly passed. Only by living earnestly and diligently can one avoid lamenting the passage of time. A favorite quote of mine is: "The best time to plant a tree was ten years ago, the second best time is today."
 
 
 Influenced by my colleagues, I fell in love with the software industry after joining the company and aspired to become a technical expert in the eyes of others. I transitioned from a test engineer to a developer and eventually dedicated myself to the DevOps field, reaping joy and accomplishment along the way.
 
-**A Decade's Journey—Thank you.** During my ten years at Rocket China, I've met many excellent colleagues and friends from whom I've learned a great deal and been profoundly influenced.
+**A Decade's Journey—Thank you.** During my ten years at the company, I've met many excellent colleagues and friends from whom I've learned a great deal and been profoundly influenced.
 
 Countless team dinners, activities, trips, football games, badminton matches, swimming sessions, and more—thank you for accompanying me along the way, making this journey more exciting and unforgettable.
 
@@ -31,7 +31,7 @@ There is excitement and anticipation for the future, but also worry about challe
 
 **Choosing Europe—A New Chapter.** Some may ask, "Can't you support your family in China? Why go so far?"  In reality, it's not a matter of right or wrong, but a matter of choice. A person's choices are often closely related to their experiences.
 
-Previously, I never considered going abroad. It wasn't until I joined Rocket China that I saw excellent colleagues taking their families and children to Australia, Europe, and Japan.  Furthermore, I had the opportunity to travel to the US on business and to Japan for tourism, witnessing a wider and more exciting world.
+Previously, I never considered going abroad. It wasn't until I joined this company that I saw excellent colleagues taking their families and children to Australia, Europe, and Japan.  Furthermore, I had the opportunity to travel to the US on business and to Japan for tourism, witnessing a wider and more exciting world.
 
 These experiences gradually planted a seed in my mind: if I had the opportunity to go abroad, it would be a challenging and fun life experience.
 
@@ -54,7 +54,7 @@ If I were to use my current standards to find a new job in Dalian or other citie
 
 ---
 
-Finally, thank you to every friend and colleague I've met at Rocket China over the past ten years.
+Finally, thank you to every friend and colleague I've met at the company over the past ten years.
 
 I sincerely appreciate the farewell greetings and well wishes from each of my colleagues.
 
