@@ -1,6 +1,6 @@
 ---
 title: I Remember
-summary: Lately, I've been listening to Zhao Lei's songs while driving, especially "I Remember." This article records my graduation season at Rocket's China branch and the well wishes from my colleagues.
+summary: Lately, I've been listening to Zhao Lei's songs while driving, especially "I Remember." This article records my graduation season after ten years in Dalian and the well wishes from my colleagues.
 tags:
   - Work
   - Life

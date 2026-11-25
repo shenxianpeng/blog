@@ -31,7 +31,7 @@ date: 2023-12-02
 
 ## 如何在 GitHub 与非 GitHub 项目中采用软件供应链安全
 
-下面我将分别以 **GitHub** 与 **Rocket Bitbucket** 为例，介绍如何集成软件供应链安全。
+下面我将分别以 **GitHub** 与 **公司内部的 Bitbucket** 为例，介绍如何集成软件供应链安全。
 
 ---
 
