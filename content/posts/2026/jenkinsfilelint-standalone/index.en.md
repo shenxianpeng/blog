@@ -13,6 +13,8 @@ authors:
 date: 2026-07-12
 ---
 
+> Update (November 2026): jenkinsfilelint is now [jenkins-lint](https://github.com/jenkinsci/jenkins-lint). The install command and the pre-commit config have changed; see [Migrating to 2.0](https://jenkinsci.github.io/jenkins-lint/migrating/).
+
 I previously wrote an article about [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint)—one detailing its journey from my personal project into the official Jenkins organization. Today, let's talk about the newly released **v1.5.0** version.
 
 The biggest change in this version is the addition of a **standalone mode**.

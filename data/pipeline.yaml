@@ -26,8 +26,8 @@ stages:
     projects:
       - name: explain-error
         url: https://github.com/jenkinsci/explain-error-plugin
-      - name: jenkinsfilelint
-        url: https://github.com/jenkinsci/jenkinsfilelint
+      - name: jenkins-lint
+        url: https://github.com/jenkinsci/jenkins-lint
       - name: Agent8
         url: https://keelinfra.io/jenkins/
 
