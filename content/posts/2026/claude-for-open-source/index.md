@@ -135,7 +135,7 @@ date: 2026-07-28
 
 除了维护自己的项目，我也持续参与一些开源社区贡献。
 
-目前我是 PyPA（Python Packaging Authority） 的志愿者，参与 Python 官方生态相关工作；同时也是 Jenkins 社区的 Committer，创建并维护了 [explain-error-plugin](https://github.com/jenkinsci/explain-error-plugin) 和 [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint) 等项目。
+目前我是 PyPA（Python Packaging Authority） 的志愿者，参与 Python 官方生态相关工作；同时也是 Jenkins 社区的 Committer，创建并维护了 [explain-error-plugin](https://github.com/jenkinsci/explain-error-plugin) 和 [jenkins-lint](https://github.com/jenkinsci/jenkins-lint) 等项目。
 
 这些项目并不一定适合所有人，但如果你刚好在解决类似的问题，欢迎去 GitHub 看看。
 

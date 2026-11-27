@@ -10,6 +10,8 @@ authors:
 date: 2025-11-27
 ---
 
+> Update (November 2026): jenkinsfilelint is now [jenkins-lint](https://github.com/jenkinsci/jenkins-lint). The install command and the pre-commit config have changed; see [Migrating to 2.0](https://jenkinsci.github.io/jenkins-lint/migrating/).
+
 Hello everyone!
 
 Today, I'd like to share an open-source tool I recently developed: **jenkinsfilelint**.

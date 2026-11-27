@@ -13,6 +13,8 @@ authors:
 date: 2026-07-12
 ---
 
+> 更新（2026 年 11 月）：jenkinsfilelint 已改名为 [jenkins-lint](https://github.com/jenkinsci/jenkins-lint)，安装命令和 pre-commit 配置都变了，见 [Migrating to 2.0](https://jenkinsci.github.io/jenkins-lint/migrating/)。
+
 大家好，我是沈工。
 
 之前写过一篇 [jenkinsfilelint](https://github.com/jenkinsci/jenkinsfilelint) 的文章——一个是它从我的个人项目进入 Jenkins 官方组织的过程。今天聊一聊刚刚发布的 **v1.5.0** 版本。
